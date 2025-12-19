@@ -1,0 +1,457 @@
+﻿assign_elf_race_trait_effect = {
+	if = {
+		limit = {
+			inherited_elf_racial_score > 0
+			inherited_elf_racial_score < 2
+		}
+		assign_genetic_trait = { trait = elf_tier_1}
+	}
+	if = {
+		limit = {
+			inherited_elf_racial_score >= 2
+			inherited_elf_racial_score < 3
+		}
+		assign_genetic_trait = { trait = elf_tier_2}
+	}
+	if = {
+		limit = {
+			inherited_elf_racial_score >= 3
+		}
+		assign_genetic_trait = { trait = elf_tier_3}
+	}
+}
+
+assign_bloodline_traits_at_birth_effect = {
+	either_parent_genetic_inheritance = { trait = royal_elf_valerith }
+	either_parent_genetic_inheritance = { trait = royal_elf_serelion }
+	either_parent_genetic_inheritance = { trait = royal_elf_gwynthorn }
+	either_parent_genetic_inheritance = { trait = royal_elf_thundarael }
+	either_parent_genetic_inheritance = { trait = royal_elf_daelurin }
+	either_parent_genetic_inheritance = { trait = royal_elf_lormelis }
+}
+
+# If either parent has the trait, the child will inherit it.
+either_parent_genetic_inheritance = {
+	if = {
+		limit = {
+			OR = {
+				scope:character.father = {
+					has_genetic_trait = { trait = $trait$ }
+				}
+				scope:character.mother = {
+					has_genetic_trait = { trait = $trait$ }
+				}
+			}
+		}
+
+		scope:character ?= {
+			assign_genetic_trait = { trait = $trait$}
+		}
+	}
+}
+
+genetic_inheritance_effect = {
+	leveled_trait_inheritance = {trait = beauty}
+	leveled_trait_inheritance = {trait = intellect}
+	leveled_trait_inheritance = {trait = physique}
+	single_trait_inheritance = {
+		trait = fecund
+		single_parent_chance = 33
+	}
+	single_trait_inheritance = {
+		trait = giant
+		single_parent_chance = 33
+	}
+	pure_blood_inheritance = yes
+
+	random = { # chance to be born with a genetic trait not inherited
+		chance = 5
+		assign_random_genetic_trait = yes
+	}
+}
+
+leveled_trait_inheritance = {
+	set_variable = {
+		name = trait_score
+		value = $trait$_trait_score 
+	}
+
+	# Chance to reinforce genetic trait
+	if = {
+		limit = {
+			var:trait_score > 0
+		}
+
+		random = {
+			chance = 25
+			change_variable = {
+				name = trait_score
+				add = 1 
+			}
+		}
+	}
+
+
+	if = {
+		limit = {
+			var:trait_score >= 3
+		}
+
+		assign_genetic_trait = { trait = $trait$_good_3}
+	}
+	else_if = {
+		limit = {
+			var:trait_score >= 2
+		}
+
+		assign_genetic_trait = { trait = $trait$_good_2}
+	}
+	else_if = {
+		limit = {
+			var:trait_score >= 1
+		}
+
+		assign_genetic_trait = { trait = $trait$_good_1}
+	}
+	else_if = {
+		limit = {
+			var:trait_score <= -1
+		}
+
+		assign_genetic_trait = { trait = $trait$_bad_1}
+	}
+	else_if = {
+		limit = {
+			var:trait_score <= -2
+		}
+
+		assign_genetic_trait = { trait = $trait$_bad_2}
+	}
+	else_if = {
+		limit = {
+			var:trait_score <= -3
+		}
+
+		assign_genetic_trait = { trait = $trait$_bad_3}
+	}
+}
+
+single_trait_inheritance = {
+	if = {
+		limit = {
+			AND = {
+				scope:character.father = {
+					has_genetic_trait = { trait = $trait$ }
+				}
+				scope:character.mother = {
+					has_genetic_trait = { trait = $trait$ }
+				}
+			}
+		}
+
+		scope:character ?= {
+			assign_genetic_trait = { trait = $trait$}
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:character.father = {
+					has_genetic_trait = { trait = $trait$ }
+				}
+				scope:character.mother = {
+					has_genetic_trait = { trait = $trait$ }
+				}
+			}
+		}
+
+		random = {
+			chance = $single_parent_chance$
+			scope:character ?= {
+				assign_genetic_trait = { trait = $trait$}
+			}
+		}
+	}
+}
+
+# Chance Character is born with new genetic trait regardless of parents
+assign_random_genetic_trait = {
+	random_list = {
+		0 = { # Beauty Bad 1
+			modifier = {
+				add = 3
+				beauty_trait_score = 0
+			}
+			assign_genetic_trait = { trait = beauty_bad_1}
+		}
+		0 = { # Beauty Bad 2
+			modifier = {
+				add = 2
+				beauty_trait_score = 0
+			}
+			assign_genetic_trait = { trait = beauty_bad_2}
+		}
+		0 = { # Beauty Bad 3
+			modifier = {
+				add = 1
+				beauty_trait_score = 0
+			}
+			assign_genetic_trait = { trait = beauty_bad_3}
+		} 
+		0 = { # Beauty Good 1
+			modifier = {
+				add = 6
+				beauty_trait_score = 0
+			}
+			assign_genetic_trait = { trait = beauty_good_1}
+		} 
+		0 = { # Beauty Good 2
+			modifier = {
+				add = 4
+				beauty_trait_score = 0
+			}
+			assign_genetic_trait = { trait = beauty_good_2}
+		} 
+		0 = { # Beauty Good 3
+			modifier = {
+				add = 2
+				beauty_trait_score = 0
+			}
+			assign_genetic_trait = { trait = beauty_good_3}
+		}
+
+		0 = { # Intellect Bad 1
+			modifier = {
+				add = 3
+				intellect_trait_score = 0
+			}
+			assign_genetic_trait = { trait = intellect_bad_1}
+		}
+		0 = { # Intellect Bad 2
+			modifier = {
+				add = 2
+				intellect_trait_score = 0
+			}
+			assign_genetic_trait = { trait = intellect_bad_2}
+		}
+		0 = { # Intellect Bad 3
+			modifier = {
+				add = 1
+				intellect_trait_score = 0
+			}
+			assign_genetic_trait = { trait = intellect_bad_3}
+		} 
+		0 = { # Intellect Good 1
+			modifier = {
+				add = 6
+				intellect_trait_score = 0
+			}
+			assign_genetic_trait = { trait = intellect_good_1}
+		} 
+		0 = { # Intellect Good 2
+			modifier = {
+				add = 4
+				intellect_trait_score = 0
+			}
+			assign_genetic_trait = { trait = intellect_good_2}
+		} 
+		0 = { # Intellect Good 3
+			modifier = {
+				add = 2
+				intellect_trait_score = 0
+			}
+			assign_genetic_trait = { trait = intellect_good_3}
+		} 
+
+
+		0 = { # Physique Bad 1
+			modifier = {
+				add = 3
+				physique_trait_score = 0
+			}
+			assign_genetic_trait = { trait = physique_bad_1}
+		}
+		0 = { # Physique Bad 2
+			modifier = {
+				add = 2
+				physique_trait_score = 0
+			}
+			assign_genetic_trait = { trait = physique_bad_2}
+		}
+		0 = { # Physique Bad 3
+			modifier = {
+				add = 1
+				physique_trait_score = 0
+			}
+			assign_genetic_trait = { trait = physique_bad_3}
+		} 
+		0 = { # Physique Good 1
+			modifier = {
+				add = 6
+				physique_trait_score = 0
+			}
+			assign_genetic_trait = { trait = physique_good_1}
+		} 
+		0 = { # Physique Good 2
+			modifier = {
+				add = 4
+				physique_trait_score = 0
+			}
+			assign_genetic_trait = { trait = physique_good_2}
+		} 
+		0 = { # Physique Good 3
+			modifier = {
+				add = 2
+				physique_trait_score = 0
+			}
+			assign_genetic_trait = { trait = physique_good_3}
+		}
+
+
+		0 = { # Fecund
+			modifier = {
+				add = 3
+				NOT = {
+					has_character_modifier = fecund
+				}
+			}
+			assign_genetic_trait = { trait = fecund}
+		}
+		0 = { # Giant
+			modifier = {
+				add = 3
+				NOT = {
+					has_character_modifier = fecund
+				}
+			}
+			assign_genetic_trait = { trait = giant}
+		}
+
+		1 = {} 
+	}
+}
+
+pure_blood_inheritance = {
+	single_trait_inheritance = {
+		trait = pure_blooded
+		single_parent_chance = 50
+	}
+
+	if = {
+		limit = {
+			NOT = { has_character_modifier = pure_blooded }
+			scope:character.father.dynasty = scope:character.mother.dynasty
+		}
+
+		random = {
+			chance = 25
+			scope:character ?= {
+				assign_genetic_trait = { trait = pure_blooded}
+			}
+		}
+	}
+}
+
+assign_genetic_trait = {
+	add_character_modifier = {
+		modifier = $trait$
+		# mode = add_and_extend
+	}
+
+	add_to_variable_list = {
+		name = genetic_traits
+		target = trait:$trait$
+	}
+}
+
+give_genetic_traits_to_starter_characters_effect = {
+	every_country = {
+		every_character = {
+			give_starter_elf_trait = yes
+			assign_any_missing_genetic_traits = yes
+
+			# random = { # TODO: seed some genetic traits into starter characters
+			# 	# will want to have checks to see they dont already have a genetic trait
+			# }
+		}
+	}
+}
+
+give_starter_elf_trait = {
+	if = {
+		limit = {
+			religion = religion:aeluran
+			NOT = { has_character_modifier = elf_tier_1 }
+		}
+
+		assign_genetic_trait = { trait = elf_tier_1 }
+	}
+}
+
+# Used to give Setup characters traits that correspond to their character modifiers
+assign_any_missing_genetic_traits = {
+	assign_genetic_trait_from_modifier = { trait = elf_tier_1 }
+	assign_genetic_trait_from_modifier = { trait = elf_tier_2 }
+	assign_genetic_trait_from_modifier = { trait = elf_tier_3 }
+	assign_genetic_trait_from_modifier = { trait = royal_elf_valerith }
+	assign_genetic_trait_from_modifier = { trait = royal_elf_serelion }
+	assign_genetic_trait_from_modifier = { trait = royal_elf_gwynthorn }
+	assign_genetic_trait_from_modifier = { trait = royal_elf_thundarael }
+	assign_genetic_trait_from_modifier = { trait = royal_elf_daelurin }
+	assign_genetic_trait_from_modifier = { trait = royal_elf_lormelis }
+
+	assign_genetic_trait_from_modifier = { trait = beauty_bad_1 }
+	assign_genetic_trait_from_modifier = { trait = beauty_bad_2 }
+	assign_genetic_trait_from_modifier = { trait = beauty_bad_3 }
+	assign_genetic_trait_from_modifier = { trait = beauty_good_1 }
+	assign_genetic_trait_from_modifier = { trait = beauty_good_2 }
+	assign_genetic_trait_from_modifier = { trait = beauty_good_3 }
+	assign_genetic_trait_from_modifier = { trait = intellect_bad_1 }
+	assign_genetic_trait_from_modifier = { trait = intellect_bad_2 }
+	assign_genetic_trait_from_modifier = { trait = intellect_bad_3 }
+	assign_genetic_trait_from_modifier = { trait = intellect_good_1 }
+	assign_genetic_trait_from_modifier = { trait = intellect_good_2 }
+	assign_genetic_trait_from_modifier = { trait = intellect_good_3 }
+	assign_genetic_trait_from_modifier = { trait = physique_bad_1 }
+	assign_genetic_trait_from_modifier = { trait = physique_bad_2 }
+	assign_genetic_trait_from_modifier = { trait = physique_bad_3 }
+	assign_genetic_trait_from_modifier = { trait = physique_good_1 }
+	assign_genetic_trait_from_modifier = { trait = physique_good_2 }
+	assign_genetic_trait_from_modifier = { trait = physique_good_3 }
+	assign_genetic_trait_from_modifier = { trait = pure_blooded }
+	assign_genetic_trait_from_modifier = { trait = fecund }
+	assign_genetic_trait_from_modifier = { trait = giant }
+}
+
+assign_genetic_trait_from_modifier = {
+	if = {
+		limit = {
+			has_character_modifier = $trait$
+			NOT = {
+				is_target_in_variable_list = {
+					name = genetic_traits
+					target = trait:$trait$
+				}
+			}
+		}
+
+		add_to_variable_list = {
+			name = genetic_traits
+			target = trait:$trait$
+		}
+	}
+}
+
+convert_and_assimilate_elf_pops_effect = {
+	culture_group:elven_culture_group = {
+		every_country_in_culture_group = {
+			# These need to be seperate every_pop loops for some reason
+			every_pop = {
+				change_pop_religion = religion:aeluran
+			}
+			every_pop = {
+				change_pop_culture = prev.culture
+			}
+		}
+	}
+}

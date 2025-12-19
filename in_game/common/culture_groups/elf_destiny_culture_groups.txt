@@ -1,0 +1,7 @@
+﻿elven_culture_group = {
+	country_modifier = {
+		# modifier when Primary Culture is a culture with this culture group
+
+		# CTD IF YOU TRY TO PUT ANYTHING IN HERE
+	}
+}

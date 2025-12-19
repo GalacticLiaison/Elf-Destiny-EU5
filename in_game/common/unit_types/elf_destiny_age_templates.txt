@@ -1,0 +1,30 @@
+﻿# We may instead of using age to increase power level,
+
+# Aeluran Magi => Cleric Power
+# Calaquendi = > Calaquendi Power
+
+
+# a_age_1_traditions_magi = {
+# 	category = army_magi
+# 	buildable = no
+# 	max_strength = 0.1
+# 	combat_power = 1
+
+
+# 	maintenance_demand =  early_magi_maintenance
+# 	construction_demand = early_magi_construction
+# 	age = "age_1_traditions"
+# }
+
+# a_age_1_traditions_magi_artillery = {
+# 	category = army_magi_artillery
+# 	buildable = no
+# 	max_strength = 0.01
+# 	combat_power = 2
+	
+# 	bombard_efficiency = 0.1
+	
+# 	artillery_barrage = 1
+
+# 	age = "age_1_traditions"
+# }

@@ -1,0 +1,89 @@
+﻿# right to serve on cabinet as special aeluran advisor
+
+# update UI to color aadvosr cabinet slot red
+# have this slot auto-assigned by "the matriarch"
+# - if eligible character in realm, pick them
+# - if not generate a new one and assign her
+
+aeluran_advisors = {
+	estate = clergy_estate
+
+	potential = {
+		religion ?= {
+			group ?= religion_group:elven_group
+		}
+	}
+		
+	country_modifier = {
+		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_clergy_estate_power = 0.3
+		government_size = 1
+		country_cabinet_efficiency = 0.20
+		monthly_towards_centralization = societal_value_monthly_move
+		monthly_religious_influence = 0.1
+		allow_female_cabinet = yes
+	}
+}
+
+
+
+# right to take daughters to be trained
+daughters_of_the_red = {
+	estate = clergy_estate
+
+	potential = {
+		religion ?= {
+			group ?= religion_group:elven_group
+		}
+	}
+		
+	country_modifier = {
+		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_clergy_estate_power = 0.3
+		global_noble_estate_power = -0.2
+		noble_estate_target_satisfaction = -0.2
+		monthly_towards_traditionalist = societal_value_monthly_move
+		monthly_towards_spiritualist = societal_value_minor_monthly_move
+		monthly_religious_influence = 0.1
+	}
+}
+
+# Aeluran Sisters serve as the judges in your courts
+aeluran_judiciary = {
+	estate = clergy_estate
+
+	potential = {
+		religion ?= {
+			group ?= religion_group:elven_group
+		}
+	}
+		
+	country_modifier = {
+		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_clergy_estate_power = 0.3
+		global_crown_estate_power = -0.1
+		monthly_religious_influence = 0.1
+		stability_decay = -0.00025
+		monthly_towards_centralization = societal_value_monthly_move
+	}
+}
+
+# Aeluran sisters matchmaking characters
+aeluran_matchmaking = {
+	estate = clergy_estate
+
+	potential = {
+		religion ?= {
+			group ?= religion_group:elven_group
+		}
+	}
+		
+	country_modifier = {
+		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_clergy_estate_power = 0.3
+		stability_decay = -0.00025
+		monthly_towards_aristocracy = societal_value_monthly_move
+		monthly_towards_traditionalist = societal_value_monthly_move
+		monthly_religious_influence = 0.1
+	}
+}

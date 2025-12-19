@@ -1,0 +1,4 @@
+﻿calaquendi_demand = {
+	hidden = yes
+	category = pop_needs
+}

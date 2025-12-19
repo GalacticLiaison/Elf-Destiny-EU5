@@ -1,0 +1,20 @@
+﻿aeluran = { 
+	# color = { 0.498 0.456 0.894 1 }
+	color = rgb { 136 8 8 }
+	group = elven_group
+
+	has_religious_head = yes
+	has_religious_influence = yes
+	religious_aspects = 3
+
+	important_country = DWD
+
+	definition_modifier = {
+		diplomatic_range_modifier = 0.50
+		allow_female_cabinet = yes
+	}
+
+	tags = {
+		elf_religion_gfx
+	}
+}

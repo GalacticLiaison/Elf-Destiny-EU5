@@ -1,0 +1,51 @@
+﻿#root = country, scope:character = newborn
+on_character_birth = {
+	on_actions = {
+		assign_elf_trait
+		assign_elf_bloodline_traits
+	}
+}
+
+assign_elf_trait = {
+	trigger = {
+		OR = {
+			scope:character.father = {
+				is_any_elf_type = yes
+			}
+			scope:character.mother = {
+				is_any_elf_type = yes
+			}
+		}
+	}
+	effect = {
+		scope:character = {
+			assign_elf_race_trait_effect = yes
+		}
+	}
+}
+
+assign_elf_bloodline_traits = {
+	trigger = {
+		OR = {
+			scope:character.father = {
+				has_any_elven_bloodline = yes
+			}
+			scope:character.mother = {
+				has_any_elven_bloodline = yes
+			}
+		}
+	}
+	effect = {
+		scope:character = {
+			assign_bloodline_traits_at_birth_effect = yes
+		}
+	}
+}
+
+assign_genetic_traits = {
+	effect = {
+		scope:character = {
+			genetic_inheritance_effect = yes
+		}
+	}
+}

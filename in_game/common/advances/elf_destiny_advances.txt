@@ -1,0 +1,41 @@
+﻿calaquendi_sendy = { 
+	age = age_1_traditions
+	requires = mining_advance
+
+	starting_technology_level = 1
+	research_cost = 0.5
+
+	# depth = 0
+
+	potential = {
+
+	}
+	allow = {
+
+	}
+	unlock_levy = levy_calaquendi
+	unlock_levy = levy_a_early_fey_archers
+}
+
+
+
+# elf_tier_3 = { 
+# 	age = age_1_traditions
+# 	requires = mining_advance
+
+# 	starting_technology_level = 1
+# 	research_cost = 0.5
+
+# 	# depth = 0
+
+# 	potential = {
+# 		always = no
+# 	}
+# 	allow = {
+# 		always = no
+# 	}
+# }
+
+
+
+

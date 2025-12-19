@@ -1,0 +1,177 @@
+﻿accessory_genes = {
+
+	INJECT:headwear = {
+
+		elf_headwear_all= {
+			index = 55
+			male = {
+				1 = empty
+				# 1 = male_headwear_german_common_bycocket
+				# 1 = male_headwear_german_common_bonnet # maybe
+				# 1 = male_headwear_german_berret_plain # maybe
+				# 1 = male_headwear_german_berret_black # maybe
+				# 1 = male_headwear_german_tophat_jewellery
+				# 1 = male_headwear_german_low_barett
+				# 1 = male_headwear_german_noble_velvet_hat
+				# 1 = male_headwear_german_elector_cap_ermine
+				# 1 = male_headwear_german_elector_cap_plates
+				# 1 = male_headwear_german_high_plain_berret_right # maybe
+				# 1 = male_headwear_german_high_plain_berret_left
+				# 1 = male_headwear_german_high_stripped_berret_right
+				# 1 = male_headwear_german_high_stripped_berret_left
+				# 1 = male_headwear_german_high_landsknecht_barett
+				# 1 = male_headwear_german_high_tall_round_hat
+				1 = male_headwear_german_noble_velvet_hat_feather # maybe!
+				# 1 = male_headwear_german_bishop_mitre
+				# 1 = male_headwear_german_archbishop_mitre
+				# 1 = male_headwear_papal_tiara
+				# 1 = male_headwear_german_soldier_round_kettle_helmet
+				# 1 = male_headwear_german_soldier_round_kettle_helmet_nocloth
+				# 1 = male_headwear_german_soldier_morion_cabasset_helmet # maybe as armor
+				# 1 = male_headwear_german_soldier_skull_cap_helmet
+				# 1 = male_headwear_german_soldier_sturmhaube_helmet
+				# 1 = male_headwear_german_soldier_burgonet_helmet
+				# 1 = male_headwear_german_soldier_burgonet_helmet_dark
+				# 1 = male_headwear_german_soldier_landsknetch_helmet_1
+				# 1 = male_headwear_german_soldier_landsknetch_helmet_fabric
+				# 1 = male_headwear_german_soldier_landsknetch_helmet_fabric_2
+				# 1 = male_headwear_german_soldier_noble_burgonet_helmet
+				# 1 = male_headwear_german_soldier_noble_burgonet_helmet_dark
+				# 1 = male_headwear_german_soldier_noble_burgonet_helmet_feather_dark # maybe as armor
+				# 1 = male_headwear_german_soldier_noble_burgonet_helmet_feather
+				# 1 = male_headwear_bohemian_royal_crown # Crown of Bohemia # possible crown
+				# 1 = male_headwear_french_royal_crown # Crown of François Ier
+				# 1 = male_headwear_english_royal_crown # Crown of Henry VIII
+				# 1 = male_headwear_german_royal_crown_duke_small
+				# 1 = male_headwear_german_royal_crown_hair
+				# 1 = male_headwear_german_royal_crown_duke_hair
+				# 1 = male_headwear_german_royal_crown_duke_big
+				# 1 = male_headwear_german_generic_crown # best IMO
+
+				# 1 = male_headwear_syrian_commoner_felt_cap
+				# 1 = male_headwear_syrian_commoner_felt_turban
+				# 1 = male_headwear_syrian_peasant_turban_fez
+				# 1 = male_headwear_syrian_low_pointy_turban
+				# 1 = male_headwear_syrian_high_leather_turban
+				# 1 = male_headwear_syrian_high_tall_turban
+				# 1 = male_headwear_syrian_royal_turban
+				# 1 = male_headwear_syrian_imperial_feather_turban
+				# 1 = male_headwear_syrian_soldier_helmet_turban
+				# 1 = male_headwear_syrian_turban_helmet
+				# 1 = male_headwear_syrian_imam_flat_turban
+
+				# 1 = male_headwear_chinese_commoner_wangjin
+				# 1 = male_headwear_chinese_commoner_wangjin_open
+				# 1 = male_headwear_chinese_peasant_cap
+				# 1 = male_headwear_chinese_low_squaredjin # maybe
+				# 1 = male_headwear_chinese_low_straw_hat
+				# 1 = male_headwear_chinese_high_wushamao
+				# 1 = male_headwear_chinese_royal_futou
+				# 1 = male_headwear_chinese_soldier_kettle_helmet
+				# 1 = male_headwear_chinese_wings_feather_helmet
+
+				# 1 = male_headwear_aztec_low_turban
+				# 1 = male_headwear_aztec_high_triangle_band
+				# 1 = male_headwear_aztec_royal_circlet
+				# 1 = male_headwear_aztec_imperial_tall_gem #....maybe
+				# 1 = male_headwear_aztec_war_skull_mask
+				# 1 = male_headwear_aztec_clergy_twisted
+
+				# 1 = male_headwear_iroquois_low_headband
+				# 1 = male_headwear_iroquois_low_headband_mirrored
+				# 1 = male_headwear_iroquois_low_headband_feathered
+				# 1 = male_headwear_iroquois_low_feathered_bun
+				# 1 = male_headwear_iroquois_high_feathered_bun
+				# 1 = male_headwear_iroquois_royal_leather_crown
+				# 1 = male_headwear_iroquois_imperial_silver_crown	
+				# 1 = male_headwear_iroquois_falsefacemask
+
+				# 1 = male_headwear_ashanti_low_leopard_cap
+				# 1 = male_headwear_ashanti_high_seashells_headband
+				# 1 = male_headwear_ashanti_royal_cap # maybe
+				# 1 = male_headwear_ashanti_imperial_feathered_horns
+				# 1 = male_headwear_ashanti_shaman_golden_cap
+				# 1 = male_headwear_ashanti_war_scale_cap
+
+				# 1 = male_headwear_deccan_commoner_turban
+				# 1 = male_headwear_deccan_low_kulavi
+				# 1 = male_headwear_deccan_high_circlet
+				# 1 = male_headwear_deccan_royal_kirita
+				# 1 = male_headwear_deccan_imperial_chera
+				# 1 = male_headwear_deccan_clergy_veil
+				# 1 = male_headwear_deccan_war_peti_helmet
+
+				# 1 = male_headwear_jewish_clergy_tzitz
+				1 = male_headwear_paradox_crown
+			}
+			female = {
+				1 = empty
+				# 1 = female_headwear_german_nun_veil_crown
+				# 1 = female_german_low_goldhaube # USE
+				# 1 = female_german_low_goldhaube_nocap  # USE
+				# 1 = female_german_noble_hood_headwear # test with better hair # USE
+				# 1 = female_german_noble_hood_headwear_pearls # USE
+				# 1 = female_german_flathat_feathers # I like enough, even if not elvish # USE
+				# 1 = female_headwear_english_royal_crown # Crown of Elizabeth I
+				# 1 = female_headwear_german_nun_veil
+
+				# 1 = female_headwear_syrian_noble_turban_scarf # maybe for aeluran
+
+				# 1 = female_headwear_aztec_low_pearls_circlet # I kind of like TBH # USE
+				# 1 = female_headwear_aztec_royal_golden_crown
+
+				# 1 = female_headwear_ashanti_low_headwrap
+
+				# 1 = female_headwear_deccan_low_veil # YES for aeluran # USE
+				1 = male_headwear_paradox_crown
+			}
+			boy = {
+				1 = empty
+				# 1 = ger_child_flathat_a
+				# 1 = child_german_headwear_low_skull_cap
+				1 = child_german_headwear_high_square_hat # maybe
+				# 1 = child_german_headwear_high_floral_tophat
+				# 1 = child_headwear_english_royal_crown
+				# 1 = child_headwear_bohemian_royal_crown
+				# 1 = child_headwear_deccan_low_stripped_hat
+			}
+			 girl = {
+				1 = empty
+				# 1 = child_german_headwear_low_closed_coif
+				# 1 = child_german_headwear_high_veil_coif
+				# 1 = child_german_headwear_high_floral_tophat
+				# 1 = child_girl_headwear_english_royal_crown
+			}
+			adolescent_boy = boy
+			adolescent_girl = girl
+			infant = {}
+		}
+
+		elf_headwear_royal= {
+			index = 56
+			male = {
+				# 1 = empty
+				# 1 = male_headwear_german_noble_velvet_hat_feather # maybe!
+				1 = male_headwear_paradox_crown
+			}
+			female = {
+				# 1 = empty
+				1 = female_headwear_paradox_crown
+			}
+			boy = {
+				1 = empty
+				1 = child_german_headwear_high_square_hat # maybe
+			}
+			 girl = {
+				1 = empty
+			}
+			adolescent_boy = boy
+			adolescent_girl = girl
+			infant = {}
+		}
+
+	}
+
+	# Maybe headwear_additive too
+
+}

@@ -1,0 +1,39 @@
+﻿elven_capital = {
+	seat_of_the_fey_lord = 1
+	sanctum = 1
+	temple = 1
+	tools_guild = 1
+	weapon_guild = 1
+	winery = 1
+	pottery_guild = 1
+	marketplace = 1
+	sergeantry = 1
+}
+
+elven_town = {
+	winery = 1
+	temple = 1
+	tools_guild = 1
+	weapon_guild = 1
+	pottery_guild = 1
+	marketplace = 1
+}
+
+tribal_elven_town = {
+	temple = 1
+	pottery_guild = 1
+	weapon_guild = 1
+	sanctum = 1
+}
+
+tribal_elven_capital = {
+	temple = 1
+	seat_of_the_fey_lord = 1
+	sanctum = 1
+	temple = 1
+}
+
+rural_elven_forest_village = {
+	forest_village = 2
+	market_village = 1
+}

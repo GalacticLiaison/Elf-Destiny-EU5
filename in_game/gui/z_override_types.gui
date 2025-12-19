@@ -1,0 +1,621 @@
+# template trait_item {
+# 	tooltipwidget = { using = Trait_tooltip	}
+
+# 	icon = {
+# 		allow_outside = yes
+# 		block "trait_item_size" {
+# 			size = { 40 40 }
+# 		}
+		
+# 		parentanchor = center
+# 		# gfx/interface/icons/traits/blue_frame.dds
+# 		texture = "[GetTraitBackground(Trait.Self)]"
+# 		# glow = {
+# 		# 	name = "drop_shadow"
+# 		# 	glow_radius = 3
+# 		# 	color = {0.0 0.0 0.0 1.0}
+# 		# 	alpha = 0.4
+# 		# }
+
+# 		# Trait.GetFlavor.GetName
+
+# 		glow = {
+# 			# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+# 			visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+
+# 			name = "glowing"
+# 			glow_radius = 9
+# 			color = { 0.9 0.9 0.6 1 }
+# 			alpha = 0.4
+# 		}
+# 		using = Animation_Glow_Pulse
+# 	}
+
+# 	icon = {
+# 		allow_outside = yes
+# 		block "trait_item_size" {
+# 			size = { 40 40 }
+# 		}
+
+# 		parentanchor = center
+# 		texture = "[GetTraitIcon(Trait.Self)]"
+# 	}
+
+# }
+
+template Animation_Glow_Pulse
+{
+    state = {
+        trigger_on_create = yes
+
+        name = max_glow
+        next = min_glow
+        duration = 1.5
+        using = Animation_Curve_Default
+
+        glow_alpha = 0.8
+    }
+
+    state = {
+        name = min_glow
+        next = max_glow
+        duration = 1.6
+        using = Animation_Curve_Default
+
+        glow_alpha = 0.4
+    }
+}
+
+
+types override_types {
+	type "character_header" = widget {
+		scissor = yes
+		layoutpolicy_horizontal = expanding
+		size = { -1 220 }
+
+		hbox = {
+			ecs_scene_viewer_widget =  {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				name = "event_window_scene_viewer"
+				scene = "[CharacterLateralview.GetCharacter.GenerateSceneDesc]"
+			}
+		}
+
+		container = {
+			parentanchor = bottom|hcenter
+
+			portrait_standard_full_body_center_button = {
+				parentanchor = bottom|hcenter
+
+				position = { 0 -10 }
+				size = { 250 220 }
+			}
+		}
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			
+
+			background = {
+				using = color_dark_blue_texture
+				alpha = 1
+
+				margin_top = -140
+
+				modify_texture = {
+					using = bg_fade_vertical_up_mask_texture
+					blend_mode = alphamultiply
+					alpha = 1
+				}
+			}
+
+			### RULER TITLE, COAT, SKILLS
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				margin = { 5 5 }
+
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						spacing = 8
+
+						expand = {}
+
+						# Modifiers
+						widget = {
+							size = { 95 48 }
+							hbox = {
+								spacing = 4
+								# CHARACTER MODIFIERS
+								OneOrSeveralTimedModifiers = {
+									datacontext = "[CharacterLateralview.GetCharacter.GetTimedModifierOwner]"
+								}
+							}
+						}
+					}
+
+
+					expand = {}
+
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						spacing = 8
+						size = { 40 40 }
+						
+						hbox = {
+							# using = bg_paper_card
+							# using = bg_cabinet_card_frame
+							# datamodel = "[CharacterLateralview.GetCharacter.GetTimedModifierOwner.GetModifiers]"
+							datamodel = "[CharacterLateralview.GetCharacter.MakeScope.GetList('genetic_traits')]"
+							item = {
+								widget = {
+									size = { 40 40 }
+
+									# text_single = {
+									# 	minimumsize = { -1 26 }
+									# 	align = nobaseline|hcenter
+									# 	# text = "[Concatenate(Concatenate('gfx/interface/icons/genetic_traits/', Scope.GetFlagName), '.dds')]"
+									# 	text = "[Scope.Trait.GetName]"
+
+									# }
+									icon = {
+										size = { 100% 100% }
+										# using = trait_item
+										parentanchor = center
+
+										# texture = "gfx/interface/icons/modifiers/elf_tier_3.dds"
+										# texture = "[Concatenate(Concatenate('gfx/interface/icons/genetic_traits/', Scope.GetFlagName), '.dds')]"
+										# texture = "[TimedModifier.GetModifier.GetIcon]"
+										texture = "[GetTraitIcon(Scope.Trait.Self)]"
+
+										# GetModifier(
+
+										glow = {
+											# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+											visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+
+											name = "glowing"
+											glow_radius = 2.5
+											color = { 0.9 0.9 0.6 1 }
+											alpha = 0.4
+										}
+										using = Animation_Glow_Pulse
+
+
+										tooltipwidget = {
+											ContextualTooltipType = {
+												blockoverride "title_text" {
+													text = "[Scope.Trait.GetNameWithNoTooltip]"
+												}
+												
+												blockoverride "title_icon" {
+													icon = {
+														using = tooltip_title_icon_size
+														texture = "[GetTraitIcon(Scope.Trait.Self)]"
+
+														glow = {
+															# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+															visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+
+															name = "glowing"
+															glow_radius = 2.5
+															color = { 0.9 0.9 0.6 1 }
+															alpha = 0.4
+														}
+														using = Animation_Glow_Pulse
+													}
+												}
+
+												blockoverride "concept_link" {
+													text = genetic_trait
+													# text = "[Scope.Trait.GetCategoryTag]"
+												}
+
+												blockoverride "tooltip_content" {
+													TooltipStringPairList = {
+														datacontext = "[StringToStringPairList(Scope.Trait.GetTooltip)]"
+													}
+
+													TooltipFlavorTextBlock = {
+														blockoverride "text" {
+															text = "[Scope.Trait.GetDesc]"
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+
+						expand = {}
+					}
+
+					hbox =  {
+						layoutpolicy_horizontal = expanding
+						# background = {
+						# 	texture = "gfx/interface/component_tiles/square_tile.dds"
+						# 	texture_density = 2
+						# 	alpha = 0.7
+						# 	modify_texture = {
+						# 		using = color_dark_blue_texture
+						# 		blend_mode = normal
+						# 	}
+						# 	modify_texture = {
+						# 		texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_overlay.dds"
+						# 		blend_mode = alphamultiply
+						# 		alpha = 0.9
+						# 	}
+						# }
+						# background = {
+						# 	texture = "gfx/interface/component_tiles/square_tile.dds"
+						# 	texture_density = 2
+						# 	alpha = 0.5
+						# 	modify_texture = {
+						# 		using = color_dark_blue_texture
+						# 		blend_mode = normal
+						# 	}
+						# 	modify_texture = {
+						# 		using = overlay_cloth_texture
+						# 		blend_mode = overlay
+						# 		alpha = 0.2
+						# 	}
+						# 	modify_texture = {
+						# 		texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_overlay.dds"
+						# 		blend_mode = alphamultiply
+						# 		alpha = 0.7
+						# 	}
+						# }
+
+						using = bg_paper_card
+						using = bg_cabinet_card_frame
+
+						widget = {
+							size = {468 40}
+							
+							# TRAITS
+							widget = {
+								size = {196 40}
+								parentanchor = left|vcenter
+
+								widget = {
+									size = {196 40}
+									parentanchor = right|vcenter
+
+									hbox = {
+										layoutpolicy_horizontal = expanding
+										margin_right = 10
+										spacing = 7
+
+										expand = {}
+
+										# Ruler view
+										hbox = {
+											datamodel = "[CharacterLateralview.GetTraits]"
+											item = {
+												widget = {
+													size = { 40 40 }
+													icon = {
+														size = { 100% 100% }
+														using = trait_item
+														parentanchor = center
+													}
+												}
+											}
+										}
+
+										hbox = {
+											spacing = 7
+											datamodel = "[CharacterLateralview.GetNextRulerTraits]"
+											item = {
+												widget = {
+													size = { 26 26 }
+													piechart = {
+														tooltipwidget = {
+															SimpleContextualTooltipType = {
+																blockoverride "concept_link" {
+																	text = "[trait|e]"
+																}
+																
+																blockoverride "title_icon" {
+																	icon = {
+																		using = tooltip_title_icon_size
+																		texture = "[GetConceptTexture('ruler_trait')]"
+																	}
+																}
+																lowpriotextcontext =  "[RulerTraitEntry.GetProgressInfo]"
+															}
+														}
+														size = { 26 26 }
+														parentanchor = center
+									
+														using = piechart_angles
+									
+														icon = {
+															texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+															size = { 97% 97% }
+															parentanchor = center
+															color = { 0 0 0 1 }
+														}
+														using = bg_circle_piechart
+									
+														pieslice = {
+															texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+															value = "[RulerTraitEntry.GetProgressToNextTrait]"
+															using = color_value_progress_blue
+														}
+									
+														pieslice = {
+															texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+															value = "[Subtract_float('(float)100.0', RulerTraitEntry.GetProgressToNextTrait)]"
+															using = color_value_progress_gray
+														}
+													}
+									
+													icon = {
+														size = { 19 19 }
+														parentanchor = center
+														texture = "gfx/interface/icons/ruler_default.dds"
+														texture_density = 2
+									
+														background = {
+															texture = "gfx/interface/icons/traits/background/trait_bg.dds"
+															texture_density = 2
+															margin = { -3 -3 }
+															using = color_mid_blue
+									
+															modify_texture = {
+																using = overlay_stone_texture
+																blend_mode = overlay
+																alpha = 0.8
+															}
+														}
+													}
+												}
+											}
+										}
+
+										hbox = {
+											datamodel = "[CharacterLateralview.GetActions]"
+											item = {
+												icon = {
+													visible = "[CharacterActionItem.IsCharacterEducation]"
+													allow_outside = yes
+													size = { 40 40 }
+													texture = "gfx/interface/icons/traits/background/education_background.dds"
+													datacontext = "[CharacterActionItem.GetUIAction]"
+	
+													button = {
+														visible = "[ObjectsEqual(CharacterLateralview.GetCharacter.GetCourtCountry, Player.Self)]"
+														parentanchor = center
+														using = button_action_provider_base
+														datacontext = "[Character.GetEducation]"
+														tooltipwidget = {
+															using = ChildEducation_tooltip
+														}
+	
+														size = { 40 40 }
+														texture = "[GetEducationIcon(Character.GetEducation)]"
+													}
+	
+													icon = {
+														visible = "[Not(ObjectsEqual(CharacterLateralview.GetCharacter.GetCourtCountry, Player.Self))]"
+														parentanchor = center
+														datacontext = "[Character.GetEducation]"
+														tooltipwidget = {
+															using = ChildEducation_tooltip
+														}
+														
+														size = { 40 40 }
+														texture = "[GetEducationIcon(Character.GetEducation)]"
+													}
+												}
+											}
+										}
+									}
+								}	
+							}
+
+							# DYNASTY
+							widget = {
+								size = {76 30}
+								parentanchor = center
+
+								widget = {
+									size = {60 30}
+									parentanchor = center
+
+									widget = {
+										size = { 15 20 }
+										parentanchor = top|left
+										position = {5 -3}
+	
+										icon = {
+											size = { 15 20 }
+											texture = "gfx/interface/component_tiles/dynasty_tree/dynasty_coa_flavor.dds"
+											texture_density = 2
+											parentanchor = top|left
+											position = {-7 4}
+											
+											modify_texture = {
+												using = color_dark_brown_texture
+												blend_mode = multiply
+											}
+							
+											modify_texture = {
+												using = overlay_cloth_texture
+												blend_mode = overlay
+												alpha = 0.3
+											}
+							
+											glow = {
+												name = "drop_shadow"
+												glow_radius = 3
+												color = {0.0 0.0 0.0 1.0}
+												alpha = 0.3
+											}
+										}
+										icon = {
+											size = { 15 20 }
+											texture = "gfx/interface/component_tiles/dynasty_tree/dynasty_coa_flavor_frame.dds"
+											texture_density = 2
+											parentanchor = top|left
+											position = {-7 4}
+											
+											modify_texture = {
+												using = color_new_gold_texture
+												blend_mode = multiply
+											}
+							
+											modify_texture = {
+												using = mask_scratches_texture
+												blend_mode = overlay
+												alpha = 0.3
+											}
+										}
+									}
+
+									widget = {
+										size = {40 30}
+										position = {-7 -0}
+										parentanchor = hcenter|top
+
+										character_label_dynasty = {}
+
+										lowborn_coat_of_arms = {
+											visible = "[Not(Character.HasDynasty)]"
+											position = {7 -1}
+											size = {31 30}
+										}
+									}
+
+									widget = {
+										size = { 15 20 }
+										parentanchor = top|right
+										position = {0 -3}
+	
+										icon = {
+											size = { 15 20 }
+											texture = "gfx/interface/component_tiles/dynasty_tree/dynasty_coa_flavor.dds"
+											texture_density = 2
+											parentanchor = top|right
+											mirror = horizontal
+											position = {-7 4}
+											
+											modify_texture = {
+												using = color_dark_brown_texture
+												blend_mode = multiply
+											}
+							
+											modify_texture = {
+												using = overlay_cloth_texture
+												blend_mode = overlay
+												alpha = 0.3
+											}
+							
+											glow = {
+												name = "drop_shadow"
+												glow_radius = 3
+												color = {0.0 0.0 0.0 1.0}
+												alpha = 0.3
+											}
+										}
+										icon = {
+											size = { 15 20 }
+											texture = "gfx/interface/component_tiles/dynasty_tree/dynasty_coa_flavor_frame.dds"
+											texture_density = 2
+											parentanchor = top|right
+											mirror = horizontal
+											position = {-7 4}
+											
+											modify_texture = {
+												using = color_new_gold_texture
+												blend_mode = multiply
+											}
+							
+											modify_texture = {
+												using = mask_scratches_texture
+												blend_mode = overlay
+												alpha = 0.3
+											}
+										}
+									}
+								}
+							}
+
+							# ABILITIES
+							widget = {
+								size = {196 40}
+								parentanchor = right
+								expand = {}
+
+								hbox = {
+
+									character_abilities = {
+										visible = "[Not(Character.IsArtist)]"
+	
+										blockoverride "abilities_format" {
+											layoutpolicy_vertical = expanding
+											margin = { 7 0 }
+											spacing = 10
+										}
+	
+										blockoverride "ability_icon_size" {
+											size = { 20 20 }
+										}
+	
+										blockoverride "abilities_bg" {
+											background = {
+												texture = "gfx/interface/component_tiles/square_tile.dds"
+												texture_density = 2
+												alpha = 0.1
+												blend_mode = overlay
+												modify_texture = {
+													using = color_black_texture
+													blend_mode = multiply
+												}
+											}
+										}
+									}
+			
+									artist_abilities = {
+										visible = "[Character.IsArtist]"
+
+										blockoverride "abilities_format" {
+											layoutpolicy_vertical = expanding
+											margin = { 7 0 }
+											spacing = 10
+										}
+
+										blockoverride "abilities_bg" {
+											background = {
+												texture = "gfx/interface/component_tiles/square_tile.dds"
+												texture_density = 2
+												alpha = 0.3
+												blend_mode = overlay
+												modify_texture = {
+													using = color_black_texture
+													blend_mode = multiply
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		block "character_header_extra" {}
+	}
+}

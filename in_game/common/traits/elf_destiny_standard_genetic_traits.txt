@@ -1,0 +1,334 @@
+﻿beauty_bad_1 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_bloodline
+	
+	modifier = {
+		global_estate_target_satisfaction = tiny_permanent_target_satisfaction
+		monthly_towards_free_subjects = societal_value_minor_monthly_move
+		peace_offer_fairness = 0.2
+		stability_importance_modifier = 0.1
+
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+beauty_bad_2 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_bloodline
+	
+	modifier = {
+		global_estate_target_satisfaction = tiny_permanent_target_satisfaction
+		monthly_towards_free_subjects = societal_value_minor_monthly_move
+		peace_offer_fairness = 0.2
+		stability_importance_modifier = 0.1
+
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+beauty_bad_3 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_bloodline
+	
+	modifier = {
+		global_estate_target_satisfaction = tiny_permanent_target_satisfaction
+		monthly_towards_free_subjects = societal_value_minor_monthly_move
+		peace_offer_fairness = 0.2
+		stability_importance_modifier = 0.1
+
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+beauty_good_1 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+beauty_good_2 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+beauty_good_3 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+intellect_bad_1= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+intellect_bad_2= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+intellect_bad_3= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+intellect_good_1= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+intellect_good_2= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+intellect_good_3= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+physique_bad_1= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+physique_bad_2= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+physique_bad_3= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+physique_good_1= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+physique_good_2= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+physique_good_3= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+pure_blooded= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+fecund= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+giant= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}

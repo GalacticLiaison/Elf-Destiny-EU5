@@ -1,0 +1,36 @@
+﻿northern_elf_gfx = {
+	priority = 400
+	culture_tag = northern_elf_gfx
+	ethnicities = {
+		70 = european_nordic_blonde_ethnicity
+		25 = european_nordic_brown_hair_ethnicity
+		5 = european_nordic_red_hair_ethnicity
+	}
+}
+
+irish_elf_gfx = {
+	priority = 400
+	culture_tag = irish_elf_gfx
+	ethnicities = {
+		5 = european_nordic_blonde_ethnicity
+		10 = european_nordic_brown_hair_ethnicity
+		75 = european_nordic_red_hair_ethnicity
+		10 = european_west_dark_hair_ethnicity
+	}
+}
+
+roman_elf_gfx = {
+	priority = 400
+	culture_tag = roman_elf_gfx
+	ethnicities = {
+		10 = mediterranean_italian_ethnicity
+	}
+}
+
+elf_gfx = {
+	priority = 450
+	culture_tag = elf_gfx
+	ethnicities = {
+		10 = european_ethnicity
+	}
+}

@@ -1,0 +1,44 @@
+﻿# Does actually work, would need to hide peasants in UI
+monthly_country_pulse = {
+	on_actions = {
+		assign_aeluran_adviser
+	}
+}
+
+# convert_elf_pop = {
+# 	trigger = {
+# 		culture = { has_culture_group = culture_group:elven_culture_group }
+# 	}
+# 	effect = {
+# 		debug_log = "convert_elf_pop?"
+# 		error_log = "convert_elf_pop!!"
+# 		every_pop = {
+# 			limit = {
+# 				pop_type = pop_type:peasants
+# 			}
+# 			change_pop_type = pop_type:elves
+# 		}
+# 	}
+# }
+
+
+assign_aeluran_adviser = {
+	trigger = {
+		ruler = {
+			is_any_elf_type = yes
+		}
+		religion = religion:aeluran
+		has_estate_privilege = estate_privilege:aeluran_advisors
+		NOT = {
+			any_cabinet_character = {
+				has_variable = aeluran_adviser
+			}
+		}
+	}
+	effect = {				
+		trigger_event_non_silently = {
+			id = aeluran_events.1
+		}			
+	}
+}
+# add_to_cabinet

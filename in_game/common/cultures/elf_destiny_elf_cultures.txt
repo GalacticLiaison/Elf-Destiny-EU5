@@ -1,0 +1,103 @@
+﻿deepwood_elven_culture = {
+	language = nadene_language
+	
+	color = { 0.168 0.556 0.854 1 }
+	
+	tags = { elf_gfx }
+	
+	# Could make all humans dislike
+	opinions = {
+	}
+
+	country_modifier = {
+		# modifier when country's Primary Culture is this
+		global_peasants_desired_pop_scaled = -1
+		global_peasants_desired_pop = -1
+		global_peasants_migration_allowed = no
+	}
+
+	culture_groups = {
+		elven_culture_group
+	}
+}
+
+tuatha_de_danann_culture = {
+	language = nadene_language
+	
+	color = { 0.268 0.556 0.854 1 }
+	
+	tags = { elf_gfx irish_gfx }
+	
+	# Could make all humans dislike
+	opinions = {
+	}
+
+	culture_groups = {
+		elven_culture_group
+	}
+}
+
+romaviri_culture = {
+	language = nadene_language
+	
+	color = { 0.368 0.556 0.854 1 }
+	
+	tags = { elf_gfx roman_elf_gfx }
+	
+	# Could make all humans dislike
+	opinions = {
+	}
+
+	culture_groups = {
+		elven_culture_group
+	}
+}
+
+alfar_culture = {
+	language = nadene_language
+	
+	color = { 0.468 0.556 0.854 1 }
+	
+	tags = { elf_gfx}
+	
+	# Could make all humans dislike
+	opinions = {
+	}
+
+	culture_groups = {
+		elven_culture_group
+	}
+}
+
+astrion_culture = {
+	language = nadene_language
+	
+	color = { 0.568 0.556 0.854 1 }
+	
+	tags = { elf_gfx}
+	
+	# Could make all humans dislike
+	opinions = {
+	}
+
+	culture_groups = {
+		elven_culture_group
+	}
+}
+
+atlareth_culture = {
+	language = nadene_language
+	
+	color = { 0.668 0.556 0.854 1 }
+	
+	tags = { elf_gfx}
+	
+	# Could make all humans dislike
+	opinions = {
+	}
+
+	culture_groups = {
+		elven_culture_group
+	}
+}
+

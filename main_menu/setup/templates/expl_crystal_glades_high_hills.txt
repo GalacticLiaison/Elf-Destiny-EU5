@@ -1,0 +1,9 @@
+discovered_regions = {
+	west_siberia_region
+	russian_region
+	khorasan_region
+	steppes_region
+	xinjiang_region 
+	mongolia_region
+	east_siberia_region
+}

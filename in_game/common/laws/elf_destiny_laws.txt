@@ -1,0 +1,64 @@
+﻿INJECT_OR_CREATE:marriage_law = {
+	elven_marriage = {
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = yes
+		}
+		country_modifier = {
+			female_spouses = 4
+			male_spouses = 1
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+}
+
+INJECT_OR_CREATE:legal_code_law = {
+	elven_law_policy = {
+		potential = {
+			OR = {
+				capital.continent = continent:europe
+				religion.group = religion_group:christian
+				culture = { has_culture_group = culture_group:elven_culture_group }
+			}
+		}
+		allow = {
+			OR = {
+				has_embraced_institution = institution:legalism
+				culture = { has_culture_group = culture_group:elven_culture_group }
+			}
+		}
+		country_modifier = {
+			monthly_towards_centralization = societal_value_monthly_move
+			stability_cost = -0.2
+			tolerance_heathen = -1
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+}
+
+human_citizens = {
+	law_category = religious
+	potential = {
+		culture = { has_culture_group = culture_group:elven_culture_group }
+	}
+
+	no_humans = {
+		country_modifier = {
+			global_peasants_desired_pop_scaled = -9999
+			global_peasants_migration_allowed = no
+		}
+		estate_preferences = {
+			calaquendi_estate
+			nobles_estate
+		}
+		years = 2
+	}
+}

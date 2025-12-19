@@ -1,0 +1,38 @@
+﻿aeluran_sister = {
+	category = religious_figure
+
+	allow = {
+		is_female = yes
+		religion = religion:aeluran
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+aeluran_matron = {
+	category = religious_figure
+
+	allow = {
+		is_female = yes
+		religion = religion:aeluran
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+aeluran_matriarch = {
+	category = religious_figure
+
+	allow = {
+		is_female = yes
+		religion = religion:aeluran
+	}
+
+	chance = {
+		base = 0
+	}
+}

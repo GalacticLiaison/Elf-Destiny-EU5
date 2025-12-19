@@ -1,0 +1,217 @@
+﻿# Mallorn Tree Grove
+# A collection of ancient mallorn trees. Only those who have seen the light of both Trees are permitted to sit among them; Thrones rise on living roots to whatever height their lord desires.
+
+mallorn_tree_grove = {
+	category = estate_category
+	is_foreign = no
+	max_levels = 1
+
+	pop_type = nobles
+	employment_size = estate_peasants_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	
+	estate = calaquendi_estate
+	
+	build_time = estate_build_time
+	
+	remove_if = {
+		elf_building_removal_trigger = yes
+	}
+	
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = estate_construct_building
+	
+	modifier = {
+		local_calaquendi_desired_pop = 0.03
+	}
+	
+	graphical_tags = { small_religious }
+}
+
+# Baths of Starlight
+# A marble pool filled not with water but with captured liquid starlight that warms the body and slows the fading of the spirit. Attendants pour it from phials of the purest silima.
+
+baths_of_starlight = {
+	category = estate_category
+	is_foreign = no
+	max_levels = 1
+
+	pop_type = nobles
+	employment_size = estate_peasants_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	
+	estate = calaquendi_estate
+	
+	build_time = estate_build_time
+
+	remove_if = {
+		elf_building_removal_trigger = yes
+	}
+	
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = estate_construct_building
+	
+	modifier = {
+		local_calaquendi_desired_pop = 0.03
+	}
+	
+	graphical_tags = { small_religious }
+}
+
+
+# Perfume garden of Valinor
+# A terraced garden where every flower brought from Aman still grows. The mingled scents are so potent that mortals fall into blissful sleep for days; Calaquendi breathe it like wine.
+
+perfume_garden_of_valinor = {
+	category = estate_category
+	is_foreign = no
+	max_levels = 1
+
+	pop_type = nobles
+	employment_size = estate_peasants_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	
+	estate = calaquendi_estate
+	
+	build_time = estate_build_time
+	
+	remove_if = {
+		elf_building_removal_trigger = yes
+	}
+
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = estate_construct_building
+	
+	modifier = {
+		local_calaquendi_desired_pop = 0.03
+	}
+	
+	graphical_tags = { small_religious }
+}
+
+# Wine-Cellar of the Elder Days
+# A subterranean vault where amphorae from the feasts of the Valar are still sealed. One sip grants memories of the Noontide of Valinor; only the greatest lords are offered a single cup in a lifetime.
+
+wine_cellar_of_elder_days = {
+	category = estate_category
+	is_foreign = no
+	max_levels = 1
+
+	pop_type = nobles
+	employment_size = estate_peasants_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	
+	estate = calaquendi_estate
+	
+	build_time = estate_build_time
+
+	remove_if = {
+		elf_building_removal_trigger = yes
+	}
+	
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = estate_construct_building
+	
+	modifier = {
+		local_calaquendi_desired_pop = 0.03
+	}
+	
+	graphical_tags = { small_religious }
+}
+
+# Feasting Hall of the Trees
+# A vaulted hall whose ceiling is one living mallorn canopy of gold and silver leaves. Tables are white stone inlaid with gems in the shape of the Two Trees; food and wine never diminish while the feast-song lasts.
+
+feasting_hall_of_the_trees = {
+	category = estate_category
+	is_foreign = no
+	max_levels = 1
+
+	pop_type = nobles
+	employment_size = estate_peasants_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	
+	estate = calaquendi_estate
+	
+	build_time = estate_build_time
+
+	remove_if = {
+		elf_building_removal_trigger = yes
+	}
+	
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = estate_construct_building
+	
+	modifier = {
+		local_calaquendi_desired_pop = 0.03
+	}
+	
+	graphical_tags = { small_religious }
+}
+
+# Grand Archives
+# A great repository of lore and wisdom preserved and protected.
+
+grand_archives = {
+	category = estate_category
+	is_foreign = no
+	max_levels = 1
+
+	pop_type = nobles
+	employment_size = estate_peasants_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	
+	estate = calaquendi_estate
+	
+	build_time = estate_build_time
+
+	remove_if = {
+		elf_building_removal_trigger = yes
+	}
+	
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = estate_construct_building
+	
+	modifier = {
+		local_calaquendi_desired_pop = 0.03
+	}
+	
+	graphical_tags = { small_religious }
+}
+

@@ -1,0 +1,45 @@
+# This file is named so that it always loads before other dependent files
+dynasty_manager = {
+
+	thalwyn_dynasty = {
+		name = { name = thalwyn_dynasty }
+		# dynasty_name_type = descendant #descendant/location/location_ancient/patronym
+		home = mezen
+	}
+
+	valerith_dynasty = {
+		name = { name = valerith_dynasty }
+		# dynasty_name_type = descendant #descendant/location/location_ancient/patronym
+		home = pelym
+	}
+
+	daelurin_dynasty = {
+		name = { name = daelurin_dynasty }
+		# dynasty_name_type = descendant
+		home = zalari
+	}
+
+	thundarael_dynasty = {
+		name = { name = thundarael_dynasty }
+		# dynasty_name_type = descendant
+		home = bolshoy_yugan
+	}
+
+	serelion_dynasty = {
+		name = { name = serelion_dynasty }
+		# dynasty_name_type = descendant
+		home = limassol
+	}
+
+	gwynthorn_dynasty = {
+		name = { name = gwynthorn_dynasty }
+		# dynasty_name_type = descendant
+		home = raphoe
+	}
+
+	lormelis_dynasty = {
+		name = { name = lormelis_dynasty }
+		# dynasty_name_type = descendant
+		home = treguier
+	}
+}

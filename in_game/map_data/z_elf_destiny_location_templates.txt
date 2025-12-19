@@ -1,0 +1,419 @@
+﻿# DWD Deepwood
+mezen = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+
+# SYL Sylvael
+bolshaya_laptyuga = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+ust_vym = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+kortkeros = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = iron}
+ukhta = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = wild_game}
+troitsko_pechorsk = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+ust_kulom = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+cherdyn = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = salt}
+nyrob = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = salt}
+vashka = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+
+# BWD Blackwood
+vukyl = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+pechora = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = silver}
+
+# MYT Mytharil
+solikamsk = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = salt}
+kizel = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = iron}
+gubakha = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = copper}
+turyinskiye_rudniki = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+novaya_lyalya = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = stone}
+
+# HIH High Hills 
+angoya = { topography = mountains vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = lumber}
+kutima = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+osenny = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+kachug = { topography = plateau vegetation = woods climate = continental religion = aeluran culture = alfar_culture raw_material = fur}
+zhigalovo = { topography = hills vegetation = woods climate = continental religion = aeluran culture = alfar_culture raw_material = lumber}
+onguren = { topography = hills vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = fish}
+ul_kan = { topography = hills vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = wild_game}
+kichera = { topography = mountains vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fish}
+argada = { topography = mountains vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = wild_game}
+ust_barguzin = { topography = hills vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = fish}
+chitkan = { topography = mountains vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = fur}
+bayangol = { topography = mountains vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = wild_game}
+ust_kut = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+reka_tuba = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+nikolsky_pogost = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+irkutsk_kazachinskoye = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = lumber}
+
+# GPA Giants Palm
+bodaybo = { topography = mountains vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = fur}
+kamniga = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = lumber}
+konkudera = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = lumber}
+kyakhtinskii = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = iron}
+
+# NWD North Wood
+sekili = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+chambeta = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+icheda = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+tokma = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = lumber}
+bur_nepa = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+ika_nepa = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+
+# CYG Crystal Glades
+bolshoy_yugan = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+megion = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+upper_ob = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fish}
+bolshoy_balyk = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+surgut = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+irtysh = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+vasyugan = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+kargasok = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+kolpashevo = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+ust_ishim = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+znamenskoye = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+tara = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+muromtsevo = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+molchanovo = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+ket = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+melnikovo = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+tomsk = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+shish = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+
+# WYD Wyrm's Den
+morphou = { topography = flatland vegetation = woods climate = mediterranean religion = aeluran culture = romaviri_culture raw_material = cotton natural_harbor_suitability = 0.00}
+paphos = { topography = hills vegetation = woods climate = mediterranean religion = aeluran culture = romaviri_culture raw_material = copper natural_harbor_suitability = 0.00}
+limassol = { topography = hills vegetation = woods climate = mediterranean religion = aeluran culture = romaviri_culture raw_material = sugar natural_harbor_suitability = 0.25}
+malta = { topography = flatland vegetation = sparse climate = mediterranean religion = aeluran culture = romaviri_culture raw_material = cotton natural_harbor_suitability = 1.00}
+
+# GSH Green Shores
+raphoe = { topography = flatland vegetation = sparse climate = oceanic religion = aeluran culture = tuatha_de_danann_culture raw_material = livestock natural_harbor_suitability = 0.00}
+donegal = { topography = hills vegetation = sparse climate = oceanic religion = aeluran culture = tuatha_de_danann_culture raw_material = fish natural_harbor_suitability = 1.00}
+kilmacrennan = { topography = hills vegetation = sparse climate = oceanic religion = aeluran culture = tuatha_de_danann_culture raw_material = salt natural_harbor_suitability = 0.00}
+inishowen = { topography = hills vegetation = sparse climate = oceanic religion = aeluran culture = tuatha_de_danann_culture raw_material = fish natural_harbor_suitability = 0.00}
+
+# ATS Atlas
+brest = { topography = flatland vegetation = grasslands climate = oceanic religion = aeluran culture = atlareth_culture raw_material = fiber_crops natural_harbor_suitability = 1.00}
+st_pol_de_leon = { topography = flatland vegetation = grasslands climate = oceanic religion = aeluran culture = atlareth_culture raw_material = horses natural_harbor_suitability = 0.00}
+treguier = { topography = flatland vegetation = grasslands climate = oceanic religion = aeluran culture = atlareth_culture raw_material = horses natural_harbor_suitability = 0.00}
+chatelaudren = { topography = flatland vegetation = woods climate = oceanic religion = aeluran culture = atlareth_culture raw_material = wheat natural_harbor_suitability = 0.00}
+saint_brieuc = { topography = flatland vegetation = woods climate = oceanic religion = aeluran culture = atlareth_culture raw_material = clay natural_harbor_suitability = 0.00}
+
+# WDQ Quiet Wood
+yendyr = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+kartauzh = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+kharom_vosh = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+
+# WDF Fell Wood
+bardak = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+nazym = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fish}
+karymkary = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+
+# QWD Queen's Wood
+sukhorukova = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+belogorye = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+
+# IML Imladris
+ivdel = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+
+# SVN Silivren
+ponil = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+
+# AWE Aranwë
+pelym = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fruit}
+
+# AEL Aeloria
+gari = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+sosva = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+
+# NAD North Annonduin
+ess = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+
+# SAD South Annonduin
+konda = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+yevra = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = clay}
+
+# LAS Lassemir
+malaya_sosva = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+
+# NEN Nenuial
+yukonda = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+
+# ELD Eldrin
+turtas = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+
+# GLX Gloren
+qashliq = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+siberia_abalak = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+
+# ITH Ithildin
+ust_ozernoye = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = iron}
+selo_yartsevo = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = copper}
+nazimovo = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fish}
+yeniseysk = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+
+# LOE Lóterien
+komsa = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = wild_game}
+siberia_bor = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fish}
+
+# SIR Siriondil
+sulomay = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+
+# NAH Nan Hithlinn
+bakhtinsky = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = copper}
+
+# DUG Dûrgalen
+kuzmovka = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = wild_game}
+
+# ERD Eredhven
+yeruda = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+kiya = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+tis_reka = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = wild_game}
+
+# ORR Orodrethil
+tokhomo = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = wild_game}
+
+# FOR Formenost
+enashimo = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+teya = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = wild_game}
+vel_mo = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+
+# RIV Rivenwood
+vangash = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = wild_game}
+
+# HIL Hithlond
+kardakan = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+
+# GWH Gwathlóren
+poligus = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = goods_gold}
+baykit = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+turama = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = wild_game}
+
+# EMY Emyn Dûr
+bryanka = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = wild_game}
+
+# AMO Amonost
+kamensk = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+
+# LAI Laindor
+motygino = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = wild_game}
+pashino = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+taseyevo = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = wild_game}
+
+# CAL Calithil
+kazachinskoye = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+
+# THA Tharagel
+yemelyanovo = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+
+# NER Neldoramar
+kazachinskoye = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+
+# NIV Nivrimdor
+kansk = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = iron}
+
+# STA Starfall Plain
+dzerzhinskoye = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+
+# ALD Aeluin Daer
+ilansky = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+
+# DUD Duin Daer
+biryusa = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = iron}
+
+# TAH Tathren
+pervomayskoye = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+tyukhtet = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = lumber}
+
+# CEO Celonduin
+mariinsk = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+verkh_chebula = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+itatsky = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = lumber}
+
+# ETI Ethirannon
+bolshoy_uluy = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+makovskoe = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+
+# VIY Vinyalondë
+nazarovo = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+uzhur = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+tatarskaya_tesyu = { topography = hills vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = fur}
+
+# TIN Tindomire
+tabory = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+sankina = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+turinsk = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+
+# AEV Aelvinas
+chunoyar = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+aban = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+
+# RIN Ringwilith
+kamenka = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = wild_game}
+kazhma = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+
+# RHU Rhûnren
+manzaya = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+boguchany = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+
+# WIN Windy Vale
+belya = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+tayga = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = wild_game}
+
+# ORF Orofarn
+irkineieva = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+
+# GIL Gilwenor
+yarkino = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+
+# HAR Harlondor
+oskoba = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = atlareth_culture raw_material = fur}
+tsentral = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = atlareth_culture raw_material = wild_game}
+chadobets = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = atlareth_culture raw_material = wild_game}
+
+# LAH Lathron
+lower_angara = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fish}
+upper_angara = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fish}
+educhanka = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+
+# FOM Formenfold
+kezhma = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+
+# BNN Bruinenor
+chemal = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+
+# ALR Almarenor
+balagansk = { topography = plateau vegetation = woods climate = continental religion = aeluran culture = atlareth_culture raw_material = wild_game}
+osinsky = { topography = plateau vegetation = woods climate = continental religion = aeluran culture = atlareth_culture raw_material = fur}
+bayanday = { topography = plateau vegetation = woods climate = continental religion = aeluran culture = atlareth_culture raw_material = fish}
+
+# AND Andúniëlor
+zalari = { topography = plateau vegetation = woods climate = continental religion = aeluran culture = atlareth_culture raw_material = wild_game}
+cheremkhovo = { topography = plateau vegetation = woods climate = continental religion = aeluran culture = atlareth_culture raw_material = fur}
+irkutsk = { topography = plateau vegetation = woods climate = continental religion = aeluran culture = atlareth_culture raw_material = fur}
+
+# CAI Carnilindon
+chuva = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+nizhneudinsk = { topography = plateau vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = fur}
+
+# ELE Elenrond
+bratsk = { topography = plateau vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = lumber}
+siberia_kuytun = { topography = plateau vegetation = forest climate = continental religion = aeluran culture = buryalfar_cultureat_culture raw_material = fur}
+staraya_zima = { topography = plateau vegetation = woods climate = continental religion = aeluran culture = alfar_culture raw_material = lumber}
+
+# FRS Formenos
+krasnoyarsk = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = iron}
+
+# ILM Ilmarion
+novosyolovo = { topography = flatland vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = fur}
+kortuz = { topography = hills vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = wild_game}
+idrinskoye = { topography = flatland vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = wild_game}
+minusinsk = { topography = flatland vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = lumber}
+
+# LAQ Laurinquë
+chuya = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = lumber}
+witym = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = lumber}
+
+# NAR Nargilmar
+yukte = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fish}
+vitim = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+alysardakh = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+
+# OST Ostelion
+peledui = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+uel_tympychan = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = lumber}
+
+# TIV Tirion Vanyar
+moshi = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+tupuchikan = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+
+# VAA Valacirya
+ichera = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = wild_game}
+dulis_ma = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = lumber}
+
+# VNY Vanyalondë
+shardonem = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+
+# LSS Lassirith
+chakola = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+
+# GWN Gwaelinn
+verkola = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+
+# EDH Edhelvor
+ust_chulasa = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+
+# NME Northmere
+koptyuga = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+
+# AMM Ammithir
+zanyukhcha = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+
+# LOS Lossenlad
+chirki = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+
+# SVL Silvervale
+leshukonskoye = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = wild_game}
+
+# WHI Windyhill
+khimzha = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = wild_game}
+
+# ZYP Zyphris
+makarikha = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+dyrashnichikha = { topography = plateau vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+
+
+
+
+# # Valerith
+# turyinskiye_rudniki = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+# novaya_lyalya = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = stone}
+# sosva = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+# verkhoturye = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = medicaments}
+# sankina = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+# gari = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+# ponil = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+# pelym = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = wild_game}
+# turinsk = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = lumber}
+# tabory = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = deepwood_elven_culture raw_material = fur}
+
+# # Daelurin
+# minusinsk = { topography = flatland vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = lumber}
+# idrinskoye = { topography = flatland vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = wild_game}
+# kortuz = { topography = hills vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = wild_game}
+# krasnoyarsk = { topography = hills vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = iron}
+# kansk = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = iron}
+# ilansky = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = fur}
+# biryusa = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = alfar_culture raw_material = iron}
+# nizhneudinsk = { topography = plateau vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = fur}
+# siberia_kuytun = { topography = plateau vegetation = forest climate = continental religion = aeluran culture = alfar_culture raw_material = fur}
+# staraya_zima = { topography = plateau vegetation = woods climate = continental religion = aeluran culture = alfar_culture raw_material = lumber}
+# zalari = { topography = plateau vegetation = woods climate = continental religion = aeluran culture = alfar_culture raw_material = wild_game}
+# cheremkhovo = { topography = plateau vegetation = woods climate = continental religion = aeluran culture = alfar_culture raw_material = fur}
+# irkutsk = { topography = plateau vegetation = woods climate = continental religion = aeluran culture = alfar_culture raw_material = fur}
+# slyudyanka = { topography = mountains vegetation = woods climate = continental religion = aeluran culture = alfar_culture raw_material = fish}
+
+# # Thundarael
+# bolshoy_yugan = { topography = flatland vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+# megion = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+# upper_ob = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fish}
+# bolshoy_balyk = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+# surgut = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+# irtysh = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+# vasyugan = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = fur}
+# kargasok = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+# kolpashevo = { topography = wetlands vegetation = forest climate = arctic religion = aeluran culture = astrion_culture raw_material = lumber}
+
+# # Serelion
+# morphou = { topography = flatland vegetation = woods climate = mediterranean religion = aeluran culture = romaviri_culture raw_material = cotton natural_harbor_suitability = 0.00}
+# paphos = { topography = hills vegetation = woods climate = mediterranean religion = aeluran culture = romaviri_culture raw_material = copper natural_harbor_suitability = 0.00}
+# limassol = { topography = hills vegetation = woods climate = mediterranean religion = aeluran culture = romaviri_culture raw_material = sugar natural_harbor_suitability = 0.25}
+# malta = { topography = flatland vegetation = sparse climate = mediterranean religion = aeluran culture = romaviri_culture raw_material = cotton natural_harbor_suitability = 1.00}
+
+# # Gwynthorn
+# raphoe = { topography = flatland vegetation = sparse climate = oceanic religion = aeluran culture = tuatha_de_danann_culture raw_material = livestock natural_harbor_suitability = 0.00}
+# donegal = { topography = hills vegetation = sparse climate = oceanic religion = aeluran culture = tuatha_de_danann_culture raw_material = fish natural_harbor_suitability = 1.00}
+# kilmacrennan = { topography = hills vegetation = sparse climate = oceanic religion = aeluran culture = tuatha_de_danann_culture raw_material = salt natural_harbor_suitability = 0.00}
+# inishowen = { topography = hills vegetation = sparse climate = oceanic religion = aeluran culture = tuatha_de_danann_culture raw_material = fish natural_harbor_suitability = 0.00}
+
+# # Lormelis
+# brest = { topography = flatland vegetation = grasslands climate = oceanic religion = aeluran culture = atlareth_culture raw_material = fiber_crops natural_harbor_suitability = 1.00}
+# st_pol_de_leon = { topography = flatland vegetation = grasslands climate = oceanic religion = aeluran culture = atlareth_culture raw_material = horses natural_harbor_suitability = 0.00}
+# treguier = { topography = flatland vegetation = grasslands climate = oceanic religion = aeluran culture = atlareth_culture raw_material = horses natural_harbor_suitability = 0.00}
+# chatelaudren = { topography = flatland vegetation = woods climate = oceanic religion = aeluran culture = atlareth_culture raw_material = wheat natural_harbor_suitability = 0.00}
+# saint_brieuc = { topography = flatland vegetation = woods climate = oceanic religion = aeluran culture = atlareth_culture raw_material = clay natural_harbor_suitability = 0.00}

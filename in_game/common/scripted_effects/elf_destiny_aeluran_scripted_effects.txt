@@ -1,0 +1,73 @@
+﻿assign_new_aeluran_adviser = {
+
+	custom_tooltip = {
+		text = aeluran_adviser_joins_realm
+
+		create_character = {
+			age = {18 30}
+			female = yes
+	
+			religion = religion:aeluran
+			culture = scope:root.culture
+			estate = estate_type:clergy_estate
+	
+			# TODO: could have some privilege increase the stats of advisors
+			adm = {
+				integer_range = {
+					min = {
+						value = 50
+					}
+					max = {
+						value = 100
+					}
+				}
+			}
+			dip = {
+				integer_range = {
+					min = {
+						value = 50
+					}
+					max = {
+						value = 100
+					}
+				}
+			}
+			mil = {
+				integer_range = {
+					min = {
+						value = 50
+					}
+					max = {
+						value = 100
+					}
+				}
+			}
+	
+			add_trait = trait:aeluran_sister
+			
+			save_scope_as = aeluran_adviser
+			set_variable = aeluran_adviser
+		}
+	
+		scope:aeluran_adviser = {
+			move_country = root
+		}
+	}
+
+	custom_tooltip = {
+		text = aeluran_adviser_joins_and_become_head_of_cabinet
+		if = {
+			limit = {
+				exists = scope:aeluran_adviser
+			}
+			random_cabinet = {
+				add_to_cabinet = scope:aeluran_adviser
+			}
+			
+			promote_to_head_of_cabinet_effect = {
+				target = scope:aeluran_adviser
+			}
+		}
+	}
+	
+}

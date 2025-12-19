@@ -1,0 +1,188 @@
+﻿#### Levies ####
+a_early_fey_archers= {
+	category = army_infantry
+	copy_from = a_age_1_traditions_infantry
+	upgrades_to = a_fey_archers
+
+	initiative = 4
+	
+	
+	buildable = no
+	levy = yes
+
+	maintenance_demand =  archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.01
+	}
+
+	location_potential = {
+		elf_unit_location_trigger = yes
+	}
+
+	gfx_tags = { longbow_tag archer_tag light_tag }
+}
+
+a_fey_archers= {
+	category = army_infantry
+	copy_from = a_age_2_renaissance_infantry
+	upgrades_to = a_late_fey_archers
+	light = yes
+
+	initiative = 4
+	strength_damage_taken = -0.10
+	
+	buildable = no
+	levy = yes
+
+	maintenance_demand =  archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.01
+	}
+
+	location_potential = {
+		elf_unit_location_trigger = yes
+	}
+
+	gfx_tags = { longbow_tag archer_tag light_tag }
+}
+
+a_late_fey_archers = {
+	category = army_infantry
+	copy_from = a_age_3_discovery_infantry
+	light = yes
+	
+	initiative = 4
+	strength_damage_taken = -0.20
+	
+	
+	buildable = no
+	levy = yes
+
+	maintenance_demand =  archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.01
+	}
+
+	location_potential = {
+		elf_unit_location_trigger = yes
+	}
+
+	gfx_tags = { longbow_tag archer_tag light_tag }
+}
+
+#======
+
+aeluran_magi_basic = {
+	category = army_infantry
+	copy_from = a_age_1_traditions_infantry
+	upgrades_to = a_fey_archers
+
+	initiative = 4
+	
+	
+	buildable = no
+	levy = yes
+
+	maintenance_demand =  archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.01
+	}
+
+	location_potential = {
+		elf_unit_location_trigger = yes
+	}
+
+	gfx_tags = { longbow_tag archer_tag light_tag }
+}
+
+
+calaquendi_high_magi = {
+	category = army_magi_artillery
+	# upgrades_to = a_fey_archers
+
+	# Mobility
+	movement_speed = 5
+	initiative = 7
+	combat_speed = 7
+
+	# Offense
+	artillery_barrage = 50
+	max_strength = 0.005
+	combat_power = 100
+	flanking_ability = 1.5
+	secure_flanks_defense = 1.0 # +100% defense with one secure flank (= -50% damage taken). +200% defense with both flanks secure (= -67% damage taken). Compared with isolated box.
+	
+	# Defense
+	morale_damage_taken = -0.95
+    strength_damage_taken = -0.95
+	attrition_loss = 0.0
+	
+	buildable = no
+	levy = yes
+
+	maintenance_demand =  archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	# mercenaries_per_location = {
+	# 	pop_type = peasants
+	# 	multiply = 0.01
+	# }
+
+	location_potential = {
+		# elf_unit_location_trigger = yes
+	}
+
+	gfx_tags = { heavy_tag }
+}
+
+
+#### Professional ####
+
+wolf_riders = {
+	category = army_cavalry
+	
+	copy_from = a_age_1_traditions_cavalry
+	
+	combat_speed = 0.25
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+
+	# location_potential = { 
+	# 	culture = { has_culture_group = culture_group:elven_culture_group}
+	# }
+	
+	combat = {
+		forest = 0.25
+		hills = 0.5
+		woods = 0.5
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	gfx_tags = { spear_tag medium_tag }
+}
+
+# elk_archers

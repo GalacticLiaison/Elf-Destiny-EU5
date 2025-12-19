@@ -1,0 +1,102 @@
+﻿royal_elf_valerith = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_bloodline
+	
+	modifier = {
+		global_estate_target_satisfaction = tiny_permanent_target_satisfaction
+		monthly_towards_free_subjects = societal_value_minor_monthly_move
+		peace_offer_fairness = 0.2
+		stability_importance_modifier = 0.1
+
+		dip = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+royal_elf_serelion = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_bloodline
+	
+	modifier = {
+		dip = 5
+		mil = 5
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+royal_elf_gwynthorn = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_bloodline
+	
+	modifier = {
+		adm = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+royal_elf_thundarael = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_bloodline
+	
+	modifier = {
+		adm = 5
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+royal_elf_daelurin = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_bloodline
+	
+	modifier = {
+		mil = 10
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+royal_elf_lormelis = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_bloodline
+	
+	modifier = {
+		dip = 5
+		mil = 5
+	}
+
+	chance = {
+		base = 0
+	}
+}

@@ -1,0 +1,305 @@
+locations = {
+	# DWD Deepwood
+	mezen = { # capital
+		define_pop = {	type = clergy	size = 2.000	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = calaquendi	size = 0.015	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+
+	# SYL Sylvael
+	bolshaya_laptyuga = { # capital
+		define_pop = {	type = calaquendi	size = 0.015	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = nobles	size = 0.050	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 3.500	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = burghers	size = 0.910	culture = deepwood_elven_culture	religion = aeluran }
+
+	}
+	ust_vym = {
+		define_pop = {	type = nobles	size = 0.010	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	kortkeros = {
+		define_pop = {	type = nobles	size = 0.010	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	ukhta = {
+		define_pop = {	type = nobles	size = 0.010	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	troitsko_pechorsk = {
+		define_pop = {	type = nobles	size = 0.010	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	ust_kulom = {
+		define_pop = {	type = nobles	size = 0.010	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	cherdyn = {
+		define_pop = {	type = nobles	size = 0.010	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	nyrob = {
+		define_pop = {	type = nobles	size = 0.100	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.900	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	vashka = {
+		define_pop = {	type = nobles	size = 0.031	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+
+	# BWD Blackwood
+	vukyl = { # capital
+		define_pop = {	type = calaquendi	size = 0.015	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = nobles	size = 0.010	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = burghers	size = 0.910	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	pechora = {
+		define_pop = {	type = nobles	size = 0.031	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+
+	# MYT Mytharil
+	turyinskiye_rudniki = {
+		define_pop = {	type = calaquendi	size = 0.015	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = nobles	size = 0.010	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = burghers	size = 0.910	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	solikamsk = {
+		define_pop = {	type = nobles	size = 0.031	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	kizel = {
+		define_pop = {	type = nobles	size = 0.031	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	gubakha = {
+		define_pop = {	type = nobles	size = 0.031	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	novaya_lyalya = {
+		define_pop = {	type = nobles	size = 0.031	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = deepwood_elven_culture	religion = aeluran }
+	}
+
+	# Daelurin
+	zhigalovo = { # capital
+		define_pop = {	type = calaquendi	size = 0.015	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = nobles	size = 0.050	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 3.500	culture = deepwood_elven_culture	religion = aeluran }
+		define_pop = {	type = burghers	size = 0.910	culture = deepwood_elven_culture	religion = aeluran }
+	}
+	idrinskoye = {
+		define_pop = {	type = nobles	size = 0.010	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = alfar_culture	religion = aeluran }
+	}
+	kortuz = {
+		define_pop = {	type = nobles	size = 0.010	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = alfar_culture	religion = aeluran }
+	}
+	krasnoyarsk = {
+		define_pop = {	type = nobles	size = 0.010	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = alfar_culture	religion = aeluran }
+	}
+	kansk = {
+		define_pop = {	type = nobles	size = 0.010	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = alfar_culture	religion = aeluran }
+	}
+	ilansky = {
+		define_pop = {	type = nobles	size = 0.010	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = alfar_culture	religion = aeluran }
+	}
+	biryusa = {
+		define_pop = {	type = nobles	size = 0.010	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = alfar_culture	religion = aeluran }
+	}
+	nizhneudinsk = {
+		define_pop = {	type = nobles	size = 0.010	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = alfar_culture	religion = aeluran }
+	}
+	siberia_kuytun = {
+		define_pop = {	type = nobles	size = 0.010	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = alfar_culture	religion = aeluran }
+	}
+	staraya_zima = {
+		define_pop = {	type = nobles	size = 0.010	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = alfar_culture	religion = aeluran }
+	}
+	zalari = { # Capital
+		define_pop = {	type = calaquendi	size = 0.011	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = nobles	size = 0.100	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = burghers	size = 0.910	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 3.900	culture = alfar_culture	religion = aeluran }
+	}
+	cheremkhovo = {
+		define_pop = {	type = nobles	size = 0.010	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = alfar_culture	religion = aeluran }
+	}
+	irkutsk = {
+		define_pop = {	type = nobles	size = 0.010	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = alfar_culture	religion = aeluran }
+	}
+	slyudyanka = {
+		define_pop = {	type = nobles	size = 0.010	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = alfar_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = alfar_culture	religion = aeluran }
+	}
+
+	# Thundarael
+	bolshoy_yugan = { # Capital
+		define_pop = {	type = calaquendi	size = 0.011	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = nobles	size = 0.100	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = burghers	size = 0.910	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 3.900	culture = astrion_culture	religion = aeluran }
+	}
+	megion = {
+		define_pop = {	type = nobles	size = 0.010	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = astrion_culture	religion = aeluran }
+	}
+	upper_ob = {
+		define_pop = {	type = nobles	size = 0.010	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = astrion_culture	religion = aeluran }
+	}
+	bolshoy_balyk = {
+		define_pop = {	type = nobles	size = 0.010	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = astrion_culture	religion = aeluran }
+	}
+	surgut = {
+		define_pop = {	type = nobles	size = 0.010	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = astrion_culture	religion = aeluran }
+	}
+	irtysh = {
+		define_pop = {	type = nobles	size = 0.010	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = astrion_culture	religion = aeluran }
+	}
+	vasyugan = {
+		define_pop = {	type = nobles	size = 0.010	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = astrion_culture	religion = aeluran }
+	}
+	kargasok = {
+		define_pop = {	type = nobles	size = 0.010	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = astrion_culture	religion = aeluran }
+	}
+	kolpashevo = {
+		define_pop = {	type = nobles	size = 0.010	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = astrion_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = astrion_culture	religion = aeluran }
+	}
+
+	# Serelion
+	morphou = {
+		define_pop = {	type = nobles	size = 0.010	culture = romaviri_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = romaviri_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = romaviri_culture	religion = aeluran }
+	}
+	paphos = {
+		define_pop = {	type = nobles	size = 0.010	culture = romaviri_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = romaviri_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = romaviri_culture	religion = aeluran }
+	}
+	limassol = { # Capital
+		define_pop = {	type = calaquendi	size = 0.011	culture = romaviri_culture	religion = aeluran }
+		define_pop = {	type = nobles	size = 0.100	culture = romaviri_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = romaviri_culture	religion = aeluran }
+		define_pop = {	type = burghers	size = 0.910	culture = romaviri_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 3.900	culture = romaviri_culture	religion = aeluran }
+	}
+	malta = { # Sub Capital
+		define_pop = {	type = calaquendi	size = 0.011	culture = romaviri_culture	religion = aeluran }
+		define_pop = {	type = nobles	size = 0.100	culture = romaviri_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = romaviri_culture	religion = aeluran }
+		define_pop = {	type = burghers	size = 0.910	culture = romaviri_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 3.900	culture = romaviri_culture	religion = aeluran }
+	}
+
+	# Gwynthorn
+	raphoe = { # Capital
+		define_pop = {	type = calaquendi	size = 0.011	culture = tuatha_de_danann_culture	religion = aeluran }
+		define_pop = {	type = nobles	size = 0.100	culture = tuatha_de_danann_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = tuatha_de_danann_culture	religion = aeluran }
+		define_pop = {	type = burghers	size = 0.910	culture = tuatha_de_danann_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 3.900	culture = tuatha_de_danann_culture	religion = aeluran }
+	}
+	donegal = {
+		define_pop = {	type = nobles	size = 0.010	culture = tuatha_de_danann_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = tuatha_de_danann_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = tuatha_de_danann_culture	religion = aeluran }
+	}
+	kilmacrennan = {
+		define_pop = {	type = nobles	size = 0.010	culture = tuatha_de_danann_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = tuatha_de_danann_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = tuatha_de_danann_culture	religion = aeluran }
+	}
+	inishowen = {
+		define_pop = {	type = nobles	size = 0.010	culture = tuatha_de_danann_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = tuatha_de_danann_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = tuatha_de_danann_culture	religion = aeluran }
+	}
+
+	# Lormelis
+	brest = {
+		define_pop = {	type = nobles	size = 0.010	culture = atlareth_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = atlareth_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = atlareth_culture	religion = aeluran }
+	}
+	st_pol_de_leon = {
+		define_pop = {	type = nobles	size = 0.010	culture = atlareth_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = atlareth_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = atlareth_culture	religion = aeluran }
+	}
+	treguier = { # Capital
+		define_pop = {	type = calaquendi	size = 0.011	culture = atlareth_culture	religion = aeluran }
+		define_pop = {	type = nobles	size = 0.100	culture = atlareth_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = atlareth_culture	religion = aeluran }
+		define_pop = {	type = burghers	size = 0.910	culture = atlareth_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 3.900	culture = atlareth_culture	religion = aeluran }
+	}
+	chatelaudren = {
+		define_pop = {	type = nobles	size = 0.010	culture = atlareth_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = atlareth_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = atlareth_culture	religion = aeluran }
+	}
+	saint_brieuc = {
+		define_pop = {	type = nobles	size = 0.010	culture = atlareth_culture	religion = aeluran }
+		define_pop = {	type = clergy	size = 0.096	culture = atlareth_culture	religion = aeluran }
+		define_pop = {	type = peasants	size = 1.500	culture = atlareth_culture	religion = aeluran }
+	}
+}

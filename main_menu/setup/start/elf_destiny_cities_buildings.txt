@@ -1,0 +1,177 @@
+locations={
+
+	# Deepwood
+	vukyl = { rank = town 		town_setup = elven_capital }
+	# Sylvael
+	bolshaya_laptyuga = { rank = city 		town_setup = elven_capital }
+	troitsko_pechorsk = { rank = town 		town_setup = elven_town }
+	# Blackwood
+	vukyl = { rank = town 		town_setup = elven_capital }
+	# Mytharil
+	turyinskiye_rudniki = { rank = town 		town_setup = elven_capital }
+	# Quiet Wood
+	kharom_vosh = { rank = town 		town_setup = elven_capital }
+	# Crystal Glades
+	bolshoy_yugan = { rank = city 		town_setup = elven_capital }
+	upper_ob  = { rank = town 		town_setup = elven_town }
+	# Ithildin 
+	nazimovo  = { rank = town 		town_setup = elven_town }
+	# Gwathlóren 
+	turama  = { rank = town 		town_setup = elven_capital }
+	# Laindor 
+	taseyevo  = { rank = town 		town_setup = elven_town }
+	# Harlondor 
+	tsentral  = { rank = town 		town_setup = elven_town }
+	# Lathron 
+	lower_angara  = { rank = town 		town_setup = elven_town }
+	# North Wood 
+	bur_nepa  = { rank = town 		town_setup = elven_town }
+	# High Hills
+	zhigalovo = { rank = city 		town_setup = elven_capital }
+	# Giant's Palm
+	konkudera  = { rank = town 		town_setup = elven_town }
+
+	# Windyhill
+	khimzha = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Silvervale
+	leshukonskoye = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Edhelvor
+	ust_chulasa = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Lassirith
+	chakola = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Vanyalondë
+	shardonem = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Gwaelinn
+	verkola = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Ammithir
+	zanyukhcha = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Northmere
+	koptyuga = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Lossenlad
+	chirki = { rank = rural_settlement town_setup = rural_elven_forest_village }
+
+	# Imladris
+	ivdel = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Aranwe
+	pelym = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Silivren
+	ponil = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Aeloria
+	gari = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Tindomire
+	tabory = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# North Annonduin
+	ess = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# South Annonduin
+	konda = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Lassemir
+	malaya_sosva = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Fell Wood
+	karymkary = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Queen's wood
+	sukhorukova = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Nenuial
+	yukonda = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Eldrin
+	turtas = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Gloren
+	qashliq = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Lóterien
+	siberia_bor = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Nan Hithlinn
+	bakhtinsky = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Siriondil
+	sulomay = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Dûrgalen
+	kuzmovka = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Eredhven
+	yeruda = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Formenost
+	enashimo = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Rivenwood
+	vangash = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Amonost
+	kamensk = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Emyn Dûr
+	bryanka = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Hithlond
+	kardakan = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Orodrethil
+	tokhomo = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Tathren
+	pervomayskoye = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Celonduin
+	verkh_chebula = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Vinyalondë
+	tatarskaya_tesyu = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Ilmarion
+	idrinskoye = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Ethirannon
+	bolshoy_uluy = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Neldoramar
+	kazachinskoye = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Tharagel
+	yemelyanovo = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Formenos
+	krasnoyarsk = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Windy Vale
+	tayga = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Ringwilith
+	kamenka = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Starfall Plain
+	dzerzhinskoye = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Nivrimdor
+	kansk = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Orofarn
+	irkineieva = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Gilwenor
+	yarkino = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Rhûnren
+	manzaya = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Aelvinas
+	chunoyar = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Aeluin Daer
+	ilansky = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Duin Daer
+	biryusa = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Bruinenor
+	chemal = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Formenfold
+	kezhma = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Carnilindon
+	chuva = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Elenrond
+	staraya_zima = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Almarenor
+	bayanday = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Andúniëlor
+	zalari = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Zyphris
+	makarikha = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Valacirya
+	ichera = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Tirion Vanyar
+	moshi = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Ostelion
+	peledui = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Nargilmar
+	yukte = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	# Laurinquë
+	chuya = { rank = rural_settlement town_setup = rural_elven_forest_village }
+}
+
+building_manager = {
+	castle 		= { tag = SYL level = 1 location = kortkeros }
+	castle 		= { tag = MYT level = 1 location = kizel }
+	castle 		= { tag = TIN level = 1 location = tabory }
+	castle 		= { tag = GLX level = 1 location = qashliq }
+	castle 		= { tag = CYG level = 1 location = tara }
+	castle 		= { tag = CYG level = 1 location = melnikovo }
+	castle 		= { tag = CEO level = 1 location = mariinsk }
+	castle 		= { tag = VIY level = 1 location = tatarskaya_tesyu }
+	castle 		= { tag = CYG level = 1 location = minusinsk }
+	castle 		= { tag = HIH level = 1 location = chitkan }
+	# test_mason 	= { tag = SYL level = 1 location = pelym }
+	# forest_village = { tag = DAI level = 3 location = da_giang }
+	# market_village = { tag = DAI level = 3 location = da_giang }
+}

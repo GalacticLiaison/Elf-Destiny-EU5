@@ -1,0 +1,5307 @@
+countries = {
+	countries = {
+		### VALERITH ###
+		DWD = { # Deepwood
+			capital = mezen
+
+			own_control_core = {
+				mezen
+			} 
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			country_rank = rank_kingdom
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = dwd_elandra_thalwyn
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = dwd_elandra_thalwyn start_date = 1319.7.8 regnal_number = 1	}
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = thalwyn_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		SYL = { # Sylvael - Valerith 
+			capital = bolshaya_laptyuga
+
+			# own_control_core = {
+			# 	turyinskiye_rudniki novaya_lyalya sosva verkhoturye sankina gari ponil pelym turinsk tabory ivdel
+			# 	ess malaya_sosva konda yevra yukonda
+			# }
+
+			own_control_core = {
+				bolshaya_laptyuga ust_vym kortkeros ukhta troitsko_pechorsk ust_kulom cherdyn nyrob vashka
+			} 
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			country_rank = rank_kingdom
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = syl_seraphine_valerith start_date = 1319.7.8 regnal_number = 1	}
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		BWD = { # Blackwood - Valerith 
+			capital = vukyl
+
+			# own_control_core = {
+			# 	turyinskiye_rudniki novaya_lyalya sosva verkhoturye sankina gari ponil pelym turinsk tabory ivdel
+			# 	ess malaya_sosva konda yevra yukonda
+			# }
+
+			own_control_core = {
+				vukyl pechora
+			} 
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			country_rank = rank_kingdom
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = bwd_belanor_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = bwd_belanor_valerith start_date = 1319.7.8 regnal_number = 1	}
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		MYT = { # Mytharil - Valerith
+			capital = turyinskiye_rudniki
+
+			own_control_core = {
+				solikamsk kizel gubakha turyinskiye_rudniki novaya_lyalya
+			}
+
+			# own_control_core = {
+			# 	turtas siberia_abalak qashliq
+			# 	tobolsk vagay tavdinsky_sloboda yurginskoye vikulovo
+			# }
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = myt_virion_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = myt_virion_valerith start_date = 1319.7.8 regnal_number = 1	}
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+
+
+		}
+
+		HIH = { # High Hills - Daelurin
+			capital = zhigalovo
+
+			own_control_core = {
+				angoya kutima osenny kachug zhigalovo
+				onguren ul_kan kichera argada ust_barguzin chitkan bayangol
+				ust_kut reka_tuba nikolsky_pogost irkutsk_kazachinskoye 
+			} #olyokma_upplands1 olyokma_upplands2 ?
+
+			# own_control_core = {
+			# 	minusinsk idrinskoye kortuz krasnoyarsk kansk
+			# 	ilansky biryusa nizhneudinsk siberia_kuytun staraya_zima
+			# 	zalari cheremkhovo irkutsk slyudyanka
+			# 	novosyolovo yemelyanovo chuva bratsk
+			# }
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_crystal_glades_high_hills"
+			include = "expl_elf_provinces"
+
+			country_rank = rank_kingdom
+
+			# TODO: consider making tribal, would simply require a new include file
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = hih_ganduin_daelurin
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = hih_ganduin_daelurin start_date = 1319.7.8 regnal_number = 1	}
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = -55
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -55
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = daelurin_dynasty
+
+			accepted_cultures = { deepwood_elven_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		GPA = { # Giants Palm
+			capital = konkudera
+
+			own_control_core = {
+				bodaybo kamniga konkudera kyakhtinskii
+			} #olyokma_upplands1 olyokma_upplands2 ?
+
+			# own_control_core = {
+			# 	minusinsk idrinskoye kortuz krasnoyarsk kansk
+			# 	ilansky biryusa nizhneudinsk siberia_kuytun staraya_zima
+			# 	zalari cheremkhovo irkutsk slyudyanka
+			# 	novosyolovo yemelyanovo chuva bratsk
+			# }
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_crystal_glades_high_hills"
+			include = "expl_elf_provinces"
+
+			country_rank = rank_kingdom
+
+			# TODO: consider making tribal, would simply require a new include file
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = hih_ganduin_daelurin
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = hih_ganduin_daelurin start_date = 1319.7.8 regnal_number = 1	}
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = -55
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -55
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = daelurin_dynasty
+
+			accepted_cultures = { deepwood_elven_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		NWD = { # North Wood
+			capital = bur_nepa
+
+			own_control_core = {
+				sekili chambeta icheda tokma bur_nepa ika_nepa
+			}
+
+			# own_control_core = {
+			# 	minusinsk idrinskoye kortuz krasnoyarsk kansk
+			# 	ilansky biryusa nizhneudinsk siberia_kuytun staraya_zima
+			# 	zalari cheremkhovo irkutsk slyudyanka
+			# 	novosyolovo yemelyanovo chuva bratsk
+			# }
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_crystal_glades_high_hills"
+			include = "expl_elf_provinces"
+
+			country_rank = rank_kingdom
+
+			# TODO: consider making tribal, would simply require a new include file
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = hih_ganduin_daelurin
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = hih_ganduin_daelurin start_date = 1319.7.8 regnal_number = 1	}
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = -55
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -55
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = daelurin_dynasty
+
+			accepted_cultures = { deepwood_elven_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		CYG = { # Crystal Glades - Thundarael
+			capital = bolshoy_yugan
+
+			own_control_core = {
+				bolshoy_yugan megion upper_ob bolshoy_balyk surgut
+				irtysh vasyugan kargasok kolpashevo
+				ust_ishim znamenskoye tara muromtsevo
+				molchanovo ket melnikovo tomsk shish
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_crystal_glades_high_hills"
+			include = "expl_elf_provinces"
+
+			country_rank = rank_kingdom
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = nictheras_thundarael
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = nictheras_thundarael start_date = 1319.7.8 regnal_number = 1	}
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = 25
+				traditionalist_vs_innovative = 30
+				spiritualist_vs_humanist = 10
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = 10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = 15
+				land_vs_naval = -30
+				capital_economy_vs_traditional_economy = -25
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = thundarael_dynasty
+
+			accepted_cultures = { deepwood_elven_culture alfar_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		WYD = { # Wyrm's Den - Serelion
+			capital = limassol
+
+			own_control_core = {
+				morphou paphos limassol malta
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_eastern_europe"
+			include = "expl_elf_provinces"
+
+
+			country_rank = rank_duchy
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = wyd_julius_hyperion
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = wyd_julius_hyperion start_date = 1319.7.8 regnal_number = 1	}
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -25
+				traditionalist_vs_innovative = -50
+				spiritualist_vs_humanist = -30
+				aristocracy_vs_plutocracy = -80
+				serfdom_vs_free_subjects = -65
+				mercantilism_vs_free_trade = -30
+				belligerent_vs_conciliatory = 55
+				quality_vs_quantity = -50
+				offensive_vs_defensive = 55
+				land_vs_naval = 40
+				capital_economy_vs_traditional_economy = -35
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = serelion_dynasty
+
+			accepted_cultures = { deepwood_elven_culture alfar_culture astrion_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		GSH = { # Green Shores - Gwynthorn
+			capital = raphoe
+
+			own_control_core = {
+				raphoe donegal kilmacrennan inishowen
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_western_europe"
+			include = "expl_elf_provinces"
+
+			country_rank = rank_duchy
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = gsh_galanoriel_gwynthorn
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = gsh_galanoriel_gwynthorn start_date = 1319.7.8 regnal_number = 1	}
+
+				regnal_numbers = {
+					name_john = 2
+					name_birger = 2
+					name_eric = 11
+					name_charles = 7
+				}
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -65
+				spiritualist_vs_humanist = -70
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = -20
+				mercantilism_vs_free_trade = -30
+				belligerent_vs_conciliatory = 45
+				quality_vs_quantity = -50
+				offensive_vs_defensive = 25
+				land_vs_naval = 40
+				capital_economy_vs_traditional_economy = 75
+				individualism_vs_communalism = 75
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = gwynthorn_dynasty
+
+			accepted_cultures = { deepwood_elven_culture alfar_culture astrion_culture romaviri_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		ATS = { # Atlas - Lormelis
+			capital = treguier
+
+			own_control_core = {
+				brest st_pol_de_leon treguier chatelaudren saint_brieuc
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_western_europe"
+			include = "expl_elf_provinces"
+
+			country_rank = rank_duchy
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = ats_aelor_lormelis
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = ats_aelor_lormelis start_date = 1319.7.8 regnal_number = 1	}
+
+				regnal_numbers = {
+					name_john = 2
+					name_birger = 2
+					name_eric = 11
+					name_charles = 7
+				}
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -45
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = -20
+				mercantilism_vs_free_trade = 30
+				belligerent_vs_conciliatory = -25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -25
+				land_vs_naval = 100
+				capital_economy_vs_traditional_economy = 75
+				individualism_vs_communalism = 75
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = lormelis_dynasty
+
+			accepted_cultures = { deepwood_elven_culture alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture}
+			tolerated_cultures = {  }
+		}
+
+
+		# Smaller nations
+		WDQ = { # Quiet Wood
+			capital = kharom_vosh
+
+			own_control_core = {
+				yendyr kartauzh kharom_vosh
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = syl_seraphine_valerith start_date = 1319.7.8 regnal_number = 1	}
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		# Smaller nations
+		WDF = { # Fell Wood
+			capital = karymkary
+
+			own_control_core = {
+				bardak nazym karymkary
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = syl_seraphine_valerith start_date = 1319.7.8 regnal_number = 1	}
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		# Smaller nations
+		QWD = { # Queen's Wood
+			capital = sukhorukova
+
+			own_control_core = {
+				sukhorukova belogorye
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				ruler_term = { character = syl_seraphine_valerith start_date = 1319.7.8 regnal_number = 1	}
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		###  Smaller nations ###
+		IML = { # ivdel - Imladris
+			capital = ivdel
+
+			own_control_core = {
+				ivdel
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		SVN = { # ponil - Silivren
+			capital = ponil
+
+			own_control_core = {
+				ponil
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		AWE = { # pelym - Aranwë
+			capital = pelym
+
+			own_control_core = {
+				pelym
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		AEL = { # gari/sosva - Aeloria
+			capital = gari
+
+			own_control_core = {
+				gari sosva
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		NAD = { # Ess - North Annonduin
+			capital = ess
+
+			own_control_core = {
+				ess
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		SAD = { # konda/yevra - South Annonduin
+			capital = konda
+
+			own_control_core = {
+				konda yevra
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		LAS = { # malaya_sosva - Lassemir
+			capital = malaya_sosva
+
+			own_control_core = {
+				malaya_sosva
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		NEN = { # yukonda - Nenuial
+			capital = yukonda
+
+			own_control_core = {
+				yukonda
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		ELD = { # turtas - eldrin
+			capital = turtas
+
+			own_control_core = {
+				turtas
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		GLX = { # qashliq/siberia_abalak - gloren
+			capital = qashliq
+
+			own_control_core = {
+				qashliq siberia_abalak
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		ITH = { # ust_ozernoye/selo_yartsevo/nazimovo - Ithildin
+			capital = nazimovo
+
+			own_control_core = {
+				ust_ozernoye selo_yartsevo nazimovo yeniseysk
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		LOE = { # komsa siberia_bor - Lóterien
+			capital = siberia_bor
+
+			own_control_core = {
+				komsa siberia_bor
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		SIR = { # sulomay - Siriondil
+			capital = sulomay
+
+			own_control_core = {
+				sulomay
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		NAH = { # bakhtinsky - Nan Hithlinn
+			capital = bakhtinsky
+
+			own_control_core = {
+				bakhtinsky
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		DUG = { # kuzmovka - Dûrgalen
+			capital = kuzmovka
+
+			own_control_core = {
+				kuzmovka
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		ERD = { # tis/kiya/yeruda - Eredhven
+			capital = yeruda
+
+			own_control_core = {
+				kiya tis_reka yeruda
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		ORR = { # tokhomo - Orodrethil
+			capital = tokhomo
+
+			own_control_core = {
+				tokhomo
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		FOR = { # teya enashimo velmo - Formenost
+			capital = enashimo
+
+			own_control_core = {
+				teya enashimo vel_mo
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		RIV = { # vangash - Rivenwood
+			capital = vangash
+
+			own_control_core = {
+				vangash
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		HIL = { # kardakan - Hithlond
+			capital = kardakan
+
+			own_control_core = {
+				kardakan
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		GWH = { # poligus/baykit/tumara - Gwathlóren
+			capital = turama
+
+			own_control_core = {
+				poligus baykit turama
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		EMY = { # bryanka - Emyn Dûr
+			capital = bryanka
+
+			own_control_core = {
+				bryanka
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		AMO = { # kamensk - Amonost
+			capital = kamensk
+
+			own_control_core = {
+				kamensk
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		LAI = { # motygino pashino taseyevo - Laindor
+			capital = taseyevo
+
+			own_control_core = {
+				motygino pashino taseyevo
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		CAL = { # kazachinskoye - Calithil
+			capital = kazachinskoye
+
+			own_control_core = {
+				kazachinskoye
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		THA = { # yemelyanovo - Tharagel
+			capital = yemelyanovo
+
+			own_control_core = {
+				yemelyanovo
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		NER = { # krasnoyarsk - Neldoramar
+			capital = kazachinskoye
+
+			own_control_core = {
+				kazachinskoye
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		NIV = { # kansk - Nivrimdor
+			capital = kansk
+
+			own_control_core = {
+				kansk
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		STA = { # dzerzhinskoye - Starfall Plain
+			capital = dzerzhinskoye
+
+			own_control_core = {
+				dzerzhinskoye
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		ALD = { # Ilansky - Aeluin Daer
+			capital = ilansky
+
+			own_control_core = {
+				ilansky
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		DUD = { # biryusa - Duin Daer
+			capital = biryusa
+
+			own_control_core = {
+				biryusa
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# ruler = syl_seraphine_valerith
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				# 
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		TAH = { # Tathren
+			capital = pervomayskoye
+
+			own_control_core = {
+				pervomayskoye tyukhtet
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		CEO = { # Celonduin
+			capital = verkh_chebula
+
+			own_control_core = {
+				mariinsk verkh_chebula itatsky
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		ETI = { # Ethirannon
+			capital = makovskoe
+
+			own_control_core = {
+				bolshoy_uluy makovskoe
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		VIY = { # Vinyalondë
+			capital = tatarskaya_tesyu
+
+			own_control_core = {
+				nazarovo uzhur tatarskaya_tesyu 
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		TIN = { # tabory/sankina/turinsk - Tindomire
+			capital = tabory
+
+			own_control_core = {
+				tabory sankina turinsk
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		AEV = { # # chunoyar/aban Aelvinas
+			capital = chunoyar
+
+			own_control_core = {
+				chunoyar aban
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		RIN = { # kamenka/kazhma Ringwilith
+			capital = kamenka
+
+			own_control_core = {
+				kamenka kazhma
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		RHU = { # manzaya/boguchany Rhûnren
+			capital = manzaya
+
+			own_control_core = {
+				manzaya boguchany
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		WIN = { # belya Windy Vale
+			capital = tayga
+
+			own_control_core = {
+				belya tayga
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		TIA = { # tagya Taur Iaur
+			capital = tagya
+
+			own_control_core = {
+				tagya
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		ORF = { # irkineieva Orofarn
+			capital = irkineieva
+
+			own_control_core = {
+				irkineieva
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		GIL = { # yarkino Gilwenor
+			capital = yarkino
+
+			own_control_core = {
+				yarkino
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		HAR = { # oskoba/tsentral/chadobets Harlondor
+			capital = tsentral
+
+			own_control_core = {
+				oskoba tsentral chadobets
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		LAH = { # upper angara/lower angara/educhanka Lathron
+			capital = lower_angara
+
+			own_control_core = {
+				upper_angara lower_angara educhanka 
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		FOM = { # kezhma Formenfold
+			capital = kezhma
+
+			own_control_core = {
+				kezhma
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		BNN = { # chemal Bruinenor
+			capital = chemal
+
+			own_control_core = {
+				chemal
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		ALR = { # balagansk osinsky bayanday -Almarenor
+			capital = bayanday
+
+			own_control_core = {
+				balagansk osinsky bayanday
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		AND = { # zalari cheremkhovo irkutsk - Andúniëlor
+			capital = zalari
+
+			own_control_core = {
+				zalari cheremkhovo irkutsk
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		CAI = { # chuva nizhneudinsk - Carnilindon
+			capital = chuva
+
+			own_control_core = {
+				chuva nizhneudinsk
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		ELE = { # bratsk kuytun staraya_zima - Elenrond
+			capital = staraya_zima
+
+			own_control_core = {
+				bratsk siberia_kuytun staraya_zima
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		FRS = { # krasnoyarsk - Formenos
+			capital = krasnoyarsk
+
+			own_control_core = {
+				krasnoyarsk
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		ILM = { # novosyolovo kortuz idrinskoye minusinsk - Ilmarion
+			capital = idrinskoye
+
+			own_control_core = {
+				novosyolovo kortuz idrinskoye minusinsk
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		LAQ = { # chuya witym - Laurinquë
+			capital = chuya
+
+			own_control_core = {
+				chuya witym
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		NAR = { # yukte vitim aliihardaax - Nargilmar
+			capital = yukte
+
+			own_control_core = {
+				yukte vitim alysardakh
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		OST = { # peledui uel_tympychan - Ostelion
+			capital = peledui
+
+			own_control_core = {
+				peledui uel_tympychan
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		TIV = { # moshi tupuchikan - Tirion Vanyar
+			capital = moshi
+
+			own_control_core = {
+				moshi tupuchikan
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		VAA = { # ichera dulisma - Valacirya
+			capital = ichera
+
+			own_control_core = {
+				ichera dulis_ma
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		VNY = { # shardonem - Vanyalondë
+			capital = shardonem
+
+			own_control_core = {
+				shardonem
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		LSS = { # chakola - Lassirith
+			capital = chakola
+
+			own_control_core = {
+				chakola
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		GWN = { # verkola - Gwaelinn
+			capital = verkola
+
+			own_control_core = {
+				verkola
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		EDH = { # ust_chulasa - Edhelvor
+			capital = ust_chulasa
+
+			own_control_core = {
+				ust_chulasa
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		NME = { # koptyuga - Northmere
+			capital = koptyuga
+
+			own_control_core = {
+				koptyuga
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		AMM = { # zanyukhcha - Ammithir
+			capital = zanyukhcha
+
+			own_control_core = {
+				zanyukhcha
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		# GNA = { # vyja - Glinnas
+		# 	capital = vyja
+
+		# 	own_control_core = {
+		# 		vyja
+		# 	}
+
+		# 	own_control_colony = {
+		# 	}
+
+		# 	include = "elf_monarchy"
+		# 	include = "expl_sylvael"
+		# 	include = "expl_elf_provinces"
+		# 	include = "expl_novgorod"
+
+			country_rank = rank_country
+
+		# 	starting_technology_level = 3
+		# 	government = {
+		# 		type = monarchy
+		# 		heir_selection = cognatic_primogeniture
+
+		# 		ruler = random
+		# 		# consort = swe_blanka
+
+		# 		# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+		# 		# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+		# 		# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+		# 		# regnal_numbers = {
+		# 		# 	name_john = 2
+		# 		# 	name_birger = 2
+		# 		# 	name_eric = 11
+		# 		# 	name_charles = 7
+		# 		# }
+
+		# 		centralization_vs_decentralization = -5
+		# 		traditionalist_vs_innovative = -30
+		# 		spiritualist_vs_humanist = -50
+		# 		aristocracy_vs_plutocracy = -50
+		# 		serfdom_vs_free_subjects = 25
+		# 		mercantilism_vs_free_trade = -10
+		# 		belligerent_vs_conciliatory = 25
+		# 		quality_vs_quantity = -50
+		# 		offensive_vs_defensive = -20
+		# 		land_vs_naval = -50
+		# 		capital_economy_vs_traditional_economy = 90
+		# 		individualism_vs_communalism = 50
+		# 		outward_vs_inward = 100
+
+		# 		privilege = {
+
+		# 		}
+
+		# 	}
+
+		# 	# dynasty = valerith_dynasty
+
+		# 	accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+		# 	tolerated_cultures = {  }
+		# }
+		
+		LOS = { # chirki - Lossenlad
+			capital = chirki
+
+			own_control_core = {
+				chirki
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		SVL = { # leshukonskoye - Silvervale
+			capital = leshukonskoye
+
+			own_control_core = {
+				leshukonskoye
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+		
+		WHI = { # khimzha - Windyhill
+			capital = khimzha
+
+			own_control_core = {
+				khimzha
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+
+		ZYP = { # makarikha dyrashnichikha - Zyphris
+			capital = makarikha
+
+			own_control_core = {
+				makarikha dyrashnichikha
+			}
+
+			own_control_colony = {
+			}
+
+			include = "elf_monarchy"
+			include = "expl_sylvael"
+			include = "expl_elf_provinces"
+			include = "expl_novgorod"
+
+			# country_rank = rank_country
+
+			starting_technology_level = 3
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = random
+				# consort = swe_blanka
+
+				# ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+				# ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+				# ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+				
+
+				# regnal_numbers = {
+				# 	name_john = 2
+				# 	name_birger = 2
+				# 	name_eric = 11
+				# 	name_charles = 7
+				# }
+
+				centralization_vs_decentralization = -5
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				aristocracy_vs_plutocracy = -50
+				serfdom_vs_free_subjects = 25
+				mercantilism_vs_free_trade = -10
+				belligerent_vs_conciliatory = 25
+				quality_vs_quantity = -50
+				offensive_vs_defensive = -20
+				land_vs_naval = -50
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 50
+				outward_vs_inward = 100
+
+				privilege = {
+
+				}
+
+			}
+
+			# dynasty = valerith_dynasty
+
+			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
+			tolerated_cultures = {  }
+		}
+	}
+}

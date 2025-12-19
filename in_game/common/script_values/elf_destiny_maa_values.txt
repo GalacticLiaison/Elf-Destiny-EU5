@@ -1,0 +1,6 @@
+﻿############################
+# Levy Scales
+############################
+# levy_generic_infantry_size = 0.02
+# levy_generic_noble_cavalry_size = 0.1
+levy_high_magi_size = 0.33

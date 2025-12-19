@@ -1,0 +1,50 @@
+﻿# Receives data from /genes
+# Ethnicity templates are used in other ethnicities and templates in this folder
+
+elven_ethnicity = {
+	template = "ethnicity_template"
+
+	skin_color = {
+		10 = { 
+			# x y
+			0.2 0.2 # top left
+			0.5 0.3 # bottom right
+		}
+	}
+
+	eye_color = {
+	 	# Blue
+	 	10 = { 0.0 0.1 0.33 0.4 }
+	 	# Green
+	 	10 = { 0.33 0.15 0.5 0.4 }
+	 	# Brown
+	 	10 = { 0.67 0.25 0.9 0.6 }
+	}
+
+	hair_color = {
+		# Blonde
+		20 = { 
+			0.2 0.0
+			0.5 0.5 
+		}
+		# Brown
+		50 = { 
+			0.2 0.2
+			0.6 0.65 
+		}
+		# Red
+		10 = { 
+			0.75 0.0 
+			0.9 0.5
+		}
+		# Black
+		20 = { 
+			# x y
+			0.0 0.7 # top left
+			0.1 0.85 # bottom right
+		}
+	}
+
+	
+}
+

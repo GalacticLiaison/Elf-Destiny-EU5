@@ -1,0 +1,4 @@
+﻿elven_group = {
+	color = rgb { 136 8 8 }
+	convert_slaves_at_start = no
+}

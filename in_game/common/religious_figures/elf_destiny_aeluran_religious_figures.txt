@@ -1,0 +1,5 @@
+﻿# aeluran_sister = {
+# 	enabled_for_religion = {
+# 		group = religion_group:elven_group
+# 	}
+# }

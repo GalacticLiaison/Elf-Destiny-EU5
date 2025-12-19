@@ -1,0 +1,28 @@
+discovered_provinces = {
+	# Valerith Provinces
+	ponil_province
+	kushva_province
+	turinsk_province
+
+	# Thundarael Provinces
+	surgut_province
+	kargasok_province
+
+	# Daelurin provinces
+	minusinsk_province
+	novosyolovo_province
+	kansk_province
+	bratsk_province
+	irkutsk_province
+	bayanday_province
+
+	# Serelion
+	cyprus_province
+	noto_province
+
+	# Gwynthorn
+	donegal_province
+
+	# Lormelis
+	tregor_province
+}

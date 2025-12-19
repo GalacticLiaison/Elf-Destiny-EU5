@@ -1,0 +1,974 @@
+﻿SYL = {
+	color = rgb {17 97 24}
+	color2 = rgb { 0 0 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+	
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+
+DWD = {
+	color = rgb { 180 4 4 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+
+
+BWD = {
+	color = rgb { 0 0 0 }
+	color2 = rgb { 0 0 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+
+MYT = {
+	color = rgb { 350 91 100 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+
+WDQ = {
+	color = rgb { 208 255 251 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+WDF = {
+	color = rgb { 40 19 5 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+QWD = {
+	color = rgb { 115 5 233 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+# UPR = {
+# 	color = rgb { 350 81 100 }
+# 	color2 = rgb { 60 100 0 }
+# 	# male_regnal_names = {}
+# 	# female_regnal_names = {}
+# 	# description_category = administrative # cf. common/country_description_category DB
+# 	# difficulty = 2	# int between 1 and 5
+
+# 	culture_definition = deepwood_elven_culture
+# 	religion_definition = aeluran
+# }
+# GPA = {
+# 	color = rgb { 350 81 100 }
+# 	color2 = rgb { 60 100 0 }
+# 	# male_regnal_names = {}
+# 	# female_regnal_names = {}
+# 	# description_category = administrative # cf. common/country_description_category DB
+# 	# difficulty = 2	# int between 1 and 5
+
+# 	culture_definition = deepwood_elven_culture
+# 	religion_definition = aeluran
+# }
+# KCR = {
+# 	color = rgb { 350 81 100 }
+# 	color2 = rgb { 60 100 0 }
+# 	# male_regnal_names = {}
+# 	# female_regnal_names = {}
+# 	# description_category = administrative # cf. common/country_description_category DB
+# 	# difficulty = 2	# int between 1 and 5
+
+# 	culture_definition = deepwood_elven_culture
+# 	religion_definition = aeluran
+# }
+# WDN = {
+# 	color = rgb { 350 81 100 }
+# 	color2 = rgb { 60 100 0 }
+# 	# male_regnal_names = {}
+# 	# female_regnal_names = {}
+# 	# description_category = administrative # cf. common/country_description_category DB
+# 	# difficulty = 2	# int between 1 and 5
+
+# 	culture_definition = deepwood_elven_culture
+# 	religion_definition = aeluran
+# }
+
+IML = {
+	color = rgb { 212 189 204 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+SVN = {
+	color = rgb { 108 37 84 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+AWE = {
+	color = rgb { 180 110 156 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+AEL = {
+	color = rgb { 168 162 0 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+NAD = {
+	color = rgb { 216 138 64 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+SAD = {
+	color = rgb { 153 75 0 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+LAS = {
+	color = rgb { 250 255 208 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+NEN = {
+	color = rgb { 153 0 0 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+ELD = {
+	color = rgb { 0 16 153 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+GLX = {
+	color = rgb { 83 127 88 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+ITH = {
+	color = rgb { 255 255 255 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+LOE = {
+	color = rgb { 233 214 255 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+SIR = {
+	color = rgb { 175 106 255 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+NAH = {
+	color = rgb { 214 178 255 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+DUG = {
+	color = rgb { 129 31 242 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+AMO = {
+	color = rgb { 189 236 255 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+ORR = {
+	color = rgb { 70 67 84 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+FOR = {
+	color = rgb { 127 2 147 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+RIV = {
+	color = rgb { 0 117 163 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+HIL = {
+	color = rgb { 48 31 110 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+GWH = {
+	color = rgb { 18 103 18 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+EMY = {
+	color = rgb { 59 198 251 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+ERD = {
+	color = rgb { 232 126 249 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+LAI = {
+	color = rgb { 89 79 204 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+CAL = {
+	color = rgb { 350 81 100 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+THA = {
+	color = rgb { 60 40 0 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+NER = {
+	color = rgb { 79 153 204 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+NIV = {
+	color = rgb { 33 57 22 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+STA = {
+	color = rgb { 124 198 92 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+ALD = {
+	color = rgb { 350 81 100 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+DUD = {
+	color = rgb { 130 44 92 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+TAH = {
+	color = rgb { 52 105 78 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+CEO = {
+	color = rgb { 67 105 52 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+ETI = {
+	color = rgb { 52 83 105 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+VIY = {
+	color = rgb { 96 105 52 }
+	color2 = rgb { 60 100 0 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+
+
+HIH = {
+	color = rgb { 235 93 0 }
+	color2 = rgb { 50 100 10 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+
+CYG = {
+	color = rgb { 0 210 235 }
+	color2 = rgb { 10 100 20 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+
+WYD = {
+	color = rgb { 360 141 100 }
+	color2 = rgb { 20 100 30 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = romaviri_culture
+	religion_definition = aeluran
+}
+
+GSH = {
+	color = rgb { 360 151 100 }
+	color2 = rgb { 30 100 40 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = tuatha_de_danann_culture
+	religion_definition = aeluran
+}
+
+ATS = {
+	color = rgb { 360 161 100 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = atlareth_culture
+	religion_definition = aeluran
+}
+
+TIN = {
+	color = rgb { 168 115 0 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+AEV = {
+	color = rgb { 167 156 205 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+RIN = {
+	color = rgb { 9 11 76 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+RHU = {
+	color = rgb { 1 7 100 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+WIN = {
+	color = rgb { 226 255 238 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+TIA = {
+	color = rgb { 360 161 100 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = atlareth_culture
+	religion_definition = aeluran
+}
+ORF = {
+	color = rgb { 88 48 104 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+GIL = {
+	color = rgb { 62 9 180 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = astrion_culture
+	religion_definition = aeluran
+}
+HAR = {
+	color = rgb { 255 255 205 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = atlareth_culture
+	religion_definition = aeluran
+}
+LAH = {
+	color = rgb { 83 56 92 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}a
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+FOM = {
+	color = rgb { 104 104 48 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+BNN = {
+	color = rgb { 237 236 127 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+
+
+GPA = {
+	color = rgb { 88 82 78 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+
+NWD = {
+	color = rgb { 238 240 13 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+
+ALR = {
+	color = rgb { 123 71 0 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = atlareth_culture
+	religion_definition = aeluran
+}
+AND = {
+	color = rgb { 89 59 17 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = atlareth_culture
+	religion_definition = aeluran
+}
+CAI = {
+	color = rgb { 360 161 100 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+ELE = {
+	color = rgb { 130 55 44 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+FRS = {
+	color = rgb { 166 114 7 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+ILM = {
+	color = rgb { 105 52 52 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+LAQ = {
+	color = rgb { 32 45 11 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+NAR = {
+	color = rgb { 68 109 1000 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+OST = {
+	color = rgb { 164 246 28 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+TIV = {
+	color = rgb { 119 169 37 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+VAA = {
+	color = rgb { 169 159 37 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = alfar_culture
+	religion_definition = aeluran
+}
+VNY = {
+	color = rgb { 55 0 88 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+LSS = {
+	color = rgb { 58 0 88 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+GWN = {
+	color = rgb { 0 19 88 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+EDH = {
+	color = rgb { 88 0 29 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+NME = {
+	color = rgb { 88 0 79 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+AMM = {
+	color = rgb { 0 61 88 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+GNA = {
+	color = rgb { 360 161 100 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = atlareth_culture
+	religion_definition = aeluran
+}
+LOS = {
+	color = rgb { 0 88 78 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+SVL = {
+	color = rgb { 145 144 140 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+WHI = {
+	color = rgb { 92 108 0 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}
+ZYP = {
+	color = rgb { 147 0 0 }
+	color2 = rgb { 40 100 50 }
+	# male_regnal_names = {}
+	# female_regnal_names = {}
+	# description_category = administrative # cf. common/country_description_category DB
+	# difficulty = 2	# int between 1 and 5
+
+	culture_definition = deepwood_elven_culture
+	religion_definition = aeluran
+}

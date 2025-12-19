@@ -1,0 +1,2022 @@
+#Remember to write sons and daughters ALWAYS after their parents to avoid crashes
+
+character_db={
+	### 
+	dwd_elandra_thalwyn = {
+		first_name = { name = name_elandra }
+		culture = deepwood_elven_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 99 mil = 55
+		birth_date = 1260.1.1
+		birth = pelym
+		dynasty = thalwyn_dynasty
+		tag = DWD
+
+		# estate = nobles_estate
+		# father = syl_victaris_valerith
+		# mother = syl_valindra_valerith
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1260.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	dwd_calmera_thalwyn = {
+		first_name = { name = name_calmera}
+		culture = deepwood_elven_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 85 mil = 70
+		birth_date = 1315.1.1
+		birth = pelym
+		dynasty = thalwyn_dynasty
+		tag = DWD
+
+		# estate = nobles_estate
+		mother = dwd_elandra_thalwyn
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1315.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+
+	### VALERITH ###
+	syl_galdrin_valerith = {
+		first_name = { name = name_galdrin }
+		culture = deepwood_elven_culture
+		religion = aeluran
+		adm = 80 dip = 99 mil = 66
+		birth_date = 1172.1.1
+		death_date = 1260.10.21
+		birth = pelym
+		dynasty = valerith_dynasty
+		tag = SYL
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1210.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_valerith"
+			start_date = 1210.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "pure_blooded"
+			start_date = 1210.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	qwd_faelyn_valerith = {
+		first_name = { name = name_faelyn}
+		culture = deepwood_elven_culture
+		religion = aeluran
+		adm = 80 dip = 99 mil = 66
+		birth_date = 1235.1.1
+		birth = pelym
+		dynasty = valerith_dynasty
+		tag = QWD
+
+		father = syl_galdrin_valerith
+
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1210.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_valerith"
+			start_date = 1210.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	syl_felicity_valerith = {
+		first_name = { name = name_felicity}
+		culture = deepwood_elven_culture
+		religion = aeluran
+		female = yes
+		adm = 80 dip = 99 mil = 66
+		birth_date = 1230.1.1
+		death_date = 1310.10.21
+		birth = pelym
+		dynasty = valerith_dynasty
+		tag = SYL
+
+		father = syl_galdrin_valerith
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1210.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_valerith"
+			start_date = 1210.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	syl_valindra_valerith = {
+		first_name = { name = name_valindra}
+		culture = deepwood_elven_culture
+		religion = aeluran
+		female = yes
+		adm = 80 dip = 99 mil = 66
+		birth_date = 1299.1.1
+		birth = pelym
+		dynasty = valerith_dynasty
+		tag = SYL
+
+		mother = syl_felicity_valerith
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1210.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_valerith"
+			start_date = 1210.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	syl_victaris_valerith = {
+		first_name = { name = name_victaris}
+		culture = deepwood_elven_culture
+		religion = aeluran
+		female = yes
+		adm = 80 dip = 99 mil = 66
+		birth_date = 1295.1.1
+		birth = pelym
+		dynasty = valerith_dynasty
+		tag = SYL
+
+		mother = syl_felicity_valerith
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1210.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_valerith"
+			start_date = 1210.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	syl_seraphine_valerith = {
+		first_name = { name = name_seraphine }
+		culture = deepwood_elven_culture
+		religion = aeluran
+		female = yes
+		adm = 80 dip = 99 mil = 66
+		birth_date = 1318.1.1
+		birth = pelym
+		dynasty = valerith_dynasty
+		tag = SYL
+
+		# estate = nobles_estate
+		father = syl_victaris_valerith
+		mother = syl_valindra_valerith
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_valerith"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "pure_blooded"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	bwd_belanor_valerith = {
+		first_name = { name = name_seraphine }
+		culture = deepwood_elven_culture
+		religion = aeluran
+		adm = 80 dip = 99 mil = 66
+		birth_date = 1315.1.1
+		birth = pelym
+		dynasty = valerith_dynasty
+		tag = BWD
+
+		# estate = nobles_estate
+		father = syl_victaris_valerith
+		mother = syl_valindra_valerith
+		
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1315.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_valerith"
+			start_date = 1315.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1315.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "bastard"
+			start_date = 1315.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	syl_lia_valerith = {
+		first_name = { name = name_lia }
+		culture = deepwood_elven_culture
+		religion = aeluran
+		female = yes
+		adm = 80 dip = 99 mil = 66
+		birth_date = 1319.1.1
+		birth = pelym
+		dynasty = valerith_dynasty
+		tag = SYL
+
+		# estate = nobles_estate
+		father = syl_victaris_valerith
+		mother = syl_valindra_valerith
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1319.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_valerith"
+			start_date = 1319.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1319.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "pure_blooded"
+			start_date = 1319.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	syl_hannah_valerith = {
+		first_name = { name = name_hannah }
+		culture = deepwood_elven_culture
+		religion = aeluran
+		female = yes
+		adm = 80 dip = 99 mil = 66
+		birth_date = 1321.1.1
+		birth = pelym
+		dynasty = valerith_dynasty
+		tag = SYL
+
+		# estate = nobles_estate
+		father = syl_victaris_valerith
+		mother = syl_valindra_valerith
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_valerith"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "pure_blooded"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	myt_virion_valerith = {
+		first_name = { name = name_virion}
+		culture = deepwood_elven_culture
+		religion = aeluran
+		adm = 80 dip = 99 mil = 66
+		birth_date = 1297.1.1
+		birth = pelym
+		dynasty = valerith_dynasty
+		tag = MYT
+
+		mother = syl_felicity_valerith
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1297.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_valerith"
+			start_date = 1297.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	myt_niala_valerith = {
+		first_name = { name = name_niala}
+		culture = deepwood_elven_culture
+		religion = aeluran
+		female = yes
+		adm = 80 dip = 99 mil = 66
+		birth_date = 1318.1.1
+		birth = pelym
+		dynasty = valerith_dynasty
+		tag = MYT
+
+		mother = syl_felicity_valerith
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_valerith"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+
+	### DAELURIN ###
+	hih_saren_daelurin = {
+		first_name = { name = name_saren }
+		culture = alfar_culture
+		religion = aeluran
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1090.1.1
+		death_date = 1220.10.21
+
+		birth = zalari
+		dynasty = daelurin_dynasty
+		tag = HIH
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1090.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1090.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1090.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	hih_morona_daelurin = {
+		first_name = { name = name_morona }
+		culture = alfar_culture
+		religion = aeluran
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1170.1.1
+		death_date = 1290.10.21
+		birth = zalari
+
+		dynasty = daelurin_dynasty
+		tag = HIH
+
+		father = hih_saren_daelurin
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1170.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1170.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1170.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	hih_paldara_daelurin = {
+		first_name = { name = name_paldara }
+		female = yes
+		culture = alfar_culture
+		religion = aeluran
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1236.1.1
+		death_date = 1310.10.21
+		birth = zalari
+		dynasty = daelurin_dynasty
+		tag = HIH
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1236.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1236.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1236.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	hih_vara_daelurin = {
+		first_name = { name = name_vara }
+		culture = alfar_culture
+		religion = aeluran
+		female = yes
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1160.1.1
+		death_date = 1290.10.21
+
+		birth = zalari
+		dynasty = daelurin_dynasty
+		tag = HIH
+
+		father = hih_saren_daelurin
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1160.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1160.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1160.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	hih_ganduin_daelurin = {
+		first_name = { name = name_ganduin }
+		culture = alfar_culture
+		religion = aeluran
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1276.1.1
+		birth = zalari
+		dynasty = daelurin_dynasty
+		tag = HIH
+
+		mother = hih_vara_daelurin
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1276.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1276.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1276.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	hih_pamora_daelurin = {
+		first_name = { name = name_pamora }
+		culture = alfar_culture
+		religion = aeluran
+		female = yes
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1296.1.1
+		birth = zalari
+		dynasty = daelurin_dynasty
+		tag = HIH
+
+		mother = hih_vara_daelurin
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1296.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1296.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1296.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	hih_galvin_daelurin = {
+		first_name = { name = name_galvin }
+		culture = alfar_culture
+		religion = aeluran
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1314.1.1
+		birth = zalari
+		dynasty = daelurin_dynasty
+		tag = HIH
+
+		father = hih_ganduin_daelurin
+		mother = hih_pamora_daelurin
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1314.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1314.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1314.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	hih_faldrin_daelurin = {
+		first_name = { name = name_faldrin }
+		culture = alfar_culture
+		religion = aeluran
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1316.1.1
+		birth = zalari
+		dynasty = daelurin_dynasty
+		tag = HIH
+
+		father = hih_ganduin_daelurin
+		mother = hih_pamora_daelurin
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1316.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1316.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1316.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	hih_delwyn_daelurin = {
+		first_name = { name = name_delwyn }
+		culture = alfar_culture
+		religion = aeluran
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1318.1.1
+		birth = zalari
+		dynasty = daelurin_dynasty
+		tag = HIH
+
+		father = hih_ganduin_daelurin
+		mother = hih_pamora_daelurin
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	hih_nienor_daelurin = {
+		first_name = { name = name_nienor }
+		culture = alfar_culture
+		religion = aeluran
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1303.1.1
+		birth = zalari
+		dynasty = daelurin_dynasty
+		tag = HIH
+
+		mother = hih_paldara_daelurin
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1303.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1303.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1303.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	hih_thaleia_daelurin = {
+		first_name = { name = name_thaleia}
+		culture = alfar_culture
+		religion = aeluran
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1299.1.1
+		birth = zalari
+		dynasty = daelurin_dynasty
+		tag = HIH
+
+		mother = hih_paldara_daelurin
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1299.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1299.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1299.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	hih_vyatki_daelurin = {
+		first_name = { name = name_vyatki }
+		culture = alfar_culture
+		religion = aeluran
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1292.1.1
+		birth = zalari
+		dynasty = daelurin_dynasty
+		tag = HIH
+
+		mother = hih_paldara_daelurin
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1292.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1292.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1292.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	hih_elros_daelurin = {
+		first_name = { name = name_elros }
+		culture = alfar_culture
+		religion = aeluran
+		adm = 66 dip = 45 mil = 99
+		birth_date = 1317.1.1
+		birth = zalari
+		dynasty = daelurin_dynasty
+		tag = BWD
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_daelurin"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	### Thundarael ###
+	cyg_tanis_thundarael = {
+		first_name = { name = name_tanis}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1070.1.1
+		death_date = 1200.10.21
+
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_lazaran_thundarael = {
+		first_name = { name = name_lazaran}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1130.1.1
+		death_date = 1280.10.21
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		father = cyg_tanis_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_elmera_thundarael = {
+		first_name = { name = name_elmera}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1170.1.1
+		death_date = 1280.10.21
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		father = cyg_tanis_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_felna_thundarael = {
+		first_name = { name = name_felna}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1235.1.1
+		death_date = 1280.10.21
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		father = cyg_tanis_thundarael
+
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_aris_thundarael = {
+		first_name = { name = name_aris}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1170.1.1
+		death_date = 1290.10.21
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		father = tanis_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_melony_thundarael = {
+		first_name = { name = name_melony}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1270.1.1
+		death_date = 1325.10.21
+
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		father = qwd_faelyn_valerith
+		mother = cyg_aris_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_heldrin_thundarael = {
+		first_name = { name = name_heldrin}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1308.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		mother = cyg_felna_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_fera_thundarael = {
+		first_name = { name = name_fera}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1330.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		father = cyg_heldrin_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_celestia_thundarael = {
+		first_name = { name = name_celestia}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1306.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		mother = cyg_felna_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_adam_thundarael = {
+		first_name = { name = name_adam}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1307.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		father = qwd_faelyn_valerith
+		mother = cyg_aris_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_freyja_thundarael = {
+		first_name = { name = name_freyja}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1307.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		father = qwd_faelyn_valerith
+		mother = cyg_aris_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_nictheras_thundarael = {
+		first_name = { name = name_nictheras}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1230.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		father = cyg_lazaran_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_elysia_thundarael = {
+		first_name = { name = name_elysia}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1270.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		mother = cyg_elmera_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_arandur_thundarael = {
+		first_name = { name = name_arandur}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1250.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		father = cyg_lazaran_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_nolan_thundarael = {
+		first_name = { name = name_nolan}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1300.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		father = cyg_nictheras_thundarael
+		mother = cyg_elysia_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_lyra_thundarael = {
+		first_name = { name = name_lyra}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1307.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		father = cyg_nictheras_thundarael
+		mother = cyg_elysia_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_taliana_thundarael = {
+		first_name = { name = name_taliana}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1319.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		mother = cyg_melony_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_tyria_thundarael = {
+		first_name = { name = name_tyria}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1317.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		mother = cyg_melony_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	cyg_thrandire_thundarael = {
+		first_name = { name = name_thrandire}
+		culture = astrion_culture
+		religion = aeluran
+		adm = 85 dip = 85 mil = 66
+		birth_date = 1313.1.1
+		birth = bolshoy_yugan
+		dynasty = thundarael_dynasty
+		tag = CYG
+
+		mother = cyg_melony_thundarael
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_thundarael"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+
+	### Serelion ###
+	wyd_malfurian_serelion = {
+		first_name = { name = name_malfurian}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_maldrik_serelion = {
+		first_name = { name = name_maldrik}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_hallendar_serelion = {
+		first_name = { name = name_hallendar}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_saevel_serelion = {
+		first_name = { name = name_saevel}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_meldona_serelion = {
+		first_name = { name = name_meldona}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_meldrid_serelion = {
+		first_name = { name = name_meldrid}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_selene_serelion = {
+		first_name = { name = name_selene}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_aurelius_serelion = {
+		first_name = { name = name_aurelius}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_aurelius_serelion = {
+		first_name = { name = name_aurelius}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_julius_hyperion = {
+		first_name = { name = name_julius}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_marco_hyperion = {
+		first_name = { name = name_marco}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_cain_serelion = {
+		first_name = { name = name_cain}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_kylie_hyperion = {
+		first_name = { name = name_kylie}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_delfie_serelion = {
+		first_name = { name = name_delfie}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_antigoni_hyperion = {
+		first_name = { name = name_antigoni}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_sofia_serelion = {
+		first_name = { name = name_sofia}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_aubrey_serelion = {
+		first_name = { name = name_aubrey}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_caldonin_serelion = {
+		first_name = { name = name_caldonin}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	wyd_anatole_serelion = {
+		first_name = { name = name_anatole}
+		culture = romaviri_culture
+		religion = aeluran
+		adm = 75 dip = 75 mil = 99
+		birth_date = 1313.1.1
+		birth = limassol
+		dynasty = serelion_dynasty
+		tag = WYD
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	### Gwynthorn ###
+	gsh_galanoriel_gwynthorn = {
+		first_name = { name = name_galanoriel}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1290.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	### Lormelis ###
+	ats_aelor_lormelis = {
+		first_name = { name = name_aelor}
+		culture = atlareth_culture
+		religion = aeluran
+		adm = 75 dip = 65 mil = 99
+		birth_date = 1305.1.1
+		birth = raphoe
+		dynasty = lormelis_dynasty
+		tag = ATS
+
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1305.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_lormelis"
+			start_date = 1290.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+}

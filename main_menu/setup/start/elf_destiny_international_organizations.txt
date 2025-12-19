@@ -1,0 +1,20 @@
+international_organization_manager = {
+	add_international_organization = {
+		type = aeluran_order
+		creation_date = 33.1.1
+		members = { DWD }
+		leader = DWD
+
+		laws = {
+			# limited_indulgences
+			# ultramontanism
+			# unlimited_veneration
+			# tolerated_simony
+			# society_of_jesus_not_allowed
+			# witchcraft_not_aknowledged
+			# priest_marriage_not_allowed
+		}
+
+		ruler_term = { character = dwd_elandra_thalwyn start_date = 1300.12.20 regnal_number = 1 }
+	}
+}

@@ -1,0 +1,32 @@
+﻿mythril = {
+	method = mining
+	category = raw_material
+	color = { 0.168 0.556 0.854 1 }
+	default_market_price = 10
+
+	transport_cost = 1
+	ai_rgo_size_importance = 10 # ai preference to avoid building a city on this rgo
+	ai_rgo_expansion_priority = 0.2
+
+	# demand_add = {
+	# 	nobles = 0.025
+	# }	
+	
+	wealth_impact_threshold = {
+		all = 1.05
+	}
+}
+
+lembas = {
+	category = produced
+	color = { 0.168 0.556 0.254 1 }
+	default_market_price = 4
+	transport_cost = 0.1
+}
+
+elven_crafts = {
+	category = produced
+	color = { 0.168 0.556 0.654 1 }
+	default_market_price = 4
+	transport_cost = 1
+}

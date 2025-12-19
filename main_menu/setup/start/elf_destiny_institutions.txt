@@ -1,0 +1,197 @@
+locations={
+# Sylvael - Valerith 
+turyinskiye_rudniki = {
+	feudalism = yes
+	legalism = yes
+}
+novaya_lyalya = {
+	feudalism = yes
+	legalism = yes
+}
+sosva = {
+	feudalism = yes
+	legalism = yes
+}
+verkhoturye = {
+	feudalism = yes
+	legalism = yes
+}
+sankina = {
+	feudalism = yes
+	legalism = yes
+}
+gari = {
+	feudalism = yes
+	legalism = yes
+}
+ponil = {
+	feudalism = yes
+	legalism = yes
+}
+pelym = {
+	feudalism = yes
+	legalism = yes
+}
+turinsk = {
+	feudalism = yes
+	legalism = yes
+}
+tabory = {
+	feudalism = yes
+	legalism = yes
+}
+
+# High Hills - Daelurin
+minusinsk = {
+	feudalism = yes
+	legalism = yes
+}
+idrinskoye = {
+	feudalism = yes
+	legalism = yes
+}
+kortuz = {
+	feudalism = yes
+	legalism = yes
+}
+krasnoyarsk = {
+	feudalism = yes
+	legalism = yes
+}
+kansk = {
+	feudalism = yes
+	legalism = yes
+}
+ilansky = {
+	feudalism = yes
+	legalism = yes
+}
+biryusa = {
+	feudalism = yes
+	legalism = yes
+}
+nizhneudinsk = {
+	feudalism = yes
+	legalism = yes
+}
+siberia_kuytun = {
+	feudalism = yes
+	legalism = yes
+}
+staraya_zima = {
+	feudalism = yes
+	legalism = yes
+}
+zalari = {
+	feudalism = yes
+	legalism = yes
+}
+cheremkhovo = {
+	feudalism = yes
+	legalism = yes
+}
+irkutsk = {
+	feudalism = yes
+	legalism = yes
+}
+slyudyanka = {
+	feudalism = yes
+	legalism = yes
+}
+
+# Crystal Glades - Thundarael
+bolshoy_yugan = {
+	feudalism = yes
+	legalism = yes
+}
+megion = {
+	feudalism = yes
+	legalism = yes
+}
+upper_ob = {
+	feudalism = yes
+	legalism = yes
+}
+bolshoy_balyk = {
+	feudalism = yes
+	legalism = yes
+}
+surgut = {
+	feudalism = yes
+	legalism = yes
+}
+irtysh = {
+	feudalism = yes
+	legalism = yes
+}
+vasyugan = {
+	feudalism = yes
+	legalism = yes
+}
+kargasok = {
+	feudalism = yes
+	legalism = yes
+}
+kolpashevo = {
+	feudalism = yes
+	legalism = yes
+}
+
+# Wyrm's Den - Serelion
+morphou = {
+	feudalism = yes
+	legalism = yes
+}
+paphos = {
+	feudalism = yes
+	legalism = yes
+}
+limassol = {
+	feudalism = yes
+	legalism = yes
+}
+malta = {
+	feudalism = yes
+	legalism = yes
+}
+
+# Green Shores - Gwynthorn
+raphoe = {
+	feudalism = yes
+	legalism = yes
+}
+donegal = {
+	feudalism = yes
+	legalism = yes
+}
+kilmacrennan = {
+	feudalism = yes
+	legalism = yes
+}
+inishowen = {
+	feudalism = yes
+	legalism = yes
+}
+
+# Atlas - Lormelis
+brest = {
+	feudalism = yes
+	legalism = yes
+}
+st_pol_de_leon = {
+	feudalism = yes
+	legalism = yes
+}
+treguier = {
+	feudalism = yes
+	legalism = yes
+}
+chatelaudren = {
+	feudalism = yes
+	legalism = yes
+}
+saint_brieuc = {
+	feudalism = yes
+	legalism = yes
+}
+}

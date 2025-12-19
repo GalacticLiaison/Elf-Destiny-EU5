@@ -1,0 +1,50 @@
+﻿# elven_high_councils = {
+# 	age = age_1_traditions
+	
+# 	societal_values = {
+# 		humanist_focus
+# 	}
+
+# 	country_modifier = {
+# 		tolerance_heretic = 1
+# 		tolerance_heathen = 1
+# 		monthly_towards_communalism = societal_value_monthly_move
+# 		monthly_towards_humanist = societal_value_monthly_move
+# 	}
+
+# 	years = 2
+# }
+
+
+
+# # Note: give +1 government reforms for these
+# elven_superiority = {
+
+# }
+
+# open_hearted = {
+
+# }
+
+
+# calequendi_mentorship = {
+# 	all children recieve expensive education
+# 	calequendi power grows
+# }
+
+
+
+
+
+# Aelurans
+
+# aeluran_advisors = {
+
+# }
+
+# daughters of the red - right to take magically talented daughters to be trained
+
+
+# king_worship = {
+
+# }

@@ -1,0 +1,18 @@
+discovered_regions = {
+	west_siberia_region
+	russian_region
+	khorasan_region
+	steppes_region
+	scandinavian_region
+}
+
+discovered_areas = {
+
+}
+
+discovered_provinces = {
+	# Sylvael Provinces
+	ponil_province
+	kushva_province
+	turinsk_province
+}

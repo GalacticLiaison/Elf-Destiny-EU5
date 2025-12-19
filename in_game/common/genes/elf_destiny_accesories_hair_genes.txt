@@ -1,0 +1,74 @@
+﻿accessory_genes = {
+
+	INJECT:hair_styles = {
+
+		elf_hair_style = {
+			index = 13
+			male = {
+				1 = male_german_hat_hair_a_01 # t
+				1 = male_german_hat_hair_a_02  # t
+				1 = male_german_hat_hair_a_03
+				1 = male_german_hat_hair_b_01
+				# 1 = male_north_german_hair_short_curly
+				1 = male_north_german_hair_short_straight_pomp # maybe
+				# 1 = male_north_german_hair_bob_regular
+				# 1 = male_north_german_hair_balding_forehead
+				# 1 = male_north_german_hair_balding_top
+				# 1 = male_catholic_hair_monk_bob
+				# 1 = male_ashanti_hair_short_afro
+				# 1 = male_ashanti_hair_big_afro
+				1 = male_han_chinese_hair_bun_tie #
+				1 = male_syrian_hair_curly_regular # maybe
+				# 1 = male_hair_aztec_hair_bob_long
+				# 1 = male_iroquois_hair_mohawk_regular
+				# 1 = male_deccan_hair_front_knot # goofy
+
+				# 1 = male_north_german_hair_crown_regular # test with crown
+				# 1 = male_north_german_hair_crown_long
+				# 1 = male_north_german_hair_crown_long_bald
+				# 1 = male_north_german_hair_crown_short
+				# 1 = male_north_german_hair_crown_long_back
+				# 1 = male_german_generic_crown_hair
+			}
+			female = {
+				1 = female_german_northern_braid_hair_behind #
+				# 1 = female_ashanti_hair_short_afro
+				# 1 = female_iroquois_straight_parted_hair
+				1 = female_hair_chinese_bun_loose # love
+				1 = female_syrian_braided_back_hair # love
+				# 1 = female_aztec_horn_braid_hair
+				1 = female_deccan_straight_back_hair # love
+				1 = female_hair_long_basic # ok
+				# 1 = male_north_german_hair_bob_regular
+				# 1 = female_german_northern_hair_long_crown
+			}
+			girl = {
+				1 = female_hair_long_basic #
+				# 1 = female_ashanti_hair_short_afro
+				1 = girl_han_chinese_hair_bon_sides # maybe
+			}
+			boy = {
+				1 = boy_short_hair_a #
+				# 1 = boy_north_german_hair_bob_short
+				# 1 = male_ashanti_hair_short_afro
+				# 1 = boy_han_chinese_hair_bun_front
+				1 = male_syrian_hair_curly_regular #
+				1 = boy_aztec_hair_bob_short
+			}
+			adolescent_boy = boy
+			adolescent_girl = girl
+			infant = {}
+		}
+
+	}
+
+}
+
+
+# Hair - Female
+# - female_german
+# Hair - Male
+
+
+
+

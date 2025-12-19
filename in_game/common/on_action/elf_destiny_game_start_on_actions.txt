@@ -1,0 +1,18 @@
+﻿on_game_start = {
+	on_actions = {
+		give_genetic_traits_to_starter_characters
+		convert_and_assimilate_elf_pops
+	}
+}
+
+give_genetic_traits_to_starter_characters = {
+	effect = {
+		give_genetic_traits_to_starter_characters_effect = yes
+	}
+}
+
+convert_and_assimilate_elf_pops = {
+	effect = {
+		convert_and_assimilate_elf_pops_effect = yes
+	}
+}

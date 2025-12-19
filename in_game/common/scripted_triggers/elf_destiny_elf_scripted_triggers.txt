@@ -1,0 +1,38 @@
+﻿is_any_elf_type = {
+    OR = {
+		has_genetic_trait = { trait = elf_tier_1 }
+		has_genetic_trait = { trait = elf_tier_2 }
+		has_genetic_trait = { trait = elf_tier_3 }
+	}
+}
+
+has_any_elven_bloodline = {
+	OR = {
+		has_genetic_trait = { trait = royal_elf_valerith }
+		has_genetic_trait = { trait = royal_elf_serelion }
+		has_genetic_trait = { trait = royal_elf_gwynthorn }
+		has_genetic_trait = { trait = royal_elf_thundarael }
+		has_genetic_trait = { trait = royal_elf_daelurin }
+		has_genetic_trait = { trait = royal_elf_lormelis }
+	}
+}
+
+has_genetic_trait = {
+	is_target_in_variable_list = {
+		name = genetic_traits
+		target = trait:$trait$
+	}
+}
+
+# has_any_genetic_trait_modifier = {
+# 	any_in_global_list = {
+# 		variable = global_genetic_traits
+
+
+# 	}
+# 	OR = {
+
+# 	}
+# }
+
+# has_genetic_character = {}

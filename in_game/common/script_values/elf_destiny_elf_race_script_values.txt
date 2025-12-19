@@ -1,0 +1,215 @@
+﻿elf_racial_score = {
+	value = 0
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = elf_tier_3 }
+			}
+			value = 3
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = elf_tier_2 }
+			}
+			value = 2
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = elf_tier_1 }
+			}
+			value = 1
+		}
+	}
+}
+
+inherited_elf_racial_score = {
+	value = 0
+	add = father.elf_racial_score
+	add = mother.elf_racial_score
+	divide = 2
+}
+
+
+beauty_trait_score  = {
+	value = 0
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_bad_1 }
+			}
+			value = 1
+		}
+	}
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_bad_2 }
+			}
+			value = 2
+		}
+	}
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_bad_3 }
+			}
+			value = 3
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_good_1 }
+			}
+			value = 1
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_good_2 }
+			}
+			value = 2
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_good_3 }
+			}
+			value = 3
+		}
+	}
+}
+
+intellect_trait_score  = {
+	value = 0
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_bad_1 }
+			}
+			value = 1
+		}
+	}
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_bad_2 }
+			}
+			value = 2
+		}
+	}
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_bad_3 }
+			}
+			value = 3
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_good_1 }
+			}
+			value = 1
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_good_2 }
+			}
+			value = 2
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_good_3 }
+			}
+			value = 3
+		}
+	}
+}
+
+physique_trait_score  = {
+	value = 0
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_bad_1 }
+			}
+			value = 1
+		}
+	}
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_bad_2 }
+			}
+			value = 2
+		}
+	}
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_bad_3 }
+			}
+			value = 3
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_good_1 }
+			}
+			value = 1
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_good_2 }
+			}
+			value = 2
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_good_3 }
+			}
+			value = 3
+		}
+	}
+}
+
+inherited_beauty_trait_score = {
+	value = 0
+	add = father.beauty_trait_score
+	add = mother.beauty_trait_score
+	divide = 2
+}
+
+inherited_intellect_trait_score = {
+	value = 0
+	add = father.intellect_trait_score
+	add = mother.intellect_trait_score
+	divide = 2
+}
+
+inherited_physique_trait_score = {
+	value = 0
+	add = father.physique_trait_score
+	add = mother.physique_trait_score
+	divide = 2
+}
+
+
+ 

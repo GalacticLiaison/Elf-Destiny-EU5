@@ -1,0 +1,3 @@
+﻿elven_language_family = {
+	color = map_celtic_language_family
+}

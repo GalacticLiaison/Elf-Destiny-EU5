@@ -1,0 +1,11 @@
+﻿elf_trait = {
+	color = rgb { 228 208 10 }
+}
+
+elf_bloodline = {
+	color = rgb { 10 10 10 }
+}
+
+elf_genetic = {
+	color = rgb { 69 4 20 }
+}

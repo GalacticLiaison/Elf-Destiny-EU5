@@ -1,0 +1,27 @@
+﻿# Magi
+army_magi_build = {
+	gold = 150
+	manpower = 1
+}
+army_magi_reinforce = {
+	gold = 7.5
+	manpower = 1
+}
+army_magi_maintenance = {
+	gold = 1.5
+	manpower = 0.02
+}
+
+
+army_magi_artillery_build = {
+	gold = 150
+	manpower = 1
+}
+army_magi_artillery_reinforce = {
+	gold = 7.5
+	manpower = 1
+}
+army_magi_artillery_maintenance = {
+	gold = 1.5
+	manpower = 0.02
+}

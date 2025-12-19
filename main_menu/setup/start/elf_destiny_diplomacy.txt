@@ -1,0 +1,5 @@
+diplomacy_manager = {
+	# Valerith
+    dependency = { first = SYL second = MYT subject_type = vassal }
+    dependency = { first = SYL second = BWD subject_type = vassal }
+}

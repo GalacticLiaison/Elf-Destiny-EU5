@@ -1,0 +1,35 @@
+﻿high_elven_language = {
+
+	color = map_haida_l
+
+	family = elven_language_family
+
+	male_names = {
+		Aelor Aelrond Alderon Alarion Alarion Arandor Arandur Arannis Arathorn Caelion Caladon Calenor Calenorin
+		Eolendil Eraelas Erendil Erendor Erevan Erevandil Eldrion Elendir Elensar Elendar Elorian Faelion
+		Faelmir Felorian Finreth Galador Galadrim Galandil Galindor Haldiran Haldirion Halion Kaelen Lirandir
+		Maelandir Maelith Naelion Orophin Thaldir Thaldirin Thalion Thalionel Thalorin Valendor Vaelan
+	}
+	
+	female_names = {
+		Aeliana Alandria Aradia Aranelle Aravenna Arista Arwenelle Arwenia Calanthe Calindra Calitha
+		Celestia Celestine Elandra Elara Elara Elenna Elysara Elysia Elowyn Elowyn Elowynn Elysara
+		Erendra Erina Evania Evandriel Evanya Galadria Galanoriel Galenia Galanwen Isilwen Isolde
+		Liraelle Lyria Melantha Meliantha Miriel Nariel Nivara Seraphina Thalassa Thalora Valeria Valoria
+	}
+
+	dynasty_names = {
+		Alderborne Amaranthel Ashenwood Blackthorn Caledonwood Darkmoon Duskshadow Ebonhart Eldertree
+		Everglen Fairwind Frostbloom Goldensong Greenleaf Highthorne Ironthorn Lightbringer Moonwhisper
+		Nightshade Oakenshield Quickblade Ravensong Shadowdancer Silverleaf Starfrost Sunfire Swiftwind
+		Thundersong Twilightbane Wildheart Windrider Winterthorn Woodborne Brightmoon Crystalwind
+		Emberleaf Fireheart Frostmoon Glimmerlight Hollowshade Moonshadow Nightfire Rainshadow
+		Skybloom Songsteel Starshade Stormwhisper Sunshadow Wildfire Willowisp Wintersong Ashenbrook
+		Brightwood Crystalglade Frostthorn Ironbark Moonfeather Ravenshadow Silverbrook Stormthorn
+		Sunspark Swiftshadow Wildwood
+	}
+	lowborn = {
+		Meadow River Dewflower
+	}
+
+}

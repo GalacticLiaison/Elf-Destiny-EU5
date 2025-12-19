@@ -1,0 +1,2018 @@
+﻿monthly_calaquendi_estate_rebel_growth={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_target_satisfaction={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_satisfaction_recovery={
+	color=neutral
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_satisfaction_decay={
+	color=neutral
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_max_tax={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_min_tax={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_levy_size={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+local_calaquendi_estate_power={
+	color=bad
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+global_calaquendi_estate_power={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_cannot_marry={
+	color=bad
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_can_participate_in_parliament={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_blocked_from_parliament={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_agenda_impact={
+	percent=yes
+	game_data={
+		category=country
+		should_show_in_modifiers_tab=no
+	}
+}
+
+calaquendi_estate_blocked_from_cabinet={
+	color=bad
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_allowed_in_cabinet={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_allowed_to_build_roads={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_blocked_from_leading_military={
+	color=bad
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_allowed_leading_military={
+	color=neutral
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+local_calaquendi_desired_pop_scaled={
+	percent=yes
+	game_data={
+		category=location
+		scale_with_pop=yes
+	}
+}
+
+local_calaquendi_desired_pop={
+	decimals=0
+	game_data={
+		category=location
+		format="FormatPopCaps"
+	}
+}
+
+global_calaquendi_desired_pop={
+	decimals=0
+	game_data={
+		category=country
+		format="FormatPopCaps"
+	}
+}
+global_calaquendi_desired_pop_scaled={
+	percent=yes
+	game_data={
+		category=country
+		scale_with_pop=yes
+	}
+}
+
+global_calaquendi_city_desired_pop_scaled={
+	percent=yes
+	game_data={
+		category=country
+		scale_with_pop=yes
+	}
+}
+global_calaquendi_city_desired_pop={
+	decimals=0
+	game_data={
+		category=country
+		format="FormatPopCaps"
+	}
+}
+
+global_calaquendi_rural_desired_pop_scaled={
+	percent=yes
+	game_data={
+		category=country
+		scale_with_pop=yes
+	}
+}
+
+global_calaquendi_rural_desired_pop={
+	decimals=0
+	game_data={
+		category=country
+		format="FormatPopCaps"
+	}
+}
+global_calaquendi_migration_allowed={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+local_calaquendi_migration_allowed={
+	boolean=yes
+	game_data={
+		category=location
+	}
+}
+local_calaquendi_max_literacy={
+	already_percent=yes
+	game_data={
+		category=location
+	}
+}
+global_calaquendi_max_literacy={
+	already_percent=yes
+	game_data={
+		category=country
+	}
+}
+global_calaquendi_assimilation_blocked={
+	color=bad
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+local_calaquendi_assimilation_blocked={
+	color=bad
+	boolean=yes
+	game_data={
+		category=location
+	}
+}
+global_calaquendi_conversion_blocked={
+	color=bad
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+local_calaquendi_conversion_blocked={
+	color=bad
+	boolean=yes
+	game_data={
+		category=location
+	}
+}
+local_calaquendi_food_consumption={
+	color=bad
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+global_calaquendi_food_consumption={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+# # Eldar
+# monthly_eldar_estate_rebel_growth={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_target_satisfaction={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_satisfaction_recovery={
+# 	color=neutral
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_satisfaction_decay={
+# 	color=neutral
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_max_tax={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_min_tax={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_levy_size={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# local_eldar_estate_power={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+
+# global_eldar_estate_power={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_cannot_marry={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_can_participate_in_parliament={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_blocked_from_parliament={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_agenda_impact={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		should_show_in_modifiers_tab=no
+# 	}
+# }
+
+# eldar_estate_blocked_from_cabinet={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_allowed_in_cabinet={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_allowed_to_build_roads={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_blocked_from_leading_military={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# eldar_estate_allowed_leading_military={
+# 	color=neutral
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# local_eldar_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# local_eldar_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=location
+# 		format="FormatPopCaps"
+# 	}
+# }
+
+# global_eldar_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+# global_eldar_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# global_eldar_city_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+# global_eldar_city_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+
+# global_eldar_rural_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# global_eldar_rural_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+# global_eldar_migration_allowed={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_eldar_migration_allowed={
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# local_eldar_max_literacy={
+# 	already_percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_eldar_max_literacy={
+# 	already_percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# global_eldar_assimilation_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_eldar_assimilation_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_eldar_conversion_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_eldar_conversion_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# local_eldar_food_consumption={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_eldar_food_consumption={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# # Priestess
+# monthly_priestess_estate_rebel_growth={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_target_satisfaction={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_satisfaction_recovery={
+# 	color=neutral
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_satisfaction_decay={
+# 	color=neutral
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_max_tax={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_min_tax={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_levy_size={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# local_priestess_estate_power={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+
+# global_priestess_estate_power={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_cannot_marry={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_can_participate_in_parliament={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_blocked_from_parliament={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_agenda_impact={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		should_show_in_modifiers_tab=no
+# 	}
+# }
+
+# priestess_estate_blocked_from_cabinet={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_allowed_in_cabinet={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_allowed_to_build_roads={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_blocked_from_leading_military={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# priestess_estate_allowed_leading_military={
+# 	color=neutral
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# local_priestess_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# local_priestess_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=location
+# 		format="FormatPopCaps"
+# 	}
+# }
+
+# global_priestess_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+# global_priestess_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# global_priestess_city_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+# global_priestess_city_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+
+# global_priestess_rural_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# global_priestess_rural_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+# global_priestess_migration_allowed={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_priestess_migration_allowed={
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# local_priestess_max_literacy={
+# 	already_percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_priestess_max_literacy={
+# 	already_percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# global_priestess_assimilation_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_priestess_assimilation_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_priestess_conversion_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_priestess_conversion_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# local_priestess_food_consumption={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_priestess_food_consumption={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# # Craftsman
+# monthly_craftsmen_estate_rebel_growth={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_target_satisfaction={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_satisfaction_recovery={
+# 	color=neutral
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_satisfaction_decay={
+# 	color=neutral
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_max_tax={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_min_tax={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_levy_size={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# local_craftsmen_estate_power={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+
+# global_craftsmen_estate_power={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_cannot_marry={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_can_participate_in_parliament={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_blocked_from_parliament={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_agenda_impact={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		should_show_in_modifiers_tab=no
+# 	}
+# }
+
+# craftsmen_estate_blocked_from_cabinet={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_allowed_in_cabinet={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_allowed_to_build_roads={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_blocked_from_leading_military={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# craftsmen_estate_allowed_leading_military={
+# 	color=neutral
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# local_craftsmen_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# local_craftsmen_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=location
+# 		format="FormatPopCaps"
+# 	}
+# }
+
+# global_craftsmen_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+# global_craftsmen_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# global_craftsmen_city_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+# global_craftsmen_city_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+
+# global_craftsmen_rural_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# global_craftsmen_rural_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+# global_craftsmen_migration_allowed={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_craftsmen_migration_allowed={
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# local_craftsmen_max_literacy={
+# 	already_percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_craftsmen_max_literacy={
+# 	already_percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# global_craftsmen_assimilation_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_craftsmen_assimilation_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_craftsmen_conversion_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_craftsmen_conversion_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# local_craftsmen_food_consumption={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_craftsmen_food_consumption={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# # Elven Laborers
+# monthly_elven_laborers_estate_rebel_growth={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_target_satisfaction={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_satisfaction_recovery={
+# 	color=neutral
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_satisfaction_decay={
+# 	color=neutral
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_max_tax={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_min_tax={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_levy_size={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# local_elven_laborers_estate_power={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+
+# global_elven_laborers_estate_power={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_cannot_marry={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_can_participate_in_parliament={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_blocked_from_parliament={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_agenda_impact={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		should_show_in_modifiers_tab=no
+# 	}
+# }
+
+# elven_laborers_estate_blocked_from_cabinet={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_allowed_in_cabinet={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_allowed_to_build_roads={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_blocked_from_leading_military={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elven_laborers_estate_allowed_leading_military={
+# 	color=neutral
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# local_elven_laborers_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# local_elven_laborers_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=location
+# 		format="FormatPopCaps"
+# 	}
+# }
+
+# global_elven_laborers_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+# global_elven_laborers_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# global_elven_laborers_city_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+# global_elven_laborers_city_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+
+# global_elven_laborers_rural_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# global_elven_laborers_rural_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+# global_elven_laborers_migration_allowed={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_elven_laborers_migration_allowed={
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# local_elven_laborers_max_literacy={
+# 	already_percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_elven_laborers_max_literacy={
+# 	already_percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# global_elven_laborers_assimilation_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_elven_laborers_assimilation_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_elven_laborers_conversion_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_elven_laborers_conversion_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# local_elven_laborers_food_consumption={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_elven_laborers_food_consumption={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# # Warriors
+# monthly_warriors_estate_rebel_growth={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_target_satisfaction={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_satisfaction_recovery={
+# 	color=neutral
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_satisfaction_decay={
+# 	color=neutral
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_max_tax={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_min_tax={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_levy_size={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# local_warriors_estate_power={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+
+# global_warriors_estate_power={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_cannot_marry={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_can_participate_in_parliament={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_blocked_from_parliament={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_agenda_impact={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		should_show_in_modifiers_tab=no
+# 	}
+# }
+
+# warriors_estate_blocked_from_cabinet={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_allowed_in_cabinet={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_allowed_to_build_roads={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_blocked_from_leading_military={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# warriors_estate_allowed_leading_military={
+# 	color=neutral
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# local_warriors_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# local_warriors_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=location
+# 		format="FormatPopCaps"
+# 	}
+# }
+
+# global_warriors_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+# global_warriors_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# global_warriors_city_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+# global_warriors_city_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+
+# global_warriors_rural_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# global_warriors_rural_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+# global_warriors_migration_allowed={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_warriors_migration_allowed={
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# local_warriors_max_literacy={
+# 	already_percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_warriors_max_literacy={
+# 	already_percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# global_warriors_assimilation_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_warriors_assimilation_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_warriors_conversion_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_warriors_conversion_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# local_warriors_food_consumption={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_warriors_food_consumption={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# # Elves
+# monthly_elves_estate_rebel_growth={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_target_satisfaction={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_satisfaction_recovery={
+# 	color=neutral
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_satisfaction_decay={
+# 	color=neutral
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_max_tax={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_min_tax={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_levy_size={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# local_elves_estate_power={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+
+# global_elves_estate_power={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_cannot_marry={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_can_participate_in_parliament={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_blocked_from_parliament={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_agenda_impact={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		should_show_in_modifiers_tab=no
+# 	}
+# }
+
+# elves_estate_blocked_from_cabinet={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_allowed_in_cabinet={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_allowed_to_build_roads={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_blocked_from_leading_military={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# elves_estate_allowed_leading_military={
+# 	color=neutral
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# local_elves_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# local_elves_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=location
+# 		format="FormatPopCaps"
+# 	}
+# }
+
+# global_elves_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+# global_elves_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# global_elves_city_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+# global_elves_city_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+
+# global_elves_rural_desired_pop_scaled={
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 		scale_with_pop=yes
+# 	}
+# }
+
+# global_elves_rural_desired_pop={
+# 	decimals=0
+# 	game_data={
+# 		category=country
+# 		format="FormatPopCaps"
+# 	}
+# }
+# global_elves_migration_allowed={
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_elves_migration_allowed={
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# local_elves_max_literacy={
+# 	already_percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_elves_max_literacy={
+# 	already_percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# global_elves_assimilation_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_elves_assimilation_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_elves_conversion_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# local_elves_conversion_blocked={
+# 	color=bad
+# 	boolean=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# local_elves_food_consumption={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=location
+# 	}
+# }
+# global_elves_food_consumption={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+
+# Goods
+
+ban_exports_of_mythril={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+ban_imports_of_mythril={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+local_mythril_output_modifier={
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+global_mythril_output_modifier={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+can_extract_mythril={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+ban_exports_of_lembas={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+ban_imports_of_lembas={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+local_lembas_output_modifier={
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+global_lembas_output_modifier={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+can_extract_lembas={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+ban_exports_of_elven_crafts={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+ban_imports_of_elven_crafts={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+local_elven_crafts_output_modifier={
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+global_elven_crafts_output_modifier={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+can_extract_elven_crafts={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+# Military
+army_magi_power={
+	percent=yes
+	game_data={
+		category=unit
+	}
+}
+
+army_magi_artillery_power={
+	percent=yes
+	game_data={
+		category=unit
+	}
+}
+
+army_magi_build_cost_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+army_magi_reinforce_cost_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+army_magi_maintenance_cost_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+army_magi_artillery_build_cost_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+army_magi_artillery_reinforce_cost_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+army_magi_artillery_maintenance_cost_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}

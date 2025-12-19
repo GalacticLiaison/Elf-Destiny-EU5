@@ -1,0 +1,23 @@
+﻿levy_calaquendi = {
+	size = levy_high_magi_size
+	
+	allowed_pop_type = calaquendi
+
+	country_allow = {
+		# culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = calaquendi_high_magi
+}
+
+levy_a_early_fey_archers = {
+	size = levy_generic_infantry_size
+	
+	allowed_pop_type = calaquendi
+
+	country_allow = {
+		# culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = a_early_fey_archers
+}
