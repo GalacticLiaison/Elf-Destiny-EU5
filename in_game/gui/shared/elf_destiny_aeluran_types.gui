@@ -593,10 +593,10 @@ types CabinetCards
 }
 
 
-template cant_manually_appoint_aeluran_adviser {
+template cant_manually_appoint_aeluran_advisor {
 	ContextualTooltipType = {
 		blockoverride "title_text" {
-			text = "CANT_MANUALLY_ASSIGN_AELURAN_ADVISER"
+			text = "CANT_MANUALLY_ASSIGN_AELURAN_ADVISOR"
 		}
 		
 		blockoverride "title_icon" {
@@ -627,7 +627,7 @@ template cant_manually_appoint_aeluran_adviser {
 
 			TooltipTextBlock = {
 				blockoverride "text" {
-					text = "CANT_MANUALLY_ASSIGN_AELURAN_ADVISER_DESC"
+					text = "CANT_MANUALLY_ASSIGN_AELURAN_ADVISOR_DESC"
 				}
 			}
 		}

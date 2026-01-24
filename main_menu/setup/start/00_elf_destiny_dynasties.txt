@@ -1,5 +1,10 @@
 # This file is named so that it always loads before other dependent files
 dynasty_manager = {
+	melwood_dynasty = {
+		name = { name = melwood_dynasty }
+		# dynasty_name_type = descendant #descendant/location/location_ancient/patronym
+		home = mezen
+	}
 
 	thalwyn_dynasty = {
 		name = { name = thalwyn_dynasty }

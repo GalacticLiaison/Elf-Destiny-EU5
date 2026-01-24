@@ -1,3 +1,69 @@
+melwood_dynasty = {
+	pattern="pattern_tricolor_bend_02.dds"
+    color1=green
+    color2=white
+    color3=yellow
+    colored_emblem={
+        color1=green
+        color2=rgb { 98 169 39 }
+        color3=blue_light
+        texture="ce_iranian_floral_pattern.dds"
+        instance={
+            position={ 0.295000 0.680000 }
+            scale={ 0.900000 0.500000 }
+            depth=4.010000
+            rotation=120
+        }
+
+        instance={
+            position={ 0.735000 0.255000 }
+            scale={ 0.900000 0.500000 }
+            depth=5.010000
+            rotation=120
+        }
+
+    }
+
+    colored_emblem={
+        color1=black
+        color2=green_light
+        texture="ce_tree.dds"
+        instance={
+            position={ 0.760000 0.695000 }
+            scale={ 0.330000 0.330000 }
+        }
+
+    }
+
+    colored_emblem={
+        color1=yellow
+        color2=black
+        color3=black
+        texture="ce_bee.dds"
+        instance={
+            position={ 0.460000 0.155000 }
+            scale={ 0.285000 0.285000 }
+            depth=1.010000
+            rotation=222
+        }
+
+        instance={
+            position={ 0.225000 0.170000 }
+            scale={ 0.285000 0.285000 }
+            depth=2.010000
+            rotation=130
+        }
+
+        instance={
+            position={ 0.205000 0.390000 }
+            scale={ 0.285000 0.285000 }
+            depth=3.010000
+            rotation=43
+        }
+
+    }
+}
+
 valerith_dynasty = {
 	pattern="pattern_solid.dds"
 	color1=blue_light

@@ -4,19 +4,35 @@
 	allowed_pop_type = calaquendi
 
 	country_allow = {
-		# culture = { has_culture_group = culture_group:elven_culture_group}
+		culture = { has_culture_group = culture_group:elven_culture_group}
 	}
 	
 	unit = calaquendi_high_magi
 }
 
+levy_aeluran_magi_basic = {
+	size = levy_generic_infantry_size
+	
+	allowed_pop_type = clergy
+
+	country_allow = {
+		religion = religion:aeluran
+		# culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = a_age_1_aeluran_magi
+}
+
 levy_a_early_fey_archers = {
 	size = levy_generic_infantry_size
 	
-	allowed_pop_type = calaquendi
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
 
 	country_allow = {
-		# culture = { has_culture_group = culture_group:elven_culture_group}
+		culture = { has_culture_group = culture_group:elven_culture_group}
 	}
 	
 	unit = a_early_fey_archers

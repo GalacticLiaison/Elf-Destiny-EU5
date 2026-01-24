@@ -2016,3 +2016,26 @@ army_magi_artillery_maintenance_cost_modifier={
 		category=country
 	}
 }
+
+
+
+aeluran_advisor_appointed={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+ranger_high_guard_unlocked={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_apprenticeship_education_unlocked={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}

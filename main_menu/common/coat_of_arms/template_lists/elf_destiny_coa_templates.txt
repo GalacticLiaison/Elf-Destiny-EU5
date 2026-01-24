@@ -1,0 +1,13 @@
+# coat_of_arms_template_lists = {
+
+# 	country = {
+# 		special_selection = {
+#             trigger = {
+# 				scope:actor ?= {
+# 					gfx_culture_applicable = elf_gfx
+# 				}
+# 			}
+#             1 = template_elf_test
+#         }	
+# 	}
+# }

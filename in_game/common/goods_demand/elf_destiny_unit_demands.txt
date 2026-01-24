@@ -1,0 +1,54 @@
+﻿early_magi_construction = {
+	cloth = 0.5
+    paper = 0.15
+	medicaments = 0.15
+    jewelry = 0.2
+    elven_crafts = 0.2
+	category = regiment_construction
+}
+
+early_magi_maintenance = {
+	cloth = 0.25
+	paper = 0.05
+	medicaments = 0.05
+    jewelry = 0.1
+    elven_crafts = 0.1
+	category = regiment_construction
+}
+
+
+mythril_plated_horse_masters_construction = {
+	leather = 0.3
+	cloth = 0.2
+	horses = 1.2
+	weaponry = 0.5
+	tools = 0.4
+	mythril_elven_crafts = 1
+	category = regiment_construction
+}
+
+mythril_plated_horse_masters_maintenance = {
+	leather = 0.1
+	weaponry = 0.2
+	cloth = 0.1
+	horses = 0.2
+	tools = 0.2
+	mythril_elven_crafts = 0.5
+	category = regiment_maintenance
+}
+
+mythril_plated_fey_vanguard_construction = {
+	weaponry = 0.5
+	leather = 0.05
+	tools = 0.05
+	mythril_elven_crafts = 1
+	category = regiment_construction
+}
+
+mythril_plated_fey_vanguard_maintenance = {
+	weaponry = 0.3
+	leather = 0.03
+	tools = 0.02
+	mythril_elven_crafts = 0.5
+	category = regiment_maintenance
+}

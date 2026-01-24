@@ -117,7 +117,7 @@ sanctum = {
 # Fey Agoras
 #
 
-fey_agoras = {
+fey_agoras = { # maybe unlocked from expedition? add an advancement that unlocks
 	category = government_category
 	is_foreign = no
 	max_levels = 1
@@ -159,3 +159,270 @@ fey_agoras = {
 
 # Spark Pylon
 # - clergy building, increase magi unit damage
+
+
+# Lembas Bakery - maybe unlocked from expedition? Find lost recipe?
+lembas_bakery = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+
+	country_potential = {
+		# lembas baking advancement
+	}
+
+	allow = {
+		# lembas baking advancement
+	}
+	
+	category = consumer_goods_category
+	
+	employment_size = guild_employment
+		
+	town = yes
+	city = yes
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+	
+		lembas_baking = {
+			wheat = 1.0
+			beeswax = 0.25
+			salt = 0.25
+
+			produced = lembas
+			output = 1
+			
+			category = guild_input
+		}
+	}
+
+	unique_production_methods = {
+	
+		saffron_enhancement = {
+			saffron = 0.1
+
+			produced = lembas
+			output = 0.25
+			
+			category = guild_input
+		}
+
+		pepper_enhancement = {
+			pepper = 0.1
+
+			produced = lembas
+			output = 0.20
+			
+			category = guild_input
+		}
+
+		cloves_enhancement = {
+			cloves = 0.1
+
+			produced = lembas
+			output = 0.20
+			
+			category = guild_input
+		}
+
+		chili_enhancement = {
+			chili = 0.1
+
+			produced = lembas
+			output = 0.20
+			
+			category = guild_input
+		}
+
+		cocoa_enhancement = {
+			cocoa = 0.1
+
+			produced = lembas
+			output = 0.20
+			
+			category = guild_input
+		}
+
+		fruit_enhancement = {
+			fruit = 0.1
+
+			produced = lembas
+			output = 0.1
+			
+			category = guild_input
+		}
+	}
+
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+}
+
+elven_workshop = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+	
+	category = basic_industry_category
+	
+	employment_size = guild_employment
+	
+	town = yes
+	city = yes
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		metal_elven_workshop_maintenance = {
+			iron = 0.75
+			tools = 1
+			produced = elven_crafts
+			output = 1
+			
+			debug_max_profit = 0.4
+			category = guild_input
+		}
+		bronze_elven_workshop_maintenance = {
+			copper = 0.5
+			tin = 0.04
+			tools = 1
+			produced = elven_crafts
+			output = 0.6
+			debug_max_profit = 0.2
+
+			category = guild_input
+		}
+
+		silver_elven_workshop_maintenance = {
+			silver = 0.25
+			tools = 1
+			produced = elven_crafts
+			output = 0.6
+			debug_max_profit = 0.2
+
+			category = guild_input
+		}
+
+		gold_elven_workshop_maintenance = {
+			gold = 0.25
+			tools = 1
+			produced = elven_crafts
+			output = 0.6
+			debug_max_profit = 0.2
+
+			category = guild_input
+		}
+	}
+
+	unique_production_methods = {
+		jewelry_elven_workshop_enhancement = {
+			jewelry = 0.1
+			produced = elven_crafts
+			output = 0.25
+			
+			debug_max_profit = 0.4
+			category = guild_input
+		}
+	}
+
+	construction_demand = guild_construction
+
+}
+
+elven_master_workshop = {
+	is_foreign = no
+	pop_type = calaquendi
+	max_levels = guild_max_level
+	obsolete = elven_workshop
+	
+	category = basic_industry_category
+	
+	employment_size = guild_employment
+
+	town = yes
+	city = yes
+	expensive = yes
+
+	raw_modifier = {
+		local_calaquendi_desired_pop = 0.010
+		local_max_literacy = 10
+	}
+
+	market_center_modifier = {
+		local_calaquendi_desired_pop = 0.005
+		local_max_literacy = 1
+	}
+
+	increase_per_level_cost = 0.5
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		metal_elven_workshop_maintenance = {
+			iron = 0.75
+			tools = 1
+			produced = elven_crafts
+			output = 1
+			
+			debug_max_profit = 0.4
+			category = guild_input
+		}
+		bronze_elven_workshop_maintenance = {
+			copper = 0.5
+			tin = 0.04
+			tools = 1
+			produced = elven_crafts
+			output = 0.6
+			debug_max_profit = 0.2
+
+			category = guild_input
+		}
+
+		silver_elven_workshop_maintenance = {
+			silver = 0.2
+			tools = 1
+			produced = elven_crafts
+			output = 0.6
+			debug_max_profit = 0.2
+
+			category = guild_input
+		}
+
+		gold_elven_workshop_maintenance = {
+			gold = 0.2
+			tools = 1
+			produced = elven_crafts
+			output = 0.6
+			debug_max_profit = 0.2
+
+			category = guild_input
+		}
+
+		mythril_elven_workshop_maintenance = {
+			copper = 0.5
+			mythril = 1
+			tools = 3
+			produced = mythril_elven_crafts
+			output = 0.6
+			debug_max_profit = 0.2
+
+			category = guild_input
+		}
+	}
+
+	unique_production_methods = {
+		jewelry_elven_workshop_enhancement = {
+			jewelry = 0.1
+			produced = elven_crafts
+			output = 0.25
+			
+			debug_max_profit = 0.4
+			category = guild_input
+		}
+	}
+
+	construction_demand = capital_building_construction
+
+}

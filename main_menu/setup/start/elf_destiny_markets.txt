@@ -1,0 +1,6 @@
+market_manager = {
+	add_market = bolshaya_laptyuga
+	add_market = bolshoy_yugan
+	add_market = zhigalovo
+	add_market = turama
+}

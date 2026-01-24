@@ -27,9 +27,9 @@
 # }
 
 
-# calequendi_mentorship = {
+# calaquendi_mentorship = {
 # 	all children recieve expensive education
-# 	calequendi power grows
+# 	calaquendi power grows
 # }
 
 
@@ -46,5 +46,175 @@
 
 
 # king_worship = {
+
+# }
+
+masters_of_woodland_realms = {
+	major = yes # is this a major reform? a country cannot select another major reform if they already have a major reform. default = no
+
+	age = age_1_traditions # which age is this available from?
+
+	# government = monarchy # which government is allowed to use this
+
+	potential = {
+        culture = { has_culture_group = culture_group:elven_culture_group}
+		# what triggers must be true for this to even be visible in the UI. root = country
+	}
+
+	allow = {
+        culture = { has_culture_group = culture_group:elven_culture_group}
+		# what triggers must be true for this to even be selectable. root = country
+	}	
+	
+	locked = {
+        # always = yes
+		# when these triggers are true, the reform cannot be manually removed by the country. root = country
+	}
+	
+	country_modifier = {
+		#conditional country modifiers. Can add multiple of these
+		#optional trigger = {}
+        global_wild_game_output_modifier = 0.2
+        global_fur_output_modifier = 0.2
+        global_lumber_output_modifier = 0.2
+        government_reform_slots = 1
+        # aeluran_advisor_appointed = yes
+	}
+	
+	location_modifier = {
+		#conditional location modifiers. Can add multiple of these
+		potential_trigger = {
+            custom_tooltip = {
+				text = is_a_woodland_realm
+                OR = {
+                    vegetation = forest
+                    vegetation = woods
+                }
+			}
+        }
+        local_monthly_prosperity = 0.0015
+	}
+	
+	# male_regnal_names = {
+	# 	# new male rulers will randomly select one of these names to use
+	# 	David
+	# }
+	
+	# female_regnal_names = {
+	# 	# new female rulers will randomly select one of these names to use
+	# 	David
+	# }
+
+	days = 2
+	# weeks = x
+	# months = x
+	# years = 2 #how long it takes before the reform is fully implemented. Leave unset for instant implementation
+}
+
+people_of_the_bow = {
+	# major = yes # is this a major reform? a country cannot select another major reform if they already have a major reform. default = no
+
+	age = age_1_traditions # which age is this available from?
+
+	# government = monarchy # which government is allowed to use this
+
+	potential = {
+        culture = { has_culture_group = culture_group:elven_culture_group}
+		# what triggers must be true for this to even be visible in the UI. root = country
+	}
+
+	allow = {
+        culture = { has_culture_group = culture_group:elven_culture_group}
+		# what triggers must be true for this to even be selectable. root = country
+	}	
+	
+	locked = {
+        # always = yes
+		# when these triggers are true, the reform cannot be manually removed by the country. root = country
+	}
+	
+	country_modifier = {
+		#conditional country modifiers. Can add multiple of these
+		#optional trigger = {}
+        army_infantry_power = 0.15
+        army_cavalry_power = -0.10
+        army_infantry_maintenance_cost_modifier = -0.10
+        global_wild_game_output_modifier = 0.10
+        ranger_high_guard_unlocked = yes
+	}
+
+	on_activate = {
+		# change_heir_selection = heir_selection:admiralty_regime_heir_selection
+	}
+	
+	# male_regnal_names = {
+	# 	# new male rulers will randomly select one of these names to use
+	# 	David
+	# }
+	
+	# female_regnal_names = {
+	# 	# new female rulers will randomly select one of these names to use
+	# 	David
+	# }
+
+	days = 2
+	# weeks = x
+	# months = x
+	# years = 2 #how long it takes before the reform is fully implemented. Leave unset for instant implementation
+}
+
+the_old_ways ={
+	# major = yes # is this a major reform? a country cannot select another major reform if they already have a major reform. default = no
+
+	age = age_1_traditions # which age is this available from?
+
+	# government = monarchy # which government is allowed to use this
+
+	potential = {
+        culture = { has_culture_group = culture_group:elven_culture_group}
+		# what triggers must be true for this to even be visible in the UI. root = country
+	}
+
+	allow = {
+        culture = { has_culture_group = culture_group:elven_culture_group}
+		# what triggers must be true for this to even be selectable. root = country
+	}	
+	
+	locked = {
+        # always = yes
+		# when these triggers are true, the reform cannot be manually removed by the country. root = country
+	}
+	
+	country_modifier = {
+		#conditional country modifiers. Can add multiple of these
+		#optional trigger = {}
+        army_magi_power = 0.10
+		global_max_literacy = 10
+		global_crown_estate_power = 0.5
+	}
+
+	on_activate = {
+		# change_heir_selection = heir_selection:admiralty_regime_heir_selection
+	}
+	
+	# male_regnal_names = {
+	# 	# new male rulers will randomly select one of these names to use
+	# 	David
+	# }
+	
+	# female_regnal_names = {
+	# 	# new female rulers will randomly select one of these names to use
+	# 	David
+	# }
+
+	days = 2
+	# weeks = x
+	# months = x
+	# years = 2 #how long it takes before the reform is fully implemented. Leave unset for instant implementation
+}
+
+
+# heroic_bravery_reform = {
+# 	# ruler_must_be_commander_during_war
 
 # }

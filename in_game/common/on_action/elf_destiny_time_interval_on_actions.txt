@@ -1,7 +1,7 @@
 ﻿# Does actually work, would need to hide peasants in UI
 monthly_country_pulse = {
 	on_actions = {
-		assign_aeluran_adviser
+		assign_aeluran_advisor
 	}
 }
 
@@ -22,16 +22,16 @@ monthly_country_pulse = {
 # }
 
 
-assign_aeluran_adviser = {
+assign_aeluran_advisor = {
 	trigger = {
-		ruler = {
+		ruler ?= {
 			is_any_elf_type = yes
 		}
 		religion = religion:aeluran
 		has_estate_privilege = estate_privilege:aeluran_advisors
 		NOT = {
 			any_cabinet_character = {
-				has_variable = aeluran_adviser
+				has_variable = aeluran_advisor
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-﻿elf_trait = {
+﻿racial_trait = {
 	color = rgb { 228 208 10 }
 }
 

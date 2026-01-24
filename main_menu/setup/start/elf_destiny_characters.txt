@@ -1,6 +1,42 @@
 #Remember to write sons and daughters ALWAYS after their parents to avoid crashes
 
 character_db={
+
+	julia_melwood = {
+		first_name = { name = name_julia }
+		culture = french
+		religion = catholic
+		female = yes
+		adm = 85 dip = 75 mil = 45
+		birth_date = 1318.1.1
+		birth = pelym
+		
+		dynasty = melwood_dynasty
+		explorer_trait = curious_adventurer
+		# explorer_trait = cartographer
+
+		timed_modifier = {
+			modifier = "fecund"
+			start_date = 1260.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1260.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1260.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
 	### 
 	dwd_elandra_thalwyn = {
 		first_name = { name = name_elandra }
@@ -19,6 +55,20 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
+			start_date = 1260.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1260.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
 			start_date = 1260.1.1
 			date = 9999.1.1
 			size = 1
@@ -45,6 +95,20 @@ character_db={
 			date = 9999.1.1
 			size = 1
 		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1315.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1315.1.1
+			date = 9999.1.1
+			size = 1
+		}
 	}
 
 
@@ -62,19 +126,31 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_2"
-			start_date = 1210.1.1
+			start_date = 1172.1.1
 			date = 9999.1.1
 			size = 1
 		}
 		timed_modifier = {
 			modifier = "royal_elf_valerith"
-			start_date = 1210.1.1
+			start_date = 1172.1.1
 			date = 9999.1.1
 			size = 1
 		}
 		timed_modifier = {
 			modifier = "pure_blooded"
-			start_date = 1210.1.1
+			start_date = 1172.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1172.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_2"
+			start_date = 1172.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -95,13 +171,31 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_2"
-			start_date = 1210.1.1
+			start_date = 1235.1.1
 			date = 9999.1.1
 			size = 1
 		}
 		timed_modifier = {
 			modifier = "royal_elf_valerith"
-			start_date = 1210.1.1
+			start_date = 1235.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "pure_blooded"
+			start_date = 1235.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1235.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_2"
+			start_date = 1235.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -123,13 +217,32 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_2"
-			start_date = 1210.1.1
+			start_date = 1230.1.1
 			date = 9999.1.1
 			size = 1
 		}
 		timed_modifier = {
 			modifier = "royal_elf_valerith"
-			start_date = 1210.1.1
+			start_date = 1230.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "pure_blooded"
+			start_date = 1230.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1230.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1230.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -150,13 +263,32 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_2"
-			start_date = 1210.1.1
+			start_date = 1299.1.1
 			date = 9999.1.1
 			size = 1
 		}
 		timed_modifier = {
 			modifier = "royal_elf_valerith"
-			start_date = 1210.1.1
+			start_date = 1299.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "pure_blooded"
+			start_date = 1299.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1299.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1299.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -166,7 +298,6 @@ character_db={
 		first_name = { name = name_victaris}
 		culture = deepwood_elven_culture
 		religion = aeluran
-		female = yes
 		adm = 80 dip = 99 mil = 66
 		birth_date = 1295.1.1
 		birth = pelym
@@ -177,13 +308,38 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_2"
-			start_date = 1210.1.1
+			start_date = 1295.1.1
 			date = 9999.1.1
 			size = 1
 		}
 		timed_modifier = {
 			modifier = "royal_elf_valerith"
-			start_date = 1210.1.1
+			start_date = 1295.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "fecund"
+			start_date = 1295.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "pure_blooded"
+			start_date = 1295.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1295.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "physique_good_2"
+			start_date = 1295.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -223,7 +379,26 @@ character_db={
 			size = 1
 		}
 		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
 			modifier = "pure_blooded"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "fecund"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "giant"
 			start_date = 1318.1.1
 			date = 9999.1.1
 			size = 1
@@ -231,7 +406,7 @@ character_db={
 	}
 
 	bwd_belanor_valerith = {
-		first_name = { name = name_seraphine }
+		first_name = { name = name_belanor }
 		culture = deepwood_elven_culture
 		religion = aeluran
 		adm = 80 dip = 99 mil = 66
@@ -258,6 +433,12 @@ character_db={
 		}
 		timed_modifier = {
 			modifier = "beauty_good_2"
+			start_date = 1315.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "intellect_good_2"
 			start_date = 1315.1.1
 			date = 9999.1.1
 			size = 1
@@ -304,6 +485,12 @@ character_db={
 			size = 1
 		}
 		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1319.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
 			modifier = "pure_blooded"
 			start_date = 1319.1.1
 			date = 9999.1.1
@@ -345,6 +532,13 @@ character_db={
 			size = 1
 		}
 		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		
+		timed_modifier = {
 			modifier = "pure_blooded"
 			start_date = 1321.1.1
 			date = 9999.1.1
@@ -376,6 +570,34 @@ character_db={
 			date = 9999.1.1
 			size = 1
 		}
+
+		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1297.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "pure_blooded"
+			start_date = 1297.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1297.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "physique_good_2"
+			start_date = 1297.1.1
+			date = 9999.1.1
+			size = 1
+		}
 	}
 
 	myt_niala_valerith = {
@@ -399,6 +621,19 @@ character_db={
 		}
 		timed_modifier = {
 			modifier = "royal_elf_valerith"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "pure_blooded"
 			start_date = 1318.1.1
 			date = 9999.1.1
 			size = 1
@@ -503,6 +738,12 @@ character_db={
 			date = 9999.1.1
 			size = 1
 		}
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1236.1.1
+			date = 9999.1.1
+			size = 1
+		}
 	}
 
 	hih_vara_daelurin = {
@@ -570,6 +811,12 @@ character_db={
 			date = 9999.1.1
 			size = 1
 		}
+		timed_modifier = {
+			modifier = "giant"
+			start_date = 1276.1.1
+			date = 9999.1.1
+			size = 1
+		}
 	}
 
 	hih_pamora_daelurin = {
@@ -598,7 +845,14 @@ character_db={
 			size = 1
 		}
 		timed_modifier = {
-			modifier = "physique_good_3"
+			modifier = "physique_good_2"
+			start_date = 1296.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
 			start_date = 1296.1.1
 			date = 9999.1.1
 			size = 1
@@ -697,7 +951,13 @@ character_db={
 			size = 1
 		}
 		timed_modifier = {
-			modifier = "physique_good_3"
+			modifier = "physique_good_2"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_1"
 			start_date = 1318.1.1
 			date = 9999.1.1
 			size = 1
@@ -729,7 +989,13 @@ character_db={
 			size = 1
 		}
 		timed_modifier = {
-			modifier = "physique_good_3"
+			modifier = "intellect_good_2"
+			start_date = 1303.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_2"
 			start_date = 1303.1.1
 			date = 9999.1.1
 			size = 1
@@ -761,7 +1027,13 @@ character_db={
 			size = 1
 		}
 		timed_modifier = {
-			modifier = "physique_good_3"
+			modifier = "intellect_good_1"
+			start_date = 1299.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_3"
 			start_date = 1299.1.1
 			date = 9999.1.1
 			size = 1
@@ -845,21 +1117,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1070.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1070.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_2"
+			start_date = 1070.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1070.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -880,21 +1159,27 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1130.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1130.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_2"
+			start_date = 1130.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1130.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -915,21 +1200,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1170.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1170.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_2"
+			start_date = 1170.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1170.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -951,21 +1243,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1235.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1235.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_2"
+			start_date = 1235.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1235.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -986,21 +1285,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1170.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1170.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_2"
+			start_date = 1170.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1170.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1023,21 +1329,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1270.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1270.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_2"
+			start_date = 1270.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1270.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1057,21 +1370,21 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1308.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1308.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			start_date = 1308.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1091,21 +1404,21 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1330.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1330.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			start_date = 1330.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1125,21 +1438,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1306.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1306.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_2"
+			start_date = 1306.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1306.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1160,21 +1480,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1307.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1307.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_1"
+			start_date = 1307.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1307.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1195,21 +1522,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1307.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1307.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "beauty_good_3"
+			start_date = 1307.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1307.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1229,21 +1563,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1230.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1230.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_2"
+			start_date = 1230.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1230.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1263,21 +1604,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1270.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1270.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_2"
+			start_date = 1270.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1270.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1297,21 +1645,21 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1250.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1250.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			start_date = 1250.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1332,21 +1680,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1300.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1300.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_2"
+			start_date = 1300.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "physique_good_1"
+			start_date = 1300.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1367,21 +1722,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1307.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1307.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_1"
+			start_date = 1307.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1307.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1401,21 +1763,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1319.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1319.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			start_date = 1319.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1319.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1435,21 +1804,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1317.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1317.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_2"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1317.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1469,21 +1845,28 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1290.1.1
+			start_date = 1313.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_thundarael"
-			start_date = 1290.1.1
+			start_date = 1313.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "intellect_good_3"
-			start_date = 1290.1.1
+			modifier = "intellect_good_2"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1313.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1496,21 +1879,36 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1075.1.1
+		death_date = 1270.10.21
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1075.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1075.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1075.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1075.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1521,21 +1919,38 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1259.1.1
+		death_date = 1320.10.21
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
+		father = wyd_malfurian_serelion
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1259.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1259.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1259.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1259.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1546,21 +1961,37 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1261.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
+		father = wyd_malfurian_serelion
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1261.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1261.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1261.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1261.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1571,21 +2002,37 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1263.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
+		father = wyd_malfurian_serelion
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1263.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1263.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1263.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1263.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1596,21 +2043,30 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1316.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
+		father = wyd_maldrik_serelion
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1316.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1316.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1316.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1621,21 +2077,37 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1336.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
+		mother = wyd_meldona_serelion
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1336.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1336.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1336.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1336.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1646,21 +2118,37 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1318.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
+		father = wyd_maldrik_serelion
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1318.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1318.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1671,46 +2159,28 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1270.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1270.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
-			date = 9999.1.1
-			size = 1
-		}
-	}
-
-	wyd_aurelius_serelion = {
-		first_name = { name = name_aurelius}
-		culture = romaviri_culture
-		religion = aeluran
-		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
-		birth = limassol
-		dynasty = serelion_dynasty
-		tag = WYD
-
-		timed_modifier = {
-			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1270.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
-			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			modifier = "beauty_good_2"
+			start_date = 1270.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1721,21 +2191,30 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1307.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
+		father = wyd_aurelius_serelion
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1307.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1307.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1307.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1746,21 +2225,30 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1311.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
+		father = wyd_aurelius_serelion
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1311.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1311.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1311.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1771,21 +2259,30 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1311.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
+		father = wyd_caldonin_serelion
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1311.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1311.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1311.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1796,21 +2293,30 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1323.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
+		father = wyd_aurelius_serelion
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1323.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1323.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1323.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1821,21 +2327,29 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1252.1.1
+		death_date = 1330.10.21
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1330.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1330.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1330.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1846,21 +2360,30 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1318.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
+		mother = wyd_delfie_serelion
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1318.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1318.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1871,21 +2394,30 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1321.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
+		mother = wyd_delfie_serelion
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1321.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1321.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1896,21 +2428,35 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1250.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1250.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1250.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1250.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1250.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1921,21 +2467,29 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1250.1.1
+		death_date = 1330.10.21
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1313.1.1
+			start_date = 1250.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
+			start_date = 1250.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1250.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -1946,64 +2500,12 @@ character_db={
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
-		birth_date = 1313.1.1
+		birth_date = 1305.1.1
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
 
-		timed_modifier = {
-			modifier = "elf_tier_3"
-			start_date = 1313.1.1
-			date = 9999.1.1
-			size = 1
-		}
-
-		timed_modifier = {
-			modifier = "royal_elf_serelion"
-			start_date = 1290.1.1
-			date = 9999.1.1
-			size = 1
-		}
-	}
-
-	### Gwynthorn ###
-	gsh_galanoriel_gwynthorn = {
-		first_name = { name = name_galanoriel}
-		culture = tuatha_de_danann_culture
-		religion = aeluran
-		female = yes
-		adm = 99 dip = 75 mil = 75
-		birth_date = 1290.1.1
-		birth = raphoe
-		dynasty = gwynthorn_dynasty
-		tag = GSH
-
-		timed_modifier = {
-			modifier = "elf_tier_3"
-			start_date = 1290.1.1
-			date = 9999.1.1
-			size = 1
-		}
-
-		timed_modifier = {
-			modifier = "royal_elf_gwynthorn"
-			start_date = 1290.1.1
-			date = 9999.1.1
-			size = 1
-		}
-	}
-
-	### Lormelis ###
-	ats_aelor_lormelis = {
-		first_name = { name = name_aelor}
-		culture = atlareth_culture
-		religion = aeluran
-		adm = 75 dip = 65 mil = 99
-		birth_date = 1305.1.1
-		birth = raphoe
-		dynasty = lormelis_dynasty
-		tag = ATS
-
+		father = wyd_caldonin_serelion
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -2013,8 +2515,1232 @@ character_db={
 		}
 
 		timed_modifier = {
+			modifier = "royal_elf_serelion"
+			start_date = 1305.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1305.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	### Gwynthorn ###
+	gsh_galdric_gwynthorn = {
+		first_name = { name = name_galdric}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1100.1.1
+		death_date = 1238.10.21
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1100.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1100.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "physique_good_2"
+			start_date = 1100.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1100.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_glamdrin_gwynthorn = {
+		first_name = { name = name_glamdrin}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1199.1.1
+		death_date = 1295.10.21
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		father = gsh_galdric_gwynthorn
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1199.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1199.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1199.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1199.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_elanora_gwynthorn= {
+		first_name = { name = name_elanora}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1219.1.1
+		death_date = 1293.10.21
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		father = gsh_galdric_gwynthorn
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1219.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1219.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1219.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1219.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_galanoriel_gwynthorn = {
+		first_name = { name = name_galanoriel}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1281.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		mother = gsh_glamdrin_gwynthorn
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1281.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1281.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1281.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1281.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_eiman_gwynthorn = {
+		first_name = { name = name_eiman}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1284.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		mother = gsh_glamdrin_gwynthorn
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1284.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1284.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1284.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1284.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_marilayne_gwynthorn = {
+		first_name = { name = name_marilayne}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1285.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		mother = gsh_glamdrin_gwynthorn
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1285.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1285.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1285.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "physique_good_2"
+			start_date = 1285.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_fionn_gwynthorn = {
+		first_name = { name = name_fionn}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1273.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		mother = gsh_elanora_gwynthorn
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1273.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1273.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "physique_good_1"
+			start_date = 1273.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1273.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_gaston_verlline = {
+		first_name = { name = name_gaston}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1300.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		mother = gsh_marilayne_gwynthorn
+		father = gsh_haiveloc_verlline
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1300.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1300.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1300.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_elisandra_gwynthorn = {
+		first_name = { name = name_elisandra}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1332.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		mother = gsh_galanoriel_gwynthorn
+		father = gsh_fionn_gwynthorn
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1332.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1332.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1332.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1332.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "physique_good_1"
+			start_date = 1332.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_gwynda_gwynthorn = {
+		first_name = { name = name_gwynda}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1318.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+	
+		mother = gsh_galanoriel_gwynthorn
+		father = gsh_fionn_gwynthorn
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_seldric_gwynthorn = {
+		first_name = { name = name_seldric}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1321.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		mother = gsh_galanoriel_gwynthorn
+		father = gsh_fionn_gwynthorn
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "physique_good_1"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_selana_gwynthorn = {
+		first_name = { name = name_selana}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1321.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		mother = gsh_galanoriel_gwynthorn
+		father = gsh_fionn_gwynthorn
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "physique_good_1"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_edwin_gwynthorn = {
+		first_name = { name = name_edwin}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1286.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		mother = gsh_elanora_gwynthorn
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1286.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1286.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1286.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1286.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_elowyn_greenwood = {
+		first_name = { name = name_elowyn}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1300.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1300.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1300.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1300.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_earan_gwynthorn = {
+		first_name = { name = name_earan}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1317.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		father = gsh_edwin_gwynthorn
+		mother = gsh_elowyn_greenwood
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_emeryana_gwynthorn = {
+		first_name = { name = name_emeryana}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1317.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		father = gsh_edwin_gwynthorn
+		mother = gsh_elowyn_greenwood
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_emera_gwynthorn = {
+		first_name = { name = name_emera}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1317.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		father = gsh_edwin_gwynthorn
+		mother = gsh_elowyn_greenwood
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_haggert_verlline = {
+		first_name = { name = name_haggert}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1162.1.1
+		death_date = 1325.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1162.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1162.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_bad_1"
+			start_date = 1162.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_haiveloc_verlline = {
+		first_name = { name = name_haiveloc}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = .1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		father = gsh_haggert_verlline
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1270.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1270.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_rheddyr_verlline = {
+		first_name = { name = name_rheddyr}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1285.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		father = gsh_haggert_verlline
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1285.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1285.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1285.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_rebecca_verlline = {
+		first_name = { name = name_rebecca}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1320.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		father = gsh_haggert_verlline
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1320.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1320.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1320.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_amelya_verlline = {
+		first_name = { name = name_amelya}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1319.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		mother = gsh_marilayne_gwynthorn
+		father = gsh_haiveloc_verlline
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1319.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1319.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1319.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1319.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	gsh_byrice_verlline = {
+		first_name = { name = name_byrice}
+		culture = tuatha_de_danann_culture
+		religion = aeluran
+		female = yes
+		adm = 99 dip = 75 mil = 75
+		birth_date = 1250.1.1
+		birth = raphoe
+		dynasty = gwynthorn_dynasty
+		tag = GSH
+
+		father = gsh_haggert_verlline
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1250.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_gwynthorn"
+			start_date = 1250.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	### Lormelis ###
+	ats_maelor_lormelis = {
+		first_name = { name = name_maelor}
+		culture = atlareth_culture
+		religion = aeluran
+		adm = 75 dip = 65 mil = 99
+		birth_date = 1260.1.1
+		death_date = 1327.1.1
+		birth = raphoe
+		dynasty = lormelis_dynasty
+		tag = ATS
+
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1260.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
 			modifier = "royal_elf_lormelis"
-			start_date = 1290.1.1
+			start_date = 1260.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "physique_good_3"
+			start_date = 1260.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1260.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	ats_aelor_lormelis = {
+		first_name = { name = name_aelor}
+		culture = atlareth_culture
+		religion = aeluran
+		adm = 75 dip = 65 mil = 99
+		birth_date = 1272.1.1
+		birth = raphoe
+		dynasty = lormelis_dynasty
+		tag = ATS
+
+		father = ats_maelor_lormelis
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1272.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_lormelis"
+			start_date = 1272.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1272.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	ats_maxyron_lormelis = {
+		first_name = { name = name_maxyron}
+		culture = atlareth_culture
+		
+		religion = aeluran
+		adm = 75 dip = 65 mil = 99
+		birth_date = 1307.1.1
+		birth = raphoe
+		dynasty = lormelis_dynasty
+		tag = ATS
+
+		father = ats_maelor_lormelis
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1307.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_lormelis"
+			start_date = 1307.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1307.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	ats_lyria_lormelis = {
+		first_name = { name = name_lyria}
+		female = yes
+
+		culture = atlareth_culture
+		religion = aeluran
+		adm = 75 dip = 65 mil = 99
+		birth_date = 1295.1.1
+		birth = raphoe
+		dynasty = lormelis_dynasty
+		tag = ATS
+
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1295.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_lormelis"
+			start_date = 1295.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1295.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1295.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	ats_ziyi_lormelis = {
+		first_name = { name = name_ziyi}
+		female = yes
+		culture = atlareth_culture
+		religion = aeluran
+		adm = 75 dip = 65 mil = 99
+		birth_date = 1313.1.1
+		birth = raphoe
+		dynasty = lormelis_dynasty
+		tag = ATS
+
+		father = ats_aelor_lormelis
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_lormelis"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_3"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_1"
+			start_date = 1313.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	ats_vaelan_lormelis = {
+		first_name = { name = name_vaelan}
+		culture = atlareth_culture
+		religion = aeluran
+		adm = 75 dip = 65 mil = 99
+		birth_date = 1315.1.1
+		birth = raphoe
+		dynasty = lormelis_dynasty
+		tag = ATS
+
+		father = ats_aelor_lormelis
+		mother = ats_lyria_lormelis
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1315.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_lormelis"
+			start_date = 1315.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "physique_good_2"
+			start_date = 1315.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1315.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	ats_elara_lormelis = {
+		first_name = { name = name_elara}
+		female = yes
+
+		culture = atlareth_culture
+		religion = aeluran
+		adm = 75 dip = 65 mil = 99
+		birth_date = 1318.1.1
+		birth = raphoe
+		dynasty = lormelis_dynasty
+		tag = ATS
+
+		father = ats_aelor_lormelis
+		mother = ats_lyria_lormelis
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_lormelis"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	ats_kaelen_lormelis = {
+		first_name = { name = name_kaelen}
+		culture = atlareth_culture
+		religion = aeluran
+		adm = 75 dip = 65 mil = 99
+		birth_date = 1321.1.1
+		birth = raphoe
+		dynasty = lormelis_dynasty
+		tag = ATS
+
+		father = ats_aelor_lormelis
+		mother = ats_lyria_lormelis
+
+		timed_modifier = {
+			modifier = "elf_tier_3"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "beauty_good_2"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "intellect_good_2"
+			start_date = 1321.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "royal_elf_lormelis"
+			start_date = 1321.1.1
 			date = 9999.1.1
 			size = 1
 		}

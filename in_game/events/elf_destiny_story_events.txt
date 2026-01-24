@@ -1,0 +1,541 @@
+﻿namespace = elf_destiny_story
+
+elf_destiny_story.99 = {
+	type = country_event
+	title = elf_destiny_story.99.title
+	desc = elf_destiny_story.99.desc
+	trigger = {
+
+	}
+
+	hidden = yes
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+
+		if = {
+			limit = {
+				any_country = {
+					is_ai = no
+				}
+			}
+
+			debug_log = "elf_destiny_story.01 Player countries exist!"
+		}
+		else = {
+			debug_log = "elf_destiny_story.01 Player countries DONT exist!"
+		}
+
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			debug_log = "elf_destiny_story.01 country reached"
+
+			trigger_event_non_silently = {
+				id = elf_destiny_story.1
+				days = 2
+			}	
+		}
+	}
+	
+	# option = {
+	# 	# name = elf_destiny_story.1.a
+
+
+	# 	# trigger_event_silently = {
+	# 	# 	id = elf_destiny_story.2
+	# 	# }	
+
+    #     # unlock sponsor expedition character action
+	# }
+}
+
+
+# What is an archeologist - Julia shows up
+elf_destiny_story.1 = {
+	type = country_event
+	title = elf_destiny_story.1.title
+	desc = elf_destiny_story.1.desc
+	trigger = {
+
+	}
+
+	# illustration_tags = {
+    #     10 = regular
+    #     10 = interior
+    # }
+
+	image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+
+		# if = {
+		# 	limit = {
+		# 		any_country = {
+		# 			is_ai = no
+		# 		}
+		# 	}
+
+		# 	debug_log = "elf_destiny_story.1 Player countries exist!"
+		# }
+		# else = {
+		# 	debug_log = "elf_destiny_story.1 Player countries DONT exist!"
+		# }
+	}
+	
+	option = {
+		name = elf_destiny_story.1.a
+
+
+		trigger_event_silently = {
+			id = elf_destiny_story.11
+		}	
+
+        # unlock sponsor expedition character action
+	}
+}
+
+elf_destiny_story.11 = {
+	type = country_event
+	title = elf_destiny_story.11.title
+	desc = elf_destiny_story.11.desc
+	trigger = {
+
+	}
+
+	# illustration_tags = {
+    #     10 = regular
+    #     10 = interior
+    # }
+
+	image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+	immediate = {
+		character:julia_melwood = {
+			save_scope_as = julia
+		}
+	}
+	
+	option = {
+		name = elf_destiny_story.11.a
+
+
+		trigger_event_silently = {
+			id = elf_destiny_story.2
+		}	
+
+        # unlock sponsor expedition character action
+	}
+
+	option = {
+		name = elf_destiny_story.11.b
+
+
+		# trigger_event_silently = {
+		# 	id = elf_destiny_story.2
+		# }	
+
+        # unlock sponsor expedition character action
+	}
+
+	after = {
+		clear_saved_scope = julia
+	}
+}
+
+
+
+# Julia returns with a chest, she opens it to reveal a amulet she found on the neck of a long dead elf emperor, touch it
+elf_destiny_story.2 = {
+	type = country_event
+	title = elf_destiny_story.2.title
+	desc = elf_destiny_story.2.desc
+	trigger = {
+
+	}
+
+	hide_portraits = yes
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	image = "gfx/interface/illustrations/event/backgrounds/realm_lord_sigil.dds"
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+
+	}
+	
+	option = {
+		name = elf_destiny_story.2.a
+
+		trigger_event_silently = {
+			id = elf_destiny_story.21
+		}	
+
+	}
+}
+
+elf_destiny_story.21 = {
+	type = country_event
+	title = elf_destiny_story.21.title
+	desc = elf_destiny_story.21.desc
+	trigger = {
+
+	}
+
+	hide_portraits = yes
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	image = "gfx/interface/illustrations/event/backgrounds/realm_lord_sigil_blinded.dds"
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+
+	}
+	
+	option = {
+		name = elf_destiny_story.21.a
+
+		trigger_event_silently = {
+			id = elf_destiny_story.22
+		}	
+
+	}
+}
+
+elf_destiny_story.22 = {
+	type = country_event
+	title = elf_destiny_story.22.title
+	desc = elf_destiny_story.22.desc
+	trigger = {
+
+	}
+
+	hide_portraits = yes
+
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+
+	}
+	
+	option = {
+		name = elf_destiny_story.22.convert
+
+		trigger_event_silently = {
+			id = elf_destiny_story.23
+		}
+
+		change_culture = culture:elven_culture
+
+		custom_tooltip = {
+			text = all_characters_convert_to_elven
+			every_character = {
+				change_character_culture = culture:elven_culture
+			}
+		}
+
+		custom_tooltip = {
+			text = all_pops_convert_to_elven
+			every_pop = {
+				change_pop_culture = culture:elven_culture
+			}
+		}
+
+		save_scope_value_as = {
+			name = took_elf_culture
+			value = yes
+		}
+
+	}
+
+	option = {
+		name = elf_destiny_story.22.dontConvert
+
+		trigger_event_silently = {
+			id = elf_destiny_story.23
+		}	
+
+	}
+}
+
+elf_destiny_story.23 = {
+	type = country_event
+	title = elf_destiny_story.23.title
+	desc = elf_destiny_story.23.desc
+	trigger = {
+
+	}
+
+	hide_portraits = yes
+
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	image = "gfx/interface/illustrations/event/backgrounds/realm_lord_sigil.dds"
+
+	immediate = {
+		every_character = {
+			assign_race_trait = { trait = elf_tier_2 }
+		}
+	}
+	
+	option = {
+		name = elf_destiny_story.23.a
+
+		if = {
+			limit = {
+				exists = scope:took_elf_culture
+			}
+			trigger_event_silently = {
+				id = elf_destiny_story.24
+			}	
+		}
+		else = {
+			trigger_event_silently = {
+				id = elf_destiny_story.3
+			}	
+		}
+
+	}
+}
+
+elf_destiny_story.24 = {
+	type = country_event
+	title = elf_destiny_story.24.title
+	desc = elf_destiny_story.24.desc
+	trigger = {
+
+	}
+
+	hide_portraits = yes
+
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	image = "gfx/interface/illustrations/event/backgrounds/realm_lord_sigil.dds"
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+
+	}
+	
+	option = {
+		name = elf_destiny_story.24.a
+
+		trigger_event_silently = {
+			id = elf_destiny_story.3
+		}
+	}
+}
+
+elf_destiny_story.3 = {
+	type = country_event
+	title = elf_destiny_story.3.title
+	desc = elf_destiny_story.3.desc
+	trigger = {
+
+	}
+
+	hide_portraits = yes
+
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		clear_saved_scope = julia
+	}
+	
+	option = {
+		name = elf_destiny_story.3.good
+
+		trigger_event_silently = {
+			id = elf_destiny_story.4
+		}	
+	}
+
+	option = {
+		name = elf_destiny_story.3.evil
+
+		trigger_event_silently = {
+			id = elf_destiny_story.4
+		}	
+	}
+}
+
+
+# visit from aeluran order
+elf_destiny_story.4 = {
+	type = country_event
+	title = elf_destiny_story.4.title
+	desc = elf_destiny_story.4.desc
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/aeluran_leaves.dds"
+
+	hide_portraits = yes
+
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		clear_saved_scope = julia
+
+
+		# debug_log = "elf_destiny_story.4"
+		# debug_log_scopes = yes
+
+	}
+	
+	option = {
+		name = elf_destiny_story.4.a
+
+        trigger_event_silently = {
+			id = elf_destiny_story.41
+		}	
+	}
+}
+
+elf_destiny_story.41 = {
+	type = country_event
+	title = elf_destiny_story.41.title
+	desc = elf_destiny_story.41.desc
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/aeluran_leaves.dds"
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		religion:aeluran.religious_head.ruler = {
+			save_scope_as = high_matriarch
+		}
+
+	}
+	
+	option = {
+		name = elf_destiny_story.41.a
+
+        trigger_event_silently = {
+			id = elf_destiny_story.42
+		}	
+	}
+}
+
+
+elf_destiny_story.42 = {
+	type = country_event
+	title = elf_destiny_story.42.title
+	desc = elf_destiny_story.42.desc
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/aeluran_leaves.dds"
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		clear_saved_scope = julia
+	}
+	
+	option = {
+		name = elf_destiny_story.42.a
+
+        trigger_event_silently = {
+			id = elf_destiny_story.43
+		}	
+	}
+}
+
+elf_destiny_story.43 = {
+	type = country_event
+	title = elf_destiny_story.43.title
+	desc = elf_destiny_story.43.desc
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/aeluran_leaves.dds"
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+
+	}
+	
+	option = {
+		name = elf_destiny_story.43.a
+
+		change_religion = religion:aeluran
+		custom_tooltip = {
+			text = all_characters_convert_to_aeluran
+			every_character = {
+				change_character_religion = religion:aeluran
+			}
+		}
+		custom_tooltip = {
+			text = all_pops_convert_to_aeluran
+			every_pop = {
+				change_pop_religion = religion:aeluran
+			}
+		}
+
+        # trigger_event_silently = {
+		# 	id = elf_destiny_story.4
+		# }	
+	}
+
+	option = {
+		name = elf_destiny_story.43.b
+	}
+}
+

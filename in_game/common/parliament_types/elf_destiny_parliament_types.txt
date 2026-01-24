@@ -1,0 +1,16 @@
+﻿elven_parliament = {
+	type = country
+	potential = {
+		modifier:allow_estate_parliament = yes
+		culture = { has_culture_group = culture_group:elven_culture_group }
+	}
+	allow = {
+
+	}
+	modifier = {
+		has_a_parliamentary_system = yes
+		clergy_estate_can_participate_in_parliament = yes
+		burghers_estate_can_participate_in_parliament = yes
+		calaquendi_estate_can_participate_in_parliament = yes
+	}
+}

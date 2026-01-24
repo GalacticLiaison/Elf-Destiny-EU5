@@ -1,0 +1,177 @@
+﻿# Overall thoughts
+# - a theme we may want to add is increases in monthly_calaquendi_estate_rebel_growth
+	# - as the super elites grow more powerful its harder to keep them in line
+
+# Elves like quality/communalism/spiritualist/traditionalist/aristocracy
+# maybe calequendi want Individualism while the aelurans want Communalism?
+
+elven_high_councils = {
+	estate = calaquendi_estate
+
+	potential = {
+		culture = { has_culture_group = culture_group:elven_culture_group }
+	}
+		
+	country_modifier = {
+		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_calaquendi_estate_power = 0.5
+		calaquendi_estate_agenda_impact = 0.25
+		parliament_base_support = 0.2
+		parliament_request_issue_support_needed = 0.1
+	}
+}
+
+# all children receive expensive education
+# max literacy - nobles/crown/calequendi
+calaquendi_apprenticeships = {
+	estate = calaquendi_estate
+
+	potential = {
+		culture = { has_culture_group = culture_group:elven_culture_group }
+	}
+
+	country_modifier = {
+		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_calaquendi_estate_power = 0.5
+		calaquendi_apprenticeship_education_unlocked = yes
+	}
+}
+
+# calequendi keep a following of disciples that revere them as almost demi-gods
+# - clergy power
+elite_worship = {
+	estate = calaquendi_estate
+
+	potential = {
+		culture = { has_culture_group = culture_group:elven_culture_group }
+	}
+
+	country_modifier = {
+		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_calaquendi_estate_power = 0.5
+	}
+}
+
+# calequendi are granted their own personal lands with serfs to rule over and practice their arts, they are given great autonomy to rule as they please
+# + serfdom
+# global_calaquendi_city_desired_pop = 
+# decentralization
+personal_dominions = {
+	estate = calaquendi_estate
+
+	potential = {
+		culture = { has_culture_group = culture_group:elven_culture_group }
+	}
+
+	country_modifier = {
+		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_calaquendi_estate_power = 0.5
+	}
+}
+
+# calequendi will maintain their own regiments
+# + elite
+# levy_combat_efficiency 
+personal_retinues = {
+	estate = calaquendi_estate
+
+	potential = {
+		culture = { has_culture_group = culture_group:elven_culture_group }
+	}
+
+	country_modifier = {
+		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_calaquendi_estate_power = 0.5
+	}
+}
+
+# calequendi given full authority over matters of war
+# noble_estate_blocked_from_leading_military
+# clergy_estate_blocked_from_leading_military
+# peasant_estate_blocked_from_leading_military
+# calequendi levy combat efficiency
+# calequendi levy size
+# levy_combat_efficiency 
+war_masters = {
+	estate = calaquendi_estate
+
+	potential = {
+		culture = { has_culture_group = culture_group:elven_culture_group }
+	}
+
+	country_modifier = {
+		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_calaquendi_estate_power = 0.5
+	}
+}
+
+# a portion of the treasury is diverted to provide the caelquendi to provide them spark crystals and fund their great works and rituals; ensuring our most elite can reach their highest potential of power.
+# - gold
+	# -- calaquendi_estate_max_tax  ?
+# calequendi combat efficiency
+# calequendi literacy
+# magi troop power? (maybe move to aeluran instead)
+# prosperity?
+state_sponsored_ascendancy = {
+	estate = calaquendi_estate
+
+	potential = {
+		culture = { has_culture_group = culture_group:elven_culture_group }
+	}
+
+	country_modifier = {
+		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_calaquendi_estate_power = 0.5
+	}
+}
+
+# noble_estate_blocked_from_cabinet
+# -- noble_estate_agenda_impact
+# -- peasant_estate_agenda_impact
+# -- burgher_estate_agenda_impact
+hierarchial_authority = {
+	estate = calaquendi_estate
+
+	potential = {
+		culture = { has_culture_group = culture_group:elven_culture_group }
+	}
+
+	country_modifier = {
+		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_calaquendi_estate_power = 0.5
+		nobles_estate_blocked_from_cabinet = yes
+	}
+}
+
+
+# great_craftsman = {
+	
+# }
+
+# Beauty   Gender Equal - put Galadriel on art
+	# - maybe make this a result of blessing
+# Fairest Dominion:  Dominion of the fairest, with beauty as divine mandate.
+# Elysian Esthetics: Paradise ruled by otherworldly grace and comeliness
+# Aesthetic AscendancyHierarchy where beauty grants rank and magical edge.
+
+fairest_ascendancy = {
+	estate = calaquendi_estate
+
+	potential = {
+		culture = { has_culture_group = culture_group:elven_culture_group }
+	}
+
+	country_modifier = {
+		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_calaquendi_estate_power = 0.5
+		gender_equality = yes
+		diplomatic_reputation = 5
+		diplomatic_annexation_cost = -0.25
+	}
+}
+
+
+# in age that inward/outward becomes available, add something for inward
+
+# in age that Absolutism/Liberalism becomes available, add something for Absolutism
+

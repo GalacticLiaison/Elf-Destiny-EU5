@@ -6,6 +6,11 @@
 		religion = religion:aeluran
 	}
 
+	modifier = {
+		diplomatic_range_modifier = 0.33
+		monthly_religious_influence = 0.1
+	}
+
 	chance = {
 		base = 0
 	}
@@ -19,6 +24,11 @@ aeluran_matron = {
 		religion = religion:aeluran
 	}
 
+	modifier = {
+		diplomatic_range_modifier = 1
+		monthly_religious_influence = 0.2
+	}
+
 	chance = {
 		base = 0
 	}
@@ -30,6 +40,11 @@ aeluran_matriarch = {
 	allow = {
 		is_female = yes
 		religion = religion:aeluran
+	}
+
+	modifier = {
+		diplomatic_range_modifier = 3
+		monthly_religious_influence = 0.4
 	}
 
 	chance = {

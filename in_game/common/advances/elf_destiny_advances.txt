@@ -15,6 +15,7 @@
 	}
 	unlock_levy = levy_calaquendi
 	unlock_levy = levy_a_early_fey_archers
+	unlock_levy = levy_aeluran_magi_basic
 }
 
 

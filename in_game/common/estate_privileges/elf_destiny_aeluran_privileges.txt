@@ -18,6 +18,7 @@ aeluran_advisors = {
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_clergy_estate_power = 0.3
 		government_size = 1
+		aeluran_advisor_appointed = yes
 		country_cabinet_efficiency = 0.20
 		monthly_towards_centralization = societal_value_monthly_move
 		monthly_religious_influence = 0.1
@@ -40,8 +41,8 @@ daughters_of_the_red = {
 	country_modifier = {
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_clergy_estate_power = 0.3
-		global_noble_estate_power = -0.2
-		noble_estate_target_satisfaction = -0.2
+		global_nobles_estate_power = -0.05
+		nobles_estate_target_satisfaction = -0.2
 		monthly_towards_traditionalist = societal_value_monthly_move
 		monthly_towards_spiritualist = societal_value_minor_monthly_move
 		monthly_religious_influence = 0.1
@@ -64,26 +65,27 @@ aeluran_judiciary = {
 		global_crown_estate_power = -0.1
 		monthly_religious_influence = 0.1
 		stability_decay = -0.00025
+		monthly_legitimacy = 0.1
 		monthly_towards_centralization = societal_value_monthly_move
 	}
 }
 
-# Aeluran sisters matchmaking characters
-aeluran_matchmaking = {
-	estate = clergy_estate
+# TODO: Aeluran sisters matchmaking characters
+# aeluran_matchmaking = {
+# 	estate = clergy_estate
 
-	potential = {
-		religion ?= {
-			group ?= religion_group:elven_group
-		}
-	}
+# 	potential = {
+# 		religion ?= {
+# 			group ?= religion_group:elven_group
+# 		}
+# 	}
 		
-	country_modifier = {
-		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
-		global_clergy_estate_power = 0.3
-		stability_decay = -0.00025
-		monthly_towards_aristocracy = societal_value_monthly_move
-		monthly_towards_traditionalist = societal_value_monthly_move
-		monthly_religious_influence = 0.1
-	}
-}
+# 	country_modifier = {
+# 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+# 		global_clergy_estate_power = 0.3
+# 		stability_decay = -0.00025
+# 		monthly_towards_aristocracy = societal_value_monthly_move
+# 		monthly_towards_traditionalist = societal_value_monthly_move
+# 		monthly_religious_influence = 0.1
+# 	}
+# }

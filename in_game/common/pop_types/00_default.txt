@@ -13,15 +13,17 @@
 	calaquendi_estate = {}
 	
 
-	promotion_factor = 0.1
+	promotion_factor = 0.99
 	
 	upper = yes
-	# has_cap = yes
+	has_cap = yes
 	
 	literacy_impact = {
 		# TODO: calaquendi levy combat efficiency
-
-		local_cultural_tradition = 0.2
+		# army_magi_power = 0.3
+		# monthly_legitimacy = 0.5
+		# diplomatic_reputation = 2
+		# local_cultural_tradition = 0.2
 		local_monthly_control = 0.01
 	}
 
@@ -34,7 +36,7 @@ nobles = {
 	
 	editor = 0.05
 
-	promote_to = calaquendi
+	# promote_to = calaquendi
 	
 	assimilation_conversion_factor = 0.05
 
@@ -46,10 +48,9 @@ nobles = {
 	tribes_estate = { is_gaelic_clans = yes }
 	nobles_estate = {}
 	
+	promotion_factor = 0.99 
 	
-	promotion_factor = 0.1
-	
-	# upper = yes
+	upper = yes
 	has_cap = yes
 	
 	literacy_impact = {
@@ -220,6 +221,8 @@ peasants = {
 	promote_to = nobles
 	promote_to = laborers
 	promote_to = soldiers
+	promote_to = calaquendi
+
 	
 	pop_food_consumption = 1.0
 	

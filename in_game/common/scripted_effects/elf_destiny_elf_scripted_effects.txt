@@ -1,25 +1,56 @@
 ﻿assign_elf_race_trait_effect = {
+	debug_log = "assign_elf_race_trait_effect"
 	if = {
 		limit = {
 			inherited_elf_racial_score > 0
 			inherited_elf_racial_score < 2
 		}
-		assign_genetic_trait = { trait = elf_tier_1}
+		assign_race_trait = { trait = elf_tier_1}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 2
 			inherited_elf_racial_score < 3
 		}
-		assign_genetic_trait = { trait = elf_tier_2}
+		assign_race_trait = { trait = elf_tier_2}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 3
 		}
-		assign_genetic_trait = { trait = elf_tier_3}
+		assign_race_trait = { trait = elf_tier_3}
 	}
 }
+
+increase_elf_race_level = {
+
+	assign_race_trait = { trait = elf_tier_1}
+}
+
+assign_race_trait = {
+	add_character_modifier = {
+		modifier = $trait$
+		# mode = add_and_extend
+	}
+
+	set_variable = {
+		name = character_race
+		value = trait:$trait$
+	}
+}
+
+remove_race_trait = {
+	add_character_modifier = {
+		modifier = $trait$
+		# mode = add_and_extend
+	}
+
+	set_variable = {
+		name = character_race
+		value = trait:$trait$
+	}
+}
+
 
 assign_bloodline_traits_at_birth_effect = {
 	either_parent_genetic_inheritance = { trait = royal_elf_valerith }
@@ -51,6 +82,8 @@ either_parent_genetic_inheritance = {
 }
 
 genetic_inheritance_effect = {
+	debug_log = "genetic_inheritance_effect"
+
 	leveled_trait_inheritance = {trait = beauty}
 	leveled_trait_inheritance = {trait = intellect}
 	leveled_trait_inheritance = {trait = physique}
@@ -73,7 +106,7 @@ genetic_inheritance_effect = {
 leveled_trait_inheritance = {
 	set_variable = {
 		name = trait_score
-		value = $trait$_trait_score 
+		value = inherited_$trait$_trait_score 
 	}
 
 	# Chance to reinforce genetic trait
@@ -364,11 +397,29 @@ assign_genetic_trait = {
 	}
 }
 
+remove_genetic_trait = {
+	remove_character_modifier = {
+		modifier = $trait$
+		# mode = add_and_extend
+	}
+
+	remove_list_variable = {
+		name = genetic_traits
+		target = trait:$trait$
+	}
+}
+
 give_genetic_traits_to_starter_characters_effect = {
+	# needed for GUI stuff
+	set_global_variable = {
+		name = human_trait
+		value = trait:human
+	}
+
 	every_country = {
 		every_character = {
-			give_starter_elf_trait = yes
 			assign_any_missing_genetic_traits = yes
+			give_starter_elf_trait = yes
 
 			# random = { # TODO: seed some genetic traits into starter characters
 			# 	# will want to have checks to see they dont already have a genetic trait
@@ -381,18 +432,18 @@ give_starter_elf_trait = {
 	if = {
 		limit = {
 			religion = religion:aeluran
-			NOT = { has_character_modifier = elf_tier_1 }
+			is_any_elf_type = no
 		}
 
-		assign_genetic_trait = { trait = elf_tier_1 }
+		assign_race_trait = { trait = elf_tier_2 }
 	}
 }
 
 # Used to give Setup characters traits that correspond to their character modifiers
 assign_any_missing_genetic_traits = {
-	assign_genetic_trait_from_modifier = { trait = elf_tier_1 }
-	assign_genetic_trait_from_modifier = { trait = elf_tier_2 }
-	assign_genetic_trait_from_modifier = { trait = elf_tier_3 }
+	assign_race_trait_from_modifier = { trait = elf_tier_1 }
+	assign_race_trait_from_modifier = { trait = elf_tier_2 }
+	assign_race_trait_from_modifier = { trait = elf_tier_3 }
 	assign_genetic_trait_from_modifier = { trait = royal_elf_valerith }
 	assign_genetic_trait_from_modifier = { trait = royal_elf_serelion }
 	assign_genetic_trait_from_modifier = { trait = royal_elf_gwynthorn }
@@ -442,16 +493,21 @@ assign_genetic_trait_from_modifier = {
 	}
 }
 
-convert_and_assimilate_elf_pops_effect = {
-	culture_group:elven_culture_group = {
-		every_country_in_culture_group = {
-			# These need to be seperate every_pop loops for some reason
-			every_pop = {
-				change_pop_religion = religion:aeluran
+assign_race_trait_from_modifier = {
+	if = {
+		limit = {
+			has_character_modifier = $trait$
+			OR = {
+				NOT = { has_variable = character_race }
+				NOT = { var:character_race = trait:$trait$ }
 			}
-			every_pop = {
-				change_pop_culture = prev.culture
-			}
+		}
+
+		set_variable = {
+			name = character_race
+			value = trait:$trait$
 		}
 	}
 }
+
+

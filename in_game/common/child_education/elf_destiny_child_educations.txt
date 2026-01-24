@@ -1,0 +1,16 @@
+calaquendi_apprenticeship_education =
+{
+	allow = {
+        has_estate_privilege = estate_privilege:calaquendi_apprenticeships
+	}
+
+	price_to_select = select_expensive_child_education
+	price_to_deselect = deselect_expensive_child_education
+
+	modifier = {
+		character_child_education = 1
+	}
+	country_modifier = {
+		# court_spending_cost = 0.01
+	}
+}

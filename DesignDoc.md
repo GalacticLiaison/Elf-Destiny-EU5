@@ -45,3 +45,8 @@ dragons greed or elven desire or something
             - see if you can limit to just elf nations
         - "you found an ancient elven blade" martial stat +3
         - find portal pieces
+
+# maybe "mystic woods" terrain type
+
+
+CAN YOU USE AI TO HYPER SPEED YOUR PROJECTS?

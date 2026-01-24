@@ -1,0 +1,10 @@
+﻿# TODO: test, file may need to be named country...
+
+calaquendi_percentage_in_country = {
+	potential_trigger = { total_population > 0 } # No division by 0
+	scales_with = {
+		value = percentage_pop_type_in_country:calaquendi
+	}
+
+	monthly_towards_quality = societal_value_huge_monthly_move
+}

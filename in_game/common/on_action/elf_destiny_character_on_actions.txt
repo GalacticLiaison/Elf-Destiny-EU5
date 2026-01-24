@@ -3,6 +3,7 @@ on_character_birth = {
 	on_actions = {
 		assign_elf_trait
 		assign_elf_bloodline_traits
+		assign_genetic_traits
 	}
 }
 

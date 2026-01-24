@@ -1,0 +1,51 @@
+﻿sponsor_a_mallorn_tree_grove = {
+	estate = calaquendi_estate
+
+	modifier_when_in_debate = {
+		monthly_towards_spiritualist = societal_value_huge_monthly_move #moves value by 3 over the duration
+	}
+
+	allow = {
+		# has_advance = cathedral_advance
+		any_owned_location = {
+			NOT = { has_building = building_type:mallorn_tree_grove }
+			OR = {
+				location_rank = location_rank:town
+				location_rank = location_rank:city
+			}
+		}
+	}
+
+	chance = {
+		add = 1
+	}
+	
+	on_debate_passed = {
+		ordered_owned_location = {
+			order_by = {
+				value = population
+				if = {
+					limit = { location_rank = location_rank:city }
+					multiply = 5
+				}
+			}
+			max = 1
+			limit = {
+				NOT = { has_building = building_type:mallorn_tree_grove }
+				OR = {
+					location_rank = location_rank:town
+					location_rank = location_rank:city
+				}
+			}
+			construct_building = {
+				building_type = building_type:mallorn_tree_grove
+				cost_multiplier = 0.5
+				cost_multiplier_reason = "game_concept_parliament_issue"
+			}
+			
+		}
+	}
+	on_debate_failed = {
+		parliament_debate_failed_effect = yes
+	}
+}

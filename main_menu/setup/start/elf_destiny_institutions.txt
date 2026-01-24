@@ -1,5 +1,71 @@
 locations={
-# Sylvael - Valerith 
+
+# DWD Deepwood
+mezen = {
+	feudalism = yes
+	legalism = yes
+}
+# SYL Sylvael
+bolshaya_laptyuga = {
+	feudalism = yes
+	legalism = yes
+}
+ust_vym = {
+	feudalism = yes
+	legalism = yes
+}
+kortkeros = {
+	feudalism = yes
+	legalism = yes
+}
+ukhta = {
+	feudalism = yes
+	legalism = yes
+}
+troitsko_pechorsk = {
+	feudalism = yes
+	legalism = yes
+}
+ust_kulom = {
+	feudalism = yes
+	legalism = yes
+}
+cherdyn = {
+	feudalism = yes
+	legalism = yes
+}
+nyrob = {
+	feudalism = yes
+	legalism = yes
+}
+vashka = {
+	feudalism = yes
+	legalism = yes
+}
+
+# BWD Blackwood
+vukyl = {
+	feudalism = yes
+	legalism = yes
+}
+pechora = {
+	feudalism = yes
+	legalism = yes
+}
+
+# MYT Mytharil
+solikamsk = {
+	feudalism = yes
+	legalism = yes
+}
+kizel = {
+	feudalism = yes
+	legalism = yes
+}
+gubakha = {
+	feudalism = yes
+	legalism = yes
+}
 turyinskiye_rudniki = {
 	feudalism = yes
 	legalism = yes
@@ -8,98 +74,119 @@ novaya_lyalya = {
 	feudalism = yes
 	legalism = yes
 }
-sosva = {
+
+# HIH High Hills 
+angoya = {
 	feudalism = yes
 	legalism = yes
 }
-verkhoturye = {
+kutima = {
 	feudalism = yes
 	legalism = yes
 }
-sankina = {
+osenny = {
 	feudalism = yes
 	legalism = yes
 }
-gari = {
+kachug = {
 	feudalism = yes
 	legalism = yes
 }
-ponil = {
+zhigalovo = {
 	feudalism = yes
 	legalism = yes
 }
-pelym = {
+onguren = {
 	feudalism = yes
 	legalism = yes
 }
-turinsk = {
+ul_kan = {
 	feudalism = yes
 	legalism = yes
 }
-tabory = {
+kichera = {
+	feudalism = yes
+	legalism = yes
+}
+argada = {
+	feudalism = yes
+	legalism = yes
+}
+ust_barguzin = {
+	feudalism = yes
+	legalism = yes
+}
+chitkan = {
+	feudalism = yes
+	legalism = yes
+}
+bayangol = {
+	feudalism = yes
+	legalism = yes
+}
+ust_kut = {
+	feudalism = yes
+	legalism = yes
+}
+reka_tuba = {
+	feudalism = yes
+	legalism = yes
+}
+nikolsky_pogost = {
+	feudalism = yes
+	legalism = yes
+}
+irkutsk_kazachinskoye = {
 	feudalism = yes
 	legalism = yes
 }
 
-# High Hills - Daelurin
-minusinsk = {
+# GPA Giants Palm
+bodaybo = {
 	feudalism = yes
 	legalism = yes
 }
-idrinskoye = {
+kamniga = {
 	feudalism = yes
 	legalism = yes
 }
-kortuz = {
+konkudera = {
 	feudalism = yes
 	legalism = yes
 }
-krasnoyarsk = {
-	feudalism = yes
-	legalism = yes
-}
-kansk = {
-	feudalism = yes
-	legalism = yes
-}
-ilansky = {
-	feudalism = yes
-	legalism = yes
-}
-biryusa = {
-	feudalism = yes
-	legalism = yes
-}
-nizhneudinsk = {
-	feudalism = yes
-	legalism = yes
-}
-siberia_kuytun = {
-	feudalism = yes
-	legalism = yes
-}
-staraya_zima = {
-	feudalism = yes
-	legalism = yes
-}
-zalari = {
-	feudalism = yes
-	legalism = yes
-}
-cheremkhovo = {
-	feudalism = yes
-	legalism = yes
-}
-irkutsk = {
-	feudalism = yes
-	legalism = yes
-}
-slyudyanka = {
+kyakhtinskii = {
 	feudalism = yes
 	legalism = yes
 }
 
-# Crystal Glades - Thundarael
+# NWD North Wood
+sekili = {
+	feudalism = yes
+	legalism = yes
+}
+chambeta = {
+	feudalism = yes
+	legalism = yes
+}
+icheda = {
+	feudalism = yes
+	legalism = yes
+}
+tokma = {
+	feudalism = yes
+	legalism = yes
+}
+bur_nepa = {
+	feudalism = yes
+	legalism = yes
+}
+ika_nepa = {
+	feudalism = yes
+	legalism = yes
+}
+
+
+# CYG Crystal Glades
 bolshoy_yugan = {
 	feudalism = yes
 	legalism = yes
@@ -136,8 +223,44 @@ kolpashevo = {
 	feudalism = yes
 	legalism = yes
 }
+ust_ishim = {
+	feudalism = yes
+	legalism = yes
+}
+znamenskoye = {
+	feudalism = yes
+	legalism = yes
+}
+tara = {
+	feudalism = yes
+	legalism = yes
+}
+muromtsevo = {
+	feudalism = yes
+	legalism = yes
+}
+molchanovo = {
+	feudalism = yes
+	legalism = yes
+}
+ket = {
+	feudalism = yes
+	legalism = yes
+}
+melnikovo = {
+	feudalism = yes
+	legalism = yes
+}
+tomsk = {
+	feudalism = yes
+	legalism = yes
+}
+shish = {
+	feudalism = yes
+	legalism = yes
+}
 
-# Wyrm's Den - Serelion
+# WYD Wyrm's Den
 morphou = {
 	feudalism = yes
 	legalism = yes
@@ -155,7 +278,7 @@ malta = {
 	legalism = yes
 }
 
-# Green Shores - Gwynthorn
+# GSH Green Shores
 raphoe = {
 	feudalism = yes
 	legalism = yes
@@ -173,7 +296,7 @@ inishowen = {
 	legalism = yes
 }
 
-# Atlas - Lormelis
+# ATS Atlas
 brest = {
 	feudalism = yes
 	legalism = yes
@@ -194,4 +317,603 @@ saint_brieuc = {
 	feudalism = yes
 	legalism = yes
 }
+
+# WDQ Quiet Wood
+yendyr = {
+	feudalism = yes
+	legalism = yes
+}
+kartauzh = {
+	feudalism = yes
+	legalism = yes
+}
+kharom_vosh = {
+	feudalism = yes
+	legalism = yes
+}
+
+
+# WDF Fell Wood
+bardak = {
+	feudalism = yes
+	legalism = yes
+}
+nazym = {
+	feudalism = yes
+	legalism = yes
+}
+karymkary = {
+	feudalism = yes
+	legalism = yes
+}
+
+# QWD Queen's Wood
+sukhorukova = {
+	feudalism = yes
+	legalism = yes
+}
+belogorye = {
+	feudalism = yes
+	legalism = yes
+}
+
+# IML Imladris
+ivdel = {
+	feudalism = yes
+	legalism = yes
+}
+# SVN Silivren
+ponil = {
+	feudalism = yes
+	legalism = yes
+}
+# AWE Aranwë
+pelym = {
+	feudalism = yes
+	legalism = yes
+}
+# AEL Aeloria
+gari = {
+	feudalism = yes
+	legalism = yes
+}
+sosva = {
+	feudalism = yes
+	legalism = yes
+}
+
+# NAD North Annonduin
+ess = {
+	feudalism = yes
+	legalism = yes
+}
+# SAD South Annonduin
+konda = {
+	feudalism = yes
+	legalism = yes
+}
+yevra = {
+	feudalism = yes
+	legalism = yes
+}
+
+# LAS Lassemir
+malaya_sosva = {
+	feudalism = yes
+	legalism = yes
+}
+# NEN Nenuial
+yukonda = {
+	feudalism = yes
+	legalism = yes
+}
+# ELD Eldrin
+turtas = {
+	feudalism = yes
+	legalism = yes
+}
+# GLX Gloren
+qashliq = {
+	feudalism = yes
+	legalism = yes
+}
+siberia_abalak = {
+	feudalism = yes
+	legalism = yes
+}
+
+# ITH Ithildin
+ust_ozernoye = {
+	feudalism = yes
+	legalism = yes
+}
+selo_yartsevo = {
+	feudalism = yes
+	legalism = yes
+}
+nazimovo = {
+	feudalism = yes
+	legalism = yes
+}
+yeniseysk = {
+	feudalism = yes
+	legalism = yes
+}
+
+# LOE Lóterien
+komsa = {
+	feudalism = yes
+	legalism = yes
+}
+siberia_bor = {
+	feudalism = yes
+	legalism = yes
+}
+
+# SIR Siriondil
+sulomay = {
+	feudalism = yes
+	legalism = yes
+}
+# NAH Nan Hithlinn
+bakhtinsky = {
+	feudalism = yes
+	legalism = yes
+}
+# DUG Dûrgalen
+kuzmovka = {
+	feudalism = yes
+	legalism = yes
+}
+# ERD Eredhven
+yeruda = {
+	feudalism = yes
+	legalism = yes
+}
+kiya = {
+	feudalism = yes
+	legalism = yes
+}
+tis_reka = {
+	feudalism = yes
+	legalism = yes
+}
+
+# ORR Orodrethil
+tokhomo = {
+	feudalism = yes
+	legalism = yes
+}
+# FOR Formenost
+enashimo = {
+	feudalism = yes
+	legalism = yes
+}
+teya = {
+	feudalism = yes
+	legalism = yes
+}
+vel_mo = {
+	feudalism = yes
+	legalism = yes
+}
+
+# RIV Rivenwood
+vangash = {
+	feudalism = yes
+	legalism = yes
+}
+# HIL Hithlond
+kardakan = {
+	feudalism = yes
+	legalism = yes
+}
+# GWH Gwathlóren
+poligus = {
+	feudalism = yes
+	legalism = yes
+}
+baykit = {
+	feudalism = yes
+	legalism = yes
+}
+turama = {
+	feudalism = yes
+	legalism = yes
+}
+
+# EMY Emyn Dûr
+bryanka = {
+	feudalism = yes
+	legalism = yes
+}
+# AMO Amonost
+kamensk = {
+	feudalism = yes
+	legalism = yes
+}
+# LAI Laindor
+motygino = {
+	feudalism = yes
+	legalism = yes
+}
+pashino = {
+	feudalism = yes
+	legalism = yes
+}
+taseyevo = {
+	feudalism = yes
+	legalism = yes
+}
+
+# CAL Calithil
+kazachinskoye = {
+	feudalism = yes
+	legalism = yes
+}
+# THA Tharagel
+yemelyanovo = {
+	feudalism = yes
+	legalism = yes
+}
+# NER Neldoramar
+kazachinskoye = {
+	feudalism = yes
+	legalism = yes
+}
+# NIV Nivrimdor
+kansk = {
+	feudalism = yes
+	legalism = yes
+}
+# STA Starfall Plain
+dzerzhinskoye = {
+	feudalism = yes
+	legalism = yes
+}
+# ALD Aeluin Daer
+ilansky = {
+	feudalism = yes
+	legalism = yes
+}
+# DUD Duin Daer
+biryusa = {
+	feudalism = yes
+	legalism = yes
+}
+# TAH Tathren
+pervomayskoye = {
+	feudalism = yes
+	legalism = yes
+}
+tyukhtet = {
+	feudalism = yes
+	legalism = yes
+}
+
+# CEO Celonduin
+mariinsk = {
+	feudalism = yes
+	legalism = yes
+}
+verkh_chebula = {
+	feudalism = yes
+	legalism = yes
+}
+itatsky = {
+	feudalism = yes
+	legalism = yes
+}
+
+# ETI Ethirannon
+bolshoy_uluy = {
+	feudalism = yes
+	legalism = yes
+}
+makovskoe = {
+	feudalism = yes
+	legalism = yes
+}
+
+# VIY Vinyalondë
+nazarovo = {
+	feudalism = yes
+	legalism = yes
+}
+uzhur = {
+	feudalism = yes
+	legalism = yes
+}
+tatarskaya_tesyu = {
+	feudalism = yes
+	legalism = yes
+}
+
+# TIN Tindomire
+tabory = {
+	feudalism = yes
+	legalism = yes
+}
+sankina = {
+	feudalism = yes
+	legalism = yes
+}
+turinsk = {
+	feudalism = yes
+	legalism = yes
+}
+
+# AEV Aelvinas
+chunoyar = {
+	feudalism = yes
+	legalism = yes
+}
+aban = {
+	feudalism = yes
+	legalism = yes
+}
+
+# RIN Ringwilith
+kamenka = {
+	feudalism = yes
+	legalism = yes
+}
+kazhma = {
+	feudalism = yes
+	legalism = yes
+}
+
+
+# RHU Rhûnren
+manzaya = {
+	feudalism = yes
+	legalism = yes
+}
+boguchany = {
+	feudalism = yes
+	legalism = yes
+}
+
+# WIN Windy Vale
+belya = {
+	feudalism = yes
+	legalism = yes
+}
+tayga = {
+	feudalism = yes
+	legalism = yes
+}
+
+# ORF Orofarn
+irkineieva = {
+	feudalism = yes
+	legalism = yes
+}
+# GIL Gilwenor
+yarkino = {
+	feudalism = yes
+	legalism = yes
+}
+# HAR Harlondor
+oskoba = {
+	feudalism = yes
+	legalism = yes
+}
+tsentral = {
+	feudalism = yes
+	legalism = yes
+}
+chadobets = {
+	feudalism = yes
+	legalism = yes
+}
+
+# LAH Lathron
+lower_angara = {
+	feudalism = yes
+	legalism = yes
+}
+upper_angara = {
+	feudalism = yes
+	legalism = yes
+}
+educhanka = {
+	feudalism = yes
+	legalism = yes
+}
+
+# FOM Formenfold
+kezhma = {
+	feudalism = yes
+	legalism = yes
+}
+# BNN Bruinenor
+chemal = {
+	feudalism = yes
+	legalism = yes
+}
+# ALR Almarenor
+balagansk = {
+	feudalism = yes
+	legalism = yes
+}
+osinsky = {
+	feudalism = yes
+	legalism = yes
+}
+bayanday = {
+	feudalism = yes
+	legalism = yes
+}
+
+# AND Andúniëlor
+zalari = {
+	feudalism = yes
+	legalism = yes
+}
+cheremkhovo = {
+	feudalism = yes
+	legalism = yes
+}
+irkutsk = {
+	feudalism = yes
+	legalism = yes
+}
+
+# CAI Carnilindon
+chuva = {
+	feudalism = yes
+	legalism = yes
+}
+nizhneudinsk = {
+	feudalism = yes
+	legalism = yes
+}
+
+# ELE Elenrond
+bratsk = {
+	feudalism = yes
+	legalism = yes
+}
+siberia_kuytun = {
+	feudalism = yes
+	legalism = yes
+}
+staraya_zima = {
+	feudalism = yes
+	legalism = yes
+}
+
+# FRS Formenos
+krasnoyarsk = {
+	feudalism = yes
+	legalism = yes
+}
+# ILM Ilmarion
+novosyolovo = {
+	feudalism = yes
+	legalism = yes
+}
+kortuz = {
+	feudalism = yes
+	legalism = yes
+}
+idrinskoye = {
+	feudalism = yes
+	legalism = yes
+}
+minusinsk = {
+	feudalism = yes
+	legalism = yes
+}
+
+# LAQ Laurinquë
+chuya = {
+	feudalism = yes
+	legalism = yes
+}
+witym = {
+	feudalism = yes
+	legalism = yes
+}
+
+# NAR Nargilmar
+yukte = {
+	feudalism = yes
+	legalism = yes
+}
+vitim = {
+	feudalism = yes
+	legalism = yes
+}
+alysardakh = {
+	feudalism = yes
+	legalism = yes
+}
+
+# OST Ostelion
+peledui = {
+	feudalism = yes
+	legalism = yes
+}
+uel_tympychan = {
+	feudalism = yes
+	legalism = yes
+}
+
+# TIV Tirion Vanyar
+moshi = {
+	feudalism = yes
+	legalism = yes
+}
+tupuchikan = {
+	feudalism = yes
+	legalism = yes
+}
+
+# VAA Valacirya
+ichera = {
+	feudalism = yes
+	legalism = yes
+}
+dulis_ma = {
+	feudalism = yes
+	legalism = yes
+}
+
+# VNY Vanyalondë
+shardonem = {
+	feudalism = yes
+	legalism = yes
+}
+# LSS Lassirith
+chakola = {
+	feudalism = yes
+	legalism = yes
+}
+# GWN Gwaelinn
+verkola = {
+	feudalism = yes
+	legalism = yes
+}
+# EDH Edhelvor
+ust_chulasa = {
+	feudalism = yes
+	legalism = yes
+}
+# NME Northmere
+koptyuga = {
+	feudalism = yes
+	legalism = yes
+}
+# AMM Ammithir
+zanyukhcha = {
+	feudalism = yes
+	legalism = yes
+}
+# LOS Lossenlad
+chirki = {
+	feudalism = yes
+	legalism = yes
+}
+# SVL Silvervale
+leshukonskoye = {
+	feudalism = yes
+	legalism = yes
+}
+# WHI Windyhill
+khimzha = {
+	feudalism = yes
+	legalism = yes
+}
+# ZYP Zyphris
+makarikha = {
+	feudalism = yes
+	legalism = yes
+}
+dyrashnichikha = {
+	feudalism = yes
+	legalism = yes
+}
+
 }

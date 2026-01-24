@@ -1,30 +1,83 @@
-﻿# We may instead of using age to increase power level,
+﻿a_age_1_traditions_magi = {
+	category = army_magi
+	buildable = no
+	max_strength = 0.05
+	combat_power = 1.1
 
-# Aeluran Magi => Cleric Power
-# Calaquendi = > Calaquendi Power
+    bombard_efficiency = 0.05
+	artillery_barrage = 1
 
+	maintenance_demand =  early_magi_maintenance
+	construction_demand = early_magi_construction
+	age = "age_1_traditions"
+}
 
-# a_age_1_traditions_magi = {
-# 	category = army_magi
-# 	buildable = no
-# 	max_strength = 0.1
-# 	combat_power = 1
+a_age_2_renaissance_magi = {
+	category = army_magi
+	buildable = no
+	max_strength = 0.1
+	combat_power = 1.1
 
+	bombard_efficiency = 0.075
+	artillery_barrage = 3
 
-# 	maintenance_demand =  early_magi_maintenance
-# 	construction_demand = early_magi_construction
-# 	age = "age_1_traditions"
-# }
+	maintenance_demand =  early_magi_maintenance
+	construction_demand = early_magi_construction
+	age = "age_2_renaissance"
+}
 
-# a_age_1_traditions_magi_artillery = {
-# 	category = army_magi_artillery
-# 	buildable = no
-# 	max_strength = 0.01
-# 	combat_power = 2
-	
-# 	bombard_efficiency = 0.1
-	
-# 	artillery_barrage = 1
+a_age_3_discovery_magi = {
+	category = army_magi
+	buildable = no
+	max_strength = 0.2
+	combat_power = 1.1
 
-# 	age = "age_1_traditions"
-# }
+    bombard_efficiency = 0.085
+	artillery_barrage = 4
+
+	maintenance_demand =  early_magi_maintenance
+	construction_demand = early_magi_construction
+	age = "age_3_discovery"
+}
+
+a_age_4_reformation_magi = {
+	category = army_magi
+	buildable = no
+	max_strength = 0.4
+	combat_power = 1.65
+
+    bombard_efficiency = 0.20
+	artillery_barrage = 5
+
+	maintenance_demand =  early_magi_maintenance
+	construction_demand = early_magi_construction
+	age = "age_4_reformation"
+}
+
+a_age_5_absolutism_magi = {
+	category = army_magi
+	buildable = no
+	max_strength = 0.8
+	combat_power = 2.75
+
+    bombard_efficiency = 0.25
+	artillery_barrage = 7
+
+    maintenance_demand =  early_magi_maintenance
+	construction_demand = early_magi_construction
+	age = "age_5_absolutism"
+}
+
+a_age_6_revolutions_magi = {
+	category = army_magi
+	buildable = no
+	max_strength = 1.6
+	combat_power = 3.75
+
+    bombard_efficiency = 0.25
+	artillery_barrage = 9
+
+    maintenance_demand =  early_magi_maintenance
+	construction_demand = early_magi_construction
+	age = "age_6_revolutions"
+}

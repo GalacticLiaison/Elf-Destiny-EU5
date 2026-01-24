@@ -1,71 +1,84 @@
-﻿assign_new_aeluran_adviser = {
-
-	custom_tooltip = {
-		text = aeluran_adviser_joins_realm
-
-		create_character = {
-			age = {18 30}
-			female = yes
+﻿create_new_aeluran_advisor = {
+	create_character = {
+		age = {18 30}
+		female = yes
 	
-			religion = religion:aeluran
-			culture = scope:root.culture
-			estate = estate_type:clergy_estate
+		religion = religion:aeluran
+		culture = root.culture
+		estate = estate_type:clergy_estate
 	
-			# TODO: could have some privilege increase the stats of advisors
-			adm = {
-				integer_range = {
-					min = {
-						value = 50
-					}
-					max = {
-						value = 100
-					}
+		# TODO: could have some privilege increase the stats of advisors
+		adm = {
+			integer_range = {
+				min = {
+					value = 50
+				}
+				max = {
+					value = 100
 				}
 			}
-			dip = {
-				integer_range = {
-					min = {
-						value = 50
-					}
-					max = {
-						value = 100
-					}
+		}
+		dip = {
+			integer_range = {
+				min = {
+					value = 50
+				}
+				max = {
+					value = 100
 				}
 			}
-			mil = {
-				integer_range = {
-					min = {
-						value = 50
-					}
-					max = {
-						value = 100
-					}
+		}
+		mil = {
+			integer_range = {
+				min = {
+					value = 50
+				}
+				max = {
+					value = 100
 				}
 			}
-	
-			add_trait = trait:aeluran_sister
-			
-			save_scope_as = aeluran_adviser
-			set_variable = aeluran_adviser
 		}
 	
-		scope:aeluran_adviser = {
+		add_trait = trait:aeluran_sister
+		
+		save_scope_as = aeluran_advisor
+		set_variable = aeluran_advisor
+	}
+}
+
+assign_new_aeluran_advisor = {
+
+	# hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					exists = scope:aeluran_advisor
+				}
+			}
+			create_new_aeluran_advisor = yes
+		}
+	# }
+
+	custom_tooltip = {
+		text = aeluran_advisor_joins_realm
+
+		scope:aeluran_advisor = {
 			move_country = root
 		}
 	}
 
 	custom_tooltip = {
-		text = aeluran_adviser_joins_and_become_head_of_cabinet
+		text = aeluran_advisor_joins_and_become_head_of_cabinet
 		if = {
 			limit = {
-				exists = scope:aeluran_adviser
+				exists = scope:aeluran_advisor
 			}
 			random_cabinet = {
-				add_to_cabinet = scope:aeluran_adviser
+				add_to_cabinet = scope:aeluran_advisor
 			}
 			
 			promote_to_head_of_cabinet_effect = {
-				target = scope:aeluran_adviser
+				target = scope:aeluran_advisor
 			}
 		}
 	}

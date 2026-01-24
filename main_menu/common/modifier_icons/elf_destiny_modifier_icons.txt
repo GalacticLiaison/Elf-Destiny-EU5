@@ -192,9 +192,30 @@ global_elven_crafts_output_modifier = {
 	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
 }
 
-army_magi_artillery_maintenance_cost_modifier = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+ban_exports_of_mythril_elven_crafts = {
+	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
 }
+
+ban_imports_of_mythril_elven_crafts = {
+	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
+}
+
+local_mythril_elven_crafts_output_modifier = {
+	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
+}
+
+global_mythril_elven_crafts_output_modifier = {
+	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
+}
+
+can_extract_mythril_elven_crafts = {
+	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
+}
+
+
+# army_magi_artillery_maintenance_cost_modifier = {
+# 	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+# }
 
 army_magi_build_cost_modifier = {
 	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
@@ -204,9 +225,9 @@ army_magi_power = {
 	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
 }
 
-army_magi_artillery_build_cost_modifier = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
-}
+# army_magi_artillery_build_cost_modifier = {
+# 	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+# }
 
 army_magi_maintenance_cost_modifier = {
 	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
@@ -216,10 +237,22 @@ army_magi_reinforce_cost_modifier = {
 	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
 }
 
-army_magi_artillery_reinforce_cost_modifier = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+# army_magi_artillery_reinforce_cost_modifier = {
+# 	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+# }
+
+# army_magi_artillery_power = {
+# 	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+# }
+
+aeluran_advisor_appointed = {
+	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
 }
 
-army_magi_artillery_power = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+ranger_high_guard_unlocked = {
+	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+}
+
+calaquendi_apprenticeship_education_unlocked = {
+	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
 }

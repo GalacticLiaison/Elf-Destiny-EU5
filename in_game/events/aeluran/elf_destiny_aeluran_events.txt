@@ -15,12 +15,14 @@ aeluran_events.1 = {
 
 	immediate = {
 		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+
+		create_new_aeluran_advisor = yes
 	}
 	
 	option = {
 		name = aeluran_events.1.a
 
-		assign_new_aeluran_adviser = yes
+		assign_new_aeluran_advisor = yes
 
 		add_religious_influence = religious_influence_mild_bonus
 	}

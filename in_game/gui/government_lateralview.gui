@@ -3324,7 +3324,7 @@ lateralview = {
 												layoutpolicy_horizontal = expanding
 
 												vbox = {
-													visible = "[Cabinet.GetCharacter.MakeScope.Var('aeluran_adviser').IsSet]"
+													visible = "[Cabinet.GetCharacter.MakeScope.Var('aeluran_advisor').IsSet]"
 													# visible = "[EqualTo_int32('(int32)0',PdxGuiWidget.GetIndexInDataModel)]"
 													layoutpolicy_horizontal = expanding
 													margin = {4 4}
@@ -3370,7 +3370,7 @@ lateralview = {
 																datacontext = "[CabinetItem.GetAdvisorUIAction]"
 																datacontext = "[CabinetItem]"
 																tooltipwidget = {
-																	using = cant_manually_appoint_aeluran_adviser
+																	using = cant_manually_appoint_aeluran_advisor
 																}
 																using = button_action_provider_base
 															}
@@ -3532,7 +3532,7 @@ lateralview = {
 													}
 												}
 												vbox = {
-													visible = "[Not(Cabinet.GetCharacter.MakeScope.Var('aeluran_adviser').IsSet)]"
+													visible = "[Not(Cabinet.GetCharacter.MakeScope.Var('aeluran_advisor').IsSet)]"
 													layoutpolicy_horizontal = expanding
 													margin = {4 4}
 	

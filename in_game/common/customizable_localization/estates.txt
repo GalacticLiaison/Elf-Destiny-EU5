@@ -67,6 +67,22 @@ crown_estate = {
 	}
 }
 
+calaquendi_estate = {
+	type = country
+
+	text = {
+		localization_key = calaquendi_estate_elven
+		trigger = {
+			culture = { has_culture_group = culture_group:elven_culture_group}
+		}
+	}
+
+	text = {
+		localization_key = calaquendi_estate
+		fallback = yes
+	}
+}
+
 nobles_estate = {
 	type = country
 

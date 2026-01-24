@@ -44,21 +44,21 @@ INJECT_OR_CREATE:legal_code_law = {
 	}
 }
 
-human_citizens = {
-	law_category = religious
-	potential = {
-		culture = { has_culture_group = culture_group:elven_culture_group }
-	}
+# human_citizens = {
+# 	law_category = religious
+# 	potential = {
+# 		culture = { has_culture_group = culture_group:elven_culture_group }
+# 	}
 
-	no_humans = {
-		country_modifier = {
-			global_peasants_desired_pop_scaled = -9999
-			global_peasants_migration_allowed = no
-		}
-		estate_preferences = {
-			calaquendi_estate
-			nobles_estate
-		}
-		years = 2
-	}
-}
+# 	no_humans = {
+# 		country_modifier = {
+# 			global_peasants_desired_pop_scaled = -9999
+# 			global_peasants_migration_allowed = no
+# 		}
+# 		estate_preferences = {
+# 			calaquendi_estate
+# 			nobles_estate
+# 		}
+# 		years = 2
+# 	}
+# }

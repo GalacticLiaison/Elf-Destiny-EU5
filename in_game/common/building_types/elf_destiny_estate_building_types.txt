@@ -6,10 +6,10 @@ mallorn_tree_grove = {
 	is_foreign = no
 	max_levels = 1
 
-	pop_type = nobles
+	pop_type = calaquendi
 	employment_size = estate_peasants_employment
 	
-	rural_settlement = yes
+	rural_settlement = no
 	town = yes
 	city = yes
 	
@@ -42,7 +42,7 @@ baths_of_starlight = {
 	is_foreign = no
 	max_levels = 1
 
-	pop_type = nobles
+	pop_type = calaquendi
 	employment_size = estate_peasants_employment
 	
 	rural_settlement = yes
@@ -79,7 +79,7 @@ perfume_garden_of_valinor = {
 	is_foreign = no
 	max_levels = 1
 
-	pop_type = nobles
+	pop_type = calaquendi
 	employment_size = estate_peasants_employment
 	
 	rural_settlement = yes
@@ -115,7 +115,7 @@ wine_cellar_of_elder_days = {
 	is_foreign = no
 	max_levels = 1
 
-	pop_type = nobles
+	pop_type = calaquendi
 	employment_size = estate_peasants_employment
 	
 	rural_settlement = yes
@@ -151,7 +151,7 @@ feasting_hall_of_the_trees = {
 	is_foreign = no
 	max_levels = 1
 
-	pop_type = nobles
+	pop_type = calaquendi
 	employment_size = estate_peasants_employment
 	
 	rural_settlement = yes
@@ -187,7 +187,7 @@ grand_archives = {
 	is_foreign = no
 	max_levels = 1
 
-	pop_type = nobles
+	pop_type = calaquendi
 	employment_size = estate_peasants_employment
 	
 	rural_settlement = yes

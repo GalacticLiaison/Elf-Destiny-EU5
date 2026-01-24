@@ -2,6 +2,9 @@
 	on_actions = {
 		give_genetic_traits_to_starter_characters
 		convert_and_assimilate_elf_pops
+		increase_elf_food_supply
+		elf_destiny_goods_change
+		start_elf_destiny_storyline
 	}
 }
 
@@ -14,5 +17,24 @@ give_genetic_traits_to_starter_characters = {
 convert_and_assimilate_elf_pops = {
 	effect = {
 		convert_and_assimilate_elf_pops_effect = yes
+	}
+}
+
+increase_elf_food_supply = {
+	effect = {
+		increase_elf_food_supply_effect = yes
+	}
+}
+
+elf_destiny_goods_change = {
+	effect = {
+		elf_destiny_change_starter_goods_effect = yes
+	}
+}
+
+start_elf_destiny_storyline = {
+	effect = {
+		debug_log = "start_elf_destiny_storyline"
+		start_elf_destiny_storyline_effect = yes
 	}
 }

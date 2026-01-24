@@ -3,13 +3,14 @@
 		always = no
 	}
 	category = ruler
-	flavor = elf_bloodline
+	flavor = elf_genetic
 	
 	modifier = {
-		global_estate_target_satisfaction = tiny_permanent_target_satisfaction
-		monthly_towards_free_subjects = societal_value_minor_monthly_move
-		peace_offer_fairness = 0.2
-		stability_importance_modifier = 0.1
+		dip = -5
+		diplomatic_reputation = -1
+		subject_loyalty = -1
+		character_fertility = -10
+
 
 		dip = 10
 	}
@@ -23,13 +24,14 @@ beauty_bad_2 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_bloodline
+	flavor = elf_genetic
 	
 	modifier = {
-		global_estate_target_satisfaction = tiny_permanent_target_satisfaction
-		monthly_towards_free_subjects = societal_value_minor_monthly_move
-		peace_offer_fairness = 0.2
-		stability_importance_modifier = 0.1
+		dip = -10
+		diplomatic_reputation = -2
+		subject_loyalty = -2
+		character_fertility = -20
+
 
 		dip = 10
 	}
@@ -43,13 +45,13 @@ beauty_bad_3 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_bloodline
+	flavor = elf_genetic
 	
 	modifier = {
-		global_estate_target_satisfaction = tiny_permanent_target_satisfaction
-		monthly_towards_free_subjects = societal_value_minor_monthly_move
-		peace_offer_fairness = 0.2
-		stability_importance_modifier = 0.1
+		dip = -20
+		diplomatic_reputation = -3
+		subject_loyalty = -3
+		character_fertility = -30
 
 		dip = 10
 	}
@@ -66,7 +68,10 @@ beauty_good_1 = {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
+		dip = 5
+		diplomatic_reputation = 1
+		subject_loyalty = 1
+		character_fertility = 10
 	}
 
 	chance = {
@@ -82,6 +87,9 @@ beauty_good_2 = {
 	
 	modifier = {
 		dip = 10
+		diplomatic_reputation = 2
+		subject_loyalty = 2
+		character_fertility = 20
 	}
 
 	chance = {
@@ -96,7 +104,10 @@ beauty_good_3 = {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
+		dip = 20
+		diplomatic_reputation = 3
+		subject_loyalty = 3
+		character_fertility = 30
 	}
 
 	chance = {
@@ -112,7 +123,12 @@ intellect_bad_1= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
+		dip = -3
+		mil = -3
+		adm = -3
+		military_tactics = -0.1
+		discipline = -0.05
+		research_speed_modifier = -0.05
 	}
 
 	chance = {
@@ -127,7 +143,12 @@ intellect_bad_2= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
+		dip = -5
+		mil = -5
+		adm = -5
+		military_tactics = -0.25
+		discipline = -0.10
+		research_speed_modifier = -0.25
 	}
 
 	chance = {
@@ -142,7 +163,12 @@ intellect_bad_3= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
+		dip = -10
+		mil = -10
+		adm = -10
+		military_tactics = -0.5
+		discipline = -0.15
+		research_speed_modifier = -0.1
 	}
 
 	chance = {
@@ -157,7 +183,12 @@ intellect_good_1= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
+		dip = 3
+		mil = 3
+		adm = 3
+		military_tactics = 0.1
+		discipline = 0.05
+		research_speed_modifier = 0.05
 	}
 
 	chance = {
@@ -172,7 +203,13 @@ intellect_good_2= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
+		dip = 5
+		mil = 5
+		adm = 5
+		military_tactics = 0.25
+		discipline = 0.10
+		research_speed_modifier = 0.25
+
 	}
 
 	chance = {
@@ -188,6 +225,11 @@ intellect_good_3= {
 	
 	modifier = {
 		dip = 10
+		mil = 10
+		adm = 10
+		military_tactics = 0.5
+		discipline = 0.15
+		research_speed_modifier = 0.1
 	}
 
 	chance = {
@@ -204,6 +246,8 @@ physique_bad_1= {
 	
 	modifier = {
 		dip = 10
+		character_fertility = -5
+		character_life_expectancy = -5
 	}
 
 	chance = {
@@ -219,6 +263,8 @@ physique_bad_2= {
 	
 	modifier = {
 		dip = 10
+		character_fertility = -10
+		character_life_expectancy = -10
 	}
 
 	chance = {
@@ -234,6 +280,8 @@ physique_bad_3= {
 	
 	modifier = {
 		dip = 10
+		character_fertility = -15
+		character_life_expectancy = -15
 	}
 
 	chance = {
@@ -248,7 +296,10 @@ physique_good_1= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
+		mil = 5
+		monthly_prestige = 0.1
+		character_fertility = 5
+		character_life_expectancy = 5
 	}
 
 	chance = {
@@ -263,7 +314,10 @@ physique_good_2= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
+		mil = 10
+		monthly_prestige = 0.25
+		character_fertility = 10
+		character_life_expectancy = 10
 	}
 
 	chance = {
@@ -278,7 +332,10 @@ physique_good_3= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
+		mil = 15
+		monthly_prestige = 0.5
+		character_fertility = 15
+		character_life_expectancy = 15
 	}
 
 	chance = {
@@ -295,6 +352,9 @@ pure_blooded= {
 	
 	modifier = {
 		dip = 10
+		character_life_expectancy = 10
+		character_fertility = 25
+		monthly_prestige = 0.5
 	}
 
 	chance = {
@@ -309,7 +369,8 @@ fecund= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
+		character_life_expectancy = 5
+		character_fertility = 100
 	}
 
 	chance = {
@@ -325,7 +386,9 @@ giant= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
+		mil = 10
+		monthly_prestige = 1
+		character_life_expectancy = -10
 	}
 
 	chance = {

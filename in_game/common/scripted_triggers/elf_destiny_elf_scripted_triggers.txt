@@ -1,8 +1,8 @@
 ﻿is_any_elf_type = {
     OR = {
-		has_genetic_trait = { trait = elf_tier_1 }
-		has_genetic_trait = { trait = elf_tier_2 }
-		has_genetic_trait = { trait = elf_tier_3 }
+		has_racial_trait = { trait = elf_tier_1 }
+		has_racial_trait = { trait = elf_tier_2 }
+		has_racial_trait = { trait = elf_tier_3 }
 	}
 }
 
@@ -22,6 +22,11 @@ has_genetic_trait = {
 		name = genetic_traits
 		target = trait:$trait$
 	}
+}
+
+has_racial_trait = {
+	has_variable = character_race 
+	var:character_race = trait:$trait$
 }
 
 # has_any_genetic_trait_modifier = {

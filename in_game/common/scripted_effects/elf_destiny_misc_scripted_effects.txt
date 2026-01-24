@@ -1,0 +1,163 @@
+﻿
+# TODO: combine all effects into one loop for performance
+convert_and_assimilate_elf_pops_effect = {
+	culture_group:elven_culture_group = {
+		every_country_in_culture_group = {
+			# These need to be seperate every_pop loops for some reason
+			every_pop = {
+				change_pop_religion = religion:aeluran
+			}
+			every_pop = {
+				change_pop_culture = prev.culture
+			}
+		}
+	}
+}
+
+increase_elf_food_supply_effect = {
+	culture_group:elven_culture_group = {
+		every_country_in_culture_group = {
+			every_province = {
+				every_location_in_province = {
+					if = {
+						limit = {
+							OR = {
+								raw_material = goods:wild_game
+								raw_material = goods:fish
+							}	
+						}
+
+						change_max_raw_material_workers = 3
+
+						add_pop = {
+							culture = owner.ruler.culture
+							religion = owner.ruler.religion
+							type = pop_type:laborers
+							size = { value = 3}
+						}
+
+						if = {
+							limit = {
+								location_rank = location_rank:rural_settlement
+								NOT = { has_building = building_type:forest_village }
+							}
+							construct_building = {
+								building_type = building_type:forest_village
+								cost_multiplier = 0.0
+								# cost_multiplier_reason = "game_concept_parliament_issue"
+								instant = yes
+							}
+						}
+					}
+
+					if = {
+						limit = {
+							OR = {
+								raw_material = goods:fur
+							}	
+						}
+
+						change_max_raw_material_workers = 1
+
+						add_pop = {
+							culture = owner.ruler.culture
+							religion = owner.ruler.religion
+							type = pop_type:laborers
+							size = { value = 1}
+						}
+
+						if = {
+							limit = {
+								location_rank = location_rank:rural_settlement
+								NOT = { has_building = building_type:forest_village }
+							}
+							construct_building = {
+								building_type = building_type:forest_village
+								cost_multiplier = 0.0
+								# cost_multiplier_reason = "game_concept_parliament_issue"
+								instant = yes
+							}
+						}
+					}
+
+				}
+			}
+		}
+	}
+
+}
+
+elf_destiny_change_starter_goods_effect = {
+	location:nizhnyaya_salda = {
+		change_raw_material = goods:mythril
+	}
+	location:bagdarin = {
+		change_raw_material = goods:mythril
+	}
+	location:abisko = {
+		change_raw_material = goods:mythril
+	}
+	location:hoh_xil = {
+		change_raw_material = goods:mythril
+	}
+	location:raskam = {
+		change_raw_material = goods:mythril
+	}
+	location:yauan = {
+		change_raw_material = goods:mythril
+	}
+	location:komo_kongo = {
+		change_raw_material = goods:mythril
+	}
+	location:morgex = {
+		change_raw_material = goods:mythril
+	}
+	location:calicuas = {
+		change_raw_material = goods:mythril
+	}
+	location:wallowa = {
+		change_raw_material = goods:mythril
+	}
+	location:wanuco_marka = {
+		change_raw_material = goods:mythril
+	}
+	location:eklutna = {
+		change_raw_material = goods:mythril
+	}
+	location:tekman = {
+		change_raw_material = goods:mythril
+	}
+	location:brskovo = {
+		change_raw_material = goods:mythril
+	}
+}
+
+
+start_elf_destiny_storyline_effect = {
+	debug_log = "start_elf_destiny_storyline_effect"
+
+	if = {
+		limit = {
+			any_country = {
+				is_ai = no
+			}
+		}
+
+		debug_log = "Player countries exist!"
+	}
+	else = {
+		debug_log = "Player countries DONT exist!"
+	}
+
+	random_country = {
+		limit = {
+			# is_ai = no
+		}
+		debug_log = "start_elf_destiny_storyline_effect country reached"
+
+		trigger_event_non_silently = {
+			id = elf_destiny_story.99
+			days = 2
+		}	
+	}
+}

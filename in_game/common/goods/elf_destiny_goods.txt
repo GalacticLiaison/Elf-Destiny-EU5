@@ -20,13 +20,20 @@
 lembas = {
 	category = produced
 	color = { 0.168 0.556 0.254 1 }
-	default_market_price = 4
+	default_market_price = 7
 	transport_cost = 0.1
 }
 
 elven_crafts = {
 	category = produced
 	color = { 0.168 0.556 0.654 1 }
-	default_market_price = 4
+	default_market_price = 8
+	transport_cost = 1
+}
+
+mythril_elven_crafts = {
+	category = produced
+	color = { 0.168 0.556 0.654 1 }
+	default_market_price = 15
 	transport_cost = 1
 }

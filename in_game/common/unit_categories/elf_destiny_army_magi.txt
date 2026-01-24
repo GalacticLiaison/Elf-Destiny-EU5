@@ -1,5 +1,7 @@
 ﻿army_magi = {
 	is_army = yes
+	bombard = yes
+	is_garrison = yes
 
 	movement_speed = 2.5
 	build_time = standard_inf_recruitment_time
@@ -13,18 +15,17 @@
 	food_consumption_per_strength = 1
 	
 	
-	damage_taken = 1.0		#infantry vs infantry in size
+	damage_taken = 1.1
 	
 	
 	frontage = 1
 	initiative = 1
 	combat_speed = 4
-	
 	flanking_ability = 1.0
-	secure_flanks_defense = 0
+	secure_flanks_defense = 0.25
 
-	maintenance_demand =  infantry_maintenance
-	construction_demand = infantry_construction
+	maintenance_demand =  early_magi_maintenance
+	construction_demand = early_magi_construction
 	
 	minimum_levy_size = 1
 	
@@ -32,37 +33,37 @@
 	ai_weight = 0.5
 }
 
-army_magi_artillery = {
-	is_army = yes
-	bombard = yes
+# army_magi_artillery = {
+# 	is_army = yes
+# 	bombard = yes
 		
-	movement_speed = 2.5
-	build_time = standard_inf_recruitment_time
+# 	movement_speed = 2.5
+# 	build_time = standard_inf_recruitment_time
 
-	max_strength = 0
+# 	max_strength = 0
 	
-	supply_weight = 1.0
-	
-	
-	food_storage_per_strength = 1
-	food_consumption_per_strength = 1
+# 	supply_weight = 1.0
 	
 	
-	damage_taken = 1.0		#infantry vs infantry in size
+# 	food_storage_per_strength = 1
+# 	food_consumption_per_strength = 1
 	
 	
-	frontage = 1
-	initiative = 1
-	combat_speed = 2
+# 	damage_taken = 1.0		#infantry vs infantry in size
 	
-	flanking_ability = 1.0
-	secure_flanks_defense = 1.0 # +100% defense with one secure flank (= -50% damage taken). +200% defense with both flanks secure (= -67% damage taken). Compared with isolated box.
+	
+# 	frontage = 1
+# 	initiative = 1
+# 	combat_speed = 2
+	
+# 	flanking_ability = 1.0
+# 	secure_flanks_defense = 1.0 # +100% defense with one secure flank (= -50% damage taken). +200% defense with both flanks secure (= -67% damage taken). Compared with isolated box.
 
-	maintenance_demand =  infantry_maintenance
-	construction_demand = infantry_construction
+# 	maintenance_demand =  infantry_maintenance
+# 	construction_demand = infantry_construction
 	
-	minimum_levy_size = 1
+# 	minimum_levy_size = 1
 	
-	startup_amount = 20
-	ai_weight = 0.5
-}
+# 	startup_amount = 20
+# 	ai_weight = 0.5
+# }

@@ -3,7 +3,7 @@
 	add = {
 		if = { 
 			limit = {
-				has_genetic_trait = { trait = elf_tier_3 }
+				has_racial_trait = { trait = elf_tier_3 }
 			}
 			value = 3
 		}
@@ -11,7 +11,7 @@
 	add = {
 		if = { 
 			limit = {
-				has_genetic_trait = { trait = elf_tier_2 }
+				has_racial_trait = { trait = elf_tier_2 }
 			}
 			value = 2
 		}
@@ -19,7 +19,7 @@
 	add = {
 		if = { 
 			limit = {
-				has_genetic_trait = { trait = elf_tier_1 }
+				has_racial_trait = { trait = elf_tier_1 }
 			}
 			value = 1
 		}
