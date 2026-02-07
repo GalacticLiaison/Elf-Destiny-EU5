@@ -590,7 +590,11 @@ types override_types {
 				block "country_header_names_visible" {}
 				block "country_header_orientation" {}
 				block "character_name_extra" {}
-				parentanchor = vcenter
+
+				# TODO: CAUSES ERRORS BUT MAY NEED
+				# parentanchor = vcenter
+
+
 				# margin = {0 2}
 				margin_left = 14 # Needed for IOS with side window art
 				widget = {

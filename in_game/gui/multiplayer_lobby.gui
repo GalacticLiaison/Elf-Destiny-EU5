@@ -1576,7 +1576,7 @@ types MultiplayerLobby
 
 
 											icon = {
-												visible = "[CharacterLateralview.GetCharacter.MakeScope.GetVariable('character_race').IsSet]"
+												visible = "[Character.MakeScope.GetVariable('character_race').IsSet]"
 
 												size = { 80% 80% }
 												# using = trait_item

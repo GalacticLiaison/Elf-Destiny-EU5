@@ -17,21 +17,21 @@ character_db={
 
 		timed_modifier = {
 			modifier = "fecund"
-			start_date = 1260.1.1
+			start_date = 1318.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "beauty_good_2"
-			start_date = 1260.1.1
+			start_date = 1318.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "intellect_good_2"
-			start_date = 1260.1.1
+			start_date = 1318.1.1
 			date = 9999.1.1
 			size = 1
 		}
@@ -44,7 +44,7 @@ character_db={
 		religion = aeluran
 		female = yes
 		adm = 99 dip = 99 mil = 55
-		birth_date = 1260.1.1
+		birth_date = 1287.1.1
 		birth = pelym
 		dynasty = thalwyn_dynasty
 		tag = DWD
@@ -55,21 +55,21 @@ character_db={
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
-			start_date = 1260.1.1
+			start_date = 1287.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "beauty_good_3"
-			start_date = 1260.1.1
+			start_date = 1287.1.1
 			date = 9999.1.1
 			size = 1
 		}
 
 		timed_modifier = {
 			modifier = "intellect_good_2"
-			start_date = 1260.1.1
+			start_date = 1287.1.1
 			date = 9999.1.1
 			size = 1
 		}

@@ -1,0 +1,139 @@
+﻿transport_portal = { 
+	message = no
+	is_consort_action = no
+	on_own_nation = yes
+	on_other_nation = no
+
+	# price = price:abdicate_price
+	price = 0
+	
+	
+	price_modifier = {
+		add = 1
+		# if = {
+		# 	limit = { 
+		# 		scope:recipient ?= {	
+		# 			age_in_years > 40
+		# 		}
+		# 	}
+
+		# 	subtract = {
+		# 		desc = "CHAR_AGE_LABEL"
+		# 		scope:recipient = {
+		# 			value = age_in_years
+		# 			subtract = 40
+		# 			multiply = 0.02
+		# 		}
+		# 	}
+		# }
+	}
+
+
+	potential = {
+		scope:actor = {
+			is_ai = no
+			has_variable = spoke_with_aelurans
+		}
+	}
+
+	ai_tick = never
+	# ai_tick_frequency = 120
+	
+	allow = {
+		scope:actor = {
+			is_ai = no
+			has_variable = spoke_with_aelurans
+		}
+
+		NOT = {
+			has_global_variable = portal_transported
+		}
+	}
+	
+
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = recipient
+		name = "choose_character"
+		column = {
+			data = name
+		}
+		visible = {
+			is_alive = yes
+			# is_ruler = yes
+		}
+		enabled = {
+			is_ruler = yes
+		}
+	}
+
+	# select_trigger = {
+	# 	looking_for_a = character
+	# 	source = actor
+	# 	target_flag = recipient
+	# 	name = "choose_character"
+	# 	column = {
+	# 		data = name
+	# 	}
+	# 	visible = {
+	# 		scope:actor = {
+	# 			ruler ?= root
+	# 		}
+	# 	}
+	# 	enabled = {
+	# 		or = {
+	# 			#female ruler with adult male heir
+	# 			and = {
+	# 				is_female = yes
+	# 				scope:actor = {
+	# 					heir ?= {
+	# 						is_adult = yes
+	# 						is_female = no
+	# 					}
+	# 				}
+	# 			}
+	# 			#old and shit, better heir
+	# 			and = {
+	# 				total_abilities < 100
+	# 				character_age > 60
+	# 				scope:actor = {
+	# 					heir ?= {
+	# 						is_adult = yes
+	# 						total_abilities > 170
+	# 					}
+	# 				}
+	# 			}
+	# 			#sick, better heir
+	# 			and = {
+	# 				has_character_modifier = sickly_character
+	# 				scope:actor = {
+	# 					heir ?= {
+	# 						is_adult = yes
+	# 						total_abilities > 170
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	effect = {
+		# scope:actor = {
+		# 	trigger_event_silently = {
+		# 		id = elf_destiny_expedition.1
+		# 		days = 7
+		# 	}	
+		# }
+		scope:actor = {
+			trigger_event_silently = {
+				id = elf_destiny_story.5
+				# days = 1
+			}	
+		}
+	}
+
+   ai_will_do = {
+		value = 0
+    }
+}	

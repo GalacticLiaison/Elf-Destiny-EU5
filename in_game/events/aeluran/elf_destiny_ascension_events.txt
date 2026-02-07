@@ -1,4 +1,4 @@
-namespace = ascension_events
+﻿namespace = ascension_events
 
 ascension_events.1 = {
 	type = country_event
@@ -8,14 +8,17 @@ ascension_events.1 = {
 
 	}
 
-	illustration_tags = {
-        10 = regular
-        10 = interior
-    }
+	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+	# illustration_tags = {
+    #     10 = regular
+    #     10 = interior
+    # }
 
 	immediate = {
-		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
-
+		ruler = {
+			ascension_effect = yes
+		}
 	}
 	
 	option = {

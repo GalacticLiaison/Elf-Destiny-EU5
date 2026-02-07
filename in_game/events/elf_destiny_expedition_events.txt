@@ -1,0 +1,1136 @@
+﻿namespace = elf_destiny_expedition
+
+# Inline scripted effects/triggers for reusability
+# scripted_trigger elven_culture_trigger = {
+#     culture_group = elven  # Assumes Elven culture group exists
+# }
+
+# scripted_effect start_expedition_effect = {
+#     set_country_flag = elven_expedition_active
+#     subtract_treasury = 200  # Gold cost
+#     save_scope_as = expedition_location  # Assume a random Elven ruin location is set elsewhere
+# }
+
+# scripted_effect end_expedition_effect = {
+#     clr_country_flag = elven_expedition_active
+#     clr_variable = expedition_progress
+# }
+
+scripted_effect select_expedition_candidate_effect = {
+    random_character = {
+        limit = { 
+            is_ruler = no
+            in_cabinet = no
+            is_adult = yes
+            NOR = {
+                AND = {
+                    exists = scope:char1
+                    scope:char1 = this
+                }
+                 AND = {
+                    exists = scope:char2
+                    scope:char2 = this
+                }
+                AND = {
+                    exists = scope:char3
+                    scope:char3 = this
+                }
+            }
+        }
+        weight = {
+            base = 1
+            modifier = {
+                factor = 2
+                has_trait_category = explorer
+            }
+            modifier = {
+                factor = 1.5
+                adm >= 50
+            }
+        }
+        save_scope_as = $SCOPE_NAME$
+    }
+}
+
+# IDea: should this cost manpower and you lose or possibly even gain as it goes?
+
+# IDea, to make the progress updates more exciting maybe give incremental rewards as they happen like gold and prestige
+
+# Idea: improve intractability 
+# - when the expedition runs into issues, give player option to send aid
+# - occasional random events during expedition that can be influenced by player choices
+    #  - we need more man power -manpower +progress
+    # - some locals are gettign upset, -stability +progress
+
+# idea: display some stats
+    # - weeks of supplies left at least. Maybe better to keep progress hidden to build suspense?
+
+# need to add explanation of what makes a good expedition leader in the event text
+
+# restrict expeditions when already on one
+
+# Event 1: Initiate Expedition
+elf_destiny_expedition.1 = {
+    type = country_event
+    title = elf_destiny_expedition.1.title  # "Elven Ruin Expedition Opportunity"
+    desc = elf_destiny_expedition.1.desc    # "Ancient Elven ruins beckon. Select a leader and fund the expedition."
+    hide_portraits = yes
+    image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+    trigger = {
+        # elven_culture_trigger = yes
+        # treasury >= 200
+        # NOT = { has_country_flag = elven_expedition_active }
+    }
+
+    immediate = {
+        # this is just to reserve the portrait slot for the event chain, first two saved scopes are used for the whole chain
+        scope:recipient = { 
+            save_scope_as = portrait_2
+        }
+
+        select_expedition_candidate_effect = {
+            SCOPE_NAME = char1
+        }
+        select_expedition_candidate_effect = {
+            SCOPE_NAME = char2
+        }
+        select_expedition_candidate_effect = {
+            SCOPE_NAME = char3
+        }
+    }
+
+    option = {
+        trigger = { exists = scope:char1 }
+
+        name = elf_destiny_expedition.1.a  # "Send [char1 name]"
+        scope:char1 = {
+            # For portrait management
+            save_scope_as = recipient
+            save_scope_as = portrait_2
+        }
+        start_expedition_effect = yes
+        trigger_event_non_silently = elf_destiny_expedition.11
+    }
+    option = {
+        trigger = { exists = scope:char2 }
+
+        name = elf_destiny_expedition.1.b  # "Send [char2 name]"
+        scope:char2 = {
+            # For portrait management
+            save_scope_as = recipient
+            save_scope_as = portrait_2
+        }
+        trigger_event_non_silently = elf_destiny_expedition.11
+    }
+    option = {
+        trigger = { exists = scope:char3 }
+
+        name = elf_destiny_expedition.1.c  # "Send [char3 name]"
+        scope:char3 = {
+            # For portrait management
+            save_scope_as = recipient
+            save_scope_as = portrait_2
+        }
+        trigger_event_non_silently = elf_destiny_expedition.11
+    }
+    option = {
+        trigger = {
+            NOR = {
+                exists = scope:char1
+                exists = scope:char2
+                exists = scope:char3
+            }
+        }
+        name = elf_destiny_expedition.1.d  # Fallback option
+
+        # TODO: Refund Gold
+    }
+}
+
+elf_destiny_expedition.11 = {
+    type = country_event
+    title = elf_destiny_expedition.11.title  # "Elven Ruin Expedition Opportunity"
+    desc = elf_destiny_expedition.11.desc    # "Ancient Elven ruins beckon. Select a leader and fund the expedition."
+    image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+    trigger = {
+
+    }
+
+    immediate = {
+
+    }
+
+    option = {
+        name = elf_destiny_expedition.11.a  
+
+        save_scope_value_as = {
+            name = expedition_progress
+            value = 0
+        }
+        save_scope_value_as = {
+            name = expedition_time
+            value = 0
+        }
+
+        trigger_event_silently = {
+            id = elf_destiny_expedition.2
+            months = 1
+        }
+    }
+}
+
+# # Event 2: Expedition Progress (Timed, fires monthly)
+elf_destiny_expedition.2 = {
+    type = country_event
+    hidden = yes  # No popup, just progress
+
+    immediate = {
+        debug_log = "elf_destiny_expedition"
+        debug_log_scopes = yes
+
+        if = {
+            limit = { scope:expedition_progress >= 3 } 
+
+            trigger_event_non_silently = elf_destiny_expedition.3  # Success
+        }
+        else_if = { # Supplies have run out
+            limit = { scope:expedition_time >= 5 } 
+
+            trigger_event_non_silently = elf_destiny_expedition.4  # Failure
+
+            # end_expedition_effect = yes
+        }
+        else = {
+            save_scope_value_as = {
+                name = expedition_time
+                value = increase_expedition_time
+            }
+            random_list = {
+                60 = {
+                    modifier = {
+                        factor = 1.1
+                        scope:recipient = { adm >= 50 }
+                    }
+                    modifier = {
+                        factor = 1.3
+                        scope:recipient = { adm >= 75 }
+                    }
+                    modifier = {
+                        factor = 1.7
+                        scope:recipient = { has_trait_category = explorer }
+                    }
+
+                    trigger_event_non_silently = elf_destiny_expedition.21  # Gain Progress
+                }
+                40 = {
+                    trigger_event_non_silently = elf_destiny_expedition.22  # Lose Progress
+                }
+            }
+        }
+    }
+}
+
+elf_destiny_expedition.21 = {
+    type = country_event
+    title = elf_destiny_expedition.21.title
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = elf_destiny_expedition.21.desc.major
+				trigger = {
+                    local_var:success_amount = 2
+				}
+			}
+            triggered_desc = {
+				desc = elf_destiny_expedition.21.desc.minor
+				trigger = {
+                    local_var:success_amount = 1
+				}
+			}
+            desc = elf_destiny_expedition.21.desc.alt
+		}
+        first_valid = {
+			triggered_desc = {
+				desc = major_expedition_success_tooltip
+				trigger = {
+                    local_var:success_amount = 2
+				}
+			}
+            triggered_desc = {
+				desc = minor_expedition_success_tooltip
+				trigger = {
+                    local_var:success_amount = 1
+				}
+			}
+		}
+	}
+
+    image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+
+    immediate = {
+        random_list = {
+            70 = { # normal progress
+            	custom_tooltip = {
+                    text = minor_expedition_success_tooltip
+
+                    save_scope_value_as = {
+                        name = expedition_progress
+                        value = increase_minor_expedition_progress
+                    }
+                    set_local_variable = {
+                        name = success_amount
+                        value = 1
+                    }
+                }
+            }
+            30 = { # exceptional progress
+                custom_tooltip = {
+                    text = major_expedition_success_tooltip
+
+                    save_scope_value_as = {
+                        name = expedition_progress
+                        value = increase_major_expedition_progress
+                    }
+                    set_local_variable = {
+                        name = success_amount
+                        value = 2
+                    }
+                }
+            }
+        }
+
+    }
+
+    option = {
+        name = elf_destiny_expedition.21.a
+        trigger_event_silently = {
+            id = elf_destiny_expedition.2
+            months = 1
+        }
+    }
+}
+
+elf_destiny_expedition.22 = {
+    type = country_event
+    title = elf_destiny_expedition.22.title
+	desc = {
+		first_valid = {
+            triggered_desc = {
+				desc = elf_destiny_expedition.22.desc.critical
+				trigger = {
+                    local_var:fail_amount = 3
+				}
+			}
+			triggered_desc = {
+				desc = elf_destiny_expedition.22.desc.major
+				trigger = {
+                    local_var:fail_amount = 2
+				}
+			}
+            triggered_desc = {
+				desc = elf_destiny_expedition.22.desc.minor
+				trigger = {
+                    local_var:fail_amount = 1
+				}
+			}
+            desc = elf_destiny_expedition.22.desc.minor
+		}
+        first_valid = {
+            triggered_desc = {
+				desc = critical_expedition_failure_tooltip
+				trigger = {
+                    local_var:fail_amount = 3
+				}
+			}
+			triggered_desc = {
+				desc = major_expedition_failure_tooltip
+				trigger = {
+                    local_var:fail_amount = 2
+				}
+			}
+            triggered_desc = {
+				desc = minor_expedition_failure_tooltip
+				trigger = {
+                    local_var:fail_amount = 1
+				}
+			}
+		}
+	}
+
+    image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+
+    immediate = {
+        random_list = {
+            70 = { # normal failure
+            	custom_tooltip = {
+                    text = minor_expedition_failure_tooltip
+                    save_scope_value_as = {
+                        name = expedition_progress
+                        value = decrease_minor_expedition_progress
+                    }
+                    set_local_variable = {
+                        name = fail_amount
+                        value = 1
+                    }
+                }
+            }
+            25 = { # exceptional failure
+                custom_tooltip = {
+                    text = major_expedition_failure_tooltip
+                    save_scope_value_as = {
+                        name = expedition_progress
+                        value = decrease_major_expedition_progress
+                    }
+                    set_local_variable = {
+                        name = fail_amount
+                        value = 2
+                    }
+                }
+            }
+            5 = { # Critical failure (Death)
+                custom_tooltip = {
+                    text = critical_expedition_failure_tooltip
+                    set_local_variable = {
+                        name = fail_amount
+                        value = 3
+                    }
+                }
+            }
+        }
+
+    }
+
+    option = {
+        trigger = {
+            local_var:fail_amount < 3
+        }
+
+        name = elf_destiny_expedition.22.a
+        trigger_event_silently = {
+            id = elf_destiny_expedition.2
+            months = 1
+        }
+    }
+
+    option = {
+        trigger = {
+            local_var:fail_amount >= 3
+        }
+
+        name = elf_destiny_expedition.22.b
+    }
+
+    option = { # fallback that shouldnt happen
+        trigger = {
+            NOT = {
+                exists = local_var:fail_amount
+            }
+        }
+
+        name = elf_destiny_expedition.22.c
+    }
+}
+
+
+# # Event 3: Success Outcome
+elf_destiny_expedition.3 = {
+    type = country_event
+    title = elf_destiny_expedition.3.title
+    desc = {
+        desc = elf_destiny_expedition.3.desc.standard
+        triggered_desc = {
+            desc = elf_destiny_expedition.3.desc.special
+            trigger = {
+                OR = {
+                    scope:expedition_reward = flag:elven_tradition
+                    scope:expedition_reward = flag:portal_artifact
+                    scope:expedition_reward = flag:mysterious_elixir
+                }
+            }
+        }
+        triggered_desc = {
+            desc = elf_destiny_expedition.3.desc.research
+            trigger = {
+                scope:expedition_reward = flag:research_progress
+            }
+        }
+        triggered_desc = {
+            desc = elf_destiny_expedition.3.desc.religious
+            trigger = {
+                scope:expedition_reward = flag:religious_influence
+            }
+        }
+	}
+
+    image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+    immediate = {
+        # end_expedition_effect = yes
+        random_list = {  # Loot table
+            0 = {
+                modifier = {
+                    add = 50
+                    NOR = {
+                        has_variable = elf_tradition_discovered_people_of_the_bow
+                        has_variable = elf_tradition_discovered_beast_masters
+                    }
+                }
+                save_scope_value_as = {
+                    name = expedition_reward
+                    value = flag:elven_tradition
+                }
+            }
+            0 = {
+                modifier = {
+                    add = 50
+                    NOR = {
+                        has_variable = elven_portal_artifact_1_discovered
+                        has_variable = elven_portal_artifact_2_discovered
+                    }
+                }
+                save_scope_value_as = {
+                    name = expedition_reward
+                    value = flag:portal_artifact
+                }
+            }
+            10 = {
+                save_scope_value_as = {
+                    name = expedition_reward
+                    value = flag:mysterious_elixir
+                }
+            }
+            20 = {
+                save_scope_value_as = {
+                    name = expedition_reward
+                    value = flag:research_progress
+                }
+            }
+            20 = {
+                save_scope_value_as = {
+                    name = expedition_reward
+                    value = flag:religious_influence # Spark Crystal?
+                }
+            }
+            # 1 = {
+            #     save_scope_value_as = {
+            #         name = expedition_reward
+            #         value = flag:no_additional_reward
+            #     }
+            # }
+        }
+    }
+
+    option = {
+        trigger = {
+            NOR = {
+                scope:expedition_reward = flag:elven_tradition
+                scope:expedition_reward = flag:portal_artifact
+                scope:expedition_reward = flag:mysterious_elixir
+            }
+        }
+
+        name = elf_destiny_expedition.3.a
+
+        add_prestige = 25
+        add_gold = {
+            value = scope:hre_leader.monthly_income_trade_and_tax
+            multiply = 3.5
+        }
+
+        if = {
+            limit = { scope:expedition_reward = flag:research_progress }
+            add_research_progress = research_progress_mild_bonus
+        }
+        if = {
+            limit = { scope:expedition_reward = flag:religious_influence }
+            add_religious_influence = religious_influence_mild_bonus
+        }
+
+    }
+
+    option = { # We found something special as well My Lord
+        trigger = {
+            OR = {
+                scope:expedition_reward = flag:elven_tradition
+                scope:expedition_reward = flag:portal_artifact
+                scope:expedition_reward = flag:mysterious_elixir
+            }
+        }
+
+        name = elf_destiny_expedition.3.b
+        add_prestige = 25
+        add_gold = 150
+
+        custom_tooltip = {
+            text = open_special_chest_tooltip
+
+            if = {
+                limit = { scope:expedition_reward = flag:elven_tradition }
+                trigger_event_non_silently = elf_destiny_expedition.31
+            }
+            if = {
+                limit = { scope:expedition_reward = flag:portal_artifact }
+                trigger_event_non_silently = elf_destiny_expedition.32
+            }
+            if = {
+                limit = { scope:expedition_reward = flag:mysterious_elixir }
+                trigger_event_non_silently = elf_destiny_expedition.33
+            }
+        }
+
+    }
+}
+
+# Discovered Elven Tradition
+elf_destiny_expedition.31 = {
+    type = country_event
+    title = elf_destiny_expedition.31.title
+    desc = {
+        desc = elf_destiny_expedition.31.desc
+		first_valid = {
+			triggered_desc = {
+				desc = elf_destiny_expedition.31.desc.people_of_the_bow
+				trigger = {
+                    scope:elf_tradition = flag:people_of_the_bow
+				}
+			}
+            triggered_desc = {
+				desc = elf_destiny_expedition.31.desc.beast_masters
+				trigger = {
+                    scope:elf_tradition = flag:beast_masters
+				}
+			}
+		}
+        desc = elf_destiny_expedition.31.desc.close
+    }
+
+    hide_portraits = yes
+	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+
+    immediate = {
+        # end_expedition_effect = yes
+        random_list = {  # Loot table
+            # assign a flag representing the found reward, than trigger the reward in the option effect
+            0 = {
+                modifier = {
+                    add = 50
+                    NOT = {
+                        has_variable = elf_tradition_discovered_people_of_the_bow
+                    }
+                }
+                save_scope_value_as = {
+                    name = elf_tradition
+                    value = flag:people_of_the_bow
+                }
+                set_variable = {
+                    name = elf_tradition_discovered_people_of_the_bow
+                    value = yes
+                }
+            }
+            0 = {
+                modifier = {
+                    add = 50
+                    NOT = {
+                        has_variable = elf_tradition_discovered_beast_masters
+                    }
+                }
+                save_scope_value_as = {
+                    name = elf_tradition
+                    value = flag:beast_masters
+                }
+                set_variable = {
+                    name = elf_tradition_discovered_beast_masters
+                    value = yes
+                }
+            }
+           
+            # 10 = { add_character_modifier = { name = elven_artifact duration = -1 } }  # Rare: Custom modifier (define in static_modifiers)
+
+            # New Traditions (Government Reforms/Estate Privileges)
+            # Portal Pieces
+            # Potion that gives random trait
+        }
+    }
+
+    option = { # Touch it
+        name = elf_destiny_expedition.31.a
+
+        if = {
+            limit = {
+                exists = scope:elf_tradition 
+                scope:elf_tradition = flag:people_of_the_bow 
+            }
+            add_reform = government_reform:people_of_the_bow
+        }
+        if = {
+            limit = { 
+                exists = scope:elf_tradition
+                scope:elf_tradition = flag:beast_masters 
+            }
+            research_advance = advance_type:beast_masters
+        }
+    }
+
+    option = { # Dont touch it
+        name = elf_destiny_expedition.31.b 
+    }
+}
+
+# Discovered Portal Artifact
+elf_destiny_expedition.32 = {
+    type = country_event
+    hidden = yes
+
+    immediate = {
+        if = {
+            limit = {
+                NOT = { has_variable = elven_portal_artifact_1_discovered }
+            }
+            set_variable = {
+                name = elven_portal_artifact_1_discovered
+                value = yes
+            }
+            trigger_event_non_silently = elf_destiny_expedition.321
+        }
+        else_if = {
+            limit = {
+                NOT = { has_variable = elven_portal_artifact_2_discovered }
+            }
+            set_variable = {
+                name = elven_portal_artifact_2_discovered
+                value = yes
+            }
+            trigger_event_non_silently = elf_destiny_expedition.322
+        }
+    }
+}
+
+# Spark Capacitor Artifact
+elf_destiny_expedition.321 = {
+    type = country_event
+    title = elf_destiny_expedition.321.title
+    desc = elf_destiny_expedition.321.desc
+
+    hide_portraits = yes
+
+    image = "gfx/interface/illustrations/event/backgrounds/spark_capacitor.dds"
+
+    immediate = {
+
+    }
+
+    option = { # Examine it
+        name = elf_destiny_expedition.321.a 
+    }
+}
+
+# Navigation Relay Artifact
+elf_destiny_expedition.322 = {
+    type = country_event
+    title = elf_destiny_expedition.322.title
+    desc = elf_destiny_expedition.322.desc
+
+    hide_portraits = yes
+
+    image = "gfx/interface/illustrations/event/backgrounds/portal_navigation_relay.dds"
+
+    immediate = {
+
+    }
+
+    option = { # Examine it
+        name = elf_destiny_expedition.322.a 
+    }
+}
+
+# Mysterious Elixir
+elf_destiny_expedition.33 = {
+    type = country_event
+    title = elf_destiny_expedition.33.title
+    desc = elf_destiny_expedition.33.desc
+
+    immediate = {
+        ruler = {
+            save_scope_as = recipient
+        }
+    }
+
+    option = { # Drink It?
+        name = elf_destiny_expedition.33.a
+
+        trigger_event_non_silently = elf_destiny_expedition.331
+    }
+
+    option = { # Sell it
+        name = elf_destiny_expedition.33.b
+
+        add_gold = 150
+    }
+}
+
+elf_destiny_expedition.331 = {
+    type = country_event
+    title = elf_destiny_expedition.331.title
+    desc = {
+        desc = elf_destiny_expedition.331.desc
+		first_valid = {
+			triggered_desc = {
+				desc = elf_destiny_expedition.331.desc.trait_positive
+				trigger = {
+                    scope:elixir_effect = flag:trait_positive
+				}
+			}
+            triggered_desc = {
+				desc = elf_destiny_expedition.331.desc.trait_negative
+				trigger = {
+                    scope:elixir_effect = flag:trait_negative
+				}
+			}
+            triggered_desc = {
+				desc = elf_destiny_expedition.331.desc.extend_life
+				trigger = {
+                    scope:elixir_effect = flag:extend_life
+				}
+			}
+            triggered_desc = {
+				desc = elf_destiny_expedition.331.desc.stat_boosts
+				trigger = {
+                    scope:elixir_effect = flag:stat_boosts
+				}
+			}
+            triggered_desc = {
+                desc = elf_destiny_expedition.331.desc.stat_penalties
+                trigger = {
+                    scope:elixir_effect = flag:stat_penalties
+                }
+            }
+		}
+    }
+
+    immediate = {
+        random_list = {
+            10 = {
+                save_scope_value_as = {
+                    name = elixir_effect
+                    value = flag:trait_positive
+                }
+            }
+            10 = {
+                save_scope_value_as = {
+                    name = elixir_effect
+                    value = flag:trait_negative
+                }
+            }
+            10 = {
+                save_scope_value_as = {
+                    name = elixir_effect
+                    value = flag:extend_life
+                }
+            }
+            10 = {
+                save_scope_value_as = {
+                    name = elixir_effect
+                    value = flag:stat_boosts
+                }
+            }
+            10 = {
+                save_scope_value_as = {
+                    name = elixir_effect
+                    value = flag:stat_penalties
+                }
+            }
+
+            # Apply the giant effect we were playing with to make them look like a child?
+            # 10 = {
+            # }
+
+            # Change skin color something wacky like pink/green? (Plant Person?)
+            # 10 = {
+            # }
+        }
+
+    }
+
+    option = { # Drink It?
+        name = elf_destiny_expedition.331.a
+
+        scope:recipient ?= {
+            if = {
+                limit = { scope:elixir_effect = flag:trait_positive }
+
+                random_list = {
+                    0 = {
+                        modifier = {
+                            add = 50
+                            NOR = {
+                                has_genetic_trait = { trait = beauty_good_1 }
+                                has_genetic_trait = { trait = beauty_good_2 }
+                                has_genetic_trait = { trait = beauty_good_3 }
+                            }
+                        }
+
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = beauty_bad_1 }
+                            }
+                            remove_genetic_trait = { trait = beauty_bad_1 }
+                        }
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = beauty_bad_2 }
+                            }
+                            remove_genetic_trait = { trait = beauty_bad_2 }
+                        }
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = beauty_bad_3 }
+                            }
+                            remove_genetic_trait = { trait = beauty_bad_3 }
+                        }
+
+                        custom_tooltip = {
+                            text = gained_beauty_good_2_trait_tooltip
+                            assign_genetic_trait = { trait = beauty_good_2}
+                        }
+                    }
+                    0 = {
+                        modifier = {
+                            add = 50
+                            NOR = {
+                                has_genetic_trait = { trait = physique_good_1 }
+                                has_genetic_trait = { trait = physique_good_2 }
+                                has_genetic_trait = { trait = physique_good_3 }
+                            }
+                        }
+
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = physique_bad_1 }
+                            }
+                            remove_genetic_trait = { trait = physique_bad_1 }
+                        }
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = physique_bad_2 }
+                            }
+                            remove_genetic_trait = { trait = physique_bad_2 }
+                        }
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = physique_bad_3 }
+                            }
+                            remove_genetic_trait = { trait = physique_bad_3 }
+                        }
+
+                        custom_tooltip = {
+                            text = gained_physique_good_2_trait_tooltip
+                            assign_genetic_trait = { trait = physique_good_2}
+                        }
+                    }
+                    0 = {
+                        modifier = {
+                            add = 50
+                            NOR = {
+                                has_genetic_trait = { trait = intellect_good_1 }
+                                has_genetic_trait = { trait = intellect_good_2 }
+                                has_genetic_trait = { trait = intellect_good_3 }
+                            }
+                        }
+
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = intellect_bad_1 }
+                            }
+                            remove_genetic_trait = { trait = intellect_bad_1 }
+                        }
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = intellect_bad_2 }
+                            }
+                            remove_genetic_trait = { trait = intellect_bad_2 }
+                        }
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = intellect_bad_3 }
+                            }
+                            remove_genetic_trait = { trait = intellect_bad_3 }
+                        }
+
+                        custom_tooltip = {
+                            text = gained_intellect_good_2_trait_tooltip
+                            assign_genetic_trait = { trait = intellect_good_2}
+                        }
+                    }
+                    0 = {
+                        modifier = {
+                            add = 25
+                            NOT = {
+                                has_genetic_trait = { trait = fecund }
+                            }
+                        }
+
+                        custom_tooltip = {
+                            text = gained_fecund_trait_tooltip
+                            assign_genetic_trait = { trait = fecund}
+                        }
+                    }
+                }
+            }
+            if = {
+                limit = { scope:elixir_effect = flag:trait_negative }
+
+                random_list = {
+                    0 = {
+                        modifier = {
+                            add = 50
+                            NOR = {
+                                has_genetic_trait = { trait = beauty_bad_1 }
+                                has_genetic_trait = { trait = beauty_bad_2 }
+                                has_genetic_trait = { trait = beauty_bad_3 }
+                            }
+                        }
+
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = beauty_good_1 }
+                            }
+                            remove_genetic_trait = { trait = beauty_good_1 }
+                        }
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = beauty_good_2 }
+                            }
+                            remove_genetic_trait = { trait = beauty_good_2 }
+                        }
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = beauty_good_3 }
+                            }
+                            remove_genetic_trait = { trait = beauty_good_3 }
+                        }
+
+                        custom_tooltip = {
+                            text = gained_beauty_bad_2_trait_tooltip
+                            assign_genetic_trait = { trait = beauty_bad_2}
+                        }
+                    }
+                    0 = {
+                        modifier = {
+                            add = 50
+                            NOR = {
+                                has_genetic_trait = { trait = physique_bad_1 }
+                                has_genetic_trait = { trait = physique_bad_2 }
+                                has_genetic_trait = { trait = physique_bad_3 }
+                            }
+                        }
+
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = physique_good_1 }
+                            }
+                            remove_genetic_trait = { trait = physique_good_1 }
+                        }
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = physique_good_2 }
+                            }
+                            remove_genetic_trait = { trait = physique_good_2 }
+                        }
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = physique_good_3 }
+                            }
+                            remove_genetic_trait = { trait = physique_good_3 }
+                        }
+
+                        custom_tooltip = {
+                            text = gained_physique_bad_2_trait_tooltip
+                            assign_genetic_trait = { trait = physique_bad_2}
+                        }
+                    }
+                    0 = {
+                        modifier = {
+                            add = 50
+                            NOR = {
+                                has_genetic_trait = { trait = intellect_bad_1 }
+                                has_genetic_trait = { trait = intellect_bad_2 }
+                                has_genetic_trait = { trait = intellect_bad_3 }
+                            }
+                        }
+
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = intellect_good_1 }
+                            }
+                            remove_genetic_trait = { trait = intellect_good_1 }
+                        }
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = intellect_good_2 }
+                            }
+                            remove_genetic_trait = { trait = intellect_good_2 }
+                        }
+                        if = {
+                            limit = {
+                                has_genetic_trait = { trait = intellect_good_3 }
+                            }
+                            remove_genetic_trait = { trait = intellect_good_3 }
+                        }
+
+                        custom_tooltip = {
+                            text = gained_intellect_bad_2_trait_tooltip
+                            assign_genetic_trait = { trait = intellect_bad_2}
+                        }
+                    }
+                }
+            }
+            if = {
+                limit = { scope:elixir_effect = flag:extend_life }
+                add_character_modifier = {
+                    modifier = extended_life_modifier
+                    mode = add_and_extend
+                }
+            }
+            if = {
+                limit = { scope:elixir_effect = flag:stat_boosts }
+                add_character_modifier = {
+                    modifier = sharpened_mind_modifier
+                    years = 10
+                    mode = add_and_extend
+                }
+            }
+            if = {
+                limit = { scope:elixir_effect = flag:stat_penalties }
+                add_character_modifier = {
+                    modifier = dulled_mind_modifier
+                    years = 10
+                    mode = add_and_extend
+                }
+            }
+        }   
+    }
+}
+
+# # Event 4: Failure Outcome
+elf_destiny_expedition.4 = {
+    type = country_event
+    title = elf_destiny_expedition.4.title  # "Expedition Failed"
+    desc = elf_destiny_expedition.4.desc    # "The expedition returned empty-handed."
+
+    image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+    immediate = {
+        # end_expedition_effect = yes
+        # Optional penalty: lose manpower or stability
+        # add_manpower = -1000
+    }
+
+    option = {
+        name = elf_destiny_expedition.4.a  # "Unfortunate"
+    }
+}

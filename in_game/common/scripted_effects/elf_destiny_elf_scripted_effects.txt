@@ -17,15 +17,78 @@
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 3
+			inherited_elf_racial_score < 4
 		}
 		assign_race_trait = { trait = elf_tier_3}
 	}
+	if = {
+		limit = {
+			inherited_elf_racial_score >= 4
+			inherited_elf_racial_score < 5
+		}
+		assign_race_trait = { trait = elf_tier_4}
+	}
+	if = {
+		limit = {
+			inherited_elf_racial_score >= 5
+			inherited_elf_racial_score < 6
+		}
+		assign_race_trait = { trait = elf_tier_5}
+	}
+	if = {
+		limit = {
+			inherited_elf_racial_score >= 6
+			inherited_elf_racial_score < 7
+		}
+		assign_race_trait = { trait = elf_tier_6}
+	}
+	if = {
+		limit = {
+			inherited_elf_racial_score >= 7
+			inherited_elf_racial_score < 8
+		}
+		assign_race_trait = { trait = elf_tier_7}
+	}
+	if = {
+		limit = {
+			inherited_elf_racial_score >= 8
+			inherited_elf_racial_score < 9
+		}
+		assign_race_trait = { trait = elf_tier_8}
+	}
+	if = {
+		limit = {
+			inherited_elf_racial_score >= 9
+			inherited_elf_racial_score < 10
+		}
+		assign_race_trait = { trait = elf_tier_9}
+	}
+	if = {
+		limit = {
+			inherited_elf_racial_score >= 10
+			inherited_elf_racial_score < 11
+		}
+		assign_race_trait = { trait = elf_tier_10}
+	}
+	if = {
+		limit = {
+			inherited_elf_racial_score >= 11
+			inherited_elf_racial_score < 12
+		}
+		assign_race_trait = { trait = elf_tier_11}
+	}
+	if = {
+		limit = {
+			inherited_elf_racial_score >= 12
+		}
+		assign_race_trait = { trait = elf_tier_12}
+	}
 }
 
-increase_elf_race_level = {
+# increase_elf_race_level = {
 
-	assign_race_trait = { trait = elf_tier_1}
-}
+# 	assign_race_trait = { trait = elf_tier_1}
+# }
 
 assign_race_trait = {
 	add_character_modifier = {
@@ -82,11 +145,19 @@ either_parent_genetic_inheritance = {
 }
 
 genetic_inheritance_effect = {
-	debug_log = "genetic_inheritance_effect"
-
 	leveled_trait_inheritance = {trait = beauty}
 	leveled_trait_inheritance = {trait = intellect}
 	leveled_trait_inheritance = {trait = physique}
+
+	if = { # there isn't a level 4 upgraded beauty trait yet
+		limit = {
+			NOT = {
+				has_genetic_trait = { trait = beauty_good_4 }
+			}
+		}
+		upgraded_beauty_inheritance = yes
+	}
+
 	single_trait_inheritance = {
 		trait = fecund
 		single_parent_chance = 33
@@ -124,8 +195,17 @@ leveled_trait_inheritance = {
 		}
 	}
 
-
 	if = {
+		limit = {
+			var:trait_score >= 4
+			owner = {
+				has_religious_aspect = religious_aspect:noble_husbandry
+			}
+		}
+
+		assign_genetic_trait = { trait = $trait$_good_4}
+	}
+	else_if = {
 		limit = {
 			var:trait_score >= 3
 		}
@@ -373,7 +453,9 @@ pure_blood_inheritance = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = pure_blooded }
-			scope:character.father.dynasty = scope:character.mother.dynasty
+			scope:character ?= {
+				father.dynasty = mother.dynasty
+			}
 		}
 
 		random = {
@@ -382,6 +464,177 @@ pure_blood_inheritance = {
 				assign_genetic_trait = { trait = pure_blooded}
 			}
 		}
+	}
+}
+
+### Unconventional and Exotic beauty traits ###
+upgraded_beauty_inheritance = {
+
+	if = { # First we will see if the child will inherit from their parents
+		limit = {
+			scope:character ?= {
+				OR = {
+					has_genetic_trait = { trait = beauty_good_1 }
+					has_genetic_trait = { trait = beauty_good_2 }
+					has_genetic_trait = { trait = beauty_good_3 }
+				}
+			}
+		}
+		inherit_upgraded_beauty = { beauty_type = unconventional }
+		inherit_upgraded_beauty = { beauty_type = exotic }
+	}
+
+	if = { # they still have a normal beauty chance, so they failed to inherit, random small chance to upgrade
+		limit = {
+			scope:character ?= {
+				OR = {
+					has_genetic_trait = { trait = beauty_good_1 }
+					has_genetic_trait = { trait = beauty_good_2 }
+					has_genetic_trait = { trait = beauty_good_3 }
+				}
+			}
+			
+			random = {
+				chance = 1
+				modifier = { # Beguiling Nature greatly increases odds 
+					scope:character ?= {
+						owner = {
+							has_religious_aspect = religious_aspect:beguiling_nature
+						}
+					}
+					add = 49
+				}
+
+				random_list = {
+					2 = { # Unconventional
+						upgrade_beauty_type = { new_beauty_type = unconventional }
+					} 
+					1 = { # Exotic
+						upgrade_beauty_type = { new_beauty_type = exotic }
+					}
+					3 = {} # used to make odds even worse
+				}
+			}
+		}
+	}
+	else = {
+		# extremely small chance to gain a random unconventional or exotic beauty trait without inheriting it
+		random = {
+			chance = 1
+			modifier = { # Beguiling Nature greatly increases odds 
+				scope:character ?= {
+					owner = {
+						has_religious_aspect = religious_aspect:beguiling_nature
+					}
+				}
+				add = 10
+			}
+
+			scope:character ?= {
+				random_list = {
+					4 = { # Unconventional Beauty Good 1
+						assign_genetic_trait = { trait = unconventional_beauty_good_1}
+					} 
+					3 = { # Unconventional Beauty Good 2
+						assign_genetic_trait = { trait = unconventional_beauty_good_2}
+					} 
+					2 = { # Unconventional Beauty Good 3
+						assign_genetic_trait = { trait = unconventional_beauty_good_3}
+					} 
+					3 = { # Exotic Beauty Good 1
+						assign_genetic_trait = { trait = exotic_beauty_good_1}
+					} 
+					2 = { # Exotic Beauty Good 2
+						assign_genetic_trait = { trait = exotic_beauty_good_2}
+					} 
+					1 = { # Exotic Beauty Good 3
+						assign_genetic_trait = { trait = exotic_beauty_good_3}
+					}
+					5 = {} # used to make odds even worse
+				}
+			}
+		}
+	}
+
+  # small cahnce to upgrade unconventioanl beauty trait
+}
+
+inherit_upgraded_beauty = {
+	if = { # if both parent had a rare beauty trait, guaranteed to improve child's beauty trait
+		limit = {
+			AND = {
+				scope:character.father = {
+					OR = {
+						has_genetic_trait = { trait = $beauty_type$_beauty_good_1 }
+						has_genetic_trait = { trait = $beauty_type$_beauty_good_2 }
+						has_genetic_trait = { trait = $beauty_type$_beauty_good_3 }
+					}
+				}
+				scope:character.mother = {
+					OR = {
+						has_genetic_trait = { trait = $beauty_type$_beauty_good_1 }
+						has_genetic_trait = { trait = $beauty_type$_beauty_good_2 }
+						has_genetic_trait = { trait = $beauty_type$_beauty_good_3 }
+					}
+				}
+			}
+		}
+
+		scope:character ?= {
+			upgrade_beauty_type = { new_beauty_type = $beauty_type$ }
+		}
+	}
+	else_if = { # if one parent had a rare beauty trait, good chance to improve child's beauty trait
+		limit = {
+			OR = {
+				scope:character.father = {
+					OR = {
+						has_genetic_trait = { trait = $beauty_type$_beauty_good_1 }
+						has_genetic_trait = { trait = $beauty_type$_beauty_good_2 }
+						has_genetic_trait = { trait = $beauty_type$_beauty_good_3 }
+					}
+				}
+				scope:character.mother = {
+					OR = {
+						has_genetic_trait = { trait = $beauty_type$_beauty_good_1 }
+						has_genetic_trait = { trait = $beauty_type$_beauty_good_2 }
+						has_genetic_trait = { trait = $beauty_type$_beauty_good_3 }
+					}
+				}
+			}
+		}
+
+		random = {
+			chance = 50
+			scope:character ?= {
+				upgrade_beauty_type = { new_beauty_type = $beauty_type$ }
+			}
+		}
+	}
+
+}
+
+upgrade_beauty_type = {
+	if = {
+		limit = {
+			has_genetic_trait = { trait = beauty_good_1 }
+		}
+		remove_genetic_trait = { trait = beauty_good_1 }
+		assign_genetic_trait = { trait = $new_beauty_type$_beauty_good_1 }
+	}
+	else_if = {
+		limit = {
+			has_genetic_trait = { trait = beauty_good_2 }
+		}
+		remove_genetic_trait = { trait = beauty_good_2 }
+		assign_genetic_trait = { trait = $new_beauty_type$_beauty_good_2 }
+	}
+	else_if = {
+		limit = {
+			has_genetic_trait = { trait = beauty_good_3 }
+		}
+		remove_genetic_trait = { trait = beauty_good_3 }
+		assign_genetic_trait = { trait = $new_beauty_type$_beauty_good_3 }
 	}
 }
 
@@ -398,10 +651,7 @@ assign_genetic_trait = {
 }
 
 remove_genetic_trait = {
-	remove_character_modifier = {
-		modifier = $trait$
-		# mode = add_and_extend
-	}
+	remove_character_modifier = $trait$
 
 	remove_list_variable = {
 		name = genetic_traits
@@ -444,6 +694,16 @@ assign_any_missing_genetic_traits = {
 	assign_race_trait_from_modifier = { trait = elf_tier_1 }
 	assign_race_trait_from_modifier = { trait = elf_tier_2 }
 	assign_race_trait_from_modifier = { trait = elf_tier_3 }
+	assign_race_trait_from_modifier = { trait = elf_tier_4 }
+	assign_race_trait_from_modifier = { trait = elf_tier_5 }
+	assign_race_trait_from_modifier = { trait = elf_tier_6 }
+	assign_race_trait_from_modifier = { trait = elf_tier_7 }
+	assign_race_trait_from_modifier = { trait = elf_tier_8 }
+	assign_race_trait_from_modifier = { trait = elf_tier_9 }
+	assign_race_trait_from_modifier = { trait = elf_tier_10 }
+	assign_race_trait_from_modifier = { trait = elf_tier_11 }
+	assign_race_trait_from_modifier = { trait = elf_tier_12 }
+
 	assign_genetic_trait_from_modifier = { trait = royal_elf_valerith }
 	assign_genetic_trait_from_modifier = { trait = royal_elf_serelion }
 	assign_genetic_trait_from_modifier = { trait = royal_elf_gwynthorn }
@@ -457,18 +717,27 @@ assign_any_missing_genetic_traits = {
 	assign_genetic_trait_from_modifier = { trait = beauty_good_1 }
 	assign_genetic_trait_from_modifier = { trait = beauty_good_2 }
 	assign_genetic_trait_from_modifier = { trait = beauty_good_3 }
+	assign_genetic_trait_from_modifier = { trait = beauty_good_4 }
+	assign_genetic_trait_from_modifier = { trait = unconventional_beauty_good_1 }
+	assign_genetic_trait_from_modifier = { trait = unconventional_beauty_good_2 }
+	assign_genetic_trait_from_modifier = { trait = unconventional_beauty_good_3 }
+	assign_genetic_trait_from_modifier = { trait = exotic_beauty_good_1 }
+	assign_genetic_trait_from_modifier = { trait = exotic_beauty_good_2 }
+	assign_genetic_trait_from_modifier = { trait = exotic_beauty_good_3 }
 	assign_genetic_trait_from_modifier = { trait = intellect_bad_1 }
 	assign_genetic_trait_from_modifier = { trait = intellect_bad_2 }
 	assign_genetic_trait_from_modifier = { trait = intellect_bad_3 }
 	assign_genetic_trait_from_modifier = { trait = intellect_good_1 }
 	assign_genetic_trait_from_modifier = { trait = intellect_good_2 }
 	assign_genetic_trait_from_modifier = { trait = intellect_good_3 }
+	assign_genetic_trait_from_modifier = { trait = intellect_good_4 }
 	assign_genetic_trait_from_modifier = { trait = physique_bad_1 }
 	assign_genetic_trait_from_modifier = { trait = physique_bad_2 }
 	assign_genetic_trait_from_modifier = { trait = physique_bad_3 }
 	assign_genetic_trait_from_modifier = { trait = physique_good_1 }
 	assign_genetic_trait_from_modifier = { trait = physique_good_2 }
 	assign_genetic_trait_from_modifier = { trait = physique_good_3 }
+	assign_genetic_trait_from_modifier = { trait = physique_good_4 }
 	assign_genetic_trait_from_modifier = { trait = pure_blooded }
 	assign_genetic_trait_from_modifier = { trait = fecund }
 	assign_genetic_trait_from_modifier = { trait = giant }
@@ -511,3 +780,91 @@ assign_race_trait_from_modifier = {
 }
 
 
+ascension_effect = {
+	if = {
+		limit = { is_any_elf_type = no }
+		assign_race_trait = { trait = elf_tier_1}
+	}
+	else_if = {
+		limit = { has_racial_trait = { trait = elf_tier_1 } }
+		upgrade_elf_race_trait = {
+			old_level = 1
+			new_level = 2
+		}
+	}
+	else_if = {
+		limit = { has_racial_trait = { trait = elf_tier_2 } }
+		upgrade_elf_race_trait = {
+			old_level = 2
+			new_level = 3
+		}
+	}
+	else_if = {
+		limit = { has_racial_trait = { trait = elf_tier_3 } }
+		upgrade_elf_race_trait = {
+			old_level = 3
+			new_level = 4
+		}
+	}
+	else_if = {
+		limit = { has_racial_trait = { trait = elf_tier_4 } }
+		upgrade_elf_race_trait = {
+			old_level = 4
+			new_level = 5
+		}
+	}
+	else_if = {
+		limit = { has_racial_trait = { trait = elf_tier_5 } }
+		upgrade_elf_race_trait = {
+			old_level = 5
+			new_level = 6
+		}
+	}
+	else_if = {
+		limit = { has_racial_trait = { trait = elf_tier_6 } }
+		upgrade_elf_race_trait = {
+			old_level = 6
+			new_level = 7
+		}
+	}
+	else_if = {
+		limit = { has_racial_trait = { trait = elf_tier_7 } }
+		upgrade_elf_race_trait = {
+			old_level = 7
+			new_level = 8
+		}
+	}
+	else_if = {
+		limit = { has_racial_trait = { trait = elf_tier_8 } }
+		upgrade_elf_race_trait = {
+			old_level = 8
+			new_level = 9
+		}
+	}
+	else_if = {
+		limit = { has_racial_trait = { trait = elf_tier_9 } }
+		upgrade_elf_race_trait = {
+			old_level = 9
+			new_level = 10
+		}
+	}
+	else_if = {
+		limit = { has_racial_trait = { trait = elf_tier_10 } }
+		upgrade_elf_race_trait = {
+			old_level = 10
+			new_level = 11
+		}
+	}
+		else_if = {
+		limit = { has_racial_trait = { trait = elf_tier_11 } }
+		upgrade_elf_race_trait = {
+			old_level = 11
+			new_level = 12
+		}
+	}
+}
+
+upgrade_elf_race_trait = {
+	remove_race_trait = { trait = elf_tier_$old_level$}
+	assign_race_trait = { trait = elf_tier_$new_level$}
+}

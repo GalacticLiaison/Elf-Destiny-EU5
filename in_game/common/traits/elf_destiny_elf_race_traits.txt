@@ -80,3 +80,147 @@ elf_tier_3 = {
 		base = 0
 	}
 }
+
+elf_tier_4 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = racial_trait
+
+	modifier = {
+		is_immortal = yes
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+elf_tier_5 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = racial_trait
+
+	modifier = {
+		is_immortal = yes
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+elf_tier_6 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = racial_trait
+
+	modifier = {
+		is_immortal = yes
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+elf_tier_7 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = racial_trait
+
+	modifier = {
+		is_immortal = yes
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+elf_tier_8 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = racial_trait
+
+	modifier = {
+		is_immortal = yes
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+elf_tier_9 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = racial_trait
+
+	modifier = {
+		is_immortal = yes
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+elf_tier_10 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = racial_trait
+
+	modifier = {
+		is_immortal = yes
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+elf_tier_11 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = racial_trait
+
+	modifier = {
+		is_immortal = yes
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+elf_tier_12 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = racial_trait
+
+	modifier = {
+		is_immortal = yes
+	}
+
+	chance = {
+		base = 0
+	}
+}

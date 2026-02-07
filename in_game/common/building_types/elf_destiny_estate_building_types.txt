@@ -215,3 +215,63 @@ grand_archives = {
 	graphical_tags = { small_religious }
 }
 
+
+
+grand_portal_ruins = {
+	is_foreign = no
+	pop_type = calaquendi
+	max_levels = 1
+	employment_size = normal_noble_employment
+	category = religious_category
+	rural_settlement = yes
+	town = yes
+	city = yes
+	expensive = yes
+	location_potential = {
+		OR = {
+			has_variable = grand_portal_eligible
+			this = location:vukyl
+		}
+	}
+	country_potential = {
+		
+	}
+	build_time = huge_unique_build_time
+	modifier = {
+		local_crown_estate_power = 0.25
+	}
+	possible_production_methods = {
+		great_zimbabwe_maintenance
+	}
+	construction_demand = early_capital_building_construction
+
+}
+
+grand_portal = {
+	is_foreign = no
+	pop_type = calaquendi
+	max_levels = 1
+	employment_size = normal_noble_employment
+	category = religious_category
+	rural_settlement = yes
+	town = yes
+	city = yes
+	expensive = yes
+	location_potential = {
+		has_building_with_at_least_one_level = grand_portal_ruins
+		has_variable = grand_portal_eligible
+	}
+	country_potential = {
+		# has_variable = elven_portal_artifact_1_discovered
+        # has_variable = elven_portal_artifact_2_discovered
+	}
+	build_time = huge_unique_build_time
+	modifier = {
+		local_crown_estate_power = 0.25
+	}
+	possible_production_methods = {
+		great_zimbabwe_maintenance
+	}
+	construction_demand = early_capital_building_construction
+
+}

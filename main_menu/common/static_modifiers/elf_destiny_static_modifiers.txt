@@ -28,8 +28,80 @@ elf_tier_3 = {
 	game_data = {
 		category = character
 	}
+	is_immortal = yes
+	# character_life_expectancy = 50
+}
 
-	character_life_expectancy = 50
+elf_tier_4 = {
+	game_data = {
+		category = character
+	}
+	is_immortal = yes
+	# character_life_expectancy = 50
+}
+
+elf_tier_5 = {
+	game_data = {
+		category = character
+	}
+	is_immortal = yes
+	# character_life_expectancy = 50
+}
+
+elf_tier_6 = {
+	game_data = {
+		category = character
+	}
+	is_immortal = yes
+	# character_life_expectancy = 50
+}
+
+elf_tier_7 = {
+	game_data = {
+		category = character
+	}
+	is_immortal = yes
+	# character_life_expectancy = 50
+}
+
+elf_tier_8 = {
+	game_data = {
+		category = character
+	}
+	is_immortal = yes
+	# character_life_expectancy = 50
+}
+
+elf_tier_9 = {
+	game_data = {
+		category = character
+	}
+	is_immortal = yes
+	# character_life_expectancy = 50
+}
+
+elf_tier_10 = {
+	game_data = {
+		category = character
+	}
+	is_immortal = yes
+	# character_life_expectancy = 50
+}
+
+elf_tier_11 = {
+	game_data = {
+		category = character
+	}
+	is_immortal = yes
+	# character_life_expectancy = 50
+}
+
+elf_tier_12 = {
+	game_data = {
+		category = character
+	}
+	is_immortal = yes
+	# character_life_expectancy = 50
 }
 
 # == Bloodlines ==
@@ -134,6 +206,13 @@ beauty_good_3 = {
 
 	dip = 10
 }
+beauty_good_4 = {
+	game_data = {
+		category = character
+	}
+
+	dip = 10
+}
 
 intellect_bad_1= {
 	game_data = {
@@ -171,6 +250,13 @@ intellect_good_2= {
 	dip = 10
 }
 intellect_good_3= {
+	game_data = {
+		category = character
+	}
+
+	dip = 10
+}
+intellect_good_4= {
 	game_data = {
 		category = character
 	}
@@ -220,6 +306,56 @@ physique_good_3= {
 
 	dip = 10
 }
+physique_good_4= {
+	game_data = {
+		category = character
+	}
+
+	dip = 10
+}
+
+unconventional_beauty_good_1= {
+	game_data = {
+		category = character
+	}
+
+	dip = 10
+}
+unconventional_beauty_good_2= {
+	game_data = {
+		category = character
+	}
+
+	dip = 10
+}
+unconventional_beauty_good_3= {
+	game_data = {
+		category = character
+	}
+
+	dip = 10
+}
+exotic_beauty_good_1= {
+	game_data = {
+		category = character
+	}
+
+	dip = 10
+}
+exotic_beauty_good_2= {
+	game_data = {
+		category = character
+	}
+
+	dip = 10
+}
+exotic_beauty_good_3= {
+	game_data = {
+		category = character
+	}
+
+	dip = 10
+}
 
 pure_blooded= {
 	game_data = {
@@ -245,3 +381,40 @@ giant= {
 }
 
 
+
+
+
+## Expedition Related Modifiers ##
+sharpened_mind_modifier = {
+	game_data = {
+		category = character
+	}
+	adm = 10
+	dip = 10
+	mil = 10
+}
+
+dulled_mind_modifier = {
+	game_data = {
+		category = character
+	}
+	adm = 10
+	dip = 10
+	mil = 10
+}
+
+extended_life_modifier = {
+	game_data = {
+		category = character
+	}
+	character_life_expectancy = 20
+}
+
+
+# Misc
+the_rut_modifier = {
+	game_data = {
+		category = character
+	}
+	character_fertility = 100
+}

@@ -2,6 +2,7 @@
 monthly_country_pulse = {
 	on_actions = {
 		assign_aeluran_advisor
+		# elf_destiny_expedition_trigger
 	}
 }
 
@@ -41,4 +42,15 @@ assign_aeluran_advisor = {
 		}			
 	}
 }
+
+# elf_destiny_expedition_trigger = {
+# 	trigger = {
+# 		elven_culture_trigger = yes
+# 		treasury >= 200
+# 		NOT = { has_country_flag = elven_expedition_active }
+# 	}
+# 	random_events = {
+# 		5 = elf_destiny_expedition.1
+# 	}
+# }
 # add_to_cabinet

@@ -121,132 +121,132 @@ height_increases = {
 	}
 }
 
-elf_hair = {
-	usage = game
+# elf_hair = {
+# 	usage = game
 
-	default_hair = {
-		dna_modifiers = {
-			accessory = {
-				mode = replace
-				gene = hair_styles
-				template = elf_hair_style
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 999
+# 	default_hair = {
+# 		dna_modifiers = {
+# 			accessory = {
+# 				mode = replace
+# 				gene = hair_styles
+# 				template = elf_hair_style
+# 				range = { 0 1 } # For the randomness to work correctly
+# 			}
+# 		}
+# 		weight = {
+# 			base = 0
+# 			modifier = {
+# 				add = 999
 
-				culture = {
-					has_culture_group = culture_group:elven_culture_group
-				}
+# 				culture = {
+# 					has_culture_group = culture_group:elven_culture_group
+# 				}
 
-				# TODO: Use something like portrait_low_nobility_trigger = { CULTURE_GFX = european_gfx }
-			}
-		}
-	}
-}
+# 				# TODO: Use something like portrait_low_nobility_trigger = { CULTURE_GFX = european_gfx }
+# 			}
+# 		}
+# 	}
+# }
 
-elf_clothes = {
-	usage = game
+# elf_clothes = {
+# 	usage = game
 
-	# default_clothes = {
-	# 	dna_modifiers = {
-	# 		accessory = {
-	# 			mode = replace
-	# 			gene = clothes
-	# 			template = elf_clothes_all
-	# 			range = { 0 1 } # For the randomness to work correctly
-	# 		}
-	# 	}
-	# 	weight = {
-	# 		base = 0
-	# 		modifier = {
-	# 			add = 999
-	# 			culture = {
-	# 				has_culture_group = culture_group:elven_culture_group
-	# 			}
-	# 			NOT = {
-	# 				has_estate = estate_type:crown_estate
-	# 			}
+# 	# default_clothes = {
+# 	# 	dna_modifiers = {
+# 	# 		accessory = {
+# 	# 			mode = replace
+# 	# 			gene = clothes
+# 	# 			template = elf_clothes_all
+# 	# 			range = { 0 1 } # For the randomness to work correctly
+# 	# 		}
+# 	# 	}
+# 	# 	weight = {
+# 	# 		base = 0
+# 	# 		modifier = {
+# 	# 			add = 999
+# 	# 			culture = {
+# 	# 				has_culture_group = culture_group:elven_culture_group
+# 	# 			}
+# 	# 			NOT = {
+# 	# 				has_estate = estate_type:crown_estate
+# 	# 			}
 
-	# 			# TODO: Use something like portrait_low_nobility_trigger = { CULTURE_GFX = european_gfx }
-	# 		}
-	# 	}
-	# }
+# 	# 			# TODO: Use something like portrait_low_nobility_trigger = { CULTURE_GFX = european_gfx }
+# 	# 		}
+# 	# 	}
+# 	# }
 
-	royal_clothes = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = clothes
-				template = elf_clothes_royal
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 999
-				# culture = {
-				# 	has_culture_group = culture_group:elven_culture_group
-				# }
-				# has_estate = estate_type:crown_estate
+# 	royal_clothes = {
+# 		dna_modifiers = {
+# 			accessory = {
+# 				mode = add
+# 				gene = clothes
+# 				template = elf_clothes_royal
+# 				range = { 0 1 } # For the randomness to work correctly
+# 			}
+# 		}
+# 		weight = {
+# 			base = 0
+# 			modifier = {
+# 				add = 999
+# 				# culture = {
+# 				# 	has_culture_group = culture_group:elven_culture_group
+# 				# }
+# 				# has_estate = estate_type:crown_estate
 
-				# TODO: Use something like portrait_low_nobility_trigger = { CULTURE_GFX = european_gfx }
-			}
-		}
-	}
-}
+# 				# TODO: Use something like portrait_low_nobility_trigger = { CULTURE_GFX = european_gfx }
+# 			}
+# 		}
+# 	}
+# }
 
-elf_headgear = {
-	usage = game
+# elf_headgear = {
+# 	usage = game
 
-	default_headgear = {
-		dna_modifiers = {
-			accessory = {
-				mode = replace
-				gene = headwear
-				template = elf_headwear_all
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 999
-				culture = {
-					has_culture_group = culture_group:elven_culture_group
-				}
-				NOT = {
-					has_estate = estate_type:crown_estate
-				}
+# 	default_headgear = {
+# 		dna_modifiers = {
+# 			accessory = {
+# 				mode = replace
+# 				gene = headwear
+# 				template = elf_headwear_all
+# 				range = { 0 1 } # For the randomness to work correctly
+# 			}
+# 		}
+# 		weight = {
+# 			base = 0
+# 			modifier = {
+# 				add = 999
+# 				culture = {
+# 					has_culture_group = culture_group:elven_culture_group
+# 				}
+# 				NOT = {
+# 					has_estate = estate_type:crown_estate
+# 				}
 
-				# TODO: Use something like portrait_low_nobility_trigger = { CULTURE_GFX = european_gfx }
-			}
-		}
-	}
+# 				# TODO: Use something like portrait_low_nobility_trigger = { CULTURE_GFX = european_gfx }
+# 			}
+# 		}
+# 	}
 
-	royal_headgear = {
-		dna_modifiers = {
-			accessory = {
-				mode = replace
-				gene = headwear
-				template = elf_headwear_royal
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 999
-				culture = {
-					has_culture_group = culture_group:elven_culture_group
-				}
-				has_estate = estate_type:crown_estate
-				# TODO: Use something like portrait_low_nobility_trigger = { CULTURE_GFX = european_gfx }
-			}
-		}
-	}
-}
+# 	royal_headgear = {
+# 		dna_modifiers = {
+# 			accessory = {
+# 				mode = replace
+# 				gene = headwear
+# 				template = elf_headwear_royal
+# 				range = { 0 1 } # For the randomness to work correctly
+# 			}
+# 		}
+# 		weight = {
+# 			base = 0
+# 			modifier = {
+# 				add = 999
+# 				culture = {
+# 					has_culture_group = culture_group:elven_culture_group
+# 				}
+# 				has_estate = estate_type:crown_estate
+# 				# TODO: Use something like portrait_low_nobility_trigger = { CULTURE_GFX = european_gfx }
+# 			}
+# 		}
+# 	}
+# }

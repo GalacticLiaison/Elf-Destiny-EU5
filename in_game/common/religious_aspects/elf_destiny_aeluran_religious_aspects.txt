@@ -1,3 +1,59 @@
 ﻿# indoctrination
 
 # effcicient magistration
+
+# tradition_the_rut
+# tradition_noble_husbandry
+# tradition_heroic_courage
+# tradition_familial_familiarity
+# tradition_beguiling_nature
+
+the_rut = {
+	religion = aeluran
+	
+	modifier = {
+        the_rut_enabled = yes
+	}
+
+	opinions = {
+		# baptism_by_fire = 10
+	}
+}
+
+noble_husbandry = {
+	religion = aeluran
+	
+	modifier = {
+		monthly_towards_aristocracy = societal_value_monthly_move
+        tier_4_genetics_unlocked = yes
+	}
+
+	opinions = {
+		# baptism_by_fire = 10
+	}
+}
+
+heroic_courage = {
+	religion = aeluran
+	
+	modifier = {
+        heroic_ruler_trait_unlocked = yes
+	}
+
+	opinions = {
+		# baptism_by_fire = 10
+	}
+}
+
+beguiling_nature = {
+	religion = aeluran
+	
+	modifier = {
+        enchantress_ruler_trait_unlocked = yes
+        higher_chance_of_rare_genetic_beauty_traits = yes
+	}
+
+	opinions = {
+		# baptism_by_fire = 10
+	}
+}

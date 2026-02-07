@@ -1,23 +1,52 @@
-﻿calaquendi_sendy = { 
+﻿elven_lore = { 
 	age = age_1_traditions
-	requires = mining_advance
+	# requires = mining_advance
 
 	starting_technology_level = 1
-	research_cost = 0.5
+	depth = 0
+
+	research_cost = 0.1
 
 	# depth = 0
 
 	potential = {
-
+		
 	}
-	allow = {
 
+	allow = { 
+		has_embraced_institution = institution:elven
+		culture = { has_culture_group = culture_group:elven_culture_group}
 	}
+
 	unlock_levy = levy_calaquendi
 	unlock_levy = levy_a_early_fey_archers
 	unlock_levy = levy_aeluran_magi_basic
 }
 
+mythril_craftsmanship = {
+	age = age_1_traditions
+	requires = elven_lore
+
+	research_cost = 0.1
+	skill_of_new_artists = 0.1
+}
+
+beast_masters = {
+	age = age_1_traditions
+	requires = elven_lore
+
+	allow = { 
+		custom_tooltip = {
+			text = found_beast_taming_tradition
+			has_variable = beast_taming_tradition_discovered
+		}
+	}
+
+	research_cost = 0.1
+	skill_of_new_artists = 0.1
+}
+
+# beast taming
 
 
 # elf_tier_3 = { 

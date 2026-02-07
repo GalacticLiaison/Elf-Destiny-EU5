@@ -198,62 +198,62 @@ lembas_bakery = {
 		}
 	}
 
-	unique_production_methods = {
+	# unique_production_methods = {
 	
-		saffron_enhancement = {
-			saffron = 0.1
+	# 	saffron_enhancement = {
+	# 		saffron = 0.1
 
-			produced = lembas
-			output = 0.25
+	# 		produced = lembas
+	# 		output = 0.25
 			
-			category = guild_input
-		}
+	# 		category = guild_input
+	# 	}
 
-		pepper_enhancement = {
-			pepper = 0.1
+	# 	pepper_enhancement = {
+	# 		pepper = 0.1
 
-			produced = lembas
-			output = 0.20
+	# 		produced = lembas
+	# 		output = 0.20
 			
-			category = guild_input
-		}
+	# 		category = guild_input
+	# 	}
 
-		cloves_enhancement = {
-			cloves = 0.1
+	# 	cloves_enhancement = {
+	# 		cloves = 0.1
 
-			produced = lembas
-			output = 0.20
+	# 		produced = lembas
+	# 		output = 0.20
 			
-			category = guild_input
-		}
+	# 		category = guild_input
+	# 	}
 
-		chili_enhancement = {
-			chili = 0.1
+	# 	chili_enhancement = {
+	# 		chili = 0.1
 
-			produced = lembas
-			output = 0.20
+	# 		produced = lembas
+	# 		output = 0.20
 			
-			category = guild_input
-		}
+	# 		category = guild_input
+	# 	}
 
-		cocoa_enhancement = {
-			cocoa = 0.1
+	# 	cocoa_enhancement = {
+	# 		cocoa = 0.1
 
-			produced = lembas
-			output = 0.20
+	# 		produced = lembas
+	# 		output = 0.20
 			
-			category = guild_input
-		}
+	# 		category = guild_input
+	# 	}
 
-		fruit_enhancement = {
-			fruit = 0.1
+	# 	fruit_enhancement = {
+	# 		fruit = 0.1
 
-			produced = lembas
-			output = 0.1
+	# 		produced = lembas
+	# 		output = 0.1
 			
-			category = guild_input
-		}
-	}
+	# 		category = guild_input
+	# 	}
+	# }
 
 
 	custom_tags = { guild }
@@ -306,7 +306,7 @@ elven_workshop = {
 		}
 
 		gold_elven_workshop_maintenance = {
-			gold = 0.25
+			good_gold = 0.25
 			tools = 1
 			produced = elven_crafts
 			output = 0.6
@@ -360,7 +360,7 @@ elven_master_workshop = {
 	build_time = guild_build_time
 	
 	unique_production_methods = {
-		metal_elven_workshop_maintenance = {
+		metal_elven_master_workshop_maintenance = {
 			iron = 0.75
 			tools = 1
 			produced = elven_crafts
@@ -369,7 +369,7 @@ elven_master_workshop = {
 			debug_max_profit = 0.4
 			category = guild_input
 		}
-		bronze_elven_workshop_maintenance = {
+		bronze_elven_master_workshop_maintenance = {
 			copper = 0.5
 			tin = 0.04
 			tools = 1
@@ -380,7 +380,7 @@ elven_master_workshop = {
 			category = guild_input
 		}
 
-		silver_elven_workshop_maintenance = {
+		silver_elven_master_workshop_maintenance = {
 			silver = 0.2
 			tools = 1
 			produced = elven_crafts
@@ -390,8 +390,8 @@ elven_master_workshop = {
 			category = guild_input
 		}
 
-		gold_elven_workshop_maintenance = {
-			gold = 0.2
+		gold_elven_master_workshop_maintenance = {
+			good_gold = 0.2
 			tools = 1
 			produced = elven_crafts
 			output = 0.6
@@ -400,7 +400,7 @@ elven_master_workshop = {
 			category = guild_input
 		}
 
-		mythril_elven_workshop_maintenance = {
+		mythril_elven_master_workshop_maintenance = {
 			copper = 0.5
 			mythril = 1
 			tools = 3
@@ -413,7 +413,7 @@ elven_master_workshop = {
 	}
 
 	unique_production_methods = {
-		jewelry_elven_workshop_enhancement = {
+		jewelry_elven_master_workshop_enhancement = {
 			jewelry = 0.1
 			produced = elven_crafts
 			output = 0.25

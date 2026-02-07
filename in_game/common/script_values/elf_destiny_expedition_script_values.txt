@@ -1,0 +1,24 @@
+﻿increase_minor_expedition_progress = {
+	value = scope:expedition_progress
+	add = 1
+}
+
+increase_major_expedition_progress = {
+	value = scope:expedition_progress
+	add = 2
+}
+
+decrease_minor_expedition_progress = {
+    value = scope:expedition_progress
+    subtract = 1
+}
+
+decrease_major_expedition_progress = {
+    value = scope:expedition_progress
+    subtract = 2
+}
+
+increase_expedition_time = {
+    value = scope:expedition_time
+    add = 1
+}

@@ -1,0 +1,22 @@
+namespace = elf_destiny_misc
+
+# The Rut
+elf_destiny_misc.1 = {
+	type = country_event
+	title = elf_destiny_misc.1.title
+	desc = elf_destiny_misc.1.desc
+	trigger = {
+
+	}
+
+	# image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+	immediate = {
+
+	}
+	
+	option = {
+		name = elf_destiny_misc.1.a
+
+	}
+}

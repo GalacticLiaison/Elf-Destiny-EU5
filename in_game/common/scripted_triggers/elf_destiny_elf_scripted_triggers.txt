@@ -3,6 +3,15 @@
 		has_racial_trait = { trait = elf_tier_1 }
 		has_racial_trait = { trait = elf_tier_2 }
 		has_racial_trait = { trait = elf_tier_3 }
+		has_racial_trait = { trait = elf_tier_4 }
+		has_racial_trait = { trait = elf_tier_5 }
+		has_racial_trait = { trait = elf_tier_6 }
+		has_racial_trait = { trait = elf_tier_7 }
+		has_racial_trait = { trait = elf_tier_8 }
+		has_racial_trait = { trait = elf_tier_9 }
+		has_racial_trait = { trait = elf_tier_10 }
+		has_racial_trait = { trait = elf_tier_11 }
+		has_racial_trait = { trait = elf_tier_12 }
 	}
 }
 

@@ -59,13 +59,19 @@ ascend = {
 	}
 
 	effect = {
+		scope:actor = {
+			trigger_event_non_silently = {
+				id = ascension_events.1
+			}
+		}
+
 		# trigger_event_non_silently = {
 		# 	id = aeluran_events.1
 		# }
 
-		character:cyg_heldrin_thundarael = {
-			impregnate = character:syl_seraphine_valerith
-		}
+		# character:cyg_heldrin_thundarael = {
+		# 	impregnate = character:syl_seraphine_valerith
+		# }
 
 		# custom_tooltip = {
 		# 	text = invite_foreign_cleric_tt

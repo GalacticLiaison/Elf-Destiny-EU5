@@ -115,6 +115,25 @@ beauty_good_3 = {
 	}
 }
 
+beauty_good_4 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 25
+		diplomatic_reputation = 4
+		subject_loyalty = 4
+		character_fertility = 40
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
 intellect_bad_1= {
 	allow = {
 		always = no
@@ -237,6 +256,27 @@ intellect_good_3= {
 	}
 }
 
+intellect_good_4 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 15
+		mil = 15
+		adm = 15
+		military_tactics = 0.75
+		discipline = 0.20
+		research_speed_modifier = 0.15
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
 physique_bad_1= {
 	allow = {
 		always = no
@@ -342,6 +382,137 @@ physique_good_3= {
 		base = 0
 	}
 }
+
+physique_good_4= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		mil = 20
+		monthly_prestige = 0.75
+		character_fertility = 20
+		character_life_expectancy = 20
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+
+unconventional_beauty_good_1 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 6
+		diplomatic_reputation = 1.5
+		subject_loyalty = 1.5
+		character_fertility = 11
+	}
+
+	chance = {
+		base = 0
+	}
+}
+unconventional_beauty_good_2 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 11
+		diplomatic_reputation = 2.5
+		subject_loyalty = 2.5
+		character_fertility = 22
+	}
+
+	chance = {
+		base = 0
+	}
+}
+unconventional_beauty_good_3 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 22
+		diplomatic_reputation = 3.5
+		subject_loyalty = 3.5
+		character_fertility = 33
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
+exotic_beauty_good_1 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 7
+		diplomatic_reputation = 2
+		subject_loyalty = 2
+		character_fertility = 13
+	}
+
+	chance = {
+		base = 0
+	}
+}
+exotic_beauty_good_2 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 13
+		diplomatic_reputation = 3
+		subject_loyalty = 3
+		character_fertility = 25
+	}
+
+	chance = {
+		base = 0
+	}
+}
+exotic_beauty_good_3 = {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = elf_genetic
+	
+	modifier = {
+		dip = 25
+		diplomatic_reputation = 3.5
+		subject_loyalty = 3.5
+		character_fertility = 35
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
 
 pure_blooded= {
 	allow = {

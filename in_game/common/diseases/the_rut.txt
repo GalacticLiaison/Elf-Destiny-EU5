@@ -1,0 +1,148 @@
+﻿# Idea: could unlock an aeluran building that adds a local_<disease_tag>_impact_modifier to make it have a greater effect!
+# - Bunny Idol? Maybe to Vána the Valar of fertility?
+
+#Maybe make once every 5-10 years?
+the_rut = {
+	monthly_spawn_chance = {
+		#malaria is endemic - doesn't "spawn"
+		# value = 0
+        # value = 0.25 # influenza
+        value = 0.018 # I believe this is once every 5 years
+        # value = 1 # For Testing
+	}
+
+	spawn = {
+        religion:aeluran = {
+            every_country_in_religion = {
+                limit = {
+                    has_religious_aspect = religious_aspect:the_rut
+                }
+                every_province = {
+                    every_location_in_province = {
+                        limit = {
+                            population > 1
+                        }
+
+                        spawn_disease = {
+                            disease = scope:disease
+                            value = 1
+                    
+                            #save the outbreak created for later
+                            save_scope_as = outbreak_scope
+                        }
+                    }
+                }
+
+                if = {
+                    limit = {
+                        is_ai = no
+                    }
+                    trigger_event_non_silently = {
+                        id = elf_destiny_misc.1
+                    }
+                }
+
+                every_character = {
+                    limit = {
+                        is_adult = yes
+                    }
+                    add_fertility = 100
+                    add_character_modifier = {
+                        modifier = the_rut_modifier
+                        years = 3
+                    }
+                }
+            }
+        }
+	}
+
+	monthly_resistance_reduction = 0.016
+
+	r0 = { 
+		#doesn't pass from person to person
+		value = 0
+	}
+
+	environmental_infection = {
+		# if = {
+		# 	limit = {
+		# 		OR = {
+		# 			region = region:maghreb_region
+		# 			region = region:egypt_region
+		# 			region = region:southern_africa_region
+		# 		}
+		# 	}
+		# 	value = 0.005
+		# }
+		# else = {
+		# 	value = 0.1
+		# }
+	}
+
+	calc_interval_days = { 10 15 }
+
+	location_stagnation_chance = {
+		value = 0.008
+	}
+
+    location_infection_spread_threshold = {
+        value = 1 # hopefully a fail safe to keep it from spreading to non aeluran areas
+    }
+
+	percentage_to_meet_their_fate_on_calc = {
+		value = 0.05
+	}
+
+	location_modifier = {
+		#Nothing
+        local_population_growth = 0.20
+	}
+
+	mortality_rate = { 
+		value = 0
+	}
+
+	character_mortality_chance = {
+		value = 0
+	}
+
+	on_spread_to_country = {
+        # trigger event to notify player
+        # if = {
+        #     limit = {
+        #         is_ai = no
+        #     }
+        #     trigger_event_non_silently = {
+        #         id = elf_destiny_misc.1
+        #     }
+        # }
+
+        # every_character = {
+        #     limit = {
+        #         is_adult = yes
+        #     }
+        #     add_fertility = 100
+        #     add_character_modifier = {
+        #         modifier = the_rut_modifier
+        #         years = 3
+        #     }
+        # }
+	}
+
+	map_color = {
+		lerp = { #Purple
+			min_color = rgb { 99  0  142 }
+			max_color = rgb { 162 35 216 }
+			factor = "disease_presence(scope:disease)"
+		}
+	}
+
+	secondary_map_color = {
+		if = {
+			limit = {
+				disease_has_outbreak_here = scope:disease
+			}
+			value = rgb { 100  120  188 }
+		}
+	}
+}

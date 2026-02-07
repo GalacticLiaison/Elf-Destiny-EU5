@@ -105,3 +105,7 @@ on_character_created
 
 
 almost all modifiers icons need to be made
+
+
+
+Can we make aging portrait modifiers not apply to immortal/elf characters?

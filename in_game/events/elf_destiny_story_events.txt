@@ -2,8 +2,7 @@
 
 elf_destiny_story.99 = {
 	type = country_event
-	title = elf_destiny_story.99.title
-	desc = elf_destiny_story.99.desc
+
 	trigger = {
 
 	}
@@ -91,9 +90,7 @@ elf_destiny_story.1 = {
 
 		trigger_event_silently = {
 			id = elf_destiny_story.11
-		}	
-
-        # unlock sponsor expedition character action
+		}
 	}
 }
 
@@ -114,35 +111,32 @@ elf_destiny_story.11 = {
 
 	immediate = {
 		character:julia_melwood = {
-			save_scope_as = julia
+			save_scope_as = portrait_1
 		}
 	}
 	
 	option = {
 		name = elf_destiny_story.11.a
 
-
+		character:julia_melwood = {
+			move_country = root
+		}
+		
 		trigger_event_silently = {
 			id = elf_destiny_story.2
 		}	
 
         # unlock sponsor expedition character action
+		set_variable = {
+			name = expeditions_unlocked
+			value = yes
+		}
 	}
 
 	option = {
 		name = elf_destiny_story.11.b
-
-
-		# trigger_event_silently = {
-		# 	id = elf_destiny_story.2
-		# }	
-
-        # unlock sponsor expedition character action
 	}
 
-	after = {
-		clear_saved_scope = julia
-	}
 }
 
 
@@ -258,6 +252,18 @@ elf_destiny_story.22 = {
 			}
 		}
 
+		custom_tooltip = {
+			text = all_locations_embrace_elven_institution
+			every_province = {
+				every_location_in_province = {
+					change_institution_progress = {
+						institution = institution:elven
+						amount = 100
+					}
+				}
+			}
+		}
+
 		save_scope_value_as = {
 			name = took_elf_culture
 			value = yes
@@ -268,10 +274,21 @@ elf_destiny_story.22 = {
 	option = {
 		name = elf_destiny_story.22.dontConvert
 
+		custom_tooltip = {
+			text = all_locations_embrace_elven_institution
+			every_province = {
+				every_location_in_province = {
+					change_institution_progress = {
+						institution = institution:elven
+						amount = 100
+					}
+				}
+			}
+		}
+
 		trigger_event_silently = {
 			id = elf_destiny_story.23
 		}	
-
 	}
 }
 
@@ -448,7 +465,7 @@ elf_destiny_story.41 = {
 	immediate = {
 		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
 		religion:aeluran.religious_head.ruler = {
-			save_scope_as = high_matriarch
+			save_scope_as = portrait_1
 		}
 
 	}
@@ -480,7 +497,10 @@ elf_destiny_story.42 = {
 
 	immediate = {
 		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
-		clear_saved_scope = julia
+		set_variable = {
+			name = spoke_with_aelurans
+			value = yes
+		}
 	}
 	
 	option = {
@@ -539,3 +559,162 @@ elf_destiny_story.43 = {
 	}
 }
 
+# Transport Portal
+elf_destiny_story.5 = { # confirm?
+	type = country_event
+	title = elf_destiny_story.5.title
+	desc = elf_destiny_story.5.desc
+	trigger = {
+
+	}
+
+	hide_portraits = yes
+
+	image = "gfx/interface/illustrations/event/backgrounds/transport_portal.dds"
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+
+	}
+	
+	option = {
+		name = elf_destiny_story.5.a
+		set_global_variable = {
+			name = portal_transported
+			value = yes
+		}
+
+		trigger_event_silently = {
+			id = elf_destiny_story.51
+			days = 10
+		}
+
+	}
+
+	option = {
+		name = elf_destiny_story.5.b
+	}
+}
+
+elf_destiny_story.51 = { # Portal ruins have arrived!
+	type = country_event
+	title = elf_destiny_story.51.title
+	desc = elf_destiny_story.51.desc
+	trigger = {
+
+	}
+
+	hide_portraits = yes
+
+	image = "gfx/interface/illustrations/event/backgrounds/transport_portal.dds"
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		scope:actor = {
+			capital = {
+				set_variable = grand_portal_eligible
+				construct_building = {
+					building_type = building_type:grand_portal_ruins
+					cost_multiplier = 0
+					cost_multiplier_reason = "grand_portal_cha_cha_cha"
+					instant = yes	
+				}
+			}
+		}
+
+	}
+	
+	option = {
+		name = elf_destiny_story.51.a
+	}
+}
+
+elf_destiny_story.52 = { # Start repairs?
+	type = country_event
+	title = elf_destiny_story.52.title
+	desc = elf_destiny_story.52.desc
+	trigger = {
+
+	}
+
+	hide_portraits = yes
+
+	image = "gfx/interface/illustrations/event/backgrounds/portal_broken.dds"
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+
+	}
+	
+	option = {
+		name = elf_destiny_story.52.a
+		trigger_event_silently = {
+			id = elf_destiny_story.53
+			days = 10
+		}
+	}
+
+	option = {
+		name = elf_destiny_story.52.b
+	}
+}
+
+elf_destiny_story.53 = { # Portal Restored!
+	type = country_event
+	title = elf_destiny_story.53.title
+	desc = elf_destiny_story.53.desc
+	trigger = {
+
+	}
+
+	hide_portraits = yes
+
+	image = "gfx/interface/illustrations/event/backgrounds/portal_restored.dds"
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		random_location_in_the_world = {
+			limit = {
+				has_building_with_at_least_one_level = grand_portal_ruins
+			}
+
+			destroy_building = "building(building_type:grand_portal_ruins|owner)"
+		}
+
+		scope:actor = {
+			capital = {
+				construct_building = {
+					building_type = building_type:grand_portal
+					cost_multiplier = 0
+					cost_multiplier_reason = "grand_portal_cha_cha_cha"
+					instant = yes	
+				}
+			}
+		}
+
+	}
+	
+	option = {
+		name = elf_destiny_story.53.a
+	}
+}

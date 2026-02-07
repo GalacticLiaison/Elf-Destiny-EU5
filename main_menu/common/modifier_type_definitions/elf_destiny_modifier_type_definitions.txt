@@ -1959,6 +1959,41 @@ can_extract_elven_crafts={
 	}
 }
 
+ban_exports_of_mythril_elven_crafts={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+ban_imports_of_mythril_elven_crafts={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+local_mythril_elven_crafts_output_modifier={
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+global_mythril_elven_crafts_output_modifier={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+can_extract_mythril_elven_crafts={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
 # Military
 army_magi_power={
 	percent=yes
@@ -1967,12 +2002,12 @@ army_magi_power={
 	}
 }
 
-army_magi_artillery_power={
-	percent=yes
-	game_data={
-		category=unit
-	}
-}
+# army_magi_artillery_power={
+# 	percent=yes
+# 	game_data={
+# 		category=unit
+# 	}
+# }
 
 army_magi_build_cost_modifier={
 	color=bad
@@ -1995,27 +2030,27 @@ army_magi_maintenance_cost_modifier={
 		category=country
 	}
 }
-army_magi_artillery_build_cost_modifier={
-	color=bad
-	percent=yes
-	game_data={
-		category=country
-	}
-}
-army_magi_artillery_reinforce_cost_modifier={
-	color=bad
-	percent=yes
-	game_data={
-		category=country
-	}
-}
-army_magi_artillery_maintenance_cost_modifier={
-	color=bad
-	percent=yes
-	game_data={
-		category=country
-	}
-}
+# army_magi_artillery_build_cost_modifier={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# army_magi_artillery_reinforce_cost_modifier={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
+# army_magi_artillery_maintenance_cost_modifier={
+# 	color=bad
+# 	percent=yes
+# 	game_data={
+# 		category=country
+# 	}
+# }
 
 
 
@@ -2034,6 +2069,42 @@ ranger_high_guard_unlocked={
 }
 
 calaquendi_apprenticeship_education_unlocked={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+the_rut_enabled={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+
+tier_4_genetics_unlocked={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+higher_chance_of_rare_genetic_beauty_traits={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+enchantress_ruler_trait_unlocked={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+heroic_ruler_trait_unlocked={
 	boolean=yes
 	game_data={
 		category=country

@@ -256,3 +256,23 @@ ranger_high_guard_unlocked = {
 calaquendi_apprenticeship_education_unlocked = {
 	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
 }
+
+the_rut_enabled = {
+	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+}
+
+tier_4_genetics_unlocked = {
+	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+}
+
+higher_chance_of_rare_genetic_beauty_traits = {
+	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+}
+
+enchantress_ruler_trait_unlocked = {
+	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+}
+
+heroic_ruler_trait_unlocked = {
+	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+}
