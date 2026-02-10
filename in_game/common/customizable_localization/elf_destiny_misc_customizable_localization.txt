@@ -1,0 +1,110 @@
+﻿# blessing_1 = {
+# 	type = country
+
+# 	text = {
+# 		localization_key = the_rut_blessing_option
+# 		trigger = {
+# 			exists = scope:blessing_option_1
+# 			scope:blessing_option_1 = flag:the_rut
+# 		}
+# 	}
+
+# 	text = {
+# 		localization_key = beguiling_nature_blessing_option
+# 		trigger = {
+# 			exists = scope:blessing_option_1
+# 			scope:blessing_option_1 = flag:beguiling_nature
+# 		}
+# 	}
+
+#     text = {
+# 		localization_key = heroic_courage_blessing_option
+# 		trigger = {
+# 			exists = scope:blessing_option_1
+# 			scope:blessing_option_1 = flag:heroic_courage
+# 		}
+# 	}
+
+#     text = {
+# 		localization_key = noble_husbandry_blessing_option
+# 		trigger = {
+# 			exists = scope:blessing_option_1
+# 			scope:blessing_option_1 = flag:noble_husbandry
+# 		}
+# 	}
+
+# 	text = {
+# 		localization_key = no_blessing_available
+# 		fallback = yes
+# 	}
+# }
+
+# blessing_2 = {
+# 	type = country
+
+# 	text = {
+# 		localization_key = the_rut_blessing_option
+# 		trigger = {
+# 			exists = scope:blessing_option_2
+# 			scope:blessing_option_2 = flag:the_rut
+# 		}
+# 	}
+
+# 	text = {
+# 		localization_key = beguiling_nature_blessing_option
+# 		trigger = {
+# 			exists = scope:blessing_option_2
+# 			scope:blessing_option_2 = flag:beguiling_nature
+# 		}
+# 	}
+
+#     text = {
+# 		localization_key = heroic_courage_blessing_option
+# 		trigger = {
+# 			exists = scope:blessing_option_2
+# 			scope:blessing_option_2 = flag:heroic_courage
+# 		}
+# 	}
+
+#     text = {
+# 		localization_key = noble_husbandry_blessing_option
+# 		trigger = {
+# 			exists = scope:blessing_option_2
+# 			scope:blessing_option_2 = flag:noble_husbandry
+# 		}
+# 	}
+
+# 	text = {
+# 		localization_key = no_blessing_available
+# 		fallback = yes
+# 	}
+# }
+
+
+religious_aspects_custom = {
+	type = none
+	text = {
+		localization_key = blessings_text
+		trigger = {
+			religion = religion:aeluran
+		}
+	}
+	text = {
+		localization_key = religious_aspects_text
+		fallback = yes
+	}
+}
+
+religious_aspects_desc_custom = {
+	type = none
+	text = {
+		localization_key = blessings_desc
+		trigger = {
+			religion = religion:aeluran
+		}
+	}
+	text = {
+		localization_key = religious_aspects_desc
+		fallback = yes
+	}
+}

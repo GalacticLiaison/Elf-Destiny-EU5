@@ -13,7 +13,7 @@
 		monthly_prestige = 0.1
 		global_upper_class_capacity_modifier = 0.05
 		diplomacy_importance_modifier = 0.1
-
+		silver_hair_modifier = yes
 		dip = 10
 	}
 
@@ -40,6 +40,7 @@ royal_elf_serelion = {
 		spy_network_construction = 0.1
 		control_importance_modifier = 0.1
 		sow_discontent_monthly_cost_cost_modifier = -0.5
+		purple_eyecolor_modifier = yes
 
 		pop_join_rebel_threshold = -0.05
 		monthly_rebel_growth = 0.005
@@ -144,6 +145,7 @@ royal_elf_lormelis = {
 		global_maritime_presence_decay = 0.10
 		land_cost_going_upstream = -0.05
 		navy_tradition_from_battle = 0.5
+		blue_eyecolor_modifier = yes
 	}
 
 	chance = {

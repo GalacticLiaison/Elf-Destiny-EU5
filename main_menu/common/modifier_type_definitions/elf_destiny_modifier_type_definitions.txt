@@ -2110,3 +2110,24 @@ heroic_ruler_trait_unlocked={
 		category=country
 	}
 }
+
+silver_hair_modifier={
+	boolean=yes
+	game_data={
+		category=character
+	}
+}
+
+blue_eyecolor_modifier={
+	boolean=yes
+	game_data={
+		category=character
+	}
+}
+
+purple_eyecolor_modifier={
+	boolean=yes
+	game_data={
+		category=character
+	}
+}

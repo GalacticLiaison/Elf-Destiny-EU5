@@ -107,6 +107,13 @@
  MODIFIER_TYPE_NAME_heroic_ruler_trait_unlocked: "Heroic ruler trait unlocked"
  MODIFIER_TYPE_DESC_heroic_ruler_trait_unlocked: "TODO : Write a desc"
 
+ MODIFIER_TYPE_NAME_silver_hair_modifier: "Character Has Silver Hair"
+ MODIFIER_TYPE_DESC_silver_hair_modifier: "TODO : Write a desc"
+ MODIFIER_TYPE_NAME_blue_eyecolor_modifier: "Character Has Blue Eyes"
+ MODIFIER_TYPE_DESC_blue_eyecolor_modifier: "TODO : Write a desc"
+ MODIFIER_TYPE_NAME_purple_eyecolor_modifier: "Character Has Purple Eyes"
+ MODIFIER_TYPE_DESC_purple_eyecolor_modifier: "TODO : Write a desc"
+
  elven_group: "Elf"
  elven_group_ADJ: "Elven"
  elven_group_desc: "TEST TODO : Write a desc"
@@ -805,14 +812,6 @@
  human_die_desc: "TODO : Write a desc"
  desc_human: "The Human race is the most numerous and populous form of being in this world. They are severed from The Divine Spark--They receive not its power nor feel its influence"
 
- ascend: "Ritual of Ascension"
- ascend_desc: "You have reached the pinnacle of your current Elven level and are ready to ascend!\n\nRetreat to your chambers and begin your meditations. If the Divine Spark is receptive, you will emerge as a higher being."
-
-#  ascension_ritual_threshold_1_decision_desc:0 "Behold your splendor! You have reached a Major Threshold! You have achieved the absolute pinnacle form of the Common Elf Tier, and are ready to ascend to become something #italic more #!.\n\nUpon completing this ascension you will enter the ranks of the regal Fae, elves that stand above the common folk, their mandate to rule clear to all."
-#  ascension_ritual_threshold_2_decision_desc:0 "Behold your splendor! You have reached a Major Threshold! You have achieved the absolute pinnacle form of the Fae Tier, and are ready to ascend to become something #italic more #!.\n\nUpon completing this ascension you will enter the ranks of the mystical Celestials, angelic elves of great power and true immortality."
-#  ascension_ritual_threshold_3_decision_desc:0 "Behold your splendor! You have reached a Major Threshold! You have achieved the absolute pinnacle form of the Celestial Tier, and are ready to ascend to become something #italic more #!.\n\nUpon completing this ascension you will enter the ranks of the divine Ainur; Gods of the Elves and highest servants of the Divine Spark."
-
-
  mythril_elven_crafts: "Mythril Elven Crafts"
  mythril_elven_crafts_desc: "TODO : Write a desc"
  the_old_ways: "The Old Ways"
@@ -984,22 +983,47 @@
  elf_destiny_expedition.11.a: "Good luck!"
 
  elf_destiny_expedition.21.title: "Expedition - Progress Made"
- elf_destiny_expedition.21.desc.major: "You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], our expedition to the Elven ruins has borne fruit. We have uncovered ancient relics and deciphered parts of the Elven script on the map. We are close to discovering something of great importance, I can feel it.\""
- elf_destiny_expedition.21.desc.minor: "You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], our expedition to the Elven ruins has made some progress. We have uncovered a few relics and deciphered small parts of the Elven script on the map. Our findings suggest we are on the right path.\""
+ elf_destiny_expedition.21.desc.major: "$epedition_supplies_remaining$You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], our expedition to the Elven ruins has borne fruit. We have uncovered ancient relics and deciphered parts of the Elven script on the map. We are close to discovering something of great importance, I can feel it.\""
+ elf_destiny_expedition.21.desc.minor: "$epedition_supplies_remaining$You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], our expedition to the Elven ruins has made some progress. We have uncovered a few relics and deciphered small parts of the Elven script on the map. Our findings suggest we are on the right path.\""
  elf_destiny_expedition.21.a: "Excellent news!"
- minor_expedition_success_tooltip: "\n\nThe expedition has made #G Minor#! progress."
- major_expedition_success_tooltip: "\n\nThe expedition has made #G Major#! progress!"
 
  elf_destiny_expedition.22.title: "Expedition - Progress Lost"
- elf_destiny_expedition.22.desc.critical: "A letter from the expedition leader arrives, the bearer who delievred it is reported to have suffered great injuires and died shorty after. The letter is smeared with blood and difficult to read. \n\n\"They have taken the bridge and the Second Hall. We have barred the gates but cannot hold them for long. The ground shakes... drums, drums in the deep. We cannot get out. The shadow moves in the dark. We cannot get out. They are coming.\"\n It would seem the expedition has met a terrible fate. [recipient.GetName] and all of their party are presumed dead."
- elf_destiny_expedition.22.desc.major: "You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], misfortune has befallen our expedition to the Elven ruins. A sudden storm destroyed much of our equipment and supplies, setting us back considerably. We will need to regroup and recover before we can continue our search."
- elf_destiny_expedition.22.desc.minor: "You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], unfortunate events have hindered our expedition to the Elven ruins. A band of marauders ambushed us, stealing some of our supplies and damaging our equipment. We have lost valuable time and will need to recover before proceeding."
+ elf_destiny_expedition.22.desc.critical: "$epedition_supplies_remaining$A letter from the expedition leader arrives, the bearer who delievred it is reported to have suffered great injuires and died shorty after. The letter is smeared with blood and difficult to read. \n\n\"They have taken the bridge and the Second Hall. We have barred the gates but cannot hold them for long. The ground shakes... drums, drums in the deep. We cannot get out. The shadow moves in the dark. We cannot get out. They are coming.\"\n It would seem the expedition has met a terrible fate. [recipient.GetName] and all of their party are presumed dead."
+ elf_destiny_expedition.22.desc.major: "$epedition_supplies_remaining$You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], misfortune has befallen our expedition to the Elven ruins. A sudden storm destroyed much of our equipment and supplies, setting us back considerably. We will need to regroup and recover before we can continue our search."
+ elf_destiny_expedition.22.desc.minor: "$epedition_supplies_remaining$You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], unfortunate events have hindered our expedition to the Elven ruins. A band of marauders ambushed us, stealing some of our supplies and damaging our equipment. We have lost valuable time and will need to recover before proceeding."
  elf_destiny_expedition.22.a: "I see..."
  elf_destiny_expedition.22.b: "May their souls find peace..."
  elf_destiny_expedition.22.c: "..."
- minor_expedition_failure_tooltip: "\n\nThe expedition has lost #R Minor#! progress."
- major_expedition_failure_tooltip: "\n\nThe expedition has lost #R Major#! progress!"
- critical_expedition_failure_tooltip: "\n\n#R The expedition has ended in disaster#!"
+ minor_expedition_success_text: "The expedition has made #G Minor#! progress."
+ major_expedition_success_text: "The expedition has made #G Major#! progress!"
+ minor_expedition_failure_text: "The expedition has lost #R Minor#! progress."
+ major_expedition_failure_text: "The expedition has lost #R Major#! progress!"
+ critical_expedition_failure_text: "#R The expedition has ended in disaster#!"
+
+ minor_expedition_success_tooltip: "\n\n$minor_expedition_success_text$"
+ major_expedition_success_tooltip: "\n\n$major_expedition_success_text$"
+ minor_expedition_failure_tooltip: "\n\n$minor_expedition_failure_text$"
+ major_expedition_failure_tooltip: "\n\n$major_expedition_failure_text$"
+ critical_expedition_failure_tooltip: "\n\n$critical_expedition_failure_text$"
+
+ expedition_supplies_increased_1: "Expedition supplies increased by 1 month"
+ epedition_supplies_remaining: "Expedition supplies remaining: [SCOPE.GetValue('expedition_supplies')] months\n"
+
+ elf_destiny_expedition.230.title: "Expedition - Aid requested"
+ elf_destiny_expedition.230.desc: "You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], unfortunate events have hindered our expedition to the Elven ruins. A great many of our party have been lost to plague. Our progress will be greatly slowed if we can not find more men to replace them.\"\n\n How will you respond?"
+ elf_destiny_expedition.230.send: "Send more men"
+ elf_destiny_expedition.230.dontSend: "They will just have to make due"
+
+ elf_destiny_expedition.231.title: "Expedition - Aid requested"
+ elf_destiny_expedition.231.desc: "You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], unfortunate events have hindered our expedition to the Elven ruins. The locals of the area are quite upset with us disturbing the site. Im afraid if we dont do something it may come to violence.\"\n\n How will you respond?"
+ elf_destiny_expedition.231.ignore: "Ignore the locals"
+ elf_destiny_expedition.231.diplo: "Send diplomats to calm the locals"
+ elf_destiny_expedition.231.gold: "Send gold to buy the locals loyalty and secure supplies"
+
+ elf_destiny_expedition.232.title: "Expedition - Aid requested"
+ elf_destiny_expedition.232.desc: "You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], unfortunate events have hindered our expedition to the Elven ruins. As we have excavated the site we have discovered an ancient burial site stands in our way. Removing it would be sacrilege, but digging around it would set us back months\"\n\n How will you respond?"
+ elf_destiny_expedition.232.dig: "Dig through the bones!"
+ elf_destiny_expedition.232.dontDig: "Do not blaspheme!"
  
  elf_destiny_expedition.3.title: "Expedition Success!"
  elf_destiny_expedition.3.desc.standard: "The expedition has returned and you recieve [recipient.GetName] and their party bearing wondrous Elven artifacts and relics. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], our expedition to the Elven ruins has been a success!\""
@@ -1043,9 +1067,29 @@
  elf_destiny_misc.1.desc: "placeholder"
  elf_destiny_misc.1.a: "placeholder"
 
+
+ ascend: "Ritual of Ascension"
+ ascend_desc: "You have reached the pinnacle of your current Elven level and are ready to ascend!\n\nRetreat to your chambers and begin your meditations. If the Divine Spark is receptive, you will emerge as a higher being."
+
+  #  ascension_ritual_threshold_1_decision_desc:0 "Behold your splendor! You have reached a Major Threshold! You have achieved the absolute pinnacle form of the Common Elf Tier, and are ready to ascend to become something #italic more #!.\n\nUpon completing this ascension you will enter the ranks of the regal Fae, elves that stand above the common folk, their mandate to rule clear to all."
+  #  ascension_ritual_threshold_2_decision_desc:0 "Behold your splendor! You have reached a Major Threshold! You have achieved the absolute pinnacle form of the Fae Tier, and are ready to ascend to become something #italic more #!.\n\nUpon completing this ascension you will enter the ranks of the mystical Celestials, angelic elves of great power and true immortality."
+  #  ascension_ritual_threshold_3_decision_desc:0 "Behold your splendor! You have reached a Major Threshold! You have achieved the absolute pinnacle form of the Celestial Tier, and are ready to ascend to become something #italic more #!.\n\nUpon completing this ascension you will enter the ranks of the divine Ainur; Gods of the Elves and highest servants of the Divine Spark."
+
  ascension_events.1.title: "You Have Ascended!"
  ascension_events.1.desc: "Through careful preparations you have become more aligned with the Divine Spark, and your Elf Trait has evolved!"
  ascension_events.1.a: "I have become #bold more #!! Huzzah!"
+
+ receive_blessing: "Ritual of The Divine Spark's Blessing"
+ receive_blessing_desc: "You have accumulated enough good will with the Divine Spark to seek a blessing from it!\n\nRetreat to your chambers and begin your meditations."
+
+ ascension_events.2.title: "Ritual of The Divine Spark's Blessing"
+ ascension_events.2.desc: "As you meditate, a familiar presence can be felt and you know the Divine Spark has cast its gaze upon you. Once again, you see countless possibilities flash before your eyes, fading just as quickly, leaving a single idea in their shadow.\n\n #bold \"Choose\" #!"
+ the_rut_blessing_option: "My people will multiply across the land!"
+ beguiling_nature_blessing_option: "Our grace shall ensnare lesser mortals!"
+ heroic_courage_blessing_option: "We shall always stand tall! May our enemies cower!"
+ noble_husbandry_blessing_option: "Our bloodlines will be without equal!"
+ no_blessing_available: "No more blessing available"
+ 
 
  gained_beauty_good_2_trait_tooltip: "Gained a genetic trait"
  gained_physique_good_2_trait_tooltip: "Gained a genetic trait"
@@ -1061,4 +1105,10 @@
  elf_destiny_expedition.4.desc: "The expedition has ran out of supplies and returned empty-handed.\n\n\"I have failed you my [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')]. Forgive me\""
  elf_destiny_expedition.4.a: "How disappointing."
 
+ game_concept_religious_aspects: "[Custom('religious_aspects_custom')]"
+ game_concept_religious_aspect_desc: "[Custom('religious_aspects_desc_custom')]"
  
+ religious_aspects_text: "Relgious Aspects"
+ religious_aspects_desc: "Some [religions|e] have aspects that further specialize the details of each [country_s|e] version of the [religion|e]."
+ blessings_text: "Blessings"
+ blessings_desc: "Blessings are bestowed upon a [country_s|e] by The Divine Spark as a show of its favor. These rewards can be powerful if sometimes quite peculiar"

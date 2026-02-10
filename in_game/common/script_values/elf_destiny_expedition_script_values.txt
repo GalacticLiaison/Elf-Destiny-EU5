@@ -18,7 +18,12 @@ decrease_major_expedition_progress = {
     subtract = 2
 }
 
-increase_expedition_time = {
-    value = scope:expedition_time
+increase_expedition_supplies_1 = {
+    value = scope:expedition_supplies
     add = 1
+}
+
+decrease_expedition_supplies = {
+    value = scope:expedition_supplies
+    add = -1
 }

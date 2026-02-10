@@ -276,3 +276,15 @@ enchantress_ruler_trait_unlocked = {
 heroic_ruler_trait_unlocked = {
 	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
 }
+
+silver_hair_modifier = {
+	positive = "gfx/interface/icons/modifier_types/silver_hair_modifier_icon.dds" 
+}
+
+blue_eyecolor_modifier = {
+	positive = "gfx/interface/icons/modifier_types/blue_eyecolor_modifier_icon.dds" 
+}
+
+purple_eyecolor_modifier = {
+	positive = "gfx/interface/icons/modifier_types/purple_eyecolor_modifier_icon.dds" 
+}

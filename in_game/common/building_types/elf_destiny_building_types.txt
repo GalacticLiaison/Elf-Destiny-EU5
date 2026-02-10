@@ -306,7 +306,7 @@ elven_workshop = {
 		}
 
 		gold_elven_workshop_maintenance = {
-			good_gold = 0.25
+			goods_gold = 0.25
 			tools = 1
 			produced = elven_crafts
 			output = 0.6
@@ -391,7 +391,7 @@ elven_master_workshop = {
 		}
 
 		gold_elven_master_workshop_maintenance = {
-			good_gold = 0.2
+			goods_gold = 0.2
 			tools = 1
 			produced = elven_crafts
 			output = 0.6

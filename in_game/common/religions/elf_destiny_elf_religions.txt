@@ -5,7 +5,7 @@
 
 	has_religious_head = yes
 	has_religious_influence = yes
-	religious_aspects = 3
+	religious_aspects = 4
 
 	important_country = DWD
 

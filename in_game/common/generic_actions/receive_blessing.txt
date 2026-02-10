@@ -1,5 +1,5 @@
 ﻿# scope:actor = country, scope:recipient = religion
-ascend = {
+receive_blessing = {
 	type = religious
 
 	sound = UI_action_religion_generic
@@ -47,7 +47,7 @@ ascend = {
 	effect = {
 		scope:actor = {
 			trigger_event_non_silently = {
-				id = ascension_events.1
+				id = ascension_events.2
 			}
 		}
 	}

@@ -170,8 +170,8 @@ elf_destiny_expedition.11 = {
             value = 0
         }
         save_scope_value_as = {
-            name = expedition_time
-            value = 0
+            name = expedition_supplies
+            value = 5
         }
 
         trigger_event_silently = {
@@ -196,7 +196,7 @@ elf_destiny_expedition.2 = {
             trigger_event_non_silently = elf_destiny_expedition.3  # Success
         }
         else_if = { # Supplies have run out
-            limit = { scope:expedition_time >= 5 } 
+            limit = { scope:expedition_supplies < 1 } 
 
             trigger_event_non_silently = elf_destiny_expedition.4  # Failure
 
@@ -204,11 +204,11 @@ elf_destiny_expedition.2 = {
         }
         else = {
             save_scope_value_as = {
-                name = expedition_time
-                value = increase_expedition_time
+                name = expedition_supplies
+                value = decrease_expedition_supplies
             }
             random_list = {
-                60 = {
+                50 = {
                     modifier = {
                         factor = 1.1
                         scope:recipient = { adm >= 50 }
@@ -226,6 +226,13 @@ elf_destiny_expedition.2 = {
                 }
                 40 = {
                     trigger_event_non_silently = elf_destiny_expedition.22  # Lose Progress
+                }
+                40 = { # Decision Events
+                    random_list = {
+                        10 = { trigger_event_non_silently = elf_destiny_expedition.230 }
+                        10 = { trigger_event_non_silently = elf_destiny_expedition.231 }
+                        10 = { trigger_event_non_silently = elf_destiny_expedition.232 }
+                    }
                 }
             }
         }
@@ -432,6 +439,186 @@ elf_destiny_expedition.22 = {
         }
 
         name = elf_destiny_expedition.22.c
+    }
+}
+
+elf_destiny_expedition.230 = {
+    type = country_event
+    title = elf_destiny_expedition.230.title
+	desc = elf_destiny_expedition.230.desc
+
+    image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+
+    immediate = {
+
+
+    }
+
+    option = {
+        name = elf_destiny_expedition.230.send
+        
+        custom_tooltip = {
+            text = minor_expedition_success_text
+            save_scope_value_as = {
+                name = expedition_progress
+                value = increase_minor_expedition_progress
+            }
+        }
+
+        add_manpower = -100
+
+        trigger_event_silently = {
+            id = elf_destiny_expedition.2
+            months = 1
+        }
+    }
+
+    option = {
+        name = elf_destiny_expedition.230.dontSend
+        
+        custom_tooltip = {
+            text = minor_expedition_failure_text
+            save_scope_value_as = {
+                name = expedition_progress
+                value = increase_minor_expedition_progress
+            }
+        }
+
+        trigger_event_silently = {
+            id = elf_destiny_expedition.2
+            months = 1
+        }
+    }
+}
+
+elf_destiny_expedition.231 = {
+    type = country_event
+    title = elf_destiny_expedition.231.title
+	desc = elf_destiny_expedition.231.desc
+
+    image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+
+    immediate = {
+
+
+    }
+
+    option = {
+        name = elf_destiny_expedition.231.ignore
+        
+        custom_tooltip = {
+            text = minor_expedition_failure_text
+            save_scope_value_as = {
+                name = expedition_progress
+                value = increase_minor_expedition_progress
+            }
+        }
+
+        trigger_event_silently = {
+            id = elf_destiny_expedition.2
+            months = 1
+        }
+    }
+
+    option = {
+        name = elf_destiny_expedition.231.diplo
+        
+        custom_tooltip = {
+            text = minor_expedition_success_text
+            save_scope_value_as = {
+                name = expedition_progress
+                value = increase_minor_expedition_progress
+            }
+        }
+
+        add_diplomats = -2
+
+        trigger_event_silently = {
+            id = elf_destiny_expedition.2
+            months = 1
+        }
+    }
+
+    option = {
+        name = elf_destiny_expedition.231.gold
+        
+        custom_tooltip = {
+            text = minor_expedition_success_text
+            save_scope_value_as = {
+                name = expedition_progress
+                value = increase_minor_expedition_progress
+            }
+        }
+
+        custom_tooltip = {
+            text = expedition_supplies_increased_1
+            save_scope_value_as = {
+                name = expedition_supplies
+                value = increase_expedition_supplies_1
+            }
+        }
+
+        add_gold = {
+            value = monthly_income_trade_and_tax
+            multiply = -2
+        }
+
+        trigger_event_silently = {
+            id = elf_destiny_expedition.2
+            months = 1
+        }
+    }
+}
+
+elf_destiny_expedition.232 = {
+    type = country_event
+    title = elf_destiny_expedition.231.title
+	desc = elf_destiny_expedition.231.desc
+
+    image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+
+    immediate = {
+
+
+    }
+
+    option = {
+        name = elf_destiny_expedition.231.dig
+        
+        custom_tooltip = {
+            text = minor_expedition_success_text
+            save_scope_value_as = {
+                name = expedition_progress
+                value = increase_minor_expedition_progress
+            }
+        }
+
+        add_prestige = prestige_mild_penalty
+        add_religious_influence = religious_influence_mild_penalty
+
+        trigger_event_silently = {
+            id = elf_destiny_expedition.2
+            months = 1
+        }
+    }
+
+    option = {
+        name = elf_destiny_expedition.231.dontDig
+        
+        custom_tooltip = {
+            text = minor_expedition_failure_text
+            save_scope_value_as = {
+                name = expedition_progress
+                value = increase_minor_expedition_progress
+            }
+        }
+        trigger_event_silently = {
+            id = elf_destiny_expedition.2
+            months = 1
+        }
     }
 }
 

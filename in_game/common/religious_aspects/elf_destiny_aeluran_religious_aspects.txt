@@ -10,6 +10,10 @@
 
 the_rut = {
 	religion = aeluran
+
+	visible = {
+		always = no
+	}
 	
 	modifier = {
         the_rut_enabled = yes
@@ -23,6 +27,10 @@ the_rut = {
 noble_husbandry = {
 	religion = aeluran
 	
+	visible = {
+		always = no
+	}
+
 	modifier = {
 		monthly_towards_aristocracy = societal_value_monthly_move
         tier_4_genetics_unlocked = yes
@@ -36,8 +44,13 @@ noble_husbandry = {
 heroic_courage = {
 	religion = aeluran
 	
+	visible = {
+		always = no
+	}
+
 	modifier = {
         heroic_ruler_trait_unlocked = yes
+		discipline = 0.15
 	}
 
 	opinions = {
@@ -48,6 +61,10 @@ heroic_courage = {
 beguiling_nature = {
 	religion = aeluran
 	
+	visible = {
+		always = no
+	}
+
 	modifier = {
         enchantress_ruler_trait_unlocked = yes
         higher_chance_of_rare_genetic_beauty_traits = yes

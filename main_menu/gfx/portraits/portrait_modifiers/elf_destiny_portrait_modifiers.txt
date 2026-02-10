@@ -50,76 +50,275 @@
 
 }
 
-height_increases = {
+elf_destiny_immortality = {
 	usage = game
-	no_increase = {
+
+	nonimmortal = {
 		dna_modifiers = {
-			morph = {
-				mode = add
-				gene = size_increases
-				template = no_increase
-				value = 1
-			}
+			# morph = {
+			# 	mode = add
+			# 	gene = elf_ears_types
+			# 	template = no_elf_ears
+			# 	value = 1
+			# 	# range = { 0 0.2 } # For the randomness to work correctly
+			# }
 		}
 		weight = {
 			base = 50
 			modifier = {
 				add = -50
-				OR = {
-					has_genetic_trait = { trait = royal_elf_daelurin }
-					has_genetic_trait = { trait = giant }
-				}
+				is_any_elf_type = yes
 			}
 		}
 	}
-	one_increase = {
+
+	immortal = {
 		dna_modifiers = {
 			morph = {
-				mode = add
-				gene = size_increases
-				template = one_increase
+				mode = replace
+				gene = gene_aging_body
+				template = ageless_body
 				value = 1
+				# range = { 0 0.2 } # For the randomness to work correctly
+			}
+			morph = {
+				mode = replace
+				gene = gene_aging_eyes
+				template = ageless_eyes
+				value = 1
+				# range = { 0 0.2 } # For the randomness to work correctly
+			}
+			morph = {
+				mode = replace
+				gene = gene_aging_eyes
+				template = ageless_eyes
+				value = 1
+				# range = { 0 0.2 } # For the randomness to work correctly
+			}
+			morph = {
+				mode = replace
+				gene = gene_aging_forehead
+				template = ageless_forehead
+				value = 1
+				# range = { 0 0.2 } # For the randomness to work correctly
+			}
+			morph = {
+				mode = replace
+				gene = gene_aging_mouth
+				template = ageless_mouth
+				value = 1
+				# range = { 0 0.2 } # For the randomness to work correctly
+			}
+			morph = {
+				mode = replace
+				gene = gene_aging_colors
+				template = ageless_colors
+				value = 1
+				# range = { 0 0.2 } # For the randomness to work correctly
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
 				add = 9999
+				# has_trait = elf_tier_3
 
-				# has_genetic_trait = { trait = royal_elf_daelurin }
-
+				# portrait_clothing_trigger = { CULTURE_FLAG = european_gfx }
+				# is_female = yes
 				is_any_elf_type = yes
-
 				# OR = {
-				# 	has_genetic_trait = { trait = royal_elf_daelurin }
-				# 	has_genetic_trait = { trait = giant }
-				# }
-				# NAND = {
-				# 	has_genetic_trait = { trait = royal_elf_daelurin }
-				# 	has_genetic_trait = { trait = giant }
+				# 	has_trait = elf_tier_1
+				# 	has_trait = elf_tier_2
+				# 	has_trait = elf_tier_3
 				# }
 			}
 		}
 	}
-	two_increases = {
+}
+
+
+royal_elf_valerith = {
+	usage = game
+
+	no_royal_elf_valerith = {
 		dna_modifiers = {
-			morph = {
-				mode = add
-				gene = size_increases
-				template = two_increase
-				value = 1
+
+		}
+		weight = {
+			base = 50
+			modifier = {
+				add = -50
+				has_genetic_trait = { trait = royal_elf_valerith }
+			}
+		}
+	}
+
+	applied_royal_elf_valerith = {
+		dna_modifiers = {
+			color = {
+				gene = hair_color
+				mode = replace
+
+				x = 0.0
+				y = 0.0
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
-				add = 999
-
-				has_genetic_trait = { trait = royal_elf_daelurin }
-				has_genetic_trait = { trait = giant }
+				add = 9999
+				has_genetic_trait = { trait = royal_elf_valerith }
 			}
+		}
 	}
 }
+
+royal_elf_serelion = {
+	usage = game
+
+	no_royal_elf_serelion = {
+		dna_modifiers = {
+
+		}
+		weight = {
+			base = 50
+			modifier = {
+				add = -50
+				has_genetic_trait = { trait = royal_elf_serelion }
+			}
+		}
+	}
+
+	applied_royal_elf_serelion = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+
+				x = 1.0
+				y = 0.75
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 9999
+				has_genetic_trait = { trait = royal_elf_serelion }
+			}
+		}
+	}
+}
+
+royal_elf_lormelis = {
+	usage = game
+
+	no_royal_elf_lormelis = {
+		dna_modifiers = {
+
+		}
+		weight = {
+			base = 50
+			modifier = {
+				add = -50
+				has_genetic_trait = { trait = royal_elf_lormelis }
+			}
+		}
+	}
+
+	applied_royal_elf_lormelis = {
+		dna_modifiers = {
+			color = {
+				gene = eye_color
+				mode = replace
+
+				x = 1.0
+				y = 1.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 9999
+				has_genetic_trait = { trait = royal_elf_lormelis }
+			}
+		}
+	}
+}
+
+# height_increases = {
+# 	usage = game
+# 	no_increase = {
+# 		dna_modifiers = {
+# 			morph = {
+# 				mode = add
+# 				gene = size_increases
+# 				template = no_increase
+# 				value = 1
+# 			}
+# 		}
+# 		weight = {
+# 			base = 50
+# 			modifier = {
+# 				add = -50
+# 				OR = {
+# 					has_genetic_trait = { trait = royal_elf_daelurin }
+# 					has_genetic_trait = { trait = giant }
+# 				}
+# 			}
+# 		}
+# 	}
+# 	one_increase = {
+# 		dna_modifiers = {
+# 			morph = {
+# 				mode = add
+# 				gene = size_increases
+# 				template = one_increase
+# 				value = 1
+# 			}
+# 		}
+# 		weight = {
+# 			base = 0
+# 			modifier = {
+# 				add = 9999
+
+# 				# has_genetic_trait = { trait = royal_elf_daelurin }
+
+# 				is_any_elf_type = yes
+
+# 				# OR = {
+# 				# 	has_genetic_trait = { trait = royal_elf_daelurin }
+# 				# 	has_genetic_trait = { trait = giant }
+# 				# }
+# 				# NAND = {
+# 				# 	has_genetic_trait = { trait = royal_elf_daelurin }
+# 				# 	has_genetic_trait = { trait = giant }
+# 				# }
+# 			}
+# 		}
+# 	}
+# 	two_increases = {
+# 		dna_modifiers = {
+# 			morph = {
+# 				mode = add
+# 				gene = size_increases
+# 				template = two_increase
+# 				value = 1
+# 			}
+# 		}
+# 		weight = {
+# 			base = 0
+# 			modifier = {
+# 				add = 999
+
+# 				has_genetic_trait = { trait = royal_elf_daelurin }
+# 				has_genetic_trait = { trait = giant }
+# 			}
+# 		}
+# 	}
+# }
+
+
+
 
 # elf_hair = {
 # 	usage = game

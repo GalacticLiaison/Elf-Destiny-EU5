@@ -1,4 +1,3 @@
-Rename localization for each pop tier
 Make Calaquendi actual top tier of promotion
     - thinking just make new pop type for all tiers, they roll up into the same estates
 update dynasty CoA
@@ -10,19 +9,8 @@ localization overall
 What is an Architect quest line
     - maybe even abbreviated, aeluran visit, portal piece quest, restore portal
     - could then unlock further ascension
-add unique elf buildings
-add unique elf reforms
 
 
-# Buildings
-if all else fails when trying to populate existing buildings with elf pops, maybe we can do a full convert when Elf Lords claim human locations and vice versa,
-- Downside: extra scripting
-- What happens to human population in location? Convert to slave? Expel/Migrate Out?
-    - or maybe with a harmony law they would stay and work... so then race specific buildings suck
-
-GRAND PORTAL
-- holy site
-- building
 
 When your nearing release, ask in co-op if anyone has elf ears they would share, show off your implementation.
     - you want plenty of head start to get first to market

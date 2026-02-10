@@ -252,10 +252,9 @@ syl_seraphine_valerith = {
 	portrait_info = 
 	{
 		genes={ 		
-			# hair_color={ 01 01 01 202 }
+			hair_color={ 01 01 01 202 }
 			skin_color={ 56 30 56 30 }
 			eye_color={ 206 118 177 145 }
-			pose={ "" 127 "" 127 }
 			pose={ "" 127 "" 127 }
 			poses_height={ "all_height" 127 "all_height" 127 }
 			gene_aging_body={ "old_body" 91 "old_body" 127 }

@@ -1,5 +1,123 @@
 ﻿namespace = ascension_events
 
+scripted_effect choose_blessing_option = {
+	random_list = {
+		0 = {
+			modifier = {
+				add = 100
+				NOT = {
+					has_religious_aspect = religious_aspect:the_rut
+				}
+				NOT = {
+					AND = {
+						exists = scope:blessing_option_1
+						scope:blessing_option_1 = flag:the_rut
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = blessing_option_$option$
+				value = flag:the_rut
+			}
+		}
+		0 = {
+			modifier = {
+				add = 100
+				NOT = {
+					has_religious_aspect = religious_aspect:noble_husbandry
+				}
+				NOT = {
+					AND = {
+						exists = scope:blessing_option_1
+						scope:blessing_option_1 = flag:noble_husbandry
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = blessing_option_$option$
+				value = flag:noble_husbandry
+			}
+		}
+		0 = {
+			modifier = {
+				add = 100
+				NOT = {
+					has_religious_aspect = religious_aspect:heroic_courage
+				}
+				NOT = {
+					AND = {
+						exists = scope:blessing_option_1
+						scope:blessing_option_1 = flag:heroic_courage
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = blessing_option_$option$
+				value = flag:heroic_courage
+			}
+		}
+		0 = {
+			modifier = {
+				add = 100
+				NOT = {
+					has_religious_aspect = religious_aspect:beguiling_nature
+				}
+				NOT = {
+					AND = {
+						exists = scope:blessing_option_1
+						scope:blessing_option_1 = flag:beguiling_nature
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = blessing_option_$option$
+				value = flag:beguiling_nature
+			}
+		}
+		1 = { # fallback
+			modifier = {
+				add = -1
+				has_religious_aspect = religious_aspect:noble_husbandry
+				has_religious_aspect = religious_aspect:heroic_courage
+				has_religious_aspect = religious_aspect:beguiling_nature
+				has_religious_aspect = religious_aspect:the_rut
+			}
+			save_scope_value_as = {
+				name = blessing_option_$option$
+				value = flag:none
+			}
+		}
+	}
+}
+
+scripted_effect receive_blessing = {
+	if = {
+		limit = {
+			scope:blessing_option_$option$ = flag:the_rut
+		}
+		add_religious_aspect = religious_aspect:the_rut
+	}
+	else_if = {
+		limit = {
+			scope:blessing_option_$option$ = flag:noble_husbandry
+		}
+		add_religious_aspect = religious_aspect:noble_husbandry
+	}
+	else_if = {
+		limit = {
+			scope:blessing_option_$option$ = flag:heroic_courage
+		}
+		add_religious_aspect = religious_aspect:heroic_courage
+	}
+	else_if = {
+		limit = {
+			scope:blessing_option_$option$ = flag:beguiling_nature
+		}
+		add_religious_aspect = religious_aspect:beguiling_nature
+	}
+}
+
+
 ascension_events.1 = {
 	type = country_event
 	title = ascension_events.1.title
@@ -25,5 +143,142 @@ ascension_events.1 = {
 		name = ascension_events.1.a
 
 
+	}
+}
+
+# Blessings
+ascension_events.2 = {
+	type = country_event
+	title = ascension_events.2.title
+	desc = ascension_events.2.desc
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+	immediate = {
+		choose_blessing_option = {option = 1}
+		choose_blessing_option = {option = 2}
+	}
+	
+	option = {
+		name = the_rut_blessing_option
+		trigger = {
+			OR = {
+				AND = {
+					exists = scope:blessing_option_1
+					scope:blessing_option_1 = flag:the_rut
+				}
+				AND = {
+					exists = scope:blessing_option_2
+					scope:blessing_option_2 = flag:the_rut
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				scope:blessing_option_1 = flag:the_rut
+			}
+			receive_blessing = {option = 1}
+		}
+		else = {
+			receive_blessing = {option = 2}
+		}
+	}
+
+	option = {
+		name = noble_husbandry_blessing_option
+		trigger = {
+			OR = {
+				AND = {
+					exists = scope:blessing_option_1
+					scope:blessing_option_1 = flag:noble_husbandry
+				}
+				AND = {
+					exists = scope:blessing_option_2
+					scope:blessing_option_2 = flag:noble_husbandry
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				scope:blessing_option_1 = flag:noble_husbandry
+			}
+			receive_blessing = {option = 1}
+		}
+		else = {
+			receive_blessing = {option = 2}
+		}
+	}
+
+	option = {
+		name = beguiling_nature_blessing_option
+		trigger = {
+			OR = {
+				AND = {
+					exists = scope:blessing_option_1
+					scope:blessing_option_1 = flag:beguiling_nature
+				}
+				AND = {
+					exists = scope:blessing_option_2
+					scope:blessing_option_2 = flag:beguiling_nature
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				scope:blessing_option_1 = flag:beguiling_nature
+			}
+			receive_blessing = {option = 1}
+		}
+		else = {
+			receive_blessing = {option = 2}
+		}
+	}
+
+	option = {
+		name = heroic_courage_blessing_option
+		trigger = {
+			OR = {
+				AND = {
+					exists = scope:blessing_option_1
+					scope:blessing_option_1 = flag:heroic_courage
+				}
+				AND = {
+					exists = scope:blessing_option_2
+					scope:blessing_option_2 = flag:heroic_courage
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				scope:blessing_option_1 = flag:heroic_courage
+			}
+			receive_blessing = {option = 1}
+		}
+		else = {
+			receive_blessing = {option = 2}
+		}
+	}
+
+	option = {
+		name = no_blessing_available
+		trigger = {
+			OR = {
+				NAND = {
+					exists = scope:blessing_option_1
+					exists = scope:blessing_option_2
+				}
+				AND = {
+					scope:blessing_option_1 = flag:none
+					scope:blessing_option_2 = flag:none
+				}
+			}
+		}
 	}
 }
