@@ -10,9 +10,6 @@
 		diplomatic_reputation = -1
 		subject_loyalty = -1
 		character_fertility = -10
-
-
-		dip = 10
 	}
 
 	chance = {
@@ -31,9 +28,6 @@ beauty_bad_2 = {
 		diplomatic_reputation = -2
 		subject_loyalty = -2
 		character_fertility = -20
-
-
-		dip = 10
 	}
 
 	chance = {
@@ -52,8 +46,6 @@ beauty_bad_3 = {
 		diplomatic_reputation = -3
 		subject_loyalty = -3
 		character_fertility = -30
-
-		dip = 10
 	}
 
 	chance = {
@@ -228,7 +220,6 @@ intellect_good_2= {
 		military_tactics = 0.25
 		discipline = 0.10
 		research_speed_modifier = 0.25
-
 	}
 
 	chance = {
@@ -285,7 +276,6 @@ physique_bad_1= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
 		character_fertility = -5
 		character_life_expectancy = -5
 	}
@@ -302,7 +292,6 @@ physique_bad_2= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
 		character_fertility = -10
 		character_life_expectancy = -10
 	}
@@ -319,7 +308,6 @@ physique_bad_3= {
 	flavor = elf_genetic
 	
 	modifier = {
-		dip = 10
 		character_fertility = -15
 		character_life_expectancy = -15
 	}

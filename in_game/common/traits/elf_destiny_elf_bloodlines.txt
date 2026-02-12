@@ -32,8 +32,6 @@ royal_elf_serelion = {
 	modifier = {
 		dip = 5
 		mil = 5
-		hire_mercenary_premium_cost_modifier = -0.15
-		hire_mercenary_leader_cost_modifier = 0.15
 		stability_decay = -0.00025
 		global_monthly_control = 0.002
 		counter_espionage = 0.1
@@ -143,7 +141,6 @@ royal_elf_lormelis = {
 		may_explore = yes
 		exploration_mission_speed_modifier = 0.5
 		global_maritime_presence_decay = 0.10
-		land_cost_going_upstream = -0.05
 		navy_tradition_from_battle = 0.5
 		blue_eyecolor_modifier = yes
 	}

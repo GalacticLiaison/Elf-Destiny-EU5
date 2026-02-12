@@ -257,8 +257,8 @@ elf_destiny_story.22 = {
 			every_province = {
 				every_location_in_province = {
 					change_institution_progress = {
-						institution = institution:elven
-						amount = 100
+						type = institution:elven
+						value = 100
 					}
 				}
 			}
@@ -279,8 +279,8 @@ elf_destiny_story.22 = {
 			every_province = {
 				every_location_in_province = {
 					change_institution_progress = {
-						institution = institution:elven
-						amount = 100
+						type = institution:elven
+						value = 100
 					}
 				}
 			}

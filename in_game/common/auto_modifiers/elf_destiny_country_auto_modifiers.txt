@@ -8,3 +8,9 @@ calaquendi_percentage_in_country = {
 
 	monthly_towards_quality = societal_value_huge_monthly_move
 }
+
+elf_destiny_country_base_values = {
+	requires_real = no
+
+	calaquendi_estate_target_satisfaction = 0.4
+}

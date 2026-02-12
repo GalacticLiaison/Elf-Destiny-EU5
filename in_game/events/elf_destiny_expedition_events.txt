@@ -16,6 +16,13 @@
 #     clr_variable = expedition_progress
 # }
 
+# Maybe for the character interaction intro description tooltip add  bullet points for possible rewards
+# - gold
+# - research
+# - unique ancient elven knowledge
+# - and more.... 
+
+
 scripted_effect select_expedition_candidate_effect = {
     random_character = {
         limit = { 
@@ -574,8 +581,8 @@ elf_destiny_expedition.231 = {
 
 elf_destiny_expedition.232 = {
     type = country_event
-    title = elf_destiny_expedition.231.title
-	desc = elf_destiny_expedition.231.desc
+    title = elf_destiny_expedition.232.title
+	desc = elf_destiny_expedition.232.desc
 
     image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
@@ -586,7 +593,7 @@ elf_destiny_expedition.232 = {
     }
 
     option = {
-        name = elf_destiny_expedition.231.dig
+        name = elf_destiny_expedition.232.dig
         
         custom_tooltip = {
             text = minor_expedition_success_text
@@ -606,7 +613,7 @@ elf_destiny_expedition.232 = {
     }
 
     option = {
-        name = elf_destiny_expedition.231.dontDig
+        name = elf_destiny_expedition.232.dontDig
         
         custom_tooltip = {
             text = minor_expedition_failure_text

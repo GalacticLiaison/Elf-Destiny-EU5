@@ -493,30 +493,29 @@ upgraded_beauty_inheritance = {
 					has_genetic_trait = { trait = beauty_good_3 }
 				}
 			}
-			
-			random_list = {
-				1 = {
-					modifier = { # Beguiling Nature greatly increases odds 
-						scope:character ?= {
-							owner = {
-								has_religious_aspect = religious_aspect:beguiling_nature
-							}
+		}
+		random_list = {
+			1 = {
+				modifier = { # Beguiling Nature greatly increases odds 
+					scope:character ?= {
+						owner = {
+							has_religious_aspect = religious_aspect:beguiling_nature
 						}
-						add = 49
 					}
-
-					random_list = {
-						2 = { # Unconventional
-							upgrade_beauty_type = { new_beauty_type = unconventional }
-						} 
-						1 = { # Exotic
-							upgrade_beauty_type = { new_beauty_type = exotic }
-						}
-						3 = {} # used to make odds even worse
-					}
+					add = 49
 				}
-				99 = {} # nothing happens
+
+				random_list = {
+					2 = { # Unconventional
+						upgrade_beauty_type = { new_beauty_type = unconventional }
+					} 
+					1 = { # Exotic
+						upgrade_beauty_type = { new_beauty_type = exotic }
+					}
+					3 = {} # used to make odds even worse
+				}
 			}
+			99 = {} # nothing happens
 		}
 	}
 	else = {

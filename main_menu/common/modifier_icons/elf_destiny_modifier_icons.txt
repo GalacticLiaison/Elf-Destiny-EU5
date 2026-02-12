@@ -1,63 +1,63 @@
 ﻿calaquendi_estate_target_satisfaction = {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_target_satisfaction.dds"
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_target_satisfaction.dds"
 }
 calaquendi_estate_satisfaction_decay = {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_target_satisfaction.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_target_satisfaction.dds" 
 }
 calaquendi_estate_satisfaction_recovery = {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_target_satisfaction.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_target_satisfaction.dds" 
 }
 calaquendi_estate_max_tax= {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_max_tax.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_max_tax.dds" 
 }
 
 calaquendi_estate_min_tax= {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_max_tax.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_max_tax.dds" 
 }
 
 calaquendi_estate_levy_size= {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_levy_size.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_levy_size.dds" 
 }
 
 local_calaquendi_estate_power = {
-	positive = "gfx/interface/icons/modifier_types/global_nobles_estate_power.dds"
+	positive = "gfx/interface/icons/modifier_types/global_calaquendi_estate_power.dds"
 }
 
- global_calaquendi_estate_power = {
-	positive = "gfx/interface/icons/modifier_types/global_nobles_estate_power.dds"
+global_calaquendi_estate_power = {
+	positive = "gfx/interface/icons/modifier_types/global_calaquendi_estate_power.dds"
 }
 
 calaquendi_estate_agenda_impact = {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_agenda_impact.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_agenda_impact.dds" 
 }
 
 calaquendi_estate_cannot_marry = {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_blocked_from_cabinet.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_blocked_from_cabinet.dds" 
 }
 
 calaquendi_estate_can_participate_in_parliament = {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_agenda_impact.dds"
-	negative = "gfx/interface/icons/modifier_types/nobles_estate_agenda_impact.dds"
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_agenda_impact.dds"
+	negative = "gfx/interface/icons/modifier_types/calaquendi_estate_agenda_impact.dds"
 }
 
 calaquendi_estate_blocked_from_parliament = {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_blocked_from_cabinet.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_blocked_from_cabinet.dds" 
 }
 
 calaquendi_estate_blocked_from_cabinet = {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_blocked_from_cabinet.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_blocked_from_cabinet.dds" 
 }
 calaquendi_estate_allowed_in_cabinet = {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_allowed_in_cabinet.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_allowed_in_cabinet.dds" 
 }
 calaquendi_estate_blocked_from_leading_military = {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_blocked_from_cabinet.dds"
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_blocked_from_cabinet.dds"
 }
 calaquendi_estate_allowed_leading_military = {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_allowed_in_cabinet.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_allowed_in_cabinet.dds" 
 }
 calaquendi_estate_allowed_to_build_roads = {
-	positive = "gfx/interface/icons/modifier_types/nobles_estate_allowed_in_cabinet.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_allowed_in_cabinet.dds" 
 }
 monthly_calaquendi_estate_rebel_growth = {
 	positive = "gfx/interface/icons/modifier_types/rebel_monthly_progress.dds" 
@@ -65,70 +65,70 @@ monthly_calaquendi_estate_rebel_growth = {
 
 
 local_calaquendi_desired_pop_scaled = {
-	positive = "gfx/interface/icons/modifier_types/nobles_desired_pop.dds"
+	positive = "gfx/interface/icons/modifier_types/calaquendi_desired_pop.dds"
 }
 
 
 local_calaquendi_desired_pop = {
-	positive = "gfx/interface/icons/modifier_types/nobles_desired_pop.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_desired_pop.dds" 
 }
 
 global_calaquendi_desired_pop_scaled = {
-	positive = "gfx/interface/icons/modifier_types/nobles_desired_pop.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_desired_pop.dds" 
 }
 
 
 global_calaquendi_desired_pop = {
-	positive = "gfx/interface/icons/modifier_types/nobles_desired_pop.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_desired_pop.dds" 
 }
 
 global_calaquendi_city_desired_pop_scaled = {
-	positive = "gfx/interface/icons/modifier_types/nobles_desired_pop.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_desired_pop.dds" 
 }
 
 
 global_calaquendi_city_desired_pop = {
-	positive = "gfx/interface/icons/modifier_types/nobles_desired_pop.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_desired_pop.dds" 
 }
 
 global_calaquendi_rural_desired_pop_scaled = {
-	positive = "gfx/interface/icons/modifier_types/nobles_desired_pop.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_desired_pop.dds" 
 }
 global_calaquendi_rural_desired_pop = {
-	positive = "gfx/interface/icons/modifier_types/nobles_desired_pop.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_desired_pop.dds" 
 }
 
 local_calaquendi_max_literacy = {
-	positive = "gfx/interface/icons/modifier_types/global_nobles_max_literacy.dds" 
+	positive = "gfx/interface/icons/modifier_types/global_calaquendi_max_literacy.dds" 
 }
 global_calaquendi_max_literacy = {
-	positive = "gfx/interface/icons/modifier_types/global_nobles_max_literacy.dds" 
+	positive = "gfx/interface/icons/modifier_types/global_calaquendi_max_literacy.dds" 
 }
 global_calaquendi_food_consumption = {
-	positive = "gfx/interface/icons/modifier_types/global_nobles_food_consumption.dds" 
+	positive = "gfx/interface/icons/modifier_types/global_calaquendi_food_consumption.dds" 
 }
 local_calaquendi_food_consumption = {
-	positive = "gfx/interface/icons/modifier_types/global_nobles_food_consumption.dds" 
+	positive = "gfx/interface/icons/modifier_types/global_calaquendi_food_consumption.dds" 
 }
 global_calaquendi_conversion_blocked = {
-	positive = "gfx/interface/icons/modifier_types/global_nobles_conversion_blocked.dds" 
+	positive = "gfx/interface/icons/modifier_types/global_calaquendi_conversion_blocked.dds" 
 }
 local_calaquendi_conversion_blocked = {
-	positive = "gfx/interface/icons/modifier_types/global_nobles_conversion_blocked.dds"
+	positive = "gfx/interface/icons/modifier_types/global_calaquendi_conversion_blocked.dds"
 }
 local_calaquendi_migration_allowed = {
-	positive = "gfx/interface/icons/modifier_types/global_nobles_migration_allowed_positive.dds" 
-	negative = "gfx/interface/icons/modifier_types/global_nobles_migration_allowed_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_allowed_in_cabinet.dds" 
+	negative = "gfx/interface/icons/modifier_types/calaquendi_estate_blocked_from_cabinet.dds" 
 }
 global_calaquendi_migration_allowed = {
-	positive = "gfx/interface/icons/modifier_types/global_nobles_migration_allowed_positive.dds" 
-	negative = "gfx/interface/icons/modifier_types/global_nobles_migration_allowed_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_allowed_in_cabinet.dds" 
+	negative = "gfx/interface/icons/modifier_types/calaquendi_estate_blocked_from_cabinet.dds" 
 }
 global_calaquendi_assimilation_blocked = {
-	positive = "gfx/interface/icons/modifier_types/global_nobles_conversion_blocked.dds"
+	positive = "gfx/interface/icons/modifier_types/global_calaquendi_conversion_blocked.dds"
 }
 local_calaquendi_assimilation_blocked = {
-	positive = "gfx/interface/icons/modifier_types/global_nobles_conversion_blocked.dds" 
+	positive = "gfx/interface/icons/modifier_types/global_calaquendi_conversion_blocked.dds" 
 }
 
 

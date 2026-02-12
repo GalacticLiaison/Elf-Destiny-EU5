@@ -2,6 +2,7 @@
 monthly_country_pulse = {
 	on_actions = {
 		assign_aeluran_advisor
+		set_calaquendi_education
 		# elf_destiny_expedition_trigger
 	}
 }
@@ -40,6 +41,16 @@ assign_aeluran_advisor = {
 		trigger_event_non_silently = {
 			id = aeluran_events.1
 		}			
+	}
+}
+
+set_calaquendi_education = {
+	trigger = {
+		has_estate_privilege = estate_privilege:calaquendi_apprenticeships
+	}
+
+	effect = {
+		set_calaquendi_education_effect = yes
 	}
 }
 

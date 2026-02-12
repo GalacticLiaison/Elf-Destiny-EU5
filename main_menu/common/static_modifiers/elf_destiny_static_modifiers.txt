@@ -13,7 +13,7 @@ elf_tier_1 = {
 		category = character
 	}
 
-	character_life_expectancy = 10
+	character_life_expectancy = 15
 }
 
 elf_tier_2 = {
@@ -21,39 +21,39 @@ elf_tier_2 = {
 		category = character
 	}
 
-	character_life_expectancy = 25
+	character_life_expectancy = 30
 }
 
 elf_tier_3 = {
 	game_data = {
 		category = character
 	}
-	is_immortal = yes
-	# character_life_expectancy = 50
+	# is_immortal = yes
+	character_life_expectancy = 50
 }
 
 elf_tier_4 = {
 	game_data = {
 		category = character
 	}
-	is_immortal = yes
-	# character_life_expectancy = 50
+	# is_immortal = yes
+	character_life_expectancy = 100
 }
 
 elf_tier_5 = {
 	game_data = {
 		category = character
 	}
-	is_immortal = yes
-	# character_life_expectancy = 50
+	# is_immortal = yes
+	character_life_expectancy = 200
 }
 
 elf_tier_6 = {
 	game_data = {
 		category = character
 	}
-	is_immortal = yes
-	# character_life_expectancy = 50
+	# is_immortal = yes
+	character_life_expectancy = 250
 }
 
 elf_tier_7 = {
@@ -111,11 +111,11 @@ royal_elf_valerith = {
 		category = character
 	}
 
-	global_estate_target_satisfaction = tiny_permanent_target_satisfaction
-	monthly_towards_free_subjects = societal_value_minor_monthly_move
-	peace_offer_fairness = 0.2
-	stability_importance_modifier = 0.1
-
+	character_dip_child_education = 0.15
+	monthly_prestige = 0.1
+	global_upper_class_capacity_modifier = 0.05
+	diplomacy_importance_modifier = 0.1
+	silver_hair_modifier = yes
 	dip = 10
 }
 
@@ -126,6 +126,16 @@ royal_elf_serelion = {
 
 	dip = 5
 	mil = 5
+	stability_decay = -0.00025
+	global_monthly_control = 0.002
+	counter_espionage = 0.1
+	spy_network_construction = 0.1
+	control_importance_modifier = 0.1
+	sow_discontent_monthly_cost_cost_modifier = -0.5
+	purple_eyecolor_modifier = yes
+
+	pop_join_rebel_threshold = -0.05
+	monthly_rebel_growth = 0.005
 }
 
 royal_elf_gwynthorn = {
@@ -134,6 +144,14 @@ royal_elf_gwynthorn = {
 	}
 
 	adm = 10
+	character_adm_child_education = 0.15
+	character_cabinet_efficiency = 0.25
+	global_estate_max_tax = 0.05
+	global_max_rgo_size_modifier = 0.1
+	tax_income_efficiency = 0.05
+	global_production_efficiency = 0.05
+	character_life_expectancy = -10
+	gold_importance_modifier = 0.1
 }
 
 royal_elf_thundarael = {
@@ -142,6 +160,12 @@ royal_elf_thundarael = {
 	}
 
 	adm = 5
+	character_child_education = 0.5
+	country_child_education = 0.1
+	army_magi_power = 0.15
+	research_speed_modifier = 0.03
+	global_max_literacy = 3
+	carefulness_modifier = 0.1
 }
 
 royal_elf_daelurin = {
@@ -150,6 +174,18 @@ royal_elf_daelurin = {
 	}
 
 	mil = 10
+	adm = -5
+	character_mil_child_education = 0.15
+	enemy_army_losses_in_war_cost_modifier = 0.10
+	global_war_score_cost = 0.1
+	army_tradition_from_battle = 0.5
+	prestige_from_land_battle = 0.1
+	grow_larger_modifier = yes
+	can_execute_characters = yes
+
+	antagonism_received_modifier = 0.1
+
+	aggressiveness_modifier = 0.1
 }
 
 royal_elf_lormelis = {
@@ -159,6 +195,16 @@ royal_elf_lormelis = {
 
 	dip = 5
 	mil = 5
+	army_losses_in_war_cost_modifier = 0
+	navy_heavy_ship_build_cost_modifier = 0.10
+	navy_heavy_ship_maintenance_cost_modifier = 0.10
+	hire_privateer_cost_modifier = 0.5
+	can_hire_privateers = yes
+	may_explore = yes
+	exploration_mission_speed_modifier = 0.5
+	global_maritime_presence_decay = 0.10
+	navy_tradition_from_battle = 0.5
+	blue_eyecolor_modifier = yes
 }
 
 
@@ -169,28 +215,40 @@ beauty_bad_1 = {
 		category = character
 	}
 
-	dip = 10
+	dip = -5
+	diplomatic_reputation = -1
+	subject_loyalty = -1
+	character_fertility = -10
 }
 beauty_bad_2 = {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = -10
+	diplomatic_reputation = -2
+	subject_loyalty = -2
+	character_fertility = -20
 }
 beauty_bad_3 = {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = -20
+	diplomatic_reputation = -3
+	subject_loyalty = -3
+	character_fertility = -30
 }
 beauty_good_1 = {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = 5
+	diplomatic_reputation = 1
+	subject_loyalty = 1
+	character_fertility = 10
 }
 beauty_good_2 = {
 	game_data = {
@@ -198,20 +256,29 @@ beauty_good_2 = {
 	}
 
 	dip = 10
+	diplomatic_reputation = 2
+	subject_loyalty = 2
+	character_fertility = 20
 }
 beauty_good_3 = {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = 20
+	diplomatic_reputation = 3
+	subject_loyalty = 3
+	character_fertility = 30
 }
 beauty_good_4 = {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = 25
+	diplomatic_reputation = 4
+	subject_loyalty = 4
+	character_fertility = 40
 }
 
 intellect_bad_1= {
@@ -219,35 +286,60 @@ intellect_bad_1= {
 		category = character
 	}
 
-	dip = 10
+	dip = -3
+	mil = -3
+	adm = -3
+	military_tactics = -0.1
+	discipline = -0.05
+	research_speed_modifier = -0.05
 }
 intellect_bad_2= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = -5
+	mil = -5
+	adm = -5
+	military_tactics = -0.25
+	discipline = -0.10
+	research_speed_modifier = -0.25
 }
 intellect_bad_3= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = -10
+	mil = -10
+	adm = -10
+	military_tactics = -0.5
+	discipline = -0.15
+	research_speed_modifier = -0.1
 }
 intellect_good_1= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = 3
+	mil = 3
+	adm = 3
+	military_tactics = 0.1
+	discipline = 0.05
+	research_speed_modifier = 0.05
 }
 intellect_good_2= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = 5
+	mil = 5
+	adm = 5
+	military_tactics = 0.25
+	discipline = 0.10
+	research_speed_modifier = 0.25
 }
 intellect_good_3= {
 	game_data = {
@@ -255,13 +347,23 @@ intellect_good_3= {
 	}
 
 	dip = 10
+	mil = 10
+	adm = 10
+	military_tactics = 0.5
+	discipline = 0.15
+	research_speed_modifier = 0.1
 }
 intellect_good_4= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = 15
+	mil = 15
+	adm = 15
+	military_tactics = 0.75
+	discipline = 0.20
+	research_speed_modifier = 0.15
 }
 
 physique_bad_1= {
@@ -269,49 +371,64 @@ physique_bad_1= {
 		category = character
 	}
 
-	dip = 10
+	character_fertility = -5
+	character_life_expectancy = -5
 }
 physique_bad_2= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	character_fertility = -10
+	character_life_expectancy = -10
 }
 physique_bad_3= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	character_fertility = -15
+	character_life_expectancy = -15
 }
 physique_good_1= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	mil = 5
+	monthly_prestige = 0.1
+	character_fertility = 5
+	character_life_expectancy = 5
 }
 physique_good_2= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	mil = 10
+	monthly_prestige = 0.25
+	character_fertility = 10
+	character_life_expectancy = 10
 }
 physique_good_3= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	mil = 15
+	monthly_prestige = 0.5
+	character_fertility = 15
+	character_life_expectancy = 15
 }
 physique_good_4= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	mil = 20
+	monthly_prestige = 0.75
+	character_fertility = 20
+	character_life_expectancy = 20
 }
 
 unconventional_beauty_good_1= {
@@ -319,42 +436,60 @@ unconventional_beauty_good_1= {
 		category = character
 	}
 
-	dip = 10
+	dip = 6
+	diplomatic_reputation = 1.5
+	subject_loyalty = 1.5
+	character_fertility = 11
 }
 unconventional_beauty_good_2= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = 11
+	diplomatic_reputation = 2.5
+	subject_loyalty = 2.5
+	character_fertility = 22
 }
 unconventional_beauty_good_3= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = 22
+	diplomatic_reputation = 3.5
+	subject_loyalty = 3.5
+	character_fertility = 33
 }
 exotic_beauty_good_1= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = 7
+	diplomatic_reputation = 2
+	subject_loyalty = 2
+	character_fertility = 13
 }
 exotic_beauty_good_2= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = 13
+	diplomatic_reputation = 3
+	subject_loyalty = 3
+	character_fertility = 25
 }
 exotic_beauty_good_3= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	dip = 25
+	diplomatic_reputation = 3.5
+	subject_loyalty = 3.5
+	character_fertility = 35
 }
 
 pure_blooded= {
@@ -363,13 +498,17 @@ pure_blooded= {
 	}
 
 	dip = 10
+	character_life_expectancy = 10
+	character_fertility = 25
+	monthly_prestige = 0.5
 }
 fecund= {
 	game_data = {
 		category = character
 	}
 
-	dip = 10
+	character_life_expectancy = 5
+	character_fertility = 100
 }
 
 giant= {
@@ -377,7 +516,9 @@ giant= {
 		category = character
 	}
 
-	dip = 10
+	mil = 10
+	monthly_prestige = 1
+	character_life_expectancy = -10
 }
 
 

@@ -9,12 +9,12 @@
 	marketplace = 1
 	sergeantry = 1
 
-	mallorn_tree_grove = 1
-	baths_of_starlight = 1
-	perfume_garden_of_valinor = 1
-	wine_cellar_of_elder_days = 1
-	feasting_hall_of_the_trees = 1
-	grand_archives = 1
+	# mallorn_tree_grove = 1
+	# baths_of_starlight = 1
+	# perfume_garden_of_valinor = 1
+	# wine_cellar_of_elder_days = 1
+	# feasting_hall_of_the_trees = 1
+	# grand_archives = 1
 
 	elven_workshop = 1
 	lembas_bakery = 1

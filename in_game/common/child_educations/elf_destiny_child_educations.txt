@@ -1,0 +1,16 @@
+calaquendi_apprenticeship_education =
+{
+	allow = {
+		owner = {
+        	has_estate_privilege = estate_privilege:calaquendi_apprenticeships
+		}
+	}
+
+	modifier = {
+		character_child_education = 1
+	}
+	country_modifier = {
+		# court_spending_cost = 0.01
+		global_calaquendi_estate_power = 0.01
+	}
+}
