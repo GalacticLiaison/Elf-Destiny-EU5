@@ -270,11 +270,11 @@ higher_chance_of_rare_genetic_beauty_traits = {
 }
 
 enchantress_ruler_trait_unlocked = {
-	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+	positive = "gfx/interface/icons/traits/enchantress.dds" 
 }
 
 heroic_ruler_trait_unlocked = {
-	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+	positive = "gfx/interface/icons/traits/heroic.dds" 
 }
 
 silver_hair_modifier = {

@@ -1,0 +1,57 @@
+﻿enchantress = {
+	allow = {
+        owner = {
+            has_religious_aspect = religious_aspect:beguiling_nature
+        }
+        is_female = yes
+	}
+	
+	category = ruler
+	flavor = interests
+	
+	modifier = {
+        dip = 25
+        diplomatic_reputation = diplomatic_reputation_severe_bonus
+        subjugation_preference_modifier = 0.1
+		diplomacy_importance_modifier = 0.1
+	}
+}
+
+enchanter = {
+	allow = {
+        owner = {
+            has_religious_aspect = religious_aspect:beguiling_nature
+        }
+        is_female = no
+	}
+	
+	category = ruler
+	flavor = interests
+	
+	modifier = {
+        dip = 25
+        diplomatic_reputation = diplomatic_reputation_severe_bonus
+        subjugation_preference_modifier = 0.1
+		diplomacy_importance_modifier = 0.1
+	}
+}
+
+heroic = {
+	allow = {
+        owner = {
+            has_religious_aspect = religious_aspect:heroic_courage
+        }
+	}
+	
+	category = ruler
+	flavor = personality
+
+	modifier = {
+        mil = 25
+        land_morale_recovery = 0.20
+		army_initiative = 0.2
+		monthly_towards_offensive = societal_value_minor_monthly_move
+		win_war_chance_threshold = -0.1
+        army_movement_speed = 0.1
+	}
+}

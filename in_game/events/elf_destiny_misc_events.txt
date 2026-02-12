@@ -9,7 +9,7 @@ elf_destiny_misc.1 = {
 
 	}
 
-	# image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
 
 	immediate = {
 
@@ -18,5 +18,80 @@ elf_destiny_misc.1 = {
 	option = {
 		name = elf_destiny_misc.1.a
 
+	}
+}
+
+
+elf_destiny_misc.20 = {
+	type = country_event
+	title = elf_destiny_misc.20.title
+	desc = elf_destiny_misc.20.desc
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+	immediate = {
+		if = {
+			limit = {
+				scope:recipient = {
+					is_female = yes
+				}
+			}
+			trait:enchantress = {
+				save_scope_as = trait
+			}
+		}
+		else = {
+			trait:enchanter = {
+				save_scope_as = trait
+			}
+		}
+	}
+	
+	option = {
+		name = elf_destiny_misc.20.a
+
+		if = {
+			limit = {
+				scope:recipient = {
+					is_female = yes
+				}
+			}
+			scope:recipient = {
+				add_trait = trait:enchantress
+			}
+		}
+		else = {
+			scope:recipient = {
+				add_trait = trait:enchanter
+			}
+		}
+	}
+}
+
+elf_destiny_misc.21 = {
+	type = country_event
+	title = elf_destiny_misc.21.title
+	desc = elf_destiny_misc.21.desc
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+	immediate = {
+		trait:heroic = {
+			save_scope_as = trait
+		}
+	}
+	
+	option = {
+		name = elf_destiny_misc.21.a
+
+		scope:recipient = {
+			add_trait = trait:heroic
+		}
 	}
 }

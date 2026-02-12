@@ -5,6 +5,7 @@
 		increase_elf_food_supply
 		elf_destiny_goods_change
 		start_elf_destiny_storyline
+		elf_destiny_misc_game_start_tweaks
 	}
 }
 
@@ -34,7 +35,12 @@ elf_destiny_goods_change = {
 
 start_elf_destiny_storyline = {
 	effect = {
-		debug_log = "start_elf_destiny_storyline"
 		start_elf_destiny_storyline_effect = yes
+	}
+}
+
+elf_destiny_misc_game_start_tweaks = {
+	effect = {
+		elf_destiny_misc_game_start_tweaks_effect = yes
 	}
 }

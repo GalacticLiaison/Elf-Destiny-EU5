@@ -162,6 +162,18 @@ start_elf_destiny_storyline_effect = {
 	}
 }
 
+elf_destiny_misc_game_start_tweaks_effect = {
+	# Lame work around necessary to be able to access traits in tooltips 
+	set_global_variable = {
+		name = enchantress_trait
+		value = trait:enchantress
+	}
+	set_global_variable = {
+		name = heroic_trait
+		value = trait:heroic
+	}
+}
+
 set_calaquendi_education_effect = {
 	every_character = {
 		limit = {
@@ -169,5 +181,69 @@ set_calaquendi_education_effect = {
 			has_child_education = balanced_education
 		}
 		set_child_education = child_education:calaquendi_apprenticeship_education
+	}
+}
+
+assign_enchantress_trait_effect = {
+	every_character = {
+		limit = {
+			is_adult = yes
+			num_of_traits_of_category = { type = ruler value < 3 }
+			NOT = { has_trait = enchantress }
+		}
+		random = {
+			chance = 10
+
+			save_scope_as = recipient
+
+			if = {
+				limit = {
+					is_ruler = yes
+					owner = {
+						is_ai = no
+					}
+				}
+				owner = {
+					trigger_event_non_silently = {
+						id = elf_destiny_misc.20
+					}
+				}
+			}
+			else = {
+				add_trait = trait:enchantress
+			}
+		}
+	}
+}
+
+assign_heroic_trait_effect = {
+	every_character = {
+		limit = {
+			is_adult = yes
+			num_of_traits_of_category = { type = ruler value < 3 }
+			NOT = { has_trait = heroic }
+		}
+		random = {
+			chance = 10
+
+			save_scope_as = recipient
+
+			if = {
+				limit = {
+					is_ruler = yes
+					owner = {
+						is_ai = no
+					}
+				}
+				owner = {
+					trigger_event_non_silently = {
+						id = elf_destiny_misc.21
+					}
+				}
+			}
+			else = {
+				add_trait = trait:heroic
+			}
+		}
 	}
 }

@@ -65,3 +65,31 @@ set_calaquendi_education = {
 # 	}
 # }
 # add_to_cabinet
+
+
+four_yearly_country_pulse = {
+	on_actions = {
+		assign_enchantress_trait
+		assign_heroic_trait
+	}
+}
+
+assign_enchantress_trait = {
+	trigger = {
+		has_religious_aspect = religious_aspect:beguiling_nature
+	}
+
+	effect = {
+		assign_enchantress_trait_effect = yes
+	}
+}
+
+assign_heroic_trait = {
+	trigger = {
+		has_religious_aspect = religious_aspect:heroic_courage
+	}
+
+	effect = {
+		assign_heroic_trait_effect = yes
+	}
+}
