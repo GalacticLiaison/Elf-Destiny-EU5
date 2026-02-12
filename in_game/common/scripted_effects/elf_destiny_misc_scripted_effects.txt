@@ -210,7 +210,15 @@ assign_enchantress_trait_effect = {
 				}
 			}
 			else = {
-				add_trait = trait:enchantress
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = trait:enchantress
+				}
+				else = {
+					add_trait = trait:enchanter
+				}
 			}
 		}
 	}
