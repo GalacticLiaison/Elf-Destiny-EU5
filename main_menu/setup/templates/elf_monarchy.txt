@@ -3,7 +3,7 @@
 	heir_selection = cognatic_primogeniture
 	
 	parliament = {
-		parliament_type = estate_parliament
+		parliament_type = elven_parliament
 	}
 	
 	#Estate Privileges

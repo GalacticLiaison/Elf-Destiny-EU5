@@ -13,7 +13,9 @@
         add = {
             if = {
                 limit = {
-                    culture = { has_culture_group = culture_group:elven_culture_group}
+					owner = {
+                    	culture = { has_culture_group = culture_group:elven_culture_group}
+					}
                 }
                 value = 25
             }

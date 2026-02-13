@@ -114,6 +114,20 @@
  MODIFIER_TYPE_NAME_purple_eyecolor_modifier: "Character Has Purple Eyes"
  MODIFIER_TYPE_DESC_purple_eyecolor_modifier: "TODO : Write a desc"
 
+ MODIFIER_TYPE_NAME_local_the_rut_impact_modifier: "Local the rut impact modifier"
+ MODIFIER_TYPE_DESC_local_the_rut_impact_modifier: "TODO : Write a desc"
+ MODIFIER_TYPE_NAME_the_rut_resistance_modifier: "The rut resistance modifier"
+ MODIFIER_TYPE_DESC_the_rut_resistance_modifier: "TODO : Write a desc"
+
+ pa_push_towards_quality: "Push to Pursue Quality"
+ pa_push_towards_quality_desc: "TODO : Write a desc"
+ pa_move_towards_quality: "Support Pursuit of Quality"
+ pa_move_towards_quality_desc: "TODO : Write a desc"
+ pa_calaquendi_push_towards_aristocracy: "Aristocratic Movement"
+ pa_calaquendi_push_towards_aristocracy_desc: "TODO : Write a desc"
+ pa_calaquendi_move_towards_aristocracy: "Aristocratic Support"
+ pa_calaquendi_move_towards_aristocracy_desc: "TODO : Write a desc"
+
  elven_group: "Elf"
  elven_group_ADJ: "Elven"
  elven_group_desc: "TEST TODO : Write a desc"
@@ -956,6 +970,8 @@
  mythril_craftsmanship_desc: "TODO : Write a desc"
  beast_masters: "Beast masters"
  beast_masters_desc: "TODO : Write a desc"
+
+ discovered_beast_masters_tradition: "Discovered the lost tecnology of Beast Mastery"
 
  elf_destiny_story.1.title: "What Is an Archaeologist?"
  elf_destiny_story.1.desc: "Your steward approaches with a worried look. \n\"My liege, an odd woman has arrived seeking an audience—she calls herself Julia Melwood and claims to be a trained archaeologist. I'm fairly sure she's made that title up.\" You both watch as the self‑proclaimed expert knocks over a vase. \n\nYour steward shakes their head. \"She claims to have found a discovery concerning the Elves. As far as I'm concerned, they're nothing more than children's fairy tales, but she was insistent, so I thought it best to bring her to you. What shall I tell her?\""

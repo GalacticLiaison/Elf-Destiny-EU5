@@ -288,3 +288,11 @@ blue_eyecolor_modifier = {
 purple_eyecolor_modifier = {
 	positive = "gfx/interface/icons/modifier_types/purple_eyecolor_modifier_icon.dds" 
 }
+
+local_the_rut_impact_modifier = {
+	positive = "gfx/interface/icons/modifier_types/local_bubonic_plague_impact_modifier.dds"
+}
+
+the_rut_resistance_modifier = {
+	positive = "gfx/interface/icons/modifier_types/bubonic_plague_resistance_modifier.dds"
+}

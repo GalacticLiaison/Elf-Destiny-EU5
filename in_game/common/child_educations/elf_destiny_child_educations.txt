@@ -1,4 +1,4 @@
-calaquendi_apprenticeship_education =
+﻿calaquendi_apprenticeship_education =
 {
 	allow = {
 		owner = {

@@ -1,4 +1,4 @@
-namespace = elf_destiny_misc
+﻿namespace = elf_destiny_misc
 
 # The Rut
 elf_destiny_misc.1 = {

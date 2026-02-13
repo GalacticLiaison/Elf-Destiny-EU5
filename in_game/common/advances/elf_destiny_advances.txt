@@ -37,7 +37,7 @@ beast_masters = {
 
 	allow = { 
 		custom_tooltip = {
-			text = found_beast_taming_tradition
+			text = discovered_beast_masters_tradition
 			has_variable = beast_taming_tradition_discovered
 		}
 	}

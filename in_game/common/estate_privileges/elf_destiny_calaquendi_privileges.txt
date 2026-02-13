@@ -18,6 +18,7 @@ elven_high_councils = {
 		calaquendi_estate_agenda_impact = 0.25
 		parliament_base_support = 0.2
 		parliament_request_issue_support_needed = 0.1
+		calaquendi_estate_can_participate_in_parliament = yes
 	}
 }
 

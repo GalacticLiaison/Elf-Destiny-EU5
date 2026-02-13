@@ -120,6 +120,10 @@ countries = {
 				individualism_vs_communalism = 50
 				outward_vs_inward = 100
 
+				# parliament = {
+				# 	parliament_type = elven_parliament
+				# }	
+
 				privilege = {
 
 				}

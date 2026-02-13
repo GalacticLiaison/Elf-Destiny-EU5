@@ -2131,3 +2131,19 @@ purple_eyecolor_modifier={
 		category=character
 	}
 }
+
+local_the_rut_impact_modifier={
+	color=good
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+the_rut_resistance_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=location
+	}
+}

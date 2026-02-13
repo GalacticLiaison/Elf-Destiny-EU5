@@ -145,7 +145,7 @@ a_age_1_aeluran_magi = {
 
 a_age_2_aeluran_magi = {
 	category = army_magi
-	copy_from = a_age_2_traditions_magi
+	copy_from = a_age_2_renaissance_magi
 
 	initiative = 3
 	
@@ -173,7 +173,7 @@ a_age_2_aeluran_magi = {
 
 a_age_3_aeluran_magi = {
 	category = army_magi
-	copy_from = a_age_3_traditions_magi
+	copy_from = a_age_3_discovery_magi
 
 	initiative = 3
 	
@@ -201,7 +201,7 @@ a_age_3_aeluran_magi = {
 
 a_age_4_aeluran_magi = {
 	category = army_magi
-	copy_from = a_age_4_traditions_magi
+	copy_from = a_age_4_reformation_magi
 
 	initiative = 3
 	
@@ -229,7 +229,7 @@ a_age_4_aeluran_magi = {
 
 a_age_5_aeluran_magi = {
 	category = army_magi
-	copy_from = a_age_5_traditions_magi
+	copy_from = a_age_5_absolutism_magi
 
 	initiative = 3
 	
@@ -257,7 +257,7 @@ a_age_5_aeluran_magi = {
 
 a_age_6_aeluran_magi = {
 	category = army_magi
-	copy_from = a_age_6_traditions_magi
+	copy_from = a_age_6_revolutions_magi
 
 	initiative = 3
 	
@@ -328,7 +328,7 @@ calaquendi_high_magi = {
 wolf_riders = {
 	category = army_cavalry
 	
-	copy_from = a_age_1_traditions_cavalry
+	copy_from = a_age_3_discovery_cavalry
 	
 	combat_speed = 0.25
 
@@ -368,7 +368,7 @@ wolf_riders = {
 mythril_plated_fey_vanguard = {
 	category = army_infantry
 	
-	copy_from = a_age_1_traditions_cavalry
+	copy_from = a_age_4_reformation_infantry
 	
 	combat_speed = 0.25
 	strength_damage_taken = -0.85
@@ -407,7 +407,7 @@ mythril_plated_fey_vanguard = {
 mythril_plated_horse_masters = {
 	category = army_cavalry
 	
-	copy_from = a_age_1_traditions_cavalry
+	copy_from = a_age_4_reformation_cavalry
 	
 	combat_speed = 0.25
 	strength_damage_taken = -0.85

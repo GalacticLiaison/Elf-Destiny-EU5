@@ -1,1 +1,260 @@
-﻿
+﻿# pa_construct_mallorn_tree_grove = {
+# 	estate = calaquendi_estate
+	
+# 	potential = {
+#         culture = { has_culture_group = culture_group:elven_culture_group }
+#         any_owned_location = {
+#             OR = {
+#                 is_city = yes
+#             }
+#             NOT = { has_building = building_type:mallorn_tree_grove }
+#         }
+# 	}
+	
+# 	on_accept = {
+# 		random_owned_location = {
+# 			limit = {
+#                 OR = {
+#                     is_city = yes
+
+#                 }
+#                 NOT = { has_building = building_type:mallorn_tree_grove }
+# 			}
+#             construct_building = {
+#                 building_type = building_type:mallorn_tree_grove
+#                 # cost_multiplier = 1
+#                 # cost_multiplier_reason = "game_concept_parliament_agenda"
+#                 instant = no
+#             }
+# 		}
+# 	}
+# 	chance = 10
+# }
+
+# pa_construct_baths_of_starlight = {
+# 	estate = calaquendi_estate
+	
+# 	potential = {
+#         culture = { has_culture_group = culture_group:elven_culture_group }
+#         any_owned_location = {
+#             OR = {
+#                 is_city = yes
+#             }
+#             NOT = { has_building = building_type:baths_of_starlight }
+#         }
+# 	}
+	
+# 	on_accept = {
+# 		random_owned_location = {
+# 			limit = {
+#                 OR = {
+#                     is_city = yes
+
+#                 }
+#                 NOT = { has_building = building_type:baths_of_starlight }
+# 			}
+#             construct_building = {
+#                 building_type = building_type:baths_of_starlight
+#                 instant = no
+#             }
+# 		}
+# 	}
+# 	chance = 10
+# }
+
+# pa_construct_perfume_garden_of_valinor = {
+# 	estate = calaquendi_estate
+	
+# 	potential = {
+#         culture = { has_culture_group = culture_group:elven_culture_group }
+#         any_owned_location = {
+#             OR = {
+#                 is_city = yes
+#             }
+#             NOT = { has_building = building_type:perfume_garden_of_valinor }
+#         }
+# 	}
+	
+# 	on_accept = {
+# 		random_owned_location = {
+# 			limit = {
+#                 OR = {
+#                     is_city = yes
+
+#                 }
+#                 NOT = { has_building = building_type:perfume_garden_of_valinor }
+# 			}
+#             construct_building = {
+#                 building_type = building_type:perfume_garden_of_valinor
+#                 instant = no
+#             }
+# 		}
+# 	}
+# 	chance = 10
+# }
+
+# pa_construct_wine_cellar_of_elder_days = {
+# 	estate = calaquendi_estate
+	
+# 	potential = {
+#         culture = { has_culture_group = culture_group:elven_culture_group }
+#         any_owned_location = {
+#             OR = {
+#                 is_city = yes
+#             }
+#             NOT = { has_building = building_type:wine_cellar_of_elder_days }
+#         }
+# 	}
+	
+# 	on_accept = {
+# 		random_owned_location = {
+# 			limit = {
+#                 OR = {
+#                     is_city = yes
+
+#                 }
+#                 NOT = { has_building = building_type:wine_cellar_of_elder_days }
+# 			}
+#             construct_building = {
+#                 building_type = building_type:wine_cellar_of_elder_days
+#                 instant = no
+#             }
+# 		}
+# 	}
+# 	chance = 10
+# }
+
+# pa_construct_feasting_hall_of_the_trees = {
+# 	estate = calaquendi_estate
+	
+# 	potential = {
+#         culture = { has_culture_group = culture_group:elven_culture_group }
+#         any_owned_location = {
+#             OR = {
+#                 is_city = yes
+#             }
+#             NOT = { has_building = building_type:feasting_hall_of_the_trees }
+#         }
+# 	}
+	
+# 	on_accept = {
+# 		random_owned_location = {
+# 			limit = {
+#                 OR = {
+#                     is_city = yes
+
+#                 }
+#                 NOT = { has_building = building_type:feasting_hall_of_the_trees }
+# 			}
+#             construct_building = {
+#                 building_type = building_type:feasting_hall_of_the_trees
+#                 instant = no
+#             }
+# 		}
+# 	}
+# 	chance = 10
+# }
+
+# pa_construct_grand_archives = {
+# 	estate = calaquendi_estate
+	
+# 	potential = {
+#         culture = { has_culture_group = culture_group:elven_culture_group }
+#         any_owned_location = {
+#             OR = {
+#                 is_city = yes
+#             }
+#             NOT = { has_building = building_type:grand_archives }
+#         }
+# 	}
+	
+# 	on_accept = {
+# 		random_owned_location = {
+# 			limit = {
+#                 OR = {
+#                     is_city = yes
+
+#                 }
+#                 NOT = { has_building = building_type:grand_archives }
+# 			}
+#             construct_building = {
+#                 building_type = building_type:grand_archives
+#                 instant = no
+#             }
+# 		}
+# 	}
+# 	chance = 10
+# }
+
+pa_push_towards_quality = {
+	estate = calaquendi_estate
+	
+	potential = {
+		societal_value:quality_vs_quantity > 0
+	}
+	
+	on_accept = {
+		add_government_power = government_power_mild_penalty
+		change_societal_value = {
+			type = quality_vs_quantity
+			value = societal_value_minor_move_to_left
+		}
+	}
+	chance = 10
+}
+
+pa_move_towards_quality = {
+	estate = calaquendi_estate
+	
+	potential = {
+		societal_value:quality_vs_quantity < 0
+		societal_value:quality_vs_quantity > -90
+	}
+	
+	on_accept = {
+		add_government_power = government_power_mild_penalty
+		change_societal_value = {
+			type = quality_vs_quantity
+			value = societal_value_tiny_move_to_left
+		}
+	}
+	chance = 10
+}
+
+# Overrides
+pa_calaquendi_push_towards_aristocracy = {
+	estate = nobles_estate
+	estate = calaquendi_estate
+	
+	potential = {
+		societal_value:aristocracy_vs_plutocracy > 0
+	}
+	
+	on_accept = {
+		add_government_power = government_power_mild_penalty
+		change_societal_value = {
+			type = aristocracy_vs_plutocracy
+			value = societal_value_minor_move_to_left
+		}
+	}
+	chance = 10
+}
+
+pa_calaquendi_move_towards_aristocracy = {
+	estate = nobles_estate
+	estate = calaquendi_estate
+	
+	potential = {
+		societal_value:aristocracy_vs_plutocracy < 0
+		societal_value:aristocracy_vs_plutocracy > -90
+	}
+	
+	on_accept = {
+		add_government_power = government_power_mild_penalty
+		change_societal_value = {
+			type = aristocracy_vs_plutocracy
+			value = societal_value_tiny_move_to_left
+		}
+	}
+	chance = 10
+}

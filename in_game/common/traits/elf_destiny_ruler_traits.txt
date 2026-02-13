@@ -1,9 +1,12 @@
 ﻿enchantress = {
 	allow = {
-        owner = {
+        owner ?= {
             has_religious_aspect = religious_aspect:beguiling_nature
         }
         is_female = yes
+        NOT = {
+            has_trait = enchanter
+        }
 	}
 	
 	category = ruler
@@ -19,10 +22,13 @@
 
 enchanter = {
 	allow = {
-        owner = {
+        owner ?= {
             has_religious_aspect = religious_aspect:beguiling_nature
         }
         is_female = no
+        NOT = {
+            has_trait = enchantress
+        }
 	}
 	
 	category = ruler
@@ -38,7 +44,7 @@ enchanter = {
 
 heroic = {
 	allow = {
-        owner = {
+        owner ?= {
             has_religious_aspect = religious_aspect:heroic_courage
         }
 	}

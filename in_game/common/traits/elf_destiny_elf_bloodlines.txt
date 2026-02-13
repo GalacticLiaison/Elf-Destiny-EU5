@@ -110,7 +110,7 @@ royal_elf_daelurin = {
 		global_war_score_cost = 0.1
 		army_tradition_from_battle = 0.5
 		prestige_from_land_battle = 0.1
-		grow_larger_modifier = yes
+		# grow_larger_modifier = yes
 		can_execute_characters = yes
 
 		antagonism_received_modifier = 0.1

@@ -44,7 +44,7 @@ increase_elf_food_supply_effect = {
 							construct_building = {
 								building_type = building_type:forest_village
 								cost_multiplier = 0.0
-								# cost_multiplier_reason = "game_concept_parliament_issue"
+								cost_multiplier_reason = "game_start"
 								instant = yes
 							}
 						}
@@ -74,7 +74,7 @@ increase_elf_food_supply_effect = {
 							construct_building = {
 								building_type = building_type:forest_village
 								cost_multiplier = 0.0
-								# cost_multiplier_reason = "game_concept_parliament_issue"
+								cost_multiplier_reason = "game_start"
 								instant = yes
 							}
 						}
@@ -189,7 +189,10 @@ assign_enchantress_trait_effect = {
 		limit = {
 			is_adult = yes
 			num_of_traits_of_category = { type = ruler value < 3 }
-			NOT = { has_trait = enchantress }
+			NOR = { 
+				has_trait = enchantress
+				has_trait = enchanter
+			}
 		}
 		random = {
 			chance = 10
