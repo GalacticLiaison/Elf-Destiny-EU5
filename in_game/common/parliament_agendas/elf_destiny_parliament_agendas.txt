@@ -186,6 +186,11 @@
 # 	chance = 10
 # }
 
+
+# TODO
+# - spark crystal for religious favor
+# - sends an expedition 
+
 pa_push_towards_quality = {
 	estate = calaquendi_estate
 	

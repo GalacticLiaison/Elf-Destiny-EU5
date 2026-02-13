@@ -116,7 +116,6 @@ elf_destiny_expedition.1 = {
             save_scope_as = recipient
             save_scope_as = portrait_2
         }
-        start_expedition_effect = yes
         trigger_event_non_silently = elf_destiny_expedition.11
     }
     option = {

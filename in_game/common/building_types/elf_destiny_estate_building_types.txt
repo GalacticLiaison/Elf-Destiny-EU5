@@ -29,6 +29,7 @@ mallorn_tree_grove = {
 	
 	modifier = {
 		local_calaquendi_desired_pop = 0.03
+		monthly_religious_influence = 0.1
 	}
 	
 	graphical_tags = { small_religious }
@@ -65,6 +66,7 @@ baths_of_starlight = {
 	
 	modifier = {
 		local_calaquendi_desired_pop = 0.03
+		monthly_religious_influence = 0.1
 	}
 	
 	graphical_tags = { small_religious }
@@ -102,6 +104,7 @@ perfume_garden_of_valinor = {
 	
 	modifier = {
 		local_calaquendi_desired_pop = 0.03
+		monthly_religious_influence = 0.1
 	}
 	
 	graphical_tags = { small_religious }
@@ -138,6 +141,7 @@ wine_cellar_of_elder_days = {
 	
 	modifier = {
 		local_calaquendi_desired_pop = 0.03
+		monthly_religious_influence = 0.1
 	}
 	
 	graphical_tags = { small_religious }
@@ -174,6 +178,7 @@ feasting_hall_of_the_trees = {
 	
 	modifier = {
 		local_calaquendi_desired_pop = 0.03
+		monthly_religious_influence = 0.1
 	}
 	
 	graphical_tags = { small_religious }
@@ -210,6 +215,7 @@ grand_archives = {
 	
 	modifier = {
 		local_calaquendi_desired_pop = 0.03
+		monthly_religious_influence = 0.1
 	}
 	
 	graphical_tags = { small_religious }
@@ -239,6 +245,7 @@ grand_portal_ruins = {
 	build_time = huge_unique_build_time
 	modifier = {
 		local_crown_estate_power = 0.25
+		monthly_religious_influence = 0.1
 	}
 	possible_production_methods = {
 		great_zimbabwe_maintenance
@@ -268,6 +275,7 @@ grand_portal = {
 	build_time = huge_unique_build_time
 	modifier = {
 		local_crown_estate_power = 0.25
+		monthly_religious_influence = 0.25
 	}
 	possible_production_methods = {
 		great_zimbabwe_maintenance
