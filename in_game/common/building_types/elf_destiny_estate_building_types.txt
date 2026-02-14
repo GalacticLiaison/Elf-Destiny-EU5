@@ -236,7 +236,7 @@ grand_portal_ruins = {
 	location_potential = {
 		OR = {
 			has_variable = grand_portal_eligible
-			this = location:vukyl
+			this = location:mezen
 		}
 	}
 	country_potential = {
@@ -260,22 +260,26 @@ grand_portal = {
 	max_levels = 1
 	employment_size = normal_noble_employment
 	category = religious_category
+	obsolete = grand_portal_ruins
+
 	rural_settlement = yes
 	town = yes
 	city = yes
 	expensive = yes
 	location_potential = {
 		has_building_with_at_least_one_level = grand_portal_ruins
-		has_variable = grand_portal_eligible
 	}
 	country_potential = {
 		# has_variable = elven_portal_artifact_1_discovered
         # has_variable = elven_portal_artifact_2_discovered
 	}
-	build_time = huge_unique_build_time
+	# build_time = huge_unique_build_time
+	build_time = 3 # for testing
 	modifier = {
-		local_crown_estate_power = 0.25
-		monthly_religious_influence = 0.25
+		global_crown_estate_power = 0.5
+		monthly_religious_influence = 0.5
+		monthly_prestige = 1
+		trade_efficiency = large_trade_efficiency_bonus
 	}
 	possible_production_methods = {
 		great_zimbabwe_maintenance

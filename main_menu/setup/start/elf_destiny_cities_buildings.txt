@@ -175,5 +175,5 @@ building_manager = {
 	# forest_village = { tag = DAI level = 3 location = da_giang }
 	# market_village = { tag = DAI level = 3 location = da_giang }
 
-	grand_portal_ruins = { tag = DWD level = 1 location = vukyl}
+	grand_portal_ruins = { tag = DWD level = 1 location = mezen}
 }

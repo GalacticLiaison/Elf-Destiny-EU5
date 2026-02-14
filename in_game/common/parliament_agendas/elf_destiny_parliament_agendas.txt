@@ -228,7 +228,6 @@ pa_move_towards_quality = {
 
 # Overrides
 pa_calaquendi_push_towards_aristocracy = {
-	estate = nobles_estate
 	estate = calaquendi_estate
 	
 	potential = {
@@ -246,7 +245,6 @@ pa_calaquendi_push_towards_aristocracy = {
 }
 
 pa_calaquendi_move_towards_aristocracy = {
-	estate = nobles_estate
 	estate = calaquendi_estate
 	
 	potential = {

@@ -1,0 +1,6 @@
+﻿has_all_blessings = {
+    has_religious_aspect = religious_aspect:noble_husbandry
+    has_religious_aspect = religious_aspect:heroic_courage
+    has_religious_aspect = religious_aspect:beguiling_nature
+    has_religious_aspect = religious_aspect:the_rut
+}

@@ -590,9 +590,9 @@
  grand_archives: "Grand archives"
  grand_archives_desc: "TODO : Write a desc"
 
- grand_portal_ruins: "Grand portal ruins"
+ grand_portal_ruins: "Grand Portal Ruins"
  grand_portal_ruins_desc: "TODO : Write a desc"
- grand_portal: "Grand portal"
+ grand_portal: "The Grand Portal"
  grand_portal_desc: "TODO : Write a desc"
 
  seat_of_the_fey_lord_maintenance: "Seat of the fey lord maintenance"
@@ -942,7 +942,7 @@
  fund_expedition_act: "Fund Expedition act"
  fund_expedition_act_past: "The expedition has been funded and the supplies for the journey are being gathered."
 
- restore_portal: "Restore The Grand Portal"
+ restore_portal: "#color_highlight Restore The Grand Portal#!"
  restore_portal_desc: "I have learned a great truth of man's history. \n\nBy collecting ancient components, re-discovering lost knowledge, and hunting down the lost seal of a long dead king, I could reforge the Grand Portal and restore our connection to the stars, our ancestors, and the unfathomable dangers of the unknown.\n\nI should not take such a decision lightly..."
  restore_portal_desc_specific: "I have learned a great truth of man's history. \n\nBy collecting ancient components, re-discovering lost knowledge, and hunting down the lost seal of a long dead king, I could reforge the Grand Portal and restore our connection to the stars, our ancestors, and the unfathomable dangers of the unknown.\n\nI should not take such a decision lightly..."
  restore_portal_past: "Restore portal past"
@@ -954,6 +954,12 @@
  transport_portal_past: "Transport portal past"
  transport_portal_act: "Transport portal act"
  transport_portal_act_past: "Transport portal act past"
+
+ transport_the_portal: "#color_highlight Transport the Grand Portal#!"
+ transport_the_portal_desc: "Restoring the portal is worthy goal, but why should we do so in the far North? \n\nIf we were to instead carefully transport the pieces to my capital, at a considerable cost, we could make my realm the center of power in the coming age\n\nWhat is gold compared to that kind of power?"
+
+ portal_transported_to_capital_tooltip: "All of the pieces of the [grand_portal_ruins.GetName] will be transported from [old_location.GetName] to your capital [capital.GetName]"
+ grand_portal_restored_tooltip: "Begins construction to restore the [grand_portal_ruins.GetName] in [portal_ruins_location.GetName]!"
 
  the_rut: "The rut"
  the_rut_desc: "The rut desc"
@@ -1030,13 +1036,14 @@
  all_pops_convert_to_aeluran: "All pops in [ROOT.GetCountry.GetName] convert to Aeluran"
 
  elf_destiny_story.5.title: "Transporting the Grand Portal"
- elf_destiny_story.5.desc: "Very carefully all of the giant stone pieces of the Grand Portal are loaded into massive wagons and begin their pilgrimage to your capitol\n\n The New Age will begin there!"
- elf_destiny_story.5.a: "Please be careful"
+ elf_destiny_story.5.desc: "Very carefully all of the giant stone pieces of the Grand Portal are loaded into massive wagons and begin their pilgrimage to your capital [capital.GetName]\n\nThe New Age will begin there!"
+ elf_destiny_story.5.a: "Please be careful!"
  elf_destiny_story.5.b: "placeholder"
 
  elf_destiny_story.51.title: "Transporting the Grand Portal - Arrived"
- elf_destiny_story.51.desc: "The final wagons carrying the Grand Portal ahve arrived in your capital. "
+ elf_destiny_story.51.desc: "The final wagons carrying the Grand Portal have arrived in your capital safe and sound.\n\nWill you restore them to their ancient glory?"
  elf_destiny_story.51.a: "This is only the first step, Elves will be great once more!"
+ grand_portal_ruins_built_in_capital_tooltip: "[grand_portal_ruins.GetName] constructed in [capital.GetName]"
 
  elf_destiny_story.52.title: "placeholder"
  elf_destiny_story.52.desc: "placeholder"
@@ -1046,6 +1053,13 @@
  elf_destiny_story.53.title: "placeholder"
  elf_destiny_story.53.desc: "placeholder"
  elf_destiny_story.53.a: "placeholder"
+
+ elf_destiny_story.54.title: "Thanks for Playing!"
+ elf_destiny_story.54.desc: "Sorry, thats all the story content so far! More is under construction and on the way. Visit the official Discord to keep up with updates and submit feedback! \n\nI still want to reward you for playing this far, so pick what you would like! Thanks Again!"
+ elf_destiny_story.54.a: "A free Blessing!"
+ elf_destiny_story.54.b: "Gold!"
+ elf_destiny_story.54.c: "Prestige and Stability!"
+ elf_destiny_story.54.d: "I want for nothing..."
 
  elf_destiny_expedition.1.title: "Elven Ruin Expedition - Choose a Leader"
  elf_destiny_expedition.1.desc: "The perparations are completed and the Ancient Elven ruins beckon. All thats left is to assign a worthy leader of this endeavor. Who will you choose to lead the expedition?"

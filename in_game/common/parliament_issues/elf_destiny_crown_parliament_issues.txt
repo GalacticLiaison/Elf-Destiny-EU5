@@ -1,0 +1,124 @@
+﻿transport_the_portal = {
+	estate = crown_estate
+
+	modifier_when_in_debate = {
+		monthly_towards_centralization = societal_value_huge_monthly_move
+        monthly_religious_influence = 0.1
+	}
+
+    potential = {
+        is_ai = no
+        has_variable = spoke_with_aelurans        
+        NOT = {
+			has_global_variable = portal_transported
+		}    
+    }
+
+	allow = {
+        is_ai = no
+        has_variable = spoke_with_aelurans
+
+        NOT = {
+			has_global_variable = portal_transported
+		}
+	}
+
+    chance = 1000
+	
+	on_debate_passed = {
+        building_type:grand_portal_ruins = {
+            save_scope_as = grand_portal_ruins
+        }
+
+        # save_temporary_scope_value_as = {
+        #     name = grand_portal_ruins
+        #     value = building_type:grand_portal_ruins
+        # }
+
+        random_location_in_the_world = {
+			limit = {
+				has_building_with_at_least_one_level = grand_portal_ruins
+			}
+
+			save_scope_as = old_location
+		}
+
+        capital = {
+            save_scope_as = capital
+        }
+
+        custom_tooltip = {
+            text = portal_transported_to_capital_tooltip
+            trigger_event_silently = {
+                id = elf_destiny_story.5
+                # days = 1
+            }
+        }
+	}
+
+	on_debate_failed = {
+		parliament_debate_failed_effect = yes
+	}
+}
+
+restore_portal = {
+	estate = crown_estate
+
+	modifier_when_in_debate = {
+		monthly_towards_centralization = societal_value_huge_monthly_move
+        monthly_religious_influence = 0.1
+	}
+
+    potential = {
+        is_ai = no
+        has_variable = spoke_with_aelurans
+        NOT = {
+			has_global_variable = portal_restored
+		}    
+    }
+
+	allow = {
+        is_ai = no
+        has_variable = spoke_with_aelurans
+
+        # custom_tooltip = {
+        # 	text = found_elven_portal_artifact_1
+        # 	has_variable = elven_portal_artifact_1_discovered
+        # }
+        # custom_tooltip = {
+        # 	text = found_elven_portal_artifact_2
+        # 	has_variable = elven_portal_artifact_2_discovered
+        # }	
+
+        NOT = {
+			has_global_variable = portal_restored
+		}
+	}
+
+    chance = 1000
+	
+	on_debate_passed = {
+        building_type:grand_portal_ruins = {
+            save_scope_as = grand_portal_ruins
+        }
+
+        random_location_in_the_world = {
+			limit = {
+				has_building_with_at_least_one_level = grand_portal_ruins
+			}
+
+			save_scope_as = portal_ruins_location
+		}
+
+        custom_tooltip = {
+            text = grand_portal_restored_tooltip
+			trigger_event_silently = {
+				id = elf_destiny_story.52
+			}	
+        }
+	}
+
+	on_debate_failed = {
+		parliament_debate_failed_effect = yes
+	}
+}

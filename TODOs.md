@@ -95,5 +95,4 @@ on_character_created
 almost all modifiers icons need to be made
 
 
-
-Can we make aging portrait modifiers not apply to immortal/elf characters?
+maybe a calaquendi privledge that speeds up the cooldown on call parliament!

@@ -584,6 +584,10 @@ elf_destiny_story.5 = { # confirm?
 	
 	option = {
 		name = elf_destiny_story.5.a
+		scope:old_location = {
+			destroy_all_buildings_of_type = building_type:grand_portal_ruins
+		}
+
 		set_global_variable = {
 			name = portal_transported
 			value = yes
@@ -596,9 +600,9 @@ elf_destiny_story.5 = { # confirm?
 
 	}
 
-	option = {
-		name = elf_destiny_story.5.b
-	}
+	# option = {
+	# 	name = elf_destiny_story.5.b
+	# }
 }
 
 elf_destiny_story.51 = { # Portal ruins have arrived!
@@ -620,7 +624,16 @@ elf_destiny_story.51 = { # Portal ruins have arrived!
 
 	immediate = {
 		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
-		scope:actor = {
+		# scope:actor = {
+
+		# }
+
+	}
+	
+	option = {
+		name = elf_destiny_story.51.a
+		custom_tooltip = {
+			text = grand_portal_ruins_built_in_capital_tooltip
 			capital = {
 				set_variable = grand_portal_eligible
 				construct_building = {
@@ -632,10 +645,6 @@ elf_destiny_story.51 = { # Portal ruins have arrived!
 			}
 		}
 
-	}
-	
-	option = {
-		name = elf_destiny_story.51.a
 	}
 }
 
@@ -663,15 +672,34 @@ elf_destiny_story.52 = { # Start repairs?
 	
 	option = {
 		name = elf_destiny_story.52.a
-		trigger_event_silently = {
+		set_global_variable = {
+			name = portal_restored
+			value = yes
+		}
+
+		hidden_effect = {
+			random_location_in_the_world = {
+				limit = {
+					has_building_with_at_least_one_level = grand_portal_ruins
+				}
+
+				destroy_all_buildings_of_type = building_type:grand_portal_ruins
+			}
+		}
+		capital = {
+			construct_building = {
+				building_type = building_type:grand_portal
+			}
+		}
+		trigger_event_silently = { # FOR TESTING
 			id = elf_destiny_story.53
-			days = 10
+			days = 3
 		}
 	}
 
-	option = {
-		name = elf_destiny_story.52.b
-	}
+	# option = {
+	# 	name = elf_destiny_story.52.b
+	# }
 }
 
 elf_destiny_story.53 = { # Portal Restored!
@@ -693,28 +721,69 @@ elf_destiny_story.53 = { # Portal Restored!
 
 	immediate = {
 		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
-		random_location_in_the_world = {
-			limit = {
-				has_building_with_at_least_one_level = grand_portal_ruins
-			}
-
-			destroy_building = "building(building_type:grand_portal_ruins|owner)"
-		}
-
-		scope:actor = {
-			capital = {
-				construct_building = {
-					building_type = building_type:grand_portal
-					cost_multiplier = 0
-					cost_multiplier_reason = "grand_portal_cha_cha_cha"
-					instant = yes	
-				}
-			}
-		}
-
 	}
 	
 	option = {
 		name = elf_destiny_story.53.a
+
+		# TODO:  Restorer of the Portal modifier 
+
+		trigger_event_silently = {
+			id = elf_destiny_story.54
+		}
+	}
+}
+
+elf_destiny_story.54 = { # Thanks for Playing!
+	type = country_event
+	title = elf_destiny_story.54.title
+	desc = elf_destiny_story.54.desc
+	trigger = {
+
+	}
+
+	hide_portraits = yes
+
+	image = "gfx/interface/illustrations/event/backgrounds/elf_destiny.dds"
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+	
+	option = { # free blessing
+		name = elf_destiny_story.54.a
+
+		trigger = {
+			has_all_blessings = no
+		}
+
+		trigger_event_non_silently = {
+			id = ascension_events.2
+		}
+	}
+
+	option = { # gold
+		name = elf_destiny_story.54.b
+
+		add_gold = {
+			value = country_tax_base
+			multiply = 25
+		}
+	}
+
+	option = { # prestige and stability
+		name = elf_destiny_story.54.c
+
+		add_prestige = 100
+		add_stability = 100
+	}
+
+	option = { # nothing
+		name = elf_destiny_story.54.d
 	}
 }
