@@ -1,0 +1,11 @@
+discovered_provinces = {
+	# Serelion
+	cyprus_province
+	noto_province
+
+	# Gwynthorn
+	donegal_province
+
+	# Lormelis
+	tregor_province
+}

@@ -917,17 +917,17 @@ AMM = {
 	culture_definition = deepwood_elven_culture
 	religion_definition = aeluran
 }
-GNA = {
-	color = rgb { 360 161 100 }
-	color2 = rgb { 40 100 50 }
-	# male_regnal_names = {}
-	# female_regnal_names = {}
-	# description_category = administrative # cf. common/country_description_category DB
-	# difficulty = 2	# int between 1 and 5
+# GNA = {
+# 	color = rgb { 360 161 100 }
+# 	color2 = rgb { 40 100 50 }
+# 	# male_regnal_names = {}
+# 	# female_regnal_names = {}
+# 	# description_category = administrative # cf. common/country_description_category DB
+# 	# difficulty = 2	# int between 1 and 5
 
-	culture_definition = atlareth_culture
-	religion_definition = aeluran
-}
+# 	culture_definition = atlareth_culture
+# 	religion_definition = aeluran
+# }
 LOS = {
 	color = rgb { 0 88 78 }
 	color2 = rgb { 40 100 50 }

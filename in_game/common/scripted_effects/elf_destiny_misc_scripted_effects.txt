@@ -121,7 +121,7 @@ elf_destiny_change_starter_goods_effect = {
 	location:wanuco_marka = {
 		change_raw_material = goods:mythril
 	}
-	location:eklutna = {
+	location:dgheyaytnu = {
 		change_raw_material = goods:mythril
 	}
 	location:tekman = {

@@ -92,6 +92,7 @@ masters_of_woodland_realms = {
                 }
 			}
         }
+		local_monthly_food_modifier = 0.15
         local_monthly_prosperity = 0.0015
 	}
 	

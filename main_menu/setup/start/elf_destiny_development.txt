@@ -1,0 +1,62 @@
+development = {
+    # Valerith Provinces
+	ust_sysola_province = 7
+	vukyl_province = 5
+	cherdyn_province = 5
+
+	# Thundarael Provinces
+	surgut_province = 5
+	kargasok_province = 5
+	tara_province = 5
+	tomsk_province = 5
+
+	# Daelurin provinces
+	barga_province = 3
+	ust_kut_province = 3
+	konkudera_province = 3
+	bayanday_province = 3
+
+    # All Northern Elf provinces
+    mezen_province = 7
+    zavolochye_province = 7
+    ust_sysola_province = 7
+    vukyl_province = 7
+    vorkuta_province = 7
+    cherdyn_province = 7
+    beryozovka_province = 7
+    kushva_province = 7
+    ponil_province = 7
+    turinsk_province = 7
+    konda_province = 7
+    belogorye_province = 7
+    yendyr_province = 7
+    surgut_province = 7
+    qashliq_province = 7
+    tara_province = 7
+    kargasok_province = 7
+    tomsk_province = 7
+    yeniseysk_province = 7
+    bolshoy_uluy_province = 7
+    komsa_province = 7
+    yeruda_province = 7
+    vangash_province = 7
+    kamensk_province = 7
+    baykit_province = 7
+    manzaya_province = 7
+    kansk_province = 7
+    novosyolovo_province = 7
+    verkh_chebula_province = 7
+    minusinsk_province = 7
+    chadobets_province = 7
+    kezhma_province = 7
+    bratsk_province = 7
+    tokma_province = 7
+    ust_kut_province = 7
+    bayanday_province = 7
+    irkutsk_province = 7
+    makarikha_procince = 7
+    ichera_province = 7
+    vitim_province = 7
+    barga_province = 7
+    konkudera_province = 7
+}

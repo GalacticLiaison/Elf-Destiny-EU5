@@ -1,0 +1,22 @@
+include = "expl_northern_elf_provinces"
+include = "expl_european_elf_provinces"
+
+government = {
+	parliament = {
+		parliament_type = elven_parliament
+	}
+
+    centralization_vs_decentralization = -5
+    traditionalist_vs_innovative = -30
+    spiritualist_vs_humanist = -50
+    aristocracy_vs_plutocracy = -50
+    serfdom_vs_free_subjects = 25
+    mercantilism_vs_free_trade = -10
+    belligerent_vs_conciliatory = 25
+    quality_vs_quantity = -50
+    offensive_vs_defensive = -20
+    land_vs_naval = -50
+    capital_economy_vs_traditional_economy = 90
+    individualism_vs_communalism = 50
+    outward_vs_inward = 100
+}

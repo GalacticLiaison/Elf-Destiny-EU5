@@ -1,0 +1,9 @@
+include = "default_elf"
+include = "elf_monarchy"
+include = "expl_northern_elf_regions"
+
+government = {
+    reforms = {
+        masters_of_woodland_realms
+    }
+}

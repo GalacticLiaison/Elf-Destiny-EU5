@@ -2,10 +2,10 @@
 	type = monarchy
 	heir_selection = cognatic_primogeniture
 	
-	parliament = {
-		parliament_type = elven_parliament
-	}
-	
+	# parliament = {
+	# 	parliament_type = elven_parliament
+	# }
+
 	#Estate Privileges
 	privilege = {
 		#nobles
