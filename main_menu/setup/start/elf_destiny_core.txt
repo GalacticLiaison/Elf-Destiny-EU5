@@ -1,0 +1,8 @@
+institution_manager = {
+	institutions = {
+		elven = {
+			active = yes
+			birth_place = mezen
+		}
+	}
+}

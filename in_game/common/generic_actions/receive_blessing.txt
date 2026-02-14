@@ -29,7 +29,9 @@ receive_blessing = {
 	}
 
 	allow = {
-		has_all_blessings = no
+		scope:actor = {
+			has_all_blessings = no
+		}
 	}
 	
 	price = 0
