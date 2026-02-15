@@ -177,7 +177,7 @@ elf_destiny_misc_game_start_tweaks_effect = {
 	if = {
 		limit = {
 			exists = global_var:enchantress_trait
-			exists = global_var:heroic
+			exists = global_var:heroic_trait
 			exists = global_var:human_trait
 		}
 	}

@@ -1,8 +1,8 @@
 ﻿namespace = elf_destiny_story
 
 elf_destiny_story.99 = {
-	title = ""
-	desc = ""
+	title = no_title
+	desc = no_desc
 	type = country_event
 
 	trigger = {

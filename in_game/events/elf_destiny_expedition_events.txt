@@ -189,6 +189,8 @@ elf_destiny_expedition.11 = {
 
 # # Event 2: Expedition Progress (Timed, fires monthly)
 elf_destiny_expedition.2 = {
+    title = no_title
+    desc = no_desc
     type = country_event
     hidden = yes  # No popup, just progress
 
@@ -877,6 +879,8 @@ elf_destiny_expedition.31 = {
 
 # Discovered Portal Artifact
 elf_destiny_expedition.32 = {
+    title = no_title
+    desc = no_desc
     type = country_event
     hidden = yes
 

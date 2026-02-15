@@ -453,15 +453,30 @@ pure_blood_inheritance = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = pure_blooded }
-			scope:character ?= {
-				exists = father
-				exists = mother
-				father.dynasty = mother.dynasty
+			OR = {
+				scope:character ?= {
+					AND = {
+						exists = father
+						exists = mother
+						father = {has_dynasty = yes}
+						mother = {has_dynasty = yes}
+						father.dynasty = mother.dynasty
+					}
+				}
+				scope:character ?= {
+					AND = {
+						exists = father
+						exists = mother
+						father = {
+							is_close_relative = scope:character.mother
+						}
+					}
+				}
 			}
 		}
 
 		random = {
-			chance = 25
+			chance = 35
 			scope:character ?= {
 				assign_genetic_trait = { trait = pure_blooded}
 			}

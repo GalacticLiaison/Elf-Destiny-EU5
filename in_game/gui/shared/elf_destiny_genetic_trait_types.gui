@@ -68,15 +68,18 @@ types GeneticTraits
         
         # ELF DESTINY
         fixedgridbox = {
-            
-            datamodel = "[CharacterLateralview.GetCharacter.MakeScope.GetList('genetic_traits')]"
+            block "character_view_genetic_traits_data_model" {
+                datamodel = "[CharacterLateralview.GetCharacter.MakeScope.GetList('genetic_traits')]"
+            }
             flipdirection = yes
 
             addcolumn = 40
             addrow = 40
             setitemsizefromcell = yes
 
-            datamodel_wrap = 4
+            block "character_view_genetic_traits_wrap" {
+                datamodel_wrap = 4
+            }
 
             item = {
                 genetic_trait_icon = {}

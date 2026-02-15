@@ -1002,6 +1002,9 @@
 
  discovered_beast_masters_tradition: "Discovered the lost tecnology of Beast Mastery"
 
+ no_title: ""
+ no_desc: ""
+
  elf_destiny_story.1.title: "What Is an Archaeologist?"
  elf_destiny_story.1.desc: "Your steward approaches with a worried look. \n\"My liege, an odd woman has arrived seeking an audience—she calls herself Julia Melwood and claims to be a trained archaeologist. I'm fairly sure she's made that title up.\" You both watch as the self‑proclaimed expert knocks over a vase. \n\nYour steward shakes their head. \"She claims to have found a discovery concerning the Elves. As far as I'm concerned, they're nothing more than children's fairy tales, but she was insistent, so I thought it best to bring her to you. What shall I tell her?\""
  elf_destiny_story.1.a: "I would know the truth of this—see her in!"

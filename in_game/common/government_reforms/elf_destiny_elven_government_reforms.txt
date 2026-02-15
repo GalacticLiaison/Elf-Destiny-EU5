@@ -192,7 +192,7 @@ the_old_ways ={
 		#optional trigger = {}
         army_magi_power = 0.10
 		global_max_literacy = 10
-		global_crown_estate_power = 0.5
+		global_crown_estate_power = 0.05
 	}
 
 	on_activate = {

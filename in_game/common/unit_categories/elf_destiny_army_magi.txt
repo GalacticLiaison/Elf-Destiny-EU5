@@ -1,7 +1,6 @@
 ﻿army_magi = {
 	is_army = yes
 	bombard = yes
-	is_garrison = yes
 
 	movement_speed = 2.5
 	build_time = standard_inf_recruitment_time

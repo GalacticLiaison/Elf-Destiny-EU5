@@ -1187,6 +1187,7 @@ character_db={
 
 	cyg_elmera_thundarael = {
 		first_name = { name = name_elmera}
+		female = yes
 		culture = astrion_culture
 		religion = aeluran
 		adm = 85 dip = 85 mil = 66
@@ -1314,6 +1315,7 @@ character_db={
 
 	cyg_melony_thundarael = {
 		first_name = { name = name_melony}
+		female = yes
 		culture = astrion_culture
 		religion = aeluran
 		adm = 85 dip = 85 mil = 66
@@ -1592,6 +1594,7 @@ character_db={
 
 	cyg_elysia_thundarael = {
 		first_name = { name = name_elysia}
+		female = yes
 		culture = astrion_culture
 		religion = aeluran
 		adm = 85 dip = 85 mil = 66
@@ -2040,6 +2043,7 @@ character_db={
 
 	wyd_meldona_serelion = {
 		first_name = { name = name_meldona}
+		female = yes
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
@@ -2324,6 +2328,7 @@ character_db={
 
 	wyd_delfie_serelion = {
 		first_name = { name = name_delfie}
+		female = yes
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99

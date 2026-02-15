@@ -1776,6 +1776,19 @@ types MultiplayerLobby
 					}
 					blockoverride "country_header_extra" {
 						hbox = {
+							position = { 10 60 }
+							# parentanchor = bottom
+							character_view_genetic_traits= {
+								blockoverride "character_view_genetic_traits_data_model" {
+									datamodel = "[Country.GetGovernment.GetRulerOrRegent.MakeScope.GetList('genetic_traits')]"
+								}
+
+								blockoverride "character_view_genetic_traits_wrap" {
+									datamodel_wrap = 10
+								}
+							}
+						}
+						hbox = {
 							layoutpolicy_horizontal = expanding
 							parentanchor = bottom
 							position = { 5 -50 }

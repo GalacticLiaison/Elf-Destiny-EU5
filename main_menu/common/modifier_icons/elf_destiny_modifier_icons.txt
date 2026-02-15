@@ -296,3 +296,7 @@ local_the_rut_impact_modifier = {
 the_rut_resistance_modifier = {
 	positive = "gfx/interface/icons/disease/the_rut.dds"
 }
+
+expedition_price_cost_modifier = {
+	positive = "gfx/interface/icons/character_interactions/fund_expedition.dds"
+}

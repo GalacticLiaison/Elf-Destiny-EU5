@@ -839,4 +839,318 @@ types override_types {
 			}
 		}
 	}
+
+	type TooltipCharacterHeader = hbox {
+		layoutpolicy_horizontal = expanding
+		using = bg_paper_card
+
+		margin = { 5 5 }
+		spacing = 5
+
+		datacontext = "[Character.GetRoleMask]"
+		datacontext = "[Character.GetCourtCountry]"
+
+		vbox = {
+			layoutpolicy_vertical = expanding
+		
+			character_frame_medium = {
+				blockoverride "portrait_datacontext" {
+					datacontext = "[Character]"
+				}
+				blockoverride "character_frame_texture" {
+					texture = "gfx/interface/component_decoration/character_frames/character_non_stretchable_frame_2.dds"
+				}
+
+				blockoverride "portrait_position" {position = { 4 -1 }}
+				blockoverride "portrait_size" { size = { 85% 90% } }
+				blockoverride "character_tooltip" {}
+				blockoverride "character_contextmenu" {}
+				blockoverride "portrait_click" {}
+				blockoverride "rightclick" {}
+				blockoverride "hover" {}
+				blockoverride "character_portrait_visible" {
+					visible = no
+				}
+
+				blockoverride "character_portrait_ani_visible" {
+					visible = yes								
+				}
+				blockoverride "character_portrait_ani_size" {
+					size = { 85 125 }
+				}
+				blockoverride "character_ribbon" {
+					character_ribbon_3 = {
+						visible = "[And(Not(Character.IsAlive), Character.WasRuler)]"
+						blockoverride "ribbon color" {
+							modify_texture = {
+								using = color_black_texture
+								blend_mode = overlay
+								alpha = 0.2
+							}
+						}
+						blockoverride "stretchable" {}
+					}
+
+					character_ribbon_3 = {
+						visible = "[And(Character.IsAlive, Character.IsRuler)]"					
+						blockoverride "stretchable" {}
+					}
+				}
+				blockoverride "dynasty_shield" {
+					dynasty_shield_mid = {
+						visible = "[Character.HasDynasty]"
+						datacontext = "[Character.GetDynasty]"
+						parentanchor = bottom|left
+					}
+				}
+
+				blockoverride "lowborn_coat_of_arms" {
+					lowborn_coat_of_arms = {
+						visible = no
+						size = { 30% 28% }
+						parentanchor = bottom|left
+					}
+				}
+	
+				icon = {
+					visible = "[Character.HasCourtCountry]"
+					parentanchor = bottom|right
+					size = { 35% 30% }
+					texture = "[GetEstateIcon(Character.GetEstateType)]"
+					datacontext = "[Character.GetCourtCountry.GetGovernment.GetEstate(Character.GetEstateType)]"
+					tooltipwidget = {
+						using = Estate_tooltip
+					}
+				}
+			}
+		}
+
+		vbox = {
+			using = layoutpolicy_expanding
+
+			hbox = {
+				using = layoutpolicy_expanding
+				spacing = 5
+				margin = { 0 5 }
+
+				vbox = {
+					using = layoutpolicy_expanding
+					spacing = 5
+
+					vbox = {
+						using = layoutpolicy_expanding
+						margin = { 7 0 }
+
+						background = {
+							using = tile_background_squared_texture
+							alpha = 0.3
+							modify_texture = {
+								using = color_tool_blue_texture
+							}
+						}
+
+						hbox = {
+							layoutpolicy_horizontal = expanding
+							spacing = 5
+		
+							allow_outside = yes
+							tagtooltip_enabled = yes
+							tooltip = "[Character.GetCulture.GetName]"
+
+							icon = {
+								size = { 25 25 }
+	
+								texture = "gfx/interface/icons/character_interactions/culture.dds"
+								texture_density = 2
+							}
+		
+							text_single = {
+								align = nobaseline|right
+								autoresize = yes
+								text = "[Character.GetCulture.GetName]"
+							}
+
+							expand = {}
+						}
+
+						hbox = {
+							layoutpolicy_horizontal = expanding
+							spacing = 5
+
+							allow_outside = yes
+							tagtooltip_enabled = yes
+							tooltip = "[Character.GetReligion.GetAdjective]"
+
+							icon = {
+								size = { 25 25 }
+								texture = "[GetReligionIcon(Character.GetReligion)]"
+							}
+
+							text_single = {
+								align = right|nobaseline
+								autoresize = yes
+								text = "[Character.GetReligion.GetAdjective]"
+							}
+
+							expand = {}
+						}
+					}
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						size = { -1 30 }
+
+						background = {
+							using = tile_background_squared_texture
+							alpha = 0.3
+							modify_texture = {
+								using = color_tool_blue_texture
+							}
+						}
+
+						character_abilities = {
+							visible = "[Not(Character.IsArtist)]"
+							blockoverride "ability_icon_size" {
+								size = { 25 25 }
+							}
+						}
+
+						artist_abilities = {
+							visible = "[Character.IsArtist]"
+							blockoverride "ability_icon_size" {
+								size = { 25 25 }
+							}
+						}
+					}
+				}
+
+				vbox = {
+					layoutpolicy_vertical = expanding
+					spacing = 5
+
+					vbox = {
+						using = layoutpolicy_expanding
+						margin = { 7 0 }
+
+						background = {
+							using = tile_background_squared_texture
+							alpha = 0.3
+							modify_texture = {
+								using = color_tool_blue_texture
+							}
+						}
+
+						hbox = {
+							layoutpolicy_horizontal = expanding
+							minimumsize = { -1 40 }
+							
+							character_role_icon = {}
+
+							expand = {}
+						}
+
+						hbox = {
+							layoutpolicy_horizontal = expanding
+							minimumsize = { -1 40 }
+
+							spacing = 5
+		
+							text_single = {
+								autoresize = yes
+								align = center|nobaseline
+								using = Font_Size_Medium
+								raw_text = " [Character.GetAge|Y]"
+								tooltipwidget = {
+									using = AgeAndSex_tooltip
+								}
+							}
+		
+							gender_icon = {
+								tooltipwidget = {
+									using = AgeAndSex_tooltip
+								}
+								blockoverride "tooltip_override" {}
+							}
+
+							expand = {}
+						}
+					}
+
+					widget = {
+						allow_outside = yes
+						size = { 120 30 }
+
+						background = {
+							using = tile_background_squared_texture
+							alpha = 0.3
+							modify_texture = {
+								using = color_tool_blue_texture
+							}
+						}
+
+						widget = {
+							visible = "[And(Character.HasEducationAbilityInfo, GreaterThan_int32(Character.GetAge, '(int32)2'))]"
+
+							parentanchor = right|vcenter
+							size = { 40 25 }
+
+							datacontext = "[Character.GetEducation]"
+							tooltipwidget = {
+								using = ChildEducation_tooltip
+							}
+
+							icon = {
+								parentanchor = center
+								size = { 40 40 }
+								
+								texture = "gfx/interface/icons/traits/background/education_background.dds"
+
+								icon = {
+									parentanchor = center
+									size = { 40 40 }
+									
+									texture = "[GetEducationIcon(Character.GetEducation)]"
+								}
+								glow = {
+									name = "drop_shadow"
+									glow_radius = 3
+									color = {0.0 0.0 0.0 1.0}
+									alpha = 0.4
+								}
+							}
+						}
+
+						overlappingitembox = {
+							datamodel = "[Character.GetTraits]"
+							max_width = 120
+							autoresize = yes
+							item = {
+								widget = {
+									size = { 40 25 }
+									icon = {
+										size = { 100% 100% }
+										using = trait_item
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			hbox = {
+				using = layoutpolicy_expanding
+				character_view_genetic_traits= {
+					blockoverride "character_view_genetic_traits_data_model" {
+						# datamodel = "[Country.GetGovernment.GetRulerOrRegent.MakeScope.GetList('genetic_traits')]"
+						datamodel = "[Character.MakeScope.GetList('genetic_traits')]"
+					}
+
+					blockoverride "character_view_genetic_traits_wrap" {
+						datamodel_wrap = 7
+					}
+				}
+			}
+		}
+	}
 }
