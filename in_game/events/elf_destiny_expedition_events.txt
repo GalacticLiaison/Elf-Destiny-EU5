@@ -919,6 +919,8 @@ elf_destiny_expedition.321 = {
 
     option = { # Examine it
         name = elf_destiny_expedition.321.a 
+
+        # complete_mission_task = mission_task:mission_task_find_spark_capacitor
     }
 }
 
@@ -937,7 +939,9 @@ elf_destiny_expedition.322 = {
     }
 
     option = { # Examine it
-        name = elf_destiny_expedition.322.a 
+        name = elf_destiny_expedition.322.a
+
+        # complete_mission_task = mission_task:mission_task_find_navigation_relay
     }
 }
 

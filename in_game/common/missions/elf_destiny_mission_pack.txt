@@ -1,0 +1,118 @@
+﻿# restore_the_grand_portal_mission = {
+# 	icon = generic_conquer_province
+# 	repeatable = no
+# 	player_playstyle = administrative
+
+# 	visible = {
+# 		# game_has_missions_enabled = yes
+# 		# has_variable = spoke_with_aelurans
+# 	}
+
+# 	enabled = {
+# 		# has_variable = spoke_with_aelurans
+# 	}
+	
+# 	chance = 1
+# 	on_start = {
+
+# 	}
+# 	on_completion = {
+# 		# add_country_modifier = { 
+# 		# 	modifier = true_realm_lord
+# 		# 	years = 50
+# 		# 	mode = add_and_extend
+# 		# }
+# 	}
+# 	on_abort = {
+
+# 	}
+
+# 	###########################################
+# 	###########################################
+
+# 	mission_task_find_spark_capacitor = {
+# 		icon = medieval_military
+# 		enabled = {
+# 			# custom_tooltip = {
+# 			# 	text = found_elven_portal_artifact_1
+# 			# 	NOT = {
+# 			# 		has_variable = elven_portal_artifact_1_discovered
+# 			# 	}
+# 			# }
+# 			# custom_tooltip = {
+# 			# 	text = found_elven_portal_artifact_2
+# 			# 	has_variable = elven_portal_artifact_2_discovered
+# 			# }	
+# 		}
+# 		bypass = {
+# 			# has_variable = elven_portal_artifact_1_discovered
+# 		}
+# 		duration = 0
+
+# 		on_completion = {
+
+# 		}
+# 	}
+
+# 	mission_task_find_navigation_relay = {
+# 		icon = medieval_military
+# 		enabled = {
+# 			# custom_tooltip = {
+# 			# 	text = found_elven_portal_artifact_2
+# 			# 	NOT = {
+# 			# 		has_variable = elven_portal_artifact_2_discovered
+# 			# 	}
+# 			# }
+# 		}
+# 		bypass = {
+# 			# has_variable = elven_portal_artifact_2_discovered
+# 		}
+# 		duration = 0
+
+# 		on_completion = {
+
+# 		}
+# 	}
+
+# 	mission_task_transport_the_portal_mission = {
+# 		icon = medieval_military
+# 		enabled = {
+# 			# NOR = {
+# 			# 	has_global_variable = portal_transported
+# 			# 	has_global_variable = portal_restored
+# 			# }
+# 		}
+# 		bypass = {
+# 			has_global_variable = portal_restored
+# 		}
+# 		duration = 0
+
+# 		on_completion = {
+
+# 		}
+# 	}
+
+# 	mission_task_restore_the_grand_portal = {
+# 		icon = medieval_military
+# 		final = yes
+# 		requires = { mission_task_find_spark_capacitor mission_task_find_navigation_relay}
+# 		enabled = {
+# 			# custom_tooltip = {
+# 			# 	text = found_elven_portal_artifact_1
+# 			# 	has_variable = elven_portal_artifact_1_discovered
+# 			# }	
+# 			# custom_tooltip = {
+# 			# 	text = found_elven_portal_artifact_2
+# 			# 	has_variable = elven_portal_artifact_2_discovered
+# 			# }	
+# 		}
+# 		bypass = {
+
+# 		}
+# 		duration = 0
+
+# 		on_completion = {
+
+# 		}
+# 	}
+# }

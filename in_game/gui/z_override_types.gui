@@ -778,89 +778,22 @@ types override_types {
 					}
 				}
 
-				# expand = {}
+				expand = {}
+				# testy = {}
+
+
+				# testy_scroll = {}
+
+				# testy_scroll = {}
 			}
-				# Elf Destiny Race traits
-			fixedgridbox = {
-				
-				datamodel = "[Character.MakeScope.GetList('genetic_traits')]"
-				flipdirection = yes
 
-				addcolumn = 40
-				addrow = 40
-				setitemsizefromcell = yes
+			# Elf Destiny Race traits
+			# character_titles_view_genetic_traits = {}
+			# testy = {}
 
-				datamodel_wrap = 3
+			# character_titles_view_genetic_traits_scroll = {}
+			character_titles_view_genetic_traits_scroll = {}
 
-				item = {
-					widget = {
-						size = { 40 40 }
-
-						icon = {
-							size = { 100% 100% }
-							parentanchor = center
-
-							texture = "[GetTraitIcon(Scope.Trait.Self)]"
-
-
-							glow = {
-								# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
-								# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
-
-								name = "glowing"
-								glow_radius = 2.5
-								color = { 0.9 0.9 0.6 1 }
-								alpha = 0.4
-							}
-							using = Animation_Glow_Pulse
-
-
-							tooltipwidget = {
-								ContextualTooltipType = {
-									blockoverride "title_text" {
-										text = "[Scope.Trait.GetNameWithNoTooltip]"
-									}
-									
-									blockoverride "title_icon" {
-										icon = {
-											using = tooltip_title_icon_size
-											texture = "[GetTraitIcon(Scope.Trait.Self)]"
-
-											glow = {
-												# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
-												# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
-
-												name = "glowing"
-												glow_radius = 2.5
-												color = { 0.9 0.9 0.6 1 }
-												alpha = 0.4
-											}
-											using = Animation_Glow_Pulse
-										}
-									}
-
-									blockoverride "concept_link" {
-										text = genetic_trait
-										# text = "[Scope.Trait.GetCategoryTag]"
-									}
-
-									blockoverride "tooltip_content" {
-										TooltipStringPairList = {
-											datacontext = "[StringToStringPairList(Scope.Trait.GetTooltip)]"
-										}
-
-										TooltipFlavorTextBlock = {
-											blockoverride "text" {
-												text = "[Scope.Trait.GetDesc]"
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
 			expand = {}
 
 		}

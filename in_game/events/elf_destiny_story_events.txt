@@ -1,6 +1,8 @@
 ﻿namespace = elf_destiny_story
 
 elf_destiny_story.99 = {
+	title = ""
+	desc = ""
 	type = country_event
 
 	trigger = {
@@ -501,6 +503,10 @@ elf_destiny_story.42 = {
 			name = spoke_with_aelurans
 			value = yes
 		}
+
+		# start_mission = {
+		# 	mission = mission:restore_the_grand_portal_mission
+		# }
 	}
 	
 	option = {
@@ -645,6 +651,7 @@ elf_destiny_story.51 = { # Portal ruins have arrived!
 			}
 		}
 
+		# complete_mission_task = mission_task:mission_task_transport_the_portal_mission
 	}
 }
 
@@ -726,11 +733,13 @@ elf_destiny_story.53 = { # Portal Restored!
 	option = {
 		name = elf_destiny_story.53.a
 
-		# TODO:  Restorer of the Portal modifier 
+		# TODO:  Restorer of the Portal modifier, maybe put in the mission as a reward
 
 		trigger_event_silently = {
 			id = elf_destiny_story.54
 		}
+
+		# complete_mission_task = mission_task:mission_task_restore_the_grand_portal
 	}
 }
 

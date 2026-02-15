@@ -1466,183 +1466,184 @@ types CharacterPanel {
 
 					expand = {}
 
-					hbox = {
-						layoutpolicy_horizontal = expanding
-						spacing = 8
-						size = { 40 40 }
+					character_view_genetic_traits = {}
+					# hbox = {
+					# 	layoutpolicy_horizontal = expanding
+					# 	spacing = 8
+					# 	size = { 40 40 }
 						
-						# ELF DESTINY
-						fixedgridbox = {
+					# 	# ELF DESTINY
+					# 	fixedgridbox = {
 							
-							datamodel = "[CharacterLateralview.GetCharacter.MakeScope.GetList('genetic_traits')]"
-							flipdirection = yes
+					# 		datamodel = "[CharacterLateralview.GetCharacter.MakeScope.GetList('genetic_traits')]"
+					# 		flipdirection = yes
 
-							addcolumn = 40
-							addrow = 40
-							setitemsizefromcell = yes
+					# 		addcolumn = 40
+					# 		addrow = 40
+					# 		setitemsizefromcell = yes
 
-							datamodel_wrap = 4
+					# 		datamodel_wrap = 4
 
-							item = {
-								widget = {
-									size = { 40 40 }
+					# 		item = {
+					# 			widget = {
+					# 				size = { 40 40 }
 
-									icon = {
-										size = { 100% 100% }
-										parentanchor = center
+					# 				icon = {
+					# 					size = { 100% 100% }
+					# 					parentanchor = center
 
-										texture = "[GetTraitIcon(Scope.Trait.Self)]"
-
-
-										glow = {
-											# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
-											# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
-
-											name = "glowing"
-											glow_radius = 2.5
-											color = { 0.9 0.9 0.6 1 }
-											alpha = 0.4
-										}
-										using = Animation_Glow_Pulse
+					# 					texture = "[GetTraitIcon(Scope.Trait.Self)]"
 
 
-										tooltipwidget = {
-											ContextualTooltipType = {
-												blockoverride "title_text" {
-													text = "[Scope.Trait.GetNameWithNoTooltip]"
-												}
+					# 					glow = {
+					# 						# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+					# 						# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+
+					# 						name = "glowing"
+					# 						glow_radius = 2.5
+					# 						color = { 0.9 0.9 0.6 1 }
+					# 						alpha = 0.4
+					# 					}
+					# 					using = Animation_Glow_Pulse
+
+
+					# 					tooltipwidget = {
+					# 						ContextualTooltipType = {
+					# 							blockoverride "title_text" {
+					# 								text = "[Scope.Trait.GetNameWithNoTooltip]"
+					# 							}
 												
-												blockoverride "title_icon" {
-													icon = {
-														using = tooltip_title_icon_size
-														texture = "[GetTraitIcon(Scope.Trait.Self)]"
+					# 							blockoverride "title_icon" {
+					# 								icon = {
+					# 									using = tooltip_title_icon_size
+					# 									texture = "[GetTraitIcon(Scope.Trait.Self)]"
 
-														glow = {
-															# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
-															# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+					# 									glow = {
+					# 										# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+					# 										# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
 
-															name = "glowing"
-															glow_radius = 2.5
-															color = { 0.9 0.9 0.6 1 }
-															alpha = 0.4
-														}
-														using = Animation_Glow_Pulse
-													}
-												}
+					# 										name = "glowing"
+					# 										glow_radius = 2.5
+					# 										color = { 0.9 0.9 0.6 1 }
+					# 										alpha = 0.4
+					# 									}
+					# 									using = Animation_Glow_Pulse
+					# 								}
+					# 							}
 
-												blockoverride "concept_link" {
-													text = genetic_trait
-													# text = "[Scope.Trait.GetCategoryTag]"
-												}
+					# 							blockoverride "concept_link" {
+					# 								text = genetic_trait
+					# 								# text = "[Scope.Trait.GetCategoryTag]"
+					# 							}
 
-												blockoverride "tooltip_content" {
-													TooltipStringPairList = {
-														datacontext = "[StringToStringPairList(Scope.Trait.GetTooltip)]"
-													}
+					# 							blockoverride "tooltip_content" {
+					# 								TooltipStringPairList = {
+					# 									datacontext = "[StringToStringPairList(Scope.Trait.GetTooltip)]"
+					# 								}
 
-													TooltipFlavorTextBlock = {
-														blockoverride "text" {
-															text = "[Scope.Trait.GetDesc]"
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-
-
-						# hbox = {
-						# 	# using = bg_paper_card
-						# 	# using = bg_cabinet_card_frame
-						# 	# datamodel = "[CharacterLateralview.GetCharacter.GetTimedModifierOwner.GetModifiers]"
-						# 	datamodel = "[CharacterLateralview.GetCharacter.MakeScope.GetList('genetic_traits')]"
-						# 	item = {
-						# 		widget = {
-						# 			size = { 40 40 }
-
-						# 			# text_single = {
-						# 			# 	minimumsize = { -1 26 }
-						# 			# 	align = nobaseline|hcenter
-						# 			# 	# text = "[Concatenate(Concatenate('gfx/interface/icons/genetic_traits/', Scope.GetFlagName), '.dds')]"
-						# 			# 	text = "[Scope.Trait.GetName]"
-
-						# 			# }
-						# 			icon = {
-						# 				size = { 100% 100% }
-						# 				# using = trait_item
-						# 				parentanchor = center
-
-						# 				# texture = "gfx/interface/icons/modifiers/elf_tier_3.dds"
-						# 				# texture = "[Concatenate(Concatenate('gfx/interface/icons/genetic_traits/', Scope.GetFlagName), '.dds')]"
-						# 				# texture = "[TimedModifier.GetModifier.GetIcon]"
-						# 				texture = "[GetTraitIcon(Scope.Trait.Self)]"
-
-						# 				# GetModifier(
-
-						# 				glow = {
-						# 					# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
-						# 					# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
-
-						# 					name = "glowing"
-						# 					glow_radius = 2.5
-						# 					color = { 0.9 0.9 0.6 1 }
-						# 					alpha = 0.4
-						# 				}
-						# 				using = Animation_Glow_Pulse
+					# 								TooltipFlavorTextBlock = {
+					# 									blockoverride "text" {
+					# 										text = "[Scope.Trait.GetDesc]"
+					# 									}
+					# 								}
+					# 							}
+					# 						}
+					# 					}
+					# 				}
+					# 			}
+					# 		}
+					# 	}
 
 
-						# 				tooltipwidget = {
-						# 					ContextualTooltipType = {
-						# 						blockoverride "title_text" {
-						# 							text = "[Scope.Trait.GetNameWithNoTooltip]"
-						# 						}
+					# 	# hbox = {
+					# 	# 	# using = bg_paper_card
+					# 	# 	# using = bg_cabinet_card_frame
+					# 	# 	# datamodel = "[CharacterLateralview.GetCharacter.GetTimedModifierOwner.GetModifiers]"
+					# 	# 	datamodel = "[CharacterLateralview.GetCharacter.MakeScope.GetList('genetic_traits')]"
+					# 	# 	item = {
+					# 	# 		widget = {
+					# 	# 			size = { 40 40 }
+
+					# 	# 			# text_single = {
+					# 	# 			# 	minimumsize = { -1 26 }
+					# 	# 			# 	align = nobaseline|hcenter
+					# 	# 			# 	# text = "[Concatenate(Concatenate('gfx/interface/icons/genetic_traits/', Scope.GetFlagName), '.dds')]"
+					# 	# 			# 	text = "[Scope.Trait.GetName]"
+
+					# 	# 			# }
+					# 	# 			icon = {
+					# 	# 				size = { 100% 100% }
+					# 	# 				# using = trait_item
+					# 	# 				parentanchor = center
+
+					# 	# 				# texture = "gfx/interface/icons/modifiers/elf_tier_3.dds"
+					# 	# 				# texture = "[Concatenate(Concatenate('gfx/interface/icons/genetic_traits/', Scope.GetFlagName), '.dds')]"
+					# 	# 				# texture = "[TimedModifier.GetModifier.GetIcon]"
+					# 	# 				texture = "[GetTraitIcon(Scope.Trait.Self)]"
+
+					# 	# 				# GetModifier(
+
+					# 	# 				glow = {
+					# 	# 					# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+					# 	# 					# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+
+					# 	# 					name = "glowing"
+					# 	# 					glow_radius = 2.5
+					# 	# 					color = { 0.9 0.9 0.6 1 }
+					# 	# 					alpha = 0.4
+					# 	# 				}
+					# 	# 				using = Animation_Glow_Pulse
+
+
+					# 	# 				tooltipwidget = {
+					# 	# 					ContextualTooltipType = {
+					# 	# 						blockoverride "title_text" {
+					# 	# 							text = "[Scope.Trait.GetNameWithNoTooltip]"
+					# 	# 						}
 												
-						# 						blockoverride "title_icon" {
-						# 							icon = {
-						# 								using = tooltip_title_icon_size
-						# 								texture = "[GetTraitIcon(Scope.Trait.Self)]"
+					# 	# 						blockoverride "title_icon" {
+					# 	# 							icon = {
+					# 	# 								using = tooltip_title_icon_size
+					# 	# 								texture = "[GetTraitIcon(Scope.Trait.Self)]"
 
-						# 								glow = {
-						# 									# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
-						# 									# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+					# 	# 								glow = {
+					# 	# 									# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+					# 	# 									# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
 
-						# 									name = "glowing"
-						# 									glow_radius = 2.5
-						# 									color = { 0.9 0.9 0.6 1 }
-						# 									alpha = 0.4
-						# 								}
-						# 								using = Animation_Glow_Pulse
-						# 							}
-						# 						}
+					# 	# 									name = "glowing"
+					# 	# 									glow_radius = 2.5
+					# 	# 									color = { 0.9 0.9 0.6 1 }
+					# 	# 									alpha = 0.4
+					# 	# 								}
+					# 	# 								using = Animation_Glow_Pulse
+					# 	# 							}
+					# 	# 						}
 
-						# 						blockoverride "concept_link" {
-						# 							text = genetic_trait
-						# 							# text = "[Scope.Trait.GetCategoryTag]"
-						# 						}
+					# 	# 						blockoverride "concept_link" {
+					# 	# 							text = genetic_trait
+					# 	# 							# text = "[Scope.Trait.GetCategoryTag]"
+					# 	# 						}
 
-						# 						blockoverride "tooltip_content" {
-						# 							TooltipStringPairList = {
-						# 								datacontext = "[StringToStringPairList(Scope.Trait.GetTooltip)]"
-						# 							}
+					# 	# 						blockoverride "tooltip_content" {
+					# 	# 							TooltipStringPairList = {
+					# 	# 								datacontext = "[StringToStringPairList(Scope.Trait.GetTooltip)]"
+					# 	# 							}
 
-						# 							TooltipFlavorTextBlock = {
-						# 								blockoverride "text" {
-						# 									text = "[Scope.Trait.GetDesc]"
-						# 								}
-						# 							}
-						# 						}
-						# 					}
-						# 				}
-						# 			}
-						# 		}
-						# 	}
-						# }
+					# 	# 							TooltipFlavorTextBlock = {
+					# 	# 								blockoverride "text" {
+					# 	# 									text = "[Scope.Trait.GetDesc]"
+					# 	# 								}
+					# 	# 							}
+					# 	# 						}
+					# 	# 					}
+					# 	# 				}
+					# 	# 			}
+					# 	# 		}
+					# 	# 	}
+					# 	# }
 
-						expand = {}
-					}
+					# 	expand = {}
+					# }
 
 					hbox =  {
 						layoutpolicy_horizontal = expanding

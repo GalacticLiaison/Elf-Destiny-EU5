@@ -559,3 +559,14 @@ the_rut_modifier = {
 	}
 	character_fertility = 100
 }
+
+true_realm_lord = {
+	game_data = {
+		category = country
+	}
+
+	diplomatic_reputation = 3
+	subject_loyalty = 3
+	monthly_prestige = 1
+	stability_decay = -0.001
+}

@@ -1,0 +1,272 @@
+types GeneticTraits 
+{
+    type genetic_trait_icon = widget {
+        block "icon_size" {
+            size = { 40 40 }
+        }
+
+        icon = {
+            size = { 100% 100% }
+            parentanchor = center
+
+            texture = "[GetTraitIcon(Scope.Trait.Self)]"
+
+            glow = {
+                name = "glowing"
+                glow_radius = 2.5
+                color = { 0.9 0.9 0.6 1 }
+                alpha = 0.4
+            }
+            using = Animation_Glow_Pulse
+
+
+            tooltipwidget = {
+                ContextualTooltipType = {
+                    blockoverride "title_text" {
+                        text = "[Scope.Trait.GetNameWithNoTooltip]"
+                    }
+                    
+                    blockoverride "title_icon" {
+                        icon = {
+                            using = tooltip_title_icon_size
+                            texture = "[GetTraitIcon(Scope.Trait.Self)]"
+
+                            glow = {
+                                name = "glowing"
+                                glow_radius = 2.5
+                                color = { 0.9 0.9 0.6 1 }
+                                alpha = 0.4
+                            }
+                            using = Animation_Glow_Pulse
+                        }
+                    }
+
+                    blockoverride "concept_link" {
+                        text = genetic_trait
+                    }
+
+                    blockoverride "tooltip_content" {
+                        TooltipStringPairList = {
+                            datacontext = "[StringToStringPairList(Scope.Trait.GetTooltip)]"
+                        }
+
+                        TooltipFlavorTextBlock = {
+                            blockoverride "text" {
+                                text = "[Scope.Trait.GetDesc]"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    type character_view_genetic_traits = hbox {
+        layoutpolicy_horizontal = expanding
+        spacing = 8
+        size = { 40 40 }
+        
+        # ELF DESTINY
+        fixedgridbox = {
+            
+            datamodel = "[CharacterLateralview.GetCharacter.MakeScope.GetList('genetic_traits')]"
+            flipdirection = yes
+
+            addcolumn = 40
+            addrow = 40
+            setitemsizefromcell = yes
+
+            datamodel_wrap = 4
+
+            item = {
+                genetic_trait_icon = {}
+            }
+        }
+
+        expand = {}
+    }
+
+    # type character_titles_view_genetic_traits = fixedgridbox {
+    #     datamodel = "[Character.MakeScope.GetList('genetic_traits')]"
+    #     flipdirection = yes
+
+    #     addcolumn = 40
+    #     addrow = 40
+    #     setitemsizefromcell = yes
+
+    #     datamodel_wrap = 3
+
+    #     item = {
+    #         genetic_trait_icon = {}
+    #     }
+    # }
+
+    # type character_titles_view_genetic_traits_scroll = scrollbox {
+    #     # name = "traits_scroller"
+    #     # datamodel = "[Character.MakeScope.GetList('genetic_traits')]"
+    #     # visible = "[GreaterThan_int32(GetDataModelSize(Character.MakeScope.GetList('genetic_traits')), '(int32)3')]"
+    #     # size = { 0 55 }
+    #     layoutpolicy_vertical = fixed
+    #     layoutpolicy_horizontal = expanding
+    #     scrollbarpolicy_vertical = as_needed
+    #     blockoverride "scrollbox_margins" {
+    #             margin = { 0 5 }
+    #             margin_right = 10
+    #     }
+    #     using = Animation_Tab_Switch
+    #     blockoverride "scrollbox_content"
+    #     {
+    #         # dynamicgridbox = {
+    #         #     name = "traits_tiny"
+    #         #     datamodel = "[TraitArrays.GetTraits]"
+    #         #     flipdirection = yes
+    #         #     addcolumn = 24
+    #         #     addrow = 25
+    #         #     maxhorizontalslots = 9 ### URF
+    #         #     datamodel_wrap = 9 ### URF
+    #         #     maxverticalslots = 2
+    #         #     maxverticalslots = 7
+    #         #     item = {
+    #         #         widget = {
+    #         #             # datacontext = "[ModifierItem.GetStaticModifier]"
+    #         #             # visible = no
+
+    #         #             icon_trait = {
+    #         #                 # visible = "[IsAnElfImmortalityTrait]"
+    #         #                 blockoverride "icon_size"
+    #         #                 {
+    #         #                     size = { 25 25 }
+    #         #                 }
+
+    #         #                 blockoverride "glow_radius"
+    #         #                 {
+    #         #                     glow_radius = 2
+    #         #                 }
+    #         #             }
+    #         #         }
+    #         #     }
+    #         # }
+
+    #         # spacing = 2
+    #         dynamicgridbox = {
+    #             # name = "traits_tiny_scroll"
+    #             # datamodel = "[TraitArrays.GetTraitsWithoutFlag(ElfImmortal)]"
+    #             datamodel = "[Character.MakeScope.GetList('genetic_traits')]"
+    #             # visible = "[GreaterThan_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)8')]"
+    #             flipdirection = yes
+    #             # addcolumn = 24
+    #             # addrow = 25
+    #             # maxhorizontalslots = 3 ### URF
+    #             # datamodel_wrap = 9 ### URF
+    #             # maxverticalslots = 2
+    #             maxverticalslots = 7
+    #             # ignoreinvisible = yes
+
+    #             item = {
+    #                 widget = {
+    #                     size = { 40 40 }
+
+    #                     icon = {
+    #                         size = { 100% 100% }
+    #                         parentanchor = center
+
+    #                         texture = "[GetTraitIcon(Scope.Trait.Self)]"
+
+
+    #                         glow = {
+    #                             # visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+    #                             # visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+
+    #                             name = "glowing"
+    #                             glow_radius = 2.5
+    #                             color = { 0.9 0.9 0.6 1 }
+    #                             alpha = 0.4
+    #                         }
+    #                         using = Animation_Glow_Pulse
+
+
+    #                         tooltipwidget = {
+    #                             ContextualTooltipType = {
+    #                                 blockoverride "title_text" {
+    #                                     text = "[Scope.Trait.GetNameWithNoTooltip]"
+    #                                 }
+                                    
+    #                                 blockoverride "title_icon" {
+    #                                     icon = {
+    #                                         using = tooltip_title_icon_size
+    #                                         texture = "[GetTraitIcon(Scope.Trait.Self)]"
+
+    #                                         glow = {
+    #                                             # visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+    #                                             # visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+
+    #                                             name = "glowing"
+    #                                             glow_radius = 2.5
+    #                                             color = { 0.9 0.9 0.6 1 }
+    #                                             alpha = 0.4
+    #                                         }
+    #                                         using = Animation_Glow_Pulse
+    #                                     }
+    #                                 }
+
+    #                                 blockoverride "concept_link" {
+    #                                     text = genetic_trait
+    #                                     # text = "[Scope.Trait.GetCategoryTag]"
+    #                                 }
+
+    #                                 blockoverride "tooltip_content" {
+    #                                     TooltipStringPairList = {
+    #                                         datacontext = "[StringToStringPairList(Scope.Trait.GetTooltip)]"
+    #                                     }
+
+    #                                     TooltipFlavorTextBlock = {
+    #                                         blockoverride "text" {
+    #                                             text = "[Scope.Trait.GetDesc]"
+    #                                         }
+    #                                     }
+    #                                 }
+    #                             }
+    #                         }
+    #                     }
+    #                 }
+    #             }
+    #         }
+    #     }
+    # }
+
+    type character_titles_view_genetic_traits = dynamicgridbox {
+        # name = "traits_tiny_scroll"
+        # datamodel = "[TraitArrays.GetTraitsWithoutFlag(ElfImmortal)]"
+        datamodel = "[Character.MakeScope.GetList('genetic_traits')]"
+        # visible = "[GreaterThan_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)8')]"
+        flipdirection = yes
+        addcolumn = 40
+        addrow = 40
+        # maxhorizontalslots = 3 ### URF
+        datamodel_wrap = 4 ### URF
+        # maxverticalslots = 2
+        maxverticalslots = 4
+        # ignoreinvisible = yes
+
+        item = {
+            genetic_trait_icon = {
+                blockoverride "icon_size" {
+                    size = { 32 32 }
+                }
+            }
+        }
+    }
+
+    type character_titles_view_genetic_traits_scroll = scrollarea {
+        size = { 32% 100% }
+        scrollbarpolicy_horizontal = always_off
+
+		scrollbar_vertical = {
+			using = Scrollbar_Vertical
+		}
+        scrollwidget = {
+            character_titles_view_genetic_traits = {}
+        }
+    }
+    
+}

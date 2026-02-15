@@ -250,9 +250,9 @@ countries = {
 			starting_technology_level = 3
 			government = {
 
-				ruler = nictheras_thundarael
+				ruler = cyg_nictheras_thundarael
 
-				ruler_term = { character = nictheras_thundarael start_date = 1319.7.8 regnal_number = 1	}
+				ruler_term = { character = cyg_nictheras_thundarael start_date = 1319.7.8 regnal_number = 1	}
 
 				centralization_vs_decentralization = 25
 				traditionalist_vs_innovative = 30

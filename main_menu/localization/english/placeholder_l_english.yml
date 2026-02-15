@@ -704,6 +704,8 @@
  STATIC_MODIFIER_NAME_royal_elf_daelurin: "Bloodline of House Daelurin"
  STATIC_MODIFIER_NAME_royal_elf_lormelis: "Bloodline of House Lormelis"
 
+ STATIC_MODIFIER_NAME_true_realm_lord: "True Realm Lord"
+
  genetic_trait: "Genetic Trait"
  racial_trait: "Racial Trait"
 
@@ -960,6 +962,9 @@
 
  portal_transported_to_capital_tooltip: "All of the pieces of the [grand_portal_ruins.GetName] will be transported from [old_location.GetName] to your capital [capital.GetName]"
  grand_portal_restored_tooltip: "Begins construction to restore the [grand_portal_ruins.GetName] in [portal_ruins_location.GetName]!"
+
+ found_elven_portal_artifact_1: "Found a Spark Capacitor"
+ found_elven_portal_artifact_2: "Found a Navigation Relay"
 
  the_rut: "The rut"
  the_rut_desc: "The rut desc"
