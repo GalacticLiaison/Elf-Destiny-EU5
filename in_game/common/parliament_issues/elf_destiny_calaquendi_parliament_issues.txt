@@ -3,6 +3,7 @@
 
 	modifier_when_in_debate = {
 		monthly_towards_spiritualist = societal_value_huge_monthly_move #moves value by 3 over the duration
+		monthly_religious_influence = 0.1
 	}
 
 	allow = {
@@ -49,3 +50,270 @@
 		parliament_debate_failed_effect = yes
 	}
 }
+
+sponsor_baths_of_starlight = {
+	estate = calaquendi_estate
+
+	modifier_when_in_debate = {
+		monthly_towards_spiritualist = societal_value_huge_monthly_move #moves value by 3 over the duration
+		monthly_religious_influence = 0.1
+	}
+
+	allow = {
+		# has_advance = cathedral_advance
+		any_owned_location = {
+			NOT = { has_building = building_type:baths_of_starlight }
+			OR = {
+				location_rank = location_rank:town
+				location_rank = location_rank:city
+			}
+		}
+	}
+
+	chance = {
+		add = 1
+	}
+	
+	on_debate_passed = {
+		ordered_owned_location = {
+			order_by = {
+				value = population
+				if = {
+					limit = { location_rank = location_rank:city }
+					multiply = 5
+				}
+			}
+			max = 1
+			limit = {
+				NOT = { has_building = building_type:baths_of_starlight }
+				OR = {
+					location_rank = location_rank:town
+					location_rank = location_rank:city
+				}
+			}
+			construct_building = {
+				building_type = building_type:baths_of_starlight
+				cost_multiplier = 0.5
+				cost_multiplier_reason = "game_concept_parliament_issue"
+			}
+			
+		}
+	}
+	on_debate_failed = {
+		parliament_debate_failed_effect = yes
+	}
+}
+
+sponsor_perfume_garden_of_valinor = {
+	estate = calaquendi_estate
+
+	modifier_when_in_debate = {
+		monthly_towards_spiritualist = societal_value_huge_monthly_move #moves value by 3 over the duration
+		monthly_religious_influence = 0.1
+	}
+
+	allow = {
+		# has_advance = cathedral_advance
+		any_owned_location = {
+			NOT = { has_building = building_type:perfume_garden_of_valinor }
+			OR = {
+				location_rank = location_rank:town
+				location_rank = location_rank:city
+			}
+		}
+	}
+
+	chance = {
+		add = 1
+	}
+	
+	on_debate_passed = {
+		ordered_owned_location = {
+			order_by = {
+				value = population
+				if = {
+					limit = { location_rank = location_rank:city }
+					multiply = 5
+				}
+			}
+			max = 1
+			limit = {
+				NOT = { has_building = building_type:perfume_garden_of_valinor }
+				OR = {
+					location_rank = location_rank:town
+					location_rank = location_rank:city
+				}
+			}
+			construct_building = {
+				building_type = building_type:perfume_garden_of_valinor
+				cost_multiplier = 0.5
+				cost_multiplier_reason = "game_concept_parliament_issue"
+			}
+			
+		}
+	}
+	on_debate_failed = {
+		parliament_debate_failed_effect = yes
+	}
+}
+
+sponsor_wine_cellar_of_elder_days = {
+	estate = calaquendi_estate
+
+	modifier_when_in_debate = {
+		monthly_towards_spiritualist = societal_value_huge_monthly_move #moves value by 3 over the duration
+		monthly_religious_influence = 0.1
+	}
+
+	allow = {
+		# has_advance = cathedral_advance
+		any_owned_location = {
+			NOT = { has_building = building_type:wine_cellar_of_elder_days }
+			OR = {
+				location_rank = location_rank:town
+				location_rank = location_rank:city
+			}
+		}
+	}
+
+	chance = {
+		add = 1
+	}
+	
+	on_debate_passed = {
+		ordered_owned_location = {
+			order_by = {
+				value = population
+				if = {
+					limit = { location_rank = location_rank:city }
+					multiply = 5
+				}
+			}
+			max = 1
+			limit = {
+				NOT = { has_building = building_type:wine_cellar_of_elder_days }
+				OR = {
+					location_rank = location_rank:town
+					location_rank = location_rank:city
+				}
+			}
+			construct_building = {
+				building_type = building_type:wine_cellar_of_elder_days
+				cost_multiplier = 0.5
+				cost_multiplier_reason = "game_concept_parliament_issue"
+			}
+			
+		}
+	}
+	on_debate_failed = {
+		parliament_debate_failed_effect = yes
+	}
+}
+
+sponsor_feasting_hall_of_the_trees = {
+	estate = calaquendi_estate
+
+	modifier_when_in_debate = {
+		monthly_towards_spiritualist = societal_value_huge_monthly_move #moves value by 3 over the duration
+		monthly_religious_influence = 0.1
+	}
+
+	allow = {
+		# has_advance = cathedral_advance
+		any_owned_location = {
+			NOT = { has_building = building_type:feasting_hall_of_the_trees }
+			OR = {
+				location_rank = location_rank:town
+				location_rank = location_rank:city
+			}
+		}
+	}
+
+	chance = {
+		add = 1
+	}
+	
+	on_debate_passed = {
+		ordered_owned_location = {
+			order_by = {
+				value = population
+				if = {
+					limit = { location_rank = location_rank:city }
+					multiply = 5
+				}
+			}
+			max = 1
+			limit = {
+				NOT = { has_building = building_type:feasting_hall_of_the_trees }
+				OR = {
+					location_rank = location_rank:town
+					location_rank = location_rank:city
+				}
+			}
+			construct_building = {
+				building_type = building_type:feasting_hall_of_the_trees
+				cost_multiplier = 0.5
+				cost_multiplier_reason = "game_concept_parliament_issue"
+			}
+			
+		}
+	}
+	on_debate_failed = {
+		parliament_debate_failed_effect = yes
+	}
+}
+
+sponsor_grand_archives = {
+	estate = calaquendi_estate
+
+	modifier_when_in_debate = {
+		monthly_towards_spiritualist = societal_value_huge_monthly_move #moves value by 3 over the duration
+		monthly_religious_influence = 0.1
+	}
+
+	allow = {
+		# has_advance = cathedral_advance
+		any_owned_location = {
+			NOT = { has_building = building_type:grand_archives }
+			OR = {
+				location_rank = location_rank:town
+				location_rank = location_rank:city
+			}
+		}
+	}
+
+	chance = {
+		add = 1
+	}
+	
+	on_debate_passed = {
+		ordered_owned_location = {
+			order_by = {
+				value = population
+				if = {
+					limit = { location_rank = location_rank:city }
+					multiply = 5
+				}
+			}
+			max = 1
+			limit = {
+				NOT = { has_building = building_type:grand_archives }
+				OR = {
+					location_rank = location_rank:town
+					location_rank = location_rank:city
+				}
+			}
+			construct_building = {
+				building_type = building_type:grand_archives
+				cost_multiplier = 0.5
+				cost_multiplier_reason = "game_concept_parliament_issue"
+			}
+			
+		}
+	}
+	on_debate_failed = {
+		parliament_debate_failed_effect = yes
+	}
+}
+
+# Recruit High Magi regulars

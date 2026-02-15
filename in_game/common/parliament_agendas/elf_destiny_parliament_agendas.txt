@@ -1,195 +1,24 @@
-﻿# pa_construct_mallorn_tree_grove = {
-# 	estate = calaquendi_estate
+﻿pa_cosponser_expedition = {
+	estate = calaquendi_estate
 	
-# 	potential = {
-#         culture = { has_culture_group = culture_group:elven_culture_group }
-#         any_owned_location = {
-#             OR = {
-#                 is_city = yes
-#             }
-#             NOT = { has_building = building_type:mallorn_tree_grove }
-#         }
-# 	}
+	potential = {
+		NOT ={
+			has_variable = expedition_underway
+		}
+	}
 	
-# 	on_accept = {
-# 		random_owned_location = {
-# 			limit = {
-#                 OR = {
-#                     is_city = yes
+	on_accept = {
+		add_gold = {
+			value = expedition_cost
+			multiply = 0.5
+		}
+		trigger_event_non_silently = {
+			id = elf_destiny_expedition.1
+		}
+	}
 
-#                 }
-#                 NOT = { has_building = building_type:mallorn_tree_grove }
-# 			}
-#             construct_building = {
-#                 building_type = building_type:mallorn_tree_grove
-#                 # cost_multiplier = 1
-#                 # cost_multiplier_reason = "game_concept_parliament_agenda"
-#                 instant = no
-#             }
-# 		}
-# 	}
-# 	chance = 10
-# }
-
-# pa_construct_baths_of_starlight = {
-# 	estate = calaquendi_estate
-	
-# 	potential = {
-#         culture = { has_culture_group = culture_group:elven_culture_group }
-#         any_owned_location = {
-#             OR = {
-#                 is_city = yes
-#             }
-#             NOT = { has_building = building_type:baths_of_starlight }
-#         }
-# 	}
-	
-# 	on_accept = {
-# 		random_owned_location = {
-# 			limit = {
-#                 OR = {
-#                     is_city = yes
-
-#                 }
-#                 NOT = { has_building = building_type:baths_of_starlight }
-# 			}
-#             construct_building = {
-#                 building_type = building_type:baths_of_starlight
-#                 instant = no
-#             }
-# 		}
-# 	}
-# 	chance = 10
-# }
-
-# pa_construct_perfume_garden_of_valinor = {
-# 	estate = calaquendi_estate
-	
-# 	potential = {
-#         culture = { has_culture_group = culture_group:elven_culture_group }
-#         any_owned_location = {
-#             OR = {
-#                 is_city = yes
-#             }
-#             NOT = { has_building = building_type:perfume_garden_of_valinor }
-#         }
-# 	}
-	
-# 	on_accept = {
-# 		random_owned_location = {
-# 			limit = {
-#                 OR = {
-#                     is_city = yes
-
-#                 }
-#                 NOT = { has_building = building_type:perfume_garden_of_valinor }
-# 			}
-#             construct_building = {
-#                 building_type = building_type:perfume_garden_of_valinor
-#                 instant = no
-#             }
-# 		}
-# 	}
-# 	chance = 10
-# }
-
-# pa_construct_wine_cellar_of_elder_days = {
-# 	estate = calaquendi_estate
-	
-# 	potential = {
-#         culture = { has_culture_group = culture_group:elven_culture_group }
-#         any_owned_location = {
-#             OR = {
-#                 is_city = yes
-#             }
-#             NOT = { has_building = building_type:wine_cellar_of_elder_days }
-#         }
-# 	}
-	
-# 	on_accept = {
-# 		random_owned_location = {
-# 			limit = {
-#                 OR = {
-#                     is_city = yes
-
-#                 }
-#                 NOT = { has_building = building_type:wine_cellar_of_elder_days }
-# 			}
-#             construct_building = {
-#                 building_type = building_type:wine_cellar_of_elder_days
-#                 instant = no
-#             }
-# 		}
-# 	}
-# 	chance = 10
-# }
-
-# pa_construct_feasting_hall_of_the_trees = {
-# 	estate = calaquendi_estate
-	
-# 	potential = {
-#         culture = { has_culture_group = culture_group:elven_culture_group }
-#         any_owned_location = {
-#             OR = {
-#                 is_city = yes
-#             }
-#             NOT = { has_building = building_type:feasting_hall_of_the_trees }
-#         }
-# 	}
-	
-# 	on_accept = {
-# 		random_owned_location = {
-# 			limit = {
-#                 OR = {
-#                     is_city = yes
-
-#                 }
-#                 NOT = { has_building = building_type:feasting_hall_of_the_trees }
-# 			}
-#             construct_building = {
-#                 building_type = building_type:feasting_hall_of_the_trees
-#                 instant = no
-#             }
-# 		}
-# 	}
-# 	chance = 10
-# }
-
-# pa_construct_grand_archives = {
-# 	estate = calaquendi_estate
-	
-# 	potential = {
-#         culture = { has_culture_group = culture_group:elven_culture_group }
-#         any_owned_location = {
-#             OR = {
-#                 is_city = yes
-#             }
-#             NOT = { has_building = building_type:grand_archives }
-#         }
-# 	}
-	
-# 	on_accept = {
-# 		random_owned_location = {
-# 			limit = {
-#                 OR = {
-#                     is_city = yes
-
-#                 }
-#                 NOT = { has_building = building_type:grand_archives }
-# 			}
-#             construct_building = {
-#                 building_type = building_type:grand_archives
-#                 instant = no
-#             }
-# 		}
-# 	}
-# 	chance = 10
-# }
-
-
-# TODO
-# - spark crystal for religious favor
-# - sends an expedition 
+	chance = 20
+}
 
 pa_push_towards_quality = {
 	estate = calaquendi_estate

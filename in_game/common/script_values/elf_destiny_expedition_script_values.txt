@@ -1,4 +1,9 @@
-﻿increase_minor_expedition_progress = {
+﻿expedition_cost = {
+    value = monthly_income_trade_and_tax
+    multiply = -3
+}
+
+increase_minor_expedition_progress = {
 	value = scope:expedition_progress
 	add = 1
 }

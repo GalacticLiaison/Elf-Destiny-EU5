@@ -119,6 +119,8 @@
  MODIFIER_TYPE_NAME_the_rut_resistance_modifier: "The rut resistance modifier"
  MODIFIER_TYPE_DESC_the_rut_resistance_modifier: "TODO : Write a desc"
 
+ pa_cosponser_expedition: "Co-Sponsor an Expedition"
+ pa_cosponser_expedition_desc: "The Calaquendi of your realm wish to send an expedition to rediscover ancient Elven knowledge. They seek the crown's aid to help share in the cost of the endeavor."
  pa_push_towards_quality: "Push to Pursue Quality"
  pa_push_towards_quality_desc: "TODO : Write a desc"
  pa_move_towards_quality: "Support Pursuit of Quality"
@@ -1043,21 +1045,21 @@
  elf_destiny_story.5.title: "Transporting the Grand Portal"
  elf_destiny_story.5.desc: "Very carefully all of the giant stone pieces of the Grand Portal are loaded into massive wagons and begin their pilgrimage to your capital [capital.GetName]\n\nThe New Age will begin there!"
  elf_destiny_story.5.a: "Please be careful!"
- elf_destiny_story.5.b: "placeholder"
+#  elf_destiny_story.5.b: "placeholder"
 
  elf_destiny_story.51.title: "Transporting the Grand Portal - Arrived"
  elf_destiny_story.51.desc: "The final wagons carrying the Grand Portal have arrived in your capital safe and sound.\n\nWill you restore them to their ancient glory?"
  elf_destiny_story.51.a: "This is only the first step, Elves will be great once more!"
  grand_portal_ruins_built_in_capital_tooltip: "[grand_portal_ruins.GetName] constructed in [capital.GetName]"
 
- elf_destiny_story.52.title: "placeholder"
- elf_destiny_story.52.desc: "placeholder"
- elf_destiny_story.52.a: "placeholder"
- elf_destiny_story.52.b: "placeholder"
+ elf_destiny_story.52.title: "Restore The Grand Portal"
+ elf_destiny_story.52.desc: "Relics of old collected and my worthiness unquestionable. \n\nI now possess the means to re-establish the bond between worlds and establish myself as a true Realm Lord.\n\nBut there are many who will condemn me and would move to halt this great work by any means.
+ elf_destiny_story.52.a: "We break ground at once!"
+#  elf_destiny_story.52.b: "placeholder"
 
- elf_destiny_story.53.title: "placeholder"
- elf_destiny_story.53.desc: "placeholder"
- elf_destiny_story.53.a: "placeholder"
+ elf_destiny_story.53.title: "The Portal Is Complete!"
+ elf_destiny_story.53.desc: "After many trials and great personal cost the Grand Portal is finally restored! Once more the gateway between this world and the countless realms of the galaxy is open.\n\nWill this bring limitless prosperity or great dangers to your realm? Who and what will come through the gateway? New allies or powerful foes?\n\nThese questions and many more will soon be answered!\n\n#bold You can feel the threads of destiny pulling.#! You are a true Realm Lord now and it is time you make you mark on history. #bold The time of Elves comes again!#!"
+ elf_destiny_story.53.a: "A new age is upon us!"
 
  elf_destiny_story.54.title: "Thanks for Playing!"
  elf_destiny_story.54.desc: "Sorry, thats all the story content so far! More is under construction and on the way. Visit the official Discord to keep up with updates and submit feedback! \n\nI still want to reward you for playing this far, so pick what you would like! Thanks Again!"
@@ -1102,21 +1104,21 @@
  critical_expedition_failure_tooltip: "\n\n$critical_expedition_failure_text$"
 
  expedition_supplies_increased_1: "Expedition supplies increased by 1 month"
- epedition_supplies_remaining: "Expedition supplies remaining: [SCOPE.GetValue('expedition_supplies')] months\n"
+ epedition_supplies_remaining: "#yellow_titles Expedition supplies remaining:#! [SCOPE.GetValue('expedition_supplies')] months\n"
 
  elf_destiny_expedition.230.title: "Expedition - Aid requested"
- elf_destiny_expedition.230.desc: "You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], unfortunate events have hindered our expedition to the Elven ruins. A great many of our party have been lost to plague. Our progress will be greatly slowed if we can not find more men to replace them.\"\n\n How will you respond?"
+ elf_destiny_expedition.230.desc: "$epedition_supplies_remaining$You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], unfortunate events have hindered our expedition to the Elven ruins. A great many of our party have been lost to plague. Our progress will be greatly slowed if we can not find more men to replace them.\"\n\n How will you respond?"
  elf_destiny_expedition.230.send: "Send more men"
  elf_destiny_expedition.230.dontSend: "They will just have to make due"
 
  elf_destiny_expedition.231.title: "Expedition - Aid requested"
- elf_destiny_expedition.231.desc: "You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], unfortunate events have hindered our expedition to the Elven ruins. The locals of the area are quite upset with us disturbing the site. Im afraid if we dont do something it may come to violence.\"\n\n How will you respond?"
+ elf_destiny_expedition.231.desc: "$epedition_supplies_remaining$You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], unfortunate events have hindered our expedition to the Elven ruins. The locals of the area are quite upset with us disturbing the site. Im afraid if we dont do something it may come to violence.\"\n\n How will you respond?"
  elf_destiny_expedition.231.ignore: "Ignore the locals"
  elf_destiny_expedition.231.diplo: "Send diplomats to calm the locals"
  elf_destiny_expedition.231.gold: "Send gold to buy the locals loyalty and secure supplies"
 
  elf_destiny_expedition.232.title: "Expedition - Aid requested"
- elf_destiny_expedition.232.desc: "You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], unfortunate events have hindered our expedition to the Elven ruins. As we have excavated the site we have discovered an ancient burial site stands in our way. Removing it would be sacrilege, but digging around it would set us back months\"\n\n How will you respond?"
+ elf_destiny_expedition.232.desc: "$epedition_supplies_remaining$You receive a letter corespondence from the expedition leader. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], unfortunate events have hindered our expedition to the Elven ruins. As we have excavated the site we have discovered an ancient burial site stands in our way. Removing it would be sacrilege, but digging around it would set us back months\"\n\n How will you respond?"
  elf_destiny_expedition.232.dig: "Dig through the bones!"
  elf_destiny_expedition.232.dontDig: "Do not blaspheme!"
  
