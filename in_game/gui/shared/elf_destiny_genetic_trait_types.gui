@@ -240,8 +240,8 @@ types GeneticTraits
         datamodel = "[Character.MakeScope.GetList('genetic_traits')]"
         # visible = "[GreaterThan_int32(GetDataModelSize(TraitArrays.GetTraits), '(int32)8')]"
         flipdirection = yes
-        addcolumn = 40
-        addrow = 40
+        # addcolumn = 40
+        # addrow = 40
         # maxhorizontalslots = 3 ### URF
         datamodel_wrap = 4 ### URF
         # maxverticalslots = 2

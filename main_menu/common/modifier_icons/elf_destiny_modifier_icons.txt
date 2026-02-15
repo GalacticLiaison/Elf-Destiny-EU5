@@ -258,7 +258,7 @@ calaquendi_apprenticeship_education_unlocked = {
 }
 
 the_rut_enabled = {
-	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+	positive = "gfx/interface/icons/disease/the_rut.dds" 
 }
 
 tier_4_genetics_unlocked = {
@@ -290,9 +290,9 @@ purple_eyecolor_modifier = {
 }
 
 local_the_rut_impact_modifier = {
-	positive = "gfx/interface/icons/modifier_types/local_bubonic_plague_impact_modifier.dds"
+	positive = "gfx/interface/icons/disease/the_rut.dds"
 }
 
 the_rut_resistance_modifier = {
-	positive = "gfx/interface/icons/modifier_types/bubonic_plague_resistance_modifier.dds"
+	positive = "gfx/interface/icons/disease/the_rut.dds"
 }

@@ -5,11 +5,13 @@
 	on_other_nation = no
 
 	# price = price:abdicate_price
-	price = 0
+	price = price:expedition_price
 	
 	
 	price_modifier = {
 		add = 1
+		# TODO: could implement adventurers guild tradition to reduce costs
+
 		# if = {
 		# 	limit = { 
 		# 		scope:recipient ?= {	
@@ -42,6 +44,9 @@
 		scope:actor = {
 			is_ai = no
 			has_variable = expeditions_unlocked
+			NOT = {
+				has_variable = expedition_underway
+			}
 		}
 	}
 	
@@ -115,6 +120,7 @@
 
 	effect = {
 		scope:actor = {
+			set_variable = expedition_underway
 			trigger_event_silently = {
 				id = elf_destiny_expedition.1
 				days = 7

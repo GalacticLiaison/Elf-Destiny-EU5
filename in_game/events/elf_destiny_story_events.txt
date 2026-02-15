@@ -390,7 +390,7 @@ elf_destiny_story.3 = {
 
 	immediate = {
 		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
-		clear_saved_scope = julia
+		# clear_saved_scope = julia
 	}
 	
 	option = {
@@ -432,7 +432,7 @@ elf_destiny_story.4 = {
 
 	immediate = {
 		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
-		clear_saved_scope = julia
+		# clear_saved_scope = julia
 
 
 		# debug_log = "elf_destiny_story.4"

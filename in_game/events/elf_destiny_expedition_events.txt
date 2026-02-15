@@ -214,7 +214,7 @@ elf_destiny_expedition.2 = {
                 value = decrease_expedition_supplies
             }
             random_list = {
-                50 = {
+                45 = {
                     modifier = {
                         factor = 1.1
                         scope:recipient = { adm >= 50 }
@@ -262,7 +262,6 @@ elf_destiny_expedition.21 = {
                     local_var:success_amount = 1
 				}
 			}
-            desc = elf_destiny_expedition.21.desc.alt
 		}
         first_valid = {
 			triggered_desc = {
@@ -434,6 +433,8 @@ elf_destiny_expedition.22 = {
             local_var:fail_amount >= 3
         }
 
+        remove_variable = expedition_underway
+
         name = elf_destiny_expedition.22.b
     }
 
@@ -455,7 +456,6 @@ elf_destiny_expedition.230 = {
 
     image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
-
     immediate = {
 
 
@@ -472,7 +472,7 @@ elf_destiny_expedition.230 = {
             }
         }
 
-        add_manpower = -100
+        add_manpower = -75
 
         trigger_event_silently = {
             id = elf_destiny_expedition.2
@@ -662,6 +662,7 @@ elf_destiny_expedition.3 = {
     image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
     immediate = {
+        remove_variable = expedition_underway
         # end_expedition_effect = yes
         random_list = {  # Loot table
             0 = {
@@ -1325,6 +1326,7 @@ elf_destiny_expedition.4 = {
         # end_expedition_effect = yes
         # Optional penalty: lose manpower or stability
         # add_manpower = -1000
+        remove_variable = expedition_underway
     }
 
     option = {

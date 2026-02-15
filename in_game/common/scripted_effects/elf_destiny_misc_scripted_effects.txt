@@ -172,6 +172,16 @@ elf_destiny_misc_game_start_tweaks_effect = {
 		name = heroic_trait
 		value = trait:heroic
 	}
+
+	# for error suppression
+	if = {
+		limit = {
+			exists = global_var:enchantress_trait
+			exists = global_var:heroic
+			exists = global_var:human_trait
+		}
+	}
+
 }
 
 set_calaquendi_education_effect = {

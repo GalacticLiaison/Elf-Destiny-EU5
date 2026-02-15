@@ -1,6 +1,9 @@
 ﻿expedition_cost = {
-    value = monthly_income_trade_and_tax
-    multiply = -3
+    value = -50
+}
+
+expedition_man_power_cost = {
+    value = -100
 }
 
 increase_minor_expedition_progress = {
