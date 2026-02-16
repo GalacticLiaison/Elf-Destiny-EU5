@@ -61,3 +61,6 @@ almost all modifiers icons need to be made
 maybe a calaquendi privledge that speeds up the cooldown on call parliament!
 
 maybe a character interaction debug cheat menu to assign genetic traits
+
+
+# Final Pass on culture/religion/country colors

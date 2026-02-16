@@ -672,7 +672,7 @@ elf_destiny_expedition.3 = {
                     add = 50
                     NOR = {
                         has_variable = elf_tradition_discovered_people_of_the_bow
-                        has_variable = elf_tradition_discovered_beast_masters
+                        has_variable = elf_tradition_discovered_beast_tamers
                     }
                 }
                 save_scope_value_as = {
@@ -795,9 +795,9 @@ elf_destiny_expedition.31 = {
 				}
 			}
             triggered_desc = {
-				desc = elf_destiny_expedition.31.desc.beast_masters
+				desc = elf_destiny_expedition.31.desc.beast_tamers
 				trigger = {
-                    scope:elf_tradition = flag:beast_masters
+                    scope:elf_tradition = flag:beast_tamers
 				}
 			}
 		}
@@ -832,15 +832,15 @@ elf_destiny_expedition.31 = {
                 modifier = {
                     add = 50
                     NOT = {
-                        has_variable = elf_tradition_discovered_beast_masters
+                        has_variable = elf_tradition_discovered_beast_tamers
                     }
                 }
                 save_scope_value_as = {
                     name = elf_tradition
-                    value = flag:beast_masters
+                    value = flag:beast_tamers
                 }
                 set_variable = {
-                    name = elf_tradition_discovered_beast_masters
+                    name = elf_tradition_discovered_beast_tamers
                     value = yes
                 }
             }
@@ -866,9 +866,9 @@ elf_destiny_expedition.31 = {
         if = {
             limit = { 
                 exists = scope:elf_tradition
-                scope:elf_tradition = flag:beast_masters 
+                scope:elf_tradition = flag:beast_tamers 
             }
-            research_advance = advance_type:beast_masters
+            research_advance = advance_type:beast_tamers
         }
     }
 

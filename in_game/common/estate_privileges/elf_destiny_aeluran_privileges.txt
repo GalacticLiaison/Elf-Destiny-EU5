@@ -70,6 +70,10 @@ aeluran_judiciary = {
 	}
 }
 
+# TODO: Aeluran etiqueete
+# - more Aeluran levies at the cost of more estate powerr
+# - chance to reuse art from CK3
+
 # TODO: Aeluran sisters matchmaking characters
 # aeluran_matchmaking = {
 # 	estate = clergy_estate

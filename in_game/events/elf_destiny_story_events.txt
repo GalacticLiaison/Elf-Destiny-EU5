@@ -389,12 +389,13 @@ elf_destiny_story.3 = {
 	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
 
 	immediate = {
-		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
-		# clear_saved_scope = julia
+
 	}
 	
 	option = {
 		name = elf_destiny_story.3.good
+
+		add_reform = government_reform:open_hearted
 
 		trigger_event_silently = {
 			id = elf_destiny_story.4
@@ -404,9 +405,18 @@ elf_destiny_story.3 = {
 	option = {
 		name = elf_destiny_story.3.evil
 
+		add_reform = government_reform:elven_superiority
+
 		trigger_event_silently = {
 			id = elf_destiny_story.4
 		}	
+	}
+
+	after = {
+		set_global_variable = {
+			name = human_relations_chosen
+			value = yes
+		}
 	}
 }
 

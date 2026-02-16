@@ -10,7 +10,74 @@
 	unit = calaquendi_high_magi
 }
 
-levy_aeluran_magi_basic = {
+
+
+levy_aeluran_magi_level_6 = {
+	size = levy_generic_infantry_size
+	
+	allowed_pop_type = clergy
+
+	country_allow = {
+		religion = religion:aeluran
+		# culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = a_age_6_aeluran_magi
+}
+
+levy_aeluran_magi_level_5 = {
+	size = levy_generic_infantry_size
+	
+	allowed_pop_type = clergy
+
+	country_allow = {
+		religion = religion:aeluran
+		# culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = a_age_5_aeluran_magi
+}
+
+levy_aeluran_magi_level_4 = {
+	size = levy_generic_infantry_size
+	
+	allowed_pop_type = clergy
+
+	country_allow = {
+		religion = religion:aeluran
+		# culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = a_age_4_aeluran_magi
+}
+
+levy_aeluran_magi_level_3 = {
+	size = levy_generic_infantry_size
+	
+	allowed_pop_type = clergy
+
+	country_allow = {
+		religion = religion:aeluran
+		# culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = a_age_3_aeluran_magi
+}
+
+levy_aeluran_magi_level_2 = {
+	size = levy_generic_infantry_size
+	
+	allowed_pop_type = clergy
+
+	country_allow = {
+		religion = religion:aeluran
+		# culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = a_age_2_aeluran_magi
+}
+
+levy_aeluran_magi_level_1 = {
 	size = levy_generic_infantry_size
 	
 	allowed_pop_type = clergy
@@ -21,6 +88,38 @@ levy_aeluran_magi_basic = {
 	}
 	
 	unit = a_age_1_aeluran_magi
+}
+
+
+levy_a_late_fey_archers = {
+	size = levy_generic_infantry_size
+	
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
+
+	country_allow = {
+		culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = a_late_fey_archers
+}
+
+
+levy_a_fey_archers = {
+	size = levy_generic_infantry_size
+	
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
+
+	country_allow = {
+		culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = a_fey_archers
 }
 
 levy_a_early_fey_archers = {

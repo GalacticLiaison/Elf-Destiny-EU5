@@ -182,6 +182,21 @@ elf_destiny_misc_game_start_tweaks_effect = {
 		}
 	}
 
+	# Register the Divine Spark as the True God
+	every_country = { 
+		limit = {
+			religion = religion:aeluran
+		}
+		save_scope_as = current_country
+		religion = {
+			every_god_in_religion = {
+				scope:current_country = {
+					add_god = prev
+				}
+			}
+		}
+	}
+
 }
 
 set_calaquendi_education_effect = {

@@ -1,0 +1,7 @@
+﻿grand_portal_ruins = {
+    location = mezen
+    type = grand_portal_ruins_holy_site
+    importance = 5
+	religions = { aeluran }
+    god = the_divine_spark
+}

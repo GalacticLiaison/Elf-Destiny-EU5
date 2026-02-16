@@ -20,10 +20,12 @@
 
 	unlock_levy = levy_calaquendi
 	unlock_levy = levy_a_early_fey_archers
-	unlock_levy = levy_aeluran_magi_basic
+	unlock_levy = levy_aeluran_magi_level_1
 }
 
-mythril_craftsmanship = {
+
+# ==== CRAFTING ====
+elven_craftsmanship = {
 	age = age_1_traditions
 	requires = elven_lore
 
@@ -31,14 +33,47 @@ mythril_craftsmanship = {
 	skill_of_new_artists = 0.1
 }
 
-beast_masters = {
+mythril_working = {
+	age = age_1_traditions
+	requires = elven_craftsmanship
+
+	research_cost = 0.1
+	skill_of_new_artists = 0.1
+}
+
+# ==== NATURE ====
+forest_dominion = {
 	age = age_1_traditions
 	requires = elven_lore
 
 	allow = { 
+
+	}
+
+	research_cost = 0.1
+	skill_of_new_artists = 0.1
+}
+
+herbal_mastery = {
+	age = age_1_traditions
+	requires = forest_dominion
+
+	allow = { 
+
+	}
+
+	research_cost = 0.1
+	skill_of_new_artists = 0.1
+}
+
+beast_tamers = {
+	age = age_1_traditions
+	requires = forest_dominion
+
+	allow = { 
 		custom_tooltip = {
-			text = discovered_beast_masters_tradition
-			has_variable = elf_tradition_discovered_beast_masters
+			text = discovered_beast_tamers_tradition
+			has_variable = elf_tradition_discovered_beast_tamers
 		}
 	}
 
@@ -46,26 +81,95 @@ beast_masters = {
 	skill_of_new_artists = 0.1
 }
 
-# beast taming
+# ==== Magic ====
+level_2_magic = {
+	age = age_1_traditions
+	requires = elven_lore
 
+	allow = { 
 
-# elf_tier_3 = { 
-# 	age = age_1_traditions
-# 	requires = mining_advance
+	}
 
-# 	starting_technology_level = 1
-# 	research_cost = 0.5
+	research_cost = 0.1
+	unlock_levy = levy_aeluran_magi_level_2
+}
 
-# 	# depth = 0
+## Requires Grand Portal To Be Restored Past Here
 
-# 	potential = {
-# 		always = no
-# 	}
-# 	allow = {
-# 		always = no
-# 	}
-# }
+level_3_magic = {
+	age = age_1_traditions
+	requires = level_2_magic
 
+	allow = { 
 
+	}
 
+	research_cost = 0.1
+	unlock_levy = levy_aeluran_magi_level_3
+}
 
+## Requires leader to be Fae tier
+
+level_4_magic = {
+	age = age_1_traditions
+	requires = level_3_magic
+
+	allow = { 
+
+	}
+
+	research_cost = 0.1
+	unlock_levy = levy_aeluran_magi_level_4
+}
+
+level_5_magic = {
+	age = age_1_traditions
+	requires = level_4_magic
+
+	allow = { 
+
+	}
+
+	research_cost = 0.1
+	unlock_levy = levy_aeluran_magi_level_5
+}
+
+## Requires leader to be Celestial tier
+
+level_6_magic = {
+	age = age_1_traditions
+	requires = level_5_magic
+
+	allow = { 
+
+	}
+
+	research_cost = 0.1
+	unlock_levy = levy_aeluran_magi_level_6
+}
+
+# ==== War ====
+level_2_war = {
+	age = age_1_traditions
+	requires = elven_lore
+
+	allow = { 
+
+	}
+
+	research_cost = 0.1
+	unlock_levy = levy_a_fey_archers
+
+}
+
+level_3_war = {
+	age = age_1_traditions
+	requires = level_2_war
+
+	allow = { 
+
+	}
+
+	research_cost = 0.1
+	unlock_levy = levy_a_late_fey_archers
+}

@@ -1,0 +1,8 @@
+﻿the_divine_spark = {
+    icon = the_divine_spark
+    religion = aeluran
+
+    country_modifier = {
+        monthly_religious_influence = 0.2
+    }
+}
