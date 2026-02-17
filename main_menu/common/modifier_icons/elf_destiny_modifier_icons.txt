@@ -218,11 +218,11 @@ can_extract_mythril_elven_crafts = {
 # }
 
 army_magi_build_cost_modifier = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/army_magi_build_cost_modifier.dds" 
 }
 
 army_magi_power = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/army_magi_power.dds" 
 }
 
 # army_magi_artillery_build_cost_modifier = {
@@ -230,11 +230,11 @@ army_magi_power = {
 # }
 
 army_magi_maintenance_cost_modifier = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/army_magi_maintenance_cost_modifier.dds" 
 }
 
 army_magi_reinforce_cost_modifier = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/army_magi_reinforce_cost_modifier.dds" 
 }
 
 # army_magi_artillery_reinforce_cost_modifier = {
