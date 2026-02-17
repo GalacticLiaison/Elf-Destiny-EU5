@@ -18,6 +18,7 @@
 		culture = { has_culture_group = culture_group:elven_culture_group}
 	}
 
+	unlock_government_reform = the_old_ways
 	unlock_levy = levy_calaquendi
 	unlock_levy = levy_a_early_fey_archers
 	unlock_levy = levy_aeluran_magi_level_1
@@ -25,26 +26,31 @@
 
 
 # ==== CRAFTING ====
-elven_craftsmanship = {
+elven_artisanship = {
 	age = age_1_traditions
 	requires = elven_lore
+	starting_technology_level = 1
 
 	research_cost = 0.1
-	skill_of_new_artists = 0.1
+	unlock_building = lembas_bakery
+	unlock_building = elven_workshop
 }
 
 mythril_working = {
 	age = age_1_traditions
-	requires = elven_craftsmanship
+	requires = elven_artisanship
 
 	research_cost = 0.1
-	skill_of_new_artists = 0.1
+	unlock_unit = mythril_plated_fey_vanguard
+	unlock_unit = mythril_plated_horse_masters
+	unlock_building = elven_master_workshop
 }
 
 # ==== NATURE ====
 forest_dominion = {
 	age = age_1_traditions
 	requires = elven_lore
+	starting_technology_level = 1
 
 	allow = { 
 
@@ -57,6 +63,7 @@ forest_dominion = {
 herbal_mastery = {
 	age = age_1_traditions
 	requires = forest_dominion
+	starting_technology_level = 3
 
 	allow = { 
 
@@ -78,7 +85,7 @@ beast_tamers = {
 	}
 
 	research_cost = 0.1
-	skill_of_new_artists = 0.1
+	unlock_unit = wolf_riders
 }
 
 # ==== Magic ====
@@ -87,11 +94,12 @@ level_2_magic = {
 	requires = elven_lore
 
 	allow = { 
-
+		current_age = age_2_renaissance
 	}
 
 	research_cost = 0.1
 	unlock_levy = levy_aeluran_magi_level_2
+	army_magi_power = 0.02
 }
 
 ## Requires Grand Portal To Be Restored Past Here
@@ -101,11 +109,12 @@ level_3_magic = {
 	requires = level_2_magic
 
 	allow = { 
-
+		current_age = age_3_discovery
 	}
 
 	research_cost = 0.1
 	unlock_levy = levy_aeluran_magi_level_3
+	army_magi_power = 0.03
 }
 
 ## Requires leader to be Fae tier
@@ -115,11 +124,12 @@ level_4_magic = {
 	requires = level_3_magic
 
 	allow = { 
-
+		current_age = age_4_reformation
 	}
 
 	research_cost = 0.1
 	unlock_levy = levy_aeluran_magi_level_4
+	army_magi_power = 0.05
 }
 
 level_5_magic = {
@@ -127,11 +137,12 @@ level_5_magic = {
 	requires = level_4_magic
 
 	allow = { 
-
+		current_age = age_5_absolutism
 	}
 
 	research_cost = 0.1
 	unlock_levy = levy_aeluran_magi_level_5
+	army_magi_power = 0.10
 }
 
 ## Requires leader to be Celestial tier
@@ -141,11 +152,12 @@ level_6_magic = {
 	requires = level_5_magic
 
 	allow = { 
-
+		current_age = age_6_revolutions
 	}
 
 	research_cost = 0.1
 	unlock_levy = levy_aeluran_magi_level_6
+	army_magi_power = 0.10
 }
 
 # ==== War ====
@@ -154,12 +166,13 @@ level_2_war = {
 	requires = elven_lore
 
 	allow = { 
-
+		current_age = age_2_renaissance
 	}
 
 	research_cost = 0.1
 	unlock_levy = levy_a_fey_archers
-
+	military_tactics = 0.20
+	monthly_army_tradition = 0.03
 }
 
 level_3_war = {
@@ -167,9 +180,11 @@ level_3_war = {
 	requires = level_2_war
 
 	allow = { 
-
+		current_age = age_3_discovery
 	}
 
 	research_cost = 0.1
 	unlock_levy = levy_a_late_fey_archers
+	military_tactics = 0.30
+	monthly_army_tradition = 0.05
 }

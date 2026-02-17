@@ -14,11 +14,12 @@ elven_high_councils = {
 		
 	country_modifier = {
 		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
-		global_calaquendi_estate_power = 0.5
+		global_calaquendi_estate_power = 0.75
 		calaquendi_estate_agenda_impact = 0.25
-		parliament_base_support = 0.2
+		parliament_base_support = 0.25
 		parliament_request_issue_support_needed = 0.1
 		calaquendi_estate_can_participate_in_parliament = yes
+		country_cabinet_efficiency = 0.25
 	}
 }
 
@@ -35,6 +36,12 @@ calaquendi_apprenticeships = {
 		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_calaquendi_estate_power = 0.5
 		calaquendi_apprenticeship_education_unlocked = yes
+		monthly_towards_aristocracy = societal_value_monthly_move
+		monthly_towards_innovative = societal_value_monthly_move
+		global_nobles_max_literacy = 10
+		global_nobles_monthly_literacy = 0.01
+		global_calaquendi_max_literacy = 10
+		global_calaquendi_monthly_literacy = 0.01
 	}
 }
 
@@ -49,7 +56,14 @@ elite_worship = {
 
 	country_modifier = {
 		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
-		global_calaquendi_estate_power = 0.5
+		global_calaquendi_estate_power = 0.75
+		global_clergy_estate_power = -0.25
+		calaquendi_estate_agenda_impact = 0.1
+		monthly_towards_aristocracy = societal_value_monthly_move
+		monthly_towards_serfdom= societal_value_monthly_move
+		global_max_control = 0.05
+		pop_join_rebel_threshold = -0.5
+		monthly_rebel_growth = -0.001
 	}
 }
 
@@ -67,6 +81,11 @@ personal_dominions = {
 	country_modifier = {
 		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_calaquendi_estate_power = 0.5
+		monthly_towards_serfdom = societal_value_monthly_move
+		monthly_towards_decentralization = societal_value_monthly_move
+		global_calaquendi_city_desired_pop = 0.1
+		global_distance_from_capital_cost_modifier = -0.05
+		stability_decay = -0.00025
 	}
 }
 
@@ -82,7 +101,12 @@ personal_retinues = {
 
 	country_modifier = {
 		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
+		monthly_towards_quality = societal_value_monthly_move
 		global_calaquendi_estate_power = 0.5
+		discipline = 0.15
+		nobles_estate_levy_size = 0.33
+		levy_combat_efficiency_modifier = 0.15
+		mercenary_maintenance_cost = -0.33
 	}
 }
 
@@ -103,6 +127,12 @@ war_masters = {
 	country_modifier = {
 		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_calaquendi_estate_power = 0.5
+		calaquendi_estate_levy_size = 0.33
+		levy_combat_efficiency_modifier = 0.15
+		military_tactics = 0.1
+		noble_estate_blocked_from_leading_military = yes
+		peasants_estate_blocked_from_leading_military = yes
+		burghers_estate_blocked_from_leading_military = yes
 	}
 }
 
@@ -123,6 +153,12 @@ state_sponsored_ascendancy = {
 	country_modifier = {
 		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_calaquendi_estate_power = 0.5
+		monthly_religious_influence = 0.1
+		tax_income_efficiency = -0.05
+		army_magi_power = 0.05
+		levy_combat_efficiency_modifier = 0.10
+		global_calaquendi_max_literacy = 10
+		calaquendi_estate_levy_size = 0.33
 	}
 }
 
@@ -139,8 +175,13 @@ hierarchial_authority = {
 
 	country_modifier = {
 		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
+		monthly_towards_aristocracy = societal_value_monthly_move
 		global_calaquendi_estate_power = 0.5
 		nobles_estate_blocked_from_cabinet = yes
+		calaquendi_estate_agenda_impact = 0.50
+		nobles_estate_agenda_impact = 0.25
+		burghers_estate_agenda_impact = -0.25
+		peasants_estate_agenda_impact = -0.5
 	}
 }
 
