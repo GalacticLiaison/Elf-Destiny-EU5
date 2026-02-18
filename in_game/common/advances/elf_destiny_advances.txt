@@ -1,13 +1,11 @@
 ﻿elven_lore = { 
 	age = age_1_traditions
-	# requires = mining_advance
+	icon = elven_lore
 
 	starting_technology_level = 1
 	depth = 0
 
 	research_cost = 0.1
-
-	# depth = 0
 
 	potential = {
 		
@@ -40,6 +38,13 @@ mythril_working = {
 	age = age_1_traditions
 	requires = elven_artisanship
 
+	allow = { 
+		custom_tooltip = {
+			text = discovered_mythril_working_tradition
+			has_variable = elf_tradition_discovered_mythril_working
+		}
+	}
+
 	research_cost = 0.1
 	unlock_unit = mythril_plated_fey_vanguard
 	unlock_unit = mythril_plated_horse_masters
@@ -52,12 +57,16 @@ forest_dominion = {
 	requires = elven_lore
 	starting_technology_level = 1
 
+	icon = forest_dominion
+
 	allow = { 
 
 	}
 
 	research_cost = 0.1
-	skill_of_new_artists = 0.1
+	unlock_government_reform = masters_of_woodland_realms
+	global_lumber_output_modifier = 0.10
+	global_wild_game_output_modifier = 0.10
 }
 
 herbal_mastery = {
@@ -65,12 +74,16 @@ herbal_mastery = {
 	requires = forest_dominion
 	starting_technology_level = 3
 
+	icon = herbal_mastery
+
 	allow = { 
 
 	}
 
 	research_cost = 0.1
-	skill_of_new_artists = 0.1
+	global_monthly_prosperity = 0.0010
+	global_disease_resistance = 0.05
+	global_medicaments_output_modifier = 0.25
 }
 
 beast_tamers = {
@@ -110,6 +123,10 @@ level_3_magic = {
 
 	allow = { 
 		current_age = age_3_discovery
+		custom_tooltip = {
+			text = grand_portal_has_been_restored
+			has_global_variable = portal_restored
+		}
 	}
 
 	research_cost = 0.1
@@ -125,6 +142,12 @@ level_4_magic = {
 
 	allow = { 
 		current_age = age_4_reformation
+		custom_tooltip = {
+			text = ruler_is_fae_tier_or_higher
+			ruler = {
+				is_fae_tier_elf_or_higher = yes
+			}
+		}
 	}
 
 	research_cost = 0.1
@@ -153,6 +176,12 @@ level_6_magic = {
 
 	allow = { 
 		current_age = age_6_revolutions
+		custom_tooltip = {
+			text = ruler_is_celestial_tier_or_higher
+			ruler = {
+				is_celestial_tier_elf_or_higher = yes
+			}
+		}
 	}
 
 	research_cost = 0.1
@@ -173,6 +202,7 @@ level_2_war = {
 	unlock_levy = levy_a_fey_archers
 	military_tactics = 0.20
 	monthly_army_tradition = 0.03
+	levy_combat_efficiency_modifier = 0.10
 }
 
 level_3_war = {
@@ -187,4 +217,21 @@ level_3_war = {
 	unlock_levy = levy_a_late_fey_archers
 	military_tactics = 0.30
 	monthly_army_tradition = 0.05
+	levy_combat_efficiency_modifier = 0.15
+}
+
+honor_of_the_fay = {
+	age = age_1_traditions
+	requires = level_2_war
+
+	icon = honor_of_the_fay
+
+	allow = { 
+		current_age = age_2_renaissance
+	}
+
+	research_cost = 0.1
+	unlock_government_reform = people_of_the_bow
+	nobles_estate_levy_size = 0.30
+	calaquendi_estate_levy_size = 0.10
 }

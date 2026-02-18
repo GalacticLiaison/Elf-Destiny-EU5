@@ -15,6 +15,31 @@
 	}
 }
 
+is_fae_tier_elf_or_higher = {
+	OR = {
+		has_racial_trait = { trait = elf_tier_4 }
+		has_racial_trait = { trait = elf_tier_5 }
+		has_racial_trait = { trait = elf_tier_6 }
+		has_racial_trait = { trait = elf_tier_7 }
+		has_racial_trait = { trait = elf_tier_8 }
+		has_racial_trait = { trait = elf_tier_9 }
+		has_racial_trait = { trait = elf_tier_10 }
+		has_racial_trait = { trait = elf_tier_11 }
+		has_racial_trait = { trait = elf_tier_12 }
+	}
+}
+
+is_celestial_tier_elf_or_higher = {
+	OR = {
+		has_racial_trait = { trait = elf_tier_7 }
+		has_racial_trait = { trait = elf_tier_8 }
+		has_racial_trait = { trait = elf_tier_9 }
+		has_racial_trait = { trait = elf_tier_10 }
+		has_racial_trait = { trait = elf_tier_11 }
+		has_racial_trait = { trait = elf_tier_12 }
+	}
+}
+
 has_any_elven_bloodline = {
 	OR = {
 		has_genetic_trait = { trait = royal_elf_valerith }
@@ -37,6 +62,8 @@ has_racial_trait = {
 	has_variable = character_race 
 	var:character_race = trait:$trait$
 }
+
+
 
 # has_any_genetic_trait_modifier = {
 # 	any_in_global_list = {

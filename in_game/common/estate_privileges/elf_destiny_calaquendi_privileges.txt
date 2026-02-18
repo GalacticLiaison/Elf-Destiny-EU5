@@ -39,9 +39,7 @@ calaquendi_apprenticeships = {
 		monthly_towards_aristocracy = societal_value_monthly_move
 		monthly_towards_innovative = societal_value_monthly_move
 		global_nobles_max_literacy = 10
-		global_nobles_monthly_literacy = 0.01
 		global_calaquendi_max_literacy = 10
-		global_calaquendi_monthly_literacy = 0.01
 	}
 }
 
