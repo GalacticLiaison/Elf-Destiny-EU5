@@ -2082,6 +2082,12 @@ the_rut_enabled={
 	}
 }
 
+shrine_to_vana_unlocked={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
 
 tier_4_genetics_unlocked={
 	boolean=yes

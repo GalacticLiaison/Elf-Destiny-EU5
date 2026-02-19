@@ -160,6 +160,124 @@ fey_agoras = { # maybe unlocked from expedition? add an advancement that unlocks
 # Spark Pylon
 # - clergy building, increase magi unit damage
 
+aeluran_temple = {
+	is_foreign = no
+	max_levels = 2
+	employment_size = large_religious_building_employment
+	category = religious_category
+
+	pop_type = clergy
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	
+	build_time = estate_build_time
+
+	country_potential = {
+		elf_country_potential_trigger = yes
+		religion = religion:aeluran
+	}
+	
+	remove_if = {
+		location = {
+			NOT = { 
+				owner = { 
+					religion = religion:aeluran
+				}
+			}
+		}
+	}
+	
+	possible_production_methods = {
+		temple_maintenance
+	}
+
+	construction_demand = town_building_construction
+	
+	modifier = {
+		# monthly_religious_influence = 0.025
+		local_pop_conversion_speed_modifier = 0.1
+		local_clergy_estate_power = 0.2
+		local_unrest = -0.025
+		local_max_control = 0.05
+	}
+
+	on_built = {
+		owner = {
+			add_country_modifier = { 
+				modifier = increased_aeluran_influence
+				mode = add_and_extend
+			}
+		}
+	}
+
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = increased_aeluran_influence
+		}
+	}
+	
+	graphical_tags = { medium_religious }
+}
+
+shrine_to_vana = {
+	category = religious_category
+	is_foreign = no
+	max_levels = 1
+
+	pop_type = clergy
+	employment_size = 0.02
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	
+	build_time = 1
+
+	country_potential = {
+		elf_country_potential_trigger = yes
+		religion = religion:aeluran
+	}
+	
+	remove_if = {
+		location = {
+			NOT = { 
+				owner = { 
+					religion = religion:aeluran
+				}
+			}
+		}
+	}
+	
+	possible_production_methods = {
+		monastery_maintenance
+	}
+
+	construction_demand = basic_construction_needs
+	
+	modifier = {
+		# monthly_religious_influence = 0.025
+		local_the_rut_impact_modifier = 0.25
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier = { 
+				modifier = lesser_religious_influence_bonus
+				mode = add_and_extend
+			}
+		}
+	}
+
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = lesser_religious_influence_bonus
+		}
+	}
+
+	graphical_tags = { medium_religious }
+}
 
 # Lembas Bakery - maybe unlocked from expedition? Find lost recipe?
 lembas_bakery = {

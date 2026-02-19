@@ -163,49 +163,24 @@ start_elf_destiny_storyline_effect = {
 }
 
 elf_destiny_misc_game_start_tweaks_effect = {
-	# Lame work around necessary to be able to access traits in tooltips 
-	set_global_variable = {
-		name = enchantress_trait
-		value = trait:enchantress
-	}
-	set_global_variable = {
-		name = heroic_trait
-		value = trait:heroic
-	}
-	set_global_variable = {
-		name = fae_trait
-		value = trait:elf_tier_4
-	}
-	set_global_variable = {
-		name = celestial_trait
-		value = trait:elf_tier_7
-	}
 
-	# for error suppression
-	if = {
-		limit = {
-			exists = global_var:enchantress_trait
-			exists = global_var:heroic_trait
-			exists = global_var:human_trait
-			exists = global_var:fae_trait
-			exists = global_var:celestial_trait
-		}
-	}
-
+	# Note: think Ill disable for now because of the real estate is take up in the religion UI
+	# Maybe something to make a custom solution for in the future
+	
 	# Register the Divine Spark as the True God
-	every_country = { 
-		limit = {
-			religion = religion:aeluran
-		}
-		save_scope_as = current_country
-		religion = {
-			every_god_in_religion = {
-				scope:current_country = {
-					add_god = prev
-				}
-			}
-		}
-	}
+	# every_country = { 
+	# 	limit = {
+	# 		religion = religion:aeluran
+	# 	}
+	# 	save_scope_as = current_country
+	# 	religion = {
+	# 		every_god_in_religion = {
+	# 			scope:current_country = {
+	# 				add_god = prev
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 }
 

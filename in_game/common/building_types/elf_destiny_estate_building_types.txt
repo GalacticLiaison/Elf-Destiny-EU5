@@ -29,7 +29,22 @@ mallorn_tree_grove = {
 	
 	modifier = {
 		local_calaquendi_desired_pop = 0.03
-		monthly_religious_influence = 0.1
+		# monthly_religious_influence = 0.1
+	}
+
+	on_built = {
+		owner = {
+			add_country_modifier = { 
+				modifier = greater_religious_influence_bonus
+				mode = add_and_extend
+			}
+		}
+	}
+
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = greater_religious_influence_bonus
+		}
 	}
 	
 	graphical_tags = { small_religious }
@@ -66,7 +81,22 @@ baths_of_starlight = {
 	
 	modifier = {
 		local_calaquendi_desired_pop = 0.03
-		monthly_religious_influence = 0.1
+		# monthly_religious_influence = 0.1
+	}
+
+	on_built = {
+		owner = {
+			add_country_modifier = { 
+				modifier = greater_religious_influence_bonus
+				mode = add_and_extend
+			}
+		}
+	}
+
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = greater_religious_influence_bonus
+		}
 	}
 	
 	graphical_tags = { small_religious }
@@ -104,7 +134,22 @@ perfume_garden_of_valinor = {
 	
 	modifier = {
 		local_calaquendi_desired_pop = 0.03
-		monthly_religious_influence = 0.1
+		# monthly_religious_influence = 0.1
+	}
+
+	on_built = {
+		owner = {
+			add_country_modifier = { 
+				modifier = greater_religious_influence_bonus
+				mode = add_and_extend
+			}
+		}
+	}
+
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = greater_religious_influence_bonus
+		}
 	}
 	
 	graphical_tags = { small_religious }
@@ -141,7 +186,22 @@ wine_cellar_of_elder_days = {
 	
 	modifier = {
 		local_calaquendi_desired_pop = 0.03
-		monthly_religious_influence = 0.1
+		# monthly_religious_influence = 0.1
+	}
+
+	on_built = {
+		owner = {
+			add_country_modifier = { 
+				modifier = greater_religious_influence_bonus
+				mode = add_and_extend
+			}
+		}
+	}
+
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = greater_religious_influence_bonus
+		}
 	}
 	
 	graphical_tags = { small_religious }
@@ -178,7 +238,22 @@ feasting_hall_of_the_trees = {
 	
 	modifier = {
 		local_calaquendi_desired_pop = 0.03
-		monthly_religious_influence = 0.1
+		# monthly_religious_influence = 0.1
+	}
+
+	on_built = {
+		owner = {
+			add_country_modifier = { 
+				modifier = greater_religious_influence_bonus
+				mode = add_and_extend
+			}
+		}
+	}
+
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = greater_religious_influence_bonus
+		}
 	}
 	
 	graphical_tags = { small_religious }
@@ -215,7 +290,22 @@ grand_archives = {
 	
 	modifier = {
 		local_calaquendi_desired_pop = 0.03
-		monthly_religious_influence = 0.1
+		# monthly_religious_influence = 0.1
+	}
+
+	on_built = {
+		owner = {
+			add_country_modifier = { 
+				modifier = greater_religious_influence_bonus
+				mode = add_and_extend
+			}
+		}
+	}
+
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = greater_religious_influence_bonus
+		}
 	}
 	
 	graphical_tags = { small_religious }
@@ -245,8 +335,10 @@ grand_portal_ruins = {
 	build_time = huge_unique_build_time
 	modifier = {
 		local_crown_estate_power = 0.25
-		monthly_religious_influence = 0.1
+		# monthly_religious_influence = 0.1
 	}
+
+	
 	possible_production_methods = {
 		great_zimbabwe_maintenance
 	}
@@ -277,7 +369,7 @@ grand_portal = {
 	build_time = 3 # for testing
 	modifier = {
 		global_crown_estate_power = 0.5
-		monthly_religious_influence = 0.5
+		# monthly_religious_influence = 0.5
 		monthly_prestige = 1
 		trade_efficiency = large_trade_efficiency_bonus
 	}

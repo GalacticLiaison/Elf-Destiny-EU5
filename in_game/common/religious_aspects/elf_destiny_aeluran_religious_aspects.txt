@@ -17,6 +17,7 @@ the_rut = {
 	
 	modifier = {
         the_rut_enabled = yes
+		shrine_to_vana_unlocked = yes
 	}
 
 	opinions = {

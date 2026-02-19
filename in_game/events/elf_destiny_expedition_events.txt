@@ -673,6 +673,7 @@ elf_destiny_expedition.3 = {
                     NOR = {
                         has_variable = elf_tradition_discovered_people_of_the_bow
                         has_variable = elf_tradition_discovered_beast_tamers
+                        has_variable = elf_tradition_discovered_mythril_working
                     }
                 }
                 save_scope_value_as = {
@@ -800,6 +801,12 @@ elf_destiny_expedition.31 = {
                     scope:elf_tradition = flag:beast_tamers
 				}
 			}
+            triggered_desc = {
+				desc = elf_destiny_expedition.31.desc.mythril_working
+				trigger = {
+                    scope:elf_tradition = flag:mythril_working
+				}
+			}
 		}
         desc = elf_destiny_expedition.31.desc.close
     }
@@ -844,6 +851,22 @@ elf_destiny_expedition.31 = {
                     value = yes
                 }
             }
+            0 = {
+                modifier = {
+                    add = 50
+                    NOT = {
+                        has_variable = elf_tradition_discovered_mythril_working
+                    }
+                }
+                save_scope_value_as = {
+                    name = elf_tradition
+                    value = flag:mythril_working
+                }
+                set_variable = {
+                    name = elf_tradition_discovered_mythril_working
+                    value = yes
+                }
+            }
            
             # 10 = { add_character_modifier = { name = elven_artifact duration = -1 } }  # Rare: Custom modifier (define in static_modifiers)
 
@@ -861,7 +884,7 @@ elf_destiny_expedition.31 = {
                 exists = scope:elf_tradition 
                 scope:elf_tradition = flag:people_of_the_bow 
             }
-            add_reform = government_reform:people_of_the_bow
+             research_advance = advance_type:honor_of_the_fay
         }
         if = {
             limit = { 
@@ -869,6 +892,13 @@ elf_destiny_expedition.31 = {
                 scope:elf_tradition = flag:beast_tamers 
             }
             research_advance = advance_type:beast_tamers
+        }
+        if = {
+            limit = { 
+                exists = scope:elf_tradition
+                scope:elf_tradition = flag:mythril_working 
+            }
+            research_advance = advance_type:mythril_working
         }
     }
 

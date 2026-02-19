@@ -228,6 +228,10 @@ honor_of_the_fay = {
 
 	allow = { 
 		current_age = age_2_renaissance
+		custom_tooltip = {
+			text = discovered_people_of_the_bow_tradition
+			has_variable = elf_tradition_discovered_people_of_the_bow
+		}
 	}
 
 	research_cost = 0.1

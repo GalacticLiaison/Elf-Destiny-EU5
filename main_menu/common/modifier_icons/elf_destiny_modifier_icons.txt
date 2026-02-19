@@ -261,6 +261,10 @@ the_rut_enabled = {
 	positive = "gfx/interface/icons/disease/the_rut.dds" 
 }
 
+shrine_to_vana_unlocked = {
+	positive = "gfx/interface/icons/buildings/shrine_to_vana.dds" 
+}
+
 tier_4_genetics_unlocked = {
 	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
 }

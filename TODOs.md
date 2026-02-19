@@ -64,3 +64,6 @@ maybe a character interaction debug cheat menu to assign genetic traits
 
 
 # Final Pass on culture/religion/country colors
+
+Make sure all unlockabales are gated behind the unlock and also can be unlocked
+- make sure for example mythril gets an expedition event

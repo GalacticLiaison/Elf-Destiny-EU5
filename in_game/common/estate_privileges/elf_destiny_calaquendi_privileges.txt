@@ -128,7 +128,7 @@ war_masters = {
 		calaquendi_estate_levy_size = 0.33
 		levy_combat_efficiency_modifier = 0.15
 		military_tactics = 0.1
-		noble_estate_blocked_from_leading_military = yes
+		nobles_estate_blocked_from_leading_military = yes
 		peasants_estate_blocked_from_leading_military = yes
 		burghers_estate_blocked_from_leading_military = yes
 	}

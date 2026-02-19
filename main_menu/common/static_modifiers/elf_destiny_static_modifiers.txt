@@ -5,6 +5,36 @@
 	calaquendi_estate_target_satisfaction = -1
 }
 
+greater_religious_influence_bonus = {
+    game_data = {
+	    category = country
+    }
+	monthly_religious_influence = 0.1
+}
+
+standard_religious_influence_bonus = {
+	    game_data = {
+	    category = country
+    }
+	monthly_religious_influence = 0.05
+}
+
+lesser_religious_influence_bonus = {
+    game_data = {
+	    category = country
+    }
+	monthly_religious_influence = 0.025
+}
+
+increased_aeluran_influence = {
+    game_data = {
+	    category = country
+    }
+	monthly_religious_influence = 0.05
+	clergy_estate_levy_size = 0.05
+	global_clergy_estate_power = 0.01
+}
+
 
 ### GENETIC MODIFIERS ###
 

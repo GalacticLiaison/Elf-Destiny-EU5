@@ -1,0 +1,23 @@
+﻿on_location_changed_owner = {
+    on_actions = {
+		manage_building_modifiers
+	}
+}
+
+manage_building_modifiers = {
+    trigger = {
+        scope:loser = {
+            OR = {
+                culture = {
+					has_culture_group = culture_group:elven_culture_group
+				}
+                religion = religion:aeluran
+            }
+        }
+    }
+
+    effect = {
+        debug_log = "manage_building_modifiers"
+        debug_log_scopes = yes
+    }
+}

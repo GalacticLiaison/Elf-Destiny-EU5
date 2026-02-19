@@ -72,19 +72,19 @@
  MODIFIER_TYPE_DESC_local_elven_crafts_output_modifier: "This modifies the [output|e] of [ShowGoodsName('elven_crafts')] in this [location|e]."
  MODIFIER_TYPE_NAME_global_elven_crafts_output_modifier: "$elven_crafts$ Output"
  MODIFIER_TYPE_DESC_global_elven_crafts_output_modifier: "This modifies the [output|e] of [ShowGoodsName('elven_crafts')] in the entire [country|e]."
- MODIFIER_TYPE_NAME_can_extract_elven_crafts: "Can create Elven Crafts" # N/A
- MODIFIER_TYPE_DESC_can_extract_elven_crafts: "This allows the creation of [ShowGoodsName('mythril')] by allowing an [rgo|e] in a [location|e]."
+ MODIFIER_TYPE_NAME_can_extract_elven_crafts: "Can create $elven_crafts$ " # N/A
+ MODIFIER_TYPE_DESC_can_extract_elven_crafts: "This allows the creation of [ShowGoodsName('elven_crafts')] by allowing an [rgo|e] in a [location|e]."
 
- MODIFIER_TYPE_NAME_ban_exports_of_mythril_elven_crafts: "Ban Exports of Mythril Elven Crafts"
- MODIFIER_TYPE_DESC_ban_exports_of_mythril_elven_crafts: "TODO : Write a desc"
- MODIFIER_TYPE_NAME_ban_imports_of_mythril_elven_crafts: "Ban Imports of Mythril Elven Crafts"
- MODIFIER_TYPE_DESC_ban_imports_of_mythril_elven_crafts: "TODO : Write a desc"
- MODIFIER_TYPE_NAME_local_mythril_elven_crafts_output_modifier: "Local Mythril Elven Crafts Output Modifier"
- MODIFIER_TYPE_DESC_local_mythril_elven_crafts_output_modifier: "TODO : Write a desc"
- MODIFIER_TYPE_NAME_global_mythril_elven_crafts_output_modifier: "Global Mythril Elven Crafts Output Modifier"
- MODIFIER_TYPE_DESC_global_mythril_elven_crafts_output_modifier: "TODO : Write a desc"
- MODIFIER_TYPE_NAME_can_extract_mythril_elven_crafts: "Can Extract Mythril Elven Crafts"
- MODIFIER_TYPE_DESC_can_extract_mythril_elven_crafts: "TODO : Write a desc"
+ MODIFIER_TYPE_NAME_ban_exports_of_mythril_elven_crafts: "Ban Exports of $mythril_elven_crafts$"
+ MODIFIER_TYPE_DESC_ban_exports_of_mythril_elven_crafts: "This blocks the [export|e] of [ShowGoodsName('mythril_elven_crafts')] from all [markets|e] that a [country|e] owns."
+ MODIFIER_TYPE_NAME_ban_imports_of_mythril_elven_crafts: "Ban Imports of $mythril_elven_crafts$"
+ MODIFIER_TYPE_DESC_ban_imports_of_mythril_elven_crafts: "This blocks the [import|e] of [ShowGoodsName('mythril_elven_crafts')] to all [markets|e] that a [country|e] owns."
+ MODIFIER_TYPE_NAME_local_mythril_elven_crafts_output_modifier: "Local $mythril_elven_crafts$ Output Modifier"
+ MODIFIER_TYPE_DESC_local_mythril_elven_crafts_output_modifier: "This modifies the [output|e] of [ShowGoodsName('mythril_elven_crafts')] in this [location|e]."
+ MODIFIER_TYPE_NAME_global_mythril_elven_crafts_output_modifier: "Global $mythril_elven_crafts$ Output Modifier"
+ MODIFIER_TYPE_DESC_global_mythril_elven_crafts_output_modifier: "This modifies the [output|e] of [ShowGoodsName('mythril_elven_crafts')] in the entire [country|e]."
+ MODIFIER_TYPE_NAME_can_extract_mythril_elven_crafts: "Can Extract $mythril_elven_crafts$"
+ MODIFIER_TYPE_DESC_can_extract_mythril_elven_crafts: "This allows the creation of [ShowGoodsName('mythril_elven_crafts')] by allowing an [rgo|e] in a [location|e]."
 
  MODIFIER_TYPE_NAME_aeluran_advisor_appointed: "Aeluran Advisor Joins Cabinet"
  MODIFIER_TYPE_DESC_aeluran_advisor_appointed: "TODO : Write a desc"
@@ -100,12 +100,16 @@
 
  MODIFIER_TYPE_NAME_the_rut_enabled: "The Rut Enabled"
  MODIFIER_TYPE_DESC_the_rut_enabled: "About twice a decade a great heat overtakes the young members of this culture that drives them to mate. Effected characters gain increased [fertility|e] and locations gain increased [population_growth|e]"
+ MODIFIER_TYPE_NAME_shrine_to_vana_unlocked: "[ShowBuildingTypeName('shrine_to_vana')] [building_type|e] Unlocked"
+ MODIFIER_TYPE_DESC_shrine_to_vana_unlocked: "Locations of this country can build a [ShowBuildingTypeName('shrine_to_vana')] dedicated to the great Valar Goddess herself"
+
+
  MODIFIER_TYPE_NAME_higher_chance_of_rare_genetic_beauty_traits: "Higher chance of rare genetic beauty traits"
  MODIFIER_TYPE_DESC_higher_chance_of_rare_genetic_beauty_traits: "TODO : Write a desc"
- MODIFIER_TYPE_NAME_enchantress_ruler_trait_unlocked: "Enchantress ruler trait unlocked"
- MODIFIER_TYPE_DESC_enchantress_ruler_trait_unlocked: "Characters will have a small chance to be blessed with the [GetGlobalVariable('enchantress_trait').Trait.GetName] [ruler_trait|e] by The Divine Spark"
- MODIFIER_TYPE_NAME_heroic_ruler_trait_unlocked: "Heroic ruler trait unlocked"
- MODIFIER_TYPE_DESC_heroic_ruler_trait_unlocked: "Characters will have a small chance to be blessed with the [GetGlobalVariable('heroic_trait').Trait.GetName] [ruler_trait|e] by The Divine Spark"
+ MODIFIER_TYPE_NAME_enchantress_ruler_trait_unlocked: "[ShowTraitName('enchantress')] [ruler_trait|e] unlocked"
+ MODIFIER_TYPE_DESC_enchantress_ruler_trait_unlocked: "Characters will have a small chance to be blessed with the [ShowTraitName('enchantress')] [ruler_trait|e] by The Divine Spark"
+ MODIFIER_TYPE_NAME_heroic_ruler_trait_unlocked: "[ShowTraitName('heroic')] [ruler_trait|e] unlocked"
+ MODIFIER_TYPE_DESC_heroic_ruler_trait_unlocked: "Characters will have a small chance to be blessed with the [ShowTraitName('heroic')] [ruler_trait|e] by The Divine Spark"
 
  MODIFIER_TYPE_NAME_silver_hair_modifier: "Character Has Silver Hair"
  MODIFIER_TYPE_DESC_silver_hair_modifier: "TODO : Write a desc"
@@ -644,6 +648,10 @@
  army_magi_reinforce: "Army Magi Reinforce"
  army_magi_maintenance: "Army Magi Maintenance"
 
+ STATIC_MODIFIER_NAME_lesser_religious_influence_bonus: "Lesser increase in the Divine Spark's Favor"
+ STATIC_MODIFIER_NAME_greater_religious_influence_bonus: "Greater increase in the Divine Spark's Favor"
+ STATIC_MODIFIER_NAME_increased_aeluran_influence: "Increased Aeluran Influence"
+
  STATIC_MODIFIER_NAME_elf_tier_1: "Elf Blood"
  STATIC_MODIFIER_NAME_elf_tier_2: "Elf"
  STATIC_MODIFIER_NAME_elf_tier_3: "High Elf"
@@ -840,21 +848,22 @@
  aeluran_events.1.desc: "The Aeluran Matriarch has appointed you a new Aeluran Advisor"
  aeluran_events.1.a: "A wise councilor indeed"
 
+ recieve_greater_blessing: "#!#high Country receives a [ShowModifier('greater_religious_influence_bonus')] upon completion#!\n\n"
 
  elven_parliament: "Elven Parliament"
  elven_parliament_desc: "TODO : Write a desc"
  sponsor_a_mallorn_tree_grove: "Sponsor a Mallorn Tree Grove"
- sponsor_a_mallorn_tree_grove_desc: "TODO : Write a desc"
+ sponsor_a_mallorn_tree_grove_desc: "$recieve_greater_blessing$#emp #color_gray Trees.#!#!"
  sponsor_baths_of_starlight: "Sponsor Baths Of Starlight"
- sponsor_baths_of_starlight_desc: "TODO : Write a desc"
+ sponsor_baths_of_starlight_desc: "$recieve_greater_blessing$TODO : Write a desc"
  sponsor_perfume_garden_of_valinor: "Sponsor Perfume Garden of Valinor"
- sponsor_perfume_garden_of_valinor_desc: "TODO : Write a desc"
+ sponsor_perfume_garden_of_valinor_desc: "$recieve_greater_blessing$TODO : Write a desc"
  sponsor_wine_cellar_of_elder_days: "Sponsor Wine Cellar of the Elder Days"
- sponsor_wine_cellar_of_elder_days_desc: "TODO : Write a desc"
+ sponsor_wine_cellar_of_elder_days_desc: "$recieve_greater_blessing$TODO : Write a desc"
  sponsor_feasting_hall_of_the_trees: "Sponsor Feasting Hall of the Trees"
- sponsor_feasting_hall_of_the_trees_desc: "TODO : Write a desc"
+ sponsor_feasting_hall_of_the_trees_desc: "$recieve_greater_blessing$TODO : Write a desc"
  sponsor_grand_archives: "Sponsor Grand Archives"
- sponsor_grand_archives_desc: "TODO : Write a desc"
+ sponsor_grand_archives_desc: "$recieve_greater_blessing$TODO : Write a desc"
 
  pa_cosponser_expedition: "Co-Sponsor an Expedition"
  pa_cosponser_expedition_desc: "The Calaquendi of your realm wish to send an expedition to rediscover ancient Elven knowledge. They seek the crown's aid to help share in the cost of the endeavor."
@@ -944,6 +953,11 @@
  elven_master_workshop: "Elven Master Workshop"
  elven_master_workshop_desc: "TODO : Write a desc"
 
+ aeluran_temple: "Aeluran Temple"
+ aeluran_temple_desc: "#!#high Country receives increased [ShowModifier('increased_aeluran_influence')] upon completion#!\n\n#emp #color_gray A gathering place of Red Sisters from the Aeluran Order--another string in their great web.#!#!"
+ shrine_to_vana: "Shrine to Vána"
+ shrine_to_vana_desc: "#!#high Country receives a [ShowModifier('lesser_religious_influence_bonus')] upon completion#!\n\n#emp #color_gray A tribute to Vána Goddess of prosperity and fertility. To feed the Divine Spark there must be life.#!#!"
+
  early_magi_construction: "Early Magi Construction"
  early_magi_maintenance: "Early Magi Maintenance"
  metal_elven_master_workshop_maintenance: "Metal Elven Master Workshop Maintenance"
@@ -1029,12 +1043,14 @@
  honor_of_the_fay: "Honor of the Fay"
  honor_of_the_fay_desc: "TODO : Write a desc""
 
- discovered_beast_tamers_tradition: "Discovered the lost practice of Beast Taming"
- discovered_mythril_working_tradition: "Discovered the lost practice of Mythril Working"
+ go_on_expeditions: "\nAncient Elven knowledge can be rediscovered by using the [ShowCharacterInteractionName('fund_expedition')] [character_interaction|e] on your country's [ruler|e]"
+ discovered_people_of_the_bow_tradition: "#high Discovered:#! The forgotten honor code of the people of the bow. $go_on_expeditions$"
+ discovered_beast_tamers_tradition: "#high Discovered:#! The lost practice of beast taming. $go_on_expeditions$"
+ discovered_mythril_working_tradition: "#high Discovered:#! The lost practice of mythril working. $go_on_expeditions$"
  grand_portal_has_been_restored: "The Grand Portal has been restored, and the ambient Spark in the world has increased"
 
- ruler_is_fae_tier_or_higher: "This country's [ruler|e] must ascend to [GetGlobalVariable('fae_trait').Trait.GetName] or higher"
- ruler_is_celestial_tier_or_higher: "This country's [ruler|e] must ascend to [GetGlobalVariable('celestial_trait').Trait.GetName] or higher"
+ ruler_is_fae_tier_or_higher: "This country's [ruler|e] must ascend to [ShowTraitName('elf_tier_4')] or higher"
+ ruler_is_celestial_tier_or_higher: "This country's [ruler|e] must ascend to [ShowTraitName('elf_tier_7')] or higher"
 
 
  no_title: ""
@@ -1189,6 +1205,7 @@
  elf_destiny_expedition.31.desc: "You open the ornate chest to find "
  elf_destiny_expedition.31.desc.people_of_the_bow: "a bow of unknown lumber and impressive craftsmanship. "
  elf_destiny_expedition.31.desc.beast_tamers: "a book labeled The Royal Menagerie's Bestiary and Husbandry Guide Third Edition. "
+ elf_destiny_expedition.31.desc.mythril_working: "A collection of intricate metal tools, perhaps from a smithy. "
  elf_destiny_expedition.31.desc.close: "It radiates a faint, otherworldly glow. You can feel the Divine Spark's presence within it, suggesting a deep connection between the ancient Elves and this mysterious artifact.\n\nAn urge to reach out and touch it overcomes you. You instinctivley know that you could gain lost knowledge by connecting with it. What will you do?"
  elf_destiny_expedition.31.a: "Touch the artifact"
  elf_destiny_expedition.31.b: "Close the chest"
