@@ -14,3 +14,24 @@
 		global_calaquendi_estate_power = 0.01
 	}
 }
+
+
+aeluran_education =
+{
+	allow = {
+		# is_female = yes
+		# religion = religion:aeluran
+		owner = c:DWD
+		owner = {
+			religion = religion:aeluran
+		}
+	}
+
+	modifier = {
+		character_child_education = 0.75
+	}
+	country_modifier = {
+		# court_spending_cost = 0.01
+		# global_calaquendi_estate_power = 0.01
+	}
+}

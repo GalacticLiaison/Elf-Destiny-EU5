@@ -7,16 +7,7 @@ human = {
 	flavor = racial_trait
 	
 	modifier = {
-		# use add_character_modifier instead for just an individual
-		# use an elven advance tree if you want to apply to all elf culture
-		# plan - add to both on_birth and on_character_created logic that when adding elf trait, also apply character modifier
 
-		# essentially create an entire genetic trait framework class
-		# we should get rid of these ruler traits all together and make a custom GUI secttion, track trait icons to display with character variables 
-
-		# add_character_modifier_until_death
-		
-		# character_life_expectancy = 25
 	}
 
 	chance = {
@@ -31,16 +22,7 @@ elf_tier_1 = {
 	category = ruler
 	flavor = racial_trait
 	
-	modifier = {
-		# use add_character_modifier instead for just an individual
-		# use an elven advance tree if you want to apply to all elf culture
-		# plan - add to both on_birth and on_character_created logic that when adding elf trait, also apply character modifier
-
-		# essentially create an entire genetic trait framework class
-		# we should get rid of these ruler traits all together and make a custom GUI secttion, track trait icons to display with character variables 
-
-		# add_character_modifier_until_death
-		
+	modifier = {		
 		character_life_expectancy = 15
 	}
 

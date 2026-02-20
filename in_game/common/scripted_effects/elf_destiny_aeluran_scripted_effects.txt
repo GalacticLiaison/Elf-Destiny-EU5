@@ -1,4 +1,72 @@
-﻿create_new_aeluran_advisor = {
+﻿daughters_sent_to_become_aeluran_sisters_effect = {
+	every_character = {
+		limit = {
+			is_female = yes
+			character_age >= 3
+			character_age < 7
+			NOT = {
+				has_variable = refused_aeluran_training
+			}
+		}
+
+		save_scope_as = new_sister
+
+		set_variable = {
+			name = country_of_origin
+			value = owner
+		}
+
+		set_child_education = child_education:aeluran_education
+
+		if = {
+			limit = {
+				owner = { is_ai = no }
+			}
+
+			owner = {
+				trigger_event_non_silently = {
+					id = aeluran_events.4 
+				}
+			}
+		}
+
+		move_country = c:DWD
+	}
+}
+
+daughters_return_as_aeluran_sisters_effect = {
+	every_character = {
+		limit = {
+			is_female = yes
+			is_adult = yes
+			has_variable = country_of_origin
+			NOT = {
+				has_trait = aeluran_sister
+			}
+		}
+		save_scope_as = new_sister
+
+		add_trait = trait:aeluran_sister
+
+		move_country = var:country_of_origin
+		remove_variable = country_of_origin
+
+		if = {
+			limit = {
+				owner = { is_ai = no}
+			}
+
+			owner = {
+				trigger_event_silently = {
+					id = aeluran_events.41
+				}
+			}
+		}
+	}
+}
+
+
+create_new_aeluran_advisor = {
 	create_character = {
 		age = {18 30}
 		female = yes
@@ -46,6 +114,55 @@
 	}
 }
 
+create_new_aeluran_matron_fallback = {
+	c:DWD = {
+		create_character = {
+			age = {25 40}
+			female = yes
+		
+			religion = religion:aeluran
+			culture = culture:elven_culture
+			estate = estate_type:clergy_estate
+		
+			# TODO: could have some privilege increase the stats of advisors
+			adm = {
+				integer_range = {
+					min = {
+						value = 50
+					}
+					max = {
+						value = 100
+					}
+				}
+			}
+			dip = {
+				integer_range = {
+					min = {
+						value = 50
+					}
+					max = {
+						value = 100
+					}
+				}
+			}
+			mil = {
+				integer_range = {
+					min = {
+						value = 50
+					}
+					max = {
+						value = 100
+					}
+				}
+			}
+		
+			add_trait = trait:aeluran_matron
+			
+			save_scope_as = new_matron
+		}
+	}
+}
+
 assign_new_aeluran_advisor = {
 
 	# hidden_effect = {
@@ -83,4 +200,135 @@ assign_new_aeluran_advisor = {
 		}
 	}
 	
+}
+
+
+aeluran_succession_effect = {
+	debug_log = "aeluran_succession_effect"
+	if = {
+		limit = {
+			scope:target = {
+				has_trait = aeluran_matron
+			}
+		}
+		debug_log = "aeluran_succession_effect aeluran_matron"
+		remove_list_global_variable = { name = aeluran_matrons target = scope:target }
+		promote_random_sister_to_matron_effect = yes
+	}
+	if = {
+		limit = {
+			scope:target = {
+				has_trait = aeluran_matriarch
+			}
+		}
+		debug_log = "aeluran_succession_effect aeluran_matriarch"
+		promote_random_matron_to_matriarch_effect = yes
+	}
+}
+
+promote_random_sister_to_matron_effect = {
+	debug_log = "promote_random_sister_to_matron_effect"
+
+	random_country = {
+		limit = {
+			any_character = {
+				has_trait = aeluran_sister
+			}
+		}
+		random_character = {
+			limit = {
+				has_trait = aeluran_sister
+			}
+			save_scope_as = new_matron
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:new_matron
+			}
+		}
+		debug_log = "promote_random_sister_to_matron_effect fallback"
+
+		create_new_aeluran_matron_fallback = yes
+	}
+	else = {
+		scope:new_matron = {
+			remove_trait = trait:aeluran_sister
+			add_trait = trait:aeluran_matron
+		}
+	}
+
+	debug_log = "promote_random_sister_to_matron_effect matron selected"
+	debug_log_scopes = yes
+
+	if = {
+		limit = {
+			scope:new_matron.owner = {
+				is_ai = no
+			}
+		}
+
+		scope:new_matron.owner = {
+			trigger_event_non_silently = {
+				id = aeluran_events.2 
+			}
+		}
+	}
+
+	add_to_global_variable_list = {
+		name = aeluran_matrons
+		target = scope:new_matron
+	}
+}
+
+promote_random_matron_to_matriarch_effect = {
+	random_in_global_list = {
+		variable = aeluran_matrons
+		save_scope_as = new_matriarch
+	}
+
+	scope:new_matriarch = {
+		remove_trait = trait:aeluran_matron
+		add_trait = trait:aeluran_matriarch
+	}
+
+	c:DWD = { set_new_ruler_no_update = scope:new_matriarch }
+
+	remove_list_global_variable = { name = aeluran_matrons target = scope:new_matriarch }
+
+	promote_random_sister_to_matron_effect = yes
+
+	every_country = {
+		limit = {
+			is_ai = no
+			religion = religion:aeluran
+			NOT = {
+				scope:new_matriarch.owner = this
+			}
+		}
+
+		trigger_event_non_silently = {
+			id = aeluran_events.3
+		}
+	}
+
+	if = {
+		limit = {
+			scope:new_matriarch = {
+				owner = {
+					is_ai = no
+				}
+			}
+		}
+
+		scope:new_matriarch = {
+			owner = {
+				trigger_event_non_silently = {
+					id = aeluran_events.31
+				}
+			}
+		}
+	}
 }

@@ -2075,6 +2075,13 @@ calaquendi_apprenticeship_education_unlocked={
 	}
 }
 
+raid_for_humans={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
 the_rut_enabled={
 	boolean=yes
 	game_data={

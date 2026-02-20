@@ -261,6 +261,10 @@ the_rut_enabled = {
 	positive = "gfx/interface/icons/disease/the_rut.dds" 
 }
 
+raid_for_humans = {
+	positive = "gfx/interface/icons/modifier_types/raid_for_humans.dds" 
+}
+
 shrine_to_vana_unlocked = {
 	positive = "gfx/interface/icons/buildings/shrine_to_vana.dds" 
 }

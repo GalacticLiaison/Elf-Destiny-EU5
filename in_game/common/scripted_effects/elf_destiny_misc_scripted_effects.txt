@@ -182,14 +182,35 @@ elf_destiny_misc_game_start_tweaks_effect = {
 	# 	}
 	# }
 
+	register_aeluran_leadership_effect = yes
+
+}
+
+register_aeluran_leadership_effect = {
+	# add_to_global_variable_list = { name = aeluran_matrons target = character:dwd_calmera_thalwyn }
+	# add_to_global_variable_list = { name = aeluran_matrons target = character:syl_valindra_valerith }
+	# add_to_global_variable_list = { name = aeluran_matrons target = character:hih_pamora_daelurin }
+	# add_to_global_variable_list = { name = aeluran_matrons target = character:cyg_elmera_thundarael }
+	# add_to_global_variable_list = { name = aeluran_matrons target = character:wyd_meldona_serelion }
+	# add_to_global_variable_list = { name = aeluran_matrons target = character:gsh_galanoriel_gwynthorn }
+
+	every_country = {
+		every_character = {
+			limit = {
+				has_trait = aeluran_matron
+			}
+			add_to_global_variable_list = { name = aeluran_matrons target = this }
+		}
+	}
 }
 
 set_calaquendi_education_effect = {
-	every_character = {
+	if = {
 		limit = {
 			is_adult = no
 			has_child_education = balanced_education
 		}
+
 		set_child_education = child_education:calaquendi_apprenticeship_education
 	}
 }

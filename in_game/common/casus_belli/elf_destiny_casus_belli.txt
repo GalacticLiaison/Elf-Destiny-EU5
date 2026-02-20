@@ -1,0 +1,23 @@
+﻿cb_human_slave_raiding = {
+	visible = { 
+        modifier:raid_for_humans = yes 
+    }
+	allow_creation = {
+        ruler = {
+            is_any_elf_type = yes
+        }
+        scope:target ={
+            ruler = {
+                is_any_elf_type = no
+            }
+        }
+		NOT = {
+			has_truce_with = scope:target
+		}
+
+	}
+
+	speed = 8.0
+
+	war_goal_type = humiliate
+}

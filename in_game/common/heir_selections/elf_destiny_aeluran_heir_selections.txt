@@ -1,0 +1,37 @@
+﻿# matriarch_selection = {
+# 	# traverse_family_tree = no # do we use the family tree to calculate who's in line
+# 	# include_ruler_siblings = no
+# 	# all_in_country = yes # do we consider every character in the country?
+# 	# all_in_dynasty = yes # do we consider every character in the current ruler's dynasty?
+# 	# allow_children = yes # can characters under 18 be candidates? Default = no
+# 	# through_female = yes 
+# 	# ignore_ruler = yes # ignore the ruler from calculations (no for elections, yes for monarchies etc)
+# 	# use_mothers_dynasty = yes # do we use the mother's dynasty to calculate
+
+# 	allow_female = yes # can women be candidates? Default = no
+# 	allow_male = no # can men be candidates? Default = yes. Sorry, but....history
+# 	use_election = no # do we use an election process
+# 	term_duration = 0	#0 = until ruler death
+# 	max_possible_candidates = 0
+# 	show_candidates = no # do we show the list of candidates in the ui
+# 	allow_foreign_ruler = no
+# 	custom_tags = { empty_heir_religion_law }
+# 	allowed_estates = { clergy_estate }
+
+	
+# 	potential = {
+# 		tag = DWD
+# 	}
+
+# 	locked = {
+# 		tag = DWD
+# 	}
+	
+	
+# 	calc = {
+# 		add = {
+# 			desc = "HEIR_SELECTION_AELURAN_MATRIARCH_ELECTION_HAS_NO_HEIR"
+# 			value = -1
+# 		}
+# 	}
+# }

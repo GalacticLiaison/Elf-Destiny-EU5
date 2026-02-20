@@ -1,12 +1,14 @@
 ﻿namespace = aeluran_events
 
-aeluran_events.1 = {
+aeluran_events.1 = { # New Aeluran Advisor
 	type = country_event
 	title = aeluran_events.1.title
 	desc = aeluran_events.1.desc
 	trigger = {
 
 	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/aeluran_leaves.dds"
 
 	illustration_tags = {
         10 = regular
@@ -25,5 +27,188 @@ aeluran_events.1 = {
 		assign_new_aeluran_advisor = yes
 
 		add_religious_influence = religious_influence_mild_bonus
+	}
+}
+
+aeluran_events.2 = { # Promoted to Aeluran Matron
+	type = country_event
+	title = aeluran_events.2.title
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = aeluran_events.2.ruler_desc
+				trigger = {
+                    scope:new_matron ?= {
+						is_ruler = yes
+					}
+				}
+			}
+			desc = aeluran_events.2.courtier_desc
+		}
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/aeluran_leaves.dds"
+
+	trigger = {
+
+	}
+
+	immediate = {
+		# if = {
+		# 	limit = {
+		# 		scope:new_matron ?= {
+		# 			is_ruler = yes
+		# 		}
+		# 	}
+		# }
+	}
+	
+	option = {
+		name = aeluran_events.2.a
+
+		trigger = {
+
+		}
+
+		add_religious_influence = religious_influence_mild_bonus
+	}
+}
+
+aeluran_events.3 = { # NPC promoted to Aeluran Matriarch
+	type = country_event
+	title = aeluran_events.3.title
+	desc = aeluran_events.3.desc
+
+	image = "gfx/interface/illustrations/event/backgrounds/aeluran_leaves.dds"
+
+	trigger = {
+
+	}
+
+	immediate = {
+		# if = {
+		# 	limit = {
+		# 		scope:new_matron ?= {
+		# 			is_ruler = yes
+		# 		}
+		# 	}
+		# }
+	}
+	
+	option = {
+		name = aeluran_events.3.a
+
+		trigger = {
+
+		}
+	}
+}
+
+aeluran_events.31 = { # Players court member promoted
+	type = country_event
+	title = aeluran_events.31.title
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = aeluran_events.31.ruler_desc
+				trigger = {
+                    scope:new_matriarch ?= {
+						is_ruler = yes
+					}
+				}
+			}
+			desc = aeluran_events.31.courtier_desc
+		}
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/aeluran_leaves.dds"
+
+	trigger = {
+
+	}
+
+	immediate = {
+		# if = {
+		# 	limit = {
+		# 		scope:new_matron ?= {
+		# 			is_ruler = yes
+		# 		}
+		# 	}
+		# }
+	}
+	
+	option = {
+		name = aeluran_events.31.a
+
+		trigger = {
+
+		}
+
+		add_religious_influence = religious_influence_severe_bonus
+	}
+}
+
+
+aeluran_events.4 = { # Daughters Sent To Be Trained
+	type = country_event
+	title = aeluran_events.4.title
+	desc = aeluran_events.4.desc
+
+	image = "gfx/interface/illustrations/event/backgrounds/aeluran_leaves.dds"
+
+	trigger = {
+
+	}
+
+	immediate = {
+		# if = {
+		# 	limit = {
+		# 		scope:new_matron ?= {
+		# 			is_ruler = yes
+		# 		}
+		# 	}
+		# }
+	}
+	
+	option = {
+		name = aeluran_events.4.a
+
+		trigger = {
+
+		}
+
+		# add_religious_influence = religious_influence_severe_bonus
+	}
+}
+
+aeluran_events.41 = { # Daughters Returned From Training
+	type = country_event
+	title = aeluran_events.41.title
+	desc = aeluran_events.41.desc
+
+	image = "gfx/interface/illustrations/event/backgrounds/aeluran_leaves.dds"
+
+	trigger = {
+
+	}
+
+	immediate = {
+		# if = {
+		# 	limit = {
+		# 		scope:new_matron ?= {
+		# 			is_ruler = yes
+		# 		}
+		# 	}
+		# }
+	}
+	
+	option = {
+		name = aeluran_events.41.a
+
+		trigger = {
+
+		}
+
+		add_religious_influence = religious_influence_weak_bonus
 	}
 }

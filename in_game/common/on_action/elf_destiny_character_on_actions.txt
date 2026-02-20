@@ -50,3 +50,43 @@ assign_genetic_traits = {
 		}
 	}
 }
+
+#root = country, scope:target = character who dies
+on_character_death = {
+	on_actions = {
+		aeluran_succession
+	}
+}
+
+aeluran_succession = {
+	trigger = {
+		scope:target = {
+			OR = {
+				has_trait = aeluran_matron
+				has_trait = aeluran_matriarch
+			}
+		}
+	}
+	effect = {
+		aeluran_succession_effect = yes
+	}
+}
+
+
+#root = character
+#only from create_character effect
+on_character_created = {
+	on_actions = {
+		handle_created_character_race
+	}
+}
+
+handle_created_character_race = {
+	trigger = {
+		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_any_elf_type = no
+	}
+	effect = {
+		handle_created_character_race_effect = yes
+	}
+}

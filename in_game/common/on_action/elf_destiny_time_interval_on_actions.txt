@@ -66,6 +66,50 @@ set_calaquendi_education = {
 # }
 # add_to_cabinet
 
+yearly_country_pulse = {
+	on_actions = {
+		daughters_sent_to_become_aeluran_sisters
+		daughters_return_as_aeluran_sisters
+	}
+}
+
+daughters_sent_to_become_aeluran_sisters = {
+	trigger = {
+		religion = religion:aeluran
+		any_character = {
+			is_female = yes
+			is_any_elf_type = yes
+			character_age < 7
+			# NOT = {
+			# 	has_variable = refused_aeluran_training
+			# }
+		}
+	}
+
+	effect = {
+		daughters_sent_to_become_aeluran_sisters_effect = yes
+	}
+}
+
+daughters_return_as_aeluran_sisters = {
+	trigger = {
+		this = c:DWD
+		any_character = {
+			is_female = yes
+			is_adult = yes
+			has_variable = country_of_origin
+			NOT = {
+				has_trait = aeluran_sister
+			}
+		}
+	}
+
+	effect = {
+		daughters_return_as_aeluran_sisters_effect = yes
+	}
+}
+
+
 
 four_yearly_country_pulse = {
 	on_actions = {

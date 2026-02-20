@@ -886,3 +886,17 @@ upgrade_elf_race_trait = {
 	remove_race_trait = { trait = elf_tier_$old_level$}
 	assign_race_trait = { trait = elf_tier_$new_level$}
 }
+
+
+handle_created_character_race_effect = {
+	if = {
+		limit = {
+			culture = { has_culture_group = culture_group:elven_culture_group}
+			is_any_elf_type = no
+		}
+
+		debug_log = "handle_created_character_race_effect"
+		debug_log_scopes = yes
+		assign_race_trait = { trait = elf_tier_2}
+	}
+}

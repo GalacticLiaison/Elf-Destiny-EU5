@@ -49,9 +49,7 @@ character_db={
 		dynasty = thalwyn_dynasty
 		tag = DWD
 
-		# estate = nobles_estate
-		# father = syl_victaris_valerith
-		# mother = syl_valindra_valerith
+		religious_figure_trait = aeluran_matriarch
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -88,6 +86,8 @@ character_db={
 
 		# estate = nobles_estate
 		mother = dwd_elandra_thalwyn
+
+		religious_figure_trait = aeluran_matron
 
 		timed_modifier = {
 			modifier = "elf_tier_2"
@@ -261,6 +261,8 @@ character_db={
 
 		mother = syl_felicity_valerith
 
+		religious_figure_trait = aeluran_matron
+
 		timed_modifier = {
 			modifier = "elf_tier_2"
 			start_date = 1299.1.1
@@ -359,6 +361,62 @@ character_db={
 		# estate = nobles_estate
 		father = syl_victaris_valerith
 		mother = syl_valindra_valerith
+
+		religious_figure_trait = aeluran_sister
+
+		timed_modifier = {
+			modifier = "elf_tier_2"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "royal_elf_valerith"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "beauty_good_3"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "intellect_good_1"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+
+		timed_modifier = {
+			modifier = "pure_blooded"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		timed_modifier = {
+			modifier = "fecund"
+			start_date = 1318.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+	syl_seraphine_valerith_the_second = {
+		first_name = { name = name_seraphine }
+		culture = deepwood_elven_culture
+		religion = aeluran
+		female = yes
+		adm = 80 dip = 99 mil = 66
+		birth_date = 1333.1.1
+		birth = pelym
+		dynasty = valerith_dynasty
+		tag = SYL
+
+		# estate = nobles_estate
+		# father = syl_victaris_valerith
+		mother = syl_seraphine_valerith
 
 		timed_modifier = {
 			modifier = "elf_tier_2"
@@ -466,6 +524,8 @@ character_db={
 		father = syl_victaris_valerith
 		mother = syl_valindra_valerith
 
+		religious_figure_trait = aeluran_sister
+
 		timed_modifier = {
 			modifier = "elf_tier_2"
 			start_date = 1319.1.1
@@ -512,6 +572,8 @@ character_db={
 		# estate = nobles_estate
 		father = syl_victaris_valerith
 		mother = syl_valindra_valerith
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_2"
@@ -612,6 +674,8 @@ character_db={
 		tag = MYT
 
 		mother = syl_felicity_valerith
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -832,6 +896,8 @@ character_db={
 
 		mother = hih_vara_daelurin
 
+		religious_figure_trait = aeluran_matron
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
 			start_date = 1296.1.1
@@ -927,6 +993,7 @@ character_db={
 
 	hih_delwyn_daelurin = {
 		first_name = { name = name_delwyn }
+		female = yes
 		culture = alfar_culture
 		religion = aeluran
 		adm = 66 dip = 45 mil = 99
@@ -937,6 +1004,8 @@ character_db={
 
 		father = hih_ganduin_daelurin
 		mother = hih_pamora_daelurin
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_2"
@@ -966,6 +1035,7 @@ character_db={
 
 	hih_nienor_daelurin = {
 		first_name = { name = name_nienor }
+		female = yes
 		culture = alfar_culture
 		religion = aeluran
 		adm = 66 dip = 45 mil = 99
@@ -975,6 +1045,8 @@ character_db={
 		tag = HIH
 
 		mother = hih_paldara_daelurin
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_2"
@@ -1004,6 +1076,7 @@ character_db={
 
 	hih_thaleia_daelurin = {
 		first_name = { name = name_thaleia}
+		female = yes
 		culture = alfar_culture
 		religion = aeluran
 		adm = 66 dip = 45 mil = 99
@@ -1013,6 +1086,8 @@ character_db={
 		tag = HIH
 
 		mother = hih_paldara_daelurin
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_2"
@@ -1230,6 +1305,7 @@ character_db={
 
 	cyg_felna_thundarael = {
 		first_name = { name = name_felna}
+		female = yes
 		culture = astrion_culture
 		religion = aeluran
 		adm = 85 dip = 85 mil = 66
@@ -1273,6 +1349,7 @@ character_db={
 
 	cyg_aris_thundarael = {
 		first_name = { name = name_aris}
+		female = yes
 		culture = astrion_culture
 		religion = aeluran
 		adm = 85 dip = 85 mil = 66
@@ -1283,6 +1360,8 @@ character_db={
 		tag = CYG
 
 		father = tanis_thundarael
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -1328,6 +1407,8 @@ character_db={
 
 		father = qwd_faelyn_valerith
 		mother = cyg_aris_thundarael
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -1394,6 +1475,7 @@ character_db={
 
 	cyg_fera_thundarael = {
 		first_name = { name = name_fera}
+		female = yes
 		culture = astrion_culture
 		religion = aeluran
 		adm = 85 dip = 85 mil = 66
@@ -1428,6 +1510,7 @@ character_db={
 
 	cyg_celestia_thundarael = {
 		first_name = { name = name_celestia}
+		female = yes
 		culture = astrion_culture
 		religion = aeluran
 		adm = 85 dip = 85 mil = 66
@@ -1437,6 +1520,8 @@ character_db={
 		tag = CYG
 
 		mother = cyg_felna_thundarael
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -1511,6 +1596,7 @@ character_db={
 
 	cyg_freyja_thundarael = {
 		first_name = { name = name_freyja}
+		female = yes
 		culture = astrion_culture
 		religion = aeluran
 		adm = 85 dip = 85 mil = 66
@@ -1521,6 +1607,8 @@ character_db={
 
 		father = qwd_faelyn_valerith
 		mother = cyg_aris_thundarael
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -1604,6 +1692,8 @@ character_db={
 		tag = CYG
 
 		mother = cyg_elmera_thundarael
+
+		religious_figure_trait = aeluran_matron
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -1712,6 +1802,7 @@ character_db={
 
 	cyg_lyra_thundarael = {
 		first_name = { name = name_lyra}
+		female = yes
 		culture = astrion_culture
 		religion = aeluran
 		adm = 85 dip = 85 mil = 66
@@ -1722,6 +1813,8 @@ character_db={
 
 		father = cyg_nictheras_thundarael
 		mother = cyg_elysia_thundarael
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -1754,6 +1847,7 @@ character_db={
 
 	cyg_taliana_thundarael = {
 		first_name = { name = name_taliana}
+		female = yes
 		culture = astrion_culture
 		religion = aeluran
 		adm = 85 dip = 85 mil = 66
@@ -1763,6 +1857,8 @@ character_db={
 		tag = CYG
 
 		mother = cyg_melony_thundarael
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -1795,6 +1891,7 @@ character_db={
 
 	cyg_tyria_thundarael = {
 		first_name = { name = name_tyria}
+		female = yes
 		culture = astrion_culture
 		religion = aeluran
 		adm = 85 dip = 85 mil = 66
@@ -1804,6 +1901,8 @@ character_db={
 		tag = CYG
 
 		mother = cyg_melony_thundarael
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -2054,6 +2153,8 @@ character_db={
 
 		father = wyd_maldrik_serelion
 
+		religious_figure_trait = aeluran_matron
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
 			start_date = 1316.1.1
@@ -2119,6 +2220,7 @@ character_db={
 
 	wyd_selene_serelion = {
 		first_name = { name = name_selene}
+		female = yes
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
@@ -2128,6 +2230,8 @@ character_db={
 		tag = WYD
 
 		father = wyd_maldrik_serelion
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -2294,6 +2398,7 @@ character_db={
 
 	wyd_kylie_hyperion = {
 		first_name = { name = name_kylie}
+		female = yes
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
@@ -2362,6 +2467,7 @@ character_db={
 
 	wyd_antigoni_hyperion = {
 		first_name = { name = name_antigoni}
+		female = yes
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
@@ -2430,6 +2536,7 @@ character_db={
 
 	wyd_aubrey_serelion = {
 		first_name = { name = name_aubrey}
+		female = yes
 		culture = romaviri_culture
 		religion = aeluran
 		adm = 75 dip = 75 mil = 99
@@ -2437,6 +2544,8 @@ character_db={
 		birth = limassol
 		dynasty = serelion_dynasty
 		tag = WYD
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -2674,6 +2783,8 @@ character_db={
 
 		mother = gsh_glamdrin_gwynthorn
 
+		religious_figure_trait = aeluran_matron
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
 			start_date = 1281.1.1
@@ -2757,6 +2868,8 @@ character_db={
 		tag = GSH
 
 		mother = gsh_glamdrin_gwynthorn
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -2928,6 +3041,8 @@ character_db={
 		mother = gsh_galanoriel_gwynthorn
 		father = gsh_fionn_gwynthorn
 
+		religious_figure_trait = aeluran_sister
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
 			start_date = 1318.1.1
@@ -3012,6 +3127,8 @@ character_db={
 
 		mother = gsh_galanoriel_gwynthorn
 		father = gsh_fionn_gwynthorn
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -3167,6 +3284,8 @@ character_db={
 		father = gsh_edwin_gwynthorn
 		mother = gsh_elowyn_greenwood
 
+		religious_figure_trait = aeluran_sister
+
 		timed_modifier = {
 			modifier = "elf_tier_3"
 			start_date = 1317.1.1
@@ -3202,6 +3321,8 @@ character_db={
 
 		father = gsh_edwin_gwynthorn
 		mother = gsh_elowyn_greenwood
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -3542,7 +3663,6 @@ character_db={
 	ats_lyria_lormelis = {
 		first_name = { name = name_lyria}
 		female = yes
-
 		culture = atlareth_culture
 		religion = aeluran
 		adm = 75 dip = 65 mil = 99
@@ -3551,6 +3671,7 @@ character_db={
 		dynasty = lormelis_dynasty
 		tag = ATS
 
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -3593,6 +3714,8 @@ character_db={
 		tag = ATS
 
 		father = ats_aelor_lormelis
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"
@@ -3668,7 +3791,6 @@ character_db={
 	ats_elara_lormelis = {
 		first_name = { name = name_elara}
 		female = yes
-
 		culture = atlareth_culture
 		religion = aeluran
 		adm = 75 dip = 65 mil = 99
@@ -3679,6 +3801,8 @@ character_db={
 
 		father = ats_aelor_lormelis
 		mother = ats_lyria_lormelis
+
+		religious_figure_trait = aeluran_sister
 
 		timed_modifier = {
 			modifier = "elf_tier_3"

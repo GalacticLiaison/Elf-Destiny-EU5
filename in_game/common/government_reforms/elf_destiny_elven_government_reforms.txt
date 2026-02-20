@@ -48,6 +48,11 @@ elven_superiority = {
 	country_modifier = {
         government_reform_slots = 1
 		# new casus belli to raid for slaves in places that arent majority elf
+		auto_slave_raid = yes
+		slave_raid_efficiency = 0.25
+		diplomatic_reputation = -1
+		monthly_prestige = 0.2
+		raid_for_humans = yes
 	}
 	
 	location_modifier = {
@@ -86,8 +91,8 @@ open_hearted = {
 	
 	country_modifier = {
         government_reform_slots = 1
-		# new casus belli to raid for slaves in places that arent majority elf
-
+		diplomatic_reputation = 2
+		research_speed_modifier = 0.025
 		# any_accepted_culture
 		# any_present_culture_in_country
 		# any_primary_or_accepted_tolerated_culture
@@ -102,16 +107,23 @@ open_hearted = {
 
 		#conditional location modifiers. Can add multiple of these
 		potential_trigger = {
-            # custom_tooltip = {
-			# 	text = is_a_woodland_realm
-            #     OR = {
-            #         vegetation = forest
-            #         vegetation = woods
-            #     }
-			# }
-
+            custom_tooltip = {
+				text = location_has_both_human_and_elf_pops
+				# Humans + Elves live together
+				any_pop = { # Elf Culture Present
+					culture = {has_culture_group = culture_group:elven_culture_group} 
+				}
+				# +
+				any_pop = { # Human Culture Present
+					culture = {
+						NOT = {has_culture_group = culture_group:elven_culture_group}
+					} 
+				}
+			}
         }
 		local_population_growth = 0.02
+		local_migration_attraction = 0.3
+		local_pop_promotion_speed_modifier = 0.1
 	}
 	
 	# male_regnal_names = {

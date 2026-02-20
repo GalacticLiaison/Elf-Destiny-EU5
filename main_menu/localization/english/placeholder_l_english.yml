@@ -103,6 +103,9 @@
  MODIFIER_TYPE_NAME_shrine_to_vana_unlocked: "[ShowBuildingTypeName('shrine_to_vana')] [building_type|e] Unlocked"
  MODIFIER_TYPE_DESC_shrine_to_vana_unlocked: "Locations of this country can build a [ShowBuildingTypeName('shrine_to_vana')] dedicated to the great Valar Goddess herself"
 
+ MODIFIER_TYPE_NAME_raid_for_humans: "[ShowCasusBelliName('cb_human_slave_raiding')] [casus_belli|e] Unlocked"
+ MODIFIER_TYPE_DESC_raid_for_humans: "[ShowCasusBelliName('cb_human_slave_raiding')] [casus_belli|e] Unlocked"
+
 
  MODIFIER_TYPE_NAME_higher_chance_of_rare_genetic_beauty_traits: "Higher chance of rare genetic beauty traits"
  MODIFIER_TYPE_DESC_higher_chance_of_rare_genetic_beauty_traits: "TODO : Write a desc"
@@ -134,6 +137,9 @@
  calaquendi_estate_satisfaction: "Calaquendi estate satisfaction"
  calaquendi_estate_power: "Calaquendi estate power"
  calaquendi_estate_desc: "TODO : Write a desc"
+
+ cb_human_slave_raiding: "Raid for Human Slaves
+ cb_human_slave_raiding_desc: "TODO : Write a desc"
 
  royal_elf_valerith: "Bloodline of House Valerith"
  royal_elf_valerith_die_desc: "One of the ancient Elf houses, House Valerith is known for their iconic locks of silver hair and ethereal beauty. Millenniums of breeding focused on enhancing the flesh allow them to coil other lords around their elegant fingers. However, as a result, they themselves suffer from a total lack of self control. They grow addicted to indulgences and are susceptible to the same seductions they lay upon others."
@@ -204,9 +210,9 @@
  aeluran_advisors: "Aeluran Advisors"
  aeluran_advisors_desc: "TODO : Write a desc"
  elven_superiority: "Elven Superiority"
- elven_superiority_desc: "TODO : Write a desc"
+ elven_superiority_desc: "The Divine Spark itself anoints Elves as its chosen followers. Only they are fit to direct the fate of the realm's peoples. And Humans? Their place is to serve and obey."
  open_hearted: "Open Hearted"
- open_hearted_desc: "TODO : Write a desc"
+ open_hearted_desc: "Humans... Elves... we are all children of the divine spark. We should all be treated as equals"
  deepwood_elven_culture: "Deepwood Elven"
  tuatha_de_danann_culture: "Tuatha Dé Danann"
  romaviri_culture: "Romaviri"
@@ -830,14 +836,14 @@
  aeluran_matchmaking_desc: "TODO : Write a desc"
 
  AELURAN_ORDER_LEADER_MALE: "AELURAN ORDER LEADER MALE"
- AELURAN_ORDER_LEADER_FEMALE: "AELURAN ORDER LEADER FEMALE"
+ AELURAN_ORDER_LEADER_FEMALE: "High Matriarch"
  aeluran_order: "Aeluran order"
  aeluran_order_desc: "TODO : Write a desc"
  diplomatic_status_aeluran_order_name: "Diplomatic status aeluran order name"
  diplomatic_status_aeluran_order_tooltip: "Diplomatic status aeluran order tooltip"
  aeluran_order_list_who_tt: "Aeluran order list who tt"
 
- CANT_MANUALLY_ASSIGN_AELURAN_ADVISOR: "#r Can Not Change Aeluran Advisor#!"
+ CANT_MANUALLY_ASSIGN_AELURAN_ADVISOR: "#r Can not change Aeluran Advisor#!"
  CANT_MANUALLY_ASSIGN_AELURAN_ADVISOR_DESC: "Your Aeluran Advisor is appointed by the High Matriarch herself; Only she has the authority to dimiss her."
 
  aeluran_advisor_joins_realm: "Lady [aeluran_advisor.GetName] of the Aeluran Order Joins Your Realm"
@@ -847,6 +853,29 @@
  aeluran_events.1.title: "A New Red Sister"
  aeluran_events.1.desc: "The Aeluran Matriarch has appointed you a new Aeluran Advisor"
  aeluran_events.1.a: "A wise councilor indeed"
+
+ aeluran_events.2.title: "Lifted to Matron
+ 
+ aeluran_events.2.ruler_desc: "An opening on the Aeluran Council of Matrons must be filled and the council has chosen [new_matron.GetName] to become the new [ShowTraitName('aeluran_matron')]."
+ aeluran_events.2.courtier_desc: "An opening on the Aeluran Council of Matrons must be filled and the council has chosen [new_matron.GetName] to become the new [ShowTraitName('aeluran_matron')]."
+ aeluran_events.2.a: "Praise be the Spark!"
+
+ aeluran_events.3.title: "A New Matriarch"
+ aeluran_events.3.desc: "It is a time of great mourning for all Elves. Her holiness, High Matriarch [target.GetName], has returned to the Divine Spark.\n\nWith her passing the Council of Matrons has communed to choose the next [ShowTraitName('aeluran_matriarch')].\n\nMay the world take notice, for the mantle of The Red now lies on the shoulders of [new_matriarch.GetName]. The Matriarch is dead, long live the Matriarch!"
+ aeluran_events.3.a: "Praise be the Spark!"
+
+ aeluran_events.31.title: "A New Matriarch"
+ aeluran_events.31.ruler_desc: "It is a time of great mourning for all Elves. Her holiness, High Matriarch [target.GetName], has returned to the Divine Spark.\n\nWith her passing the Council of Matrons has communed to choose the next [ShowTraitName('aeluran_matriarch')].\n\nMay the world take notice, for the mantle of The Red now lies on the shoulders of #high your ruler#! [new_matriarch.GetName]. The Matriarch is dead, long live the Matriarch!"
+ aeluran_events.31.courtier_desc: "It is a time of great mourning for all Elves. Her holiness, High Matriarch [target.GetName], has returned to the Divine Spark.\n\nWith her passing the Council of Matrons has communed to choose the next [ShowTraitName('aeluran_matriarch')].\n\nMay the world take notice, for the mantle of The Red now lies on the shoulders of #high a member of your court#!, [new_matriarch.GetName]. The Matriarch is dead, long live the Matriarch!"
+ aeluran_events.31.a: "Praise be the Spark!"
+
+ aeluran_events.4.title: "A Daughter to Deepwood"
+ aeluran_events.4.desc: "[new_sister.GetName] is now old enough to be taken by the Aelurans to be trained as a Sister of the order. She has departed for [GetCountry('DWD').GetName]"
+ aeluran_events.4.a: "It is the Spark's will"
+
+ aeluran_events.41.title: "A Sister Returns"
+ aeluran_events.41.desc: "[new_sister.GetName] has returned to your court from [GetCountry('DWD').GetName] a fully trained [ShowTraitName('aeluran_sister')]."
+ aeluran_events.41.a: "Welcome back!"
 
  recieve_greater_blessing: "#!#high Country receives a [ShowModifier('greater_religious_influence_bonus')] upon completion#!\n\n"
 
@@ -1006,7 +1035,7 @@
  the_divine_spark_desc: "The divine spark desc"
 
  the_rut: "The Rut"
- the_rut_desc: "The Divine Spark gains power through the creation of life and so to further that cause, it makes its will known. Fertile members of this culture are not so subtly pushed by the Divine Spark to be prosperous and multiply."
+ the_rut_desc: "The Divine Spark gains power through the creation of life and so to further that cause, it makes its will known. Members of this culture are not so subtly pushed by the Divine Spark to be prosperous and multiply."
  the_rut_location_modifier: "The Rut location modifier"
  noble_husbandry: "Noble Husbandry"
  noble_husbandry_desc: "TODO : Write a desc"
@@ -1051,7 +1080,7 @@
 
  ruler_is_fae_tier_or_higher: "This country's [ruler|e] must ascend to [ShowTraitName('elf_tier_4')] or higher"
  ruler_is_celestial_tier_or_higher: "This country's [ruler|e] must ascend to [ShowTraitName('elf_tier_7')] or higher"
-
+ location_has_both_human_and_elf_pops: "[location|e] has [pops|e] of both Elf and Human [culture_groups|e]"
 
  no_title: ""
  no_desc: ""
@@ -1089,7 +1118,7 @@
  elf_destiny_story.24.a: "A New Age For [ROOT.GetCountry.GetName]!"
  
  elf_destiny_story.3.title: "A Choice of Dreams"
- elf_destiny_story.3.desc: "You're in a hard‑earned sleep when the familiar presence returns—the same you felt when you touched the amulet. It speaks not in words but projects a single idea into your mind: \n\n #bold \"See.\" #! \n\n Thousands of lifetimes flash before you, threatening to overwhelm every sense: great wars between humans and Elves, empires built on the backs of human slaves, and grand feasts shared by Human and Elf kings. Then the presence implants another idea: \n\n #bold \"Choose.\" #!"
+ elf_destiny_story.3.desc: "You're in a hard‑earned sleep when the familiar presence returns—the same you felt when you touched the amulet. It speaks not in words but projects a single idea into your mind. \n\n #yellow_titles \"See.\" #! \n\n Thousands of lifetimes flash before you, threatening to overwhelm every sense: great wars between humans and Elves, empires built on the backs of human slaves, and grand feasts shared between Human and Elf kings. The presence implants another idea. #yellow_titles \"Choose.\" #!"
  elf_destiny_story.3.good: "Humans and Elves will live together in friendship!"
  elf_destiny_story.3.evil: "Elves stand above Humans! Any other notion is ridiculous."
  
@@ -1276,7 +1305,7 @@
  gained_physique_bad_2_trait_tooltip: "Gained a genetic trait"
  gained_intellect_bad_2_trait_tooltip: "Gained a genetic trait"
 
- all_locations_embrace_elven_institution: "All locations embrace the Elven institution"
+ all_locations_embrace_elven_institution: "All locations embrace the [ShowInstitutionName('elven')] [institution|e]"
  
  elf_destiny_expedition.4.title: "Expedition Failed"
  elf_destiny_expedition.4.desc: "The expedition has ran out of supplies and returned empty-handed.\n\n\"I have failed you my [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')]. Forgive me\""
@@ -1292,3 +1321,5 @@
 
  calaquendi_apprenticeship_education: "Calaquendi Apprencticeship"
  calaquendi_apprenticeship_education_desc: "This character apprentices under one of the wisest of Elves"
+ aeluran_education: "Aeluran Education"
+ aeluran_education_desc: "This character is being trained by the Aeluran Order in [GetCountry('DWD').GetName]"
