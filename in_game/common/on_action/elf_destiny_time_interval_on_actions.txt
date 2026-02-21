@@ -3,6 +3,7 @@ monthly_country_pulse = {
 	on_actions = {
 		assign_aeluran_advisor
 		set_calaquendi_education
+		# recruit_bloodline_members
 		# elf_destiny_expedition_trigger
 	}
 }
@@ -22,7 +23,6 @@ monthly_country_pulse = {
 # 		}
 # 	}
 # }
-
 
 assign_aeluran_advisor = {
 	trigger = {
@@ -70,6 +70,7 @@ yearly_country_pulse = {
 	on_actions = {
 		daughters_sent_to_become_aeluran_sisters
 		daughters_return_as_aeluran_sisters
+		recruit_bloodline_members
 	}
 }
 
@@ -109,12 +110,11 @@ daughters_return_as_aeluran_sisters = {
 	}
 }
 
-
-
 four_yearly_country_pulse = {
 	on_actions = {
 		assign_enchantress_trait
 		assign_heroic_trait
+		# recruit_bloodline_members
 	}
 }
 
@@ -135,5 +135,21 @@ assign_heroic_trait = {
 
 	effect = {
 		assign_heroic_trait_effect = yes
+	}
+}
+
+recruit_bloodline_members = {
+	trigger = {
+		is_ai = no
+		culture = { has_culture_group = culture_group:elven_culture_group}
+		NOT = { has_variable = bloodline_recruited_recently }
+	}
+
+	effect = {
+		set_variable = { name = bloodline_recruited_recently value = yes years = 40 }
+		# set_variable = { name = bloodline_recruited_recently value = yes days = 10 } # For Testing
+		trigger_event_non_silently = {
+			id = elf_destiny_misc.3
+		}
 	}
 }

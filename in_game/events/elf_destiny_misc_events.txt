@@ -95,3 +95,204 @@ elf_destiny_misc.21 = {
 		}
 	}
 }
+
+# Bloodline Recruitment
+elf_destiny_misc.3 = {
+	title = no_title
+	desc = no_desc
+	type = country_event
+
+	trigger = {
+
+	}
+
+	hidden = yes
+
+	immediate = {
+		random_list = {
+			50 = {
+				trigger_event_non_silently = {
+					id = elf_destiny_misc.31
+				}
+			}
+			50 = {
+				trigger_event_non_silently = {
+					id = elf_destiny_misc.32
+				}
+			}
+		}
+	}
+}
+
+# Esteemed Noble Elf family want to join your country
+elf_destiny_misc.31 = {
+	type = country_event
+	title = elf_destiny_misc.31.title
+	desc = elf_destiny_misc.31.desc
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/green_leaves.dds"
+
+	immediate = {
+		random_list = {
+			10 = {
+				create_bloodline_family_effect = { culture = deepwood_elven_culture blood = valerith}
+			}
+			10 = {
+				create_bloodline_family_effect = { culture = tuatha_de_danann_culture blood = gwynthorn}
+			}
+			10 = {
+				create_bloodline_family_effect = { culture = romaviri_culture blood = serelion}
+			}
+			10 = {
+				create_bloodline_family_effect = { culture = alfar_culture blood = daelurin}
+			}
+			10 = {
+				create_bloodline_family_effect = { culture = astrion_culture blood = thundarael}
+			}
+			10 = {
+				create_bloodline_family_effect = { culture = atlareth_culture blood = lormelis}
+			}
+		}
+	}
+	
+	option = {
+		name = elf_destiny_misc.31.accept
+
+		scope:father_lord = {
+			move_country = root
+		}
+		scope:mother = {
+			move_country = root
+		}
+		scope:older_daughter = {
+			move_country = root
+		}
+		scope:younger_son = {
+			move_country = root
+		}
+	}
+
+	option = {
+		name = elf_destiny_misc.31.refuse
+
+		custom_tooltip = {
+			text = elf_destiny_misc.31.family_leaves
+			kill_character_silently = {
+				target = scope:father_lord
+				reason = vanished
+			}
+			kill_character_silently = {
+				target = scope:mother
+				reason = vanished
+			}
+			kill_character_silently = {
+				target = scope:older_daughter
+				reason = vanished
+			}
+			kill_character_silently = {
+				target = scope:younger_son
+				reason = vanished
+			}
+		}
+	}
+}
+
+elf_destiny_misc.32 = {
+	type = country_event
+	title = elf_destiny_misc.32.title
+	desc = elf_destiny_misc.32.desc
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/green_leaves.dds"
+
+	immediate = {
+		random_list = {
+			10 = {
+				create_bloodline_orphan_effect = { culture = deepwood_elven_culture blood = valerith}
+			}
+			10 = {
+				create_bloodline_orphan_effect = { culture = tuatha_de_danann_culture blood = gwynthorn}
+			}
+			10 = {
+				create_bloodline_orphan_effect = { culture = romaviri_culture blood = serelion}
+			}
+			10 = {
+				create_bloodline_orphan_effect = { culture = alfar_culture blood = daelurin}
+			}
+			10 = {
+				create_bloodline_orphan_effect = { culture = astrion_culture blood = thundarael}
+			}
+			10 = {
+				create_bloodline_orphan_effect = { culture = atlareth_culture blood = lormelis}
+			}
+		}
+	}
+	
+	option = {
+		name = elf_destiny_misc.32.accept
+
+		scope:orphan = {
+			move_country = root
+		}
+	}
+
+	option = {
+		name = elf_destiny_misc.32.refuse
+
+		custom_tooltip = {
+			text = elf_destiny_misc.32.orphan_leaves
+			kill_character_silently = {
+				target = scope:orphan
+				reason = vanished
+			}
+
+		}
+	}
+}
+
+
+elf_destiny_misc.99 = {
+	title = no_title
+	desc = no_desc
+	type = country_event
+
+	trigger = {
+
+	}
+
+	hidden = yes
+
+	immediate = {
+		scope:new_character = {
+			# random = { # chance to be born with a genetic trait not inherited
+			# 	chance = 99 # FOR TESTING
+			# 	# chance = 5
+			# 	assign_random_genetic_trait = yes
+			# }
+
+			random_list = {
+				1 = {
+					debug_log =  "Assign Beauty"
+					# assign_random_beauty_trait = yes
+				}
+				1 = {
+					debug_log =  "Assign Intellect"
+					# assign_random_intellect_trait = yes
+				}
+				1 = {
+					debug_log =  "Assign Physique"
+					# assign_random_physique_trait = yes
+				}
+				1 = {
+					debug_log =  "Assign Other"
+					# assign_random_other_trait = yes
+				}
+			}
+		}
+	}
+}

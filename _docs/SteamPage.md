@@ -13,10 +13,14 @@ Those answers are for you to decide!
 
 ### Racial and Genetic Traits
 
+### New Calaquendi Estate
+
 ### New Elven Countries
 - Bloodlines and Dynasties
 
 ### New Elven Cultures and Religion
+
+### New Advances/Buildings
 
 ## Early Development and How You Can Help
 

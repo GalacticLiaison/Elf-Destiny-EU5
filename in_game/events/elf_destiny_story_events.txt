@@ -314,7 +314,7 @@ elf_destiny_story.23 = {
 
 	immediate = {
 		every_character = {
-			assign_race_trait = { trait = elf_tier_2 }
+			assign_racial_trait = { trait = elf_tier_2 }
 		}
 	}
 	

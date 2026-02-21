@@ -4,9 +4,9 @@
 			is_female = yes
 			character_age >= 3
 			character_age < 7
-			NOT = {
-				has_variable = refused_aeluran_training
-			}
+			# NOT = {
+			# 	has_variable = refused_aeluran_training
+			# }
 		}
 
 		save_scope_as = new_sister
@@ -124,7 +124,6 @@ create_new_aeluran_matron_fallback = {
 			culture = culture:elven_culture
 			estate = estate_type:clergy_estate
 		
-			# TODO: could have some privilege increase the stats of advisors
 			adm = {
 				integer_range = {
 					min = {
@@ -162,6 +161,266 @@ create_new_aeluran_matron_fallback = {
 		}
 	}
 }
+
+create_bloodline_orphan_effect = {
+	random_list = {
+		50 = {
+			create_bloodline_orphan = {
+				is_female = yes
+				culture = $culture$
+				blood = $blood$
+			}
+		}
+		50 = {
+			create_bloodline_orphan = {
+				is_female = no
+				culture = $culture$
+				blood = $blood$
+			}
+		}
+	}
+
+	scope:orphan = {
+		assign_genetic_trait = { trait = intellect_good_2 }
+	}
+}
+
+create_bloodline_orphan= {
+	create_character = {
+		age = {5 8}
+		female = $is_female$
+		religion = religion:aeluran
+		culture = culture:$culture$
+		estate = estate_type:calaquendi_estate
+	
+		adm = {
+			integer_range = {
+				min = {
+					value = 50
+				}
+				max = {
+					value = 100
+				}
+			}
+		}
+		dip = {
+			integer_range = {
+				min = {
+					value = 50
+				}
+				max = {
+					value = 100
+				}
+			}
+		}
+		mil = {
+			integer_range = {
+				min = {
+					value = 50
+				}
+				max = {
+					value = 100
+				}
+			}
+		}
+
+		add_trait = trait:child_prodigy
+	
+		assign_genetic_trait = { trait = royal_elf_$blood$}
+		
+		save_scope_as = orphan
+	}
+}
+
+
+create_bloodline_family_effect = {
+	create_character = {
+		age = {35 50}
+	
+		religion = religion:aeluran
+		culture = culture:$culture$
+		estate = estate_type:calaquendi_estate
+	
+		adm = {
+			integer_range = {
+				min = {
+					value = 33
+				}
+				max = {
+					value = 85
+				}
+			}
+		}
+		dip = {
+			integer_range = {
+				min = {
+					value = 33
+				}
+				max = {
+					value = 85
+				}
+			}
+		}
+		mil = {
+			integer_range = {
+				min = {
+					value = 33
+				}
+				max = {
+					value = 85
+				}
+			}
+		}
+
+		assign_genetic_trait = { trait = royal_elf_$blood$}
+				
+		save_scope_as = father_lord
+	}
+
+	create_character = {
+		age = {29 35}
+		female = yes
+		religion = religion:aeluran
+		culture = culture:$culture$
+		estate = estate_type:calaquendi_estate
+		dynasty = scope:father_lord.dynasty
+	
+		adm = {
+			integer_range = {
+				min = {
+					value = 33
+				}
+				max = {
+					value = 85
+				}
+			}
+		}
+		dip = {
+			integer_range = {
+				min = {
+					value = 33
+				}
+				max = {
+					value = 85
+				}
+			}
+		}
+		mil = {
+			integer_range = {
+				min = {
+					value = 33
+				}
+				max = {
+					value = 85
+				}
+			}
+		}
+	
+		add_trait = trait:aeluran_sister
+
+		assign_genetic_trait = { trait = royal_elf_$blood$}
+
+		marry_character = scope:father_lord
+		save_scope_as = mother
+	}
+
+	# scope:father_lord = { found_dynasty = random }
+	# scope:mother = {
+	# 	change_dynasty = scope:father.dynasty
+	# }
+
+	create_character = {
+		age = {12 17}
+		female = yes
+		religion = religion:aeluran
+		culture = culture:$culture$
+		estate = estate_type:calaquendi_estate
+		father = scope:father_lord
+		mother = scope:mother
+	
+		adm = {
+			integer_range = {
+				min = {
+					value = 33
+				}
+				max = {
+					value = 85
+				}
+			}
+		}
+		dip = {
+			integer_range = {
+				min = {
+					value = 33
+				}
+				max = {
+					value = 85
+				}
+			}
+		}
+		mil = {
+			integer_range = {
+				min = {
+					value = 33
+				}
+				max = {
+					value = 85
+				}
+			}
+		}
+
+		assign_genetic_trait = { trait = royal_elf_$blood$}
+	
+		# add_trait = trait:aeluran_sister
+		
+		save_scope_as = older_daughter
+	}
+
+	create_character = {
+		age = {5 9}
+		religion = religion:aeluran
+		culture = culture:$culture$
+		estate = estate_type:calaquendi_estate
+		father = scope:father_lord
+		mother = scope:mother
+	
+		adm = {
+			integer_range = {
+				min = {
+					value = 33
+				}
+				max = {
+					value = 85
+				}
+			}
+		}
+		dip = {
+			integer_range = {
+				min = {
+					value = 33
+				}
+				max = {
+					value = 85
+				}
+			}
+		}
+		mil = {
+			integer_range = {
+				min = {
+					value = 33
+				}
+				max = {
+					value = 85
+				}
+			}
+		}
+	
+		assign_genetic_trait = { trait = royal_elf_$blood$}
+		
+		save_scope_as = younger_son
+	}
+}
+
 
 assign_new_aeluran_advisor = {
 

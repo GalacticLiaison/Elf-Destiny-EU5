@@ -1,0 +1,485 @@
+namespace = elf_destiny_debug
+# Inline scripted effects/triggers for reusability
+# scripted_trigger elven_culture_trigger = {
+#     culture_group = elven  # Assumes Elven culture group exists
+# }
+
+scripted_effect assign_race_to_character = {
+    scope:recipient = {
+        remove_any_racial_trait = yes
+        assign_racial_trait = { trait = elf_tier_$elf_level$ }
+    }
+    trigger_event_silently = { id = elf_destiny_debug.2 }
+}
+
+scripted_effect swap_tiered_genetic_trait = {
+    scope:recipient = {
+        if = {
+            limit = {
+                has_genetic_trait = { trait = $selected_trait$ }
+            }
+            remove_genetic_trait = { trait = $selected_trait$  }
+        }
+        else = {
+            remove_all_genetic_traits_of_type = { trait_type = $type$ }
+            assign_genetic_trait = { trait = $selected_trait$ }
+        }
+    }
+}
+
+scripted_effect toggle_genetic_trait = {
+    scope:recipient = {
+        if = {
+            limit = {
+                has_genetic_trait = { trait = $selected_trait$ }
+            }
+            remove_genetic_trait = { trait = $selected_trait$  }
+        }
+        else = {
+            assign_genetic_trait = { trait = $selected_trait$ }
+        }
+    }
+}
+
+
+# Character Edit Cheat Menu
+elf_destiny_debug.1 = {
+    type = country_event
+    title = elf_destiny_debug.1.title
+    desc = elf_destiny_debug.1.desc 
+    hide_portraits = no
+    image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+    trigger = {
+
+    }
+
+    immediate = {
+
+    }
+
+    option = {
+        name = elf_destiny_debug.1.edit_race
+        trigger_event_silently = {
+			id = elf_destiny_debug.2
+		}
+    }
+    option = {
+        name = elf_destiny_debug.1.edit_genetic_traits
+        trigger_event_silently = {
+			id = elf_destiny_debug.3
+		}
+    }
+    option = {
+        name = elf_destiny_debug.1.done
+    }
+}
+
+elf_destiny_debug.2 = { # Racial Traits
+    type = country_event
+    title = elf_destiny_debug.2.title
+    desc = elf_destiny_debug.2.desc 
+    hide_portraits = no
+    image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+    trigger = {
+
+    }
+
+    immediate = {
+
+    }
+
+    option = {
+        name = elf_destiny_debug.go_back
+        trigger_event_silently = {
+			id = elf_destiny_debug.1
+		}
+    }
+    option = {
+        name = elf_destiny_debug.2.human
+        # remove_any_racial_trait = yes
+        scope:recipient = {
+            # remove_racial_trait = {trait = elf_tier_2}
+            remove_any_racial_trait = yes
+        }
+        trigger_event_silently = { id = elf_destiny_debug.2 }
+    }
+    option = {
+        name = elf_destiny_debug.2.elf_tier_1
+        assign_race_to_character = { elf_level = 1}
+    }
+    option = {
+        name = elf_destiny_debug.2.elf_tier_2
+        assign_race_to_character = { elf_level = 2}
+    }
+    option = {
+        name = elf_destiny_debug.2.elf_tier_3
+        assign_race_to_character = { elf_level = 3}
+    }
+    option = {
+        name = elf_destiny_debug.2.elf_tier_4
+        assign_race_to_character = { elf_level = 4}
+    }
+    option = {
+        name = elf_destiny_debug.2.elf_tier_5
+        assign_race_to_character = { elf_level = 5}
+    }
+    option = {
+        name = elf_destiny_debug.2.elf_tier_6
+        assign_race_to_character = { elf_level = 6}
+    }
+    option = {
+        name = elf_destiny_debug.2.elf_tier_7
+        assign_race_to_character = { elf_level = 7}
+    }
+    option = {
+        name = elf_destiny_debug.2.elf_tier_8
+        assign_race_to_character = { elf_level = 8}
+    }
+    option = {
+        name = elf_destiny_debug.2.elf_tier_9
+        assign_race_to_character = { elf_level = 9}
+    }
+    option = {
+        name = elf_destiny_debug.2.elf_tier_10
+        assign_race_to_character = { elf_level = 10}
+    }
+    option = {
+        name = elf_destiny_debug.2.elf_tier_11
+        assign_race_to_character = { elf_level = 11}
+    }
+    option = {
+        name = elf_destiny_debug.2.elf_tier_12
+        assign_race_to_character = { elf_level = 12}
+    }
+}
+
+
+elf_destiny_debug.3 = { # Genetic Traits
+    type = country_event
+    title = elf_destiny_debug.3.title
+    desc = elf_destiny_debug.3.desc 
+    hide_portraits = no
+    image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+    trigger = {
+
+    }
+
+    immediate = {
+
+    }
+
+    option = {
+        name = elf_destiny_debug.go_back
+        trigger_event_silently = { id = elf_destiny_debug.1 }
+    }
+    option = {
+        name = elf_destiny_debug.3.beauty
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.3.intellect
+        trigger_event_silently = { id = elf_destiny_debug.32 }
+    }
+    option = {
+        name = elf_destiny_debug.3.physique
+        trigger_event_silently = { id = elf_destiny_debug.33 }
+    }
+    option = {
+        name = elf_destiny_debug.3.other
+        trigger_event_silently = { id = elf_destiny_debug.34 }
+    }
+    option = {
+        name = elf_destiny_debug.3.bloodline
+        trigger_event_silently = { id = elf_destiny_debug.35 }
+    }
+}
+
+elf_destiny_debug.31 = { # Beauty Genetic Traits
+    type = country_event
+    title = elf_destiny_debug.31.title
+    desc = elf_destiny_debug.31.desc 
+    hide_portraits = no
+    image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+    trigger = {
+
+    }
+
+    immediate = {
+
+    }
+
+    option = {
+        name = elf_destiny_debug.go_back
+        trigger_event_silently = { id = elf_destiny_debug.3 }
+    }
+    option = {
+        name = elf_destiny_debug.31.good_1
+        swap_tiered_genetic_trait = { type = beauty selected_trait = beauty_good_1}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.31.good_2
+        swap_tiered_genetic_trait = { type = beauty selected_trait = beauty_good_2}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.31.good_3
+        swap_tiered_genetic_trait = { type = beauty selected_trait = beauty_good_3}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.31.good_4
+        swap_tiered_genetic_trait = { type = beauty selected_trait = beauty_good_4}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.31.unconventional_good_1
+        swap_tiered_genetic_trait = { type = beauty selected_trait = unconventional_beauty_good_1}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.31.unconventional_good_2
+        swap_tiered_genetic_trait = { type = beauty selected_trait = unconventional_beauty_good_2}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.31.unconventional_good_3
+        swap_tiered_genetic_trait = { type = beauty selected_trait = unconventional_beauty_good_3}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.31.exotic_good_1
+        swap_tiered_genetic_trait = { type = beauty selected_trait = exotic_beauty_good_1}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.31.exotic_good_2
+        swap_tiered_genetic_trait = { type = beauty selected_trait = exotic_beauty_good_2}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.31.exotic_good_3
+        swap_tiered_genetic_trait = { type = beauty selected_trait = exotic_beauty_good_3}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.31.bad_1
+        swap_tiered_genetic_trait = { type = beauty selected_trait = beauty_bad_1}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.31.bad_2
+        swap_tiered_genetic_trait = { type = beauty selected_trait = beauty_bad_2}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+    option = {
+        name = elf_destiny_debug.31.bad_3
+        swap_tiered_genetic_trait = { type = beauty selected_trait = beauty_bad_3}
+        trigger_event_silently = { id = elf_destiny_debug.31 }
+    }
+}
+
+elf_destiny_debug.32 = { # Intellect Genetic Traits
+    type = country_event
+    title = elf_destiny_debug.32.title
+    desc = elf_destiny_debug.32.desc 
+    hide_portraits = no
+    image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+    trigger = {
+
+    }
+
+    immediate = {
+
+    }
+
+    option = {
+        name = elf_destiny_debug.go_back
+        trigger_event_silently = { id = elf_destiny_debug.3 }
+    }
+    option = {
+        name = elf_destiny_debug.32.good_1
+        swap_tiered_genetic_trait = { type = intellect selected_trait = intellect_good_1}
+        trigger_event_silently = { id = elf_destiny_debug.32 }
+    }
+    option = {
+        name = elf_destiny_debug.32.good_2
+        swap_tiered_genetic_trait = { type = intellect selected_trait = intellect_good_2}
+        trigger_event_silently = { id = elf_destiny_debug.32 }
+    }
+    option = {
+        name = elf_destiny_debug.32.good_3
+        swap_tiered_genetic_trait = { type = intellect selected_trait = intellect_good_3}
+        trigger_event_silently = { id = elf_destiny_debug.32 }
+    }
+    option = {
+        name = elf_destiny_debug.32.good_4
+        swap_tiered_genetic_trait = { type = intellect selected_trait = intellect_good_4}
+        trigger_event_silently = { id = elf_destiny_debug.32 }
+    }
+    option = {
+        name = elf_destiny_debug.32.bad_1
+        swap_tiered_genetic_trait = { type = intellect selected_trait = intellect_bad_1}
+        trigger_event_silently = { id = elf_destiny_debug.32 }
+    }
+    option = {
+        name = elf_destiny_debug.32.bad_2
+        swap_tiered_genetic_trait = { type = intellect selected_trait = intellect_bad_2}
+        trigger_event_silently = { id = elf_destiny_debug.32 }
+    }
+    option = {
+        name = elf_destiny_debug.32.bad_3
+        swap_tiered_genetic_trait = { type = intellect selected_trait = intellect_bad_3}
+        trigger_event_silently = { id = elf_destiny_debug.32 }
+    }
+}
+
+elf_destiny_debug.33 = { # Physique Genetic Traits
+    type = country_event
+    title = elf_destiny_debug.33.title
+    desc = elf_destiny_debug.33.desc 
+    hide_portraits = no
+    image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+    trigger = {
+
+    }
+
+    immediate = {
+
+    }
+
+    option = {
+        name = elf_destiny_debug.go_back
+        trigger_event_silently = { id = elf_destiny_debug.3 }
+    }
+    option = {
+        name = elf_destiny_debug.33.good_1
+        swap_tiered_genetic_trait = { type = physique selected_trait = physique_good_1}
+        trigger_event_silently = { id = elf_destiny_debug.33 }
+    }
+    option = {
+        name = elf_destiny_debug.33.good_2
+        swap_tiered_genetic_trait = { type = physique selected_trait = physique_good_2}
+        trigger_event_silently = { id = elf_destiny_debug.33 }
+    }
+    option = {
+        name = elf_destiny_debug.33.good_3
+        swap_tiered_genetic_trait = { type = physique selected_trait = physique_good_3}
+        trigger_event_silently = { id = elf_destiny_debug.33 }
+    }
+    option = {
+        name = elf_destiny_debug.33.good_4
+        swap_tiered_genetic_trait = { type = physique selected_trait = physique_good_4}
+        trigger_event_silently = { id = elf_destiny_debug.33 }
+    }
+    option = {
+        name = elf_destiny_debug.33.bad_1
+        swap_tiered_genetic_trait = { type = physique selected_trait = physique_bad_1}
+        trigger_event_silently = { id = elf_destiny_debug.33 }
+    }
+    option = {
+        name = elf_destiny_debug.33.bad_2
+        swap_tiered_genetic_trait = { type = physique selected_trait = physique_bad_2}
+        trigger_event_silently = { id = elf_destiny_debug.33 }
+    }
+    option = {
+        name = elf_destiny_debug.33.bad_3
+        swap_tiered_genetic_trait = { type = physique selected_trait = physique_bad_3}
+        trigger_event_silently = { id = elf_destiny_debug.33 }
+    }
+}
+
+elf_destiny_debug.34 = { # Other Genetic Traits
+    type = country_event
+    title = elf_destiny_debug.34.title
+    desc = elf_destiny_debug.34.desc 
+    hide_portraits = no
+    image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+    trigger = {
+
+    }
+
+    immediate = {
+
+    }
+
+    option = {
+        name = elf_destiny_debug.go_back
+        trigger_event_silently = { id = elf_destiny_debug.3 }
+    }
+    option = {
+        name = elf_destiny_debug.34.fecund
+        toggle_genetic_trait = { selected_trait = fecund}
+        trigger_event_silently = { id = elf_destiny_debug.34 }
+    }
+    option = {
+        name = elf_destiny_debug.34.giant
+        toggle_genetic_trait = { selected_trait = giant}
+        trigger_event_silently = { id = elf_destiny_debug.34 }
+    }
+    option = {
+        name = elf_destiny_debug.34.pure_blooded
+        toggle_genetic_trait = { selected_trait = pure_blooded}
+        trigger_event_silently = { id = elf_destiny_debug.34 }
+    }
+
+}
+
+elf_destiny_debug.35 = { # Bloodline Genetic Traits
+    type = country_event
+    title = elf_destiny_debug.35.title
+    desc = elf_destiny_debug.35.desc 
+    hide_portraits = no
+    image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+    trigger = {
+
+    }
+
+    immediate = {
+
+    }
+
+    option = {
+        name = elf_destiny_debug.go_back
+        trigger_event_silently = { id = elf_destiny_debug.3 }
+    }
+    option = {
+        name = elf_destiny_debug.35.royal_elf_valerith
+        toggle_genetic_trait = { selected_trait = royal_elf_valerith}
+        trigger_event_silently = { id = elf_destiny_debug.35 }
+    }
+    option = {
+        name = elf_destiny_debug.35.royal_elf_serelion
+        toggle_genetic_trait = { selected_trait = royal_elf_serelion}
+        trigger_event_silently = { id = elf_destiny_debug.35 }
+    }
+    option = {
+        name = elf_destiny_debug.35.royal_elf_thundarael
+        toggle_genetic_trait = { selected_trait = royal_elf_thundarael}
+        trigger_event_silently = { id = elf_destiny_debug.35 }
+    }
+    option = {
+        name = elf_destiny_debug.35.royal_elf_daelurin
+        toggle_genetic_trait = { selected_trait = royal_elf_daelurin}
+        trigger_event_silently = { id = elf_destiny_debug.35 }
+    }
+    option = {
+        name = elf_destiny_debug.35.royal_elf_gwynthorn
+        toggle_genetic_trait = { selected_trait = royal_elf_gwynthorn}
+        trigger_event_silently = { id = elf_destiny_debug.35 }
+    }
+    option = {
+        name = elf_destiny_debug.35.royal_elf_lormelis
+        toggle_genetic_trait = { selected_trait = royal_elf_lormelis}
+        trigger_event_silently = { id = elf_destiny_debug.35 }
+    }
+
+}

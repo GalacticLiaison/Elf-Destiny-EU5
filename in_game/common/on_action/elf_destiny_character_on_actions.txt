@@ -20,7 +20,7 @@ assign_elf_trait = {
 	}
 	effect = {
 		scope:character = {
-			assign_elf_race_trait_effect = yes
+			assign_elf_racial_trait_effect = yes
 		}
 	}
 }
@@ -78,6 +78,7 @@ aeluran_succession = {
 on_character_created = {
 	on_actions = {
 		handle_created_character_race
+		new_character_chance_of_random_genetic_trait
 	}
 }
 
@@ -88,5 +89,14 @@ handle_created_character_race = {
 	}
 	effect = {
 		handle_created_character_race_effect = yes
+	}
+}
+
+new_character_chance_of_random_genetic_trait = {
+	trigger = {
+
+	}
+	effect = {
+		use_fake_random_effect = { function_name = assign_random_genetic_trait }
 	}
 }

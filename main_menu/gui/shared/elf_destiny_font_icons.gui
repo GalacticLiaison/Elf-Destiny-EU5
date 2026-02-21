@@ -7,3 +7,456 @@ texticon = {
 		fontsize = 16
 	}
 }
+
+texticon = {
+	icon = beauty_good_1
+	iconsize = {
+		texture = "gfx/interface/icons/traits/beauty_good_1.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = beauty_good_2
+	iconsize = {
+		texture = "gfx/interface/icons/traits/beauty_good_2.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = beauty_good_3
+	iconsize = {
+		texture = "gfx/interface/icons/traits/beauty_good_3.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = beauty_good_4
+	iconsize = {
+		texture = "gfx/interface/icons/traits/beauty_good_4.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = beauty_bad_1
+	iconsize = {
+		texture = "gfx/interface/icons/traits/beauty_bad_1.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = beauty_bad_2
+	iconsize = {
+		texture = "gfx/interface/icons/traits/beauty_bad_2.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = beauty_bad_3
+	iconsize = {
+		texture = "gfx/interface/icons/traits/beauty_bad_3.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = unconventional_beauty_good_1
+	iconsize = {
+		texture = "gfx/interface/icons/traits/unconventional_beauty_good_1.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = unconventional_beauty_good_2
+	iconsize = {
+		texture = "gfx/interface/icons/traits/unconventional_beauty_good_2.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = unconventional_beauty_good_3
+	iconsize = {
+		texture = "gfx/interface/icons/traits/unconventional_beauty_good_3.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = exotic_beauty_good_1
+	iconsize = {
+		texture = "gfx/interface/icons/traits/exotic_beauty_good_1.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = exotic_beauty_good_2
+	iconsize = {
+		texture = "gfx/interface/icons/traits/exotic_beauty_good_2.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = exotic_beauty_good_3
+	iconsize = {
+		texture = "gfx/interface/icons/traits/exotic_beauty_good_3.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = intellect_good_1
+	iconsize = {
+		texture = "gfx/interface/icons/traits/intellect_good_1.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = intellect_good_2
+	iconsize = {
+		texture = "gfx/interface/icons/traits/intellect_good_2.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = intellect_good_3
+	iconsize = {
+		texture = "gfx/interface/icons/traits/intellect_good_3.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = intellect_good_4
+	iconsize = {
+		texture = "gfx/interface/icons/traits/intellect_good_4.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = intellect_bad_1
+	iconsize = {
+		texture = "gfx/interface/icons/traits/intellect_bad_1.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = intellect_bad_2
+	iconsize = {
+		texture = "gfx/interface/icons/traits/intellect_bad_2.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = intellect_bad_3
+	iconsize = {
+		texture = "gfx/interface/icons/traits/intellect_bad_3.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = physique_good_1
+	iconsize = {
+		texture = "gfx/interface/icons/traits/physique_good_1.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = physique_good_2
+	iconsize = {
+		texture = "gfx/interface/icons/traits/physique_good_2.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = physique_good_3
+	iconsize = {
+		texture = "gfx/interface/icons/traits/physique_good_3.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = physique_good_4
+	iconsize = {
+		texture = "gfx/interface/icons/traits/physique_good_4.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = physique_bad_1
+	iconsize = {
+		texture = "gfx/interface/icons/traits/physique_bad_1.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = physique_bad_2
+	iconsize = {
+		texture = "gfx/interface/icons/traits/physique_bad_2.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = physique_bad_3
+	iconsize = {
+		texture = "gfx/interface/icons/traits/physique_bad_3.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = giant
+	iconsize = {
+		texture = "gfx/interface/icons/traits/giant.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = fecund
+	iconsize = {
+		texture = "gfx/interface/icons/traits/fecund.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = pure_blooded
+	iconsize = {
+		texture = "gfx/interface/icons/traits/pure_blooded.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = royal_elf_valerith
+	iconsize = {
+		texture = "gfx/interface/icons/traits/royal_elf_valerith.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = royal_elf_serelion
+	iconsize = {
+		texture = "gfx/interface/icons/traits/royal_elf_serelion.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = royal_elf_thundarael
+	iconsize = {
+		texture = "gfx/interface/icons/traits/royal_elf_thundarael.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = royal_elf_daelurin
+	iconsize = {
+		texture = "gfx/interface/icons/traits/royal_elf_daelurin.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = royal_elf_gwynthorn
+	iconsize = {
+		texture = "gfx/interface/icons/traits/royal_elf_gwynthorn.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = royal_elf_lormelis
+	iconsize = {
+		texture = "gfx/interface/icons/traits/royal_elf_lormelis.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+
+texticon = {
+	icon = human
+	iconsize = {
+		texture = "gfx/interface/icons/traits/human.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = elf_tier_1
+	iconsize = {
+		texture = "gfx/interface/icons/traits/elf_tier_1.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = elf_tier_2
+	iconsize = {
+		texture = "gfx/interface/icons/traits/elf_tier_2.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = elf_tier_3
+	iconsize = {
+		texture = "gfx/interface/icons/traits/elf_tier_3.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = elf_tier_4
+	iconsize = {
+		texture = "gfx/interface/icons/traits/elf_tier_4.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = elf_tier_5
+	iconsize = {
+		texture = "gfx/interface/icons/traits/elf_tier_5.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = elf_tier_6
+	iconsize = {
+		texture = "gfx/interface/icons/traits/elf_tier_6.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = elf_tier_7
+	iconsize = {
+		texture = "gfx/interface/icons/traits/elf_tier_7.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = elf_tier_8
+	iconsize = {
+		texture = "gfx/interface/icons/traits/elf_tier_8.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = elf_tier_9
+	iconsize = {
+		texture = "gfx/interface/icons/traits/elf_tier_9.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = elf_tier_10
+	iconsize = {
+		texture = "gfx/interface/icons/traits/elf_tier_10.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = elf_tier_11
+	iconsize = {
+		texture = "gfx/interface/icons/traits/elf_tier_11.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = elf_tier_12
+	iconsize = {
+		texture = "gfx/interface/icons/traits/elf_tier_12.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}

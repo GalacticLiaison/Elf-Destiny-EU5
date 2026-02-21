@@ -1,96 +1,96 @@
-﻿assign_elf_race_trait_effect = {
-	debug_log = "assign_elf_race_trait_effect"
+﻿assign_elf_racial_trait_effect = {
+	debug_log = "assign_elf_racial_trait_effect"
 	if = {
 		limit = {
 			inherited_elf_racial_score > 0
 			inherited_elf_racial_score < 2
 		}
-		assign_race_trait = { trait = elf_tier_1}
+		assign_racial_trait = { trait = elf_tier_1}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 2
 			inherited_elf_racial_score < 3
 		}
-		assign_race_trait = { trait = elf_tier_2}
+		assign_racial_trait = { trait = elf_tier_2}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 3
 			inherited_elf_racial_score < 4
 		}
-		assign_race_trait = { trait = elf_tier_3}
+		assign_racial_trait = { trait = elf_tier_3}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 4
 			inherited_elf_racial_score < 5
 		}
-		assign_race_trait = { trait = elf_tier_4}
+		assign_racial_trait = { trait = elf_tier_4}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 5
 			inherited_elf_racial_score < 6
 		}
-		assign_race_trait = { trait = elf_tier_5}
+		assign_racial_trait = { trait = elf_tier_5}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 6
 			inherited_elf_racial_score < 7
 		}
-		assign_race_trait = { trait = elf_tier_6}
+		assign_racial_trait = { trait = elf_tier_6}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 7
 			inherited_elf_racial_score < 8
 		}
-		assign_race_trait = { trait = elf_tier_7}
+		assign_racial_trait = { trait = elf_tier_7}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 8
 			inherited_elf_racial_score < 9
 		}
-		assign_race_trait = { trait = elf_tier_8}
+		assign_racial_trait = { trait = elf_tier_8}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 9
 			inherited_elf_racial_score < 10
 		}
-		assign_race_trait = { trait = elf_tier_9}
+		assign_racial_trait = { trait = elf_tier_9}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 10
 			inherited_elf_racial_score < 11
 		}
-		assign_race_trait = { trait = elf_tier_10}
+		assign_racial_trait = { trait = elf_tier_10}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 11
 			inherited_elf_racial_score < 12
 		}
-		assign_race_trait = { trait = elf_tier_11}
+		assign_racial_trait = { trait = elf_tier_11}
 	}
 	if = {
 		limit = {
 			inherited_elf_racial_score >= 12
 		}
-		assign_race_trait = { trait = elf_tier_12}
+		assign_racial_trait = { trait = elf_tier_12}
 	}
 }
 
 # increase_elf_race_level = {
 
-# 	assign_race_trait = { trait = elf_tier_1}
+# 	assign_racial_trait = { trait = elf_tier_1}
 # }
 
-assign_race_trait = {
+assign_racial_trait = {
 	add_character_modifier = {
 		modifier = $trait$
 		# mode = add_and_extend
@@ -102,16 +102,61 @@ assign_race_trait = {
 	}
 }
 
-remove_race_trait = {
-	add_character_modifier = {
-		modifier = $trait$
-		# mode = add_and_extend
+remove_any_racial_trait = {
+	if = { 
+		limit = {has_racial_trait = { trait = elf_tier_1 }}
+		remove_racial_trait = { trait = elf_tier_1}
 	}
+	if = { 
+		limit = {has_racial_trait = { trait = elf_tier_2 }}
+		remove_racial_trait = { trait = elf_tier_2}
+	}
+	if = { 
+		limit = {has_racial_trait = { trait = elf_tier_3 }}
+		remove_racial_trait = { trait = elf_tier_3}
+	}
+	if = { 
+		limit = {has_racial_trait = { trait = elf_tier_4 }}
+		remove_racial_trait = { trait = elf_tier_4}
+	}
+	if = { 
+		limit = {has_racial_trait = { trait = elf_tier_5 }}
+		remove_racial_trait = { trait = elf_tier_5}
+	}
+	if = { 
+		limit = {has_racial_trait = { trait = elf_tier_6 }}
+		remove_racial_trait = { trait = elf_tier_6}
+	}
+	if = { 
+		limit = {has_racial_trait = { trait = elf_tier_7 }}
+		remove_racial_trait = { trait = elf_tier_7}
+	}
+	if = { 
+		limit = {has_racial_trait = { trait = elf_tier_8 }}
+		remove_racial_trait = { trait = elf_tier_8}
+	}
+	if = { 
+		limit = {has_racial_trait = { trait = elf_tier_8 }}
+		remove_racial_trait = { trait = elf_tier_9}
+	}
+	if = { 
+		limit = {has_racial_trait = { trait = elf_tier_10 }}
+		remove_racial_trait = { trait = elf_tier_10}
+	}
+	if = { 
+		limit = {has_racial_trait = { trait = elf_tier_11 }}
+		remove_racial_trait = { trait = elf_tier_11}
+	}
+	if = { 
+		limit = {has_racial_trait = { trait = elf_tier_12 }}
+		remove_racial_trait = { trait = elf_tier_12}
+	}
+}
 
-	set_variable = {
-		name = character_race
-		value = trait:$trait$
-	}
+
+remove_racial_trait = {
+	remove_character_modifier = $trait$
+	remove_variable = character_race
 }
 
 
@@ -170,7 +215,7 @@ genetic_inheritance_effect = {
 
 	random = { # chance to be born with a genetic trait not inherited
 		chance = 5
-		assign_random_genetic_trait = yes
+		use_fake_random_effect = { function_name = assign_random_genetic_trait }
 	}
 }
 
@@ -287,160 +332,221 @@ single_trait_inheritance = {
 	}
 }
 
+# WHY DO WE NEED THIS ABOMINATION?
+# Answer: random_list = {} and random = {} are actually not truly random,
+# and in certain scenarios will return the exact same result over and over. This helps with that.
+use_fake_random_effect = {
+	switch = {
+		trigger = global_var:semi_random_integer
+		1 = { $function_name$ = yes }
+		2 = { $function_name$ = yes }
+		3 = { $function_name$ = yes }
+		4 = { $function_name$ = yes }
+		5 = { $function_name$ = yes }
+		6 = { $function_name$ = yes }
+		7 = { $function_name$ = yes }
+		8 = { $function_name$ = yes }
+		9 = { $function_name$ = yes }
+		10 = { $function_name$ = yes }
+		11 = { $function_name$ = yes }
+		12 = { $function_name$ = yes }
+		13 = { $function_name$ = yes }
+		14 = { $function_name$ = yes }
+		15 = { $function_name$ = yes }
+		16 = { $function_name$ = yes }
+		17 = { $function_name$ = yes }
+		18 = { $function_name$ = yes }
+		19 = { $function_name$ = yes }
+		20 = { $function_name$ = yes }
+		21 = { $function_name$ = yes }
+		22 = { $function_name$ = yes }
+		23 = { $function_name$ = yes }
+		24 = { $function_name$ = yes }
+		25 = { $function_name$ = yes }
+		26 = { $function_name$ = yes }
+		27 = { $function_name$ = yes }
+		28 = { $function_name$ = yes }
+		29 = { $function_name$ = yes }
+		30 = { $function_name$ = yes }
+		
+		fallback = { $function_name$ = yes }
+	}
+
+	set_global_variable = {
+		name = semi_random_integer
+		value = {
+			integer_range = { min = 1 max = 30 }
+		}
+	}
+}
+
 # Chance Character is born with new genetic trait regardless of parents
 assign_random_genetic_trait = {
+	debug_log = "ASSIGNING RANDOM GENETIC TRAIT"
+
 	random_list = {
-		0 = { # Beauty Bad 1
-			modifier = {
-				add = 3
-				beauty_trait_score = 0
-			}
-			assign_genetic_trait = { trait = beauty_bad_1}
+		4 = {
+			# debug_log =  "Assign Beauty"
+			assign_random_beauty_trait = yes
 		}
-		0 = { # Beauty Bad 2
-			modifier = {
-				add = 2
-				beauty_trait_score = 0
-			}
-			assign_genetic_trait = { trait = beauty_bad_2}
+		4 = {
+			# debug_log =  "Assign Intellect"
+			assign_random_intellect_trait = yes
 		}
-		0 = { # Beauty Bad 3
-			modifier = {
-				add = 1
-				beauty_trait_score = 0
-			}
-			assign_genetic_trait = { trait = beauty_bad_3}
-		} 
-		0 = { # Beauty Good 1
-			modifier = {
-				add = 6
-				beauty_trait_score = 0
-			}
-			assign_genetic_trait = { trait = beauty_good_1}
-		} 
-		0 = { # Beauty Good 2
-			modifier = {
-				add = 4
-				beauty_trait_score = 0
-			}
-			assign_genetic_trait = { trait = beauty_good_2}
-		} 
-		0 = { # Beauty Good 3
-			modifier = {
-				add = 2
-				beauty_trait_score = 0
-			}
-			assign_genetic_trait = { trait = beauty_good_3}
+		4 = {
+			# debug_log =  "Assign Physique"
+			assign_random_physique_trait = yes
 		}
+		1 = {
+			# debug_log =  "Assign Other"
+			assign_random_other_trait = yes
+		}
+	}
+}
 
-		0 = { # Intellect Bad 1
-			modifier = {
-				add = 3
-				intellect_trait_score = 0
-			}
-			assign_genetic_trait = { trait = intellect_bad_1}
+assign_random_beauty_trait = {
+	if = {
+		limit = {
+			beauty_trait_score = 0
 		}
-		0 = { # Intellect Bad 2
-			modifier = {
-				add = 2
-				intellect_trait_score = 0
-			}
-			assign_genetic_trait = { trait = intellect_bad_2}
-		}
-		0 = { # Intellect Bad 3
-			modifier = {
-				add = 1
-				intellect_trait_score = 0
-			}
-			assign_genetic_trait = { trait = intellect_bad_3}
-		} 
-		0 = { # Intellect Good 1
-			modifier = {
-				add = 6
-				intellect_trait_score = 0
-			}
-			assign_genetic_trait = { trait = intellect_good_1}
-		} 
-		0 = { # Intellect Good 2
-			modifier = {
-				add = 4
-				intellect_trait_score = 0
-			}
-			assign_genetic_trait = { trait = intellect_good_2}
-		} 
-		0 = { # Intellect Good 3
-			modifier = {
-				add = 2
-				intellect_trait_score = 0
-			}
-			assign_genetic_trait = { trait = intellect_good_3}
-		} 
-
-
-		0 = { # Physique Bad 1
-			modifier = {
-				add = 3
-				physique_trait_score = 0
-			}
-			assign_genetic_trait = { trait = physique_bad_1}
-		}
-		0 = { # Physique Bad 2
-			modifier = {
-				add = 2
-				physique_trait_score = 0
-			}
-			assign_genetic_trait = { trait = physique_bad_2}
-		}
-		0 = { # Physique Bad 3
-			modifier = {
-				add = 1
-				physique_trait_score = 0
-			}
-			assign_genetic_trait = { trait = physique_bad_3}
-		} 
-		0 = { # Physique Good 1
-			modifier = {
-				add = 6
-				physique_trait_score = 0
-			}
-			assign_genetic_trait = { trait = physique_good_1}
-		} 
-		0 = { # Physique Good 2
-			modifier = {
-				add = 4
-				physique_trait_score = 0
-			}
-			assign_genetic_trait = { trait = physique_good_2}
-		} 
-		0 = { # Physique Good 3
-			modifier = {
-				add = 2
-				physique_trait_score = 0
-			}
-			assign_genetic_trait = { trait = physique_good_3}
-		}
-
-
-		0 = { # Fecund
-			modifier = {
-				add = 3
-				NOT = {
-					has_character_modifier = fecund
+		debug_log = "beauty_trait_score = 0"
+		random_list = {
+			96 = { # Normal Beauty
+				random_list = {
+					3 = { # Beauty Bad 1
+						assign_genetic_trait = { trait = beauty_bad_1}
+					}
+					2 = { # Beauty Bad 2
+						assign_genetic_trait = { trait = beauty_bad_2}
+					}
+					1 = { # Beauty Bad 3
+						assign_genetic_trait = { trait = beauty_bad_3}
+					} 
+					9 = { # Beauty Good 1
+						assign_genetic_trait = { trait = beauty_good_1}
+					} 
+					6 = { # Beauty Good 2
+						assign_genetic_trait = { trait = beauty_good_2}
+					} 
+					3 = { # Beauty Good 3
+						assign_genetic_trait = { trait = beauty_good_3}
+					}
 				}
 			}
-			assign_genetic_trait = { trait = fecund}
-		}
-		0 = { # Giant
-			modifier = {
-				add = 3
-				NOT = {
-					has_character_modifier = fecund
+			4 = { # Rare Beauty
+				random_list = {
+					6 = { # Unconventional Beauty Good 1
+						assign_genetic_trait = { trait = unconventional_beauty_good_1}
+					}
+					4 = { # Unconventional Beauty Good 2
+						assign_genetic_trait = { trait = unconventional_beauty_good_2}
+					}
+					2 = { # Unconventional Beauty Good 3
+						assign_genetic_trait = { trait = unconventional_beauty_good_3}
+					} 
+					3 = { # Exotic Beauty Good 1
+						assign_genetic_trait = { trait = exotic_beauty_good_1}
+					} 
+					2 = { # Exotic Beauty Good 2
+						assign_genetic_trait = { trait = exotic_beauty_good_2}
+					} 
+					1 = { # Exotic Beauty Good 3
+						assign_genetic_trait = { trait = exotic_beauty_good_3}
+					}
 				}
 			}
-			assign_genetic_trait = { trait = giant}
 		}
+	}
+	else = {
+		debug_log = "Character already had beauty trait"
+	}
 
-		1 = {} 
+}
+
+assign_random_intellect_trait = {
+	if = {
+		limit = {
+			intellect_trait_score = 0
+		}
+		debug_log = "intellect_trait_score = 0"
+		random_list = {
+			3 = { # Intellect Bad 1
+				assign_genetic_trait = { trait = intellect_bad_1}
+			}
+			2 = { # Intellect Bad 2
+				assign_genetic_trait = { trait = intellect_bad_2}
+			}
+			1 = { # Intellect Bad 3
+				assign_genetic_trait = { trait = intellect_bad_3}
+			} 
+			9 = { # Intellect Good 1
+				assign_genetic_trait = { trait = intellect_good_1}
+			} 
+			6 = { # Intellect Good 2
+				assign_genetic_trait = { trait = intellect_good_2}
+			} 
+			3 = { # Intellect Good 3
+				assign_genetic_trait = { trait = intellect_good_3}
+			}
+		}
+	}
+	else = {
+		debug_log = "Character already had intellect trait"
+	}
+}
+
+assign_random_physique_trait = {
+	if = {
+		limit = {
+			physique_trait_score = 0
+		}
+		debug_log = "physique_trait_score = 0"
+		random_list = {
+			3 = { # Physique Bad 1
+				assign_genetic_trait = { trait = physique_bad_1}
+			}
+			2 = { # Physique Bad 2
+				assign_genetic_trait = { trait = physique_bad_2}
+			}
+			1 = { # Physique Bad 3
+				assign_genetic_trait = { trait = physique_bad_3}
+			} 
+			9 = { # Physique Good 1
+				assign_genetic_trait = { trait = physique_good_1}
+			} 
+			6 = { # Physique Good 2
+				assign_genetic_trait = { trait = physique_good_2}
+			} 
+			3 = { # Physique Good 3
+				assign_genetic_trait = { trait = physique_good_3}
+			}
+		}
+	}
+	else = {
+		debug_log = "Character already had physique trait"
+	}
+}
+
+assign_random_other_trait = {
+	if = {
+		limit = {
+			NOR = {
+				has_genetic_trait = { trait = fecund }
+				has_genetic_trait = { trait = giant }
+			}
+		}
+		debug_log = "No 'other' genetic traits"
+		random_list = {
+			2 = { # Fecund
+				assign_genetic_trait = { trait = fecund}
+			}
+			2 = { # Giant
+				assign_genetic_trait = { trait = giant}
+			}
+		}
+	}
+	else = {
+		debug_log = "Character already an `other` trait"
 	}
 }
 
@@ -677,6 +783,61 @@ remove_genetic_trait = {
 	}
 }
 
+remove_all_genetic_traits_of_type = {
+	hidden_effect = {
+		if = { 
+			limit = { has_genetic_trait = $trait_type$_good_1 }
+			remove_genetic_trait = { trait = $trait_type$_good_1 }
+		}
+		if = { 
+			limit = { has_genetic_trait = $trait_type$_good_2 }
+			remove_genetic_trait = { trait = $trait_type$_good_2 }
+		}
+		if = { 
+			limit = { has_genetic_trait = $trait_type$_good_3 }
+			remove_genetic_trait = { trait = $trait_type$_good_3 }
+		}
+		if = { 
+			limit = { has_genetic_trait = $trait_type$_good_4 }
+			remove_genetic_trait = { trait = $trait_type$_good_4 }
+		}
+		if = { 
+			limit = { has_genetic_trait = $trait_type$_bad_1 }
+			remove_genetic_trait = { trait = $trait_type$_bad_1 }
+		}
+		if = { 
+			limit = { has_genetic_trait = $trait_type$_bad_2 }
+			remove_genetic_trait = { trait = $trait_type$_bad_2 }
+		}
+		if = { 
+			limit = { has_genetic_trait = $trait_type$_bad_3 }
+			remove_genetic_trait = { trait = $trait_type$_bad_3 }
+		}
+
+		# Unconventional/Exotic
+		if = { limit = { flag:$trait_type$ = flag:beauty }
+			if = { limit = { has_genetic_trait = unconventional_$trait_type$_good_1 }
+				remove_genetic_trait = { trait = unconventional_$trait_type$_good_1 }
+			}
+			if = { limit = { has_genetic_trait = unconventional_$trait_type$_good_2 }
+				remove_genetic_trait = { trait = unconventional_$trait_type$_good_2 }
+			}
+			if = { limit = { has_genetic_trait = unconventional_$trait_type$_good_3 }
+				remove_genetic_trait = { trait = unconventional_$trait_type$_good_3 }
+			}
+			if = { limit = { has_genetic_trait = exotic_$trait_type$_good_1 }
+				remove_genetic_trait = { trait = exotic_$trait_type$_good_1 }
+			}
+			if = { limit = { has_genetic_trait = exotic_$trait_type$_good_2 }
+				remove_genetic_trait = { trait = exotic_$trait_type$_good_2 }
+			}
+			if = { limit = { has_genetic_trait = exotic_$trait_type$_good_3 }
+				remove_genetic_trait = { trait = exotic_$trait_type$_good_3 }
+			}
+		}
+	}
+}
+
 give_genetic_traits_to_starter_characters_effect = {
 	# needed for GUI stuff
 	set_global_variable = {
@@ -689,9 +850,15 @@ give_genetic_traits_to_starter_characters_effect = {
 			assign_any_missing_genetic_traits = yes
 			give_starter_elf_trait = yes
 
-			# random = { # TODO: seed some genetic traits into starter characters
-			# 	# will want to have checks to see they dont already have a genetic trait
-			# }
+			random = { # chance to start with a genetic trait
+				chance = 20
+				use_fake_random_effect = { function_name = assign_random_genetic_trait }
+			}
+			random = { # even rarer chance to start with a second one
+				chance = 12
+				use_fake_random_effect = { function_name = assign_random_genetic_trait }
+			}
+			# Note: Keep in mind these two combined make the actual odds of getting at least one trait higher than just the first %
 		}
 	}
 }
@@ -703,24 +870,24 @@ give_starter_elf_trait = {
 			is_any_elf_type = no
 		}
 
-		assign_race_trait = { trait = elf_tier_2 }
+		assign_racial_trait = { trait = elf_tier_2 }
 	}
 }
 
 # Used to give Setup characters traits that correspond to their character modifiers
 assign_any_missing_genetic_traits = {
-	assign_race_trait_from_modifier = { trait = elf_tier_1 }
-	assign_race_trait_from_modifier = { trait = elf_tier_2 }
-	assign_race_trait_from_modifier = { trait = elf_tier_3 }
-	assign_race_trait_from_modifier = { trait = elf_tier_4 }
-	assign_race_trait_from_modifier = { trait = elf_tier_5 }
-	assign_race_trait_from_modifier = { trait = elf_tier_6 }
-	assign_race_trait_from_modifier = { trait = elf_tier_7 }
-	assign_race_trait_from_modifier = { trait = elf_tier_8 }
-	assign_race_trait_from_modifier = { trait = elf_tier_9 }
-	assign_race_trait_from_modifier = { trait = elf_tier_10 }
-	assign_race_trait_from_modifier = { trait = elf_tier_11 }
-	assign_race_trait_from_modifier = { trait = elf_tier_12 }
+	assign_racial_trait_from_modifier = { trait = elf_tier_1 }
+	assign_racial_trait_from_modifier = { trait = elf_tier_2 }
+	assign_racial_trait_from_modifier = { trait = elf_tier_3 }
+	assign_racial_trait_from_modifier = { trait = elf_tier_4 }
+	assign_racial_trait_from_modifier = { trait = elf_tier_5 }
+	assign_racial_trait_from_modifier = { trait = elf_tier_6 }
+	assign_racial_trait_from_modifier = { trait = elf_tier_7 }
+	assign_racial_trait_from_modifier = { trait = elf_tier_8 }
+	assign_racial_trait_from_modifier = { trait = elf_tier_9 }
+	assign_racial_trait_from_modifier = { trait = elf_tier_10 }
+	assign_racial_trait_from_modifier = { trait = elf_tier_11 }
+	assign_racial_trait_from_modifier = { trait = elf_tier_12 }
 
 	assign_genetic_trait_from_modifier = { trait = royal_elf_valerith }
 	assign_genetic_trait_from_modifier = { trait = royal_elf_serelion }
@@ -780,7 +947,7 @@ assign_genetic_trait_from_modifier = {
 	}
 }
 
-assign_race_trait_from_modifier = {
+assign_racial_trait_from_modifier = {
 	if = {
 		limit = {
 			has_character_modifier = $trait$
@@ -801,90 +968,90 @@ assign_race_trait_from_modifier = {
 ascension_effect = {
 	if = {
 		limit = { is_any_elf_type = no }
-		assign_race_trait = { trait = elf_tier_1}
+		assign_racial_trait = { trait = elf_tier_1}
 	}
 	else_if = {
 		limit = { has_racial_trait = { trait = elf_tier_1 } }
-		upgrade_elf_race_trait = {
+		upgrade_elf_racial_trait = {
 			old_level = 1
 			new_level = 2
 		}
 	}
 	else_if = {
 		limit = { has_racial_trait = { trait = elf_tier_2 } }
-		upgrade_elf_race_trait = {
+		upgrade_elf_racial_trait = {
 			old_level = 2
 			new_level = 3
 		}
 	}
 	else_if = {
 		limit = { has_racial_trait = { trait = elf_tier_3 } }
-		upgrade_elf_race_trait = {
+		upgrade_elf_racial_trait = {
 			old_level = 3
 			new_level = 4
 		}
 	}
 	else_if = {
 		limit = { has_racial_trait = { trait = elf_tier_4 } }
-		upgrade_elf_race_trait = {
+		upgrade_elf_racial_trait = {
 			old_level = 4
 			new_level = 5
 		}
 	}
 	else_if = {
 		limit = { has_racial_trait = { trait = elf_tier_5 } }
-		upgrade_elf_race_trait = {
+		upgrade_elf_racial_trait = {
 			old_level = 5
 			new_level = 6
 		}
 	}
 	else_if = {
 		limit = { has_racial_trait = { trait = elf_tier_6 } }
-		upgrade_elf_race_trait = {
+		upgrade_elf_racial_trait = {
 			old_level = 6
 			new_level = 7
 		}
 	}
 	else_if = {
 		limit = { has_racial_trait = { trait = elf_tier_7 } }
-		upgrade_elf_race_trait = {
+		upgrade_elf_racial_trait = {
 			old_level = 7
 			new_level = 8
 		}
 	}
 	else_if = {
 		limit = { has_racial_trait = { trait = elf_tier_8 } }
-		upgrade_elf_race_trait = {
+		upgrade_elf_racial_trait = {
 			old_level = 8
 			new_level = 9
 		}
 	}
 	else_if = {
 		limit = { has_racial_trait = { trait = elf_tier_9 } }
-		upgrade_elf_race_trait = {
+		upgrade_elf_racial_trait = {
 			old_level = 9
 			new_level = 10
 		}
 	}
 	else_if = {
 		limit = { has_racial_trait = { trait = elf_tier_10 } }
-		upgrade_elf_race_trait = {
+		upgrade_elf_racial_trait = {
 			old_level = 10
 			new_level = 11
 		}
 	}
-		else_if = {
+	else_if = {
 		limit = { has_racial_trait = { trait = elf_tier_11 } }
-		upgrade_elf_race_trait = {
+		upgrade_elf_racial_trait = {
 			old_level = 11
 			new_level = 12
 		}
 	}
 }
 
-upgrade_elf_race_trait = {
-	remove_race_trait = { trait = elf_tier_$old_level$}
-	assign_race_trait = { trait = elf_tier_$new_level$}
+upgrade_elf_racial_trait = {
+	remove_racial_trait = { trait = elf_tier_$old_level$}
+	assign_racial_trait = { trait = elf_tier_$new_level$}
 }
 
 
@@ -897,6 +1064,6 @@ handle_created_character_race_effect = {
 
 		debug_log = "handle_created_character_race_effect"
 		debug_log_scopes = yes
-		assign_race_trait = { trait = elf_tier_2}
+		assign_racial_trait = { trait = elf_tier_2}
 	}
 }
