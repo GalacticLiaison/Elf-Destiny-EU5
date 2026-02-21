@@ -1,0 +1,113 @@
+﻿# chance to start with a genetic trait
+starting_characters_random_genetic_trait_spawn_chance_1 = {
+	value = 0
+    add = {
+		if = { 
+			limit = {
+				has_game_rule = genetic_traits_normal_rarity
+			}
+			value = 20
+		}
+	}
+    add = {
+		if = { 
+			limit = {
+				has_game_rule = genetic_traits_more_common
+			}
+			value = 40
+		}
+	}
+    add = {
+		if = { 
+			limit = {
+				has_game_rule = genetic_traits_more_rare
+			}
+			value = 10
+		}
+	}
+}
+
+# chance of additional second trait
+starting_characters_random_genetic_trait_spawn_chance_2 = {
+	value = 0
+    add = {
+		if = { 
+			limit = {
+				has_game_rule = genetic_traits_normal_rarity
+			}
+			value = 12
+		}
+	}
+    add = {
+		if = { 
+			limit = {
+				has_game_rule = genetic_traits_more_common
+			}
+			value = 24
+		}
+	}
+    add = {
+		if = { 
+			limit = {
+				has_game_rule = genetic_traits_more_rare
+			}
+			value = 6
+		}
+	}
+}
+
+born_with_uninherited_genetic_trait_chance = {
+	value = 0
+    add = {
+		if = { 
+			limit = {
+				has_game_rule = genetic_traits_normal_rarity
+			}
+			value = 5
+		}
+	}
+    add = {
+		if = { 
+			limit = {
+				has_game_rule = genetic_traits_more_common
+			}
+			value = 15
+		}
+	}
+    add = {
+		if = { 
+			limit = {
+				has_game_rule = genetic_traits_more_rare
+			}
+			value = 2
+		}
+	}
+}
+
+newly_created_character_genetic_trait_chance = {
+	value = 0
+    add = {
+		if = { 
+			limit = {
+				has_game_rule = genetic_traits_normal_rarity
+			}
+			value = 5
+		}
+	}
+    add = {
+		if = { 
+			limit = {
+				has_game_rule = genetic_traits_more_common
+			}
+			value = 15
+		}
+	}
+    add = {
+		if = { 
+			limit = {
+				has_game_rule = genetic_traits_more_rare
+			}
+			value = 2
+		}
+	}
+}

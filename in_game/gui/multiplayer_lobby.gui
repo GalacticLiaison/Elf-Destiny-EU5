@@ -1775,19 +1775,7 @@ types MultiplayerLobby
 						}
 					}
 					blockoverride "country_header_extra" {
-						hbox = {
-							position = { 10 60 }
-							# parentanchor = bottom
-							character_view_genetic_traits= {
-								blockoverride "character_view_genetic_traits_data_model" {
-									datamodel = "[Country.GetGovernment.GetRulerOrRegent.MakeScope.GetList('genetic_traits')]"
-								}
-
-								blockoverride "character_view_genetic_traits_wrap" {
-									datamodel_wrap = 10
-								}
-							}
-						}
+						# expand = {}
 						hbox = {
 							layoutpolicy_horizontal = expanding
 							parentanchor = bottom
@@ -1813,7 +1801,33 @@ types MultiplayerLobby
 								}
 							}
 							expand = {}
+							character_view_genetic_traits= {
+								blockoverride "character_view_genetic_traits_data_model" {
+									datamodel = "[Country.GetGovernment.GetRulerOrRegent.MakeScope.GetList('genetic_traits')]"
+								}
+
+								blockoverride "character_view_genetic_traits_wrap" {
+									datamodel_wrap = 10
+								}
+							}
 						}
+						
+						# hbox = {
+						# 	# position = { 59% 60 }
+						# 	position = { 10 60 }
+						# 	# parentanchor = right
+						# 	layoutpolicy_horizontal = expanding
+
+						# 	character_view_genetic_traits= {
+						# 		blockoverride "character_view_genetic_traits_data_model" {
+						# 			datamodel = "[Country.GetGovernment.GetRulerOrRegent.MakeScope.GetList('genetic_traits')]"
+						# 		}
+
+						# 		blockoverride "character_view_genetic_traits_wrap" {
+						# 			datamodel_wrap = 10
+						# 		}
+						# 	}
+						# }
 					}		
 				}
 

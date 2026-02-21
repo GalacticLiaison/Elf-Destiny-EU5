@@ -240,8 +240,10 @@ character_editor = {
 
 
 	potential = {
-		always = yes
-		# always = no
+		OR = {
+			debug_only = yes
+			has_game_rule = character_editor_enabled_outside_debug
+		}
 	}
 
 	ai_tick = never
@@ -281,4 +283,55 @@ character_editor = {
    ai_will_do = {
 		value = 0
     }
+}	
+
+character_editor_foreign = {
+	sound = UI_action_character_marry_noble
+	context_menu_click_mode = click # Disable confirm
+
+	on_other_nation = yes
+	message = yes
+	
+	ai_tick = never
+	
+	potential = {
+		# scope:actor = {
+		# 	government_type = government_type:monarchy
+		# 	has_ruler = yes
+		# }
+		# always = yes
+		NOT = {scope:actor = scope:recipient.owner}
+		OR = {
+			debug_only = yes
+			has_game_rule = character_editor_enabled_outside_debug
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = character
+		target_flag = recipient
+		name = "choose_character"
+		column = {
+			data = name
+		}
+		visible = {
+			# father ?= scope:actor.ruler
+			# owner != scope:actor
+			# father.owner = scope:actor
+			# is_adult = no
+			NOT = {scope:actor = scope:recipient.owner}
+			# always = yes
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			trigger_event_silently = {
+				id = elf_destiny_debug.1
+			}
+		}
+	}
+
+	ai_will_do = {
+	}
 }	

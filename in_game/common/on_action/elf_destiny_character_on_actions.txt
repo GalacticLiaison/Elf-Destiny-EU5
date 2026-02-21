@@ -97,6 +97,9 @@ new_character_chance_of_random_genetic_trait = {
 
 	}
 	effect = {
-		use_fake_random_effect = { function_name = assign_random_genetic_trait }
+		random = { # chance to be born with a genetic trait not inherited
+			chance = newly_created_character_genetic_trait_chance
+			use_fake_random_effect = { function_name = assign_random_genetic_trait }
+		}
 	}
 }

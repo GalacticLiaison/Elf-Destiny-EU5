@@ -214,7 +214,7 @@ genetic_inheritance_effect = {
 	pure_blood_inheritance = yes
 
 	random = { # chance to be born with a genetic trait not inherited
-		chance = 5
+		chance = born_with_uninherited_genetic_trait_chance
 		use_fake_random_effect = { function_name = assign_random_genetic_trait }
 	}
 }
@@ -786,52 +786,54 @@ remove_genetic_trait = {
 remove_all_genetic_traits_of_type = {
 	hidden_effect = {
 		if = { 
-			limit = { has_genetic_trait = $trait_type$_good_1 }
+			limit = { has_genetic_trait = {trait = $trait_type$_good_1} }
 			remove_genetic_trait = { trait = $trait_type$_good_1 }
 		}
 		if = { 
-			limit = { has_genetic_trait = $trait_type$_good_2 }
+			limit = { has_genetic_trait = {trait = $trait_type$_good_2} }
 			remove_genetic_trait = { trait = $trait_type$_good_2 }
 		}
 		if = { 
-			limit = { has_genetic_trait = $trait_type$_good_3 }
+			limit = { has_genetic_trait = {trait = $trait_type$_good_3} }
 			remove_genetic_trait = { trait = $trait_type$_good_3 }
 		}
 		if = { 
-			limit = { has_genetic_trait = $trait_type$_good_4 }
+			limit = { has_genetic_trait = {trait = $trait_type$_good_4} }
 			remove_genetic_trait = { trait = $trait_type$_good_4 }
 		}
 		if = { 
-			limit = { has_genetic_trait = $trait_type$_bad_1 }
+			limit = { has_genetic_trait ={trait = $trait_type$_bad_1} }
 			remove_genetic_trait = { trait = $trait_type$_bad_1 }
 		}
 		if = { 
-			limit = { has_genetic_trait = $trait_type$_bad_2 }
+			limit = { has_genetic_trait = {trait = $trait_type$_bad_2} }
 			remove_genetic_trait = { trait = $trait_type$_bad_2 }
 		}
 		if = { 
-			limit = { has_genetic_trait = $trait_type$_bad_3 }
+			limit = { has_genetic_trait = {trait = $trait_type$_bad_3} }
 			remove_genetic_trait = { trait = $trait_type$_bad_3 }
 		}
 
 		# Unconventional/Exotic
-		if = { limit = { flag:$trait_type$ = flag:beauty }
-			if = { limit = { has_genetic_trait = unconventional_$trait_type$_good_1 }
+		if = { 
+			limit = { flag:$trait_type$ = flag:beauty }
+			
+			if = { limit = { has_genetic_trait = {trait = unconventional_$trait_type$_good_1} }
 				remove_genetic_trait = { trait = unconventional_$trait_type$_good_1 }
 			}
-			if = { limit = { has_genetic_trait = unconventional_$trait_type$_good_2 }
+			if = { limit = { has_genetic_trait = {trait = unconventional_$trait_type$_good_2} }
 				remove_genetic_trait = { trait = unconventional_$trait_type$_good_2 }
 			}
-			if = { limit = { has_genetic_trait = unconventional_$trait_type$_good_3 }
+			if = { limit = { has_genetic_trait = {trait = unconventional_$trait_type$_good_3} }
 				remove_genetic_trait = { trait = unconventional_$trait_type$_good_3 }
 			}
-			if = { limit = { has_genetic_trait = exotic_$trait_type$_good_1 }
+			if = { limit = { has_genetic_trait = {trait = exotic_$trait_type$_good_1} }
 				remove_genetic_trait = { trait = exotic_$trait_type$_good_1 }
 			}
-			if = { limit = { has_genetic_trait = exotic_$trait_type$_good_2 }
+			if = { limit = { has_genetic_trait = {trait = exotic_$trait_type$_good_2} }
 				remove_genetic_trait = { trait = exotic_$trait_type$_good_2 }
 			}
-			if = { limit = { has_genetic_trait = exotic_$trait_type$_good_3 }
+			if = { limit = { has_genetic_trait ={trait =  exotic_$trait_type$_good_3} }
 				remove_genetic_trait = { trait = exotic_$trait_type$_good_3 }
 			}
 		}
@@ -851,11 +853,11 @@ give_genetic_traits_to_starter_characters_effect = {
 			give_starter_elf_trait = yes
 
 			random = { # chance to start with a genetic trait
-				chance = 20
+				chance = starting_characters_random_genetic_trait_spawn_chance_1
 				use_fake_random_effect = { function_name = assign_random_genetic_trait }
 			}
 			random = { # even rarer chance to start with a second one
-				chance = 12
+				chance = starting_characters_random_genetic_trait_spawn_chance_2
 				use_fake_random_effect = { function_name = assign_random_genetic_trait }
 			}
 			# Note: Keep in mind these two combined make the actual odds of getting at least one trait higher than just the first %
