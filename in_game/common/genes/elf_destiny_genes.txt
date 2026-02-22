@@ -31,6 +31,10 @@ special_genes = {
 						# value = { min = 0.0 max = 1.0 }
 						value = 1.6
 		            }
+					setting = { 
+						attribute = "bs_long_ears"	
+						value = { min = 0.05 max = 0.25 }	
+					} 
 				}
 				female = male
 				boy = male
@@ -80,6 +84,6 @@ special_genes = {
 				adolescent_boy = boy
 				adolescent_girl = girl
 			}
-		}
+		}	
 	}
 }
