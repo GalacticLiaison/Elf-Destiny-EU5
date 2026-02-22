@@ -1,6 +1,5 @@
 ﻿
-# TODO: combine all effects into one loop for performance
-convert_and_assimilate_elf_pops_effect = {
+setup_elf_culture_locations_effect = {
 	culture_group:elven_culture_group = {
 		every_country_in_culture_group = {
 			# These need to be seperate every_pop loops for some reason
@@ -10,81 +9,118 @@ convert_and_assimilate_elf_pops_effect = {
 			every_pop = {
 				change_pop_culture = prev.culture
 			}
-		}
-	}
-}
 
-increase_elf_food_supply_effect = {
-	culture_group:elven_culture_group = {
-		every_country_in_culture_group = {
 			every_province = {
 				every_location_in_province = {
-					if = {
-						limit = {
-							OR = {
-								raw_material = goods:wild_game
-								raw_material = goods:fish
-							}	
-						}
-
-						change_max_raw_material_workers = 3
-
-						add_pop = {
-							culture = owner.ruler.culture
-							religion = owner.ruler.religion
-							type = pop_type:laborers
-							size = { value = 3}
-						}
-
-						if = {
-							limit = {
-								location_rank = location_rank:rural_settlement
-								NOT = { has_building = building_type:forest_village }
-							}
-							construct_building = {
-								building_type = building_type:forest_village
-								cost_multiplier = 0.0
-								cost_multiplier_reason = "game_start"
-								instant = yes
-							}
-						}
-					}
-
-					if = {
-						limit = {
-							OR = {
-								raw_material = goods:fur
-							}	
-						}
-
-						change_max_raw_material_workers = 1
-
-						add_pop = {
-							culture = owner.ruler.culture
-							religion = owner.ruler.religion
-							type = pop_type:laborers
-							size = { value = 1}
-						}
-
-						if = {
-							limit = {
-								location_rank = location_rank:rural_settlement
-								NOT = { has_building = building_type:forest_village }
-							}
-							construct_building = {
-								building_type = building_type:forest_village
-								cost_multiplier = 0.0
-								cost_multiplier_reason = "game_start"
-								instant = yes
-							}
-						}
-					}
-
+					add_some_pops_of_random_elf_cultures = yes
+					increase_elf_food_supply = yes
 				}
 			}
 		}
 	}
+}
 
+add_some_pops_of_random_elf_cultures = {
+	randomly_add_elves_of_elf_culture = { culture = deepwood_elven_culture }
+	randomly_add_elves_of_elf_culture = { culture = tuatha_de_danann_culture }
+	randomly_add_elves_of_elf_culture = { culture = romaviri_culture }
+	randomly_add_elves_of_elf_culture = { culture = alfar_culture }
+	randomly_add_elves_of_elf_culture = { culture = astrion_culture }
+	randomly_add_elves_of_elf_culture = { culture = atlareth_culture }
+}
+
+randomly_add_elves_of_elf_culture = {
+	random = {
+		chance = 33
+
+		add_pop = {
+			culture = culture:$culture$
+			religion = religion:aeluran
+			type = pop_type:burghers
+			size = 0.03
+		}
+		add_pop = {
+			culture = culture:$culture$
+			religion = religion:aeluran
+			type = pop_type:soldiers
+			size = 0.01
+		}
+		add_pop = {
+			culture = culture:$culture$
+			religion = religion:aeluran
+			type = pop_type:laborers
+			size = 0.04
+		}
+		add_pop = {
+			culture = culture:$culture$
+			religion = religion:aeluran
+			type = pop_type:peasants
+			size = 0.05
+		}
+	}
+}
+
+increase_elf_food_supply = {
+	if = {
+		limit = {
+			OR = {
+				raw_material = goods:wild_game
+				raw_material = goods:fish
+			}	
+		}
+
+		change_max_raw_material_workers = 3
+
+		add_pop = {
+			culture = owner.ruler.culture
+			religion = owner.ruler.religion
+			type = pop_type:laborers
+			size = { value = 3}
+		}
+
+		if = {
+			limit = {
+				location_rank = location_rank:rural_settlement
+				NOT = { has_building = building_type:forest_village }
+			}
+			construct_building = {
+				building_type = building_type:forest_village
+				cost_multiplier = 0.0
+				cost_multiplier_reason = "game_start"
+				instant = yes
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			OR = {
+				raw_material = goods:fur
+			}	
+		}
+
+		change_max_raw_material_workers = 1
+
+		add_pop = {
+			culture = owner.ruler.culture
+			religion = owner.ruler.religion
+			type = pop_type:laborers
+			size = { value = 1}
+		}
+
+		if = {
+			limit = {
+				location_rank = location_rank:rural_settlement
+				NOT = { has_building = building_type:forest_village }
+			}
+			construct_building = {
+				building_type = building_type:forest_village
+				cost_multiplier = 0.0
+				cost_multiplier_reason = "game_start"
+				instant = yes
+			}
+		}
+	}
 }
 
 elf_destiny_change_starter_goods_effect = {
@@ -182,25 +218,75 @@ elf_destiny_misc_game_start_tweaks_effect = {
 	# 	}
 	# }
 
-	register_aeluran_leadership_effect = yes
-
-}
-
-register_aeluran_leadership_effect = {
-	# add_to_global_variable_list = { name = aeluran_matrons target = character:dwd_calmera_thalwyn }
-	# add_to_global_variable_list = { name = aeluran_matrons target = character:syl_valindra_valerith }
-	# add_to_global_variable_list = { name = aeluran_matrons target = character:hih_pamora_daelurin }
-	# add_to_global_variable_list = { name = aeluran_matrons target = character:cyg_elmera_thundarael }
-	# add_to_global_variable_list = { name = aeluran_matrons target = character:wyd_meldona_serelion }
-	# add_to_global_variable_list = { name = aeluran_matrons target = character:gsh_galanoriel_gwynthorn }
-
 	every_country = {
 		every_character = {
 			limit = {
 				has_trait = aeluran_matron
 			}
-			add_to_global_variable_list = { name = aeluran_matrons target = this }
+			register_aeluran_leadership = yes
 		}
+
+		seed_calaquendi_estate_characters_effect = yes
+		seed_nobles_estate_characters_effect = yes # Elf countries dont start with nobles for whatever reason
+	}
+}
+
+register_aeluran_leadership = {
+	if = {
+		limit = {
+			has_trait = aeluran_matron
+		}
+		add_to_global_variable_list = { name = aeluran_matrons target = this }
+	}
+}
+
+seed_calaquendi_estate_characters_effect = {
+	if = {
+		limit = {
+			culture = { has_culture_group = culture_group:elven_culture_group}
+		}
+		create_calaquendi_estate_character = {is_female = yes scope_name = new_calaquendi}
+		create_calaquendi_estate_character = {is_female = no scope_name = new_calaquendi}
+	}
+}
+
+seed_nobles_estate_characters_effect = {
+	if = {
+		limit = {
+			culture = { has_culture_group = culture_group:elven_culture_group}
+		}
+		create_nobles_estate_character = {is_female = yes scope_name = new_calaquendi}
+		create_nobles_estate_character = {is_female = no scope_name = new_calaquendi}
+	}
+}
+
+populate_calaquendi_estate_with_characters_effect = {
+	if = {
+		limit = {
+			characters_in_calaquendi_estate_count < 3
+		}
+
+		if = {
+			limit = {
+				any_character = {
+					is_adult = yes
+					has_estate = estate_type:nobles_estate
+					has_racial_trait = { trait = elf_tier_2 }
+				}
+				NOT = {
+					has_variable = noble_ascended
+				}
+			}
+			trigger_event_silently = {
+				id = elf_destiny_misc.42
+			}
+		}
+		else = {
+			trigger_event_silently = {
+				id = elf_destiny_misc.41 
+			}
+		}
+
 	}
 }
 

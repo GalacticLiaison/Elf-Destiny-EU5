@@ -1,6 +1,8 @@
 include = "expl_northern_elf_provinces"
 include = "expl_european_elf_provinces"
 
+court_language = quenya_dialect
+
 government = {
 	parliament = {
 		parliament_type = elven_parliament

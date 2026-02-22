@@ -110,10 +110,12 @@ daughters_return_as_aeluran_sisters = {
 	}
 }
 
+
 four_yearly_country_pulse = {
 	on_actions = {
 		assign_enchantress_trait
 		assign_heroic_trait
+		populate_calaquendi_estate_with_characters
 		# recruit_bloodline_members
 	}
 }
@@ -151,5 +153,16 @@ recruit_bloodline_members = {
 		trigger_event_non_silently = {
 			id = elf_destiny_misc.3
 		}
+	}
+}
+
+populate_calaquendi_estate_with_characters = {
+	trigger = {
+		culture = { has_culture_group = culture_group:elven_culture_group}
+		characters_in_calaquendi_estate_count < 3
+	}
+
+	effect = {
+		populate_calaquendi_estate_with_characters_effect = yes
 	}
 }

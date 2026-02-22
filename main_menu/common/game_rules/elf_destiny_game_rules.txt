@@ -1,4 +1,4 @@
-enable_character_editor_outside_debug = {
+﻿enable_character_editor_outside_debug = {
 	default = character_editor_not_enabled_outside_debug
 
 	character_editor_not_enabled_outside_debug = {

@@ -1,0 +1,9 @@
+﻿characters_in_calaquendi_estate_count = {
+	value = 0
+    every_character = {
+        limit = {
+            has_estate = estate_type:calaquendi_estate
+        }
+        add = 1
+    }
+}

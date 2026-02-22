@@ -1,0 +1,33 @@
+﻿l_english:
+ # CALAQUENDI ====
+ elf_destiny_misc.1.title: "The Rut Has Begun!"
+ elf_destiny_misc.1.desc: "The Divine Spark has made its presence known and you can feel the power of the Rut in the air. A great heat fills the people of [ROOT.GetCountry.GetName]."
+ elf_destiny_misc.1.a: "Like rabbits as they say..."
+
+ elf_destiny_misc.20.title: "Feel the Spark"
+ elf_destiny_misc.20.desc: "[recipient.GetName] is going about their day when suddenly they feel a great presence overcome their senses. They stand before The Dive Spark and it has found them worthy. To show its approval it bestows a gift, a taste of its power into their very soul.\n\n[recipient.GetName] has become an [trait.GetName]"
+ elf_destiny_misc.20.a: "Bless the Spark!"
+
+ elf_destiny_misc.21.title: "Feel the Spark"
+ elf_destiny_misc.21.desc: "[recipient.GetName] is going about their day when suddenly they feel a great presence overcome their senses. They stand before The Dive Spark and it has found them worthy. To show its approval it bestows a gift, a taste of its power into their very soul.\n\n[recipient.GetName] has become [trait.GetName]"
+ elf_destiny_misc.21.a: "Bless the Spark!"
+
+ elf_destiny_misc.31.title: "A Pledge of Service"
+ elf_destiny_misc.31.desc: "An Elf Lord of a great noble bloodline has arrived at your holding with his family. His house has fallen on rough times and his lands taken from him. He had heard of your reputation as a just liege and wishes to pledge himself to you if you will have him."
+ elf_destiny_misc.31.accept: "Welcome them into your court"
+ elf_destiny_misc.31.refuse: "Turn them away"
+ elf_destiny_misc.31.family_leaves: "The family leaves"
+
+ elf_destiny_misc.32.title: "An Orphan of Great Promise"
+ elf_destiny_misc.32.desc: "A young child has arrived at your holding alone and in rough condition. [orphan.GetHeShe|U] claims to be of a high noble house but [orphan.GetHerHis] parents were recently lost to war. Before their death they told [orphan.GetHerHim] to seek your refuge and protection. For one so young, this small child speaks with eloquence and the manner he holds [orphan.GetHerHim]self even after experiencing such grief is quite impressive--you can sense great potential in [orphan.GetHerHim]"
+ elf_destiny_misc.32.accept: "Welcome them into your court"
+ elf_destiny_misc.32.refuse: "Turn them away"
+ elf_destiny_misc.32.orphan_leaves: "[orphan.GetName] leaves"
+ 
+ elf_destiny_misc.41.title: "Calaquendi Swear Allegiance"
+ elf_destiny_misc.41.desc: "A pair of Calaquendi have appeared in your realm and have sworn allegiance to you. The reputation of our nation must be great indeed to attract Elves of such caliber."
+ elf_destiny_misc.41.a: "Welcome Elf Lords"
+
+ elf_destiny_misc.42.title: "A Noble Ascension"
+ elf_destiny_misc.42.desc: "Celebration has broken out in your court. Last night [new_calaquendi.GetName] managed to Ascend and has become a [ShowTraitName('elf_tier_3')]!\n\nWith [new_calaquendi.GetHerHis] new found power and prestige [new_calaquendi.GetSheHe] is lifted from the [ShowEstateTypeName('nobles_estate')] to the [ShowEstateTypeName('calaquendi_estate')] [estate|e]."
+ elf_destiny_misc.42.a: "Praise the Spark!"

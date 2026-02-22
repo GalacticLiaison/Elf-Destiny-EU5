@@ -16,6 +16,7 @@
 		culture = { has_culture_group = culture_group:elven_culture_group}
 	}
 
+	cultural_tradition = 1
 	unlock_government_reform = the_old_ways
 	unlock_levy = levy_calaquendi
 	unlock_levy = levy_a_early_fey_archers

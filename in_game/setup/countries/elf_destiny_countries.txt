@@ -635,7 +635,7 @@ TIA = {
 	# description_category = administrative # cf. common/country_description_category DB
 	# difficulty = 2	# int between 1 and 5
 
-	culture_definition = atlareth_culture
+	culture_definition = astrion_culture
 	religion_definition = aeluran
 }
 ORF = {
@@ -668,7 +668,7 @@ HAR = {
 	# description_category = administrative # cf. common/country_description_category DB
 	# difficulty = 2	# int between 1 and 5
 
-	culture_definition = atlareth_culture
+	culture_definition = alfar_culture
 	religion_definition = aeluran
 }
 LAH = {
@@ -738,7 +738,7 @@ ALR = {
 	# description_category = administrative # cf. common/country_description_category DB
 	# difficulty = 2	# int between 1 and 5
 
-	culture_definition = atlareth_culture
+	culture_definition = alfar_culture
 	religion_definition = aeluran
 }
 AND = {
@@ -749,7 +749,7 @@ AND = {
 	# description_category = administrative # cf. common/country_description_category DB
 	# difficulty = 2	# int between 1 and 5
 
-	culture_definition = atlareth_culture
+	culture_definition = alfar_culture
 	religion_definition = aeluran
 }
 CAI = {

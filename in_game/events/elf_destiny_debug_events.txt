@@ -1,4 +1,4 @@
-namespace = elf_destiny_debug
+﻿namespace = elf_destiny_debug
 # Inline scripted effects/triggers for reusability
 # scripted_trigger elven_culture_trigger = {
 #     culture_group = elven  # Assumes Elven culture group exists

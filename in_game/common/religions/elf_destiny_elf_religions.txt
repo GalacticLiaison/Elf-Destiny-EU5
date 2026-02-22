@@ -7,6 +7,8 @@
 	has_religious_influence = yes
 	religious_aspects = 4
 
+	language = ancient_eldarin_dialect
+
 	important_country = DWD
 
 	definition_modifier = {

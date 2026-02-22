@@ -25,8 +25,7 @@ countries = {
 
 			dynasty = thalwyn_dynasty
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		SYL = { # Sylvael - Valerith 
@@ -51,8 +50,7 @@ countries = {
 
 			dynasty = valerith_dynasty
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		BWD = { # Blackwood - Valerith 
@@ -77,8 +75,7 @@ countries = {
 
 			dynasty = valerith_dynasty
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		MYT = { # Mytharil - Valerith
@@ -102,8 +99,7 @@ countries = {
 
 			dynasty = valerith_dynasty
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		HIH = { # High Hills - Daelurin
@@ -146,8 +142,7 @@ countries = {
 
 			dynasty = daelurin_dynasty
 
-			accepted_cultures = { deepwood_elven_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		GPA = { # Giants Palm
@@ -187,8 +182,7 @@ countries = {
 
 			dynasty = daelurin_dynasty
 
-			accepted_cultures = { deepwood_elven_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		NWD = { # North Wood
@@ -229,8 +223,7 @@ countries = {
 
 			dynasty = daelurin_dynasty
 
-			accepted_cultures = { deepwood_elven_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		CYG = { # Crystal Glades - Thundarael
@@ -274,8 +267,7 @@ countries = {
 
 			dynasty = thundarael_dynasty
 
-			accepted_cultures = { deepwood_elven_culture alfar_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		WYD = { # Wyrm's Den - Serelion
@@ -319,8 +311,7 @@ countries = {
 
 			dynasty = serelion_dynasty
 
-			accepted_cultures = { deepwood_elven_culture alfar_culture astrion_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_romaviri_opinions"
 		}
 
 		GSH = { # Green Shores - Gwynthorn
@@ -364,8 +355,7 @@ countries = {
 
 			dynasty = gwynthorn_dynasty
 
-			accepted_cultures = { deepwood_elven_culture alfar_culture astrion_culture romaviri_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_tuatha_de_danann_opinions"
 		}
 
 		ATS = { # Atlas - Lormelis
@@ -409,8 +399,7 @@ countries = {
 
 			dynasty = lormelis_dynasty
 
-			accepted_cultures = { deepwood_elven_culture alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_atlareth_opinions"
 		}
 
 
@@ -440,8 +429,7 @@ countries = {
 
 			dynasty = valerith_dynasty
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		# Smaller nations
@@ -467,8 +455,7 @@ countries = {
 
 			dynasty = valerith_dynasty
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		# Smaller nations
@@ -493,8 +480,7 @@ countries = {
 
 			dynasty = valerith_dynasty
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		###  Smaller nations ###
@@ -515,8 +501,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		SVN = { # ponil - Silivren
@@ -536,8 +521,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		AWE = { # pelym - Aranwë
@@ -557,8 +541,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 		
 		AEL = { # gari/sosva - Aeloria
@@ -578,8 +561,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		NAD = { # Ess - North Annonduin
@@ -599,8 +581,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		SAD = { # konda/yevra - South Annonduin
@@ -620,8 +601,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		LAS = { # malaya_sosva - Lassemir
@@ -641,8 +621,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		NEN = { # yukonda - Nenuial
@@ -662,8 +641,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		ELD = { # turtas - eldrin
@@ -683,8 +661,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		GLX = { # qashliq/siberia_abalak - gloren
@@ -704,8 +681,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		ITH = { # ust_ozernoye/selo_yartsevo/nazimovo - Ithildin
@@ -725,8 +701,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 		
 		LOE = { # komsa siberia_bor - Lóterien
@@ -746,8 +721,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		SIR = { # sulomay - Siriondil
@@ -767,8 +741,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 		
 		NAH = { # bakhtinsky - Nan Hithlinn
@@ -788,8 +761,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		DUG = { # kuzmovka - Dûrgalen
@@ -809,8 +781,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		ERD = { # tis/kiya/yeruda - Eredhven
@@ -830,8 +801,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 		
 		ORR = { # tokhomo - Orodrethil
@@ -851,8 +821,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		FOR = { # teya enashimo velmo - Formenost
@@ -872,8 +841,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		RIV = { # vangash - Rivenwood
@@ -893,8 +861,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		HIL = { # kardakan - Hithlond
@@ -914,8 +881,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		GWH = { # poligus/baykit/tumara - Gwathlóren
@@ -935,8 +901,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		EMY = { # bryanka - Emyn Dûr
@@ -956,8 +921,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		AMO = { # kamensk - Amonost
@@ -977,8 +941,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		LAI = { # motygino pashino taseyevo - Laindor
@@ -998,8 +961,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		CAL = { # kazachinskoye - Calithil
@@ -1019,8 +981,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		THA = { # yemelyanovo - Tharagel
@@ -1040,8 +1001,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		NER = { # krasnoyarsk - Neldoramar
@@ -1061,8 +1021,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		NIV = { # kansk - Nivrimdor
@@ -1082,8 +1041,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		STA = { # dzerzhinskoye - Starfall Plain
@@ -1103,8 +1061,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		ALD = { # Ilansky - Aeluin Daer
@@ -1124,8 +1081,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		DUD = { # biryusa - Duin Daer
@@ -1145,8 +1101,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		TAH = { # Tathren
@@ -1168,8 +1123,7 @@ countries = {
 
 			dynasty = valerith_dynasty
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		CEO = { # Celonduin
@@ -1191,8 +1145,7 @@ countries = {
 
 			dynasty = valerith_dynasty
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		ETI = { # Ethirannon
@@ -1214,8 +1167,7 @@ countries = {
 
 			dynasty = valerith_dynasty
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		VIY = { # Vinyalondë
@@ -1235,8 +1187,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		TIN = { # tabory/sankina/turinsk - Tindomire
@@ -1256,8 +1207,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		AEV = { # # chunoyar/aban Aelvinas
@@ -1277,8 +1227,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 		
 		RIN = { # kamenka/kazhma Ringwilith
@@ -1298,8 +1247,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		RHU = { # manzaya/boguchany Rhûnren
@@ -1319,8 +1267,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		WIN = { # belya Windy Vale
@@ -1340,8 +1287,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		TIA = { # tagya Taur Iaur
@@ -1361,8 +1307,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		ORF = { # irkineieva Orofarn
@@ -1382,8 +1327,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 
 		GIL = { # yarkino Gilwenor
@@ -1403,8 +1347,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_astrion_opinions"
 		}
 		
 		HAR = { # oskoba/tsentral/chadobets Harlondor
@@ -1424,8 +1367,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		LAH = { # upper angara/lower angara/educhanka Lathron
@@ -1445,8 +1387,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		FOM = { # kezhma Formenfold
@@ -1466,8 +1407,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		BNN = { # chemal Bruinenor
@@ -1487,8 +1427,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		ALR = { # balagansk osinsky bayanday -Almarenor
@@ -1508,8 +1447,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		AND = { # zalari cheremkhovo irkutsk - Andúniëlor
@@ -1529,8 +1467,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		CAI = { # chuva nizhneudinsk - Carnilindon
@@ -1550,8 +1487,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		ELE = { # bratsk kuytun staraya_zima - Elenrond
@@ -1571,8 +1507,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		FRS = { # krasnoyarsk - Formenos
@@ -1592,8 +1527,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		ILM = { # novosyolovo kortuz idrinskoye minusinsk - Ilmarion
@@ -1613,8 +1547,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		LAQ = { # chuya witym - Laurinquë
@@ -1634,8 +1567,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		NAR = { # yukte vitim aliihardaax - Nargilmar
@@ -1655,8 +1587,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		OST = { # peledui uel_tympychan - Ostelion
@@ -1676,8 +1607,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		TIV = { # moshi tupuchikan - Tirion Vanyar
@@ -1697,8 +1627,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 		
 		VAA = { # ichera dulisma - Valacirya
@@ -1718,8 +1647,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_alfar_opinions"
 		}
 
 		VNY = { # shardonem - Vanyalondë
@@ -1739,8 +1667,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 		
 		LSS = { # chakola - Lassirith
@@ -1760,8 +1687,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 		
 		GWN = { # verkola - Gwaelinn
@@ -1781,8 +1707,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 		
 		EDH = { # ust_chulasa - Edhelvor
@@ -1802,8 +1727,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 		
 		NME = { # koptyuga - Northmere
@@ -1823,8 +1747,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		AMM = { # zanyukhcha - Ammithir
@@ -1844,8 +1767,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 				
 		LOS = { # chirki - Lossenlad
@@ -1865,8 +1787,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 		
 		SVL = { # leshukonskoye - Silvervale
@@ -1886,8 +1807,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 		
 		WHI = { # khimzha - Windyhill
@@ -1907,8 +1827,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 
 		ZYP = { # makarikha dyrashnichikha - Zyphris
@@ -1928,8 +1847,7 @@ countries = {
 				ruler = random
 			}
 
-			accepted_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}
-			tolerated_cultures = {  }
+			include = "elf_culture_deepwood_elven_opinions"
 		}
 	}
 }

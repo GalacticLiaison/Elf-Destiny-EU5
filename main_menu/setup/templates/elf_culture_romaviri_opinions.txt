@@ -1,0 +1,2 @@
+accepted_cultures = { }
+tolerated_cultures = { deepwood_elven_culture alfar_culture astrion_culture tuatha_de_danann_culture atlareth_culture }

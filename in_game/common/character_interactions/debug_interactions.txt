@@ -62,22 +62,22 @@
 	}
 
 	effect = {
-		# scope:actor = {
-		# 	trigger_event_non_silently = {
-		# 		id = elf_destiny_debug.1
-		# 	}
-		# }
+		scope:actor = {
+			trigger_event_non_silently = {
+				id = elf_destiny_misc.41
+			}
+		}
 
 		
 
-		c:SYL = {
+		# c:SYL = {
 			# set_variable = {
 			# 	name = previous_ruling_dynasty
 			# 	value = ruler.dynasty
 			# }
-			kill_character_silently = ruler
+			# kill_character_silently = ruler
 			# research_advance = advance_type:grand_portal_restored
-		}
+		# }
 
 		# c:SYL = {
 		# 	create_character = {

@@ -1,0 +1,2 @@
+accepted_cultures = { }
+tolerated_cultures = { alfar_culture astrion_culture romaviri_culture tuatha_de_danann_culture atlareth_culture}

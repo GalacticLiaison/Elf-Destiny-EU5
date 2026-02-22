@@ -1,164 +1,93 @@
-﻿assign_elf_racial_trait_effect = {
-	debug_log = "assign_elf_racial_trait_effect"
-	if = {
-		limit = {
-			inherited_elf_racial_score > 0
-			inherited_elf_racial_score < 2
-		}
-		assign_racial_trait = { trait = elf_tier_1}
-	}
-	if = {
-		limit = {
-			inherited_elf_racial_score >= 2
-			inherited_elf_racial_score < 3
-		}
-		assign_racial_trait = { trait = elf_tier_2}
-	}
-	if = {
-		limit = {
-			inherited_elf_racial_score >= 3
-			inherited_elf_racial_score < 4
-		}
-		assign_racial_trait = { trait = elf_tier_3}
-	}
-	if = {
-		limit = {
-			inherited_elf_racial_score >= 4
-			inherited_elf_racial_score < 5
-		}
-		assign_racial_trait = { trait = elf_tier_4}
-	}
-	if = {
-		limit = {
-			inherited_elf_racial_score >= 5
-			inherited_elf_racial_score < 6
-		}
-		assign_racial_trait = { trait = elf_tier_5}
-	}
-	if = {
-		limit = {
-			inherited_elf_racial_score >= 6
-			inherited_elf_racial_score < 7
-		}
-		assign_racial_trait = { trait = elf_tier_6}
-	}
-	if = {
-		limit = {
-			inherited_elf_racial_score >= 7
-			inherited_elf_racial_score < 8
-		}
-		assign_racial_trait = { trait = elf_tier_7}
-	}
-	if = {
-		limit = {
-			inherited_elf_racial_score >= 8
-			inherited_elf_racial_score < 9
-		}
-		assign_racial_trait = { trait = elf_tier_8}
-	}
-	if = {
-		limit = {
-			inherited_elf_racial_score >= 9
-			inherited_elf_racial_score < 10
-		}
-		assign_racial_trait = { trait = elf_tier_9}
-	}
-	if = {
-		limit = {
-			inherited_elf_racial_score >= 10
-			inherited_elf_racial_score < 11
-		}
-		assign_racial_trait = { trait = elf_tier_10}
-	}
-	if = {
-		limit = {
-			inherited_elf_racial_score >= 11
-			inherited_elf_racial_score < 12
-		}
-		assign_racial_trait = { trait = elf_tier_11}
-	}
-	if = {
-		limit = {
-			inherited_elf_racial_score >= 12
-		}
-		assign_racial_trait = { trait = elf_tier_12}
-	}
-}
-
-# increase_elf_race_level = {
-
-# 	assign_racial_trait = { trait = elf_tier_1}
-# }
-
-assign_racial_trait = {
+﻿assign_genetic_trait = {
 	add_character_modifier = {
 		modifier = $trait$
 		# mode = add_and_extend
 	}
 
-	set_variable = {
-		name = character_race
-		value = trait:$trait$
+	add_to_variable_list = {
+		name = genetic_traits
+		target = trait:$trait$
 	}
 }
 
-remove_any_racial_trait = {
-	if = { 
-		limit = {has_racial_trait = { trait = elf_tier_1 }}
-		remove_racial_trait = { trait = elf_tier_1}
-	}
-	if = { 
-		limit = {has_racial_trait = { trait = elf_tier_2 }}
-		remove_racial_trait = { trait = elf_tier_2}
-	}
-	if = { 
-		limit = {has_racial_trait = { trait = elf_tier_3 }}
-		remove_racial_trait = { trait = elf_tier_3}
-	}
-	if = { 
-		limit = {has_racial_trait = { trait = elf_tier_4 }}
-		remove_racial_trait = { trait = elf_tier_4}
-	}
-	if = { 
-		limit = {has_racial_trait = { trait = elf_tier_5 }}
-		remove_racial_trait = { trait = elf_tier_5}
-	}
-	if = { 
-		limit = {has_racial_trait = { trait = elf_tier_6 }}
-		remove_racial_trait = { trait = elf_tier_6}
-	}
-	if = { 
-		limit = {has_racial_trait = { trait = elf_tier_7 }}
-		remove_racial_trait = { trait = elf_tier_7}
-	}
-	if = { 
-		limit = {has_racial_trait = { trait = elf_tier_8 }}
-		remove_racial_trait = { trait = elf_tier_8}
-	}
-	if = { 
-		limit = {has_racial_trait = { trait = elf_tier_8 }}
-		remove_racial_trait = { trait = elf_tier_9}
-	}
-	if = { 
-		limit = {has_racial_trait = { trait = elf_tier_10 }}
-		remove_racial_trait = { trait = elf_tier_10}
-	}
-	if = { 
-		limit = {has_racial_trait = { trait = elf_tier_11 }}
-		remove_racial_trait = { trait = elf_tier_11}
-	}
-	if = { 
-		limit = {has_racial_trait = { trait = elf_tier_12 }}
-		remove_racial_trait = { trait = elf_tier_12}
-	}
-}
-
-
-remove_racial_trait = {
+remove_genetic_trait = {
 	remove_character_modifier = $trait$
-	remove_variable = character_race
+
+	remove_list_variable = {
+		name = genetic_traits
+		target = trait:$trait$
+	}
 }
 
+remove_all_genetic_traits_of_type = {
+	hidden_effect = {
+		if = { 
+			limit = { has_genetic_trait = {trait = $trait_type$_good_1} }
+			remove_genetic_trait = { trait = $trait_type$_good_1 }
+		}
+		if = { 
+			limit = { has_genetic_trait = {trait = $trait_type$_good_2} }
+			remove_genetic_trait = { trait = $trait_type$_good_2 }
+		}
+		if = { 
+			limit = { has_genetic_trait = {trait = $trait_type$_good_3} }
+			remove_genetic_trait = { trait = $trait_type$_good_3 }
+		}
+		if = { 
+			limit = { has_genetic_trait = {trait = $trait_type$_good_4} }
+			remove_genetic_trait = { trait = $trait_type$_good_4 }
+		}
+		if = { 
+			limit = { has_genetic_trait ={trait = $trait_type$_bad_1} }
+			remove_genetic_trait = { trait = $trait_type$_bad_1 }
+		}
+		if = { 
+			limit = { has_genetic_trait = {trait = $trait_type$_bad_2} }
+			remove_genetic_trait = { trait = $trait_type$_bad_2 }
+		}
+		if = { 
+			limit = { has_genetic_trait = {trait = $trait_type$_bad_3} }
+			remove_genetic_trait = { trait = $trait_type$_bad_3 }
+		}
+
+		save_temporary_scope_value_as = {
+			name = trait_type
+			value = flag:$trait_type$
+		}
+		
+		if = { # Unconventional/Exotic
+			limit = { scope:trait_type = flag:beauty }
+			remove_all_rare_genetic_traits_of_type = { trait_type = beauty }
+		}
+	}
+}
+
+remove_all_rare_genetic_traits_of_type = {
+	if = { 
+		limit = { has_genetic_trait = {trait = unconventional_$trait_type$_good_1} }
+		remove_genetic_trait = { trait = unconventional_$trait_type$_good_1 }
+	}
+	if = { 
+		limit = { has_genetic_trait = {trait = unconventional_$trait_type$_good_2} }
+		remove_genetic_trait = { trait = unconventional_$trait_type$_good_2 }
+	}
+	if = { 
+		limit = { has_genetic_trait = {trait = unconventional_$trait_type$_good_3} }
+		remove_genetic_trait = { trait = unconventional_$trait_type$_good_3 }
+	}
+	if = { 
+		limit = { has_genetic_trait = {trait = exotic_$trait_type$_good_1} }
+		remove_genetic_trait = { trait = exotic_$trait_type$_good_1 }
+	}
+	if = { 
+		limit = { has_genetic_trait = {trait = exotic_$trait_type$_good_2} }
+		remove_genetic_trait = { trait = exotic_$trait_type$_good_2 }
+	}
+	if = { 
+		limit = { has_genetic_trait ={trait =  exotic_$trait_type$_good_3} }
+		remove_genetic_trait = { trait = exotic_$trait_type$_good_3 }
+	}
+}
 
 assign_bloodline_traits_at_birth_effect = {
 	either_parent_genetic_inheritance = { trait = royal_elf_valerith }
@@ -762,84 +691,6 @@ upgrade_beauty_type = {
 	}
 }
 
-assign_genetic_trait = {
-	add_character_modifier = {
-		modifier = $trait$
-		# mode = add_and_extend
-	}
-
-	add_to_variable_list = {
-		name = genetic_traits
-		target = trait:$trait$
-	}
-}
-
-remove_genetic_trait = {
-	remove_character_modifier = $trait$
-
-	remove_list_variable = {
-		name = genetic_traits
-		target = trait:$trait$
-	}
-}
-
-remove_all_genetic_traits_of_type = {
-	hidden_effect = {
-		if = { 
-			limit = { has_genetic_trait = {trait = $trait_type$_good_1} }
-			remove_genetic_trait = { trait = $trait_type$_good_1 }
-		}
-		if = { 
-			limit = { has_genetic_trait = {trait = $trait_type$_good_2} }
-			remove_genetic_trait = { trait = $trait_type$_good_2 }
-		}
-		if = { 
-			limit = { has_genetic_trait = {trait = $trait_type$_good_3} }
-			remove_genetic_trait = { trait = $trait_type$_good_3 }
-		}
-		if = { 
-			limit = { has_genetic_trait = {trait = $trait_type$_good_4} }
-			remove_genetic_trait = { trait = $trait_type$_good_4 }
-		}
-		if = { 
-			limit = { has_genetic_trait ={trait = $trait_type$_bad_1} }
-			remove_genetic_trait = { trait = $trait_type$_bad_1 }
-		}
-		if = { 
-			limit = { has_genetic_trait = {trait = $trait_type$_bad_2} }
-			remove_genetic_trait = { trait = $trait_type$_bad_2 }
-		}
-		if = { 
-			limit = { has_genetic_trait = {trait = $trait_type$_bad_3} }
-			remove_genetic_trait = { trait = $trait_type$_bad_3 }
-		}
-
-		# Unconventional/Exotic
-		if = { 
-			limit = { flag:$trait_type$ = flag:beauty }
-			
-			if = { limit = { has_genetic_trait = {trait = unconventional_$trait_type$_good_1} }
-				remove_genetic_trait = { trait = unconventional_$trait_type$_good_1 }
-			}
-			if = { limit = { has_genetic_trait = {trait = unconventional_$trait_type$_good_2} }
-				remove_genetic_trait = { trait = unconventional_$trait_type$_good_2 }
-			}
-			if = { limit = { has_genetic_trait = {trait = unconventional_$trait_type$_good_3} }
-				remove_genetic_trait = { trait = unconventional_$trait_type$_good_3 }
-			}
-			if = { limit = { has_genetic_trait = {trait = exotic_$trait_type$_good_1} }
-				remove_genetic_trait = { trait = exotic_$trait_type$_good_1 }
-			}
-			if = { limit = { has_genetic_trait = {trait = exotic_$trait_type$_good_2} }
-				remove_genetic_trait = { trait = exotic_$trait_type$_good_2 }
-			}
-			if = { limit = { has_genetic_trait ={trait =  exotic_$trait_type$_good_3} }
-				remove_genetic_trait = { trait = exotic_$trait_type$_good_3 }
-			}
-		}
-	}
-}
-
 give_genetic_traits_to_starter_characters_effect = {
 	# needed for GUI stuff
 	set_global_variable = {
@@ -946,126 +797,5 @@ assign_genetic_trait_from_modifier = {
 			name = genetic_traits
 			target = trait:$trait$
 		}
-	}
-}
-
-assign_racial_trait_from_modifier = {
-	if = {
-		limit = {
-			has_character_modifier = $trait$
-			OR = {
-				NOT = { has_variable = character_race }
-				NOT = { var:character_race = trait:$trait$ }
-			}
-		}
-
-		set_variable = {
-			name = character_race
-			value = trait:$trait$
-		}
-	}
-}
-
-
-ascension_effect = {
-	if = {
-		limit = { is_any_elf_type = no }
-		assign_racial_trait = { trait = elf_tier_1}
-	}
-	else_if = {
-		limit = { has_racial_trait = { trait = elf_tier_1 } }
-		upgrade_elf_racial_trait = {
-			old_level = 1
-			new_level = 2
-		}
-	}
-	else_if = {
-		limit = { has_racial_trait = { trait = elf_tier_2 } }
-		upgrade_elf_racial_trait = {
-			old_level = 2
-			new_level = 3
-		}
-	}
-	else_if = {
-		limit = { has_racial_trait = { trait = elf_tier_3 } }
-		upgrade_elf_racial_trait = {
-			old_level = 3
-			new_level = 4
-		}
-	}
-	else_if = {
-		limit = { has_racial_trait = { trait = elf_tier_4 } }
-		upgrade_elf_racial_trait = {
-			old_level = 4
-			new_level = 5
-		}
-	}
-	else_if = {
-		limit = { has_racial_trait = { trait = elf_tier_5 } }
-		upgrade_elf_racial_trait = {
-			old_level = 5
-			new_level = 6
-		}
-	}
-	else_if = {
-		limit = { has_racial_trait = { trait = elf_tier_6 } }
-		upgrade_elf_racial_trait = {
-			old_level = 6
-			new_level = 7
-		}
-	}
-	else_if = {
-		limit = { has_racial_trait = { trait = elf_tier_7 } }
-		upgrade_elf_racial_trait = {
-			old_level = 7
-			new_level = 8
-		}
-	}
-	else_if = {
-		limit = { has_racial_trait = { trait = elf_tier_8 } }
-		upgrade_elf_racial_trait = {
-			old_level = 8
-			new_level = 9
-		}
-	}
-	else_if = {
-		limit = { has_racial_trait = { trait = elf_tier_9 } }
-		upgrade_elf_racial_trait = {
-			old_level = 9
-			new_level = 10
-		}
-	}
-	else_if = {
-		limit = { has_racial_trait = { trait = elf_tier_10 } }
-		upgrade_elf_racial_trait = {
-			old_level = 10
-			new_level = 11
-		}
-	}
-	else_if = {
-		limit = { has_racial_trait = { trait = elf_tier_11 } }
-		upgrade_elf_racial_trait = {
-			old_level = 11
-			new_level = 12
-		}
-	}
-}
-
-upgrade_elf_racial_trait = {
-	remove_racial_trait = { trait = elf_tier_$old_level$}
-	assign_racial_trait = { trait = elf_tier_$new_level$}
-}
-
-
-handle_created_character_race_effect = {
-	if = {
-		limit = {
-			culture = { has_culture_group = culture_group:elven_culture_group}
-			is_any_elf_type = no
-		}
-
-		debug_log = "handle_created_character_race_effect"
-		debug_log_scopes = yes
-		assign_racial_trait = { trait = elf_tier_2}
 	}
 }

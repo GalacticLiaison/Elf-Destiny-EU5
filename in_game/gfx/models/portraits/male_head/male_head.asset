@@ -403,7 +403,6 @@ entity = {
 	########## ETRA ##############
 	##############################
 	attribute = { name = "bs_long_ears"  							  blend_shape = "long_ears" }
-	attribute = { name = "bs_ratman_head"					    blend_shape = "male_ratman_head" }
 
 	game_data = {
 		portrait_entity_user_data = {

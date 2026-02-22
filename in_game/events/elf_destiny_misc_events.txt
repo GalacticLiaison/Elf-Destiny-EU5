@@ -255,44 +255,71 @@ elf_destiny_misc.32 = {
 	}
 }
 
-
-elf_destiny_misc.99 = {
-	title = no_title
-	desc = no_desc
+# Calaquendi Estate Population Events
+elf_destiny_misc.41 = { # Two new members join
 	type = country_event
-
+	title = elf_destiny_misc.41.title
+	desc = elf_destiny_misc.41.desc
 	trigger = {
 
 	}
 
-	hidden = yes
+	image = "gfx/interface/illustrations/event/backgrounds/green_leaves.dds"
 
 	immediate = {
-		scope:new_character = {
-			# random = { # chance to be born with a genetic trait not inherited
-			# 	chance = 99 # FOR TESTING
-			# 	# chance = 5
-			# 	assign_random_genetic_trait = yes
-			# }
+		create_calaquendi_estate_character = {is_female = yes scope_name = new_calaquendi_1}
+		create_calaquendi_estate_character = {is_female = no scope_name = new_calaquendi_2}
+	}
+	
+	option = {
+		name = elf_destiny_misc.41.a
 
-			random_list = {
-				1 = {
-					debug_log =  "Assign Beauty"
-					# assign_random_beauty_trait = yes
-				}
-				1 = {
-					debug_log =  "Assign Intellect"
-					# assign_random_intellect_trait = yes
-				}
-				1 = {
-					debug_log =  "Assign Physique"
-					# assign_random_physique_trait = yes
-				}
-				1 = {
-					debug_log =  "Assign Other"
-					# assign_random_other_trait = yes
-				}
-			}
+		scope:new_calaquendi_1 = {
+			move_country = root
+		}
+
+		scope:new_calaquendi_2 = {
+			move_country = root
 		}
 	}
 }
+
+elf_destiny_misc.42 = { # Noble Ascends to High Elf and is raised to Calaquendi
+	type = country_event
+	title = elf_destiny_misc.42.title
+	desc = elf_destiny_misc.42.desc
+	trigger = {
+		any_character = {
+			is_adult = yes
+			has_estate = estate_type:nobles_estate
+			has_racial_trait = { trait = elf_tier_2 }
+		}
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/green_leaves.dds"
+
+	immediate = {
+		random_character = {
+			limit = {
+				is_adult = yes
+				has_estate = estate_type:nobles_estate
+				has_racial_trait = { trait = elf_tier_2 }
+			}
+			save_scope_as = new_calaquendi
+		}
+
+		scope:new_calaquendi = {
+			ascension_effect = yes
+		}
+
+		set_variable = { name = noble_ascended value = yes years = 15 }
+	}
+	
+	option = {
+		name = elf_destiny_misc.42.a
+		scope:new_calaquendi ?= {
+			change_character_estate = estate_type:calaquendi_estate
+		}
+	}
+}
+

@@ -1,8 +1,7 @@
 ﻿on_game_start = {
 	on_actions = {
 		give_genetic_traits_to_starter_characters
-		convert_and_assimilate_elf_pops
-		increase_elf_food_supply
+		setup_elf_culture_locations
 		elf_destiny_goods_change
 		start_elf_destiny_storyline
 		elf_destiny_misc_game_start_tweaks
@@ -15,15 +14,9 @@ give_genetic_traits_to_starter_characters = {
 	}
 }
 
-convert_and_assimilate_elf_pops = {
+setup_elf_culture_locations = {
 	effect = {
-		convert_and_assimilate_elf_pops_effect = yes
-	}
-}
-
-increase_elf_food_supply = {
-	effect = {
-		increase_elf_food_supply_effect = yes
+		setup_elf_culture_locations_effect = yes
 	}
 }
 
