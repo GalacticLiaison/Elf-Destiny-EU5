@@ -1,9 +1,4 @@
 localization overall
-Common Language of countries: => elvish
-give elf countries some kind of elven tradition boost to stop assimilating to neighboring huge human nations
-    - seems perfect for an advancement
-may want to consider modifying the on_start pop converter to not convert other elf pops and then blend some other elf cultures into the starting populations so acceptance levels can be set
-
 Clean up the damn error log
 
 # genetic traits
@@ -29,3 +24,5 @@ maybe a calaquendi privilege that speeds up the cooldown on call parliament!
 Make sure all unlockabales are gated behind the unlock and also can be unlocked
 - make sure for example mythril gets an expedition event
 
+# investigate what you got going on with laws
+- do you need to work on marriage laws?

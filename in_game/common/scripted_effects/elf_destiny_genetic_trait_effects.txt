@@ -161,7 +161,7 @@ leveled_trait_inheritance = {
 		}
 
 		random = {
-			chance = 25
+			chance = 35
 			change_variable = {
 				name = trait_score
 				add = 1 
@@ -202,10 +202,10 @@ leveled_trait_inheritance = {
 	}
 	else_if = {
 		limit = {
-			var:trait_score <= -1
+			var:trait_score <= -3
 		}
 
-		assign_genetic_trait = { trait = $trait$_bad_1}
+		assign_genetic_trait = { trait = $trait$_bad_3}
 	}
 	else_if = {
 		limit = {
@@ -216,10 +216,10 @@ leveled_trait_inheritance = {
 	}
 	else_if = {
 		limit = {
-			var:trait_score <= -3
+			var:trait_score <= -1
 		}
 
-		assign_genetic_trait = { trait = $trait$_bad_3}
+		assign_genetic_trait = { trait = $trait$_bad_1}
 	}
 }
 
@@ -480,14 +480,84 @@ assign_random_other_trait = {
 }
 
 pure_blood_inheritance = {
-	single_trait_inheritance = {
-		trait = pure_blooded
-		single_parent_chance = 50
+	set_variable = {
+		name = trait_score
+		value = inherited_blood_purity_score
+	}
+
+	# Chance to reinforce genetic trait
+	if = {
+		limit = {
+			var:trait_score > 0
+
+			OR = {
+				scope:character ?= {
+					AND = {
+						exists = father
+						exists = mother
+						father = {has_dynasty = yes}
+						mother = {has_dynasty = yes}
+						father.dynasty = mother.dynasty
+					}
+				}
+				scope:character ?= {
+					AND = {
+						exists = father
+						exists = mother
+						father = {
+							is_close_relative = scope:character.mother
+						}
+					}
+				}
+			}
+		}
+
+		random = {
+			chance = 35
+			change_variable = {
+				name = trait_score
+				add = 1 
+			}
+		}
 	}
 
 	if = {
 		limit = {
-			NOT = { has_character_modifier = pure_blooded }
+			var:trait_score >= 3
+		}
+
+		assign_genetic_trait = { trait = purest_blooded}
+	}
+	else_if = {
+		limit = {
+			var:trait_score >= 2
+		}
+
+		assign_genetic_trait = { trait = purer_blooded}
+	}
+	else_if = {
+		limit = {
+			var:trait_score >= 1
+		}
+
+		assign_genetic_trait = { trait = pure_blooded}
+	}
+	else_if = {
+		limit = {
+			var:trait_score <= -1
+		}
+
+		assign_genetic_trait = { trait = inbred}
+	}
+
+	if = { # Chance for Pure Blooded/Inbred To Appear
+		limit = {
+			NOR = {
+				has_genetic_trait = { trait = pure_blooded }
+				has_genetic_trait = { trait = purer_blooded }
+				has_genetic_trait = { trait = purest_blooded }
+				has_genetic_trait = { trait = inbred }
+			}
 			OR = {
 				scope:character ?= {
 					AND = {
@@ -513,7 +583,14 @@ pure_blood_inheritance = {
 		random = {
 			chance = 35
 			scope:character ?= {
-				assign_genetic_trait = { trait = pure_blooded}
+				random_list = {
+					70 = {
+						assign_genetic_trait = { trait = pure_blooded}
+					}
+					30 = {
+						assign_genetic_trait = { trait = inbred}
+					}
+				}
 			}
 		}
 	}
@@ -777,6 +854,9 @@ assign_any_missing_genetic_traits = {
 	assign_genetic_trait_from_modifier = { trait = physique_good_3 }
 	assign_genetic_trait_from_modifier = { trait = physique_good_4 }
 	assign_genetic_trait_from_modifier = { trait = pure_blooded }
+	assign_genetic_trait_from_modifier = { trait = purer_blooded }
+	assign_genetic_trait_from_modifier = { trait = purest_blooded }
+	assign_genetic_trait_from_modifier = { trait = inbred }
 	assign_genetic_trait_from_modifier = { trait = fecund }
 	assign_genetic_trait_from_modifier = { trait = giant }
 }

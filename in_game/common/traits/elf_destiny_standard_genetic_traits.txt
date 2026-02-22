@@ -3,7 +3,7 @@
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = -5
@@ -21,7 +21,7 @@ beauty_bad_2 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = -10
@@ -39,7 +39,7 @@ beauty_bad_3 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = -20
@@ -57,7 +57,7 @@ beauty_good_1 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 5
@@ -75,7 +75,7 @@ beauty_good_2 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 10
@@ -93,7 +93,7 @@ beauty_good_3 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 20
@@ -112,7 +112,7 @@ beauty_good_4 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 25
@@ -131,7 +131,7 @@ intellect_bad_1= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = -3
@@ -151,7 +151,7 @@ intellect_bad_2= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = -5
@@ -171,7 +171,7 @@ intellect_bad_3= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = -10
@@ -191,7 +191,7 @@ intellect_good_1= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 3
@@ -211,7 +211,7 @@ intellect_good_2= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 5
@@ -231,7 +231,7 @@ intellect_good_3= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 10
@@ -252,7 +252,7 @@ intellect_good_4 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 15
@@ -273,7 +273,7 @@ physique_bad_1= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		character_fertility = -5
@@ -289,7 +289,7 @@ physique_bad_2= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		character_fertility = -10
@@ -305,7 +305,7 @@ physique_bad_3= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		character_fertility = -15
@@ -321,7 +321,7 @@ physique_good_1= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		mil = 5
@@ -339,7 +339,7 @@ physique_good_2= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		mil = 10
@@ -357,7 +357,7 @@ physique_good_3= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		mil = 15
@@ -376,7 +376,7 @@ physique_good_4= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		mil = 20
@@ -396,7 +396,7 @@ unconventional_beauty_good_1 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 6
@@ -414,7 +414,7 @@ unconventional_beauty_good_2 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 11
@@ -432,7 +432,7 @@ unconventional_beauty_good_3 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 22
@@ -451,7 +451,7 @@ exotic_beauty_good_1 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 7
@@ -469,7 +469,7 @@ exotic_beauty_good_2 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 13
@@ -487,7 +487,7 @@ exotic_beauty_good_3 = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 25
@@ -507,7 +507,7 @@ pure_blooded= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		dip = 10
@@ -520,12 +520,67 @@ pure_blooded= {
 		base = 0
 	}
 }
+purer_blooded= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = genetic
+	
+	modifier = {
+		dip = 15
+		character_life_expectancy = 15
+		character_fertility = 30
+		monthly_prestige = 0.75
+	}
+
+	chance = {
+		base = 0
+	}
+}
+purest_blooded= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = genetic
+	
+	modifier = {
+		dip = 20
+		character_life_expectancy = 20
+		character_fertility = 50
+		monthly_prestige = 1
+	}
+
+	chance = {
+		base = 0
+	}
+}
+inbred= {
+	allow = {
+		always = no
+	}
+	category = ruler
+	flavor = genetic
+	
+	modifier = {
+		dip = -10
+		character_life_expectancy = -10
+		character_fertility = -25
+		monthly_prestige = -0.5
+	}
+
+	chance = {
+		base = 0
+	}
+}
+
 fecund= {
 	allow = {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		character_life_expectancy = 5
@@ -542,7 +597,7 @@ giant= {
 		always = no
 	}
 	category = ruler
-	flavor = elf_genetic
+	flavor = genetic
 	
 	modifier = {
 		mil = 10

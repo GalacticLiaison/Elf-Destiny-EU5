@@ -2,6 +2,8 @@
 setup_elf_culture_locations_effect = {
 	culture_group:elven_culture_group = {
 		every_country_in_culture_group = {
+			save_temporary_scope_as = elf_country
+
 			# These need to be seperate every_pop loops for some reason
 			every_pop = {
 				change_pop_religion = religion:aeluran
@@ -12,11 +14,45 @@ setup_elf_culture_locations_effect = {
 
 			every_province = {
 				every_location_in_province = {
+					boost_starting_pops_of_elf_countries = yes
 					add_some_pops_of_random_elf_cultures = yes
 					increase_elf_food_supply = yes
 				}
 			}
 		}
+	}
+}
+
+boost_starting_pops_of_elf_countries = {
+	add_pop = {
+		culture = scope:elf_country.culture
+		religion = religion:aeluran
+		type = pop_type:nobles
+		size = 0.05
+	}
+	add_pop = {
+		culture = scope:elf_country.culture
+		religion = religion:aeluran
+		type = pop_type:burghers
+		size = 0.2
+	}
+	add_pop = {
+		culture = scope:elf_country.culture
+		religion = religion:aeluran
+		type = pop_type:soldiers
+		size = 0.1
+	}
+	add_pop = {
+		culture = scope:elf_country.culture
+		religion = religion:aeluran
+		type = pop_type:laborers
+		size = 0.5
+	}
+	add_pop = {
+		culture = scope:elf_country.culture
+		religion = religion:aeluran
+		type = pop_type:peasants
+		size = 1.0
 	}
 }
 

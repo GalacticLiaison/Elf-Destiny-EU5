@@ -381,6 +381,42 @@ physique_trait_score  = {
 	}
 }
 
+blood_purity_score = {
+	value = 0
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = inbred }
+			}
+			value = 1
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = pure_blooded }
+			}
+			value = 1
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = purer_blooded }
+			}
+			value = 2
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = purest_blooded }
+			}
+			value = 3
+		}
+	}
+}
+
 inherited_beauty_trait_score = {
 	value = 0
 	add = father.beauty_trait_score
@@ -399,6 +435,13 @@ inherited_physique_trait_score = {
 	value = 0
 	add = father.physique_trait_score
 	add = mother.physique_trait_score
+	divide = 2
+}
+
+inherited_blood_purity_score = {
+	value = 0
+	add = father.blood_purity_score
+	add = mother.blood_purity_score
 	divide = 2
 }
 

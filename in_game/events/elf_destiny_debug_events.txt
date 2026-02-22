@@ -41,6 +41,37 @@ scripted_effect toggle_genetic_trait = {
     }
 }
 
+scripted_effect swap_blood_purity_trait = {
+    scope:recipient = {
+        if = {
+            limit = {
+                has_genetic_trait = { trait = $selected_trait$ }
+            }
+            remove_genetic_trait = { trait = $selected_trait$  }
+        }
+        else = {
+            if = {
+                limit = { has_genetic_trait = { trait = pure_blooded }}
+                remove_genetic_trait = { trait = pure_blooded }
+            }
+            if = {
+                limit = { has_genetic_trait = { trait = purer_blooded }}
+                remove_genetic_trait = { trait = purer_blooded }
+            }
+            if = {
+                limit = { has_genetic_trait = { trait = purest_blooded }}
+                remove_genetic_trait = { trait = purest_blooded }
+            }
+            if = {
+                limit = { has_genetic_trait = { trait = inbred }}
+                remove_genetic_trait = { trait = inbred }
+            }
+
+            assign_genetic_trait = { trait = $selected_trait$ }
+        }
+    }
+}
+
 
 # Character Edit Cheat Menu
 elf_destiny_debug.1 = {
@@ -426,7 +457,22 @@ elf_destiny_debug.34 = { # Other Genetic Traits
     }
     option = {
         name = elf_destiny_debug.34.pure_blooded
-        toggle_genetic_trait = { selected_trait = pure_blooded}
+        swap_blood_purity_trait = { selected_trait = pure_blooded}
+        trigger_event_silently = { id = elf_destiny_debug.34 }
+    }
+    option = {
+        name = elf_destiny_debug.34.purer_blooded
+        swap_blood_purity_trait = { selected_trait = purer_blooded}
+        trigger_event_silently = { id = elf_destiny_debug.34 }
+    }
+    option = {
+        name = elf_destiny_debug.34.purest_blooded
+        swap_blood_purity_trait = { selected_trait = purest_blooded}
+        trigger_event_silently = { id = elf_destiny_debug.34 }
+    }
+    option = {
+        name = elf_destiny_debug.34.inbred
+        swap_blood_purity_trait = { selected_trait = inbred}
         trigger_event_silently = { id = elf_destiny_debug.34 }
     }
 

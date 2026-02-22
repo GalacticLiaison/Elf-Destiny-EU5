@@ -532,6 +532,39 @@ pure_blooded= {
 	character_fertility = 25
 	monthly_prestige = 0.5
 }
+purer_blooded= {
+	game_data = {
+		category = character
+	}
+
+	dip = 15
+	character_life_expectancy = 15
+	character_fertility = 30
+	monthly_prestige = 0.75
+}
+purest_blooded= {
+	game_data = {
+		category = character
+	}
+
+	dip = 20
+	character_life_expectancy = 20
+	character_fertility = 50
+	monthly_prestige = 1
+}
+inbred= {
+	game_data = {
+		category = character
+	}
+
+	dip = -10
+	character_life_expectancy = -10
+	character_fertility = -25
+	monthly_prestige = -0.5
+}
+
+
+
 fecund= {
 	game_data = {
 		category = character

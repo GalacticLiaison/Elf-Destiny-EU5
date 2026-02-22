@@ -6,6 +6,6 @@ elf_bloodline = {
 	color = rgb { 10 10 10 }
 }
 
-elf_genetic = {
+genetic = {
 	color = rgb { 69 4 20 }
 }

@@ -286,6 +286,33 @@ texticon = {
 		fontsize = 16
 	}
 }
+texticon = {
+	icon = purer_blooded
+	iconsize = {
+		texture = "gfx/interface/icons/traits/purer_blooded.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = purest_blooded
+	iconsize = {
+		texture = "gfx/interface/icons/traits/purest_blooded.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = inbred
+	iconsize = {
+		texture = "gfx/interface/icons/traits/inbred.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
 
 texticon = {
 	icon = royal_elf_valerith
