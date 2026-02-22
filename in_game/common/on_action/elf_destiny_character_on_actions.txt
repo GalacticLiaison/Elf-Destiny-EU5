@@ -72,6 +72,23 @@ aeluran_succession = {
 	}
 }
 
+# root = country; scope:old_ruler is the one who died
+on_ruler_death = {
+	on_actions = {
+		record_dead_rulers_dynasty
+	}
+}
+
+record_dead_rulers_dynasty = {
+	trigger = {
+		succession_law = heir_selection:fairest_ascendancy_succession
+	}
+	effect = {
+		debug_log = "on_ruler_death"
+		record_dead_rulers_dynasty_effect = yes
+	}
+}
+
 
 #root = character
 #only from create_character effect
@@ -103,3 +120,5 @@ new_character_chance_of_random_genetic_trait = {
 		}
 	}
 }
+
+

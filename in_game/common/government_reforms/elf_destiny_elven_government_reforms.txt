@@ -191,7 +191,6 @@ masters_of_woodland_realms = {
         global_fur_output_modifier = 0.2
         global_lumber_output_modifier = 0.2
         government_reform_slots = 1
-        # aeluran_advisor_appointed = yes
 	}
 	
 	location_modifier = {
@@ -207,6 +206,7 @@ masters_of_woodland_realms = {
         }
 		local_monthly_food_modifier = 0.15
         local_monthly_prosperity = 0.0015
+		local_defensive = 0.25
 	}
 	
 	# male_regnal_names = {

@@ -1,5 +1,5 @@
 ﻿elven_culture = {
-	language = nadene_language
+	language = high_elven_language
 	
 	color = { 0.168 0.556 0.854 1 }
 	
@@ -22,7 +22,7 @@
 }
 
 deepwood_elven_culture = {
-	language = nadene_language
+	language = high_elven_language
 	
 	color = { 0.168 0.556 0.854 1 }
 	
@@ -45,7 +45,7 @@ deepwood_elven_culture = {
 }
 
 tuatha_de_danann_culture = {
-	language = nadene_language
+	language = high_elven_language
 	
 	color = { 0.268 0.556 0.854 1 }
 	
@@ -61,7 +61,7 @@ tuatha_de_danann_culture = {
 }
 
 romaviri_culture = {
-	language = nadene_language
+	language = high_elven_language
 	
 	color = { 0.368 0.556 0.854 1 }
 	
@@ -77,7 +77,7 @@ romaviri_culture = {
 }
 
 alfar_culture = {
-	language = nadene_language
+	language = high_elven_language
 	
 	color = { 0.468 0.556 0.854 1 }
 	
@@ -93,7 +93,7 @@ alfar_culture = {
 }
 
 astrion_culture = {
-	language = nadene_language
+	language = high_elven_language
 	
 	color = { 0.568 0.556 0.854 1 }
 	
@@ -109,7 +109,7 @@ astrion_culture = {
 }
 
 atlareth_culture = {
-	language = nadene_language
+	language = high_elven_language
 	
 	color = { 0.668 0.556 0.854 1 }
 	

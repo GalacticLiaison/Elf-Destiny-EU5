@@ -665,7 +665,7 @@ elf_destiny_story.51 = { # Portal ruins have arrived!
 	}
 }
 
-elf_destiny_story.52 = { # Start repairs?
+elf_destiny_story.52 = { # Start repairs
 	type = country_event
 	title = elf_destiny_story.52.title
 	desc = elf_destiny_story.52.desc
@@ -689,10 +689,6 @@ elf_destiny_story.52 = { # Start repairs?
 	
 	option = {
 		name = elf_destiny_story.52.a
-		set_global_variable = {
-			name = portal_restored
-			value = yes
-		}
 
 		hidden_effect = {
 			random_location_in_the_world = {
@@ -742,6 +738,12 @@ elf_destiny_story.53 = { # Portal Restored!
 	
 	option = {
 		name = elf_destiny_story.53.a
+
+		research_advance = advance_type:grand_portal_restored
+		set_global_variable = {
+			name = portal_restored
+			value = yes
+		}
 
 		# TODO:  Restorer of the Portal modifier, maybe put in the mission as a reward
 

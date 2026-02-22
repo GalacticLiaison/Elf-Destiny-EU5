@@ -289,3 +289,16 @@ assign_heroic_trait_effect = {
 		}
 	}
 }
+
+record_dead_rulers_dynasty_effect = {
+	debug_log = "record_dead_rulers_dynasty"
+	if = {
+		limit = {
+			exists = scope:old_ruler.dynasty
+		}
+		set_variable = {
+			name = previous_ruling_dynasty
+			value = scope:old_ruler.dynasty
+		}
+	}
+}

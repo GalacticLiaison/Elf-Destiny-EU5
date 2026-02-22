@@ -1,0 +1,58 @@
+﻿l_english:
+ # CALAQUENDI ====
+ elven_high_councils: "Elven High Councils"
+ elven_high_councils_desc: "Decision of any importance are first debated by the wisest and most powerful of Elves."
+
+ fairest_ascendancy: "Fairest Ascendancy"
+ fairest_ascendancy_desc: "Hierarchy where beauty grants rank and magical edge."
+
+ calaquendi_apprenticeships: "Calaquendi Apprenticeships"
+ calaquendi_apprenticeships_desc: "Children of importance apprentice under the great elven masters. Their influence lasts a lifetime."
+
+ elite_worship: "Elite Worship"
+ elite_worship_desc: "The Calaquendi keep a following of disciples that revere them as near demi-gods"
+
+ personal_dominions: "Personal Dominions"
+ personal_dominions_desc: "Calaquendi are granted their own personal lands to practice their arts. They have great autonomy to rule as they please"
+
+ personal_retinues: "Personal Retinues"
+ personal_retinues_desc: "Calaquendi maintain a personal army of hand picked elite warriors; They take great pride in the potency of their fighting force."
+
+ war_masters: "War Masters"
+ war_masters_desc: "Calaquendi are given full authority over matters of war. It is customary for them to lead armies into battle personally as the tip of the spear."
+
+ state_sponsored_ascendancy: "State Sponsored Ascendancy"
+ state_sponsored_ascendancy_desc: "A portion of the treasury is diverted to provide the Calaquendi with spark crystals and funds for their great works and rituals; Ensuring our most elite can reach their highest potential of power."
+
+ hierarchial_authority: "Hierarchial Authority"
+ hierarchial_authority_desc: "Elven society follows a rigid hierarchy. Lesser Elves know their place when among those of higher station."
+
+ # AELURAN ====
+ aeluran_advisors: "Aeluran Advisors"
+ aeluran_advisors_desc: "The Aeluran Order is given an undeniable right to appoint a Sister to serve in the [cabinet|e] as Aeluran Advisor; Second in authority only to the ruler themself."
+
+ daughters_of_the_red: "Daughters of the Red"
+ daughters_of_the_red_desc: "The Aeluran Order's right to take daughters of the nobility to be trained in their ways can not be denied and is enforced by law."
+
+ aeluran_judiciary: "Aeluran Judiciary"
+ aeluran_judiciary_desc: "Aeluran Sisters serve as judges in the country's courts. Their justice should not be questioned, to do so borders blasphemy."
+
+ aeluran_matchmaking: "Aeluran Matchmaking"
+ aeluran_matchmaking_desc: "TODO : Write a desc"
+
+ # GOVERNMENT REFORMS ====
+ elven_superiority: "Elven Superiority"
+ elven_superiority_desc: "The Divine Spark itself anoints Elves as its chosen followers. Only they are fit to direct the fate of the realm's peoples. And Humans? Their place is to serve and obey."
+ 
+ open_hearted: "Open Hearted"
+ open_hearted_desc: "Humans... Elves... we are all children of the divine spark. We should all be treated as equals"
+
+ masters_of_woodland_realms: "Masters Of The Woodland Realms"
+ masters_of_woodland_realms_desc: "The forest is the domain of this country. They know it and keep it well."
+ is_a_woodland_realm: "Every owned [location|e] with [ShowVegetationName('forest')] or [ShowVegetationName('woods')] [vegetation|e] will gain:"
+
+ people_of_the_bow: "People Of The Bow"
+ people_of_the_bow_desc: "To this culture, there isn't a more fundamental test of excellence than one's mastery with the bow. Most have practiced relentlessly since early childhood, and the elite marksman this people fields in battle is truly unrivaled."
+
+ the_old_ways: "The Old Ways"
+ the_old_ways_desc: "This culture is ancient and mysterious, looking to the past for guidance. It knows that there is wisdom to be found there, and that the old ways are often the best ways."

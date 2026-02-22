@@ -111,3 +111,296 @@ newly_created_character_genetic_trait_chance = {
 		}
 	}
 }
+
+beauty_trait_score  = {
+	value = 0
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_bad_1 }
+			}
+			value = 1
+		}
+	}
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_bad_2 }
+			}
+			value = 2
+		}
+	}
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_bad_3 }
+			}
+			value = 3
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_good_1 }
+			}
+			value = 1
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_good_2 }
+			}
+			value = 2
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_good_3 }
+			}
+			value = 3
+		}
+	}
+
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_good_4 }
+			}
+			value = 4
+		}
+	}
+
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = unconventional_beauty_good_1 }
+			}
+			value = 1
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = unconventional_beauty_good_2 }
+			}
+			value = 2
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = unconventional_beauty_good_3 }
+			}
+			value = 3
+		}
+	}
+
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = exotic_beauty_good_1 }
+			}
+			value = 1
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = exotic_beauty_good_2 }
+			}
+			value = 2
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = exotic_beauty_good_3 }
+			}
+			value = 3
+		}
+	}
+
+}
+
+beauty_trait_type_score = {
+	value = 0
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = beauty_good_1 }
+				has_genetic_trait = { trait = beauty_good_2 }
+				has_genetic_trait = { trait = beauty_good_3 }
+				has_genetic_trait = { trait = beauty_good_4 }
+			}
+			value = 1
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = unconventional_beauty_good_1 }
+				has_genetic_trait = { trait = unconventional_beauty_good_2 }
+				has_genetic_trait = { trait = unconventional_beauty_good_3 }
+			}
+			value = 2
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = exotic_beauty_good_1 }
+				has_genetic_trait = { trait = exotic_beauty_good_2 }
+				has_genetic_trait = { trait = exotic_beauty_good_3 }
+			}
+			value = 3
+		}
+	}
+}
+
+intellect_trait_score  = {
+	value = 0
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_bad_1 }
+			}
+			value = 1
+		}
+	}
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_bad_2 }
+			}
+			value = 2
+		}
+	}
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_bad_3 }
+			}
+			value = 3
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_good_1 }
+			}
+			value = 1
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_good_2 }
+			}
+			value = 2
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_good_3 }
+			}
+			value = 3
+		}
+	}
+
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = intellect_good_4 }
+			}
+			value = 4
+		}
+	}
+}
+
+physique_trait_score  = {
+	value = 0
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_bad_1 }
+			}
+			value = 1
+		}
+	}
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_bad_2 }
+			}
+			value = 2
+		}
+	}
+	subtract = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_bad_3 }
+			}
+			value = 3
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_good_1 }
+			}
+			value = 1
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_good_2 }
+			}
+			value = 2
+		}
+	}
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_good_3 }
+			}
+			value = 3
+		}
+	}
+
+	add = {
+		if = { 
+			limit = {
+				has_genetic_trait = { trait = physique_good_4 }
+			}
+			value = 4
+		}
+	}
+}
+
+inherited_beauty_trait_score = {
+	value = 0
+	add = father.beauty_trait_score
+	add = mother.beauty_trait_score
+	divide = 2
+}
+
+inherited_intellect_trait_score = {
+	value = 0
+	add = father.intellect_trait_score
+	add = mother.intellect_trait_score
+	divide = 2
+}
+
+inherited_physique_trait_score = {
+	value = 0
+	add = father.physique_trait_score
+	add = mother.physique_trait_score
+	divide = 2
+}
+
+
+ 

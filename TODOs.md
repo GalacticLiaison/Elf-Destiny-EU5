@@ -67,3 +67,8 @@ maybe a character interaction debug cheat menu to assign genetic traits
 
 Make sure all unlockabales are gated behind the unlock and also can be unlocked
 - make sure for example mythril gets an expedition event
+
+
+# Calaquendi management
+- need an event where occasionally a noble ascends to high elf and changes estate to calaquendi
+- on game start need to seed at least 2 calaquendi characters to each elf country

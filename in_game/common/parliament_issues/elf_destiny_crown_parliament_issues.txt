@@ -73,7 +73,7 @@ restore_portal = {
         is_ai = no
         has_variable = spoke_with_aelurans
         NOT = {
-			has_global_variable = portal_restored
+			has_global_variable = portal_restored_passed_parliament
 		}    
     }
 
@@ -91,13 +91,18 @@ restore_portal = {
         # }	
 
         NOT = {
-			has_global_variable = portal_restored
+			has_global_variable = portal_restored_passed_parliament
 		}
 	}
 
     chance = 1000
 	
 	on_debate_passed = {
+        set_global_variable = {
+			name = portal_restored_passed_parliament
+			value = yes
+		}
+
         building_type:grand_portal_ruins = {
             save_scope_as = grand_portal_ruins
         }

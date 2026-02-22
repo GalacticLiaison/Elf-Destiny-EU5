@@ -2061,6 +2061,20 @@ aeluran_advisor_appointed={
 	}
 }
 
+rulers_cant_refuse_aeluran_training={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+unlock_fairest_ascendancy_succession={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
 ranger_high_guard_unlocked={
 	boolean=yes
 	game_data={
@@ -2104,6 +2118,20 @@ tier_4_genetics_unlocked={
 }
 
 higher_chance_of_rare_genetic_beauty_traits={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+unlock_fairest_ascendancy_calaquendi_estate_privilege={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+ascending_into_fae_tier_unlocked={
 	boolean=yes
 	game_data={
 		category=country

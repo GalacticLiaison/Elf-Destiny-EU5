@@ -1,0 +1,19 @@
+﻿INJECT:monarchy = {
+    heir_selection = fairest_ascendancy_succession
+}
+
+INJECT:republic = {
+    heir_selection = fairest_ascendancy_succession
+}
+
+INJECT:theocracy = {
+    heir_selection = fairest_ascendancy_succession
+}
+
+INJECT:steppe_horde = {
+    heir_selection = fairest_ascendancy_succession
+}
+
+INJECT:tribe = {
+    heir_selection = fairest_ascendancy_succession
+}

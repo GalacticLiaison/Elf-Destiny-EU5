@@ -89,10 +89,16 @@
  MODIFIER_TYPE_NAME_aeluran_advisor_appointed: "Aeluran Advisor Joins Cabinet"
  MODIFIER_TYPE_DESC_aeluran_advisor_appointed: "TODO : Write a desc"
 
+ MODIFIER_TYPE_NAME_rulers_cant_refuse_aeluran_training: "Can't Refuse Aeluran Training"
+ MODIFIER_TYPE_DESC_rulers_cant_refuse_aeluran_training: "[rulers|eU] and nobles can not refuse to send their daughters to be trained by the Aeluran Order in [GetCountry('DWD').GetName]"
+
+ MODIFIER_TYPE_NAME_unlock_fairest_ascendancy_succession: "[ShowHeirSelectionName('fairest_ascendancy_succession')] Unlocked"
+ MODIFIER_TYPE_DESC_unlock_fairest_ascendancy_succession: "Should not the fairest of them all rule?\nUnlocks [ShowHeirSelectionName('fairest_ascendancy_succession')]"
+
  MODIFIER_TYPE_NAME_ranger_high_guard_unlocked: "Ranger High Guard [regular_regiment|e] unlocked"
  MODIFIER_TYPE_DESC_ranger_high_guard_unlocked: "Unlocks the Ranger High Guard [regular_regiment|e] for this country"
 
- MODIFIER_TYPE_NAME_calaquendi_apprenticeship_education_unlocked: "Calequendi Apprenticeship [education|e] type unlocked"
+ MODIFIER_TYPE_NAME_calaquendi_apprenticeship_education_unlocked: "Calaquendi Apprenticeship [education|e] type unlocked"
  MODIFIER_TYPE_DESC_calaquendi_apprenticeship_education_unlocked: "Children of note and potential are selected to be personal apprentices to the power and wise of society. The receive an unparalleled [child_education|e], but the influence of their mentors will follow them for a lifetime "
 
  MODIFIER_TYPE_NAME_tier_4_genetics_unlocked: "Tier 4 Genetics Unlocked"
@@ -107,12 +113,18 @@
  MODIFIER_TYPE_DESC_raid_for_humans: "[ShowCasusBelliName('cb_human_slave_raiding')] [casus_belli|e] Unlocked"
 
 
- MODIFIER_TYPE_NAME_higher_chance_of_rare_genetic_beauty_traits: "Higher chance of rare genetic beauty traits"
+ MODIFIER_TYPE_NAME_higher_chance_of_rare_genetic_beauty_traits: "Higher Chance of Rare Genetic Beauty Traits"
  MODIFIER_TYPE_DESC_higher_chance_of_rare_genetic_beauty_traits: "TODO : Write a desc"
  MODIFIER_TYPE_NAME_enchantress_ruler_trait_unlocked: "[ShowTraitName('enchantress')] [ruler_trait|e] unlocked"
  MODIFIER_TYPE_DESC_enchantress_ruler_trait_unlocked: "Characters will have a small chance to be blessed with the [ShowTraitName('enchantress')] [ruler_trait|e] by The Divine Spark"
+ MODIFIER_TYPE_NAME_unlock_fairest_ascendancy_calaquendi_estate_privilege: "Unlock [ShowEstatePrivilegeName('fairest_ascendancy')] [estate_privilege|e]"
+ MODIFIER_TYPE_DESC_unlock_fairest_ascendancy_calaquendi_estate_privilege: "Unlocks the [ShowEstatePrivilegeName('fairest_ascendancy')] [estate_privilege|e] for the [ShowEstateTypeName('calaquendi_estate')]"
+
  MODIFIER_TYPE_NAME_heroic_ruler_trait_unlocked: "[ShowTraitName('heroic')] [ruler_trait|e] unlocked"
  MODIFIER_TYPE_DESC_heroic_ruler_trait_unlocked: "Characters will have a small chance to be blessed with the [ShowTraitName('heroic')] [ruler_trait|e] by The Divine Spark"
+
+ MODIFIER_TYPE_NAME_ascending_into_fae_tier_unlocked: "Characters can now Ascend into the Fae Elven Tier"
+ MODIFIER_TYPE_DESC_ascending_into_fae_tier_unlocked: "The Portal re-opening has increased the ambient Spark levels on the planet. Characters are now able to ascend into higher Elven Tiers"
 
  MODIFIER_TYPE_NAME_silver_hair_modifier: "Character Has Silver Hair"
  MODIFIER_TYPE_DESC_silver_hair_modifier: "TODO : Write a desc"
@@ -197,22 +209,6 @@
  elf_tier_12_die_desc: "."
  desc_elf_tier_12: "The most powerful chosen few among the Valar."
 
- elven_high_councils: "Elven high councils"
- elven_high_councils_desc: "TODO : Write a desc"
-
- fairest_ascendancy: "Fairest Ascendancy"
- fairest_ascendancy_desc: "Hierarchy where beauty grants rank and magical edge."
-
- calaquendi_apprenticeships: "Calaquendi Apprenticeships"
- calaquendi_apprenticeships_desc: "TODO : Write a desc"
-
-
- aeluran_advisors: "Aeluran Advisors"
- aeluran_advisors_desc: "TODO : Write a desc"
- elven_superiority: "Elven Superiority"
- elven_superiority_desc: "The Divine Spark itself anoints Elves as its chosen followers. Only they are fit to direct the fate of the realm's peoples. And Humans? Their place is to serve and obey."
- open_hearted: "Open Hearted"
- open_hearted_desc: "Humans... Elves... we are all children of the divine spark. We should all be treated as equals"
  deepwood_elven_culture: "Deepwood Elven"
  tuatha_de_danann_culture: "Tuatha Dé Danann"
  romaviri_culture: "Romaviri"
@@ -828,13 +824,6 @@
  aeluran_matriarch_die_desc: ""
  desc_aeluran_matriarch: "The Aeluran High Matriarch is the undisputed leader of the Aelurans. Selected by the Council of Matrons, the High Matriarch is typically the most powerful and wise sister in all of the order."
 
- daughters_of_the_red: "Daughters of the Red"
- daughters_of_the_red_desc: "TODO : Write a desc"
- aeluran_judiciary: "Aeluran Judiciary"
- aeluran_judiciary_desc: "TODO : Write a desc"
- aeluran_matchmaking: "Aeluran Matchmaking"
- aeluran_matchmaking_desc: "TODO : Write a desc"
-
  AELURAN_ORDER_LEADER_MALE: "AELURAN ORDER LEADER MALE"
  AELURAN_ORDER_LEADER_FEMALE: "High Matriarch"
  aeluran_order: "Aeluran order"
@@ -870,8 +859,9 @@
  aeluran_events.31.a: "Praise be the Spark!"
 
  aeluran_events.4.title: "A Daughter to Deepwood"
- aeluran_events.4.desc: "[new_sister.GetName] is now old enough to be taken by the Aelurans to be trained as a Sister of the order. She has departed for [GetCountry('DWD').GetName]"
+ aeluran_events.4.desc: "[new_sister.GetName] is now old enough to be taken by the Aelurans to be trained as a Sister of the order. She will depart for [GetCountry('DWD').GetName]"
  aeluran_events.4.a: "It is the Spark's will"
+ aeluran_events.4.refuse: "I need [new_sister.GetName] with me, she will not take the Red!"
 
  aeluran_events.41.title: "A Sister Returns"
  aeluran_events.41.desc: "[new_sister.GetName] has returned to your court from [GetCountry('DWD').GetName] a fully trained [ShowTraitName('aeluran_sister')]."
@@ -905,31 +895,6 @@
  pa_calaquendi_move_towards_aristocracy: "Aristocratic Support"
  pa_calaquendi_move_towards_aristocracy_desc: "TODO : Write a desc"
 
-
-
- calaquendi_mentorship: "Calaquendi Mentorship"
- calaquendi_mentorship_desc: "TODO : Write a desc"
- elite_worship: "Elite Worship"
- elite_worship_desc: "TODO : Write a desc"
- personal_dominions: "Personal Dominions"
- personal_dominions_desc: "TODO : Write a desc"
- personal_retinues: "Personal Retinues"
- personal_retinues_desc: "TODO : Write a desc"
- war_masters: "War Masters"
- war_masters_desc: "TODO : Write a desc"
- state_sponsored_ascendancy: "State Sponsored Ascendancy"
- state_sponsored_ascendancy_desc: "TODO : Write a desc"
- hierarchial_authority: "Hierarchial Authority"
- hierarchial_authority_desc: "TODO : Write a desc"
-
-
- masters_of_woodland_realms: "Masters Of The Woodland Realms"
- masters_of_woodland_realms_desc: "TODO : Write a desc"
- is_a_woodland_realm: "Every owned [location|e] with [ShowVegetationName('forest')] or [ShowVegetationName('woods')] [vegetation|e] will gain:"
-
- people_of_the_bow: "People Of The Bow"
- people_of_the_bow_desc: "TODO : Write a desc"
-
  AUTO_MODIFIER_NAME_calaquendi_percentage_in_country: "Calaquendi Percentage In Country"
  CIVILWAR_FACTION_calaquendi_estate_NAME: "Calaquendi Collective"
 
@@ -944,8 +909,6 @@
 
  mythril_elven_crafts: "Mythril Elven Crafts"
  mythril_elven_crafts_desc: "TODO : Write a desc"
- the_old_ways: "The Old Ways"
- the_old_ways_desc: "TODO : Write a desc"
 
  mythril_plated_horse_masters_construction: "Mythril Plated Horse Masters Construction"
  mythril_plated_horse_masters_maintenance: "Mythril Plated Horse Masters Maintenance"
@@ -1028,8 +991,9 @@
  grand_portal_ruins_holy_site: "Grand portal ruins holy site"
  restored_grand_portal_holy_site: "Restored grand portal holy site"
 
- found_elven_portal_artifact_1: "Found a Spark Capacitor"
- found_elven_portal_artifact_2: "Found a Navigation Relay"
+ found_elven_portal_artifact_1: "Found a Spark Capacitor on an Expedition"
+ found_elven_portal_artifact_2: "Found a Navigation Relay on an an Expedition"
+ passed_restore_portal_through_parliament: "Passed the [ShowParliamentIssueTypeName('restore_portal')] [parliament_issue|e]"
 
  the_divine_spark: "The Divine Spark"
  the_divine_spark_desc: "The divine spark desc"
@@ -1043,34 +1007,7 @@
  heroic_courage_desc: "TODO : Write a desc"
  beguiling_nature: "Beguiling Nature"
  beguiling_nature_desc: "TODO : Write a desc"
- elven_lore: "Elven Lore"
- elven_lore_desc: "TODO : Write a desc"
- beast_tamers: "Beast Tamers"
- beast_tamers_desc: "TODO : Write a desc"
- elven_artisanship: "Elven Artisanship"
- elven_artisanship_desc: "TODO : Write a desc"
- mythril_working: "Mythril Working"
- mythril_working_desc: "TODO : Write a desc"
- forest_dominion: "Forest Dominion"
- forest_dominion_desc: "TODO : Write a desc"
- herbal_mastery: "Herbal Mastery"
- herbal_mastery_desc: "TODO : Write a desc"
- level_2_magic: "Refined Spark Weaving"
- level_2_magic_desc: "TODO : Write a desc"
- level_3_magic: "Crystalic Amplification"
- level_3_magic_desc: "TODO : Write a desc"
- level_4_magic: "Ambient Spark Harvesting"
- level_4_magic_desc: "TODO : Write a desc"
- level_5_magic: "Archonic Rituals"
- level_5_magic_desc: "TODO : Write a desc"
- level_6_magic: "Divine Avatars"
- level_6_magic_desc: "TODO : Write a desc"
- level_2_war: "Elite Elven Tactics"
- level_2_war_desc: "TODO : Write a desc"
- level_3_war: "Elven Martial Supremacy"
- level_3_war_desc: "TODO : Write a desc
- honor_of_the_fay: "Honor of the Fay"
- honor_of_the_fay_desc: "TODO : Write a desc""
+
 
  go_on_expeditions: "\nAncient Elven knowledge can be rediscovered by using the [ShowCharacterInteractionName('fund_expedition')] [character_interaction|e] on your country's [ruler|e]"
  discovered_people_of_the_bow_tradition: "#high Discovered:#! The forgotten honor code of the people of the bow. $go_on_expeditions$"
@@ -1442,3 +1379,10 @@
  setting_genetic_traits_more_common_desc: "Genetic traits will spawn on new characters at a #high higher rate#!, also effects odds of new borns possesing an uniherited trait. Normal genetic trait inheritance rules are unaffected"
  setting_genetic_traits_more_rare: "@beauty_good_1! More Rare"
  setting_genetic_traits_more_rare_desc: "Genetic traits will spawn on new characters #high less frequently#!, also effects odds of new borns possesing an uniherited trait. Normal genetic trait inheritance rules are unaffected"
+
+ fairest_ascendancy_succession: "Fairest Succession"
+ fairest_ascendancy_succession_desc: "A type of [heir_selection|e] in which the new ruler is the most beautiful individual selected from the [ShowEstateTypeName('nobles_estate')], [ShowEstateTypeName('calaquendi_estate')], or [ShowEstateTypeName('crown_estate')] [estates|e]. The electors prefer a member of the current dynasty and female characters have a slight natural advanatge as well."
+ HEIR_SELECTION_BEAUTY_TRAIT_LEVEL_SCORE: "Score per beauty tier level"
+ HEIR_SELECTION_BEAUTY_TRAIT_TYPE_SCORE: "Score per level of beauty rarity they posess."
+ HEIR_SELECTION_FEMALE_RULERS_SLIGHTLY_FAVORED: "Female rulers are slightly preferred"
+ HEIR_SELECTION_DYNASTY_MEMBERS_PREFERRED: "Members of the existing dynasty are preferred"

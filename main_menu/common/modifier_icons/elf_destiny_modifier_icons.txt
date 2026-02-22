@@ -246,15 +246,23 @@ army_magi_reinforce_cost_modifier = {
 # }
 
 aeluran_advisor_appointed = {
-	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+	positive = "gfx/interface/icons/traits/aeluran_sister.dds" 
+}
+
+rulers_cant_refuse_aeluran_training = {
+	positive = "gfx/interface/icons/traits/aeluran_sister.dds" 
+}
+
+unlock_fairest_ascendancy_succession = {
+	positive = "gfx/interface/icons/heir_selection/fairest_ascendancy_succession.dds" 
 }
 
 ranger_high_guard_unlocked = {
-	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+	positive = "gfx/interface/icons/modifier_types/can_recruit_regiment_in_this_location_positive.dds"
 }
 
 calaquendi_apprenticeship_education_unlocked = {
-	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+	positive = "gfx/interface/icons/modifier_types/country_child_education.dds"
 }
 
 the_rut_enabled = {
@@ -270,11 +278,19 @@ shrine_to_vana_unlocked = {
 }
 
 tier_4_genetics_unlocked = {
-	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+	positive = "gfx/interface/icons/traits/beauty_good_4.dds" 
 }
 
 higher_chance_of_rare_genetic_beauty_traits = {
-	positive = "gfx/interface/icons/modifier_types/german_migration_attraction_modifier.dds" 
+	positive = "gfx/interface/icons/traits/exotic_beauty_good_3.dds" 
+}
+
+unlock_fairest_ascendancy_calaquendi_estate_privilege = {
+	positive = "gfx/interface/icons/traits/unconventional_beauty_good_3.dds" 
+}
+
+ascending_into_fae_tier_unlocked = {
+	positive = "gfx/interface/icons/traits/elf_tier_4.dds" 
 }
 
 enchantress_ruler_trait_unlocked = {

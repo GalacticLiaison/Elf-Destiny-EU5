@@ -35,3 +35,111 @@
 # 		}
 # 	}
 # }
+
+fairest_ascendancy_succession = {
+	# traverse_family_tree = no # do we use the family tree to calculate who's in line
+	# include_ruler_siblings = no
+	all_in_country = yes # do we consider every character in the country?
+	# all_in_dynasty = yes # do we consider every character in the current ruler's dynasty?
+	# allow_children = yes # can characters under 18 be candidates? Default = no
+	# through_female = yes 
+	ignore_ruler = yes # ignore the ruler from calculations (no for elections, yes for monarchies etc)
+	# use_mothers_dynasty = yes # do we use the mother's dynasty to calculate
+
+	allow_female = yes # can women be candidates? Default = no
+	allow_male = yes # can men be candidates? Default = yes. Sorry, but....history
+	use_election = yes # do we use an election process
+	term_duration = 0	#0 = until ruler death
+	max_possible_candidates = 3
+	show_candidates = yes # do we show the list of candidates in the ui
+	allow_foreign_ruler = no
+	# custom_tags = { empty_heir_religion_law }
+	allowed_estates = { crown_estate calaquendi_estate nobles_estate }
+
+	
+	potential = {
+        has_estate_privilege = estate_privilege:fairest_ascendancy
+	}
+
+	locked = {
+		
+	}
+
+    succession_effect = {
+		# an effect that happens right after succession occurs, but before candidates are recalculated
+		# useful scopes:
+		# root = country
+		# scope:old_ruler
+		# scope:new_ruler
+        debug_log = "fairest_ascendancy_succession succession_effect"
+        debug_log_scopes = yes
+	}
+	
+	
+	calc = {
+		if = {
+			limit = {
+				exists = root
+			}
+			add = {
+				desc = "HEIR_SELECTION_BEAUTY_TRAIT_LEVEL_SCORE"
+				value = beauty_trait_score
+			}
+            add = {
+				desc = "HEIR_SELECTION_BEAUTY_TRAIT_TYPE_SCORE"
+				value = beauty_trait_type_score
+			}
+            if = { 
+				limit = { is_female = yes }
+				add = {
+					desc = "HEIR_SELECTION_FEMALE_RULERS_SLIGHTLY_FAVORED"
+					value = 2
+				}
+			}
+            if = { 
+				limit = {
+                    OR = {
+                        AND = { # Set After Death by on_ruler_death
+                            scope:target = {
+                                has_variable = previous_ruling_dynasty
+                            }
+                            exists = root.dynasty
+                            root.dynasty = scope:target.var:previous_ruling_dynasty
+                        }
+                        AND = { # Before Death
+                            exists = root.dynasty
+                            exists = scope:target.ruler.dynasty
+                            root.dynasty = scope:target.ruler.dynasty
+                        }
+                    }
+                }
+				add = {
+					desc = "HEIR_SELECTION_DYNASTY_MEMBERS_PREFERRED"
+					value = 5
+				}
+			}
+		}
+
+        if = {
+			limit = {
+				not = { exists = root }
+			}
+			add = {
+				desc = "HEIR_SELECTION_BEAUTY_TRAIT_LEVEL_SCORE"
+				value = 1
+			}
+            add = {
+				desc = "HEIR_SELECTION_BEAUTY_TRAIT_TYPE_SCORE"
+				value = 1
+			}
+            add = {
+				desc = "HEIR_SELECTION_FEMALE_RULERS_SLIGHTLY_FAVORED"
+				value = 2
+			}
+            add = {
+				desc = "HEIR_SELECTION_DYNASTY_MEMBERS_PREFERRED"
+				value = 5
+			}
+		}
+	}
+}

@@ -169,7 +169,23 @@ aeluran_events.4 = { # Daughters Sent To Be Trained
 		# 	}
 		# }
 	}
-	
+
+	option = {
+		name = aeluran_events.4.refuse
+
+		trigger = {
+			NOT = {
+				has_estate_privilege = estate_privilege:daughters_of_the_red
+			}
+		}
+
+		scope:new_sister = {
+			set_variable = refused_aeluran_training
+		}
+
+		add_religious_influence = religious_influence_severe_penalty
+	}
+
 	option = {
 		name = aeluran_events.4.a
 
@@ -177,7 +193,12 @@ aeluran_events.4 = { # Daughters Sent To Be Trained
 
 		}
 
-		# add_religious_influence = religious_influence_severe_bonus
+		scope:new_sister = {
+			set_child_education = child_education:aeluran_education
+			move_country = c:DWD
+		}
+
+		add_religious_influence = religious_influence_severe_bonus
 	}
 }
 

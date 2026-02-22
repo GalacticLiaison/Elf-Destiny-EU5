@@ -382,7 +382,7 @@ use_fake_random_effect = {
 
 # Chance Character is born with new genetic trait regardless of parents
 assign_random_genetic_trait = {
-	debug_log = "ASSIGNING RANDOM GENETIC TRAIT"
+	# debug_log = "ASSIGNING RANDOM GENETIC TRAIT"
 
 	random_list = {
 		4 = {
@@ -409,7 +409,7 @@ assign_random_beauty_trait = {
 		limit = {
 			beauty_trait_score = 0
 		}
-		debug_log = "beauty_trait_score = 0"
+		# debug_log = "beauty_trait_score = 0"
 		random_list = {
 			96 = { # Normal Beauty
 				random_list = {
@@ -468,7 +468,7 @@ assign_random_intellect_trait = {
 		limit = {
 			intellect_trait_score = 0
 		}
-		debug_log = "intellect_trait_score = 0"
+		# debug_log = "intellect_trait_score = 0"
 		random_list = {
 			3 = { # Intellect Bad 1
 				assign_genetic_trait = { trait = intellect_bad_1}
@@ -500,7 +500,7 @@ assign_random_physique_trait = {
 		limit = {
 			physique_trait_score = 0
 		}
-		debug_log = "physique_trait_score = 0"
+		# debug_log = "physique_trait_score = 0"
 		random_list = {
 			3 = { # Physique Bad 1
 				assign_genetic_trait = { trait = physique_bad_1}
@@ -535,7 +535,7 @@ assign_random_other_trait = {
 				has_genetic_trait = { trait = giant }
 			}
 		}
-		debug_log = "No 'other' genetic traits"
+		# debug_log = "No 'other' genetic traits"
 		random_list = {
 			2 = { # Fecund
 				assign_genetic_trait = { trait = fecund}

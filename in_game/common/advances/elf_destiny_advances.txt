@@ -115,11 +115,35 @@ level_2_magic = {
 	army_magi_power = 0.02
 }
 
+grand_portal_restored = {
+	age = age_1_traditions
+	requires = level_2_magic
+
+	allow = { 
+		custom_tooltip = {
+			text = found_elven_portal_artifact_1
+			has_variable = elven_portal_artifact_1_discovered
+		}
+		custom_tooltip = {
+			text = found_elven_portal_artifact_2
+			has_variable = elven_portal_artifact_2_discovered
+		}
+		custom_tooltip = {
+			text = passed_restore_portal_through_parliament
+			has_global_variable = portal_restored
+		}
+	}
+
+	ascending_into_fae_tier_unlocked = yes
+	monthly_religious_influence = 0.2
+	research_cost = 0
+}
+
 ## Requires Grand Portal To Be Restored Past Here
 
 level_3_magic = {
 	age = age_1_traditions
-	requires = level_2_magic
+	requires = grand_portal_restored
 
 	allow = { 
 		current_age = age_3_discovery

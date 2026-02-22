@@ -81,9 +81,9 @@ daughters_sent_to_become_aeluran_sisters = {
 			is_female = yes
 			is_any_elf_type = yes
 			character_age < 7
-			# NOT = {
-			# 	has_variable = refused_aeluran_training
-			# }
+			NOT = {
+				has_variable = refused_aeluran_training
+			}
 		}
 	}
 

@@ -69,6 +69,7 @@ beguiling_nature = {
 	modifier = {
         enchantress_ruler_trait_unlocked = yes
         higher_chance_of_rare_genetic_beauty_traits = yes
+		unlock_fairest_ascendancy_calaquendi_estate_privilege = yes
 	}
 
 	opinions = {

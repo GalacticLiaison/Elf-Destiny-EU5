@@ -23,5 +23,10 @@ Those answers are for you to decide!
 ### New Advances/Buildings
 
 ## Early Development and How You Can Help
+- So far content is roughly in line with the CK3 mod. As that mod progress in content so may this one.
+- please report bugs
+- looking for feedback, especially around Unit and trade goods balance. Call to action for the Spreadsheet warriors
+- All sub-mods are endorsed, no permission needed
+- Always looking for volunteers who want to help development of all skill levels
 
 ## Socials

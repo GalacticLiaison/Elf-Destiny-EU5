@@ -1,0 +1,46 @@
+﻿l_english:
+ # CALAQUENDI ====
+ elven_lore: "Elven Lore"
+ elven_lore_desc: "TODO : Write a desc"
+
+ beast_tamers: "Beast Tamers"
+ beast_tamers_desc: "TODO : Write a desc"
+
+ elven_artisanship: "Elven Artisanship"
+ elven_artisanship_desc: "TODO : Write a desc"
+
+ mythril_working: "Mythril Working"
+ mythril_working_desc: "TODO : Write a desc"
+
+ forest_dominion: "Forest Dominion"
+ forest_dominion_desc: "TODO : Write a desc"
+
+ herbal_mastery: "Herbal Mastery"
+ herbal_mastery_desc: "TODO : Write a desc"
+
+ level_2_magic: "Refined Spark Weaving"
+ level_2_magic_desc: "TODO : Write a desc"
+
+ grand_portal_restored: "The Grand Portal Restored"
+ grand_portal_restored_desc: "The Grand Portal must be restored to strengthen the Divine Spark's influence in this world and reconnect Earth to the countless other realms of the universe.#!#color_light_gray \n\nTo restore The Grand Portal:\n$BULLET_WITH_TAB$Use [ruler|e]'s' [ShowCharacterInteractionName('fund_expedition')] [character_interaction|e] to find:\n  $BULLET_WITH_TAB$a #high Spark Capacitor#! artifact\n  $BULLET_WITH_TAB$a #high Navigation Relay#! artifact\n$BULLET_WITH_TAB$Pass a [ShowParliamentIssueTypeName('restore_portal')] [parliament_issue|e]#!"
+
+ level_3_magic: "Crystalic Amplification"
+ level_3_magic_desc: "TODO : Write a desc"
+
+ level_4_magic: "Ambient Spark Harvesting"
+ level_4_magic_desc: "TODO : Write a desc"
+
+ level_5_magic: "Archonic Rituals"
+ level_5_magic_desc: "TODO : Write a desc"
+
+ level_6_magic: "Divine Avatars"
+ level_6_magic_desc: "TODO : Write a desc"
+
+ level_2_war: "Elite Elven Tactics"
+ level_2_war_desc: "TODO : Write a desc"
+
+ level_3_war: "Elven Martial Supremacy"
+ level_3_war_desc: "TODO : Write a desc
+ 
+ honor_of_the_fay: "Honor of the Fay"
+ honor_of_the_fay_desc: "TODO : Write a desc""

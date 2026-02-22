@@ -4,9 +4,9 @@
 			is_female = yes
 			character_age >= 3
 			character_age < 7
-			# NOT = {
-			# 	has_variable = refused_aeluran_training
-			# }
+			NOT = {
+				has_variable = refused_aeluran_training
+			}
 		}
 
 		save_scope_as = new_sister
@@ -16,7 +16,6 @@
 			value = owner
 		}
 
-		set_child_education = child_education:aeluran_education
 
 		if = {
 			limit = {
@@ -29,8 +28,11 @@
 				}
 			}
 		}
+		else = {
+			set_child_education = child_education:aeluran_education
+			move_country = c:DWD
+		}
 
-		move_country = c:DWD
 	}
 }
 
