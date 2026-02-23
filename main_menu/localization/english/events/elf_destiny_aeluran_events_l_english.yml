@@ -1,0 +1,28 @@
+﻿l_english:
+ aeluran_events.1.title: "A New Red Sister"
+ aeluran_events.1.desc: "The Aeluran Matriarch has appointed you a new Aeluran Advisor"
+ aeluran_events.1.a: "A wise councilor indeed"
+
+ aeluran_events.2.title: "Lifted to Matron
+ 
+ aeluran_events.2.ruler_desc: "An opening on the Aeluran Council of Matrons must be filled and the council has chosen [new_matron.GetName] to become the new [ShowTraitName('aeluran_matron')]."
+ aeluran_events.2.courtier_desc: "An opening on the Aeluran Council of Matrons must be filled and the council has chosen [new_matron.GetName] to become the new [ShowTraitName('aeluran_matron')]."
+ aeluran_events.2.a: "Praise be the Spark!"
+
+ aeluran_events.3.title: "A New Matriarch"
+ aeluran_events.3.desc: "It is a time of great mourning for all Elves. Her holiness, High Matriarch [target.GetName], has returned to the Divine Spark.\n\nWith her passing the Council of Matrons has communed to choose the next [ShowTraitName('aeluran_matriarch')].\n\nMay the world take notice, for the mantle of The Red now lies on the shoulders of [new_matriarch.GetName]. The Matriarch is dead, long live the Matriarch!"
+ aeluran_events.3.a: "Praise be the Spark!"
+
+ aeluran_events.31.title: "A New Matriarch"
+ aeluran_events.31.ruler_desc: "It is a time of great mourning for all Elves. Her holiness, High Matriarch [target.GetName], has returned to the Divine Spark.\n\nWith her passing the Council of Matrons has communed to choose the next [ShowTraitName('aeluran_matriarch')].\n\nMay the world take notice, for the mantle of The Red now lies on the shoulders of #high your ruler#! [new_matriarch.GetName]. The Matriarch is dead, long live the Matriarch!"
+ aeluran_events.31.courtier_desc: "It is a time of great mourning for all Elves. Her holiness, High Matriarch [target.GetName], has returned to the Divine Spark.\n\nWith her passing the Council of Matrons has communed to choose the next [ShowTraitName('aeluran_matriarch')].\n\nMay the world take notice, for the mantle of The Red now lies on the shoulders of #high a member of your court#!, [new_matriarch.GetName]. The Matriarch is dead, long live the Matriarch!"
+ aeluran_events.31.a: "Praise be the Spark!"
+
+ aeluran_events.4.title: "A Daughter to Deepwood"
+ aeluran_events.4.desc: "[new_sister.GetName] is now old enough to be taken by the Aelurans to be trained as a Sister of the order. She will depart for [GetCountry('DWD').GetName]"
+ aeluran_events.4.a: "It is the Spark's will"
+ aeluran_events.4.refuse: "I need [new_sister.GetName] with me, she will not take the Red!"
+
+ aeluran_events.41.title: "A Sister Returns"
+ aeluran_events.41.desc: "[new_sister.GetName] has returned to your court from [GetCountry('DWD').GetName] a fully trained [ShowTraitName('aeluran_sister')]."
+ aeluran_events.41.a: "Welcome back!"

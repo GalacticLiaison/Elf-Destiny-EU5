@@ -26,3 +26,6 @@ Make sure all unlockabales are gated behind the unlock and also can be unlocked
 
 # investigate what you got going on with laws
 - do you need to work on marriage laws?
+
+maybe final testing of expeditions
+- havent checked in on elixir event in a while

@@ -265,6 +265,17 @@ single_trait_inheritance = {
 # Answer: random_list = {} and random = {} are actually not truly random,
 # and in certain scenarios will return the exact same result over and over. This helps with that.
 use_fake_random_effect = {
+	if = {
+		limit = { NOT = { exists = global_var:semi_random_integer } }
+
+		set_global_variable = {
+			name = semi_random_integer
+			value = {
+				integer_range = { min = 1 max = 30 }
+			}
+		}
+	}
+
 	switch = {
 		trigger = global_var:semi_random_integer
 		1 = { $function_name$ = yes }

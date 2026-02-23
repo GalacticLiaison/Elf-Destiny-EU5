@@ -1,0 +1,15 @@
+﻿l_english:
+ ascension_events.1.title: "You Have Ascended!"
+ ascension_events.1.desc: "Through careful preparations you have become more aligned with the Divine Spark, and your Elf Trait has evolved!"
+ ascension_events.1.a: "I have become #bold more #!! Huzzah!"
+
+ receive_blessing: "Ritual of The Divine Spark's Blessing"
+ receive_blessing_desc: "You have accumulated enough good will with the Divine Spark to seek a blessing from it!\n\nRetreat to your chambers and begin your meditations."
+
+ ascension_events.2.title: "Ritual of The Divine Spark's Blessing"
+ ascension_events.2.desc: "As you meditate, a familiar presence can be felt and you know the Divine Spark has cast its gaze upon you. Once again, you see countless possibilities flash before your eyes, fading just as quickly, leaving a single idea in their shadow.\n\n #bold \"Choose\" #!"
+ the_rut_blessing_option: "My people will multiply across the land!"
+ beguiling_nature_blessing_option: "Our grace shall ensnare lesser mortals!"
+ heroic_courage_blessing_option: "We shall always stand tall! May our enemies cower!"
+ noble_husbandry_blessing_option: "Our bloodlines will be without equal!"
+ no_blessing_available: "No more blessings available"

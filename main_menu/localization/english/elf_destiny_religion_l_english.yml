@@ -1,0 +1,54 @@
+﻿l_english:
+ the_divine_spark: "The Divine Spark"
+ the_divine_spark_desc: "The divine spark desc"
+
+ aeluran_sister: "Aeluran Sister"
+ aeluran_sister_die_desc: ""
+ desc_aeluran_sister: "Trained since youth in the ways of the Aeluran Order, Aeluran Sisters have been molded to be powerful magi and wise advisors."
+ aeluran_matron: "Aeluran Matron"
+ aeluran_matron_die_desc: ""
+ desc_aeluran_matron: "Aeluran Matrons are the most elite and powerful of the Aeluran Order. They form the leadership council of the order and are often far more gifted in manipulating the spark than common sisters."
+ aeluran_matriarch: "Aeluran Matriarch"
+ aeluran_matriarch_die_desc: ""
+ desc_aeluran_matriarch: "The Aeluran High Matriarch is the undisputed leader of the Aelurans. Selected by the Council of Matrons, the High Matriarch is typically the most powerful and wise sister in all of the order."
+
+ AELURAN_ORDER_LEADER_MALE: "AELURAN ORDER LEADER MALE"
+ AELURAN_ORDER_LEADER_FEMALE: "High Matriarch"
+ aeluran_order: "Aeluran order"
+ aeluran_order_desc: "TODO : Write a desc"
+ diplomatic_status_aeluran_order_name: "Diplomatic status aeluran order name"
+ diplomatic_status_aeluran_order_tooltip: "Diplomatic status aeluran order tooltip"
+ aeluran_order_list_who_tt: "Aeluran order list who tt"
+
+ CANT_MANUALLY_ASSIGN_AELURAN_ADVISOR: "#r Can not change Aeluran Advisor#!"
+ CANT_MANUALLY_ASSIGN_AELURAN_ADVISOR_DESC: "Your Aeluran Advisor is appointed by the High Matriarch herself; Only she has the authority to dimiss her."
+
+ aeluran_advisor_joins_realm: "Lady [aeluran_advisor.GetName] of the Aeluran Order Joins Your Realm"
+ aeluran_advisor_joins_and_become_head_of_cabinet: "Sister [aeluran_advisor.GetFirstNameWithNoTooltip] becomes your Aeluran Advisor and [head_of_the_cabinet|e]"
+
+ game_concept_religious_aspects: "[Custom('religious_aspects_custom')]"
+ game_concept_religious_aspect_desc: "[Custom('religious_aspects_desc_custom')]"
+ religious_aspects_text: "Relgious Aspects"
+ religious_aspects_desc: "Some [religions|e] have aspects that further specialize the details of each [country_s|e] version of the [religion|e]."
+ blessings_text: "Blessings"
+ blessings_desc: "Blessings are bestowed upon a [country_s|e] by The Divine Spark as a show of its favor. These rewards can be powerful if sometimes quite peculiar"
+
+ the_rut: "The Rut"
+ the_rut_desc: "The Divine Spark gains power through the creation of life and so to further that cause, it makes its will known. Members of this culture are not so subtly pushed by the Divine Spark to be prosperous and multiply."
+ the_rut_location_modifier: "The Rut Location Modifier"
+ noble_husbandry: "Noble Husbandry"
+ noble_husbandry_desc: "TODO : Write a desc"
+ heroic_courage: "Heroic Courage"
+ heroic_courage_desc: "TODO : Write a desc"
+ beguiling_nature: "Beguiling Nature"
+ beguiling_nature_desc: "TODO : Write a desc"
+
+ grand_portal_ruins_holy_site: "Grand Portal Ruins Holy Site"
+ restored_grand_portal_holy_site: "Restored Grand Portal Holy Site"
+
+ ascend: "Ritual of Ascension"
+ ascend_desc: "You have reached the pinnacle of your current Elven level and are ready to ascend!\n\nRetreat to your chambers and begin your meditations. If the Divine Spark is receptive, you will emerge as a higher being."
+
+  #  ascension_ritual_threshold_1_decision_desc:0 "Behold your splendor! You have reached a Major Threshold! You have achieved the absolute pinnacle form of the Common Elf Tier, and are ready to ascend to become something #italic more #!.\n\nUpon completing this ascension you will enter the ranks of the regal Fae, elves that stand above the common folk, their mandate to rule clear to all."
+  #  ascension_ritual_threshold_2_decision_desc:0 "Behold your splendor! You have reached a Major Threshold! You have achieved the absolute pinnacle form of the Fae Tier, and are ready to ascend to become something #italic more #!.\n\nUpon completing this ascension you will enter the ranks of the mystical Celestials, angelic elves of great power and true immortality."
+  #  ascension_ritual_threshold_3_decision_desc:0 "Behold your splendor! You have reached a Major Threshold! You have achieved the absolute pinnacle form of the Celestial Tier, and are ready to ascend to become something #italic more #!.\n\nUpon completing this ascension you will enter the ranks of the divine Ainur; Gods of the Elves and highest servants of the Divine Spark."

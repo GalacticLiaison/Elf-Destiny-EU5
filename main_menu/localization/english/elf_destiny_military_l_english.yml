@@ -1,0 +1,66 @@
+﻿l_english:
+ army_magi: "Magi"
+ army_magi_desc: "TODO : Write a desc"
+ army_magi_artillery: "Army magi artillery"
+ army_magi_artillery_desc: "TODO : Write a desc"
+
+ a_age_1_aeluran_magi: "Aeluran Magi"
+ a_age_1_aeluran_magi_desc: "TODO : Write a desc"
+
+ a_age_2_aeluran_magi: "Adept Aeluran Magi"
+ a_age_2_aeluran_magi_desc: "TODO : Write a desc"
+
+ a_age_3_aeluran_magi: "Veteran Aeluran Magi"
+ a_age_3_aeluran_magi_desc: "TODO : Write a desc"
+
+ a_age_4_aeluran_magi: "Elite Aeluran Magi"
+ a_age_4_aeluran_magi_desc: "TODO : Write a desc"
+
+ a_age_5_aeluran_magi: "Royal Aeluran Magi"
+ a_age_5_aeluran_magi_desc: "TODO : Write a desc"
+
+ a_age_6_aeluran_magi: "Ascendant Aeluran Magi"
+ a_age_6_aeluran_magi_desc: "TODO : Write a desc"
+
+ a_age_1_traditions_magi: "A age 1 traditions magi"
+ a_age_1_traditions_magi_desc: "TODO : Write a desc"
+ a_age_2_renaissance_magi: "A age 2 renaissance magi"
+ a_age_2_renaissance_magi_desc: "TODO : Write a desc"
+ a_age_3_discovery_magi: "A age 3 discovery magi"
+ a_age_3_discovery_magi_desc: "TODO : Write a desc"
+ a_age_4_reformation_magi: "A age 4 reformation magi"
+ a_age_4_reformation_magi_desc: "TODO : Write a desc"
+ a_age_5_absolutism_magi: "A age 5 absolutism magi"
+ a_age_5_absolutism_magi_desc: "TODO : Write a desc"
+ a_age_6_revolutions_magi: "A age 6 revolutions magi"
+ a_age_6_revolutions_magi_desc: "TODO : Write a desc"
+
+ calaquendi_high_magi: "Calaquendi High Magi"
+ calaquendi_high_magi_desc: "TODO : Write a desc"
+
+ army_magi_build: "Army Magi Build"
+ army_magi_reinforce: "Army Magi Reinforce"
+ army_magi_maintenance: "Army Magi Maintenance"
+ early_magi_construction: "Early Magi Construction"
+ early_magi_maintenance: "Early Magi Maintenance"
+
+ a_early_fey_archers: "Fey Archers"
+ a_early_fey_archers_desc: "TODO : Write a desc"
+ a_fey_archers: "Veteran Fey Archers"
+ a_fey_archers_desc: "TODO : Write a desc"
+ a_late_fey_archers: "Elite Fey Archers"
+ a_late_fey_archers_desc: "TODO : Write a desc"
+ wolf_riders: "Wolf riders"
+ wolf_riders_desc: "TODO : Write a desc"
+ ranger_high_guard: "Ranger High Guard"
+ ranger_high_guard_desc: "TODO : Write a desc"
+
+ mythril_plated_horse_masters_construction: "Mythril Plated Horse Masters Construction"
+ mythril_plated_horse_masters_maintenance: "Mythril Plated Horse Masters Maintenance"
+ mythril_plated_fey_vanguard_construction: "Mythril Plated Fey Vanguard Construction"
+ mythril_plated_fey_vanguard_maintenance: "Mythril Plated Fey Vanguard Maintenance"
+
+ mythril_plated_fey_vanguard: "Mythril Plated Fey Vanguard"
+ mythril_plated_fey_vanguard_desc: "TODO : Write a desc"
+ mythril_plated_horse_masters: "Mythril Plated Horse Masters"
+ mythril_plated_horse_masters_desc: "TODO : Write a desc"

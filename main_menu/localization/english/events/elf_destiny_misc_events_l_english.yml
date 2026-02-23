@@ -1,5 +1,4 @@
 ﻿l_english:
- # CALAQUENDI ====
  elf_destiny_misc.1.title: "The Rut Has Begun!"
  elf_destiny_misc.1.desc: "The Divine Spark has made its presence known and you can feel the power of the Rut in the air. A great heat fills the people of [ROOT.GetCountry.GetName]."
  elf_destiny_misc.1.a: "Like rabbits as they say..."

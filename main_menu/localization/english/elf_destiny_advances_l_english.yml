@@ -44,3 +44,16 @@
  
  honor_of_the_fay: "Honor of the Fay"
  honor_of_the_fay_desc: "TODO : Write a desc""
+
+ found_elven_portal_artifact_1: "Found a Spark Capacitor on an Expedition"
+ found_elven_portal_artifact_2: "Found a Navigation Relay on an an Expedition"
+ passed_restore_portal_through_parliament: "Passed the [ShowParliamentIssueTypeName('restore_portal')] [parliament_issue|e]"
+
+ go_on_expeditions: "\nAncient Elven knowledge can be rediscovered by using the [ShowCharacterInteractionName('fund_expedition')] [character_interaction|e] on your country's [ruler|e]"
+ discovered_people_of_the_bow_tradition: "#high Discovered:#! The forgotten honor code of the people of the bow. $go_on_expeditions$"
+ discovered_beast_tamers_tradition: "#high Discovered:#! The lost practice of beast taming. $go_on_expeditions$"
+ discovered_mythril_working_tradition: "#high Discovered:#! The lost practice of mythril working. $go_on_expeditions$"
+ grand_portal_has_been_restored: "The Grand Portal has been restored, and the ambient Spark in the world has increased"
+
+ ruler_is_fae_tier_or_higher: "This country's [ruler|e] must ascend to [ShowTraitName('elf_tier_4')] or higher"
+ ruler_is_celestial_tier_or_higher: "This country's [ruler|e] must ascend to [ShowTraitName('elf_tier_7')] or higher"

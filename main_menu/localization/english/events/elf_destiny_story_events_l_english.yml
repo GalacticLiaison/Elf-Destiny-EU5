@@ -1,0 +1,85 @@
+﻿l_english:
+ no_title: ""
+ no_desc: ""
+
+ elf_destiny_story.1.title: "What Is an Archaeologist?"
+ elf_destiny_story.1.desc: "Your steward approaches with a worried look. \n\"My liege, an odd woman has arrived seeking an audience—she calls herself Julia Melwood and claims to be a trained archaeologist. I'm fairly sure she's made that title up.\" You both watch as the self‑proclaimed expert knocks over a vase. \n\nYour steward shakes their head. \"She claims to have found a discovery concerning the Elves. As far as I'm concerned, they're nothing more than children's fairy tales, but she was insistent, so I thought it best to bring her to you. What shall I tell her?\""
+ elf_destiny_story.1.a: "I would know the truth of this—see her in!"
+ 
+ elf_destiny_story.11.title: "Expedition to the Elven Ruins"
+ elf_destiny_story.11.desc: "The young woman approaches while your steward waves her over. \"M'lord, I am Julia Melwood, one of the best archaeologists in my field, if I may be so bold.\" #weak You glance at your steward, who looks unimpressed.#! She unrolls a parchment on the table; strange script lines the borders. \n\"I study traces our ancestors left behind—my specialty is the mysterious Elven people. The few artifacts suggest they were highly advanced, perhaps more so than us, and may have endured for hundreds, perhaps even #EMP thousands #!of years. This map is covered in Elven script I cannot decipher, but it marks possible locations of the fortress‑tomb of the Last Elf Emperor. If real, it could hold treasures lost to time. I would mount an expedition, but I need funding. Will you help me?\""
+ elf_destiny_story.11.a: "You have my support!"
+ elf_destiny_story.11.b: "The Elves? Don't waste my time—nothing but a children's tale!"
+ 
+ elf_destiny_story.2.title: "A Radiant Discovery"
+ elf_destiny_story.2.desc: "Word spreads through court: Julia, your hired archaeologist, has returned from her expedition in triumph. Your court fills the great hall as a beaming Julia turns to you and opens a small chest.\n\n\"I was right, my [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')]—those were Elven ruins: the tomb of an ancient Elven Emperor. We found many wondrous treasures, but none like this.\" In the chest lies a radiant amulet: a crystal that glows with unknown power. You feel drawn to it—a pull you can't resist."
+ elf_destiny_story.2.a: "Reach out and grasp the amulet"
+ 
+ elf_destiny_story.21.title: "A Powerful Presence"
+ elf_destiny_story.21.desc: "When you touch the gem, a blinding light envelopes you and Julia. You feel adrift, like a rowboat in a raging storm, your only solace the knowledge that #bold you are not alone #!. It isn't Julia, you realize—no, it is a vast, incomprehensible presence. It both comforts and terrifies, shielding you from the light while examining every fibre of your being with a piercing gaze. \n\nThe experience sharpens your senses: you feel your heartbeat, your lungs draw breath, your blood flow, and your mind think. Your soul trembles."
+ elf_destiny_story.21.a: "Is this... death?"
+ 
+ elf_destiny_story.22.title: "Visions of a Past Long Gone"
+ elf_destiny_story.22.desc: "Amid the light, the presence fills your mind with visions of the past. You see how the great Elves once lived and feel the breadth of their emotions. You could follow this thread and take on their hopes and beliefs as your own.\n\nDo you adopt Elven culture and begin anew, or do you continue to evolve your current culture?"
+ elf_destiny_story.22.convert: "I will adopt Elven culture."
+ elf_destiny_story.22.dontConvert: "I will forge a new Elvish people from my existing culture."
+ all_characters_convert_to_elven: "All characters in [ROOT.GetCountry.GetName] embrace Elven culture"
+ all_pops_convert_to_elven: "All pops in [ROOT.GetCountry.GetName] embrace Elven culture"
+ 
+ elf_destiny_story.23.title: "A Surprising Transformation"
+ elf_destiny_story.23.desc: "The light fades and the world snaps back into focus. You feel changed. Looking at Julia, you notice her ears have lengthened. You touch the tips of your own ears and realize the same. \n\n\"It seems we have been transformed into Elves—like the legendary people of old!\"\n\nWhat this means for you and your realm is yet to be seen."
+ elf_destiny_story.23.a: "How Wondrous!"
+ 
+ elf_destiny_story.24.title: "A Twist of Destiny"
+ elf_destiny_story.24.desc: "Reports flood in: it wasn't just your court—[ROOT.GetCountry.GetName] has been transformed. How will the people adapt to such a monumental change? Will you reach new heights, or will enemies exploit the chaos? The fate of your realm lies in your hands."
+ elf_destiny_story.24.a: "A New Age For [ROOT.GetCountry.GetName]!"
+ 
+ elf_destiny_story.3.title: "A Choice of Dreams"
+ elf_destiny_story.3.desc: "You're in a hard‑earned sleep when the familiar presence returns—the same you felt when you touched the amulet. It speaks not in words but projects a single idea into your mind.\n\n#yellow_titles \"See.\"#!\n\nThousands of lifetimes flash before you, threatening to overwhelm every sense: great wars between humans and Elves, empires built on the backs of human slaves, and grand feasts shared between Human and Elf kings. The presence implants another idea.#yellow_titles \"Choose.\"#!"
+ elf_destiny_story.3.good: "Humans and Elves will live together in friendship!"
+ elf_destiny_story.3.evil: "Elves stand above Humans! Any other notion is ridiculous."
+ 
+ elf_destiny_story.4.title: "Crimson Visitors"
+ elf_destiny_story.4.desc: "As you settle for the night, frantic knocking sounds at your door and a commotion swells outside. You climb from bed, trying to clear your head, and your servant explains: Sisters of the Aeluran Order—called the Red Witches by common folk—have learned of your expedition and demand your presence."
+ elf_destiny_story.4.a: "I'll hear them in my council chambers. Send them in."
+  
+ elf_destiny_story.41.title: "Crimson Visitors"
+ elf_destiny_story.41.desc: "You enter the council room to find two Aeluran Sisters waiting. Their embroidered dresses and ageless beauty render you speechless until the junior clears her throat. \n\n\"M'[ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], you have the privilege of standing before Mistress [portrait_1.GetFirstNameWithNoTooltip], High Matriarch of the Aeluran Weavers.\" \n\nOn cue, the other woman steps forward with effortless grace; her youthful face somehow projects wisdom. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], our arrival is unexpected, but we come about a matter of great importance. I felt the release of divine energy a short time ago; finding you—an elf in human lands—confirms my suspicions. I know you have found the Sigil of the Realm Lord.\""
+ elf_destiny_story.41.a: "How do you know of this?"
+  
+ elf_destiny_story.42.title: "Crimson Visitors"
+ elf_destiny_story.42.desc: "\"I am not here to take it from you,\" the Matriarch says, her song‑like voice drawing you close. \"The sigil reacts only to those it deems worthy. Possessing it marks you as the undisputed #bold Elf Lord #!of this world.\n\nIn ancient times, Elves and Humans came here through a great portal. Empires rose and fell; once, the Elven emperor—whose sigil you found—was overthrown in a massive rebellion. Most Elves were slain or forced to flee back through the portal, leaving this world behind. A small number remained in the wilds, living in peace. After the Great Exodus, rebels destroyed vital components of the portal and our gateway to the other realms was lost.\n\nMy [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], the sigil choosing you now is no coincidence. It confirms the Divine Spark's will. It is time to restore the Grand Portal and welcome the Elven people back to this world!\""
+ elf_destiny_story.42.a: "A momentous and worthy undertaking!"
+ 
+ elf_destiny_story.43.title: "Crimson Visitors"
+ elf_destiny_story.43.desc: "\"It is indeed! You will need to find replacements for the destroyed portal components. I have learned such things were rare, yet still available in the days of old. You must continue your expeditions of ancient Elven sites and find the parts we need.\" She finishes, motioning the younger Sister to lay a map out on the table. \"We have brought maps with us; They detail some newly discovered Elven ruins for you to investigate.\" [portrait_1.GetFirstNameWithNoTooltip] looks deep into your eyes. \"The world's fate lies in your hands. I do not say that lightly.\"\n\n\"Before we make the long journey back to our sanctum in the North, I have one additional matter to discuss with you. It is customary of all Elven Lords across all realms to accept the Divine Spark as the true guiding force of the universe. Furthermore, the Sisters of The Aeluran Weavers are seen as the shepherds of its will. I implore you to accept The Order into your lands, to advise and further the interests of the Divine Spark.\" "
+ elf_destiny_story.43.a: "I would be honored to welcome the Aeluran Sisters into my realm."
+ elf_destiny_story.43.b: "I would not have my realm run by the red witches!"
+ all_characters_convert_to_aeluran: "All characters in [ROOT.GetCountry.GetName] convert to Aeluran"
+ all_pops_convert_to_aeluran: "All pops in [ROOT.GetCountry.GetName] convert to Aeluran"
+
+ elf_destiny_story.5.title: "Transporting the Grand Portal"
+ elf_destiny_story.5.desc: "Very carefully all of the giant stone pieces of the Grand Portal are loaded into massive wagons and begin their pilgrimage to your capital [capital.GetName]\n\nThe New Age will begin there!"
+ elf_destiny_story.5.a: "Please be careful!"
+#  elf_destiny_story.5.b: "placeholder"
+
+ elf_destiny_story.51.title: "Transporting the Grand Portal - Arrived"
+ elf_destiny_story.51.desc: "The final wagons carrying the Grand Portal have arrived in your capital safe and sound.\n\nWill you restore them to their ancient glory?"
+ elf_destiny_story.51.a: "This is only the first step, Elves will be great once more!"
+ grand_portal_ruins_built_in_capital_tooltip: "[grand_portal_ruins.GetName] constructed in [capital.GetName]"
+
+ elf_destiny_story.52.title: "Restore The Grand Portal"
+ elf_destiny_story.52.desc: "Relics of old collected and my worthiness unquestionable. \n\nI now possess the means to re-establish the bond between worlds and establish myself as a true Realm Lord.\n\nBut there are many who will condemn me and would move to halt this great work by any means.
+ elf_destiny_story.52.a: "We break ground at once!"
+#  elf_destiny_story.52.b: "placeholder"
+
+ elf_destiny_story.53.title: "The Portal Is Complete!"
+ elf_destiny_story.53.desc: "After many trials and great personal cost the Grand Portal is finally restored! Once more the gateway between this world and the countless realms of the galaxy is open.\n\nWill this bring limitless prosperity or great dangers to your realm? Who and what will come through the gateway? New allies or powerful foes?\n\nThese questions and many more will soon be answered!\n\n#bold You can feel the threads of destiny pulling.#! You are a true Realm Lord now and it is time you make you mark on history. #bold The time of Elves comes again!#!"
+ elf_destiny_story.53.a: "A new age is upon us!"
+
+ elf_destiny_story.54.title: "Thanks for Playing!"
+ elf_destiny_story.54.desc: "Sorry, thats all the story content so far! More is under construction and on the way. Visit the official Discord to keep up with updates and submit feedback! \n\nI still want to reward you for playing this far, so pick what you would like! Thanks Again!"
+ elf_destiny_story.54.a: "A free Blessing!"
+ elf_destiny_story.54.b: "Gold!"
+ elf_destiny_story.54.c: "Prestige and Stability!"
+ elf_destiny_story.54.d: "I want for nothing."
