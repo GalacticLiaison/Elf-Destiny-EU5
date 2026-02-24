@@ -68,6 +68,25 @@ is_cousin_of = {
     }
 }
 
+mother_and_father_have_same_dynasty = {
+    AND = {
+        exists = father
+        exists = mother
+        father = {has_dynasty = yes}
+        mother = {has_dynasty = yes}
+        father.dynasty = mother.dynasty
+    }
+}
+
+mother_and_father_are_closely_related = {
+    AND = {
+        exists = father
+        exists = mother
+        father = {
+            is_close_relative = scope:character.mother
+        }
+    }
+}
 
 standard_marriage_check = {
     NOT = { is_same_gender = scope:recipient }

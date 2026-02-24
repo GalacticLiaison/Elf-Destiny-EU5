@@ -496,38 +496,99 @@ pure_blood_inheritance = {
 		value = inherited_blood_purity_score
 	}
 
-	# Chance to reinforce genetic trait
-	if = {
+	if = { # chance for child of inbred parents to not be inbred
 		limit = {
-			var:trait_score > 0
-
-			OR = {
+			var:trait_score < 0
+		}
+		random = {
+			chance = 35
+			set_variable = {
+				name = trait_score
+				value = 0
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			var:trait_score = 0
+		}
+		if = {
+			limit = {
 				scope:character ?= {
-					AND = {
-						exists = father
-						exists = mother
-						father = {has_dynasty = yes}
-						mother = {has_dynasty = yes}
-						father.dynasty = mother.dynasty
+					mother_and_father_are_closely_related = yes
+				}
+			}
+
+			random_list = {
+				30 = {}
+				55 = {
+					change_variable = {
+						name = trait_score
+						add = 1 
 					}
 				}
-				scope:character ?= {
-					AND = {
-						exists = father
-						exists = mother
-						father = {
-							is_close_relative = scope:character.mother
-						}
+				15 = { # inbred
+					change_variable = {
+						name = trait_score
+						add = -1 
 					}
 				}
 			}
 		}
+		else_if = {
+			limit = {
+				scope:character ?= {
+					mother_and_father_have_same_dynasty = yes
+				}
+			}
+			random_list = {
+				60 = {}
+				35 = {
+					change_variable = {
+						name = trait_score
+						add = 1 
+					}
+				}
+				5 = { # inbred
+					change_variable = {
+						name = trait_score
+						add = -1 
+					}
+				}
+			}
+		}
+	}
+	else_if = { # Chance to reinforce genetic trait
+		limit = {
+			var:trait_score > 0
+		}
 
-		random = {
-			chance = 35
-			change_variable = {
-				name = trait_score
-				add = 1 
+		if = {
+			limit = {
+				scope:character ?= {
+					mother_and_father_are_closely_related = yes
+				}
+			}
+			random = {
+				chance = 55
+				change_variable = {
+					name = trait_score
+					add = 1 
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:character ?= {
+					mother_and_father_have_same_dynasty = yes
+				}
+			}
+			random = {
+				chance = 35
+				change_variable = {
+					name = trait_score
+					add = 1 
+				}
 			}
 		}
 	}
@@ -555,7 +616,7 @@ pure_blood_inheritance = {
 	}
 	else_if = {
 		limit = {
-			var:trait_score <= -1
+			var:trait_score < 0
 		}
 
 		assign_genetic_trait = { trait = inbred}

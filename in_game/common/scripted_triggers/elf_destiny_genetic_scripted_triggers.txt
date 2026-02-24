@@ -1,0 +1,6 @@
+﻿has_genetic_trait = {
+	is_target_in_variable_list = {
+		name = genetic_traits
+		target = trait:$trait$
+	}
+}

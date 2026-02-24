@@ -1,16 +1,15 @@
 ﻿l_english:
- # CALAQUENDI ====
  elven_lore: "Elven Lore"
- elven_lore_desc: "TODO : Write a desc"
+ elven_lore_desc: "Wisdom from the elder days, ancient as civilization itself."
 
  beast_tamers: "Beast Tamers"
- beast_tamers_desc: "TODO : Write a desc"
+ beast_tamers_desc: "Domesticating and breeding beasts, carefully crafting powerful and loyal creatures that act as extensions of their masters."
 
  elven_artisanship: "Elven Artisanship"
- elven_artisanship_desc: "TODO : Write a desc"
+ elven_artisanship_desc: "Elven artisans are renowned for their skill and perfection of detail. Their works are highly sought after, and their craftsmen in high demand."
 
  mythril_working: "Mythril Working"
- mythril_working_desc: "TODO : Write a desc"
+ mythril_working_desc: "Mythril, the legendary metal desired even by the Valar themselves. Knowledge of how to craft with this metal is extremely rare even among Elven Masters. More common among Dwarves but where is one going to find one of them these days?"
 
  forest_dominion: "Forest Dominion"
  forest_dominion_desc: "TODO : Write a desc"

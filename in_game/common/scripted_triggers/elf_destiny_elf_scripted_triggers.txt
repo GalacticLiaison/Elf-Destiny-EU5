@@ -51,13 +51,6 @@ has_any_elven_bloodline = {
 	}
 }
 
-has_genetic_trait = {
-	is_target_in_variable_list = {
-		name = genetic_traits
-		target = trait:$trait$
-	}
-}
-
 has_racial_trait = {
 	has_variable = character_race 
 	var:character_race = trait:$trait$

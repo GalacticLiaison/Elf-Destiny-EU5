@@ -3,7 +3,7 @@
  elven_marriage_desc: "Long ago, to better join the great Elf houses together in a time where they faced extinction, the Elves of old adopted the practice of bonding a king with multiple queens."
 
  consanguinity_law: "Consanguinity Law"
- consanguinity_law_desc: "TODO : Write a desc"
+ consanguinity_law_desc: "These laws determine which familial relationships are permitted to marry one another."
  doctrine_consanguinity_dynastic: "@1_consanguinity_law! Lineal Prohibition"
  doctrine_consanguinity_dynastic_desc: "It is strictly forbidden to marry another with whom your share a surname and common ancestry, no matter how distantly related, nor is it acceptable to marry those of other surnames proximate through blood."
  doctrine_consanguinity_restricted: "@2_consanguinity_law! Close-kin Taboo"
