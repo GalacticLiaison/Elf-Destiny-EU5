@@ -1,4 +1,54 @@
 texticon = {
+	icon = 1_consanguinity_law
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/1_consanguinity_law.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = 2_consanguinity_law
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/2_consanguinity_law.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = 3_consanguinity_law
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/3_consanguinity_law.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = 4_consanguinity_law
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/4_consanguinity_law.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = 5_consanguinity_law
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/5_consanguinity_law.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
 	icon = army_magi
 	iconsize = {
 		texture = "gfx/interface/icons/text_icons/army_magi.dds"

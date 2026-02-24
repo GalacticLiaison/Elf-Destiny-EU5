@@ -183,9 +183,9 @@
  MODIFIER_TYPE_NAME_global_calaquendi_food_consumption: "Global Calaquendi Food Consumption"
  MODIFIER_TYPE_DESC_global_calaquendi_food_consumption: "TODO : Write a desc"
 
- MODIFIER_TYPE_NAME_dynastic_marriage_disabled: "[ShowCharacterInteractionName('marry_dynasty_members')] [character_interaction|e] disabled"
+ MODIFIER_TYPE_NAME_dynastic_marriage_disabled: "[ShowCharacterInteractionName('marry_dynasty_members')] [character_interaction|e] Disabled"
  MODIFIER_TYPE_DESC_dynastic_marriage_disabled: "TODO : Write a desc"
- MODIFIER_TYPE_NAME_dynastic_marriage_enabled: "[ShowCharacterInteractionName('marry_dynasty_members')] [character_interaction|e] enabled"
+ MODIFIER_TYPE_NAME_dynastic_marriage_enabled: "[ShowCharacterInteractionName('marry_dynasty_members')] [character_interaction|e] Enabled"
  MODIFIER_TYPE_DESC_dynastic_marriage_enabled: "TODO : Write a desc"
  MODIFIER_TYPE_NAME_close_or_extended_family_marriage_banned: "Marriage between close or extended family members is banned"
  MODIFIER_TYPE_DESC_close_or_extended_family_marriage_banned: "TODO : Write a desc"

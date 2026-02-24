@@ -330,25 +330,25 @@ expedition_price_cost_modifier = {
 }
 
 dynastic_marriage_disabled = {
-	positive = "gfx/interface/icons/text_icons/trigger_no.dds"
+	positive = "gfx/interface/icons/modifier_types/dynastic_marriage_disabled.dds"
 }
 
 dynastic_marriage_enabled = {
-	positive = "gfx/interface/icons/text_icons/trigger_yes.dds"
+	positive = "gfx/interface/icons/modifier_types/dynastic_marriage_enabled.dds"
 }
 
 close_or_extended_family_marriage_banned = {
-	positive = "gfx/interface/icons/text_icons/trigger_no.dds"
+	positive = "gfx/interface/icons/modifier_types/marriage_type_banned.dds"
 }
 
 cousin_marriage_allowed = {
-	positive = "gfx/interface/icons/text_icons/trigger_yes.dds"
+	positive = "gfx/interface/icons/modifier_types/marriage_type_allowed.dds"
 }
 
 uncle_aunt_niece_nephew_marriage_allowed = {
-	positive = "gfx/interface/icons/text_icons/trigger_yes.dds"
+	positive = "gfx/interface/icons/modifier_types/marriage_type_allowed.dds"
 }
 
 no_family_marriage_restrictions = {
-	positive = "gfx/interface/icons/text_icons/trigger_yes.dds"
+	positive = "gfx/interface/icons/modifier_types/marriage_type_allowed.dds"
 }
