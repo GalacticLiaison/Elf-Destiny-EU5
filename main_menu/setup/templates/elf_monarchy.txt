@@ -38,7 +38,7 @@
 		cultural_traditions_law = martial_society
 		marriage_law = elven_marriage
 		heir_religion_law = heir_same_religion
-		legal_code_law = elven_law_policy
+		# legal_code_law = elven_law_policy
 		distribution_of_power_law = dop_traditional_distribution_of_power
 		immigration_law = open_borders_law
 		mining_law = nobles_mining_law

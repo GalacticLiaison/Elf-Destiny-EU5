@@ -29,3 +29,8 @@ Make sure all unlockabales are gated behind the unlock and also can be unlocked
 
 maybe final testing of expeditions
 - havent checked in on elixir event in a while
+
+Add Elf Marriage to the Elf Lore advance... maybe Old Ways?
+maybe can make a eugenics type of branch of advances?
+- unlocks this and unrestricted consang laws?
+    - not sure if we should gate that behind advancements

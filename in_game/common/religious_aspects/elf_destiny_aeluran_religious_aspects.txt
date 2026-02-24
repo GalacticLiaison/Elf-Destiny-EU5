@@ -76,3 +76,20 @@ beguiling_nature = {
 		# baptism_by_fire = 10
 	}
 }
+
+familial_familiarity = {
+	religion = aeluran
+	
+	visible = {
+		always = no
+	}
+
+	modifier = {
+		higher_pure_blood_genetics_unlocked = yes
+		monthly_towards_aristocracy = societal_value_monthly_move
+	}
+
+	opinions = {
+		# baptism_by_fire = 10
+	}
+}

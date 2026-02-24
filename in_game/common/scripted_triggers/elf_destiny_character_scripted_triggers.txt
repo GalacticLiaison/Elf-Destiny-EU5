@@ -1,0 +1,116 @@
+﻿
+
+is_aunt_or_uncle_of = {
+    save_temporary_scope_as = potential_aunt_or_uncle
+    OR = {
+        $character_scope$ = {
+            exists = father
+            father = { is_sibling_of = scope:potential_aunt_or_uncle }
+        }
+        $character_scope$ = {
+            exists = mother
+            mother = { is_sibling_of = scope:potential_aunt_or_uncle }
+        }
+    }
+}
+
+is_niece_or_nephew_of = {
+    OR = {
+        AND = {
+            exists = father
+            father = {
+                is_sibling_of = $character_scope$
+            }
+        }
+        AND = {
+            exists = mother
+            mother = {
+                is_sibling_of = $character_scope$
+            }
+        }
+    }
+}
+
+is_cousin_of = {
+    OR = {
+        AND = {
+            exists = father
+            OR = {
+                AND = {
+                    exists = $character_scope$.father
+                    father = {
+                        is_sibling_of = $character_scope$.father
+                    }
+                }
+                AND = {
+                    exists = $character_scope$.mother
+                    father = {
+                        is_sibling_of = $character_scope$.mother
+                    }
+                }
+            }
+        }
+        AND = {
+            exists = mother
+            OR = {
+                exists = $character_scope$.mother
+                mother = {
+                    is_sibling_of = $character_scope$.mother
+                }
+            }
+            OR = {
+                exists = $character_scope$.father
+                mother = {
+                    is_sibling_of = $character_scope$.father
+                }
+            }
+        }
+    }
+}
+
+
+standard_marriage_check = {
+    NOT = { is_same_gender = scope:recipient }
+    NOT = { is_spouse_of = scope:recipient }
+    character_can_marry_trigger = yes
+}
+
+
+## is_close_relative:
+# Is the character a close relative (Child, Parent, Sibling/Half-sibling, Nephew/Niece, Aunt/Uncle, Grandparent or Grandchild) of the target character?
+
+doctrine_consanguinity_restricted_trigger = { # "Close-kin Taboo"
+    # CLose Family Banned
+    NOT = { is_close_relative = scope:recipient}
+    # Cousins Banned
+    NOT = {
+        is_cousin_of = {
+            character_scope = scope:recipient
+        }
+    }
+}
+
+doctrine_consanguinity_cousins_trigger = { # "Cousin Marriage"
+	# CLose Family Banned But Cousins Are Cool
+    NOT = { is_close_relative = scope:recipient}
+}
+
+doctrine_consanguinity_aunt_nephew_and_uncle_niece_trigger = {  # "Avunculate Marriage"
+    OR = {
+        is_aunt_or_uncle_of = {
+            character_scope = scope:recipient
+        }
+        is_niece_or_nephew_of = {
+            character_scope = scope:recipient
+        }
+        NOT = { is_close_relative = scope:recipient}
+    }
+    NOT = { # Damn Valeriths and their tiny family circle
+        is_parent_of = scope:recipient
+        is_child_of = scope:recipient
+    }
+}
+
+# doctrine_consanguinity_unrestricted_trigger = {  # "Unrestricted Marriage"
+
+# }

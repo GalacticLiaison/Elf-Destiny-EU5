@@ -17,32 +17,130 @@
 	}
 }
 
-INJECT_OR_CREATE:legal_code_law = {
-	elven_law_policy = {
-		potential = {
-			OR = {
-				capital.continent = continent:europe
-				religion.group = religion_group:christian
-				culture = { has_culture_group = culture_group:elven_culture_group }
-			}
-		}
+consanguinity_law = {
+	law_category = religious
+	doctrine_consanguinity_dynastic = {
 		allow = {
-			OR = {
-				has_embraced_institution = institution:legalism
-				culture = { has_culture_group = culture_group:elven_culture_group }
-			}
+			# custom_tooltip = {
+			# 	text = not_catholic_theocracies
+			# 	OR = {
+			# 		government_type != government_type:theocracy
+			# 		religion != religion:catholic
+			# 	}
+			# }
 		}
 		country_modifier = {
-			monthly_towards_centralization = societal_value_monthly_move
-			stability_cost = -0.2
-			tolerance_heathen = -1
+			dynastic_marriage_disabled = yes
 		}
 		estate_preferences = {
+			peasants_estate
+		}
+		years = 0
+	}
+	doctrine_consanguinity_restricted = {
+		potential = {
+		}
+		country_modifier = {
+			dynastic_marriage_enabled = yes 
+			close_or_extended_family_marriage_banned = yes
+		}
+		estate_preferences = {
+			peasants_estate
 			clergy_estate
 		}
-		years = 2
+		years = 0
+	}
+	doctrine_consanguinity_cousins = {
+		potential = {
+
+		}
+		country_modifier = {
+			dynastic_marriage_enabled = yes
+			cousin_marriage_allowed = yes
+		}
+		estate_preferences = {
+			nobles_estate
+			calaquendi_estate
+			crown_estate
+			clergy_estate
+		}
+		years = 0
+	}
+	doctrine_consanguinity_aunt_nephew_and_uncle_niece = {
+		potential = {
+
+		}
+		country_modifier = {
+			dynastic_marriage_enabled = yes
+			uncle_aunt_niece_nephew_marriage_allowed = yes
+		}
+		estate_preferences = {
+			nobles_estate
+			calaquendi_estate
+			crown_estate
+		}
+		years = 0
+	}
+	doctrine_consanguinity_unrestricted = {
+		potential = {
+
+		}
+		country_modifier = {
+			dynastic_marriage_enabled = yes 
+			no_family_marriage_restrictions = yes
+		}
+		estate_preferences = {
+			nobles_estate
+			calaquendi_estate
+			crown_estate
+		}
+
+		on_activate = {
+			#meme event
+			# maybe familial blessing if aeluran
+			if = {
+				limit = {
+					religion = religion:aeluran
+					NOT = {
+						has_religious_aspect = religious_aspect:familial_familiarity
+					}
+				}
+				trigger_event_silently = {
+					id = ascension_events.21
+				}
+			}
+
+		}
+		years = 0
 	}
 }
+
+# INJECT_OR_CREATE:legal_code_law = {
+# 	elven_law_policy = {
+# 		potential = {
+# 			OR = {
+# 				capital.continent = continent:europe
+# 				religion.group = religion_group:christian
+# 				culture = { has_culture_group = culture_group:elven_culture_group }
+# 			}
+# 		}
+# 		allow = {
+# 			OR = {
+# 				has_embraced_institution = institution:legalism
+# 				culture = { has_culture_group = culture_group:elven_culture_group }
+# 			}
+# 		}
+# 		country_modifier = {
+# 			monthly_towards_centralization = societal_value_monthly_move
+# 			stability_cost = -0.2
+# 			tolerance_heathen = -1
+# 		}
+# 		estate_preferences = {
+# 			clergy_estate
+# 		}
+# 		years = 2
+# 	}
+# }
 
 # human_citizens = {
 # 	law_category = religious

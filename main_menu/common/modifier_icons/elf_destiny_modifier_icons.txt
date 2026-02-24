@@ -281,6 +281,10 @@ tier_4_genetics_unlocked = {
 	positive = "gfx/interface/icons/traits/beauty_good_4.dds" 
 }
 
+higher_pure_blood_genetics_unlocked = {
+	positive = "gfx/interface/icons/traits/purest_blooded.dds"
+}
+
 higher_chance_of_rare_genetic_beauty_traits = {
 	positive = "gfx/interface/icons/traits/exotic_beauty_good_3.dds" 
 }
@@ -323,4 +327,28 @@ the_rut_resistance_modifier = {
 
 expedition_price_cost_modifier = {
 	positive = "gfx/interface/icons/character_interactions/fund_expedition.dds"
+}
+
+dynastic_marriage_disabled = {
+	positive = "gfx/interface/icons/text_icons/trigger_no.dds"
+}
+
+dynastic_marriage_enabled = {
+	positive = "gfx/interface/icons/text_icons/trigger_yes.dds"
+}
+
+close_or_extended_family_marriage_banned = {
+	positive = "gfx/interface/icons/text_icons/trigger_no.dds"
+}
+
+cousin_marriage_allowed = {
+	positive = "gfx/interface/icons/text_icons/trigger_yes.dds"
+}
+
+uncle_aunt_niece_nephew_marriage_allowed = {
+	positive = "gfx/interface/icons/text_icons/trigger_yes.dds"
+}
+
+no_family_marriage_restrictions = {
+	positive = "gfx/interface/icons/text_icons/trigger_yes.dds"
 }

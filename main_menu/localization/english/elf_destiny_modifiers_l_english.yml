@@ -96,7 +96,9 @@
  MODIFIER_TYPE_DESC_calaquendi_apprenticeship_education_unlocked: "Children of note and potential are selected to be personal apprentices to the power and wise of society. The receive an unparalleled [child_education|e], but the influence of their mentors will follow them for a lifetime "
 
  MODIFIER_TYPE_NAME_tier_4_genetics_unlocked: "Tier 4 Genetics Unlocked"
- MODIFIER_TYPE_DESC_tier_4_genetics_unlocked: "Characters in this country can now be born with Tier 4 genetic traits"
+ MODIFIER_TYPE_DESC_tier_4_genetics_unlocked: "Characters in this country can now be born with [ShowTraitName('beauty_good_4')], [ShowTraitName('intellect_good_4')], and [ShowTraitName('physique_good_4')] genetic traits"
+ MODIFIER_TYPE_NAME_higher_pure_blood_genetics_unlocked: "Higher Purity Blood Traits Unlocked"
+ MODIFIER_TYPE_DESC_higher_pure_blood_genetics_unlocked: "Characters in this country can now be born with [ShowTraitName('purer_blooded')] and [ShowTraitName('purest_blooded')] genetic traits"
 
  MODIFIER_TYPE_NAME_the_rut_enabled: "The Rut Enabled"
  MODIFIER_TYPE_DESC_the_rut_enabled: "About twice a decade a great heat overtakes the young members of this culture that drives them to mate. Effected characters gain increased [fertility|e] and locations gain increased [population_growth|e]"
@@ -180,6 +182,19 @@
  MODIFIER_TYPE_DESC_local_calaquendi_food_consumption: "TODO : Write a desc"
  MODIFIER_TYPE_NAME_global_calaquendi_food_consumption: "Global Calaquendi Food Consumption"
  MODIFIER_TYPE_DESC_global_calaquendi_food_consumption: "TODO : Write a desc"
+
+ MODIFIER_TYPE_NAME_dynastic_marriage_disabled: "[ShowCharacterInteractionName('marry_dynasty_members')] [character_interaction|e] disabled"
+ MODIFIER_TYPE_DESC_dynastic_marriage_disabled: "TODO : Write a desc"
+ MODIFIER_TYPE_NAME_dynastic_marriage_enabled: "[ShowCharacterInteractionName('marry_dynasty_members')] [character_interaction|e] enabled"
+ MODIFIER_TYPE_DESC_dynastic_marriage_enabled: "TODO : Write a desc"
+ MODIFIER_TYPE_NAME_close_or_extended_family_marriage_banned: "Marriage between close or extended family members is banned"
+ MODIFIER_TYPE_DESC_close_or_extended_family_marriage_banned: "TODO : Write a desc"
+ MODIFIER_TYPE_NAME_cousin_marriage_allowed: "Marriage between cousins is permitted"
+ MODIFIER_TYPE_DESC_cousin_marriage_allowed: "TODO : Write a desc"
+ MODIFIER_TYPE_NAME_uncle_aunt_niece_nephew_marriage_allowed: "Marriage between Aunts/Uncles and Nieces/Nephews is permitted"
+ MODIFIER_TYPE_DESC_uncle_aunt_niece_nephew_marriage_allowed: "TODO : Write a desc"
+ MODIFIER_TYPE_NAME_no_family_marriage_restrictions: "There are no familial relationship restrictions on marriage"
+ MODIFIER_TYPE_DESC_no_family_marriage_restrictions: "TODO : Write a desc"
 
 
  STATIC_MODIFIER_NAME_lesser_religious_influence_bonus: "Lesser increase in the Divine Spark's Favor"

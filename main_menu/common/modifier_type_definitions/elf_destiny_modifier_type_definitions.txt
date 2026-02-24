@@ -2117,6 +2117,13 @@ tier_4_genetics_unlocked={
 	}
 }
 
+higher_pure_blood_genetics_unlocked={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
 higher_chance_of_rare_genetic_beauty_traits={
 	boolean=yes
 	game_data={
@@ -2167,6 +2174,48 @@ blue_eyecolor_modifier={
 }
 
 purple_eyecolor_modifier={
+	boolean=yes
+	game_data={
+		category=character
+	}
+}
+
+dynastic_marriage_disabled={
+	boolean=yes
+	game_data={
+		category=character
+	}
+}
+
+dynastic_marriage_enabled={
+	boolean=yes
+	game_data={
+		category=character
+	}
+}
+
+close_or_extended_family_marriage_banned={
+	boolean=yes
+	game_data={
+		category=character
+	}
+}
+
+cousin_marriage_allowed={
+	boolean=yes
+	game_data={
+		category=character
+	}
+}
+
+uncle_aunt_niece_nephew_marriage_allowed={
+	boolean=yes
+	game_data={
+		category=character
+	}
+}
+
+no_family_marriage_restrictions={
 	boolean=yes
 	game_data={
 		category=character

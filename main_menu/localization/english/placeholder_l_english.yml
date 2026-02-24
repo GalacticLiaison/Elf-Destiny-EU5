@@ -31,12 +31,6 @@
  aeluran_ADJ: "Aeluran"
  aeluran_desc: "Order of the Aeluran Weavers"
  
- elven_marriage: "Elven Marriage"
- elven_marriage_desc: "Elves allow multiple female spouses, reflecting their matriarchal tendencies."
- 
- elven_law_policy: "Fey Doctrine"
- elven_law_policy_desc: "The laws of the Elves are ancient."
-
  crown_estate_elven: "Feylord"
  nobles_estate_elven: "Eldar"
  burghers_estate_elven: "Craftsmen"

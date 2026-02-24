@@ -7,9 +7,21 @@
  receive_blessing_desc: "You have accumulated enough good will with the Divine Spark to seek a blessing from it!\n\nRetreat to your chambers and begin your meditations."
 
  ascension_events.2.title: "Ritual of The Divine Spark's Blessing"
- ascension_events.2.desc: "As you meditate, a familiar presence can be felt and you know the Divine Spark has cast its gaze upon you. Once again, you see countless possibilities flash before your eyes, fading just as quickly, leaving a single idea in their shadow.\n\n #bold \"Choose\" #!"
+ ascension_events.2.desc: "As you meditate, a familiar presence can be felt and you know the Divine Spark has cast its gaze upon you. Once again, you see countless possibilities flash before your eyes, fading just as quickly, leaving a single idea in their shadow.\n\n #yellow_titles \"Choose\"#!"
  the_rut_blessing_option: "My people will multiply across the land!"
  beguiling_nature_blessing_option: "Our grace shall ensnare lesser mortals!"
  heroic_courage_blessing_option: "We shall always stand tall! May our enemies cower!"
  noble_husbandry_blessing_option: "Our bloodlines will be without equal!"
  no_blessing_available: "No more blessings available"
+
+ ascension_events.21.title: "Divine Judgement"
+ ascension_events.21.desc: "#high . . .#!\n\nA familiar presence can be felt and you know the Divine Spark has cast its gaze upon you. You feel a strange emotion from it you haven't experienced before... it feels... judgemental?"
+ ascension_events.21.a: "Stand in silence."
+
+ ascension_events.211.title: "Divine Judgement"
+ ascension_events.211.desc: "#high . . .  . . .#!"
+ ascension_events.211.a: "Continue standing in silence."
+
+ ascension_events.212.title: "Divine Judgement"
+ ascension_events.212.desc: "#high . . .  . . .  . . . #yellow_titles *sigh*#!"
+ ascension_events.212.a: "p...praise the Spark.."

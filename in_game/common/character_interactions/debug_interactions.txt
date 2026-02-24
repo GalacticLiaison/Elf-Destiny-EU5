@@ -63,9 +63,10 @@
 
 	effect = {
 		scope:actor = {
-			trigger_event_non_silently = {
-				id = elf_destiny_misc.41
-			}
+			# trigger_event_non_silently = {
+			# 	id = elf_destiny_misc.41
+			# }
+			set_stability = 100
 		}
 
 		

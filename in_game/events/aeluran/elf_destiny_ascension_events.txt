@@ -282,3 +282,68 @@ ascension_events.2 = {
 		}
 	}
 }
+
+
+ascension_events.21 = {
+	type = country_event
+	title = ascension_events.21.title
+	desc = ascension_events.21.desc
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+	immediate = {
+
+	}
+	
+	option = {
+		name = ascension_events.21.a
+		trigger_event_silently = {
+			id = ascension_events.211
+		}
+	}
+}
+
+ascension_events.211 = {
+	type = country_event
+	title = ascension_events.211.title
+	desc = ascension_events.211.desc
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+	immediate = {
+
+	}
+	
+	option = {
+		name = ascension_events.211.a
+		trigger_event_silently = {
+			id = ascension_events.212
+		}
+	}
+}
+
+ascension_events.212 = {
+	type = country_event
+	title = ascension_events.212.title
+	desc = ascension_events.212.desc
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+	immediate = {
+
+	}
+	
+	option = {
+		name = ascension_events.212.a
+		add_religious_aspect = religious_aspect:familial_familiarity
+	}
+}

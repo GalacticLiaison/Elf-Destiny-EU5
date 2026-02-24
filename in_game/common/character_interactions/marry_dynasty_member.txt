@@ -1,0 +1,286 @@
+﻿# TODO: maybe we have it update the name dynamically with a customizable localization base don what is legally allowed
+# - maybe keep it "MArry Dynasty" but updated the description to inform the player the options are reflecting the current consangunity law
+
+# TODO: list that this interaction is unlocked in the law itself
+
+marry_dynasty_members = { 
+
+	sound = UI_action_character_marry_noble
+
+	is_consort_action = yes
+	on_own_nation = yes
+	# on_other_nation = yes
+	context_menu_click_mode = click # Disable confirm
+	
+	#commenting out the below temporarily in favour of hooking this to the effect scope
+	# sound = "event:/SFX/UI/Character/Unique/sfx_ui_character_arrange_marriage"
+	
+	message = yes
+	
+
+
+	potential = {
+		# scope:actor = {
+		# 	# OR = {
+		# 	# 	government_type = government_type:monarchy
+		# 	# 	succession_law = heir_selection:signoria_selection
+		# 	# 	succession_law = heir_selection:matrilineal_non_exclusive
+		# 	# }
+		# }
+	}
+	
+	ai_tick = daily
+	ai_tick_frequency = 120
+	
+	allow = {
+		scope:actor = {
+			NOT = {
+				has_policy = doctrine_consanguinity_dynastic
+			}
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = recipient
+		name = "choose_character"
+		column = {
+			data = name
+		}
+		visible = {
+			is_alive = yes
+		}
+		enabled = {
+			# is_eligible_for_royal_marriage = yes
+			character_can_marry_trigger = yes
+		}
+	}
+
+	select_trigger = {
+		top_widget = marry_noble_character_top
+		looking_for_a = character
+		source = actor
+		target_flag = target
+
+		interaction_source_list = {
+			if = {
+				limit = {
+					scope:actor = { has_policy = doctrine_consanguinity_restricted } # "Close-kin Taboo"
+				}
+				scope:recipient.dynasty = {
+					every_character_in_dynasty = {
+						limit = {
+							doctrine_consanguinity_restricted_trigger = yes
+							standard_marriage_check = yes
+						}
+						add_to_list = source
+					}
+				}
+			}
+			if = {
+				limit = {
+					scope:actor = { has_policy = doctrine_consanguinity_cousins } # "Cousin Marriage"
+				}
+				scope:recipient.dynasty = {
+					every_character_in_dynasty = {
+						limit = {
+							doctrine_consanguinity_cousins_trigger = yes
+							standard_marriage_check = yes
+						}
+						add_to_list = source
+					}
+				}
+			}
+			if = {
+				limit = {
+					scope:actor = { has_policy = doctrine_consanguinity_aunt_nephew_and_uncle_niece } # "Avunculate Marriage"
+				}
+				scope:recipient.dynasty = {
+					every_character_in_dynasty = {
+						limit = {
+							doctrine_consanguinity_aunt_nephew_and_uncle_niece_trigger = yes
+							standard_marriage_check = yes
+						}
+						add_to_list = source
+					}
+				}
+			}
+			if = {
+				limit = {
+					scope:actor = { has_policy = doctrine_consanguinity_unrestricted } # "Unrestricted Marriage"
+				}
+				scope:recipient.dynasty = {
+					every_character_in_dynasty = {
+						limit = {
+							standard_marriage_check = yes
+						}
+						add_to_list = source
+					}
+				}
+			}
+
+			## is_close_relative
+			# Is the character a close relative (Child, Parent, Sibling/Half-sibling, Nephew/Niece, Aunt/Uncle, Grandparent or Grandchild) of the target character?
+
+			 # "Close-kin Taboo"
+			# has_law = doctrine_consanguinity_cousins
+			# has_law = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+			# has_law = doctrine_consanguinity_unrestricted
+
+			# scope:recipient.dynasty = {
+			# 	every_character_in_dynasty = {
+			# 		limit = {					
+			# 			NOT = { is_same_gender = scope:recipient }
+			# 			NOT = { is_spouse_of = scope:recipient }
+			# 			character_can_marry_trigger = yes
+			# 		}
+			# 		add_to_list = source
+			# 	}
+			# }
+		}
+
+		name = "marry_noble_select_title"
+		none_available_msg_key = "marry_noble_no_characters"
+		column = {
+			data = character_info
+		}
+		visible = {
+			trigger_if = {
+				limit = { scope:actor = { has_policy = doctrine_consanguinity_restricted } } # "Close-kin Taboo"
+				doctrine_consanguinity_restricted_trigger = yes
+			}
+			trigger_else_if = {
+				limit = { scope:actor = { has_policy = doctrine_consanguinity_cousins } } # "Cousin Marriage"
+				doctrine_consanguinity_cousins_trigger = yes
+			}
+			trigger_else_if = {
+				limit = { scope:actor = { has_policy = doctrine_consanguinity_aunt_nephew_and_uncle_niece } } # "Avunculate Marriage"
+				doctrine_consanguinity_aunt_nephew_and_uncle_niece_trigger = yes
+			}
+			trigger_else = { # "Unrestricted Marriage"
+				
+			}
+
+
+			# Dynasty Check
+			exists = dynasty
+			dynasty = scope:recipient.dynasty
+
+			# NOT = { is_close_relative = scope:recipient } # changed
+
+
+			# Basic Checks
+			modifier:blocked_from_character_interactions = no
+			standard_marriage_check = yes
+			# NOT = { is_same_gender = scope:recipient }
+			# NOT = { is_spouse_of = scope:recipient }
+			# character_can_marry_trigger = yes
+		}
+
+		enabled = {
+			always = yes
+		}
+	}
+	
+	effect = {
+		if = {	
+			limit = {
+				exists = scope:recipient
+				exists = scope:target
+			}
+			scope:recipient = {
+				marry_character = scope:target
+			}
+		}
+		
+		if = {	
+			limit = {
+				scope:actor ?= { NOT = { has_estate_privilege = estate_privilege:noble_marriage_rights } }
+			}
+			scope:actor = {
+				add_legitimacy = legitimacy_mild_penalty
+			}
+		}
+		if = {
+			limit = {
+				scope:recipient = character:vij_bukka_raya_sangama
+			}
+			scope:target = {
+				add_to_list = bukka_raya_previous_spouses
+			}
+		}
+	}
+
+	ai_will_do = {
+		# We treat scope:recipient as the important character. This will be evaluated both ways though
+		
+		
+		add = {
+			if= {
+				limit = {
+					scope:recipient ?= {
+						is_married = yes
+					}
+				}
+				value = -1000
+			}
+		}
+		
+
+		# Old rulers must get married
+		add = {
+			if = {
+				limit = {
+					scope:recipient = {
+						is_ruler = yes
+					}
+				}
+				value = scope:recipient.age_in_years
+				subtract = 30 # This gives a few years to try to find diplomatic marriages first
+				multiply = 5
+			}
+		}
+		# Old heirs must get married
+		add = {
+			if = {
+				limit = {
+					scope:recipient = {
+						OR = {
+							is_heir = yes
+							AND = {
+								exists = father
+								father = {
+									is_ruler = yes
+								}
+							}
+							AND = {
+								exists = mother
+								mother = {
+									is_ruler = yes
+								}
+							}
+						}
+					}
+				}
+				value = scope:recipient.age_in_years
+				subtract = 30 # This gives a few years to try to find diplomatic marriages first
+				multiply = 5
+			}
+		}
+
+		add = {
+			if = {
+				limit = {
+					scope:target = {
+						is_female = yes
+						age_in_years = 35 # Pregnancy threshold
+					}
+				}
+				value = 35
+				subtract = scope:target.age_in_years
+				multiply = 10
+			}
+		}
+	}
+}	

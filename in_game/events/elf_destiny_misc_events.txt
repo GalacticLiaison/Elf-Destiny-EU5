@@ -274,11 +274,11 @@ elf_destiny_misc.41 = { # Two new members join
 	option = {
 		name = elf_destiny_misc.41.a
 
-		scope:new_calaquendi_1 = {
+		scope:new_calaquendi_1 ?= {
 			move_country = root
 		}
 
-		scope:new_calaquendi_2 = {
+		scope:new_calaquendi_2 ?= {
 			move_country = root
 		}
 	}
