@@ -79,6 +79,10 @@
  elf_destiny_expedition.31.a: "Touch the artifact"
  elf_destiny_expedition.31.b: "Close the chest"
 
+ gain_honor_of_the_fay_research_tooltip: "Gain the [ShowAdvanceName('honor_of_the_fay')] [advance|e]"
+ gain_beast_tamers_research_tooltip: "Gain the [ShowAdvanceName('beast_tamers')] [advance|e]"
+ gain_mythril_working_research_tooltip: "Gain the [ShowAdvanceName('mythril_working')] [advance|e]"
+
  elf_destiny_expedition.321.title: "The Grand Portal: Spark Capacitor"
  elf_destiny_expedition.321.desc: "You have recovered a vital component needed to restore the Grand Portal. This piece is intricately crafted and hums with latent energy. With this, we are one step closer to reopening the gateway for the Elven people to return."
  elf_destiny_expedition.321.a: "A wondrous discovery!"

@@ -1,8 +1,7 @@
 localization overall
 Clean up the damn error log
 
-# genetic traits
-- maybe make a tooltip game concept that lists the possible bloodlines that are obtainable
+
 
 elf starting debt
 - increase peasant pop in every location under 5k
@@ -22,8 +21,43 @@ maybe a calaquendi privilege that speeds up the cooldown on call parliament!
 Make sure all unlockabales are gated behind the unlock and also can be unlocked
 - make sure for example mythril gets an expedition event
 
-# investigate what you got going on with laws
-- do you need to work on marriage laws?
+
+Space out story events
+
+add costs to
+    - blessings
+    - ascension
+    - expeditions
 
 maybe final testing of expeditions
 - havent checked in on elixir event in a while
+- fancy up artifact art?
+- rewire up the questline to require the artifacts
+
+set default consag laws
+
+
+# Important game Concepts to make and seed into localization
+- genetic trait
+- racial trait
+- bloodline
+- ascension
+- divine spark
+
+What if for expedition unlocked advances, they start in the tree as ???
+ - Images may not be changeable but localization should be
+
+
+ Character Modifiers
+ - realm Lord
+ - extraordinarily humble
+
+
+ Test Ascension threshold gates
+
+
+ Test human expeidition path, elf transform broke
+
+ lock purer-blood+ behind religious aspect
+ make sure to include immediate family in Dynastic marriage regardless of dynasty
+ update noble marriage to use consanguinity laws 

@@ -59,6 +59,25 @@ scripted_effect choose_blessing_option = {
 		0 = {
 			modifier = {
 				add = 100
+				has_policy = doctrine_consanguinity_unrestricted
+				NOT = {
+					has_religious_aspect = religious_aspect:familial_familiarity
+				}
+				NOT = {
+					AND = {
+						exists = scope:blessing_option_1
+						scope:blessing_option_1 = flag:familial_familiarity
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = blessing_option_$option$
+				value = flag:familial_familiarity
+			}
+		}
+		0 = {
+			modifier = {
+				add = 100
 				NOT = {
 					has_religious_aspect = religious_aspect:beguiling_nature
 				}
@@ -114,6 +133,12 @@ scripted_effect receive_blessing = {
 			scope:blessing_option_$option$ = flag:beguiling_nature
 		}
 		add_religious_aspect = religious_aspect:beguiling_nature
+	}
+	else_if = {
+		limit = {
+			scope:blessing_option_$option$ = flag:familial_familiarity
+		}
+		add_religious_aspect = religious_aspect:familial_familiarity
 	}
 }
 
@@ -258,6 +283,32 @@ ascension_events.2 = {
 		if = {
 			limit = {
 				scope:blessing_option_1 = flag:heroic_courage
+			}
+			receive_blessing = {option = 1}
+		}
+		else = {
+			receive_blessing = {option = 2}
+		}
+	}
+
+	option = {
+		name = familial_familiarity_blessing_option
+		trigger = {
+			OR = {
+				AND = {
+					exists = scope:blessing_option_1
+					scope:blessing_option_1 = flag:familial_familiarity
+				}
+				AND = {
+					exists = scope:blessing_option_2
+					scope:blessing_option_2 = flag:familial_familiarity
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				scope:blessing_option_1 = flag:familial_familiarity
 			}
 			receive_blessing = {option = 1}
 		}

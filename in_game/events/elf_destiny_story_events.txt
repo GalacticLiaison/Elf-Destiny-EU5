@@ -57,7 +57,18 @@ elf_destiny_story.99 = {
 elf_destiny_story.1 = {
 	type = country_event
 	title = elf_destiny_story.1.title
-	desc = elf_destiny_story.1.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = elf_destiny_story.1.desc.elven
+				trigger = {
+                    culture = { has_culture_group = culture_group:elven_culture_group}
+				}
+			}
+			desc = elf_destiny_story.1.desc
+		}
+	}
+
 	trigger = {
 
 	}
@@ -70,20 +81,15 @@ elf_destiny_story.1 = {
 	image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
 	immediate = {
-		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
-
-		# if = {
-		# 	limit = {
-		# 		any_country = {
-		# 			is_ai = no
-		# 		}
-		# 	}
-
-		# 	debug_log = "elf_destiny_story.1 Player countries exist!"
-		# }
-		# else = {
-		# 	debug_log = "elf_destiny_story.1 Player countries DONT exist!"
-		# }
+		if = {
+			limit = {
+				culture = { has_culture_group = culture_group:elven_culture_group}
+			}
+			save_scope_value_as = {
+				name = already_elven
+				value = yes
+			}
+		}
 	}
 	
 	option = {
@@ -99,7 +105,19 @@ elf_destiny_story.1 = {
 elf_destiny_story.11 = {
 	type = country_event
 	title = elf_destiny_story.11.title
-	desc = elf_destiny_story.11.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = elf_destiny_story.11.desc.elven
+				trigger = {
+                    exists = scope:already_elven
+					scope:already_elven = yes
+				}
+			}
+			desc = elf_destiny_story.11.desc
+		}
+	}
+
 	trigger = {
 
 	}
@@ -126,22 +144,26 @@ elf_destiny_story.11 = {
 		
 		trigger_event_silently = {
 			id = elf_destiny_story.2
-		}	
-
-        # unlock sponsor expedition character action
-		set_variable = {
-			name = expeditions_unlocked
-			value = yes
 		}
 	}
 
 	option = {
+		trigger = {
+			NOT = {
+				culture = { has_culture_group = culture_group:elven_culture_group}
+			}
+		}
 		name = elf_destiny_story.11.b
 	}
 
+	option = {
+		trigger = {
+			culture = { has_culture_group = culture_group:elven_culture_group}
+		}
+		name = elf_destiny_story.11.b.elves
+	}
+
 }
-
-
 
 # Julia returns with a chest, she opens it to reveal a amulet she found on the neck of a long dead elf emperor, touch it
 elf_destiny_story.2 = {
@@ -211,7 +233,20 @@ elf_destiny_story.21 = {
 elf_destiny_story.22 = {
 	type = country_event
 	title = elf_destiny_story.22.title
-	desc = elf_destiny_story.22.desc
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = elf_destiny_story.22.desc.elven
+				trigger = {
+                    exists = scope:already_elven
+					scope:already_elven = yes
+				}
+			}
+			desc = elf_destiny_story.22.desc
+		}
+	}
+	
 	trigger = {
 
 	}
@@ -230,9 +265,28 @@ elf_destiny_story.22 = {
 		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
 
 	}
+
+	option = {
+		name = elf_destiny_story.22.elven
+		trigger = {
+			exists = scope:already_elven
+			scope:already_elven = yes
+		}
+
+		trigger_event_silently = {
+			id = elf_destiny_story.23
+		}
+	}
 	
 	option = {
 		name = elf_destiny_story.22.convert
+
+		trigger = {
+			NOT = {
+				exists = scope:already_elven
+				scope:already_elven = yes
+			}
+		}
 
 		trigger_event_silently = {
 			id = elf_destiny_story.23
@@ -276,6 +330,13 @@ elf_destiny_story.22 = {
 	option = {
 		name = elf_destiny_story.22.dontConvert
 
+		trigger = {
+			NOT = {
+				exists = scope:already_elven
+				scope:already_elven = yes
+			}
+		}
+
 		custom_tooltip = {
 			text = all_locations_embrace_elven_institution
 			every_province = {
@@ -297,7 +358,20 @@ elf_destiny_story.22 = {
 elf_destiny_story.23 = {
 	type = country_event
 	title = elf_destiny_story.23.title
-	desc = elf_destiny_story.23.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = elf_destiny_story.23.desc.elven
+				trigger = {
+                    ruler = {
+						is_any_elf_type = yes
+					}
+				}
+			}
+			desc = elf_destiny_story.23.desc
+		}
+	}
+
 	trigger = {
 
 	}
@@ -313,13 +387,51 @@ elf_destiny_story.23 = {
 	image = "gfx/interface/illustrations/event/backgrounds/realm_lord_sigil.dds"
 
 	immediate = {
-		every_character = {
-			assign_racial_trait = { trait = elf_tier_2 }
+		if = {
+			limit = {
+				ruler = {
+					is_any_elf_type = yes
+				}
+			}
+			every_character = {
+				ascension_effect = yes
+			}
+		}
+		else = {
+			every_character = {
+				assign_racial_trait = { trait = elf_tier_2 }
+			}
 		}
 	}
 	
 	option = {
 		name = elf_destiny_story.23.a
+		
+		if = {
+			limit = {
+				ruler = {
+					is_any_elf_type = yes
+				}
+			}
+			custom_tooltip = {
+				text = all_character_ascend
+			}
+		}
+		else = {
+			# unlock sponsor expedition character action
+			custom_tooltip = {
+				text = entire_court_turned_into_elves
+			}
+
+			custom_tooltip = {
+				text = unlock_expedition_character_action_tooltip
+				set_variable = {
+					name = expeditions_unlocked
+					value = yes
+				}
+			}
+		}
+
 
 		if = {
 			limit = {
@@ -330,11 +442,28 @@ elf_destiny_story.23 = {
 			}	
 		}
 		else = {
-			trigger_event_silently = {
-				id = elf_destiny_story.3
-			}	
+			if = {
+				limit = {
+					NOR = {
+						has_reform = government_reform:elven_superiority
+						has_reform = government_reform:open_hearted
+					}
+				}
+				trigger_event_silently = {
+					id = elf_destiny_story.3
+				}	
+			}
+			else = {
+				set_global_variable = {
+					name = human_relations_chosen
+					value = yes
+				}
+				trigger_event_silently = {
+					id = elf_destiny_story.4
+				}
+			}
 		}
-
+		
 	}
 }
 
@@ -364,13 +493,30 @@ elf_destiny_story.24 = {
 	option = {
 		name = elf_destiny_story.24.a
 
-		trigger_event_silently = {
-			id = elf_destiny_story.3
+		if = {
+			limit = {
+				NOR = {
+					has_reform = government_reform:elven_superiority
+					has_reform = government_reform:open_hearted
+				}
+			}
+			trigger_event_silently = {
+				id = elf_destiny_story.3
+			}	
+		}
+		else = {
+			set_global_variable = {
+				name = human_relations_chosen
+				value = yes
+			}
+			trigger_event_silently = {
+				id = elf_destiny_story.4
+			}
 		}
 	}
 }
 
-elf_destiny_story.3 = {
+elf_destiny_story.3 = { # A choice of Dreams
 	type = country_event
 	title = elf_destiny_story.3.title
 	desc = elf_destiny_story.3.desc
@@ -462,7 +608,18 @@ elf_destiny_story.4 = {
 elf_destiny_story.41 = {
 	type = country_event
 	title = elf_destiny_story.41.title
-	desc = elf_destiny_story.41.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = elf_destiny_story.41.desc.elven
+				trigger = {
+					exists = scope:already_elven
+					scope:already_elven = yes
+				}
+			}
+			desc = elf_destiny_story.41.desc
+		}
+	}
 	trigger = {
 
 	}
@@ -531,7 +688,17 @@ elf_destiny_story.42 = {
 elf_destiny_story.43 = {
 	type = country_event
 	title = elf_destiny_story.43.title
-	desc = elf_destiny_story.43.desc
+		desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = elf_destiny_story.43.desc.elven
+				trigger = {
+					religion = religion:aeluran
+				}
+			}
+			desc = elf_destiny_story.43.desc
+		}
+	}
 	trigger = {
 
 	}
@@ -550,6 +717,11 @@ elf_destiny_story.43 = {
 	
 	option = {
 		name = elf_destiny_story.43.a
+		trigger = {
+			NOT = {
+				religion = religion:aeluran
+			}
+		}
 
 		change_religion = religion:aeluran
 		custom_tooltip = {
@@ -568,11 +740,24 @@ elf_destiny_story.43 = {
         # trigger_event_silently = {
 		# 	id = elf_destiny_story.4
 		# }	
+
+	}
+	option = {
+		name = elf_destiny_story.43.a.elven
+		trigger = {
+			religion = religion:aeluran
+		}
 	}
 
 	option = {
+		trigger = {
+			NOT = {
+				religion = religion:aeluran
+			}
+		}
 		name = elf_destiny_story.43.b
 	}
+
 }
 
 # Transport Portal

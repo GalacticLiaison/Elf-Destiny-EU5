@@ -4,12 +4,15 @@
 
  elf_destiny_story.1.title: "What Is an Archaeologist?"
  elf_destiny_story.1.desc: "Your steward approaches with a worried look. \n\"My liege, an odd woman has arrived seeking an audience—she calls herself Julia Melwood and claims to be a trained archaeologist. I'm fairly sure she's made that title up.\" You both watch as the self‑proclaimed expert knocks over a vase. \n\nYour steward shakes their head. \"She claims to have found a discovery concerning the Elves. As far as I'm concerned, they're nothing more than children's fairy tales, but she was insistent, so I thought it best to bring her to you. What shall I tell her?\""
+ elf_destiny_story.1.desc.elven: "Your steward approaches with a worried look. \n\"My liege, an odd woman has arrived seeking an audience—she calls herself Julia Melwood and claims to be a trained archaeologist. I'm fairly sure she's made that title up.\" You both watch as the self‑proclaimed expert knocks over a vase. \n\nYour steward shakes their head. \"She claims to have found a discovery concerning our Elven ancestors. Doubtful a Human would discover anything truly novel but she was quite insistent so I thought it best to bring her to you. What shall I tell her?\""
  elf_destiny_story.1.a: "I would know the truth of this—see her in!"
  
  elf_destiny_story.11.title: "Expedition to the Elven Ruins"
- elf_destiny_story.11.desc: "The young woman approaches while your steward waves her over. \"M'lord, I am Julia Melwood, one of the best archaeologists in my field, if I may be so bold.\" #weak You glance at your steward, who looks unimpressed.#! She unrolls a parchment on the table; strange script lines the borders. \n\"I study traces our ancestors left behind—my specialty is the mysterious Elven people. The few artifacts suggest they were highly advanced, perhaps more so than us, and may have endured for hundreds, perhaps even #EMP thousands #!of years. This map is covered in Elven script I cannot decipher, but it marks possible locations of the fortress‑tomb of the Last Elf Emperor. If real, it could hold treasures lost to time. I would mount an expedition, but I need funding. Will you help me?\""
+ elf_destiny_story.11.desc: "The young woman approaches while your steward waves her over. \"M'lord, I am Julia Melwood, one of the best archaeologists in my field, if I may be so bold.\" #weak You glance at your steward, who looks unimpressed.#! She unrolls a parchment on the table; strange script lines the borders. \n\"I study traces our ancestors left behind—my specialty is the mysterious Elven people. The few artifacts discovered suggest they were highly advanced, perhaps more so than us, and may have endured for hundreds, perhaps even #EMP thousands #!of years. This map is covered in Elven script I cannot decipher, but it marks possible locations of the fortress‑tomb of the Last Elf Emperor. If real, it could hold treasures lost to time. I would mount an expedition, but I need funding. Will you help me?\""
+ elf_destiny_story.11.desc.elven: "The young woman approaches while your steward waves her over. \"M'lord, I am Julia Melwood, one of the best archaeologists in my field, if I may be so bold.\" #weak You glance at your steward, who looks unimpressed.#! She unrolls a parchment on the table; strange script lines the borders. \n\"I study traces our ancestors left behind—my specialty is your people, the ancient Elves. I know much of the Elven heritage has been lost to time, and that those from millennia ago were possibly far more advanced than we are today. This map marks possible locations of the fortress‑tomb of the Last Elf Emperor. If real, it could hold treasures lost to time. I would mount an expedition, but I need funding. Will you help me?\""
  elf_destiny_story.11.a: "You have my support!"
  elf_destiny_story.11.b: "The Elves? Don't waste my time—nothing but a children's tale!"
+ elf_destiny_story.11.b.elves: "I would not have a human raid the crypts of my ancestors! Send her away!"
  
  elf_destiny_story.2.title: "A Radiant Discovery"
  elf_destiny_story.2.desc: "Word spreads through court: Julia, your hired archaeologist, has returned from her expedition in triumph. Your court fills the great hall as a beaming Julia turns to you and opens a small chest.\n\n\"I was right, my [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')]—those were Elven ruins: the tomb of an ancient Elven Emperor. We found many wondrous treasures, but none like this.\" In the chest lies a radiant amulet: a crystal that glows with unknown power. You feel drawn to it—a pull you can't resist."
@@ -21,15 +24,21 @@
  
  elf_destiny_story.22.title: "Visions of a Past Long Gone"
  elf_destiny_story.22.desc: "Amid the light, the presence fills your mind with visions of the past. You see how the great Elves once lived and feel the breadth of their emotions. You could follow this thread and take on their hopes and beliefs as your own.\n\nDo you adopt Elven culture and begin anew, or do you continue to evolve your current culture?"
- elf_destiny_story.22.convert: "I will adopt Elven culture."
+ elf_destiny_story.22.desc.elven: "Amid the light, the presence fills your mind with visions of the past. You see how the great Elves once lived and feel the breadth of their emotions. You could follow this thread and take on their hopes and beliefs as your own.
+ elf_destiny_story.22.elven: "Praise The Divine Spark!"
+ elf_destiny_story.22.convert: "I will adopt [ShowCultureName('elven_culture')] culture."
  elf_destiny_story.22.dontConvert: "I will forge a new Elvish people from my existing culture."
  all_characters_convert_to_elven: "All characters in [ROOT.GetCountry.GetName] embrace Elven culture"
  all_pops_convert_to_elven: "All pops in [ROOT.GetCountry.GetName] embrace Elven culture"
  
  elf_destiny_story.23.title: "A Surprising Transformation"
  elf_destiny_story.23.desc: "The light fades and the world snaps back into focus. You feel changed. Looking at Julia, you notice her ears have lengthened. You touch the tips of your own ears and realize the same. \n\n\"It seems we have been transformed into Elves—like the legendary people of old!\"\n\nWhat this means for you and your realm is yet to be seen."
+ elf_destiny_story.23.desc.elven: "The light fades and the world snaps back into focus. You feel changed. Looking at Julia, you notice her ears have lengthened, she has become an Elf! You touch the tips of your own ears and realize they have grown even longer. \n\nIt seems all present have ascended to a higher tier of Elven existence!"
  elf_destiny_story.23.a: "How Wondrous!"
- 
+ unlock_expedition_character_action_tooltip: "[ShowCharacterInteractionName('fund_expedition')] [character_interaction|e] unlocked for your [ruler|e]"
+ entire_court_turned_into_elves: "The entire court of [ROOT.GetCountry.GetName] has been transformed into [ShowTraitName('elf_tier_2')]!"
+ all_character_ascend: "All characters in [ROOT.GetCountry.GetName] have Ascended to a higher tier of Elf!"
+
  elf_destiny_story.24.title: "A Twist of Destiny"
  elf_destiny_story.24.desc: "Reports flood in: it wasn't just your court—[ROOT.GetCountry.GetName] has been transformed. How will the people adapt to such a monumental change? Will you reach new heights, or will enemies exploit the chaos? The fate of your realm lies in your hands."
  elf_destiny_story.24.a: "A New Age For [ROOT.GetCountry.GetName]!"
@@ -45,7 +54,8 @@
   
  elf_destiny_story.41.title: "Crimson Visitors"
  elf_destiny_story.41.desc: "You enter the council room to find two Aeluran Sisters waiting. Their embroidered dresses and ageless beauty render you speechless until the junior clears her throat. \n\n\"M'[ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], you have the privilege of standing before Mistress [portrait_1.GetFirstNameWithNoTooltip], High Matriarch of the Aeluran Weavers.\" \n\nOn cue, the other woman steps forward with effortless grace; her youthful face somehow projects wisdom. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], our arrival is unexpected, but we come about a matter of great importance. I felt the release of divine energy a short time ago; finding you—an elf in human lands—confirms my suspicions. I know you have found the Sigil of the Realm Lord.\""
- elf_destiny_story.41.a: "How do you know of this?"
+ elf_destiny_story.41.desc.elven: "You enter the council room to find two Aeluran Sisters waiting. Their embroidered dresses and ageless beauty render you speechless until the junior clears her throat. \n\n\"M'[ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], you have the privilege of standing before Mistress [portrait_1.GetFirstNameWithNoTooltip], High Matriarch of the Aeluran Weavers.\" \n\nOn cue, the other woman steps forward with effortless grace; her youthful face somehow projects wisdom. \n\n\"My [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], our arrival is unexpected, but we come about a matter of great importance. I felt the release of divine energy a short time ago; I know you have found the Sigil of the Realm Lord.\""
+ elf_destiny_story.41.a: "How could you know of this?"
   
  elf_destiny_story.42.title: "Crimson Visitors"
  elf_destiny_story.42.desc: "\"I am not here to take it from you,\" the Matriarch says, her song‑like voice drawing you close. \"The sigil reacts only to those it deems worthy. Possessing it marks you as the undisputed #bold Elf Lord #!of this world.\n\nIn ancient times, Elves and Humans came here through a great portal. Empires rose and fell; once, the Elven emperor—whose sigil you found—was overthrown in a massive rebellion. Most Elves were slain or forced to flee back through the portal, leaving this world behind. A small number remained in the wilds, living in peace. After the Great Exodus, rebels destroyed vital components of the portal and our gateway to the other realms was lost.\n\nMy [ROOT.GetCountry.GetGovernment.GetRuler.Custom('GetLadyLord')], the sigil choosing you now is no coincidence. It confirms the Divine Spark's will. It is time to restore the Grand Portal and welcome the Elven people back to this world!\""
@@ -53,8 +63,10 @@
  
  elf_destiny_story.43.title: "Crimson Visitors"
  elf_destiny_story.43.desc: "\"It is indeed! You will need to find replacements for the destroyed portal components. I have learned such things were rare, yet still available in the days of old. You must continue your expeditions of ancient Elven sites and find the parts we need.\" She finishes, motioning the younger Sister to lay a map out on the table. \"We have brought maps with us; They detail some newly discovered Elven ruins for you to investigate.\" [portrait_1.GetFirstNameWithNoTooltip] looks deep into your eyes. \"The world's fate lies in your hands. I do not say that lightly.\"\n\n\"Before we make the long journey back to our sanctum in the North, I have one additional matter to discuss with you. It is customary of all Elven Lords across all realms to accept the Divine Spark as the true guiding force of the universe. Furthermore, the Sisters of The Aeluran Weavers are seen as the shepherds of its will. I implore you to accept The Order into your lands, to advise and further the interests of the Divine Spark.\" "
+ elf_destiny_story.43.desc.elven: "\"It is indeed! You will need to find replacements for the destroyed portal components. I have learned such things were rare, yet still available in the days of old. You must continue your expeditions of ancient Elven sites and find the parts we need.\" She finishes, motioning the younger Sister to lay a map out on the table. \"We have brought maps with us; They detail some newly discovered Elven ruins for you to investigate.\" [portrait_1.GetFirstNameWithNoTooltip] looks deep into your eyes. \"The world's fate lies in your hands. I do not say that lightly.\""
  elf_destiny_story.43.a: "I would be honored to welcome the Aeluran Sisters into my realm."
  elf_destiny_story.43.b: "I would not have my realm run by the red witches!"
+ elf_destiny_story.43.a.elven: "We will not fail!"
  all_characters_convert_to_aeluran: "All characters in [ROOT.GetCountry.GetName] convert to Aeluran"
  all_pops_convert_to_aeluran: "All pops in [ROOT.GetCountry.GetName] convert to Aeluran"
 

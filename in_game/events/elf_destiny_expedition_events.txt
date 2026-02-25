@@ -734,7 +734,7 @@ elf_destiny_expedition.3 = {
 
         add_prestige = 25
         add_gold = {
-            value = scope:hre_leader.monthly_income_trade_and_tax
+            value = monthly_income_trade_and_tax
             multiply = 3.5
         }
 
@@ -884,12 +884,19 @@ elf_destiny_expedition.31 = {
                 exists = scope:elf_tradition 
                 scope:elf_tradition = flag:people_of_the_bow 
             }
-             research_advance = advance_type:honor_of_the_fay
+            custom_tooltip = {
+                text = gain_honor_of_the_fay_research_tooltip
+                research_advance = advance_type:honor_of_the_fay
+            }
         }
         if = {
             limit = { 
                 exists = scope:elf_tradition
                 scope:elf_tradition = flag:beast_tamers 
+            }
+            custom_tooltip = {
+                text = gain_beast_tamers_research_tooltip
+                research_advance = advance_type:beast_tamers
             }
             research_advance = advance_type:beast_tamers
         }
@@ -898,7 +905,10 @@ elf_destiny_expedition.31 = {
                 exists = scope:elf_tradition
                 scope:elf_tradition = flag:mythril_working 
             }
-            research_advance = advance_type:mythril_working
+            custom_tooltip = {
+                text = gain_mythril_working_research_tooltip
+                research_advance = advance_type:mythril_working
+            }
         }
     }
 

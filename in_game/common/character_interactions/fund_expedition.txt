@@ -6,6 +6,7 @@
 
 	# price = price:abdicate_price
 	price = price:expedition_price
+	price = 0
 	
 	
 	price_modifier = {
