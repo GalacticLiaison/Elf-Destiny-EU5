@@ -2180,6 +2180,13 @@ purple_eyecolor_modifier={
 	}
 }
 
+moon_skin_modifier={
+	boolean=yes
+	game_data={
+		category=character
+	}
+}
+
 dynastic_marriage_disabled={
 	boolean=yes
 	game_data={

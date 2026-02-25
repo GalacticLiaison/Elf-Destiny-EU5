@@ -88,6 +88,7 @@ royal_elf_thundarael = {
 		research_speed_modifier = 0.03
 		global_max_literacy = 3
 		carefulness_modifier = 0.1
+		moon_skin_modifier = yes
 	}
 
 	chance = {

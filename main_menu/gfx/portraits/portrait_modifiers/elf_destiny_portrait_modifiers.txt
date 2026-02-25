@@ -245,6 +245,42 @@ royal_elf_lormelis = {
 	}
 }
 
+royal_elf_thundarael = {
+	usage = game
+
+	no_royal_elf_thundarael = {
+		dna_modifiers = {
+
+		}
+		weight = {
+			base = 50
+			modifier = {
+				add = -50
+				has_genetic_trait = { trait = royal_elf_thundarael }
+			}
+		}
+	}
+
+	applied_royal_elf_thundarael = {
+		dna_modifiers = {
+			color = {
+				gene = skin_color
+				mode = replace
+
+				x = 0.0
+				y = 0.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 9999
+				has_genetic_trait = { trait = royal_elf_thundarael }
+			}
+		}
+	}
+}
+
 # height_increases = {
 # 	usage = game
 # 	no_increase = {

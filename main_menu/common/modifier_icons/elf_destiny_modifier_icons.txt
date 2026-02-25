@@ -317,6 +317,10 @@ purple_eyecolor_modifier = {
 	positive = "gfx/interface/icons/modifier_types/purple_eyecolor_modifier_icon.dds" 
 }
 
+moon_skin_modifier = {
+	positive = "gfx/interface/icons/modifier_types/moon_skin_modifier_icon.dds" 
+}
+
 local_the_rut_impact_modifier = {
 	positive = "gfx/interface/icons/disease/the_rut.dds"
 }

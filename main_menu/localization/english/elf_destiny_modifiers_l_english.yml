@@ -123,11 +123,13 @@
  MODIFIER_TYPE_DESC_ascending_into_fae_tier_unlocked: "The Portal re-opening has increased the ambient Spark levels on the planet. Characters are now able to ascend into higher Elven Tiers"
 
  MODIFIER_TYPE_NAME_silver_hair_modifier: "Character Has Silver Hair"
- MODIFIER_TYPE_DESC_silver_hair_modifier: "TODO : Write a desc"
+ MODIFIER_TYPE_DESC_silver_hair_modifier: "Their enchanting silver hair marks them as Valerith to all who lay their eyes upon them."
  MODIFIER_TYPE_NAME_blue_eyecolor_modifier: "Character Has Blue Eyes"
- MODIFIER_TYPE_DESC_blue_eyecolor_modifier: "TODO : Write a desc"
+ MODIFIER_TYPE_DESC_blue_eyecolor_modifier: "Their striking blue eyes mark them unmistakably as Lormelis, descendants of the legendary sea raiders of Atlantis."
  MODIFIER_TYPE_NAME_purple_eyecolor_modifier: "Character Has Purple Eyes"
- MODIFIER_TYPE_DESC_purple_eyecolor_modifier: "TODO : Write a desc"
+ MODIFIER_TYPE_DESC_purple_eyecolor_modifier: "Their piercing purple eyes mark them as Serelion to all who see them."
+ MODIFIER_TYPE_NAME_moon_skin_modifier: "Character Has Pale White Skin"
+ MODIFIER_TYPE_DESC_moon_skin_modifier: "Skin pale as moon marks a Thundarael."
 
  MODIFIER_TYPE_NAME_local_the_rut_impact_modifier: "Local The Rut Impact Modifier"
  MODIFIER_TYPE_DESC_local_the_rut_impact_modifier: "TODO : Write a desc"
