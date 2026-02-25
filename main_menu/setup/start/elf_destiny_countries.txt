@@ -46,6 +46,10 @@ countries = {
 				ruler = syl_seraphine_valerith
 
 				ruler_term = { character = syl_seraphine_valerith start_date = 1319.7.8 regnal_number = 1	}
+
+				laws = {
+					consanguinity_law = doctrine_consanguinity_unrestricted
+				}
 			}
 
 			dynasty = valerith_dynasty

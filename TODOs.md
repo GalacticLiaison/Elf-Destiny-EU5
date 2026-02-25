@@ -21,6 +21,7 @@ maybe a calaquendi privilege that speeds up the cooldown on call parliament!
 Make sure all unlockabales are gated behind the unlock and also can be unlocked
 - make sure for example mythril gets an expedition event
 
+white pale thundaraels
 
 Space out story events
 
@@ -37,12 +38,7 @@ maybe final testing of expeditions
 set default consag laws
 
 
-# Important game Concepts to make and seed into localization
-- genetic trait
-- racial trait
-- bloodline
-- ascension
-- divine spark
+Polish game concepts
 
 What if for expedition unlocked advances, they start in the tree as ???
  - Images may not be changeable but localization should be

@@ -1,6 +1,5 @@
 ﻿l_english:
- genetic_trait: "Genetic Trait"
- racial_trait: "Racial Trait"
+ genetic_trait: "[genetic_trait|e]"
 
  beauty_bad_1: "Homely"
  beauty_bad_1_die_desc: ""

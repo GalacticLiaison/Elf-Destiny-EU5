@@ -264,6 +264,7 @@ elf_destiny_misc_game_start_tweaks_effect = {
 
 		seed_calaquendi_estate_characters_effect = yes
 		seed_nobles_estate_characters_effect = yes # Elf countries dont start with nobles for whatever reason
+		set_initial_consanguinity_law = yes
 	}
 }
 
@@ -293,6 +294,17 @@ seed_nobles_estate_characters_effect = {
 		}
 		create_nobles_estate_character = {is_female = yes scope_name = new_calaquendi}
 		create_nobles_estate_character = {is_female = no scope_name = new_calaquendi}
+	}
+}
+
+set_initial_consanguinity_law = {
+	if = {
+		limit = {
+			NOT = {
+				has_law = consanguinity_law
+			}
+		}
+		add_policy = policy:doctrine_consanguinity_cousins
 	}
 }
 

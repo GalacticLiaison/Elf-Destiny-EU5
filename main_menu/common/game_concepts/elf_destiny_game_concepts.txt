@@ -1,0 +1,31 @@
+genetic_trait = { 
+	alias = { genetic_traits }
+	family = trait
+	texture = "gfx/interface/icons/flat_icons/ruler_trait.dds"
+}
+
+racial_trait = { 
+	alias = { racial_traits }
+	family = trait
+	texture = "gfx/interface/icons/flat_icons/ruler_trait.dds"
+}
+
+bloodline = { 
+	alias = { bloodlines bloodline_traits }
+	family = trait
+	texture = "gfx/interface/icons/flat_icons/ruler_trait.dds"
+}
+
+ascension = {
+    alias = { ascended }
+    texture = "gfx/interface/icons/flat_icons/ruler_trait.dds"
+}
+
+divine_spark = {
+    alias = {divine_spark }
+    texture = "gfx/interface/icons/flat_icons/ruler_trait.dds"
+}
+
+# grand_portal
+
+# spark as magic

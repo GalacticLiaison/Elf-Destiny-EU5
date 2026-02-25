@@ -8,6 +8,14 @@ government = {
 		parliament_type = elven_parliament
 	}
 
+    reforms = {
+        the_old_ways
+    }
+
+    laws = {
+        consanguinity_law = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+    }
+
     centralization_vs_decentralization = -5
     traditionalist_vs_innovative = -30
     spiritualist_vs_humanist = -50

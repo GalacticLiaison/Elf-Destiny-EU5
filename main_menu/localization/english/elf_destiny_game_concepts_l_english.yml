@@ -1,0 +1,21 @@
+﻿l_english:
+ game_concept_genetic_trait: "Genetic Trait"
+ game_concept_genetic_traits: "Genetic Traits"
+ game_concept_genetic_trait_desc: "Genetic traits are inherited characteristics that define an elf's physical and mental capabilities."
+
+ game_concept_racial_trait: "Racial Trait"
+ game_concept_racial_traits: "Racial Traits"
+ game_concept_racial_trait_desc: "Racial traits are inherent characteristics that all elves possess, shaping their identity and abilities."
+
+ game_concept_bloodline: "Bloodline"
+ game_concept_bloodlines: "Bloodlines"
+ game_concept_bloodline_traits: "Bloodline Traits"
+ game_concept_bloodline_desc: "Bloodlines are the ancestral lineages of elves, each carrying unique traits and legacies that influence their destiny."
+
+ game_concept_ascension: "Ascension"
+ game_concept_ascended: "Ascended"
+ game_concept_ascension_desc: "Ascension is the process by which an elf can transcend their mortal limitations, unlocking new powers and potential."
+
+ # Maybe use God Description instead of this?
+ game_concept_divine_spark: "The Divine Spark"
+ game_concept_divine_spark_desc: "The Divine Spark is a mystical essence that grants elves extraordinary abilities and a connection to the divine."

@@ -3,6 +3,6 @@
     religion = aeluran
 
     country_modifier = {
-        monthly_religious_influence = 0.2
+        # monthly_religious_influence = 0.2
     }
 }

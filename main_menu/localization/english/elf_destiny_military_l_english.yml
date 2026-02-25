@@ -1,26 +1,26 @@
 ﻿l_english:
  army_magi: "Magi"
- army_magi_desc: "TODO : Write a desc"
- army_magi_artillery: "Army magi artillery"
- army_magi_artillery_desc: "TODO : Write a desc"
+ army_magi_desc: "Powerful spark wielders who cast their magics to devastate the battlefield. They are suited both as artillery to destroy fortifications and as infantry to obliterate front lines."
+#  army_magi_artillery: "Army magi artillery"
+#  army_magi_artillery_desc: "TODO : Write a desc"
 
  a_age_1_aeluran_magi: "Aeluran Magi"
- a_age_1_aeluran_magi_desc: "TODO : Write a desc"
+ a_age_1_aeluran_magi_desc: "Sisters of the Aeluran Order, these magi are trained in the fundamentals of war magic and act as the backbone of the Aeluran forces."
 
  a_age_2_aeluran_magi: "Adept Aeluran Magi"
- a_age_2_aeluran_magi_desc: "TODO : Write a desc"
+ a_age_2_aeluran_magi_desc: "These Aeluran Magi have advanced their training and are now more skilled in the use of war magic."
 
  a_age_3_aeluran_magi: "Veteran Aeluran Magi"
- a_age_3_aeluran_magi_desc: "TODO : Write a desc"
+ a_age_3_aeluran_magi_desc: "These Aeluran Magi have gained extensive experience in battle and are highly effective in combat."
 
  a_age_4_aeluran_magi: "Elite Aeluran Magi"
- a_age_4_aeluran_magi_desc: "TODO : Write a desc"
+ a_age_4_aeluran_magi_desc: "These Aeluran Magi are the most skilled and powerful of their kind, capable of wielding devastating magic in battle."
 
  a_age_5_aeluran_magi: "Royal Aeluran Magi"
- a_age_5_aeluran_magi_desc: "TODO : Write a desc"
+ a_age_5_aeluran_magi_desc: "These Aeluran Magi are chosen by the Elven royalty to serve as their personal guardians and war mages."
 
  a_age_6_aeluran_magi: "Ascendant Aeluran Magi"
- a_age_6_aeluran_magi_desc: "TODO : Write a desc"
+ a_age_6_aeluran_magi_desc: "These Aeluran Magi have transcended the normal bounds of mortal magic, becoming almost divine in their power and influence."
 
  a_age_1_traditions_magi: "A age 1 traditions magi"
  a_age_1_traditions_magi_desc: "TODO : Write a desc"
@@ -36,7 +36,7 @@
  a_age_6_revolutions_magi_desc: "TODO : Write a desc"
 
  calaquendi_high_magi: "Calaquendi High Magi"
- calaquendi_high_magi_desc: "TODO : Write a desc"
+ calaquendi_high_magi_desc: "The most powerful magi of Elven society, the Calaquendi. They are revered as the pinnacle of magical prowess and are often called upon to lead armies and defend the realm with their formidable magic."
 
  army_magi_build: "Army Magi Build"
  army_magi_reinforce: "Army Magi Reinforce"
@@ -45,15 +45,15 @@
  early_magi_maintenance: "Early Magi Maintenance"
 
  a_early_fey_archers: "Fey Archers"
- a_early_fey_archers_desc: "TODO : Write a desc"
+ a_early_fey_archers_desc: "Fey Archers are skilled marksmen who use their agility and precision to strike from a distance. They are often deployed as skirmishers or to provide support for infantry units."
  a_fey_archers: "Veteran Fey Archers"
- a_fey_archers_desc: "TODO : Write a desc"
+ a_fey_archers_desc: "Veteran Fey Archers are more experienced and skilled in their craft, able to deliver more precise and powerful shots."
  a_late_fey_archers: "Elite Fey Archers"
- a_late_fey_archers_desc: "TODO : Write a desc"
+ a_late_fey_archers_desc: "Elite Fey Archers are the most skilled of their kind, capable of delivering devastating volleys of arrows with incredible accuracy."
  wolf_riders: "Wolf riders"
- wolf_riders_desc: "TODO : Write a desc"
+ wolf_riders_desc: "Feared throughout the realms of elf and men. Armored knights ride the back of monstrous wolves. They are known for their speed and ferocity in battle, often charging into enemy lines to disrupt formations and cause chaos."
  ranger_high_guard: "Ranger High Guard"
- ranger_high_guard_desc: "TODO : Write a desc"
+ ranger_high_guard_desc: "Ranger High Guard are elite Elven warriors usually recruited from the ranks of high nobility. They are highly skilled in both ranged and melee combat, and are often tasked with protecting important figures or locations."
 
  mythril_plated_horse_masters_construction: "Mythril Plated Horse Masters Construction"
  mythril_plated_horse_masters_maintenance: "Mythril Plated Horse Masters Maintenance"
@@ -61,6 +61,6 @@
  mythril_plated_fey_vanguard_maintenance: "Mythril Plated Fey Vanguard Maintenance"
 
  mythril_plated_fey_vanguard: "Mythril Plated Fey Vanguard"
- mythril_plated_fey_vanguard_desc: "TODO : Write a desc"
+ mythril_plated_fey_vanguard_desc: "Elite Elven warriors clad in mythril armor, the Fey Vanguard are known for their resilience and combat prowess. They serve as the frontline defenders of Elven forces, capable of withstanding heavy attacks while delivering powerful strikes against their enemies."
  mythril_plated_horse_masters: "Mythril Plated Horse Masters"
- mythril_plated_horse_masters_desc: "TODO : Write a desc"
+ mythril_plated_horse_masters_desc: "Elite Elven cavalry units clad in mythril armor that ride on the backs of armored horses. They are known for their speed, mobility, and ability to quickly respond to threats across the battlefield."
