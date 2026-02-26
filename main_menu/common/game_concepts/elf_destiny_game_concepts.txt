@@ -1,4 +1,4 @@
-genetic_trait = { 
+﻿genetic_trait = { 
 	alias = { genetic_traits }
 	family = trait
 	texture = "gfx/interface/icons/flat_icons/ruler_trait.dds"
@@ -22,7 +22,7 @@ ascension = {
 }
 
 divine_spark = {
-    alias = {divine_spark }
+    alias = { }
     texture = "gfx/interface/icons/flat_icons/ruler_trait.dds"
 }
 

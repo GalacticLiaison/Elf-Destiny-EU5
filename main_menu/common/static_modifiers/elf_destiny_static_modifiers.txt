@@ -623,6 +623,24 @@ the_rut_modifier = {
 	character_fertility = 100
 }
 
+extraordinarily_humble = {
+	game_data = {
+		category = country
+	}
+	monthly_prestige = 0.1
+}
+
+realm_lord = {
+	game_data = {
+		category = country
+	}
+
+	diplomatic_reputation = 1
+	subject_loyalty = 1
+	monthly_prestige = 0.25
+	stability_decay = -0.00025
+}
+
 true_realm_lord = {
 	game_data = {
 		category = country

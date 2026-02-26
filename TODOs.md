@@ -21,36 +21,27 @@ maybe a calaquendi privilege that speeds up the cooldown on call parliament!
 Make sure all unlockabales are gated behind the unlock and also can be unlocked
 - make sure for example mythril gets an expedition event
 
-white pale thundaraels
-
 Space out story events
 
 add costs to
     - blessings
     - ascension
-    - expeditions
 
 maybe final testing of expeditions
 - havent checked in on elixir event in a while
 - fancy up artifact art?
 - rewire up the questline to require the artifacts
 
-set default consag laws
-
-
 Polish game concepts
 
 What if for expedition unlocked advances, they start in the tree as ???
  - Images may not be changeable but localization should be
 
-
  Character Modifiers
  - realm Lord
  - extraordinarily humble
 
-
  Test Ascension threshold gates
-
 
  Test human expeidition path, elf transform broke
 

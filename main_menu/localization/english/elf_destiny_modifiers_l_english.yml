@@ -257,7 +257,11 @@
  STATIC_MODIFIER_NAME_royal_elf_daelurin: "Bloodline of House Daelurin"
  STATIC_MODIFIER_NAME_royal_elf_lormelis: "Bloodline of House Lormelis"
 
- STATIC_MODIFIER_NAME_true_realm_lord: "True Realm Lord"
+ STATIC_MODIFIER_NAME_extraordinarily_humble: "Extraordinarily Humble"
+ STATIC_MODIFIER_NAME_realm_lord: "Seat of the Realm Lord"
+ you_are_worthy: "Your ruler has touched the Sigil of the Realm lord and it has found them worthy."
+ STATIC_MODIFIER_NAME_true_realm_lord: "Seat of the True Realm Lord"
+ you_are_truly_worthy: "This world has been reconnected with the universe and you have earned the title your sigil bestows, you are a true Realm Lord."
 
 
  AUTO_MODIFIER_NAME_calaquendi_percentage_in_country: "Calaquendi Percentage In Country"

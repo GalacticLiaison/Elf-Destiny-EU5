@@ -36,7 +36,7 @@
  elf_destiny_story.23.desc.elven: "The light fades and the world snaps back into focus. You feel changed. Looking at Julia, you notice her ears have lengthened, she has become an Elf! You touch the tips of your own ears and realize they have grown even longer. \n\nIt seems all present have ascended to a higher tier of Elven existence!"
  elf_destiny_story.23.a: "How Wondrous!"
  unlock_expedition_character_action_tooltip: "[ShowCharacterInteractionName('fund_expedition')] [character_interaction|e] unlocked for your [ruler|e]"
- entire_court_turned_into_elves: "The entire court of [ROOT.GetCountry.GetName] has been transformed into [ShowTraitName('elf_tier_2')]!"
+ entire_court_turned_into_elves: "Every character in the court of [ROOT.GetCountry.GetName] has been transformed into an [ShowTraitName('elf_tier_2')]!"
  all_character_ascend: "All characters in [ROOT.GetCountry.GetName] have Ascended to a higher tier of Elf!"
 
  elf_destiny_story.24.title: "A Twist of Destiny"

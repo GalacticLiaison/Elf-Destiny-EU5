@@ -363,9 +363,8 @@ elf_destiny_story.23 = {
 			triggered_desc = {
 				desc = elf_destiny_story.23.desc.elven
 				trigger = {
-                    ruler = {
-						is_any_elf_type = yes
-					}
+					exists = scope:already_elven
+					scope:already_elven = yes
 				}
 			}
 			desc = elf_destiny_story.23.desc
@@ -389,9 +388,8 @@ elf_destiny_story.23 = {
 	immediate = {
 		if = {
 			limit = {
-				ruler = {
-					is_any_elf_type = yes
-				}
+				exists = scope:already_elven
+				scope:already_elven = yes
 			}
 			every_character = {
 				ascension_effect = yes
@@ -409,9 +407,8 @@ elf_destiny_story.23 = {
 		
 		if = {
 			limit = {
-				ruler = {
-					is_any_elf_type = yes
-				}
+				exists = scope:already_elven
+				scope:already_elven = yes
 			}
 			custom_tooltip = {
 				text = all_character_ascend
@@ -423,13 +420,19 @@ elf_destiny_story.23 = {
 				text = entire_court_turned_into_elves
 			}
 
-			custom_tooltip = {
-				text = unlock_expedition_character_action_tooltip
-				set_variable = {
-					name = expeditions_unlocked
-					value = yes
-				}
+		}
+		custom_tooltip = {
+			text = unlock_expedition_character_action_tooltip
+			set_variable = {
+				name = expeditions_unlocked
+				value = yes
 			}
+		}
+
+		add_country_modifier = {
+			modifier = realm_lord
+			mode = add_and_extend
+			desc = you_are_worthy
 		}
 
 
@@ -930,6 +933,15 @@ elf_destiny_story.53 = { # Portal Restored!
 			value = yes
 		}
 
+		
+		remove_country_modifier = realm_lord
+		add_country_modifier = {
+			modifier = true_realm_lord
+			mode = add_and_extend
+			desc = you_are_truly_worthy
+		}
+		
+
 		# TODO:  Restorer of the Portal modifier, maybe put in the mission as a reward
 
 		trigger_event_silently = {
@@ -991,5 +1003,9 @@ elf_destiny_story.54 = { # Thanks for Playing!
 
 	option = { # nothing
 		name = elf_destiny_story.54.d
+		add_country_modifier = {
+			modifier = extraordinarily_humble
+			mode = add_and_extend
+		}
 	}
 }
