@@ -2,3 +2,11 @@
     scaled_gold = 30
     manpower = 0.1
 }
+
+ascension_base_price = {
+    religious_influence = 50
+}
+
+blessing_base_price = {
+    religious_influence = 75
+}

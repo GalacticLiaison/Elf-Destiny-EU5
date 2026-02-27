@@ -9,9 +9,6 @@ receive_blessing = {
 	
 	ai_tick = never
 	ai_tick_frequency = 24
-	automation_tick = monthly
-	automation_tick_frequency = 6
-
 	automation_tick = never
 	automation_tick_frequency = 12
 	player_automated_category = religiousdoctrines
@@ -34,7 +31,11 @@ receive_blessing = {
 		}
 	}
 	
-	price = 0
+	price = price:blessing_base_price
+	price_modifier = {
+		value = 1
+		add = scope:actor.number_of_owned_blessings
+	}
 
 	select_trigger = {
 		looking_for_a = religion

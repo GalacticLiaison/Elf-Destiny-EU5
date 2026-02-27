@@ -9,7 +9,8 @@ greater_religious_influence_bonus = {
     game_data = {
 	    category = country
     }
-	monthly_religious_influence = 0.1
+	monthly_religious_influence = 0.5
+	maximum_religious_influence = 50
 }
 
 # standard_religious_influence_bonus = {
@@ -23,14 +24,16 @@ lesser_religious_influence_bonus = {
     game_data = {
 	    category = country
     }
-	monthly_religious_influence = 0.025
+	monthly_religious_influence = 0.1
+	maximum_religious_influence = 10
 }
 
 increased_aeluran_influence = {
     game_data = {
 	    category = country
     }
-	monthly_religious_influence = 0.05
+	monthly_religious_influence = 0.2
+	maximum_religious_influence = 25
 	clergy_estate_levy_size = 0.05
 	global_clergy_estate_power = 0.01
 }
@@ -639,6 +642,7 @@ realm_lord = {
 	subject_loyalty = 1
 	monthly_prestige = 0.25
 	stability_decay = -0.00025
+	global_crown_estate_power = 0.05
 }
 
 true_realm_lord = {
@@ -650,4 +654,5 @@ true_realm_lord = {
 	subject_loyalty = 3
 	monthly_prestige = 1
 	stability_decay = -0.001
+	global_crown_estate_power = 0.15
 }

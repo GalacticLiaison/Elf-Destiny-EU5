@@ -7,3 +7,32 @@
         add = 1
     }
 }
+
+number_of_owned_blessings = {
+    value = 0
+    if = {
+        limit = { has_religious_aspect = religious_aspect:noble_husbandry }
+        add = 1
+    }
+
+    if = {
+        limit = { has_religious_aspect = religious_aspect:heroic_courage }
+        add = 1
+    }
+ 
+    if = {
+        limit = { has_religious_aspect = religious_aspect:beguiling_nature }
+        add = 1
+    }
+ 
+    if = {
+        limit = { has_religious_aspect = religious_aspect:the_rut }
+        add = 1
+    }
+
+    if = {
+        limit = { has_religious_aspect = religious_aspect:familial_familiarity }
+        add = 1
+    }
+}
+

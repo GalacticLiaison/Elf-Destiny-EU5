@@ -98,6 +98,38 @@
 	}
 }
 
+ascension_price_solo = {
+	value = -50
+	if = {
+		limit = {
+			scope:actor = {
+				ruler ?= {
+					has_racial_trait = { trait = elf_tier_1 }
+				}
+			}
+		}
+		multiply = 0.5
+	}
+	else = {
+		multiply = scope:actor.ruler.ascension_price_multiplier_by_elf_level
+	}
+}
+
+ascension_price_family = {
+	value = ascension_price_solo
+	multiply = 1.5
+}
+
+ascension_price_family_positive = {
+	value = ascension_price_family
+	multiply = -1
+}
+
+ascension_price_multiplier_by_elf_level = {
+	value = elf_racial_score
+	subtract = 1
+}
+
 inherited_elf_racial_score = {
 	value = 0
 	add = father.elf_racial_score

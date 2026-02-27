@@ -53,6 +53,7 @@
  discovered_beast_tamers_tradition: "#high Discovered:#! The lost practice of beast taming. $go_on_expeditions$"
  discovered_mythril_working_tradition: "#high Discovered:#! The lost practice of mythril working. $go_on_expeditions$"
  grand_portal_has_been_restored: "The Grand Portal has been restored, and the ambient Spark in the world has increased"
+ cant_yet_enter_god_tier: "The method of Ascending to the ranks of the Ainur is known by very few. It is said one must first be chosen by the Divine Spark itself! \n\n#D It is also rumored by the dev that there is not currently anyway to reach this tier yet! Keep an eye out for a future patch! (or use the character editor)#!"
 
  ruler_is_fae_tier_or_higher: "This country's [ruler|e] must ascend to [ShowTraitName('elf_tier_4')] or higher"
  ruler_is_celestial_tier_or_higher: "This country's [ruler|e] must ascend to [ShowTraitName('elf_tier_7')] or higher"

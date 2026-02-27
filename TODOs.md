@@ -11,7 +11,6 @@ elf starting debt
 ## Grok localization
 - your really should consider putting most descriptions through Grok for formatting/grammar/readability suggestions
 
-
 some modifiers icons still need to be made
 
 maybe a calaquendi privilege that speeds up the cooldown on call parliament!
@@ -32,19 +31,22 @@ maybe final testing of expeditions
 - fancy up artifact art?
 - rewire up the questline to require the artifacts
 
-Polish game concepts
+polish game concepts
 
 What if for expedition unlocked advances, they start in the tree as ???
- - Images may not be changeable but localization should be
+ - would require making a custom gui component to pull it off right
 
- Character Modifiers
- - realm Lord
- - extraordinarily humble
+ Polish the Ascension event with better tooltips and what not, make it feel better
+ dynamic localization to explain threshold tiers!
+ maybe add a tip how to increase max religious influence
 
- Test Ascension threshold gates
 
- Test human expeidition path, elf transform broke
-
- lock purer-blood+ behind religious aspect
  make sure to include immediate family in Dynastic marriage regardless of dynasty
  update noble marriage to use consanguinity laws 
+
+
+ maybe aeluran clergy pop art
+
+ need elf tier in character tooltips
+
+ another stab at elf CoAs?

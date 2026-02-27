@@ -11,6 +11,9 @@ government = {
     reforms = {
         the_old_ways
     }
+	privilege = {
+		aeluran_advisors
+	}
 
     laws = {
         consanguinity_law = doctrine_consanguinity_aunt_nephew_and_uncle_niece

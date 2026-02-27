@@ -232,7 +232,10 @@ ascension_effect = {
 		}
 	}
 	else_if = {
-		limit = { has_racial_trait = { trait = elf_tier_9 } }
+		limit = { 
+			has_racial_trait = { trait = elf_tier_9 }
+			always = no # Cant yet Ascend into God Tier
+		}
 		upgrade_elf_racial_trait = {
 			old_level = 9
 			new_level = 10

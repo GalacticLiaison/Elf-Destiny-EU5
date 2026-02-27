@@ -403,66 +403,6 @@ character_db={
 		}
 	}
 
-	syl_seraphine_valerith_the_second = {
-		first_name = { name = name_seraphine }
-		culture = deepwood_elven_culture
-		religion = aeluran
-		female = yes
-		adm = 80 dip = 99 mil = 66
-		birth_date = 1333.1.1
-		birth = pelym
-		dynasty = valerith_dynasty
-		tag = SYL
-
-		# estate = nobles_estate
-		# father = syl_victaris_valerith
-		mother = syl_seraphine_valerith
-
-		timed_modifier = {
-			modifier = "elf_tier_2"
-			start_date = 1318.1.1
-			date = 9999.1.1
-			size = 1
-		}
-		timed_modifier = {
-			modifier = "royal_elf_valerith"
-			start_date = 1318.1.1
-			date = 9999.1.1
-			size = 1
-		}
-		timed_modifier = {
-			modifier = "beauty_good_3"
-			start_date = 1318.1.1
-			date = 9999.1.1
-			size = 1
-		}
-		timed_modifier = {
-			modifier = "intellect_good_1"
-			start_date = 1318.1.1
-			date = 9999.1.1
-			size = 1
-		}
-
-		timed_modifier = {
-			modifier = "pure_blooded"
-			start_date = 1318.1.1
-			date = 9999.1.1
-			size = 1
-		}
-		timed_modifier = {
-			modifier = "fecund"
-			start_date = 1318.1.1
-			date = 9999.1.1
-			size = 1
-		}
-		timed_modifier = {
-			modifier = "giant"
-			start_date = 1318.1.1
-			date = 9999.1.1
-			size = 1
-		}
-	}
-
 	bwd_belanor_valerith = {
 		first_name = { name = name_belanor }
 		culture = deepwood_elven_culture
@@ -871,12 +811,6 @@ character_db={
 		}
 		timed_modifier = {
 			modifier = "physique_good_3"
-			start_date = 1276.1.1
-			date = 9999.1.1
-			size = 1
-		}
-		timed_modifier = {
-			modifier = "giant"
 			start_date = 1276.1.1
 			date = 9999.1.1
 			size = 1

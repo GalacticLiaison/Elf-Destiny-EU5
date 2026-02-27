@@ -1,84 +1,50 @@
-﻿# blessing_1 = {
-# 	type = country
-
-# 	text = {
-# 		localization_key = the_rut_blessing_option
-# 		trigger = {
-# 			exists = scope:blessing_option_1
-# 			scope:blessing_option_1 = flag:the_rut
-# 		}
-# 	}
-
-# 	text = {
-# 		localization_key = beguiling_nature_blessing_option
-# 		trigger = {
-# 			exists = scope:blessing_option_1
-# 			scope:blessing_option_1 = flag:beguiling_nature
-# 		}
-# 	}
-
-#     text = {
-# 		localization_key = heroic_courage_blessing_option
-# 		trigger = {
-# 			exists = scope:blessing_option_1
-# 			scope:blessing_option_1 = flag:heroic_courage
-# 		}
-# 	}
-
-#     text = {
-# 		localization_key = noble_husbandry_blessing_option
-# 		trigger = {
-# 			exists = scope:blessing_option_1
-# 			scope:blessing_option_1 = flag:noble_husbandry
-# 		}
-# 	}
-
-# 	text = {
-# 		localization_key = no_blessing_available
-# 		fallback = yes
-# 	}
-# }
-
-# blessing_2 = {
-# 	type = country
-
-# 	text = {
-# 		localization_key = the_rut_blessing_option
-# 		trigger = {
-# 			exists = scope:blessing_option_2
-# 			scope:blessing_option_2 = flag:the_rut
-# 		}
-# 	}
-
-# 	text = {
-# 		localization_key = beguiling_nature_blessing_option
-# 		trigger = {
-# 			exists = scope:blessing_option_2
-# 			scope:blessing_option_2 = flag:beguiling_nature
-# 		}
-# 	}
-
-#     text = {
-# 		localization_key = heroic_courage_blessing_option
-# 		trigger = {
-# 			exists = scope:blessing_option_2
-# 			scope:blessing_option_2 = flag:heroic_courage
-# 		}
-# 	}
-
-#     text = {
-# 		localization_key = noble_husbandry_blessing_option
-# 		trigger = {
-# 			exists = scope:blessing_option_2
-# 			scope:blessing_option_2 = flag:noble_husbandry
-# 		}
-# 	}
-
-# 	text = {
-# 		localization_key = no_blessing_available
-# 		fallback = yes
-# 	}
-# }
+﻿AscensionResult = {
+	type = character
+	text = {
+		localization_key = ascended_to_elf_tier_2
+		trigger = { has_racial_trait = { trait = elf_tier_2 } }
+	}
+	text = {
+		localization_key = ascended_to_elf_tier_3
+		trigger = { has_racial_trait = { trait = elf_tier_3 } }
+	}
+	text = {
+		localization_key = ascended_to_elf_tier_4
+		trigger = { has_racial_trait = { trait = elf_tier_4 } }
+	}
+	text = {
+		localization_key = ascended_to_elf_tier_5
+		trigger = { has_racial_trait = { trait = elf_tier_5 } }
+	}
+	text = {
+		localization_key = ascended_to_elf_tier_6
+		trigger = { has_racial_trait = { trait = elf_tier_6 } }
+	}
+	text = {
+		localization_key = ascended_to_elf_tier_7
+		trigger = { has_racial_trait = { trait = elf_tier_7 } }
+	}
+	text = {
+		localization_key = ascended_to_elf_tier_8
+		trigger = { has_racial_trait = { trait = elf_tier_8 } }
+	}
+	text = {
+		localization_key = ascended_to_elf_tier_9
+		trigger = { has_racial_trait = { trait = elf_tier_9 } }
+	}
+	text = {
+		localization_key = ascended_to_elf_tier_10
+		trigger = { has_racial_trait = { trait = elf_tier_10 } }
+	}
+	text = {
+		localization_key = ascended_to_elf_tier_11
+		trigger = { has_racial_trait = { trait = elf_tier_11} }
+	}
+	text = {
+		localization_key = ascended_to_elf_tier_12
+		trigger = { has_racial_trait = { trait = elf_tier_12 } }
+	}
+}
 
 
 religious_aspects_custom = {

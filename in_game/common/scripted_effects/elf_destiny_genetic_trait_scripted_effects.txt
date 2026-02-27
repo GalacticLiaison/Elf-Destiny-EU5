@@ -596,6 +596,9 @@ pure_blood_inheritance = {
 	if = {
 		limit = {
 			var:trait_score >= 3
+			owner = {
+				has_religious_aspect = religious_aspect:familial_familiarity
+			}
 		}
 
 		assign_genetic_trait = { trait = purest_blooded}
@@ -603,6 +606,9 @@ pure_blood_inheritance = {
 	else_if = {
 		limit = {
 			var:trait_score >= 2
+			owner = {
+				has_religious_aspect = religious_aspect:familial_familiarity
+			}
 		}
 
 		assign_genetic_trait = { trait = purer_blooded}
