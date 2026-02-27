@@ -133,83 +133,83 @@ local_calaquendi_assimilation_blocked = {
 
 
 can_extract_mythril = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/mythril_positive.dds" 
 }
 
 ban_imports_of_mythril = {
-	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/mythril_negative.dds" 
 }
 
 ban_exports_of_mythril = {
-	positive = "gfx/interface/icons/modifier_types/iron_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/mythril_negative.dds" 
 }
 
 local_mythril_output_modifier = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/mythril_positive.dds" 
 }
 
 global_mythril_output_modifier = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/mythril_positive.dds" 
 }
 
 can_extract_lembas = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/lembas_positive.dds" 
 }
 
 ban_imports_of_lembas = {
-	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/lembas_negative.dds" 
 }
 
 ban_exports_of_lembas = {
-	positive = "gfx/interface/icons/modifier_types/iron_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/lembas_negative.dds" 
 }
 
 local_lembas_output_modifier = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/lembas_positive.dds" 
 }
 
 global_lembas_output_modifier = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/lembas_positive.dds" 
 }
 
 can_extract_elven_crafts = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/elven_crafts_positive.dds" 
 }
 
 ban_imports_of_elven_crafts = {
-	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/elven_crafts_negative.dds" 
 }
 
 ban_exports_of_elven_crafts = {
-	positive = "gfx/interface/icons/modifier_types/iron_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/elven_crafts_negative.dds" 
 }
 
 local_elven_crafts_output_modifier = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/elven_crafts_positive.dds" 
 }
 
 global_elven_crafts_output_modifier = {
-	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
+	positive = "gfx/interface/icons/modifier_types/elven_crafts_positive.dds" 
 }
 
 ban_exports_of_mythril_elven_crafts = {
-	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/mythril_elven_crafts_negative.dds" 
 }
 
 ban_imports_of_mythril_elven_crafts = {
-	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/mythril_elven_crafts_negative.dds" 
 }
 
 local_mythril_elven_crafts_output_modifier = {
-	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/mythril_elven_crafts_positive.dds" 
 }
 
 global_mythril_elven_crafts_output_modifier = {
-	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/mythril_elven_crafts_positive.dds" 
 }
 
 can_extract_mythril_elven_crafts = {
-	positive = "gfx/interface/icons/modifier_types/horses_negative.dds" 
+	positive = "gfx/interface/icons/modifier_types/mythril_elven_crafts_positive.dds" 
 }
 
 

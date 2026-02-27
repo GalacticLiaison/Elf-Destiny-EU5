@@ -11,20 +11,10 @@ elf starting debt
 ## Grok localization
 - your really should consider putting most descriptions through Grok for formatting/grammar/readability suggestions
 
-some modifiers icons still need to be made
-
 maybe a calaquendi privilege that speeds up the cooldown on call parliament!
 
 # Final Pass on culture/religion/country colors
 
-Make sure all unlockabales are gated behind the unlock and also can be unlocked
-- make sure for example mythril gets an expedition event
-
-Space out story events
-
-add costs to
-    - blessings
-    - ascension
 
 maybe final testing of expeditions
 - havent checked in on elixir event in a while
@@ -50,3 +40,5 @@ What if for expedition unlocked advances, they start in the tree as ???
  need elf tier in character tooltips
 
  another stab at elf CoAs?
+
+ better art for Open hearted
