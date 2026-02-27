@@ -47,46 +47,71 @@ elf_tier_1 = {
 	}
 
 	character_life_expectancy = 15
+
+	adm = 1
+	dip = 1
+	mil = 1
+	global_crown_estate_power = 0.01
 }
 
 elf_tier_2 = {
 	game_data = {
 		category = character
 	}
-
 	character_life_expectancy = 30
+
+	adm = 2
+	dip = 2
+	mil = 2
+	global_crown_estate_power = 0.02
 }
 
 elf_tier_3 = {
 	game_data = {
 		category = character
 	}
-	# is_immortal = yes
 	character_life_expectancy = 50
+
+	adm = 3
+	dip = 3
+	mil = 3
+	global_crown_estate_power = 0.03
 }
 
 elf_tier_4 = {
 	game_data = {
 		category = character
 	}
-	# is_immortal = yes
 	character_life_expectancy = 100
+
+	adm = 5
+	dip = 5
+	mil = 5
+	global_crown_estate_power = 0.05
 }
 
 elf_tier_5 = {
 	game_data = {
 		category = character
 	}
-	# is_immortal = yes
 	character_life_expectancy = 200
+
+	adm = 7
+	dip = 7
+	mil = 7
+	global_crown_estate_power = 0.07
 }
 
 elf_tier_6 = {
 	game_data = {
 		category = character
 	}
-	# is_immortal = yes
 	character_life_expectancy = 250
+
+	adm = 10
+	dip = 10
+	mil = 10
+	global_crown_estate_power = 0.10
 }
 
 elf_tier_7 = {
@@ -94,7 +119,11 @@ elf_tier_7 = {
 		category = character
 	}
 	is_immortal = yes
-	# character_life_expectancy = 50
+
+	adm = 15
+	dip = 15
+	mil = 15
+	global_crown_estate_power = 0.15
 }
 
 elf_tier_8 = {
@@ -102,7 +131,11 @@ elf_tier_8 = {
 		category = character
 	}
 	is_immortal = yes
-	# character_life_expectancy = 50
+
+	adm = 20
+	dip = 20
+	mil = 20
+	global_crown_estate_power = 0.20
 }
 
 elf_tier_9 = {
@@ -110,7 +143,11 @@ elf_tier_9 = {
 		category = character
 	}
 	is_immortal = yes
-	# character_life_expectancy = 50
+
+	adm = 30
+	dip = 30
+	mil = 30
+	global_crown_estate_power = 0.30
 }
 
 elf_tier_10 = {
@@ -118,7 +155,11 @@ elf_tier_10 = {
 		category = character
 	}
 	is_immortal = yes
-	# character_life_expectancy = 50
+
+	adm = 40
+	dip = 40
+	mil = 40
+	global_crown_estate_power = 0.40
 }
 
 elf_tier_11 = {
@@ -126,7 +167,11 @@ elf_tier_11 = {
 		category = character
 	}
 	is_immortal = yes
-	# character_life_expectancy = 50
+
+	adm = 50
+	dip = 50
+	mil = 50
+	global_crown_estate_power = 0.50
 }
 
 elf_tier_12 = {
@@ -134,7 +179,11 @@ elf_tier_12 = {
 		category = character
 	}
 	is_immortal = yes
-	# character_life_expectancy = 50
+
+	adm = 75
+	dip = 75
+	mil = 75
+	global_crown_estate_power = 0.75
 }
 
 # == Bloodlines ==

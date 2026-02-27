@@ -144,6 +144,7 @@ elf_destiny_story.11 = {
 		
 		trigger_event_silently = {
 			id = elf_destiny_story.2
+			months = 2
 		}
 	}
 
@@ -454,6 +455,7 @@ elf_destiny_story.23 = {
 				}
 				trigger_event_silently = {
 					id = elf_destiny_story.3
+					months = 3
 				}	
 			}
 			else = {
@@ -463,6 +465,7 @@ elf_destiny_story.23 = {
 				}
 				trigger_event_silently = {
 					id = elf_destiny_story.4
+					months = 6
 				}
 			}
 		}
@@ -548,6 +551,7 @@ elf_destiny_story.3 = { # A choice of Dreams
 
 		trigger_event_silently = {
 			id = elf_destiny_story.4
+			months = 3
 		}	
 	}
 
@@ -558,6 +562,7 @@ elf_destiny_story.3 = { # A choice of Dreams
 
 		trigger_event_silently = {
 			id = elf_destiny_story.4
+			months = 3
 		}	
 	}
 

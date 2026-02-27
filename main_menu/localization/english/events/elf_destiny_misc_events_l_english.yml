@@ -18,7 +18,7 @@
  elf_destiny_misc.31.family_leaves: "The family leaves"
 
  elf_destiny_misc.32.title: "An Orphan of Great Promise"
- elf_destiny_misc.32.desc: "A young child has arrived at your holding alone and in rough condition. [orphan.GetHeShe|U] claims to be of a high noble house but [orphan.GetHerHis] parents were recently lost to war. Before their death they told [orphan.GetHerHim] to seek your refuge and protection. For one so young, this small child speaks with eloquence and the manner he holds [orphan.GetHerHim]self even after experiencing such grief is quite impressive--you can sense great potential in [orphan.GetHerHim]"
+ elf_destiny_misc.32.desc: "A young child has arrived at your holding alone and in rough condition. [orphan.GetHeShe|U] claims to be from a high noble house and that [orphan.GetHerHis] parents were recently lost to war. Before their death they told [orphan.GetHerHim] to seek your refuge and protection. For one so young, this small child speaks with eloquence and the manner [orphan.GetSheHe] holds [orphan.GetHerHim]self, even after experiencing such grief, is quite impressive--you can sense great potential in [orphan.GetHerHim]"
  elf_destiny_misc.32.accept: "Welcome them into your court"
  elf_destiny_misc.32.refuse: "Turn them away"
  elf_destiny_misc.32.orphan_leaves: "[orphan.GetName] leaves"

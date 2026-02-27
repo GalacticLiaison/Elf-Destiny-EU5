@@ -50,3 +50,7 @@ What if for expedition unlocked advances, they start in the tree as ???
  need elf tier in character tooltips
 
  another stab at elf CoAs?
+
+ *ADD MORE MODIFIERS TO ELF TRAITS*
+
+ **Lets get the Main story line set up so we can get people testing, we can add story skip cheats to make working on it easier if needed**

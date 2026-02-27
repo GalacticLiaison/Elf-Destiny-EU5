@@ -24,6 +24,11 @@ elf_tier_1 = {
 	
 	modifier = {		
 		character_life_expectancy = 15
+
+		adm = 1
+		dip = 1
+		mil = 1
+		global_crown_estate_power = 0.01
 	}
 
 	chance = {
@@ -40,6 +45,11 @@ elf_tier_2 = {
 	
 	modifier = {
 		character_life_expectancy = 30
+
+		adm = 2
+		dip = 2
+		mil = 2
+		global_crown_estate_power = 0.02
 	}
 
 	chance = {
@@ -56,6 +66,11 @@ elf_tier_3 = {
 
 	modifier = {
 		character_life_expectancy = 50
+
+		adm = 3
+		dip = 3
+		mil = 3
+		global_crown_estate_power = 0.03
 	}
 
 	chance = {
@@ -72,6 +87,11 @@ elf_tier_4 = {
 
 	modifier = {
 		character_life_expectancy = 100
+
+		adm = 5
+		dip = 5
+		mil = 5
+		global_crown_estate_power = 0.05
 	}
 
 	chance = {
@@ -88,6 +108,11 @@ elf_tier_5 = {
 
 	modifier = {
 		character_life_expectancy = 200
+
+		adm = 7
+		dip = 7
+		mil = 7
+		global_crown_estate_power = 0.07
 	}
 
 	chance = {
@@ -104,6 +129,11 @@ elf_tier_6 = {
 
 	modifier = {
 		character_life_expectancy = 250
+
+		adm = 10
+		dip = 10
+		mil = 10
+		global_crown_estate_power = 0.10
 	}
 
 	chance = {
@@ -120,6 +150,11 @@ elf_tier_7 = {
 
 	modifier = {
 		is_immortal = yes
+
+		adm = 15
+		dip = 15
+		mil = 15
+		global_crown_estate_power = 0.15
 	}
 
 	chance = {
@@ -136,6 +171,11 @@ elf_tier_8 = {
 
 	modifier = {
 		is_immortal = yes
+
+		adm = 20
+		dip = 20
+		mil = 20
+		global_crown_estate_power = 0.20
 	}
 
 	chance = {
@@ -152,6 +192,11 @@ elf_tier_9 = {
 
 	modifier = {
 		is_immortal = yes
+
+		adm = 30
+		dip = 30
+		mil = 30
+		global_crown_estate_power = 0.30
 	}
 
 	chance = {
@@ -168,6 +213,11 @@ elf_tier_10 = {
 
 	modifier = {
 		is_immortal = yes
+
+		adm = 40
+		dip = 40
+		mil = 40
+		global_crown_estate_power = 0.40
 	}
 
 	chance = {
@@ -184,6 +234,11 @@ elf_tier_11 = {
 
 	modifier = {
 		is_immortal = yes
+
+		adm = 50
+		dip = 50
+		mil = 50
+		global_crown_estate_power = 0.50
 	}
 
 	chance = {
@@ -200,6 +255,11 @@ elf_tier_12 = {
 
 	modifier = {
 		is_immortal = yes
+
+		adm = 75
+		dip = 75
+		mil = 75
+		global_crown_estate_power = 0.75
 	}
 
 	chance = {

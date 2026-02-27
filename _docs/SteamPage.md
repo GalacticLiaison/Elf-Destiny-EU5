@@ -1,6 +1,6 @@
 # Welcome One and All To Elf Destiny
 
-The widely popular Elven CK3 mod has come to EU5
+The world's premier Elven CK3 mod has come to EU5!
 
 ## Premise
 At the beginning of civilization, Elves and Humans came to this world through a portal from another realm. Since then, countless Elf and Human empires have risen and fallen, now lost to time. Elves have faded to the edges of the world and memory. You're the new Elf Lord and your goal is to restore the greatness of the Elves. What will this new Elven people be like and how will they get along with Humans?
@@ -76,7 +76,7 @@ This mod brings a fan favorite from Crusader Kings 3, the Genetic Traits!
 
 Characters can now randomly start the game, spawn, and be born with traits that reflect physical inherited properties from their family line!
 
-Different traits have different rates of appearing and have different inheritance rules. Leveled traits have a better chance of appearing as a higher level version on new borns if both parents have a version of the trait.
+Different traits have different rates of appearing and have different inheritance rules. Leveled traits have a better chance of appearing as a higher level version on newborns if both parents have a version of the trait.
 
 <TRAITS GRAPH SHOWING ALL CK3 TRAITS AND DESCRIPTIONS>
 
