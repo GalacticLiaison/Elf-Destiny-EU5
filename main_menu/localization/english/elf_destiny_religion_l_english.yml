@@ -14,14 +14,14 @@
 
  AELURAN_ORDER_LEADER_MALE: "AELURAN ORDER LEADER MALE"
  AELURAN_ORDER_LEADER_FEMALE: "High Matriarch"
- aeluran_order: "Aeluran order"
- aeluran_order_desc: "TODO : Write a desc"
+ aeluran_order: "Order of the Aeluran Weavers"
+ aeluran_order_desc: "Forgers of bloodlines and meddlers of fate, the Aeluran Weavers are a powerful force in this world. They act as wise advisors and matchmakers between the most powerful rulers in a relentless pursuit to breed optimal leaders for the Elven peoples of the world."
  diplomatic_status_aeluran_order_name: "Diplomatic status aeluran order name"
  diplomatic_status_aeluran_order_tooltip: "Diplomatic status aeluran order tooltip"
  aeluran_order_list_who_tt: "Aeluran order list who tt"
 
  CANT_MANUALLY_ASSIGN_AELURAN_ADVISOR: "#r Can not change Aeluran Advisor#!"
- CANT_MANUALLY_ASSIGN_AELURAN_ADVISOR_DESC: "Your Aeluran Advisor is appointed by the High Matriarch herself; Only she has the authority to dimiss her."
+ CANT_MANUALLY_ASSIGN_AELURAN_ADVISOR_DESC: "Your Aeluran Advisor is appointed by the High Matriarch herself; Only she has the authority to dismiss her."
 
  aeluran_advisor_joins_realm: "Lady [aeluran_advisor.GetName] of the Aeluran Order Joins Your Realm"
  aeluran_advisor_joins_and_become_head_of_cabinet: "Sister [aeluran_advisor.GetFirstNameWithNoTooltip] becomes your Aeluran Advisor and [head_of_the_cabinet|e]"

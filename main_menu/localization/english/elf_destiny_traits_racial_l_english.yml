@@ -2,7 +2,7 @@
  racial_trait: "[racial_trait|e]"
 
  human: "Human"
- human_die_desc: "TODO : Write a desc"
+ human_die_desc: ""
  desc_human: "The Human race is the most numerous and populous form of being in this world. They are severed from The Divine Spark--They receive not its power nor feel its influence"
  elf_tier_1: "Elf Blood"
  elf_tier_1_die_desc: ""

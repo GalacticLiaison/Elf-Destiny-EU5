@@ -1,20 +1,20 @@
 ﻿l_english:
  elven_culture_group: "Elven"
- elven_culture_group_desc: "TODO : Write a desc"
+ elven_culture_group_desc: "The children of the Divine Spark. The fair and noble Elves are an ancient people, with a rich history and a deep connection to the natural world. Feared for their cunning and magics, revered for their wisdom and grace"
  elven: "Elven"
- elven_desc: "TODO : Write a desc"
+ elven_desc: "The children of the Divine Spark. The fair and noble Elves are an ancient people, with a rich history and a deep connection to the natural world. Feared for their cunning and magics, revered for their wisdom and grace"
 
  elven_group: "Elf"
  elven_group_ADJ: "Elven"
- elven_group_desc: "TEST TODO : Write a desc"
+ elven_group_desc: "The children of the Divine Spark. The fair and noble Elves are an ancient people, with a rich history and a deep connection to the natural world. Feared for their cunning and magics, revered for their wisdom and grace"
  calaquendi_estate: "Calaquendi"
  calaquendi_estate_elven: "Calaquendi"
  calaquendi_estate_satisfaction: "Calaquendi estate satisfaction"
  calaquendi_estate_power: "Calaquendi estate power"
- calaquendi_estate_desc: "TODO : Write a desc"
+ calaquendi_estate_desc: "This estate represents the most elite and powerful of the Elven peoples. The highest echelon of nobility, they are an Elven nations' favored leaders and generals\n$estate_common_crown_ending$"
 
  cb_human_slave_raiding: "Raid for Human Slaves
- cb_human_slave_raiding_desc: "TODO : Write a desc"
+ cb_human_slave_raiding_desc: "We will commence raids on a nearby Human country for slaves. They will make good servants and laborers, no better than livestock."
 
  deepwood_elven_culture: "Deepwood Elven"
  tuatha_de_danann_culture: "Tuatha Dé Danann"
@@ -38,10 +38,10 @@
  peasants_estate_elven: "Elves"
  tribes_estate_elven: "Tribal Elves"
 
- human_citizens: "Human Citizens"
- human_citizens_desc: "TODO : Write a desc"
- no_humans: "No Humans"
- no_humans_desc: "TODO : Write a desc"
+#  human_citizens: "Human Citizens"
+#  human_citizens_desc: "TODO : Write a desc"
+#  no_humans: "No Humans"
+#  no_humans_desc: "TODO : Write a desc"
 
  enchantress: "Enchantress"
  desc_enchantress: "#weak Intoxicating presence, eyes that snare. A subtle addiction to lesser mortals#!"
