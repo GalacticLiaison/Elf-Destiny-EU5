@@ -1,4 +1,6 @@
 localization overall
+    - finish moving stuff out of placeholder
+
 Clean up the damn error log
 
 

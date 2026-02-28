@@ -1043,6 +1043,68 @@ types override_types {
 						hbox = {
 							layoutpolicy_horizontal = expanding
 							minimumsize = { -1 40 }
+
+							racial_trait_icon = {
+								blockoverride "racial_trait_icon_data_model" {
+									datamodel = "[Character.MakeScope.GetVariable('character_race')]"
+								}
+
+								blockoverride "racial_trait_icon_visible" {
+									visible = "[Character.MakeScope.GetVariable('character_race').IsSet]"
+								}
+
+								blockoverride "racial_trait_human_icon_visible" {
+									visible = "[Not(Character.MakeScope.GetVariable('character_race').IsSet)]"
+								}
+
+								blockoverride "elf_trait_texture" {
+									texture = "[GetTraitIcon(Character.MakeScope.GetVariable('character_race').Trait.Self)]"
+								}
+
+								blockoverride "elf_trait_tooltip" {
+									tooltipwidget = {
+										ContextualTooltipType = {
+											blockoverride "title_text" {
+												text = "[Character.MakeScope.GetVariable('character_race').Trait.GetNameWithNoTooltip]"
+											}
+											
+											blockoverride "title_icon" {
+												icon = {
+													using = tooltip_title_icon_size
+													texture = "[GetTraitIcon(Character.MakeScope.GetVariable('character_race').Trait.Self)]"
+
+													glow = {
+														# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+														# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+
+														name = "glowing"
+														glow_radius = 2.5
+														color = { 0.9 0.9 0.6 1 }
+														alpha = 0.4
+													}
+													using = Animation_Glow_Pulse
+												}
+											}
+
+											blockoverride "concept_link" {
+												text = racial_trait
+											}
+
+											blockoverride "tooltip_content" {
+												TooltipStringPairList = {
+													datacontext = "[StringToStringPairList(Character.MakeScope.GetVariable('character_race').Trait.GetTooltip)]"
+												}
+
+												TooltipFlavorTextBlock = {
+													blockoverride "text" {
+														text = "[Character.MakeScope.GetVariable('character_race').Trait.GetDesc]"
+													}
+												}
+											}
+										}
+									}
+								}
+							}
 							
 							character_role_icon = {}
 

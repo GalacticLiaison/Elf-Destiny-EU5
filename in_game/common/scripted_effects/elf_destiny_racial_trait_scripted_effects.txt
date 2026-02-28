@@ -270,8 +270,8 @@ handle_created_character_race_effect = {
 			is_any_elf_type = no
 		}
 
-		debug_log = "handle_created_character_race_effect"
-		debug_log_scopes = yes
+		# debug_log = "handle_created_character_race_effect"
+		# debug_log_scopes = yes
 		assign_racial_trait = { trait = elf_tier_2}
 	}
 }

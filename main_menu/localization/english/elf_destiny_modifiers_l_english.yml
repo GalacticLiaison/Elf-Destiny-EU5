@@ -138,6 +138,10 @@
 
  MODIFIER_TYPE_NAME_expedition_price_cost_modifier: "Expedition Price Cost Modifier"
  MODIFIER_TYPE_DESC_expedition_price_cost_modifier: "This impacts the [costs|e] for the [ShowCharacterInteractionName('fund_expedition')] [character_interaction|e]."
+ MODIFIER_TYPE_NAME_ascension_base_price_cost_modifier: "Ascension Price Cost Modifier"
+ MODIFIER_TYPE_DESC_ascension_base_price_cost_modifier: "This impacts the [costs|e] for the [ShowGenericActionName('ascend')] action."
+ MODIFIER_TYPE_NAME_blessing_base_price_cost_modifier: "Blessing Price Cost Modifier"
+ MODIFIER_TYPE_DESC_blessing_base_price_cost_modifier: "This impacts the [costs|e] for the [ShowGenericActionName('receive_blessing')] action"
 
  MODIFIER_TYPE_NAME_army_magi_power: "Magi Power"
  MODIFIER_TYPE_DESC_army_magi_power: "This impacts the [combat|e] ability of [ShowUnitCategoryName('army_magi')] [regiments|e]."

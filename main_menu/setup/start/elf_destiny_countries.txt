@@ -1454,7 +1454,7 @@ countries = {
 			include = "elf_culture_alfar_opinions"
 		}
 		
-		AND = { # zalari cheremkhovo irkutsk - Andúniëlor
+		ANE = { # zalari cheremkhovo irkutsk - Andúniëlor
 			capital = zalari
 
 			own_control_core = {

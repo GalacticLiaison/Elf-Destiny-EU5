@@ -166,4 +166,22 @@ new_character_chance_of_random_genetic_trait = {
 	}
 }
 
+# root = character, scope:target = new country, scope:owner = old country
+on_character_moved_country = {
+	on_actions = {
+		retain_aeluran_advisors
+	}
+}
 
+retain_aeluran_advisors = {
+	trigger = {
+		has_variable = aeluran_advisor
+		NOT = {
+			has_variable = aeluran_advisor_returned
+		}
+	}
+
+	effect = {
+		retain_aeluran_advisors_effect = yes
+    }
+}

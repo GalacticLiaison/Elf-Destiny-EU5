@@ -333,6 +333,14 @@ expedition_price_cost_modifier = {
 	positive = "gfx/interface/icons/character_interactions/fund_expedition.dds"
 }
 
+ascension_base_price_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/convert_religion_cost_modifier.dds"
+}
+
+blessing_base_price_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/convert_religion_cost_modifier.dds"
+}
+
 dynastic_marriage_disabled = {
 	positive = "gfx/interface/icons/modifier_types/dynastic_marriage_disabled.dds"
 }

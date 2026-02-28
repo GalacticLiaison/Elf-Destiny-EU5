@@ -95,7 +95,7 @@ create_new_aeluran_advisor = {
 	
 		religion = religion:aeluran
 		culture = root.culture
-		estate = estate_type:clergy_estate
+		estate = estate_type:nobles_estate
 	
 		# TODO: could have some privilege increase the stats of advisors
 		adm = {

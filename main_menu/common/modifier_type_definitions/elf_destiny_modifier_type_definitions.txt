@@ -2252,3 +2252,19 @@ expedition_price_cost_modifier={
 		category=country
 	}
 }
+
+ascension_base_price_cost_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+blessing_base_price_cost_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}

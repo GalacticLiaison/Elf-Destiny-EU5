@@ -16,9 +16,33 @@ aeluran_events.1 = { # New Aeluran Advisor
     }
 
 	immediate = {
-		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		if = {
+			limit = {
+				any_character = {
+					is_aeluran_order = yes
+					is_ruler = no
+				}
+			}
+			random_character = {
+				limit = {
+					is_aeluran_order = yes
+					is_ruler = no
+				}
+				save_scope_as = aeluran_advisor
+				set_variable = aeluran_advisor
+			}
 
-		create_new_aeluran_advisor = yes
+			save_scope_value_as = {
+                name = aeluran_from_court
+                value = yes
+            }
+		}
+		else = {
+			create_new_aeluran_advisor = yes
+			# c:DWD = {
+			# 	create_new_aeluran_advisor = yes
+			# }
+		}
 	}
 	
 	option = {

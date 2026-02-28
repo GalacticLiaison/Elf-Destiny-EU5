@@ -5,6 +5,7 @@
 		NOT ={
 			has_variable = expedition_underway
 		}
+		is_ai = no
 	}
 	
 	on_accept = {

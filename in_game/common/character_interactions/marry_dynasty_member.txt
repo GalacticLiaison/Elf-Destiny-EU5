@@ -67,6 +67,7 @@ marry_dynasty_members = {
 			if = {
 				limit = {
 					scope:actor = { has_policy = doctrine_consanguinity_restricted } # "Close-kin Taboo"
+					exists = scope:recipient.dynasty
 				}
 				scope:recipient.dynasty = {
 					every_character_in_dynasty = {
@@ -81,6 +82,7 @@ marry_dynasty_members = {
 			if = {
 				limit = {
 					scope:actor = { has_policy = doctrine_consanguinity_cousins } # "Cousin Marriage"
+					exists = scope:recipient.dynasty
 				}
 				scope:recipient.dynasty = {
 					every_character_in_dynasty = {
@@ -95,7 +97,9 @@ marry_dynasty_members = {
 			if = {
 				limit = {
 					scope:actor = { has_policy = doctrine_consanguinity_aunt_nephew_and_uncle_niece } # "Avunculate Marriage"
+					exists = scope:recipient.dynasty
 				}
+
 				scope:recipient.dynasty = {
 					every_character_in_dynasty = {
 						limit = {
@@ -109,6 +113,7 @@ marry_dynasty_members = {
 			if = {
 				limit = {
 					scope:actor = { has_policy = doctrine_consanguinity_unrestricted } # "Unrestricted Marriage"
+					exists = scope:recipient.dynasty
 				}
 				scope:recipient.dynasty = {
 					every_character_in_dynasty = {

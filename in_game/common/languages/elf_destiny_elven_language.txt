@@ -29,7 +29,9 @@
 		Sunspark Swiftshadow Wildwood
 	}
 	lowborn = {
-		Meadow River Dewflower
+		Meadow River Dewflower Lasdir Taurlas Aelhir Mithlas Calenlas Eryndir Duinlas Celeblas Nimdir Galathir Gwaelas
+		Laerdir Barlas Saeldir Ornlas Sarnlas Lainlas Nestdir Maerlas Faerlas Belthas Dorthir Faeldir Halas
+		Ithlas Mirlas Niphlas Pelladir Rhivlas
 	}
 
 	dialects = {

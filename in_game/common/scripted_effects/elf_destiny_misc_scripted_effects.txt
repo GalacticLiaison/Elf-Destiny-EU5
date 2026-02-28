@@ -19,6 +19,15 @@ setup_elf_culture_locations_effect = {
 					increase_elf_food_supply = yes
 				}
 			}
+
+			if = {
+				limit = { NOT = { religion = religion:aeluran } }
+				change_religion = religion:aeluran
+			}
+			if = {
+				limit = { NOT = { has_estate_privilege = estate_privilege:aeluran_advisors } }
+				grant_estate_privilege = estate_privilege:aeluran_advisors
+			}
 		}
 	}
 }
@@ -53,6 +62,12 @@ boost_starting_pops_of_elf_countries = {
 		religion = religion:aeluran
 		type = pop_type:peasants
 		size = 1.0
+	}
+	add_pop = {
+		culture = scope:elf_country.culture
+		religion = religion:aeluran
+		type = pop_type:clergy
+		size = 0.03
 	}
 }
 

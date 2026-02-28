@@ -74,14 +74,46 @@ assign_new_aeluran_advisor = {
 				exists = scope:aeluran_advisor
 			}
 		}
-		create_new_aeluran_advisor = yes
+		
+		if = {
+			limit = {
+				any_character = {
+					is_aeluran_order = yes
+					is_ruler = no
+				}
+			}
+			random_character = {
+				limit = {
+					is_aeluran_order = yes
+					is_ruler = no
+				}
+				save_scope_as = aeluran_advisor
+				set_variable = aeluran_advisor
+			}
+
+			save_scope_value_as = {
+                name = aeluran_from_court
+                value = yes
+            }
+		}
+		else = {
+			create_new_aeluran_advisor = yes
+		}
 	}
 
-	custom_tooltip = {
-		text = aeluran_advisor_joins_realm
 
-		scope:aeluran_advisor = {
-			move_country = root
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:aeluran_from_court
+			}
+		}
+		custom_tooltip = {
+			text = aeluran_advisor_joins_realm
+
+			scope:aeluran_advisor = {
+				move_country = root
+			}
 		}
 	}
 
@@ -91,8 +123,11 @@ assign_new_aeluran_advisor = {
 			limit = {
 				exists = scope:aeluran_advisor
 			}
-			random_cabinet = {
-				add_to_cabinet = scope:aeluran_advisor
+			if = {
+				limit = { scope:aeluran_advisor = { in_cabinet = no } }
+				random_cabinet = {
+					add_to_cabinet = scope:aeluran_advisor
+				}
 			}
 			
 			promote_to_head_of_cabinet_effect = {
@@ -102,6 +137,31 @@ assign_new_aeluran_advisor = {
 	}	
 }
 
+retain_aeluran_advisors_effect = {
+	debug_log = "on_character_moved_country: retain_aeluran_advisors"
+	if = {
+		limit = {
+			exists = scope:owner
+		}
+		set_variable = aeluran_advisor_returned
+
+		move_country = scope:owner
+
+		if = {
+			limit = {
+				in_cabinet = no
+			}
+			scope:owner = {
+				random_cabinet = {
+					add_to_cabinet = root
+				}
+				promote_to_head_of_cabinet_effect = {
+					target = root
+				}
+			}
+		}
+	}
+}
 
 aeluran_succession_effect = {
 	debug_log = "aeluran_succession_effect"

@@ -92,7 +92,7 @@ elf_destiny_expedition.1 = {
 
     immediate = {
         # this is just to reserve the portrait slot for the event chain, first two saved scopes are used for the whole chain
-        scope:recipient = { 
+        scope:recipient ?= { 
             save_scope_as = portrait_2
         }
 
@@ -195,7 +195,7 @@ elf_destiny_expedition.2 = {
     hidden = yes  # No popup, just progress
 
     immediate = {
-        debug_log = "elf_destiny_expedition"
+        debug_log = "elf_destiny_expedition.2 is happening"
         debug_log_scopes = yes
 
         if = {

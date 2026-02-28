@@ -17,9 +17,9 @@
 
  rule_enable_character_editor_outside_debug: "@elf_tier_1! Elf Destiny - Character Editor Availability"
  setting_character_editor_not_enabled_outside_debug: "Enabled only in #D Debug#! mode."
- setting_character_editor_not_enabled_outside_debug_desc: "The Character Editor character interaction that allows players to edit character's racial and genetic traits #high will only be available#! in #D Debug#! mode."
+ setting_character_editor_not_enabled_outside_debug_desc: "The Character Editor character interaction that allows players to edit a character's genetic traits #high will only be available#! in #D Debug#! mode."
  setting_character_editor_enabled_outside_debug: "Enabled outside of #D Debug#! mode."
- setting_character_editor_enabled_outside_debug_desc: "The Character Editor character interaction that allows players to edit character's racial and genetic traits #high will be available#! in the normal game mode."
+ setting_character_editor_enabled_outside_debug_desc: "The Character Editor character interaction that allows players to edit a character's genetic traits #high will be available#! in the normal game mode."
 
  elf_destiny_debug.go_back: "@orange_left! #header_titles  Go Back#!"
  elf_destiny_debug_scroll_for_more: "\nScroll @arrow_down! down for more options."
@@ -91,7 +91,7 @@
  elf_destiny_debug.34.purer_blooded: "@purer_blooded! [ShowTraitName('purer_blooded')]"
  elf_destiny_debug.34.purest_blooded: "@purest_blooded! [ShowTraitName('purest_blooded')]"
  elf_destiny_debug.34.inbred: "@inbred! [ShowTraitName('inbred')]"
- elf_destiny_debug.35.title: "Other Traits"
+ elf_destiny_debug.35.title: "Bloodline Traits"
  elf_destiny_debug.35.desc: "Is [recipient.GetFirstNameWithNoTooltip] of #high strong blood#!?$elf_destiny_debug_scroll_for_more$"
  elf_destiny_debug.35.royal_elf_valerith: "@royal_elf_valerith! [ShowTraitName('royal_elf_valerith')]"
  elf_destiny_debug.35.royal_elf_serelion: "@royal_elf_serelion! [ShowTraitName('royal_elf_serelion')]"

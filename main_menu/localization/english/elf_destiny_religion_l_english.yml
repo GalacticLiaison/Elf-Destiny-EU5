@@ -12,6 +12,7 @@
  aeluran_matriarch_die_desc: ""
  desc_aeluran_matriarch: "The Aeluran High Matriarch is the undisputed leader of the Aelurans. Selected by the Council of Matrons, the High Matriarch is typically the most powerful and wise sister in all of the order."
 
+ aeluran_order_dynasty: "Sister of the Aeluran Order"
  AELURAN_ORDER_LEADER_MALE: "AELURAN ORDER LEADER MALE"
  AELURAN_ORDER_LEADER_FEMALE: "High Matriarch"
  aeluran_order: "Order of the Aeluran Weavers"

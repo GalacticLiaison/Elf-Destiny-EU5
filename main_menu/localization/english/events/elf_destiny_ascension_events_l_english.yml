@@ -1,4 +1,5 @@
 ﻿l_english:
+ ascension_base_price: "Ascension Base Price"
  ascension_events.1.title: "Prepare for Ascension"
  ascension_events.1.desc.solo: "You have accumulated enough divine power to Ascend to a higher state of being. Communing with the Divine Spark is a profound experience, are you ready to take the next step in your destiny?"
  ascension_events.1.desc.family: "Your thoughts dwell on your family, why should you Ascend alone when you can share the experience with your loved ones by acting as their guide in the ritual for a modest additional cost to your power?"
@@ -38,6 +39,7 @@
 
  receive_blessing: "Ritual of The Divine Spark's Blessing"
  receive_blessing_desc: "You have accumulated enough good will with the Divine Spark to seek a blessing from it!\n\nRetreat to your chambers and begin your meditations."
+ blessing_base_price: "Blessing Base Price"
 
  ascension_events.2.title: "Ritual of The Divine Spark's Blessing"
  ascension_events.2.desc: "As you meditate, a familiar presence can be felt and you know the Divine Spark has cast its gaze upon you. Once again, you see countless possibilities flash before your eyes, fading just as quickly, leaving a single idea in their shadow.\n\n #yellow_titles \"Choose\"#!"

@@ -1,0 +1,158 @@
+types RacialTrait 
+{
+    type racial_trait_icon = hbox {
+        block "racial_trait_icon_data_model" {
+            datacontext = "[CharacterLateralview.GetCharacter.MakeScope.GetVariable('character_race')]"
+        }
+
+        widget = {
+            size = { 40 40 }
+            
+            icon = {
+                block "racial_trait_icon_visible" {
+                    visible = "[CharacterLateralview.GetCharacter.MakeScope.GetVariable('character_race').IsSet]"
+                }
+
+                size = { 80% 80% }
+                # using = trait_item
+                parentanchor = center
+
+                # texture = "gfx/interface/icons/modifiers/elf_tier_3.dds"
+                # texture = "[Concatenate(Concatenate('gfx/interface/icons/genetic_traits/', Scope.GetFlagName), '.dds')]"
+                # texture = "[TimedModifier.GetModifier.GetIcon]"
+                block "elf_trait_texture" {
+                    texture = "[GetTraitIcon(Scope.Trait.Self)]"
+                }
+
+                # GetModifier(
+
+                glow = {
+                    # visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+                    # visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+
+                    name = "glowing"
+                    glow_radius = 2.5
+                    color = { 0.9 0.9 0.6 1 }
+                    alpha = 0.4
+                }
+                using = Animation_Glow_Pulse
+
+
+                block "elf_trait_tooltip" {
+                    tooltipwidget = {
+                        ContextualTooltipType = {
+                            blockoverride "title_text" {
+                                text = "[Scope.Trait.GetNameWithNoTooltip]"
+                            }
+                            
+                            blockoverride "title_icon" {
+                                icon = {
+                                    using = tooltip_title_icon_size
+                                    texture = "[GetTraitIcon(Scope.Trait.Self)]"
+
+                                    glow = {
+                                        # visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+                                        # visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+
+                                        name = "glowing"
+                                        glow_radius = 2.5
+                                        color = { 0.9 0.9 0.6 1 }
+                                        alpha = 0.4
+                                    }
+                                    using = Animation_Glow_Pulse
+                                }
+                            }
+
+                            blockoverride "concept_link" {
+                                text = racial_trait
+                                # text = "[Scope.Trait.GetCategoryTag]"
+                            }
+
+                            blockoverride "tooltip_content" {
+                                TooltipStringPairList = {
+                                    datacontext = "[StringToStringPairList(Scope.Trait.GetTooltip)]"
+                                }
+
+                                TooltipFlavorTextBlock = {
+                                    blockoverride "text" {
+                                        text = "[Scope.Trait.GetDesc]"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            icon = {
+                block "racial_trait_human_icon_visible" {
+                    visible = "[Not(CharacterLateralview.GetCharacter.MakeScope.GetVariable('character_race').IsSet)]"
+                }
+
+                size = { 80% 80% }
+                # using = trait_item
+                parentanchor = center
+
+                # texture = "gfx/interface/icons/traits/human.dds"
+                # texture = "[Concatenate(Concatenate('gfx/interface/icons/genetic_traits/', Scope.GetFlagName), '.dds')]"
+                # texture = "[TimedModifier.GetModifier.GetIcon]"
+                texture = "[GetTraitIcon(GetGlobalVariable('human_trait').Trait.Self)]"
+
+                # GetModifier(
+
+                glow = {
+                    # visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+                    # visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+
+                    name = "glowing"
+                    glow_radius = 2.5
+                    color = { 0.9 0.9 0.6 1 }
+                    alpha = 0.4
+                }
+                # using = Animation_Glow_Pulse
+
+
+                tooltipwidget = {
+                    ContextualTooltipType = {
+                        blockoverride "title_text" {
+                            text = "[GetGlobalVariable('human_trait').Trait.GetNameWithNoTooltip]"
+                        }
+                        
+                        blockoverride "title_icon" {
+                            icon = {
+                                using = tooltip_title_icon_size
+                                texture = "[GetTraitIcon(GetGlobalVariable('human_trait').Trait.Self)]"
+
+                                glow = {
+                                    name = "glowing"
+                                    glow_radius = 2.5
+                                    color = { 0.9 0.9 0.6 1 }
+                                    alpha = 0.4
+                                }
+                                using = Animation_Glow_Pulse
+                            }
+                        }
+
+                        blockoverride "concept_link" {
+                            text = racial_trait
+                            # text = "[Scope.Trait.GetCategoryTag]"
+                        }
+
+                        blockoverride "tooltip_content" {
+                            TooltipStringPairList = {
+                                datacontext = "[StringToStringPairList(GetGlobalVariable('human_trait').Trait.GetTooltip)]"
+                            }
+
+                            TooltipFlavorTextBlock = {
+                                blockoverride "text" {
+                                    text = "[GetGlobalVariable('human_trait').Trait.GetDesc]"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -741,7 +741,7 @@ ALR = {
 	culture_definition = alfar_culture
 	religion_definition = aeluran
 }
-AND = {
+ANE = {
 	color = rgb { 89 59 17 }
 	color2 = rgb { 40 100 50 }
 	# male_regnal_names = {}

@@ -4,3 +4,11 @@
     has_religious_aspect = religious_aspect:beguiling_nature
     has_religious_aspect = religious_aspect:the_rut
 }
+
+is_aeluran_order = {
+    OR = {
+        has_trait = aeluran_sister
+        has_trait = aeluran_matron
+        has_trait = aeluran_matriarch
+    }
+}

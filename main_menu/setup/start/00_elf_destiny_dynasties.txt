@@ -47,4 +47,10 @@ dynasty_manager = {
 		# dynasty_name_type = descendant
 		home = treguier
 	}
+
+	aeluran_order_dynasty = {
+		name = { name = aeluran_order_dynasty }
+		# dynasty_name_type = descendant
+		home = mezen
+	}
 }
