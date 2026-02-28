@@ -119,31 +119,60 @@ assign_new_aeluran_advisor = {
 
 	custom_tooltip = {
 		text = aeluran_advisor_joins_and_become_head_of_cabinet
-		if = {
-			limit = {
-				exists = scope:aeluran_advisor
-			}
-			if = {
-				limit = { scope:aeluran_advisor = { in_cabinet = no } }
-				random_cabinet = {
-					add_to_cabinet = scope:aeluran_advisor
-				}
-			}
-			
-			promote_to_head_of_cabinet_effect = {
-				target = scope:aeluran_advisor
-			}
-		}
-	}	
+		aeluran_advisor_joins_cabinet = { aeluran_advisor_scope = scope:aeluran_advisor }
+	}
 }
 
+# any_cabinet_character = {
+# 	count >= root.modifier:government_size
+# }
+
+# any_cabinet_action = {
+# 	count >= root.modifier:government_size
+# }
+
+aeluran_advisor_joins_cabinet = {
+	if = {
+		limit = {
+			exists = $aeluran_advisor_scope$
+		}
+
+		$aeluran_advisor_scope$.owner = {
+			if = {
+				limit = { # Is the cabinet full?
+					any_cabinet_character = {
+						count >= this.modifier:government_size
+					}
+				}
+				random_cabinet_character = {
+					limit = {
+						NOT = { this = $aeluran_advisor_scope$ }
+					}
+					save_temporary_scope_as = old_cabinet_member
+				}
+				remove_from_cabinet = scope:old_cabinet_member
+			}
+
+			add_character_to_random_open_cabinet = {
+				target = $aeluran_advisor_scope$
+			}
+
+			promote_to_head_of_cabinet_effect = {
+				target = $aeluran_advisor_scope$
+			}
+		}
+	}
+}
+
+# root = character, scope:target = new country, scope:owner = old country
 retain_aeluran_advisors_effect = {
 	debug_log = "on_character_moved_country: retain_aeluran_advisors"
 	if = {
 		limit = {
 			exists = scope:owner
 		}
-		set_variable = aeluran_advisor_returned
+
+		set_variable = { name = aeluran_advisor_returned value = yes days = 15 }
 
 		move_country = scope:owner
 
@@ -151,14 +180,7 @@ retain_aeluran_advisors_effect = {
 			limit = {
 				in_cabinet = no
 			}
-			scope:owner = {
-				random_cabinet = {
-					add_to_cabinet = root
-				}
-				promote_to_head_of_cabinet_effect = {
-					target = root
-				}
-			}
+			aeluran_advisor_joins_cabinet = { aeluran_advisor_scope = root }
 		}
 	}
 }

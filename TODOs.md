@@ -44,3 +44,5 @@ What if for expedition unlocked advances, they start in the tree as ???
  another stab at elf CoAs?
 
  better art for Open hearted
+
+ Julia convert to Aeluran
