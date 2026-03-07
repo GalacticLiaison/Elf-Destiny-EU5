@@ -858,6 +858,20 @@ give_genetic_traits_to_starter_characters_effect = {
 			assign_any_missing_genetic_traits = yes
 			give_starter_elf_trait = yes
 
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_variable_list = genetic_traits }
+						AND = {
+							has_variable_list = genetic_traits
+							variable_list_size = {
+								name = genetic_traits
+								value = 0
+							}
+						}
+					}
+				}
+			}
 			random = { # chance to start with a genetic trait
 				chance = starting_characters_random_genetic_trait_spawn_chance_1
 				use_fake_random_effect = { function_name = assign_random_genetic_trait }
