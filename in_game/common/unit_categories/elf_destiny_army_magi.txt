@@ -25,9 +25,7 @@
 
 	maintenance_demand =  early_magi_maintenance
 	construction_demand = early_magi_construction
-	
-	minimum_levy_size = 1
-	
+		
 	startup_amount = 20
 	ai_weight = 0.5
 }

@@ -551,7 +551,7 @@ siberia_bor = {
 	elven = yes
 }
 
-# SIR Siriondil
+# SIO Siriondil
 sulomay = {
 	feudalism = yes
 	legalism = yes
@@ -839,7 +839,7 @@ irkineieva = {
 	legalism = yes
 	elven = yes
 }
-# GIL Gilwenor
+# GIW Gilwenor
 yarkino = {
 	feudalism = yes
 	legalism = yes

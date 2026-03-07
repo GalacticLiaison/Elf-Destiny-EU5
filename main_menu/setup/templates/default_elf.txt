@@ -17,6 +17,7 @@ government = {
 
     laws = {
         consanguinity_law = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+        coin_laws = gold_and_silver_coins
     }
 
     centralization_vs_decentralization = -5

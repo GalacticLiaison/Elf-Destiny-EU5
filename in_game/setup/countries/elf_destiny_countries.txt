@@ -257,7 +257,7 @@ LOE = {
 	culture_definition = astrion_culture
 	religion_definition = aeluran
 }
-SIR = {
+SIO = {
 	color = rgb { 175 106 255 }
 	color2 = rgb { 60 100 0 }
 	# male_regnal_names = {}
@@ -649,7 +649,7 @@ ORF = {
 	culture_definition = astrion_culture
 	religion_definition = aeluran
 }
-GIL = {
+GIW = {
 	color = rgb { 62 9 180 }
 	color2 = rgb { 40 100 50 }
 	# male_regnal_names = {}

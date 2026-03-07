@@ -17,6 +17,83 @@
 	}
 }
 
+INJECT_OR_CREATE:coin_laws = {
+	mythril_coins = {
+		country_modifier = {
+			mythril_used_for_minting = yes
+			mythril_impacts_inflation = 0.1
+			
+			minting_inflation_threshold = 0.04
+			minting_income_factor = 0.2
+		}
+		estate_preferences = {
+			crown_estate
+		}
+
+		allow = {
+			has_advance = mythril_working
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					root = {
+						capital.market = {
+							"goods_supply_in_market(goods:mythril)" > 0
+						}
+					}
+				}
+				add = {
+					desc = "has mythril"
+					value = 100
+				}
+			}
+		}
+
+		years = 2
+	}
+
+	mythril_gold_and_silver_coins = {
+		country_modifier = {
+			mythril_used_for_minting = yes
+			goods_gold_used_for_minting = yes
+			silver_used_for_minting = yes
+			
+			minting_inflation_threshold = 0.05
+			minting_income_factor = 0.15
+		}
+		estate_preferences = {
+			crown_estate
+		}
+
+		allow = {
+			has_advance = mythril_working
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					root = {
+						capital.market = {
+							"goods_supply_in_market(goods:mythril)" > 0
+							"goods_supply_in_market(goods:goods_gold)" > 0
+							"goods_supply_in_market(goods:silver)" > 0
+						}
+					}
+				}
+				add = {
+					desc = "has gold, silver, and mythril"
+					value = 200
+				}
+			}
+		}
+
+		years = 2
+	}
+
+}
+
+
 consanguinity_law = {
 	law_category = religious
 	doctrine_consanguinity_dynastic = {

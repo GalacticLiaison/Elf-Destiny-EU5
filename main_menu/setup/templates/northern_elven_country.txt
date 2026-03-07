@@ -1,6 +1,8 @@
 include = "default_elf"
 include = "elf_monarchy"
 include = "expl_northern_elf_regions"
+include = "expl_north_east_elf_regions"
+include = "expl_north_west_elf_regions"
 
 government = {
     reforms = {

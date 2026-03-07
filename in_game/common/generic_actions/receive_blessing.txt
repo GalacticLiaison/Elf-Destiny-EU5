@@ -27,10 +27,27 @@ receive_blessing = {
 
 	allow = {
 		scope:actor = {
-			has_all_blessings = no
+
+			trigger_if = {
+				limit = {
+					has_all_standard_blessings = yes
+					NOT ={
+						has_religious_aspect = religious_aspect:familial_familiarity
+					}
+				}
+
+				custom_tooltip = {
+					text = "secret condition"
+					has_policy = doctrine_consanguinity_unrestricted
+				}
+			}
+			trigger_else = {
+				has_all_standard_blessings = no
+			}
 		}
 	}
 	
+	# price = 0
 	price = price:blessing_base_price
 	price_modifier = {
 		value = 1

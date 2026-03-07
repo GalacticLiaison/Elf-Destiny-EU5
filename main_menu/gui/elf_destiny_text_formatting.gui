@@ -1,0 +1,6 @@
+textformatting = {
+    format = {
+		name = color_royal_purple
+		format = "color:{0.56, 0.41, 0.68}"
+	}
+}

@@ -1,0 +1,7 @@
+discovered_regions = {
+    manchuria_region
+    east_siberia_region
+    korea_region
+    japan_region
+    north_china_region
+}

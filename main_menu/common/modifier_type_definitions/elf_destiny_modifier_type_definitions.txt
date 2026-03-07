@@ -134,6 +134,13 @@ calaquendi_estate_allowed_leading_military={
 	}
 }
 
+calaquendi_estate_allowed_to_build_rgo={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
 local_calaquendi_desired_pop_scaled={
 	percent=yes
 	game_data={
@@ -1988,6 +1995,63 @@ global_mythril_elven_crafts_output_modifier={
 }
 
 can_extract_mythril_elven_crafts={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+
+mythril_impacts_inflation={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+mythril_used_for_minting={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+lembas_impacts_inflation={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+lembas_used_for_minting={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+elven_crafts_impacts_inflation={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+elven_crafts_used_for_minting={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+mythril_elven_crafts_impacts_inflation={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+mythril_elven_crafts_used_for_minting={
 	boolean=yes
 	game_data={
 		category=country

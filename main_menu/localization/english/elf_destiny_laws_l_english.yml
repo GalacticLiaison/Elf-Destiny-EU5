@@ -28,3 +28,8 @@
 
  elven_law_policy: "Fey Doctrine"
  elven_law_policy_desc: "The laws of the Elves are ancient."
+
+ mythril_gold_and_silver_coins: "Mythril, Gold, and Silver Coins"
+ mythril_gold_and_silver_coins_desc: "The metals selected for the coinage of our currency are mythril, gold, and silver, for three different sets of coins."
+ mythril_coins: "Mythril Coins Only"
+ mythril_coins_desc: "We only use mythril as the metal selected for the coinage of our currency."

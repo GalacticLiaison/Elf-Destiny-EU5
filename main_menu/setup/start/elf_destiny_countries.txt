@@ -728,7 +728,7 @@ countries = {
 			include = "elf_culture_astrion_opinions"
 		}
 
-		SIR = { # sulomay - Siriondil
+		SIO = { # sulomay - Siriondil
 			capital = sulomay
 
 			own_control_core = {
@@ -1334,7 +1334,7 @@ countries = {
 			include = "elf_culture_astrion_opinions"
 		}
 
-		GIL = { # yarkino Gilwenor
+		GIW = { # yarkino Gilwenor
 			capital = yarkino
 
 			own_control_core = {

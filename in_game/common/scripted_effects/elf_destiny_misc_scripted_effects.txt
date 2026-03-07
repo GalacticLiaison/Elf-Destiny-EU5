@@ -217,6 +217,22 @@ elf_destiny_change_starter_goods_effect = {
 	location:brskovo = {
 		change_raw_material = goods:mythril
 	}
+
+
+	location:nyrob = {
+		change_raw_material = goods:marble
+	}
+	location:angoya = {
+		change_raw_material = goods:marble
+	}
+
+
+	location:konda = {
+		change_raw_material = goods:stone
+	}
+	location:kardakan = {
+		change_raw_material = goods:stone
+	}
 }
 
 

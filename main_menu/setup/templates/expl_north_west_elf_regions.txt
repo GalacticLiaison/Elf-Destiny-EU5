@@ -1,0 +1,4 @@
+discovered_regions = {
+    baltic_region
+    ruthenia_region
+}

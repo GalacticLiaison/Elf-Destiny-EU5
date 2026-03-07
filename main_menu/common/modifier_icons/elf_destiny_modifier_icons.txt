@@ -63,6 +63,10 @@ monthly_calaquendi_estate_rebel_growth = {
 	positive = "gfx/interface/icons/modifier_types/rebel_monthly_progress.dds" 
 }
 
+calaquendi_estate_allowed_to_build_rgo= {
+	positive = "gfx/interface/icons/modifier_types/calaquendi_estate_allowed_in_cabinet.dds" 
+}
+
 
 local_calaquendi_desired_pop_scaled = {
 	positive = "gfx/interface/icons/modifier_types/calaquendi_desired_pop.dds"
@@ -212,6 +216,30 @@ can_extract_mythril_elven_crafts = {
 	positive = "gfx/interface/icons/modifier_types/mythril_elven_crafts_positive.dds" 
 }
 
+mythril_impacts_inflation={
+	positive = "gfx/interface/icons/modifier_types/mythril_impacts_inflation.dds" 
+}
+mythril_used_for_minting={
+	positive = "gfx/interface/icons/modifier_types/mythril_impacts_inflation.dds" 
+}
+lembas_impacts_inflation={
+	positive = "gfx/interface/icons/modifier_types/lembas_impacts_inflation.dds" 
+}
+lembas_used_for_minting={
+	positive = "gfx/interface/icons/modifier_types/lembas_impacts_inflation.dds" 
+}
+elven_crafts_impacts_inflation={
+	positive = "gfx/interface/icons/modifier_types/elven_crafts_impacts_inflation.dds" 
+}
+elven_crafts_used_for_minting={
+	positive = "gfx/interface/icons/modifier_types/elven_crafts_impacts_inflation.dds" 
+}
+mythril_elven_crafts_impacts_inflation={
+	positive = "gfx/interface/icons/modifier_types/mythril_elven_crafts_impacts_inflation.dds" 
+}
+mythril_elven_crafts_used_for_minting={
+	positive = "gfx/interface/icons/modifier_types/mythril_elven_crafts_impacts_inflation.dds" 
+}
 
 # army_magi_artillery_maintenance_cost_modifier = {
 # 	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 

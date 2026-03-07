@@ -1,5 +1,5 @@
 ﻿# TODO: maybe we have it update the name dynamically with a customizable localization base don what is legally allowed
-# - maybe keep it "MArry Dynasty" but updated the description to inform the player the options are reflecting the current consangunity law
+# - maybe keep it "MArry Dynasty" but updated the description to inform the player the options are reflecting the current consanguinity law
 
 # TODO: list that this interaction is unlocked in the law itself
 

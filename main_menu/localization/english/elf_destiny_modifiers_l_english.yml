@@ -36,6 +36,9 @@
  MODIFIER_TYPE_NAME_calaquendi_estate_allowed_leading_military: "$calaquendi_estate$ Allowed to Command"
  MODIFIER_TYPE_DESC_calaquendi_estate_allowed_leading_military: "This allows [characters|e] from the [ShowEstateTypeName('calaquendi_estate')] [estate|e] to become [generals|e] and [admirals|e]."
 
+ MODIFIER_TYPE_NAME_calaquendi_estate_allowed_to_build_rgo: "Calaquendi estate allowed to build rgo"
+ MODIFIER_TYPE_DESC_calaquendi_estate_allowed_to_build_rgo: "This allows the $calaquendi_estate$ to being construction of [rgo|e]."
+
  MODIFIER_TYPE_NAME_ban_exports_of_mythril: "Ban Exports of $mythril$"
  MODIFIER_TYPE_DESC_ban_exports_of_mythril: "This blocks the [export|e] of [ShowGoodsName('mythril')] from all [markets|e] that a [country|e] owns."
  MODIFIER_TYPE_NAME_ban_imports_of_mythril: "Ban Imports of $mythril$"
@@ -79,6 +82,23 @@
  MODIFIER_TYPE_DESC_global_mythril_elven_crafts_output_modifier: "This modifies the [output|e] of [ShowGoodsName('mythril_elven_crafts')] in the entire [country|e]."
  MODIFIER_TYPE_NAME_can_extract_mythril_elven_crafts: "Can Extract $mythril_elven_crafts$"
  MODIFIER_TYPE_DESC_can_extract_mythril_elven_crafts: "This allows the creation of [ShowGoodsName('mythril_elven_crafts')] by allowing an [rgo|e] in a [location|e]."
+
+ MODIFIER_TYPE_NAME_mythril_impacts_inflation: "Mythril Impacts Inflation"
+ MODIFIER_TYPE_DESC_mythril_impacts_inflation: "This determines how the production of [ShowGoodsName('mythril')] impacts [inflation|e] in the [country|e]."
+ MODIFIER_TYPE_NAME_mythril_used_for_minting: "Mythril Used for Coins"
+ MODIFIER_TYPE_DESC_mythril_used_for_minting: "This determines if [ShowGoodsName('mythril')] is used for coins in the [country|e]."
+ MODIFIER_TYPE_NAME_lembas_impacts_inflation: "Lembas Impacts Inflation"
+ MODIFIER_TYPE_DESC_lembas_impacts_inflation: "This determines how the production of [ShowGoodsName('lembas')] impacts [inflation|e] in the [country|e]."
+ MODIFIER_TYPE_NAME_lembas_used_for_minting: "Lembas Used for Coins"
+ MODIFIER_TYPE_DESC_lembas_used_for_minting: "This determines if [ShowGoodsName('lembas')] is used for coins in the [country|e]."
+ MODIFIER_TYPE_NAME_elven_crafts_impacts_inflation: "Elven Crafts Impacts Inflation"
+ MODIFIER_TYPE_DESC_elven_crafts_impacts_inflation: "This determines how the production of [ShowGoodsName('elven_crafts')] impacts [inflation|e] in the [country|e]."
+ MODIFIER_TYPE_NAME_elven_crafts_used_for_minting: "Elven Crafts Used for Coins"
+ MODIFIER_TYPE_DESC_elven_crafts_used_for_minting: "This determines if [ShowGoodsName('elven_crafts')] is used for coins in the [country|e]."
+ MODIFIER_TYPE_NAME_mythril_elven_crafts_impacts_inflation: "Mythril Elven Crafts Impacts Inflation"
+ MODIFIER_TYPE_DESC_mythril_elven_crafts_impacts_inflation: "This determines how the production of [ShowGoodsName('mythril_elven_crafts')] impacts [inflation|e] in the [country|e]."
+ MODIFIER_TYPE_NAME_mythril_elven_crafts_used_for_minting: "Mythril Elven Crafts Used for Coins"
+ MODIFIER_TYPE_DESC_mythril_elven_crafts_used_for_minting: "This determines if [ShowGoodsName('mythril_elven_crafts')] is used for coins in the [country|e]."
 
  MODIFIER_TYPE_NAME_aeluran_advisor_appointed: "Aeluran Advisor Joins Cabinet"
  MODIFIER_TYPE_DESC_aeluran_advisor_appointed: "A red sister appointed by the Aeluran Order will be appointed to your cabinet as an advisor. Their office is permanent and can only be removed on the authority of the High Matriarch herself."

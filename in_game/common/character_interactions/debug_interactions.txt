@@ -1,157 +1,166 @@
-﻿# debug_test = { 
-# 	message = yes
-# 	is_consort_action = no
-# 	on_own_nation = yes
-# 	on_other_nation = no
+﻿debug_test = { 
+	message = yes
+	is_consort_action = no
+	on_own_nation = yes
+	on_other_nation = no
 
-# 	price = 0
+	price = 0
 	
 	
-# 	price_modifier = {
-# 		add = 1
-# 	}
+	price_modifier = {
+		add = 1
+	}
 
 
-# 	potential = {
-# 		debug_only = yes
-# 	}
+	potential = {
+		debug_only = yes
+	}
 
-# 	ai_tick = never
+	ai_tick = never
 	
-# 	allow = {
-# 		always = yes
-# 	}
+	allow = {
+		always = yes
+	}
 	
 
-# 	select_trigger = {
-# 		looking_for_a = character
-# 		source = actor
-# 		target_flag = recipient
-# 		name = "choose_character"
-# 		column = {
-# 			data = name
-# 		}
-# 		visible = {
-# 			is_alive = yes
-# 			# is_ruler = yes
-# 		}
-# 		enabled = {
-# 			is_ruler = yes
-# 		}
-# 	}
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = recipient
+		name = "choose_character"
+		column = {
+			data = name
+		}
+		visible = {
+			is_alive = yes
+			# is_ruler = yes
+		}
+		enabled = {
+			is_ruler = yes
+		}
+	}
 
-# 	effect = {
-# 		# set_global_variable = {
-# 		# 	name = portal_restored
-# 		# 	value = yes
-# 		# }
-# 		scope:actor = {
-# 			# trigger_event_non_silently = {
-# 			# 	id = elf_destiny_misc.41
-# 			# }
-# 			# set_stability = 100
-# 			random_cabinet_character = {
-# 				save_scope_as = random_cabinet_character
-# 			}
+	effect = {
+		# set_global_variable = {
+		# 	name = portal_restored
+		# 	value = yes
+		# }
+		# scope:actor = {
+		# 	# trigger_event_non_silently = {
+		# 	# 	id = elf_destiny_misc.41
+		# 	# }
+		# 	# set_stability = 100
+		# 	random_cabinet_character = {
+		# 		save_scope_as = random_cabinet_character
+		# 	}
 
-# 			remove_from_cabinet = scope:random_cabinet_character
+		# 	remove_from_cabinet = scope:random_cabinet_character
 
 
-# 			# add_country_modifier = {
-# 			# 	modifier = greater_religious_influence_bonus
-# 			# 	mode = add_and_extend
-# 			# }
-# 			# add_religious_influence = 1000
-# 		}
+		# 	# add_country_modifier = {
+		# 	# 	modifier = greater_religious_influence_bonus
+		# 	# 	mode = add_and_extend
+		# 	# }
+		# 	# add_religious_influence = 1000
+		# }
 
-		
+		scope:actor = {
+			# research_advance = advance_type:mythril_working
 
-# 		# c:SYL = {
-# 			# set_variable = {
-# 			# 	name = previous_ruling_dynasty
-# 			# 	value = ruler.dynasty
-# 			# }
-# 			# kill_character_silently = ruler
-# 			# research_advance = advance_type:grand_portal_restored
-# 		# }
+			# add_gold = 2000
 
-# 		# c:SYL = {
-# 		# 	create_character = {
-# 		# 		age = {18 30}
-# 		# 		female = yes
+			add_goods_supply = {
+				goods = goods:mythril_elven_crafts
+				amount = market_goods_extreme_gain
+			}
+		}
+
+		# c:SYL = {
+			# set_variable = {
+			# 	name = previous_ruling_dynasty
+			# 	value = ruler.dynasty
+			# }
+			# kill_character_silently = ruler
+			# research_advance = advance_type:grand_portal_restored
+		# }
+
+		# c:SYL = {
+		# 	create_character = {
+		# 		age = {18 30}
+		# 		female = yes
 			
-# 		# 		religion = religion:aeluran
-# 		# 		culture = c:SYL.culture
-# 		# 		estate = estate_type:clergy_estate
+		# 		religion = religion:aeluran
+		# 		culture = c:SYL.culture
+		# 		estate = estate_type:clergy_estate
 			
-# 		# 		# TODO: could have some privilege increase the stats of advisors
-# 		# 		adm = {
-# 		# 			integer_range = {
-# 		# 				min = {
-# 		# 					value = 50
-# 		# 				}
-# 		# 				max = {
-# 		# 					value = 100
-# 		# 				}
-# 		# 			}
-# 		# 		}
-# 		# 		dip = {
-# 		# 			integer_range = {
-# 		# 				min = {
-# 		# 					value = 50
-# 		# 				}
-# 		# 				max = {
-# 		# 					value = 100
-# 		# 				}
-# 		# 			}
-# 		# 		}
-# 		# 		mil = {
-# 		# 			integer_range = {
-# 		# 				min = {
-# 		# 					value = 50
-# 		# 				}
-# 		# 				max = {
-# 		# 					value = 100
-# 		# 				}
-# 		# 			}
-# 		# 		}
+		# 		# TODO: could have some privilege increase the stats of advisors
+		# 		adm = {
+		# 			integer_range = {
+		# 				min = {
+		# 					value = 50
+		# 				}
+		# 				max = {
+		# 					value = 100
+		# 				}
+		# 			}
+		# 		}
+		# 		dip = {
+		# 			integer_range = {
+		# 				min = {
+		# 					value = 50
+		# 				}
+		# 				max = {
+		# 					value = 100
+		# 				}
+		# 			}
+		# 		}
+		# 		mil = {
+		# 			integer_range = {
+		# 				min = {
+		# 					value = 50
+		# 				}
+		# 				max = {
+		# 					value = 100
+		# 				}
+		# 			}
+		# 		}
 			
-# 		# 		add_trait = trait:aeluran_sister
+		# 		add_trait = trait:aeluran_sister
 				
-# 		# 		save_scope_as = aeluran_advisor
-# 		# 		set_variable = aeluran_advisor
-# 		# 	}
+		# 		save_scope_as = aeluran_advisor
+		# 		set_variable = aeluran_advisor
+		# 	}
 
-# 		# }
+		# }
 
-# 		# c:SYL = {
-# 		# 	random_province = {
-# 		# 		random_location_in_province = {
-# 		# 			add_pop = {
-# 		# 				culture = culture:french
-# 		# 				religion = religion:catholic
-# 		# 				type = pop_type:laborers
-# 		# 				size = { value = 1}
-# 		# 			}
-# 		# 		}
-# 		# 	}
-# 		# }
-# 		# random_in_global_list = {
-# 		# 	variable = aeluran_matrons
-# 		# 	kill_character_silently = this
-# 		# }
+		# c:SYL = {
+		# 	random_province = {
+		# 		random_location_in_province = {
+		# 			add_pop = {
+		# 				culture = culture:french
+		# 				religion = religion:catholic
+		# 				type = pop_type:laborers
+		# 				size = { value = 1}
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# random_in_global_list = {
+		# 	variable = aeluran_matrons
+		# 	kill_character_silently = this
+		# }
 
-# 		# religion:aeluran.religious_head.ruler = {
-# 		# 	kill_character_silently = this
-# 		# }
+		# religion:aeluran.religious_head.ruler = {
+		# 	kill_character_silently = this
+		# }
 
-# 		# kill_character_silently = character:dwd_elandra_thalwyn
-# 	}
+		# kill_character_silently = character:dwd_elandra_thalwyn
+	}
 
-#    ai_will_do = {
-# 		value = 0
-#     }
-# }	
+   ai_will_do = {
+		value = 0
+    }
+}	
 
 
 character_editor = {
