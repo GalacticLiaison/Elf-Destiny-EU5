@@ -10,12 +10,12 @@
  aeluran_events.2.a: "Praise be the Spark!"
 
  aeluran_events.3.title: "A New Matriarch"
- aeluran_events.3.desc: "It is a time of great mourning for all Elves. Her holiness, High Matriarch [target.GetName], has returned to the Divine Spark.\n\nWith her passing the Council of Matrons has communed to choose the next [ShowTraitName('aeluran_matriarch')].\n\nMay the world take notice, for the mantle of The Red now lies on the shoulders of [new_matriarch.GetName]. The Matriarch is dead, long live the Matriarch!"
+ aeluran_events.3.desc: "It is a time of great mourning for all Elves. Her holiness, [target.GetName], has returned to the Divine Spark.\n\nWith her passing the Council of Matrons has communed to choose the next [ShowTraitName('aeluran_matriarch')].\n\nMay the world take notice, for the mantle of The Red now lies on the shoulders of [new_matriarch.GetName]. The Matriarch is dead, long live the Matriarch!"
  aeluran_events.3.a: "Praise be the Spark!"
 
  aeluran_events.31.title: "A New Matriarch"
- aeluran_events.31.ruler_desc: "It is a time of great mourning for all Elves. Her holiness, High Matriarch [target.GetName], has returned to the Divine Spark.\n\nWith her passing the Council of Matrons has communed to choose the next [ShowTraitName('aeluran_matriarch')].\n\nMay the world take notice, for the mantle of The Red now lies on the shoulders of #high your ruler#! [new_matriarch.GetName]. The Matriarch is dead, long live the Matriarch!"
- aeluran_events.31.courtier_desc: "It is a time of great mourning for all Elves. Her holiness, High Matriarch [target.GetName], has returned to the Divine Spark.\n\nWith her passing the Council of Matrons has communed to choose the next [ShowTraitName('aeluran_matriarch')].\n\nMay the world take notice, for the mantle of The Red now lies on the shoulders of #high a member of your court#!, [new_matriarch.GetName]. The Matriarch is dead, long live the Matriarch!"
+ aeluran_events.31.ruler_desc: "It is a time of great mourning for all Elves. Her holiness, [target.GetName], has returned to the Divine Spark.\n\nWith her passing the Council of Matrons has communed to choose the next [ShowTraitName('aeluran_matriarch')].\n\nMay the world take notice, for the mantle of The Red now lies on the shoulders of #high your ruler#! [new_matriarch.GetName]. The Matriarch is dead, long live the Matriarch!"
+ aeluran_events.31.courtier_desc: "It is a time of great mourning for all Elves. Her holiness, [target.GetName], has returned to the Divine Spark.\n\nWith her passing the Council of Matrons has communed to choose the next [ShowTraitName('aeluran_matriarch')].\n\nMay the world take notice, for the mantle of The Red now lies on the shoulders of #high a member of your court#!, [new_matriarch.GetName]. The Matriarch is dead, long live the Matriarch!"
  aeluran_events.31.a: "Praise be the Spark!"
 
  aeluran_events.4.title: "A Daughter to Deepwood"

@@ -20,6 +20,7 @@ Shortly into the story, Your characters will have a chance to be transformed int
 
 Elves are marked by a Racial trait. This trait gives them pointy ears, longer life, and an ageless appearance.
 <elf icon>
+[IMG]https://i.imgur.com/VcjUtAb.png[/img]
 
 However not all elves are equal and there are tiers to Elf-hood. Elves can further evolve their elf traits through a process known as Ascension. Basic elves are only slightly more powerful then humans but as you reach the later tiers you essentially become a God.
 
@@ -30,6 +31,8 @@ Genetic Lottery: If two parents of similar Elf Tier procreate, there is a small 
 Ascension Ritual: A simple Decision that allows a player to evolve their elf trait. Still working on how I want this to work but for now it simply costs a massive amount of Piety.
 
 <elf_trait_evolve_gif>
+[IMG]https://i.imgur.com/quqkMbY.gif[/img]
+
 
 Making a return from Crusader Kings 3 is the Genetic trait System! Some characters will randomly spawn with traits that set them apart physically and mentally from their peers. These traits can be inherited or even enhanced by their children.
 This makes picking who you want to be the spouse of your ruler a much more interesting and important decision.
@@ -97,54 +100,127 @@ Visit the Elf Destiny discord to give suggestions, report bugs, and keep up with
 
 
 
+[h1] Welcome all to Elf Destiny Genetic Traits [/h1]
 
-
-
-
-
-# Crusader Kings 3 - Genetic Traits
-
-Welcome all!
-
-This mod brings a fan favorite from Crusader Kings 3, the Genetic Traits!
+Inspired by the fan favorite CK3 mechanic, [i]but legally distinct in art and implementation[/i], comes genetic traits!
 
 Characters can now randomly start the game, spawn, and be born with traits that reflect physical inherited properties from their family line!
 
+<Beauty traits>
+
 Different traits have different rates of appearing and have different inheritance rules. Leveled traits have a better chance of appearing as a higher level version on newborns if both parents have a version of the trait.
 
-<TRAITS GRAPH SHOWING ALL CK3 TRAITS AND DESCRIPTIONS>
+Some traits have special inheritance rules, like the pure-blooded traits that only show up when both parents are of the same dynasty.
 
-Ive included a game rule that gives some control over the frequency that traits appear on characters.
+Some traits are extremely rare like the unconventional and exotic line of beauty traits.
 
-Some traits are from the Elf Destiny mod, this mod is a stand alone slice of functionality built for that mod. If you would prefer to only have traits that came from the Crusader Kings base game Ive included a game rule to disable the Elf Destiny ones.
+This mod is a great way to make royal marriage decision making a little more interesting!
 
-<TRAITS GRAPH SHOWING ALL Elf Destiny Traits>
+[h3] All Traits Included [/h3]
 
-Check out Elf Destiny for EU5
-<button link to main mod>
+[b] Beauty [/b]
+[list]
+    [*]Comely
+    [*]Attractive
+    [*]Beautiful
+    [*]Aphroditic
+[/list]
+
+[b] Beauty Bad [/b]
+[list]
+    [*]Homely
+    [*]Ugly
+    [*]Hideous
+[/list]
+
+[b] Unconventional Beauty [/b]
+[list]
+    [*]Unconventionally Comely
+    [*]Unconventionally Attractive
+    [*]Unconventionally Beautiful
+[/list]
+
+[b] Exotic Beauty [/b]
+[list]
+    [*]Exotically Comely
+    [*]Exotically Attractive
+    [*]Exotically Beautiful
+[/list]
+
+[b] Physique [/b]
+[list]
+    [*]Hale
+    [*]Robust
+    [*]Herculean
+    [*]Titanic
+[/list]
+
+[b] Physique Bad [/b]
+[list]
+    [*]Delicate
+    [*]Frail
+    [*]Feeble
+[/list]
+
+[b] Intellect [/b]
+[list]
+    [*]Quick
+    [*]Intelligent
+    [*]Genius
+    [*]Erudite
+[/list]
+
+[b] Intellect Bad [/b]
+[list]
+    [*]Slow
+    [*]Stupid
+    [*]Imbecile
+[/list]
+
+[b] Blood Purity [/b]
+[list]
+    [*]Pure-blooded
+    [*]Purer-blooded
+    [*]Purest-blooded
+    [*]Inbred
+[/list]
+
+[b] Other [/b]
+[list]
+    [*]Giant
+    [*]Fecund
+[/list]
+
+This mod is a stand alone slice of functionality from the EU5 Elf destiny mod. Try out the full mod today!
+[url=][IMG]https://i.imgur.com/SncWZYb.png[/img][/url]
 
 If want to sculpt your perfect Gigachad a little quicker, Ive also included a Character Editor character interaction that can be used to add whatever traits you would like. You can enable it with a game rule or by playing in Debug mode.
 
-<button picture of cheat menu>
+<picture of cheat menu>
 
 - All permissions are granted to extend this mod via sub-mods ar including the genetic trait framework in your mods!
 
-Visit the Elf Destiny discord to give suggestions, report bugs, and keep up with development.
+Come visit the Elf Destiny Discord to report bugs and read dev diaries to keep up with development on the mod!
 
-- Want to support me?
+[url=https://discord.gg/elf-destiny-1179053540161880074][IMG]https://i.imgur.com/1uVzN5S.png[/img][/url]
+
+[IMG]https://i.imgur.com/I1gJqMR.gif[/img]
+Help fund the development of the mod! Bake me some Lembas Im famished! 
+
+[url=https://ko-fi.com/elf_destiny][IMG]https://i.imgur.com/p2MXTcq.png[/img][/url]
  
 
-# Crusader Kings 3 - Consanguinity Laws
 
-Welcome All!
 
-This mod brings a... fan favorite... from Crusader Kings 3, Consanguinity Laws!
+[h1] Welcome all to Elf Destiny Consanguinity Law! [/h1]
+
+This mod brings a mechanic inspired by a... fan favorite... from CK3, Consanguinity Laws!
 
 Control which familiar relations are banned in your country.
 
 <image of Law and Policies>
 
-Also includes a new Dynastic Marriage character interaction used to have a character marry anyone in their dynasty based on the Consanguinity policy selected
+Includes a new Dynastic Marriage character interaction used to have a character marry anyone in their dynasty based on the Consanguinity policy selected
 
 Note: Royal Marriage logic has not changed as its one of the few un-moddable things in the game. 
 
@@ -154,15 +230,20 @@ Now you can add a "deeper level of medieval simulation" to your games.
 
 "I Know what kind of man you are" <maybe as an AI medieval version of the meme> <could use guy from eu5 art as style reference>
 
-
 this mod is a stand alone slice of functionality from the EU5 Elf destiny mod. Try out the full mod today!
-<button link to main mod>
+[url=][IMG]https://i.imgur.com/SncWZYb.png[/img][/url]
 
 Pair with the Crusader Kings 3 - Genetic Traits to pursue the path of the pure-blooded, or end in inbred-edness. 
 <button to Genetic Mods>
 
 All permissions are granted to extend this mod via sub-mods!
 
-Visit the Elf Destiny discord to give suggestions, report bugs, and keep up with development.
+Come visit the Elf Destiny Discord to report bugs and read dev diaries to keep up with development on the mod!
 
+[url=https://discord.gg/elf-destiny-1179053540161880074][IMG]https://i.imgur.com/1uVzN5S.png[/img][/url]
+
+[IMG]https://i.imgur.com/I1gJqMR.gif[/img]
+Help fund the development of the mod! Bake me some Lembas Im famished! 
+
+[url=https://ko-fi.com/elf_destiny][IMG]https://i.imgur.com/p2MXTcq.png[/img][/url]
 
