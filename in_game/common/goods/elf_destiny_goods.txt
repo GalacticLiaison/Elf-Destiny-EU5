@@ -8,9 +8,11 @@
 	ai_rgo_size_importance = 10 # ai preference to avoid building a city on this rgo
 	ai_rgo_expansion_priority = 0.2
 
-	# demand_add = {
-	# 	nobles = 0.025
-	# }	
+	demand_add = {
+		burghers = 0.01
+		nobles = 0.025
+		calaquendi = 0.05
+	}	
 	
 	wealth_impact_threshold = {
 		all = 1.05
@@ -22,6 +24,15 @@ lembas = {
 	color = { 0.168 0.556 0.254 1 }
 	default_market_price = 7
 	transport_cost = 0.1
+
+	food = 15.0
+
+	demand_add = {
+		calaquendi = 0.01
+		nobles = 0.01
+		burghers = 0.01
+		peasants = 0.01
+	}
 }
 
 elven_crafts = {
@@ -29,6 +40,14 @@ elven_crafts = {
 	color = { 0.168 0.556 0.654 1 }
 	default_market_price = 8
 	transport_cost = 1
+
+	demand_add = {
+		calaquendi = 0.075
+		nobles = 0.05
+		burghers = 0.05
+		clergy = 0.05
+		soldiers = 0.05
+	}
 }
 
 mythril_elven_crafts = {
@@ -36,4 +55,10 @@ mythril_elven_crafts = {
 	color = { 0.168 0.556 0.654 1 }
 	default_market_price = 15
 	transport_cost = 1
+	demand_add = {
+		calaquendi = 0.075
+		nobles = 0.05
+		burghers = 0.02
+		soldiers = 0.01
+	}
 }

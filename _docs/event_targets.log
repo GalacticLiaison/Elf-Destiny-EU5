@@ -113,11 +113,6 @@ Unknown, add something in code registration
 Input Scopes: location, province, province_definition, area, region, sub_continent
 Output Scopes: continent
 
-### source_province
-Unknown, add something in code registration
-Input Scopes: colonial_charter
-Output Scopes: province
-
 ### dominant_dialect
 Unknown, add something in code registration
 Input Scopes: location, country
@@ -173,6 +168,21 @@ Unknown, add something in code registration
 Input Scopes: war
 Output Scopes: country
 
+### original_attacker_leader
+Unknown, add something in code registration
+Input Scopes: war
+Output Scopes: country
+
+### original_defender_leader
+Returns the country which was the original defender. In cases where the war is started against a subject country, defender_leader would return the overlord while original_defender_leader would return the subject country. Returns the current defender war leader as fallback.
+Input Scopes: war
+Output Scopes: country
+
+### war_goal_province
+Links to the war goal of the war. If no war goal is set or is unrelated to locations (such as superiority) the link returns the capital of the defender war leader
+Input Scopes: war
+Output Scopes: province
+
 ### law
 Unknown, add something in code registration
 Input Scopes: policy
@@ -182,12 +192,6 @@ Output Scopes: law
 Unknown, add something in code registration
 Input Scopes: policy
 Output Scopes: price
-
-### modifier
-Scope to the value of the modifier type of specified key belonging to the current object
-Requires Data: yes
-Input Scopes: location, country, unit, character, religion, province, international_organization
-Output Scopes: value, boolean
 
 ### building_base_cost_in_gold
 The Building base price in gold
@@ -317,6 +321,16 @@ Requires Data: yes
 Input Scopes: country
 Output Scopes: value
 
+### largest_army
+The largest army controlled by the country
+Input Scopes: country
+Output Scopes: unit
+
+### largest_navy
+The largest navy controlled by the country
+Input Scopes: country
+Output Scopes: unit
+
 ### last_valid_ruler
 Unknown, add something in code registration
 Input Scopes: country
@@ -365,6 +379,11 @@ The amount of possible privileges an estate can get
 Requires Data: yes
 Input Scopes: country
 Output Scopes: value
+
+### original_capital
+Unknown, add something in code registration
+Input Scopes: country
+Output Scopes: location
 
 ### overlord
 Unknown, add something in code registration
@@ -444,6 +463,12 @@ Output Scopes: country
 Unknown, add something in code registration
 Input Scopes: country
 Output Scopes: country
+
+### total_building_levels_including_construction
+The amount of total  building levels including construction in a speficic Country
+Requires Data: yes
+Input Scopes: country
+Output Scopes: value
 
 ### total_effective_building_levels
 The amount of total effective building levels in a speficic Country
@@ -670,6 +695,11 @@ Unknown, add something in code registration
 Input Scopes: location
 Output Scopes: country
 
+### advance_age
+Unknown, add something in code registration
+Input Scopes: advance_type
+Output Scopes: age
+
 ### language_family
 Unknown, add something in code registration
 Input Scopes: language
@@ -894,6 +924,11 @@ Reference a previous set global variable via its name eg: global_var:important_t
 Requires Data: yes
 Global Link: yes
 
+### global_variable_map
+Reference a previous set variable via its name eg: "global_variable_map(average_relation_map|c:FRA)"
+Requires Data: yes
+Global Link: yes
+
 ### god
 Unknown, add something in code registration
 Requires Data: yes
@@ -977,6 +1012,11 @@ Output Scopes: levy_setup
 
 ### local_var
 Reference a previous set local variable via its name eg: local_var:person_of_interest
+Requires Data: yes
+Global Link: yes
+
+### local_variable_map
+Reference a previous set variable via its name eg: "local_variable_map(rewards_for_country|c:FRA)"
 Requires Data: yes
 Global Link: yes
 
@@ -1160,6 +1200,11 @@ Unknown, add something in code registration
 Requires Data: yes
 Output Scopes: scriptable_hint_definition
 
+### scripted_geography
+Unknown, add something in code registration
+Requires Data: yes
+Output Scopes: scripted_geography
+
 ### situation
 Unknown, add something in code registration
 Requires Data: yes
@@ -1213,6 +1258,11 @@ Unknown, add something in code registration
 Requires Data: yes
 Output Scopes: unit_ability
 
+### unit_formation_preference
+Unknown, add something in code registration
+Requires Data: yes
+Output Scopes: unit_formation_preference
+
 ### unit_type
 Unknown, add something in code registration
 Requires Data: yes
@@ -1226,6 +1276,10 @@ Output Scopes: value
 
 ### var
 Reference a previous set variable via its name eg: var:mortal_enemy
+Requires Data: yes
+
+### variable_map
+Reference a variable set under a specified scope in a named container on this scope: "variable_map(our_relations_with|c:FRA)"
 Requires Data: yes
 
 ### vegetation
@@ -1520,6 +1574,12 @@ Unknown, add something in code registration
 Input Scopes: holy_site, avatar
 Output Scopes: god
 
+### modifier
+Scope to the value of the modifier type of specified key belonging to the current object
+Requires Data: yes
+Input Scopes: location, country, unit, character, dynasty, religion, province, international_organization
+Output Scopes: value, boolean
+
 ### rebel
 Unknown, add something in code registration
 Input Scopes: character, pop
@@ -1674,3 +1734,5 @@ law
 policy
 builder
 old_religion
+old_rank
+old_culture

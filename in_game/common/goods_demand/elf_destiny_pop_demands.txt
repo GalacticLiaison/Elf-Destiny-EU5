@@ -1,4 +1,22 @@
-﻿calaquendi_demand = {
+﻿INJECT:pop_demand = {
+	elven_crafts = {
+		value = 1		
+	}
+	
+	lembas = {
+		value = 1		
+	}
+
+	mythril = {
+		value = 1		
+	}
+
+	mythril_elven_crafts = {
+		value = 1		
+	}	
+}
+
+calaquendi_demand = {
 	hidden = yes
 	category = pop_needs
 }

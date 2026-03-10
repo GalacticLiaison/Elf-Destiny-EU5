@@ -137,11 +137,11 @@ royal_elf_lormelis = {
 		army_losses_in_war_cost_modifier = 0
 		navy_heavy_ship_build_cost_modifier = 0.10
 		navy_heavy_ship_maintenance_cost_modifier = 0.10
-		hire_privateer_cost_modifier = 0.5
+		hire_privateer_cost_modifier = -0.5
 		can_hire_privateers = yes
 		may_explore = yes
 		exploration_mission_speed_modifier = 0.5
-		global_maritime_presence_decay = 0.10
+		global_maritime_presence_decay = -0.10
 		navy_tradition_from_battle = 0.5
 		blue_eyecolor_modifier = yes
 	}

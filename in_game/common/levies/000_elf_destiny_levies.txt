@@ -10,6 +10,41 @@
 	unit = calaquendi_high_magi
 }
 
+levy_a_late_elf_noble = {
+	size = levy_generic_noble_cavalry_size
+	
+	allowed_pop_type = nobles
+
+	country_allow = {
+		culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = a_late_elf_noble_lancers
+}
+
+levy_a_elf_nobles = {
+	size = levy_generic_noble_cavalry_size
+	
+	allowed_pop_type = nobles
+
+	country_allow = {
+		culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = a_elf_noble_lancers
+}
+levy_a_early_elf_nobles = {
+	size = levy_generic_noble_cavalry_size
+	
+	allowed_pop_type = nobles
+
+	country_allow = {
+		culture = { has_culture_group = culture_group:elven_culture_group}
+	}
+	
+	unit = a_early_elf_noble_lancers
+}
+
 
 
 levy_aeluran_magi_level_6 = {

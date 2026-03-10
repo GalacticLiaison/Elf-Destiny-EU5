@@ -50,6 +50,16 @@
  a_fey_archers_desc: "Veteran Fey Archers are more experienced and skilled in their craft, able to deliver more precise and powerful shots."
  a_late_fey_archers: "Elite Fey Archers"
  a_late_fey_archers_desc: "Elite Fey Archers are the most skilled of their kind, capable of delivering devastating volleys of arrows with incredible accuracy."
+
+ a_early_elf_noble_lancers: "Highborn Lancers"
+ a_early_elf_noble_lancers_desc: "Elven nobles of great prowess and decades of martial training. Swift are their mounts, long are their lances, and their strikes true"
+
+ a_elf_noble_lancers: "Gallant Highborn Lancers"
+ a_elf_noble_lancers_desc: "The elite Elven nobility, martial leaders to their people. Brave in action, elegant in their death dealing. Lances but an extension of themselves"
+
+ a_late_elf_noble_lancers: "Regaliant Highborn Lancers"
+ a_late_elf_noble_lancers: "Heroes of Song, chivalric Elven masters atop purebred steeds. Their thunderous arrival to the field peirce the hearts of foes long before their lances reach them."
+
  wolf_riders: "Wolf riders"
  wolf_riders_desc: "Feared throughout the realms of elf and men. Armored knights ride the back of monstrous wolves. They are known for their speed and ferocity in battle, often charging into enemy lines to disrupt formations and cause chaos."
  ranger_high_guard: "Ranger High Guard"

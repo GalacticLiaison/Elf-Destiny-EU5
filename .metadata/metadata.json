@@ -1,8 +1,8 @@
 ﻿{
 	"name":	"Elf Destiny",
 	"id":	"elfDestiny",
-	"version":	"1.*",
-	"supported_game_version":	"",
+	"version":	"1.0.1",
+	"supported_game_version": "1.*",
 	"short_description":	"Elf Destiny rises again",
 	"tags":	["Alternative history", "Characters", "Culture & Art", "Gameplay", "Government and Estates"],
 	"relationships":	[],

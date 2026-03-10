@@ -474,7 +474,7 @@ elf_destiny_expedition.230 = {
             }
         }
 
-        add_manpower = -75
+        add_manpower = -0.075
 
         trigger_event_silently = {
             id = elf_destiny_expedition.2

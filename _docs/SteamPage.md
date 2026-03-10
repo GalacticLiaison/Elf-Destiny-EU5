@@ -1,102 +1,105 @@
-<Welcome One and All To Elf Destiny>
+[IMG]https://i.imgur.com/25VahfP.png[/img]
 
 The world's premier Elven Crusader Kings III mod has come to EU5!
 
-## Premise
 At the beginning of civilization, Elves and Humans came to this world through a portal from another realm. Since then, countless Elf and Human empires have risen and fallen, now lost to time. Elves have faded to the edges of the world and memory. You're the new Elf Lord and your goal is to restore the greatness of the Elves. What will this new Elven people be like and how will they get along with Humans?
 
 Those answers are for you to decide!
 
-### Expeditions and a Quest
+[IMG]https://i.imgur.com/KOxUrmV.png[/img]
 Shortly after the game starts you begin your adventure with the visit of an archaeologist to your realm. She claims to have found ruins of the mythical Elven people from the story books and needs your help to fund an expedition to uncover the secrets there.
-<maybe picture of opening event>
 
 If all goes well upon her return she will present to you a powerful artifact and launch you into a quest to restore the Elven world.
 This unlocks a new Character Interaction for your Ruler, "Fund Expedition"
 
-### Racial and Genetic Traits
+[IMG]https://i.imgur.com/peF2bcr.png[/img]
 
 Shortly into the story, Your characters will have a chance to be transformed into elves!
 
 Elves are marked by a Racial trait. This trait gives them pointy ears, longer life, and an ageless appearance.
-<elf icon>
 [IMG]https://i.imgur.com/VcjUtAb.png[/img]
 
 However not all elves are equal and there are tiers to Elf-hood. Elves can further evolve their elf traits through a process known as Ascension. Basic elves are only slightly more powerful then humans but as you reach the later tiers you essentially become a God.
 
 There are two ways to Ascend
 
-Genetic Lottery: If two parents of similar Elf Tier procreate, there is a small chance their offspring will be of a higher elf tier. This is why Elven cultures are usually so obsessed with bloodlines.
+[b]Genetic Lottery:[/b] If two parents of similar Elf Tier procreate, there is a small chance their offspring will be of a higher elf tier. This is why Elven cultures are usually so obsessed with bloodlines.
 
-Ascension Ritual: A simple Decision that allows a player to evolve their elf trait. Still working on how I want this to work but for now it simply costs a massive amount of Piety.
+[b]Ascension Ritual:[/b] An action available in the religion panel that costs religious influence to take
 
-<elf_trait_evolve_gif>
 [IMG]https://i.imgur.com/quqkMbY.gif[/img]
 
-
-Making a return from Crusader Kings 3 is the Genetic trait System! Some characters will randomly spawn with traits that set them apart physically and mentally from their peers. These traits can be inherited or even enhanced by their children.
+Newly added is a genetic trait system inspired, [i]but unique in art and implementation[/i], from Crusader Kings 3! Some characters will randomly spawn with traits that set them apart physically and mentally from their peers. These traits can be inherited or even enhanced by their children.
 This makes picking who you want to be the spouse of your ruler a much more interesting and important decision.
-<Genetics art>
 
-I've made the CK3 Genetics a stand alone mod for the heretics who dont want Elves in their game. See Below!
+[IMG]https://i.imgur.com/oT3Jm3O.png[/img]
+
+I've made the Genetics a stand alone mod for the heretics who dont want Elves in their game. Click Below!
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3681146272][IMG]https://i.imgur.com/hx2FAmO.png[/img][/url]
 
 Keep an eye out for countries with rulers from ancient Elven bloodlines. They carry unique genetic bloodline traits.
-<Image of elven bloodlines>
-perhaps joining your family with theirs could lead to powerful heirs for your Kingdom
 
-### Calaquendi
+[IMG]https://i.imgur.com/bRQrGHx.png[/img]
+
+Perhaps joining your family with theirs could lead to powerful heirs for your Kingdom. Can you collect them all?
+
+[IMG]https://i.imgur.com/04JQDCs.png[/img]
 Countries that have an Elven culture will unlock a brand new Calaquendi estate and population type! Calaquendi are the true elites of Elven society, the nobles amongst nobles. They are the wisest and most powerful few. 
 
-New Estate Privileges!
-<estate privlege art>
+[h3]New Estate Privileges![/h3]
+[IMG]https://i.imgur.com/WLUAore.png[/img]
 
-Calaquendi Levies
-Calaquendi are few in number but are make for extremely powerful High Magi levies! Increasing the size of your calaquendi population to dominate the battlefield.
+[h3]Calaquendi Levies[/h3]
+Calaquendi are few in number but are make for extremely powerful High Magi levies! Increase the size of your Calaquendi population to dominate the battlefield.
 
-New Buildings!
-ascension costs a great deal of religious influence and higher levels will require you to increase your religious influence capacity. 
+[h3]New Buildings![/h3]
+Ascension costs a great deal of religious influence and higher levels will require you to increase your religious influence capacity. 
 To help with this you can pass Calaquendu Parliament issues to build special Calaquendi estate buildings that increase your religious influence and increase the amount of Calaquendi your country can recruit.
 
-### New Elven Countries
-
+[IMG]https://i.imgur.com/85M870C.png[/img]
 In the Far North there are a collection of new Elven countries to face or play as
-<Elven map>
+[IMG]https://i.imgur.com/n72hQqe.png[/img]
 
-There are also some other Elven countries spread around Europe and the mediterranean to find.
+There are also some other Elven countries spread around Europe and the Mediterranean to find.
 
-### Elven Religion
+[IMG]https://i.imgur.com/I4AVjW6.png[/img]
 Join a new Elven Religion!
 All Elves worship The Divine Spark, a mysterious cosmic force you may encounter on your journey.
 The Order of the Aeluran Weavers are the shepherds of its will
 
-<Aeluran sister/matron/matriarch trait>
+[IMG]https://i.imgur.com/zE7UZ9W.png[/img]
+
 The Aeluran are an all female order and their only goal is to ensure the prosperity of elves by putting worthy and capable leaders into power. It is customary for an Elf ruler to allow the Aeluran Sisters some power over the management of his or her realm. They are the historical facilitators of the Elven religion. Their direct inspirations are the "Aes Sedai" from Robert Jordan's Wheel of Time Series and the "Bene Gesserit" from Frank Herbert's Dune. They are know as the Red Witches to the common folk.
 
 They come with their own new Estate Privileges to discover.
 
 With enough Religious influence, its possible to perform a ritual to convene with the Divine Spark and be granted a blessing. Blessings are powerful boons that affect the entire elven population of your country. The Divine Spark works in mysterious ways and sometimes the effects of Blessings can be... peculiar.
-<Blessing art>
+[IMG]https://i.imgur.com/VxGByvm.png[/img]
 
-### Thats not all!
+[IMG]https://i.imgur.com/gCDS7Te.png[/img]
 Theres so much to discover! A new Elven institution with its own advance tree, New buildings, military unit types, government reforms, trade goods, and more!
 
 Make sure to check game rules for some configuration options!
 
-## Early Development and How You Can Help
-- So far, story content is roughly in line with the CK3 mod. As that mod progresses in content so may this one.
-- Please report bugs! Preferably on Discord.
-- As a fresh release there is going to be balance issues so im looking for feedback, especially around Unit and trade goods balance. Call to action for the Spreadsheet warriors!
-- All sub-mods are endorsed and encouraged, no permission needed. Special titles can be collected on the Discord server for those who make one.
-- Always looking for volunteers of all skill levels who want to help development along.
+[IMG]https://i.imgur.com/iHt2cIr.png[/img]
+[list]
+    [*]So far, story content is roughly in line with the CK3 mod. As that mod progresses in content so may this one.
+    [*]Please report bugs! Preferably on Discord. With a new mod launch Im sure there will be a lot of them
+    [*]As a fresh release there is going to be balance issues so Im looking for feedback, especially around Unit and trade goods balance. Call to action for the Spreadsheet warriors!
+    [*]All sub-mods are endorsed and encouraged, no permission needed. Special titles can be collected on the Discord server for those who make one.
+    [*]Always looking for volunteers of all skill levels who want to help development along.
+[/list]
 
-## Socials
-Visit the Elf Destiny discord to give suggestions, report bugs, and keep up with development.
-<Discord link>
+[b]Visit the Elf Destiny discord to give suggestions, report bugs, and keep up with development.[/b]
+[url=https://discord.gg/7V9TGnkFDk][IMG]https://i.imgur.com/1uVzN5S.png[/img][/url]
 
-## come try the original CK3 mod here!
-<Elf Destiny button>
+[h2] Come try the original CK3 mod here! [/h2]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3114064450][IMG]https://i.imgur.com/SncWZYb.png[/img][/url]
 
-<Want to support me?>
+[IMG]https://i.imgur.com/I1gJqMR.gif[/img]
+Consider giving me money as a donation just because you enjoy what I do! Bake me some Lembas I'm famished! 
+
+[url=https://ko-fi.com/elf_destiny][IMG]https://i.imgur.com/p2MXTcq.png[/img][/url]
 
 
 
@@ -214,27 +217,27 @@ Help fund the development of the mod! Bake me some Lembas Im famished!
 
 [h1] Welcome all to Elf Destiny Consanguinity Law! [/h1]
 
-This mod brings a mechanic inspired by a... fan favorite... from CK3, Consanguinity Laws!
+This mod brings a mechanic inspired by a... fan favorite... from CK3, Consanguinity Law!
 
-Control which familiar relations are banned in your country.
+Control what level of familiar relations are allowed or banned in your country .
 
-<image of Law and Policies>
+[url=][IMG]https://i.imgur.com/THiDhwn.png[/img][/url]
 
 Includes a new Dynastic Marriage character interaction used to have a character marry anyone in their dynasty based on the Consanguinity policy selected
 
 Note: Royal Marriage logic has not changed as its one of the few un-moddable things in the game. 
 
-<image of Character Interaction>
-
 Now you can add a "deeper level of medieval simulation" to your games.
 
 "I Know what kind of man you are" <maybe as an AI medieval version of the meme> <could use guy from eu5 art as style reference>
 
-this mod is a stand alone slice of functionality from the EU5 Elf destiny mod. Try out the full mod today!
+This mod is a stand alone slice of functionality from the EU5 Elf destiny mod. 
+[b] If you are playing with Elf Destiny you do not need this mod running as well[/b]
+Try out the full mod today!
 [url=][IMG]https://i.imgur.com/SncWZYb.png[/img][/url]
 
 Pair with the Crusader Kings 3 - Genetic Traits to pursue the path of the pure-blooded, or end in inbred-edness. 
-<button to Genetic Mods>
+[url=][IMG]https://i.imgur.com/hx2FAmO.png[/img][/url]
 
 All permissions are granted to extend this mod via sub-mods!
 

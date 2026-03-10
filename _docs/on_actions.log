@@ -38,6 +38,12 @@ Expected Scope: none
 
 --------------------
 
+recruit_bloodline_members:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_annexing_subject_monthly_pulse:
 From Code: Yes
 Expected Scope: country
@@ -98,6 +104,12 @@ Expected Scope: country
 
 --------------------
 
+populate_calaquendi_estate_with_characters:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_bankruptcy:
 From Code: Yes
 Expected Scope: none
@@ -106,6 +118,12 @@ Expected Scope: none
 
 on_pre_winning_war:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+manage_building_modifiers:
+From Code: No
 Expected Scope: none
 
 --------------------
@@ -129,6 +147,12 @@ Expected Scope: none
 --------------------
 
 on_annex:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_lose_hegemon_status:
 From Code: Yes
 Expected Scope: none
 
@@ -188,6 +212,12 @@ Expected Scope: none
 
 --------------------
 
+assign_enchantress_trait:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_diplomatic_annexed:
 From Code: Yes
 Expected Scope: none
@@ -242,6 +272,18 @@ Expected Scope: country
 
 --------------------
 
+assign_elf_bloodline_traits:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+daughters_return_as_aeluran_sisters:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_great_battle_lost:
 From Code: Yes
 Expected Scope: none
@@ -249,6 +291,12 @@ Expected Scope: none
 --------------------
 
 on_work_of_art_moved:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_subject_created:
 From Code: Yes
 Expected Scope: none
 
@@ -326,9 +374,21 @@ Expected Scope: none
 
 --------------------
 
+on_gain_hegemon_status:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_siege_lost:
 From Code: Yes
 Expected Scope: country
+
+--------------------
+
+retain_aeluran_advisors:
+From Code: No
+Expected Scope: none
 
 --------------------
 
@@ -352,6 +412,12 @@ Expected Scope: none
 
 on_international_organization_policy_changed:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+daughters_sent_to_become_aeluran_sisters:
+From Code: No
 Expected Scope: none
 
 --------------------
@@ -392,6 +458,12 @@ Expected Scope: none
 
 --------------------
 
+give_genetic_traits_to_starter_characters:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_loan_taken:
 From Code: Yes
 Expected Scope: none
@@ -400,6 +472,12 @@ Expected Scope: none
 
 on_game_start:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+elf_destiny_misc_game_start_tweaks:
+From Code: No
 Expected Scope: none
 
 --------------------
@@ -428,6 +506,12 @@ Expected Scope: none
 
 --------------------
 
+assign_elf_trait:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 chinese_expedition_event_pulse:
 From Code: No
 Expected Scope: country
@@ -443,6 +527,12 @@ Expected Scope: none
 volcano_location_pulse:
 From Code: Yes
 Expected Scope: location
+
+--------------------
+
+elf_destiny_goods_change:
+From Code: No
+Expected Scope: none
 
 --------------------
 
@@ -464,15 +554,33 @@ Expected Scope: none
 
 --------------------
 
+on_culture_changed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_loan_renewed:
 From Code: Yes
 Expected Scope: none
 
 --------------------
 
+record_dead_rulers_dynasty:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+assign_aeluran_advisor:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_character_death:
 From Code: Yes
-Expected Scope: country
+Expected Scope: none
 
 --------------------
 
@@ -500,6 +608,12 @@ Expected Scope: none
 
 --------------------
 
+start_elf_destiny_storyline:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_annexed:
 From Code: Yes
 Expected Scope: none
@@ -514,6 +628,12 @@ Expected Scope: none
 
 on_mission_task_start:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+aeluran_succession:
+From Code: No
 Expected Scope: none
 
 --------------------
@@ -544,6 +664,12 @@ Expected Scope: none
 
 on_cabinet_removed:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+new_character_chance_of_random_genetic_trait:
+From Code: No
 Expected Scope: none
 
 --------------------
@@ -616,6 +742,12 @@ Expected Scope: none
 
 on_policy_changed:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+handle_created_character_race:
+From Code: No
 Expected Scope: none
 
 --------------------
@@ -704,6 +836,12 @@ Expected Scope: none
 
 --------------------
 
+assign_heroic_trait:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_location_changed_owner:
 From Code: Yes
 Expected Scope: location
@@ -782,6 +920,12 @@ Expected Scope: country
 
 --------------------
 
+assign_genetic_traits:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_former_independent_appanage:
 From Code: No
 Expected Scope: none
@@ -803,6 +947,12 @@ Expected Scope: country
 on_become_revolution_target:
 From Code: Yes
 Expected Scope: country
+
+--------------------
+
+setup_elf_culture_locations:
+From Code: No
+Expected Scope: none
 
 --------------------
 
@@ -908,6 +1058,12 @@ Expected Scope: country
 
 --------------------
 
+set_calaquendi_education:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_ending_war:
 From Code: Yes
 Expected Scope: none
@@ -927,6 +1083,12 @@ Expected Scope: none
 --------------------
 
 on_mission_abort:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_country_rank_change:
 From Code: Yes
 Expected Scope: none
 

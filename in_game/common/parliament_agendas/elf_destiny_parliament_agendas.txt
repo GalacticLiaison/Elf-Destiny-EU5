@@ -13,6 +13,7 @@
 			value = expedition_cost
 			multiply = 0.5
 		}
+		set_variable = expedition_underway
 		trigger_event_non_silently = {
 			id = elf_destiny_expedition.1
 		}

@@ -82,6 +82,96 @@ a_late_fey_archers = {
 	gfx_tags = { longbow_tag archer_tag light_tag }
 }
 
+a_early_elf_noble_lancers= {
+	category = army_infantry
+	copy_from = a_age_1_traditions_cavalry
+	upgrades_to = a_elf_noble_lancers
+
+	initiative = 4
+	strength_damage_taken = -0.30
+	morale_damage_taken = -0.30
+	movement_speed = 0.5
+	
+	buildable = no
+	levy = yes
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	combat = {
+		forest = 0.20
+		grasslands = 0.10
+		wetlands = -0.10
+	}
+
+	location_potential = {
+		elf_unit_location_trigger = yes
+	}
+
+	gfx_tags = { heavy_tag }
+}
+
+a_elf_noble_lancers= {
+	category = army_infantry
+	copy_from = a_age_2_renaissance_cavalry
+	upgrades_to = a_late_elf_noble_lancers
+	light = no
+
+	initiative = 5
+	strength_damage_taken = -0.55
+	morale_damage_taken = -0.35
+	movement_speed = 0.75
+	
+	buildable = no
+	levy = yes
+
+	maintenance_demand =  heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	combat = {
+		forest = 0.25
+		grasslands = 0.10
+		wetlands = -0.10
+	}
+
+	location_potential = {
+		elf_unit_location_trigger = yes
+	}
+
+	gfx_tags = { heavy_tag }
+}
+
+a_late_elf_noble_lancers = {
+	category = army_infantry
+	copy_from = a_age_3_discovery_cavalry
+	light = no
+	
+	initiative = 6
+	strength_damage_taken = -0.55
+	morale_damage_taken = -0.35
+	movement_speed = 1
+	
+	buildable = no
+	levy = yes
+
+	maintenance_demand =  heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	combat = {
+		forest = 0.3
+		grasslands = 0.10
+		wetlands = -0.10
+	}
+
+	location_potential = {
+		elf_unit_location_trigger = yes
+	}
+
+	gfx_tags = { heavy_tag }
+}
+
+
+
 ranger_high_guard = {
 	category = army_infantry
 	copy_from = a_age_3_discovery_infantry

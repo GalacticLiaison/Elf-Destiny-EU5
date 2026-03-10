@@ -43,8 +43,10 @@ What if for expedition unlocked advances, they start in the tree as ???
 
  another stab at elf CoAs?
 
- better art for Open hearted
-
  Julia convert to Aeluran
 
  Holy Sites
+
+https://discord.com/channels/1179053540161880074/1179054158003839086/1480592009117827203
+
+Stop Co-Sponsor and Expedition while one is underway
