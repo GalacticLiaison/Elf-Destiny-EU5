@@ -49,7 +49,7 @@
 
 calaquendi_estate = {
 	color = { 0.468 0.456 0.854 1 }
-	power_per_pop = 100
+	power_per_pop = 130
 	tax_per_pop = 300
 	rival = -0.01
 	alliance = 0.01

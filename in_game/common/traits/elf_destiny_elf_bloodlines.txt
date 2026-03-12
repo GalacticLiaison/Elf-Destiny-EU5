@@ -141,7 +141,7 @@ royal_elf_lormelis = {
 		can_hire_privateers = yes
 		may_explore = yes
 		exploration_mission_speed_modifier = 0.5
-		global_maritime_presence_decay = -0.10
+		global_maritime_presence_decay = -0.0015
 		navy_tradition_from_battle = 0.5
 		blue_eyecolor_modifier = yes
 	}

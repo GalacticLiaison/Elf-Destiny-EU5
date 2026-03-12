@@ -20,6 +20,7 @@
 		if = {
 			limit = {
 				owner = { is_ai = no }
+				is_child_of = owner.ruler
 			}
 
 			owner = {
@@ -67,6 +68,53 @@ daughters_return_as_aeluran_sisters_effect = {
 	}
 }
 
+find_aeluran_advisor_effect = {
+	if = {
+		limit = {
+			any_character = {
+				eligible_to_be_aeluran_advisor = yes
+			}
+		}
+		random_character = {
+			limit = {
+				eligible_to_be_aeluran_advisor = yes
+			}
+			save_scope_as = aeluran_advisor
+			set_variable = aeluran_advisor
+		}
+
+		save_scope_value_as = {
+			name = aeluran_from_court
+			value = yes
+		}
+	}
+	else = {
+		random_list = {
+			1 = {
+				modifier = {
+					has_country_modifier = calaquendi_estate_blocked_from_cabinet
+					add = -2
+				}
+				create_new_aeluran_advisor = { estate = calaquendi_estate }
+			}
+			2 = {
+				modifier = {
+					has_country_modifier = nobles_estate_blocked_from_cabinet
+					add = -2
+				}
+				create_new_aeluran_advisor = { estate = nobles_estate }
+			}
+			2 = {
+				modifier = {
+					has_country_modifier = clergy_estate_blocked_from_cabinet
+					add = -2
+				}
+				create_new_aeluran_advisor = { estate = clergy_estate }
+			}
+		}
+	}
+}
+
 assign_new_aeluran_advisor = {
 	if = {
 		limit = {
@@ -75,30 +123,7 @@ assign_new_aeluran_advisor = {
 			}
 		}
 		
-		if = {
-			limit = {
-				any_character = {
-					is_aeluran_order = yes
-					is_ruler = no
-				}
-			}
-			random_character = {
-				limit = {
-					is_aeluran_order = yes
-					is_ruler = no
-				}
-				save_scope_as = aeluran_advisor
-				set_variable = aeluran_advisor
-			}
-
-			save_scope_value_as = {
-                name = aeluran_from_court
-                value = yes
-            }
-		}
-		else = {
-			create_new_aeluran_advisor = yes
-		}
+		find_aeluran_advisor_effect = yes
 	}
 
 

@@ -285,6 +285,11 @@ elf_destiny_misc_game_start_tweaks_effect = {
 	# 	}
 	# }
 
+	c:ATS = {
+		unlock_policy_effect = { type = state_piracy_policy }
+		add_policy = policy:state_piracy_policy
+	}
+
 	every_country = {
 		every_character = {
 			limit = {

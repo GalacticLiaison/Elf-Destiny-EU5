@@ -20,3 +20,26 @@ is_aeluran_order = {
         has_trait = aeluran_matriarch
     }
 }
+
+eligible_to_be_aeluran_advisor = {
+    is_aeluran_order = yes
+    is_ruler = no
+    trigger_if = {
+        limit = {
+            root = { has_country_modifier = calaquendi_estate_blocked_from_cabinet }
+        }
+        NOT = { estate_type = estate_type:calaquendi_estate }
+    }
+    trigger_if = {
+        limit = {
+            root = { has_country_modifier = nobles_estate_blocked_from_cabinet }
+        }
+        NOT = { estate_type = estate_type:nobles_estate }
+    }
+    trigger_if = {
+        limit = {
+            root = { has_country_modifier = clergy_estate_blocked_from_cabinet }
+        }
+        NOT = { estate_type = estate_type:clergy_estate }
+    }
+}

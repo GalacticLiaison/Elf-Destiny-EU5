@@ -22,7 +22,7 @@
 lembas = {
 	category = produced
 	color = { 0.168 0.556 0.254 1 }
-	default_market_price = 7
+	default_market_price = 4
 	transport_cost = 0.1
 
 	food = 15.0
@@ -31,7 +31,7 @@ lembas = {
 		calaquendi = 0.01
 		nobles = 0.01
 		burghers = 0.01
-		peasants = 0.01
+		peasants = 0.0005
 	}
 }
 
@@ -44,9 +44,9 @@ elven_crafts = {
 	demand_add = {
 		calaquendi = 0.075
 		nobles = 0.05
-		burghers = 0.05
-		clergy = 0.05
-		soldiers = 0.05
+		burghers = 0.005
+		clergy = 0.005
+		soldiers = 0.005
 	}
 }
 
@@ -58,7 +58,7 @@ mythril_elven_crafts = {
 	demand_add = {
 		calaquendi = 0.075
 		nobles = 0.05
-		burghers = 0.02
-		soldiers = 0.01
+		burghers = 0.002
+		soldiers = 0.001
 	}
 }

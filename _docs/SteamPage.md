@@ -96,13 +96,12 @@ Make sure to check game rules for some configuration options!
 [h2] Come try the original CK3 mod here! [/h2]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3114064450][IMG]https://i.imgur.com/SncWZYb.png[/img][/url]
 
+中文翻译: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3599710372] 链接 [/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3599706198] 链接 [/url]
+
 [IMG]https://i.imgur.com/I1gJqMR.gif[/img]
 Consider giving me money as a donation just because you enjoy what I do! Bake me some Lembas I'm famished! 
 
 [url=https://ko-fi.com/elf_destiny][IMG]https://i.imgur.com/p2MXTcq.png[/img][/url]
-
-
-
 [h1] Welcome all to Elf Destiny Genetic Traits [/h1]
 
 Inspired by the fan favorite CK3 mechanic, [i]but legally distinct in art and implementation[/i], comes genetic traits!

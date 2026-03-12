@@ -95,13 +95,13 @@ create_new_aeluran_advisor = {
 	
 		religion = religion:aeluran
 		culture = root.culture
-		estate = estate_type:nobles_estate
+		estate = estate_type:$estate$
 	
 		# TODO: could have some privilege increase the stats of advisors
 		adm = {
 			integer_range = {
 				min = {
-					value = 50
+					value = 40
 				}
 				max = {
 					value = 100
@@ -111,7 +111,7 @@ create_new_aeluran_advisor = {
 		dip = {
 			integer_range = {
 				min = {
-					value = 50
+					value = 40
 				}
 				max = {
 					value = 100
@@ -121,7 +121,7 @@ create_new_aeluran_advisor = {
 		mil = {
 			integer_range = {
 				min = {
-					value = 50
+					value = 40
 				}
 				max = {
 					value = 100

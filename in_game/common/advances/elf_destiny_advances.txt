@@ -110,7 +110,7 @@ level_2_magic = {
 	requires = elven_lore
 
 	allow = { 
-		current_age = age_2_renaissance
+		current_later_age_2_renaissance_trigger = yes
 	}
 
 	# research_cost = 0.1
@@ -148,8 +148,9 @@ level_3_magic = {
 	age = age_1_traditions
 	requires = grand_portal_restored
 
-	allow = { 
-		current_age = age_3_discovery
+	allow = {
+		current_later_age_3_discovery_trigger = yes
+
 		custom_tooltip = {
 			text = grand_portal_has_been_restored
 			has_global_variable = portal_restored
@@ -168,7 +169,8 @@ level_4_magic = {
 	requires = level_3_magic
 
 	allow = { 
-		current_age = age_4_reformation
+		current_later_age_4_reformation_trigger = yes
+
 		custom_tooltip = {
 			text = ruler_is_fae_tier_or_higher
 			ruler = {
@@ -187,7 +189,7 @@ level_5_magic = {
 	requires = level_4_magic
 
 	allow = { 
-		current_age = age_5_absolutism
+		current_later_age_5_absolutism_trigger = yes
 	}
 
 	# research_cost = 0.1
@@ -202,7 +204,8 @@ level_6_magic = {
 	requires = level_5_magic
 
 	allow = { 
-		current_age = age_6_revolutions
+		current_later_age_6_revolutions_trigger = yes
+
 		custom_tooltip = {
 			text = ruler_is_celestial_tier_or_higher
 			ruler = {
@@ -222,7 +225,7 @@ level_2_war = {
 	requires = elven_lore
 
 	allow = { 
-		current_age = age_2_renaissance
+		current_later_age_2_renaissance_trigger = yes
 	}
 
 	# research_cost = 0.1
@@ -238,8 +241,8 @@ level_3_war = {
 	age = age_1_traditions
 	requires = level_2_war
 
-	allow = { 
-		current_age = age_3_discovery
+	allow = {
+		current_later_age_3_discovery_trigger = yes
 	}
 
 	# research_cost = 0.1
@@ -257,7 +260,7 @@ honor_of_the_fay = {
 	icon = honor_of_the_fay
 
 	allow = { 
-		current_age = age_2_renaissance
+		current_later_age_2_renaissance_trigger = yes
 		custom_tooltip = {
 			text = discovered_people_of_the_bow_tradition
 			has_variable = elf_tradition_discovered_people_of_the_bow

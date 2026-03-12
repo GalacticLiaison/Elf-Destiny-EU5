@@ -49,6 +49,7 @@ elven_superiority = {
         government_reform_slots = 1
 		# new casus belli to raid for slaves in places that arent majority elf
 		auto_slave_raid = yes
+		allow_privateers_slave_raid = yes
 		slave_raid_efficiency = 0.25
 		diplomatic_reputation = -1
 		monthly_prestige = 0.2
@@ -121,7 +122,7 @@ open_hearted = {
 				}
 			}
         }
-		local_population_growth = 0.02
+		local_population_growth = 0.005
 		local_migration_attraction = 0.3
 		local_pop_promotion_speed_modifier = 0.1
 	}

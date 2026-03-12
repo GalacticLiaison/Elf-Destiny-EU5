@@ -280,11 +280,11 @@ royal_elf_lormelis = {
 	army_losses_in_war_cost_modifier = 0
 	navy_heavy_ship_build_cost_modifier = 0.10
 	navy_heavy_ship_maintenance_cost_modifier = 0.10
-	hire_privateer_cost_modifier = 0.5
+	hire_privateer_cost_modifier = -0.5
 	can_hire_privateers = yes
 	may_explore = yes
 	exploration_mission_speed_modifier = 0.5
-	global_maritime_presence_decay = 0.10
+	global_maritime_presence_decay = -0.0015
 	navy_tradition_from_battle = 0.5
 	blue_eyecolor_modifier = yes
 }
@@ -421,7 +421,7 @@ intellect_good_2= {
 	adm = 5
 	military_tactics = 0.25
 	discipline = 0.10
-	research_speed_modifier = 0.25
+	research_speed_modifier = 0.10
 }
 intellect_good_3= {
 	game_data = {
@@ -433,7 +433,7 @@ intellect_good_3= {
 	adm = 10
 	military_tactics = 0.5
 	discipline = 0.15
-	research_speed_modifier = 0.1
+	research_speed_modifier = 0.15
 }
 intellect_good_4= {
 	game_data = {
@@ -445,7 +445,7 @@ intellect_good_4= {
 	adm = 15
 	military_tactics = 0.75
 	discipline = 0.20
-	research_speed_modifier = 0.15
+	research_speed_modifier = 0.20
 }
 
 physique_bad_1= {
@@ -654,9 +654,9 @@ dulled_mind_modifier = {
 	game_data = {
 		category = character
 	}
-	adm = 10
-	dip = 10
-	mil = 10
+	adm = -10
+	dip = -10
+	mil = -10
 }
 
 extended_life_modifier = {
