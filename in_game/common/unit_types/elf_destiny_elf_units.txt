@@ -83,7 +83,7 @@ a_late_fey_archers = {
 }
 
 a_early_elf_noble_lancers= {
-	category = army_infantry
+	category = army_cavalry
 	copy_from = a_age_1_traditions_cavalry
 	upgrades_to = a_elf_noble_lancers
 
@@ -110,7 +110,7 @@ a_early_elf_noble_lancers= {
 }
 
 a_elf_noble_lancers= {
-	category = army_infantry
+	category = army_cavalry
 	copy_from = a_age_2_renaissance_cavalry
 	upgrades_to = a_late_elf_noble_lancers
 	light = no
@@ -141,7 +141,7 @@ a_elf_noble_lancers= {
 }
 
 a_late_elf_noble_lancers = {
-	category = army_infantry
+	category = army_cavalry
 	copy_from = a_age_3_discovery_cavalry
 	light = no
 	

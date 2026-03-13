@@ -1,0 +1,62 @@
+﻿assign_expedition_reward = {
+    remove_variable = expedition_underway
+    # end_expedition_effect = yes
+    random_list = {  # Loot table
+        0 = {
+            modifier = {
+                add = 60
+                OR = {
+                    NOT = {has_variable = elf_tradition_discovered_people_of_the_bow}
+                    NOT = {has_variable = elf_tradition_discovered_beast_tamers}
+                    NOT = {has_variable = elf_tradition_discovered_mythril_working}
+                }
+                # NOR = {
+                #     has_variable = elf_tradition_discovered_people_of_the_bow
+                #     has_variable = elf_tradition_discovered_beast_tamers
+                #     has_variable = elf_tradition_discovered_mythril_working
+                # }
+            }
+            save_scope_value_as = {
+                name = expedition_reward
+                value = flag:elven_tradition
+            }
+        }
+        0 = {
+            modifier = {
+                add = 50
+                NOR = {
+                    has_variable = elven_portal_artifact_1_discovered
+                    has_variable = elven_portal_artifact_2_discovered
+                }
+            }
+            save_scope_value_as = {
+                name = expedition_reward
+                value = flag:portal_artifact
+            }
+        }
+        10 = {
+            save_scope_value_as = {
+                name = expedition_reward
+                value = flag:mysterious_elixir
+            }
+        }
+        20 = {
+            save_scope_value_as = {
+                name = expedition_reward
+                value = flag:research_progress
+            }
+        }
+        20 = {
+            save_scope_value_as = {
+                name = expedition_reward
+                value = flag:religious_influence # Spark Crystal?
+            }
+        }
+        # 1 = {
+        #     save_scope_value_as = {
+        #         name = expedition_reward
+        #         value = flag:no_additional_reward
+        #     }
+        # }
+    }
+}

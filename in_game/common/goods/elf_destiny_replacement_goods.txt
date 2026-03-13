@@ -1,0 +1,567 @@
+﻿REPLACE:horses = { #War Horses
+	method = farming
+	category = raw_material
+	color = goods_horses
+	default_market_price = 3
+	transport_cost = 2
+	
+	demand_add = {
+		nobles =  0.25
+        calaquendi = 0.3
+	}	
+
+	origin_in_old_world = yes
+	custom_tags = { old_world_goods }
+
+	
+}
+
+REPLACE:wine = {
+	method = farming
+	category = raw_material
+	color = goods_wine
+	default_market_price = 2
+	
+	
+	demand_add = {
+		all = 0.0004
+	}
+	demand_multiply = {
+		upper = 10
+		nobles = 1.5
+        calaquendi = 2
+		
+		slaves = 0
+		tribesmen = 0
+	}
+	origin_in_old_world = yes
+	custom_tags = { old_world_goods }
+}
+
+REPLACE:livestock = {
+	method = farming
+	category = raw_material
+	color = goods_livestock
+	
+	food = 8
+	default_market_price = 1.5
+	ai_rgo_size_importance = 1.5 # ai preference to avoid building a city on this rgo
+	
+	demand_add = {	
+		all = 0.001
+		
+	}
+	demand_multiply = {
+		nobles = 30
+        calaquendi = 30
+		clergy = 10
+		burghers = 10
+		slaves = 0
+		tribesmen = 0
+	}
+	
+	wealth_impact_threshold = {
+		peasants = 1.1
+		laborers = 1.1
+		soldiers = 1.1
+	}
+
+	
+	origin_in_old_world = yes
+	custom_tags = { old_world_goods }
+}
+
+REPLACE:goods_gold = {
+	method = mining
+	category = raw_material
+	color = goods_gold
+	default_market_price = 10
+	
+	transport_cost = 2
+
+	ai_rgo_size_importance = 10 # ai preference to avoid building a city on this rgo
+	
+	ai_rgo_expansion_priority = 0.2
+	
+	demand_add = {
+		nobles = 0.025
+        calaquendi = 0.03
+	}	
+	
+	wealth_impact_threshold = {
+		all = 1.05
+	}
+	
+	
+
+}
+
+REPLACE:silver = {
+	method = mining
+	category = raw_material
+	color = goods_silver
+	default_market_price = 8
+	ai_rgo_size_importance = 10 # ai preference to avoid building a city on this rgo
+	
+	transport_cost = 2
+
+	
+	ai_rgo_expansion_priority = 0.2
+	
+	demand_add = {
+		nobles = 0.025
+        calaquendi = 0.03
+	}
+	
+	wealth_impact_threshold = {
+		all = 1.05
+	}
+	
+	
+}
+
+REPLACE:ivory = {
+	method = hunting
+	category = raw_material
+	color = goods_ivory
+	default_market_price = 4
+	
+	demand_add = {
+		nobles = 0.05
+        calaquendi = 0.05
+	}
+	
+	development_threshold = 20
+	
+	wealth_impact_threshold = {
+		all = 1.1
+	}
+	
+	
+}
+
+REPLACE:incense = {
+	method = farming
+	category = raw_material
+	color = goods_incense
+	default_market_price = 2.5
+	transport_cost = 0.5
+	
+	demand_add = {
+		clergy = 0.01
+        calaquendi = 0.01
+	}	
+	
+	wealth_impact_threshold = {
+		all = 0.5
+	}
+}
+
+REPLACE:salt = {
+	method = gathering
+	category = raw_material
+	color = goods_salt
+	default_market_price = 4
+	
+	
+	demand_add = {
+		nobles = 0.05
+        calaquendi = 0.05
+		burghers = 0.02
+		clergy = 0.02
+	}
+	
+	
+	wealth_impact_threshold = {
+		all = 0.7
+	}
+	
+}
+
+REPLACE:medicaments = { #Medicinal plants, Pills, Opium, Mummy Powder, etc
+	method = gathering
+	category = raw_material
+	color = goods_medicaments
+	default_market_price = 1
+	transport_cost = 0.5
+	
+	demand_add = {
+		all = 0.0004
+	}
+	
+	demand_multiply = {
+		nobles = 5
+        calaquendi = 5
+		clergy = 2.5
+		burghers = 1.5
+		slaves = 0.1
+		tribesmen = 0
+	}
+	
+	
+	wealth_impact_threshold = {
+		all = 1.1
+	}
+
+}
+
+REPLACE:gems = {
+	method = mining
+	category = raw_material
+	color = goods_gems
+	default_market_price = 4
+	transport_cost = 0.5
+	
+	ai_rgo_size_importance = 5 # ai preference to avoid building a city on this rgo
+
+	demand_add = {
+		nobles = 0.05
+        calaquendi = 0.075
+	}
+
+	wealth_impact_threshold = {
+		all = 1.25
+	}
+	
+	
+}
+
+REPLACE:pearls = {
+	method = gathering
+	category = raw_material
+	color = goods_pearls
+	default_market_price = 4
+	
+	demand_add = {
+		nobles = 0.05
+        calaquendi = 0.075
+		burghers = 0.0025
+	}
+
+	development_threshold = 20
+	
+	wealth_impact_threshold = {
+		nobles = 1.0
+		burghers = 1.5
+	}
+		
+}
+
+REPLACE:amber = {
+	method = gathering
+	category = raw_material
+	color = goods_amber
+	default_market_price = 4
+	
+	demand_add = {
+		nobles = 0.1
+        calaquendi = 0.15
+		burghers = 0.005
+	}	
+	
+	wealth_impact_threshold = {
+		nobles = 1.0
+		burghers = 1.5
+	}
+
+}
+
+REPLACE:marble = {
+	method = mining
+	category = raw_material
+	color = goods_marble
+	default_market_price = 5
+	
+	transport_cost = 3
+
+	
+	demand_add = {
+		nobles = 0.05
+        calaquendi = 0.06
+	}	
+	
+	development_threshold = 40
+	wealth_impact_threshold = {
+		nobles = 1.5
+	}
+}
+
+REPLACE:saffron = {
+	method = farming
+	category = raw_material
+	color = goods_saffron
+	default_market_price = 5
+	transport_cost = 0.5
+	
+	demand_add = {
+		nobles = 0.05
+        calaquendi = 0.05
+		burghers = 0.002
+		clergy = 0.005
+	}
+
+	wealth_impact_threshold = {
+		all = 1.1
+	}
+	
+	
+}
+
+REPLACE:pepper = {
+	method = farming
+	category = raw_material
+	color = goods_pepper
+	default_market_price = 5
+	transport_cost = 0.5
+	
+	demand_add = {
+		nobles = 0.05
+        calaquendi = 0.05
+		burghers = 0.0025
+		clergy = 0.005
+	}
+	
+	wealth_impact_threshold = {
+		all = 1.1
+	}
+	
+
+}
+
+REPLACE:sugar = {
+	method = farming
+	category = raw_material
+	color = goods_sugar
+	default_market_price = 3
+
+	demand_add = {
+		nobles = 0.05
+        calaquendi = 0.05
+		burghers = 0.005
+		clergy = 0.005
+	}
+
+	origin_in_old_world = yes
+	custom_tags = { old_world_goods }
+	
+}
+
+REPLACE:weaponry = { #Swords, clubs, spears, halberds, bows, crossbows, etc
+	category = produced
+	color = goods_weaponry
+	default_market_price = 3	
+	
+	demand_add = {
+		nobles = 0.1
+        calaquendi = 0.15
+		soldiers = 0.0025
+		laborers = 0.0005
+		peasants = 0.0005
+	}
+	
+	wealth_impact_threshold = {
+		all = 1.1
+	}
+	
+}
+
+REPLACE:fine_cloth = {	#Embroidery, Silks, Luxury Clothing, etc
+	category = produced
+	color = goods_fine_cloth
+	default_market_price = 6
+	transport_cost = 0.5
+	
+	demand_add = {
+		nobles = 0.2
+        calaquendi = 0.2
+		burghers = 0.025
+		clergy = 0.025
+		
+	}
+	
+	
+	development_threshold = 20
+	
+	wealth_impact_threshold = {
+		all = 1.25
+	}
+	
+}
+
+REPLACE:liquor = { 		#What it says
+	category = produced
+	color = goods_liquor
+	default_market_price = 2.5
+	transport_cost = 0.5
+	
+	demand_add = {
+		all = 0.0008
+	}
+	
+	demand_multiply = {
+		upper = 5
+		nobles = 2
+        calaquendi = 2
+		
+		slaves = 0
+		tribesmen = 0
+	}
+	
+	wealth_impact_threshold = {
+		all = 0.5
+	}
+}
+
+REPLACE:beer = { 		#the nectar of the gods
+	category = produced
+	color = goods_beer
+	default_market_price = 2
+	transport_cost = 0.5
+	
+	demand_add = {
+		all = 0.0016
+	}	
+	
+	demand_multiply = {
+		upper = 5
+		nobles = 2
+        calaquendi = 1
+		slaves = 0
+		tribesmen = 0
+	}
+	
+	wealth_impact_threshold = {
+		all = 0.75
+	}
+}
+
+REPLACE:paper = {		#Paper
+	category = produced
+	color = goods_paper
+	default_market_price = 2
+	
+	transport_cost = 0.5
+
+	
+	demand_add = {
+		nobles = 0.01
+        calaquendi = 0.01
+		burghers = 0.02
+		clergy = 0.04
+	}	
+	
+	development_threshold = 20
+	
+	wealth_impact_threshold = {
+		all = 1.2
+	}
+
+}
+
+REPLACE:books = { #books, newspapers, booklets, pamphlets, etc
+	category = produced
+	color = goods_books
+	default_market_price = 5
+	
+	transport_cost = 0.5
+	
+	demand_add = {
+		nobles = 0.01
+        calaquendi = 0.04
+		burghers = 0.02
+		clergy = 0.04
+	}	
+	
+	development_threshold = 30
+	
+	wealth_impact_threshold = {
+		all = 1.1
+	}
+	
+}
+
+REPLACE:jewelry = {
+	category = produced
+	color = goods_jewelry
+	default_market_price = 5
+	transport_cost = 0.5
+	
+	demand_add = {
+		nobles = 0.1
+        calaquendi = 0.2
+		burghers = 0.005
+	}
+	
+	wealth_impact_threshold = {
+		all = 1.2
+	}
+	
+}
+
+REPLACE:furniture  = {
+	category = produced
+	color = goods_furniture
+	default_market_price = 3
+	
+	transport_cost = 0.5
+	
+	demand_add = {
+		all =  0.001
+	}	
+	demand_multiply = {
+		upper = 10
+		nobles = 2
+        calaquendi = 2
+		slaves = 0
+		tribesmen = 0
+	}
+	
+	wealth_impact_threshold = {
+		all = 1.0
+	}
+}
+
+REPLACE:wild_game = {
+	method = hunting
+	category = raw_material
+	color = goods_wild_game
+	
+	food = 3.5
+	
+	default_market_price = 1
+	demand_add = {
+		all =  0.0004
+	}
+	demand_multiply = {
+		nobles = 20
+        calaquendi = 20
+		clergy = 5
+		burghers = 5
+		tribesmen = 0
+	}
+
+}
+
+REPLACE:fur = {
+	method = hunting
+	category = raw_material
+	color = goods_fur
+	default_market_price = 2
+	
+	food = 2.0
+	
+	demand_add = {
+		upper = 0.05
+	}
+	
+	demand_multiply = {
+		nobles = 10
+        calaquendi = 10
+	}
+	
+	
+	wealth_impact_threshold = {
+		all = 1.1
+	}
+
+}

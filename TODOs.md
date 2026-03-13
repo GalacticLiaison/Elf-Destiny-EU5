@@ -60,7 +60,6 @@ calaquendi_desc
 
 updated choice of dreams art for steam
 
-
 The Grand Portal and Grand portal ruins in my capital
 - https://discord.com/channels/1179053540161880074/1179054158003839086/1480813951083085844
 
@@ -74,17 +73,12 @@ add abdication option for elf rulers
 
 genetic traits arent upgrading
 
-
 expeditions arent giving all techs
-lormelis maritime decay too big
-
 
 Consider: https://discord.com/channels/1179053540161880074/1179054158003839086/1480982620329218092
 
 Tech checks need to be age or later
 https://discord.com/channels/1179053540161880074/1179054158003839086/1481174122347233282
-
-Intelligent gives more research points then genius
 
 Appease estate does nothing
 https://discord.com/channels/1179053540161880074/1179054158003839086/1481262790328062024
@@ -110,3 +104,21 @@ https://discord.com/channels/1179053540161880074/1481383626192191728
 "Genetics is bugged
 Doesn't randomise the traits children get
 Two parents create kids with exact same traits every time"
+
+try to analyze this
+"When a Government reform is added via an event, if it is one that is supposed to be locked a slot for it should alos be added, I for example lost my open hearted reform because I was implementing the trade offices reform when it was added."
+
+Marry low born
+https://discord.com/channels/1179053540161880074/1179054158003839086/1481349583903653998
+
+New Production Method for Lembas
+
+Mercury patio
+https://discord.com/channels/1179053540161880074/1179054158003839086/1481655379292328086
+
+
+They are so many character my pc crash😅😂
+My family was about 4500 character
+I play with a friend with 3500 family member
+
+Make Julia has visited check a global variable to unlock expeditions

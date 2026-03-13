@@ -287,6 +287,9 @@
  STATIC_MODIFIER_NAME_true_realm_lord: "Seat of the True Realm Lord"
  you_are_truly_worthy: "This world has been reconnected with the universe and you have earned the title your sigil bestows, you are a true Realm Lord."
 
+ STATIC_MODIFIER_NAME_extended_life_modifier: "Extended Life"
+ STATIC_MODIFIER_NAME_sharpened_mind_modifier: "Sharpened Mind"
+ STATIC_MODIFIER_NAME_dulled_mind_modifier: "Dulled Mind"
 
  AUTO_MODIFIER_NAME_calaquendi_percentage_in_country: "Calaquendi Percentage In Country"
  AUTO_MODIFIER_NAME_elf_destiny_country_base_values: "Base Value for Every [country|e]"
