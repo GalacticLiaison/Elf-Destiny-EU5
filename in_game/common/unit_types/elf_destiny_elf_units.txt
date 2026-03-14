@@ -382,15 +382,15 @@ calaquendi_high_magi = {
 	combat_speed = 7
 
 	# Offense
-	artillery_barrage = 50
-	max_strength = 0.005
-	combat_power = 100
+	artillery_barrage = 40
+	max_strength = 0.05
+	combat_power = 50
 	flanking_ability = 1.5
 	secure_flanks_defense = 1.0 # +100% defense with one secure flank (= -50% damage taken). +200% defense with both flanks secure (= -67% damage taken). Compared with isolated box.
 	
 	# Defense
-	morale_damage_taken = -0.95
-    strength_damage_taken = -0.95
+	morale_damage_taken = -0.75
+    strength_damage_taken = -0.75
 	attrition_loss = 0.0
 	
 	buildable = no

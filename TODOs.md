@@ -73,12 +73,7 @@ add abdication option for elf rulers
 
 genetic traits arent upgrading
 
-expeditions arent giving all techs
-
 Consider: https://discord.com/channels/1179053540161880074/1179054158003839086/1480982620329218092
-
-Tech checks need to be age or later
-https://discord.com/channels/1179053540161880074/1179054158003839086/1481174122347233282
 
 Appease estate does nothing
 https://discord.com/channels/1179053540161880074/1179054158003839086/1481262790328062024
@@ -98,9 +93,6 @@ https://discord.com/channels/1179053540161880074/1179054158003839086/14812999271
 
 Lets nerf calaquendi levies
 
-Reduce daughter to deepwood event
-https://discord.com/channels/1179053540161880074/1481383626192191728
-
 "Genetics is bugged
 Doesn't randomise the traits children get
 Two parents create kids with exact same traits every time"
@@ -111,14 +103,18 @@ try to analyze this
 Marry low born
 https://discord.com/channels/1179053540161880074/1179054158003839086/1481349583903653998
 
-New Production Method for Lembas
-
 Mercury patio
 https://discord.com/channels/1179053540161880074/1179054158003839086/1481655379292328086
-
 
 They are so many character my pc crash😅😂
 My family was about 4500 character
 I play with a friend with 3500 family member
 
 Make Julia has visited check a global variable to unlock expeditions
+
+One Suggestion I also have is to maybe add the modifier "Slaves working with Raw materials" to the Elven Superiority Government Reform
+
+maybe when elven techs are discovered on expeditions, the advance becomes globally unlocked so in theory AI elf rulers could research it
+
+Institution Spread
+https://discord.com/channels/1179053540161880074/1179054158003839086/1482036593102422197

@@ -314,6 +314,28 @@ lembas_bakery = {
 			
 			category = guild_input
 		}
+
+		lembas_baking_rice = {
+			rice = 1.0
+			beeswax = 0.25
+			salt = 0.25
+
+			produced = lembas
+			output = 0.85
+			
+			category = guild_input
+		}
+
+		lembas_baking_maize = {
+			maize = 1.0
+			beeswax = 0.25
+			salt = 0.25
+
+			produced = lembas
+			output = 0.85
+			
+			category = guild_input
+		}
 	}
 
 	# unique_production_methods = {

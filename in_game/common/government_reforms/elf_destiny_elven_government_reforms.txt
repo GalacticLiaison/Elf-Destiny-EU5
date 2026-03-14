@@ -54,6 +54,7 @@ elven_superiority = {
 		diplomatic_reputation = -1
 		monthly_prestige = 0.2
 		raid_for_humans = yes
+		allow_rgo_slave_demand = yes
 	}
 	
 	location_modifier = {
