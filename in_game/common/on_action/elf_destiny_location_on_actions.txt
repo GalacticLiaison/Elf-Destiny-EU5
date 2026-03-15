@@ -8,9 +8,7 @@ manage_building_modifiers = {
     trigger = {
         scope:loser = {
             OR = {
-                culture = {
-					has_culture_group = culture_group:elven_culture_group
-				}
+                is_elven_country = yes
                 religion = religion:aeluran
             }
         }

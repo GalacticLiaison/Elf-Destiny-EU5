@@ -382,15 +382,16 @@ calaquendi_high_magi = {
 	combat_speed = 7
 
 	# Offense
-	artillery_barrage = 40
+	artillery_barrage = 30
 	max_strength = 0.05
 	combat_power = 50
 	flanking_ability = 1.5
-	secure_flanks_defense = 1.0 # +100% defense with one secure flank (= -50% damage taken). +200% defense with both flanks secure (= -67% damage taken). Compared with isolated box.
+	secure_flanks_defense = 0.05
+	bombard_efficiency = 0.25
 	
 	# Defense
-	morale_damage_taken = -0.75
-    strength_damage_taken = -0.75
+	morale_damage_taken = -0.55
+    strength_damage_taken = -0.55
 	attrition_loss = 0.0
 	
 	buildable = no
@@ -423,11 +424,11 @@ wolf_riders = {
 	combat_speed = 0.25
 
 	country_potential = {
-		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_elven_country = yes
 	}
 
 	# location_potential = { 
-	# 	culture = { has_culture_group = culture_group:elven_culture_group}
+	# 	is_elven_country = yes
 	# }
 	
 	combat = {
@@ -467,12 +468,12 @@ mythril_plated_fey_vanguard = {
 	construction_demand = mythril_plated_fey_vanguard_construction
 
 	country_potential = {
-		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_elven_country = yes
 		# advancement
 	}
 
 	# location_potential = { 
-	# 	culture = { has_culture_group = culture_group:elven_culture_group}
+	# 	is_elven_country = yes
 	# }
 	
 	combat = {
@@ -506,12 +507,12 @@ mythril_plated_horse_masters = {
 	construction_demand = mythril_plated_horse_masters_construction
 
 	country_potential = {
-		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_elven_country = yes
 		# advancement
 	}
 
 	# location_potential = { 
-	# 	culture = { has_culture_group = culture_group:elven_culture_group}
+	# 	is_elven_country = yes
 	# }
 	
 	combat = {

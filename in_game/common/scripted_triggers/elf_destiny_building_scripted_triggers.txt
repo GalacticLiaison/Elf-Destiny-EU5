@@ -1,5 +1,6 @@
 ﻿elf_country_potential_trigger = {
-	culture = { has_culture_group = culture_group:elven_culture_group }
+	is_elven_country = yes
+	# culture = { has_culture_group = culture_group:elven_culture_group }
 }
 
 elf_building_removal_trigger = {
@@ -8,9 +9,7 @@ elf_building_removal_trigger = {
 			ruler_or_regent = {
 				is_any_elf_type = no
 			}
-			NOT = {
-				culture = { has_culture_group = culture_group:elven_culture_group }
-			}
+			is_elven_country = no
 		}
 	}
 }

@@ -28,7 +28,6 @@ seat_of_the_fey_lord = {
 	}
 
 	modifier = {
-		local_calaquendi_desired_pop = 0.005
 		monthly_towards_absolutism = societal_value_tiny_monthly_move
 		country_cabinet_efficiency = 0.02
 	}
@@ -86,13 +85,14 @@ sanctum = {
 	}
 
 	modifier = {
-		local_calaquendi_desired_pop = 0.005
-		monthly_towards_absolutism = societal_value_tiny_monthly_move
-		country_cabinet_efficiency = 0.02
+		local_cultural_tradition = 0.25
+		local_institution_growth_modifier = 0.10
 	}
 	
 	capital_country_modifier = {
 		global_crown_estate_power = 0.10
+		country_cabinet_efficiency = 0.02
+		monthly_towards_absolutism = societal_value_tiny_monthly_move
 	}
 	
 	unique_production_methods = {
@@ -540,11 +540,37 @@ elven_master_workshop = {
 		# 	category = guild_input
 		# }
 
-		mythril_elven_master_workshop_maintenance = {
-			mythril = 1
+		mythril_elven_master_workshop_production_gold = {
+			mythril = 0.1
 			tools = 3
+			goods_gold = 1
+
 			produced = mythril_elven_crafts
-			output = 0.6
+			output = 1
+			debug_max_profit = 0.2
+
+			category = guild_input
+		}
+
+		mythril_elven_master_workshop_production_silver = {
+			mythril = 0.1
+			tools = 3
+			silver = 2
+
+			produced = mythril_elven_crafts
+			output = 1
+			debug_max_profit = 0.2
+
+			category = guild_input
+		}
+
+		mythril_elven_master_workshop_production_jewelry = {
+			mythril = 0.1
+			tools = 3
+			jewelry = 1
+
+			produced = mythril_elven_crafts
+			output = 0.5
 			debug_max_profit = 0.2
 
 			category = guild_input

@@ -131,3 +131,20 @@ portal modifiers not country modifiers
 
 EU5 Genetic Traits mod breaks default UI building icons (in location overview)
 https://discord.com/channels/1179053540161880074/1482537712912171249
+
+
+It seems like the option where you get the elven advance while keeping your culture doesn't work right?
+- how the f does merge_culture_group work? maybe we can use
+
+
+0.6 of mythril goods costing 15 equals 9 gold
+1 of mythril costs 10
+You straight up loose money
+Consider making it like it is in naval goods
+where you need a very small amount of tin
+Something like 0.1 mythril + 1 gold/silver = 1 Mythril elven craft will be so much better
+
+nerf religious influence
+
+Change calaquendi to per 1000 pop across the board
+Maybe calaquendi buildings could have 30 employees instead of 100 and make it give some bonus or something

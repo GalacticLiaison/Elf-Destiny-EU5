@@ -41,8 +41,13 @@
  bronze_elven_master_workshop_maintenance: "Bronze Elven Master Workshop Maintenance"
  silver_elven_master_workshop_maintenance: "Silver Elven Master Workshop Maintenance"
  gold_elven_master_workshop_maintenance: "Gold Elven Master Workshop Maintenance"
- mythril_elven_master_workshop_maintenance: "Mythril Elven Master Workshop Maintenance"
- jewelry_elven_master_workshop_enhancement: "Jewelry Elven Master Workshop Enhancement"
+ mythril_elven_master_workshop_production_gold: "Mythril Elven Crafts Gold Production"
+ mythril_elven_master_workshop_production_silver: "Mythril Elven Crafts Silver Production"
+ mythril_elven_master_workshop_production_jewelry: "Mythril Elven Crafts Jewelry Production"
+
+ perfume_garden_production: "Perfume Garden Production"
+ wine_cellar_production_fruit: "Wine Production"
+ wine_cellar_production_multiply: "Wine Aging Production"
 
  seat_of_the_fey_lord: "Seat of the Fey Lord"
  seat_of_the_fey_lord_desc: "The throne of the Fey Lord is the seat of the Elven ruler, a symbol of their authority and connection to the divine."

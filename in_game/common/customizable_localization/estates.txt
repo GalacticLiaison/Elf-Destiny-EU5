@@ -7,7 +7,7 @@ crown_estate = {
 	text = {
 		localization_key = crown_estate_elven
 		trigger = {
-			culture = { has_culture_group = culture_group:elven_culture_group}
+			is_elven_country = yes
 		}
 	}
 
@@ -73,7 +73,7 @@ calaquendi_estate = {
 	text = {
 		localization_key = calaquendi_estate_elven
 		trigger = {
-			culture = { has_culture_group = culture_group:elven_culture_group}
+			is_elven_country = yes
 		}
 	}
 
@@ -89,7 +89,7 @@ nobles_estate = {
 	text = {
 		localization_key = nobles_estate_elven
 		trigger = {
-			culture = { has_culture_group = culture_group:elven_culture_group}
+			is_elven_country = yes
 		}
 	}
 
@@ -408,7 +408,7 @@ burghers_estate = {
 	text = {
 		localization_key = burghers_estate_elven
 		trigger = {
-			culture = { has_culture_group = culture_group:elven_culture_group}
+			is_elven_country = yes
 		}
 	}
 
@@ -618,7 +618,7 @@ clergy_estate = {
 	text = {
 		localization_key = clergy_estate_elven
 		trigger = {
-			culture = { has_culture_group = culture_group:elven_culture_group}
+			is_elven_country = yes
 		}
 	}
 
@@ -840,7 +840,7 @@ peasants_estate = {
 	text = {
 		localization_key = peasants_estate_elven
 		trigger = {
-			culture = { has_culture_group = culture_group:elven_culture_group}
+			is_elven_country = yes
 		}
 	}
 
@@ -1012,7 +1012,7 @@ tribes_estate = {
 	text = {
 		localization_key = tribes_estate_elven
 		trigger = {
-			culture = { has_culture_group = culture_group:elven_culture_group}
+			is_elven_country = yes
 		}
 	}
 

@@ -1,7 +1,5 @@
 ﻿elf_unit_location_trigger = {
 	owner = {
-		culture = {
-			has_culture_group = culture_group:elven_culture_group
-		}
+		is_elven_country = yes
 	}
 }

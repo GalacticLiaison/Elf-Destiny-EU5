@@ -4,7 +4,7 @@
 	allowed_pop_type = calaquendi
 
 	country_allow = {
-		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_elven_country = yes
 	}
 	
 	unit = calaquendi_high_magi
@@ -16,7 +16,7 @@ levy_a_late_elf_noble = {
 	allowed_pop_type = nobles
 
 	country_allow = {
-		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_elven_country = yes
 	}
 	
 	unit = a_late_elf_noble_lancers
@@ -28,7 +28,7 @@ levy_a_elf_nobles = {
 	allowed_pop_type = nobles
 
 	country_allow = {
-		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_elven_country = yes
 	}
 	
 	unit = a_elf_noble_lancers
@@ -39,7 +39,7 @@ levy_a_early_elf_nobles = {
 	allowed_pop_type = nobles
 
 	country_allow = {
-		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_elven_country = yes
 	}
 	
 	unit = a_early_elf_noble_lancers
@@ -54,7 +54,7 @@ levy_aeluran_magi_level_6 = {
 
 	country_allow = {
 		religion = religion:aeluran
-		# culture = { has_culture_group = culture_group:elven_culture_group}
+		# is_elven_country = yes
 	}
 	
 	unit = a_age_6_aeluran_magi
@@ -67,7 +67,7 @@ levy_aeluran_magi_level_5 = {
 
 	country_allow = {
 		religion = religion:aeluran
-		# culture = { has_culture_group = culture_group:elven_culture_group}
+		# is_elven_country = yes
 	}
 	
 	unit = a_age_5_aeluran_magi
@@ -80,7 +80,7 @@ levy_aeluran_magi_level_4 = {
 
 	country_allow = {
 		religion = religion:aeluran
-		# culture = { has_culture_group = culture_group:elven_culture_group}
+		# is_elven_country = yes
 	}
 	
 	unit = a_age_4_aeluran_magi
@@ -93,7 +93,7 @@ levy_aeluran_magi_level_3 = {
 
 	country_allow = {
 		religion = religion:aeluran
-		# culture = { has_culture_group = culture_group:elven_culture_group}
+		# is_elven_country = yes
 	}
 	
 	unit = a_age_3_aeluran_magi
@@ -106,7 +106,7 @@ levy_aeluran_magi_level_2 = {
 
 	country_allow = {
 		religion = religion:aeluran
-		# culture = { has_culture_group = culture_group:elven_culture_group}
+		# is_elven_country = yes
 	}
 	
 	unit = a_age_2_aeluran_magi
@@ -119,7 +119,7 @@ levy_aeluran_magi_level_1 = {
 
 	country_allow = {
 		religion = religion:aeluran
-		# culture = { has_culture_group = culture_group:elven_culture_group}
+		# is_elven_country = yes
 	}
 	
 	unit = a_age_1_aeluran_magi
@@ -135,7 +135,7 @@ levy_a_late_fey_archers = {
 	allowed_pop_type = burghers
 
 	country_allow = {
-		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_elven_country = yes
 	}
 	
 	unit = a_late_fey_archers
@@ -151,7 +151,7 @@ levy_a_fey_archers = {
 	allowed_pop_type = burghers
 
 	country_allow = {
-		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_elven_country = yes
 	}
 	
 	unit = a_fey_archers
@@ -166,7 +166,7 @@ levy_a_early_fey_archers = {
 	allowed_pop_type = burghers
 
 	country_allow = {
-		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_elven_country = yes
 	}
 	
 	unit = a_early_fey_archers

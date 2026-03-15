@@ -1,5 +1,4 @@
 ﻿# TODO: test, file may need to be named country...
-
 calaquendi_percentage_in_country = {
 	potential_trigger = { total_population > 0 } # No division by 0
 	scales_with = {
@@ -20,3 +19,12 @@ elf_destiny_country_base_values = {
 	calaquendi_estate_allowed_in_cabinet = yes
 	calaquendi_estate_allowed_leading_military = yes
 }
+
+elf_destiny_country_base_values_gated = {
+	potential_trigger = {
+		# is_elven_country = yes
+		is_elven_country = yes
+	}
+	global_calaquendi_desired_pop_scaled = 0.002
+}
+

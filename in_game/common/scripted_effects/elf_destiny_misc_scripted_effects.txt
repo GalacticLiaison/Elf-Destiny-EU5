@@ -316,7 +316,7 @@ register_aeluran_leadership = {
 seed_calaquendi_estate_characters_effect = {
 	if = {
 		limit = {
-			culture = { has_culture_group = culture_group:elven_culture_group}
+			is_elven_country = yes
 		}
 		create_calaquendi_estate_character = {is_female = yes scope_name = new_calaquendi}
 		create_calaquendi_estate_character = {is_female = no scope_name = new_calaquendi}
@@ -326,7 +326,7 @@ seed_calaquendi_estate_characters_effect = {
 seed_nobles_estate_characters_effect = {
 	if = {
 		limit = {
-			culture = { has_culture_group = culture_group:elven_culture_group}
+			is_elven_country = yes
 		}
 		create_nobles_estate_character = {is_female = yes scope_name = new_calaquendi}
 		create_nobles_estate_character = {is_female = no scope_name = new_calaquendi}

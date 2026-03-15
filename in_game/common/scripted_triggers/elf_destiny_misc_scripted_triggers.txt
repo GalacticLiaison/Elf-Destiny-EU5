@@ -44,3 +44,10 @@ eligible_to_be_aeluran_advisor = {
         NOT = { estate_type = estate_type:clergy_estate }
     }
 }
+
+is_elven_country = {
+    OR = {
+        has_variable = is_elven_country
+        culture = { has_culture_group = culture_group:elven_culture_group}
+    }
+}

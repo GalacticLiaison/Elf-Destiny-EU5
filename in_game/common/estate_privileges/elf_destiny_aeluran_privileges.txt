@@ -21,7 +21,7 @@ aeluran_advisors = {
 		aeluran_advisor_appointed = yes
 		country_cabinet_efficiency = 0.20
 		monthly_towards_centralization = societal_value_monthly_move
-		monthly_religious_influence = 0.1
+		monthly_religious_influence = 0.05
 		allow_female_cabinet = yes
 	}
 }
@@ -43,7 +43,7 @@ daughters_of_the_red = {
 		nobles_estate_target_satisfaction = -0.10
 		monthly_towards_traditionalist = societal_value_monthly_move
 		monthly_towards_spiritualist = societal_value_minor_monthly_move
-		monthly_religious_influence = 0.1
+		monthly_religious_influence = 0.05
 		rulers_cant_refuse_aeluran_training = yes
 	}
 }
@@ -62,7 +62,7 @@ aeluran_judiciary = {
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_clergy_estate_power = 0.3
 		global_crown_estate_power = -0.1
-		monthly_religious_influence = 0.1
+		monthly_religious_influence = 0.05
 		stability_decay = -0.00025
 		monthly_legitimacy = 0.1
 		monthly_towards_centralization = societal_value_monthly_move

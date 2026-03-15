@@ -5,7 +5,7 @@
 	can_spawn = {
 		has_owner = yes
         controller = {
-            culture = { has_culture_group = culture_group:elven_culture_group}
+            is_elven_country = yes
         }
 	}
 	promote_chance = {
@@ -14,7 +14,7 @@
             if = {
                 limit = {
 					owner = {
-                    	culture = { has_culture_group = culture_group:elven_culture_group}
+                    	is_elven_country = yes
 					}
                 }
                 value = 25

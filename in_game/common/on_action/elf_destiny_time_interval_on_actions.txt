@@ -143,7 +143,7 @@ assign_heroic_trait = {
 recruit_bloodline_members = {
 	trigger = {
 		is_ai = no
-		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_elven_country = yes
 		NOT = { has_variable = bloodline_recruited_recently }
 	}
 
@@ -158,7 +158,7 @@ recruit_bloodline_members = {
 
 populate_calaquendi_estate_with_characters = {
 	trigger = {
-		culture = { has_culture_group = culture_group:elven_culture_group}
+		is_elven_country = yes
 		characters_in_calaquendi_estate_count < 3
 	}
 

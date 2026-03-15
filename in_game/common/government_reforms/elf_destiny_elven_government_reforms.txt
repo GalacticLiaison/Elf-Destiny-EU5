@@ -26,13 +26,13 @@ elven_superiority = {
 	# government = monarchy # which government is allowed to use this
 
 	potential = {
-        culture = { has_culture_group = culture_group:elven_culture_group}
+        is_elven_country = yes
 		has_global_variable = human_relations_chosen
 		# what triggers must be true for this to even be visible in the UI. root = country
 	}
 
 	allow = {
-        culture = { has_culture_group = culture_group:elven_culture_group}
+        is_elven_country = yes
 		has_global_variable = human_relations_chosen
 		NOT = {
 			has_reform = government_reform:open_hearted
@@ -72,13 +72,13 @@ open_hearted = {
 	# government = monarchy # which government is allowed to use this
 
 	potential = {
-        culture = { has_culture_group = culture_group:elven_culture_group}
+        is_elven_country = yes
 		has_global_variable = human_relations_chosen
 		# what triggers must be true for this to even be visible in the UI. root = country
 	}
 
 	allow = {
-        culture = { has_culture_group = culture_group:elven_culture_group}
+        is_elven_country = yes
 		has_global_variable = human_relations_chosen
 		NOT = {
 			has_reform = government_reform:elven_superiority
@@ -113,10 +113,24 @@ open_hearted = {
 				text = location_has_both_human_and_elf_pops
 				# Humans + Elves live together
 				any_pop = { # Elf Culture Present
-					culture = {has_culture_group = culture_group:elven_culture_group} 
+					OR = {
+						owner = {
+							is_elven_country = yes
+							culture = prev.culture
+						}
+						culture = {has_culture_group = culture_group:elven_culture_group} 
+					}
 				}
 				# +
 				any_pop = { # Human Culture Present
+					trigger_if = {
+						limit = {
+							owner = {
+								is_elven_country = yes
+							}
+						}
+						NOT = {culture = owner.culture}
+					}
 					culture = {
 						NOT = {has_culture_group = culture_group:elven_culture_group}
 					} 
@@ -172,12 +186,12 @@ masters_of_woodland_realms = {
 	# government = monarchy # which government is allowed to use this
 
 	potential = {
-        culture = { has_culture_group = culture_group:elven_culture_group}
+        is_elven_country = yes
 		# what triggers must be true for this to even be visible in the UI. root = country
 	}
 
 	allow = {
-        culture = { has_culture_group = culture_group:elven_culture_group}
+        is_elven_country = yes
 		# what triggers must be true for this to even be selectable. root = country
 	}	
 	
@@ -235,12 +249,12 @@ people_of_the_bow = {
 	# government = monarchy # which government is allowed to use this
 
 	potential = {
-        culture = { has_culture_group = culture_group:elven_culture_group}
+        is_elven_country = yes
 		# what triggers must be true for this to even be visible in the UI. root = country
 	}
 
 	allow = {
-        culture = { has_culture_group = culture_group:elven_culture_group}
+        is_elven_country = yes
 		# what triggers must be true for this to even be selectable. root = country
 	}	
 	
@@ -288,12 +302,12 @@ the_old_ways ={
 	# government = monarchy # which government is allowed to use this
 
 	potential = {
-        culture = { has_culture_group = culture_group:elven_culture_group}
+        is_elven_country = yes
 		# what triggers must be true for this to even be visible in the UI. root = country
 	}
 
 	allow = {
-        culture = { has_culture_group = culture_group:elven_culture_group}
+        is_elven_country = yes
 		# what triggers must be true for this to even be selectable. root = country
 	}	
 	

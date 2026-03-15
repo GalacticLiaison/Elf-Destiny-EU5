@@ -62,7 +62,7 @@ elf_destiny_story.1 = {
 			triggered_desc = {
 				desc = elf_destiny_story.1.desc.elven
 				trigger = {
-                    culture = { has_culture_group = culture_group:elven_culture_group}
+                    is_elven_country = yes
 				}
 			}
 			desc = elf_destiny_story.1.desc
@@ -83,7 +83,7 @@ elf_destiny_story.1 = {
 	immediate = {
 		if = {
 			limit = {
-				culture = { has_culture_group = culture_group:elven_culture_group}
+				is_elven_country = yes
 			}
 			save_scope_value_as = {
 				name = already_elven
@@ -151,7 +151,7 @@ elf_destiny_story.11 = {
 	option = {
 		trigger = {
 			NOT = {
-				culture = { has_culture_group = culture_group:elven_culture_group}
+				is_elven_country = yes
 			}
 		}
 		name = elf_destiny_story.11.b
@@ -159,7 +159,7 @@ elf_destiny_story.11 = {
 
 	option = {
 		trigger = {
-			culture = { has_culture_group = culture_group:elven_culture_group}
+			is_elven_country = yes
 		}
 		name = elf_destiny_story.11.b.elves
 	}
@@ -265,6 +265,12 @@ elf_destiny_story.22 = {
 	immediate = {
 		# event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
 
+		# culture = {
+		# 	random_culture_group = {
+		# 		save_scope_as = country_culture_group
+		# 	}
+		# }
+
 	}
 
 	option = {
@@ -337,6 +343,8 @@ elf_destiny_story.22 = {
 				scope:already_elven = yes
 			}
 		}
+
+		set_variable = is_elven_country
 
 		custom_tooltip = {
 			text = all_locations_embrace_elven_institution
