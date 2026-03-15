@@ -11,6 +11,7 @@ has_all_standard_blessings = {
     has_religious_aspect = religious_aspect:heroic_courage
     has_religious_aspect = religious_aspect:beguiling_nature
     has_religious_aspect = religious_aspect:the_rut
+    has_variable = received_mythril_blessing
 }
 
 is_aeluran_order = {

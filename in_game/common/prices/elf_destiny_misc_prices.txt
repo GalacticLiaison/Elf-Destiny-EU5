@@ -1,5 +1,5 @@
 ﻿expedition_price = {
-    scaled_gold = 30
+    scaled_gold = 10
     manpower = 0.1
 }
 

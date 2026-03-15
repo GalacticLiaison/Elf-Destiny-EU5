@@ -112,9 +112,22 @@ I play with a friend with 3500 family member
 
 Make Julia has visited check a global variable to unlock expeditions
 
-One Suggestion I also have is to maybe add the modifier "Slaves working with Raw materials" to the Elven Superiority Government Reform
-
 maybe when elven techs are discovered on expeditions, the advance becomes globally unlocked so in theory AI elf rulers could research it
 
 Institution Spread
 https://discord.com/channels/1179053540161880074/1179054158003839086/1482036593102422197
+
+Could the capital of Atlas be moved to Brest, since it is a really good natural port, while their starting capital has no natural port. This would be nice, since Atlas seems intended to be a naval country.
+
+Mythril scarcity - blessing event
+
+if I'm not mistaken, one player restoring grand portal would lock the rest players in advances?
+- make sure the event just gives it to everyone
+-but we can remove the variable check 
+Im also thinking all players just auto-recieve the advance upon portal restoration
+and we can make portal artifacts unfindabe on expeditions after its been restored
+
+portal modifiers not country modifiers
+
+EU5 Genetic Traits mod breaks default UI building icons (in location overview)
+https://discord.com/channels/1179053540161880074/1482537712912171249

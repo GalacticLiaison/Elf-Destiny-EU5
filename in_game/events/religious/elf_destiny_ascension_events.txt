@@ -353,6 +353,24 @@ scripted_effect choose_blessing_option = {
 				value = flag:beguiling_nature
 			}
 		}
+		0 = {
+			modifier = {
+				add = 100
+				NOT = {
+					has_variable = received_mythril_blessing
+				}
+				NOT = {
+					AND = {
+						exists = scope:blessing_option_1
+						scope:blessing_option_1 = flag:mythril
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = blessing_option_$option$
+				value = flag:mythril
+			}
+		}
 		1 = { # fallback
 			modifier = {
 				add = -1
@@ -550,6 +568,25 @@ ascension_events.2 = {
 	}
 
 	option = {
+		name = mythril_blessing_option
+		trigger = {
+			OR = {
+				AND = {
+					exists = scope:blessing_option_1
+					scope:blessing_option_1 = flag:mythril
+				}
+				AND = {
+					exists = scope:blessing_option_2
+					scope:blessing_option_2 = flag:mythril
+				}
+			}
+		}
+		trigger_event_non_silently = {
+			id = ascension_events.22
+		}
+	}
+
+	option = {
 		name = no_blessing_available
 		trigger = {
 			OR = {
@@ -628,5 +665,81 @@ ascension_events.212 = {
 	option = {
 		name = ascension_events.212.a
 		add_religious_aspect = religious_aspect:familial_familiarity
+	}
+}
+
+ascension_events.22 = {
+	type = country_event
+	title = ascension_events.22.title
+	desc = ascension_events.22.desc
+
+	hide_portraits = yes
+
+	trigger = {
+
+	}
+
+	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
+
+	immediate = {
+		set_variable = received_mythril_blessing
+		if = {
+			limit = {
+				any_province = {
+					any_location_in_province = {
+						topography = mountains
+					}
+				}
+			}
+			random_province = {
+				limit = {
+					any_location_in_province = {
+						topography = mountains
+					}
+				}
+				random_location_in_province = {
+					limit = {
+						topography = mountains
+					}
+					save_scope_as = selected_location
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_province = {
+					any_location_in_province = {
+						topography = hills
+					}
+				}
+			}
+			random_province = {
+				limit = {
+					any_location_in_province = {
+						topography = hills
+					}
+				}
+				random_location_in_province = {
+					limit = {
+						topography = hills
+					}
+					save_scope_as = selected_location
+				}
+			}
+		}
+		else = {
+			random_province = {
+				random_location_in_province = {
+					save_scope_as = selected_location
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ascension_events.22.a
+		scope:selected_location = {
+			change_raw_material = goods:mythril
+		}
 	}
 }

@@ -125,11 +125,11 @@ grand_portal_restored = {
 	allow = { 
 		custom_tooltip = {
 			text = found_elven_portal_artifact_1
-			has_variable = elven_portal_artifact_1_discovered
+			# has_variable = elven_portal_artifact_1_discovered
 		}
 		custom_tooltip = {
 			text = found_elven_portal_artifact_2
-			has_variable = elven_portal_artifact_2_discovered
+			# has_variable = elven_portal_artifact_2_discovered
 		}
 		custom_tooltip = {
 			text = passed_restore_portal_through_parliament

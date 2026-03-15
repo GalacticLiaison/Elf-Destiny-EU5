@@ -24,9 +24,9 @@
         0 = {
             modifier = {
                 add = 50
-                NOR = {
-                    has_variable = elven_portal_artifact_1_discovered
-                    has_variable = elven_portal_artifact_2_discovered
+                OR ={
+                    NOT = {has_variable = elven_portal_artifact_1_discovered}
+                    NOT = {has_variable = elven_portal_artifact_2_discovered}
                 }
             }
             save_scope_value_as = {

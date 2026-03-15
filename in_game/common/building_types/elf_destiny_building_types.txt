@@ -551,16 +551,16 @@ elven_master_workshop = {
 		}
 	}
 
-	unique_production_methods = {
-		jewelry_elven_master_workshop_enhancement = {
-			jewelry = 0.5
-			produced = mythril_elven_crafts
-			output = 0.05
+	# unique_production_methods = {
+	# 	jewelry_elven_master_workshop_enhancement = {
+	# 		jewelry = 0.5
+	# 		produced = mythril_elven_crafts
+	# 		output = 0.05
 			
-			debug_max_profit = 0.4
-			category = guild_input
-		}
-	}
+	# 		debug_max_profit = 0.4
+	# 		category = guild_input
+	# 	}
+	# }
 
 	construction_demand = capital_building_construction
 

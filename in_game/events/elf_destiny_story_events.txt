@@ -897,9 +897,9 @@ elf_destiny_story.52 = { # Start repairs
 				building_type = building_type:grand_portal
 			}
 		}
-		trigger_event_silently = { # FOR TESTING
+		trigger_event_silently = {
 			id = elf_destiny_story.53
-			days = 3
+			days = huge_unique_build_time
 		}
 	}
 
@@ -932,7 +932,16 @@ elf_destiny_story.53 = { # Portal Restored!
 	option = {
 		name = elf_destiny_story.53.a
 
-		research_advance = advance_type:grand_portal_restored
+		every_country = {
+			limit = {
+				is_ai = no
+				ruler = {
+					is_any_elf_type = yes
+				}
+			}
+			research_advance = advance_type:grand_portal_restored
+		}
+
 		set_global_variable = {
 			name = portal_restored
 			value = yes

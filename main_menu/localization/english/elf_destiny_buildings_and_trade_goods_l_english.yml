@@ -72,6 +72,7 @@
 
  seat_of_the_fey_lord_maintenance: "Seat of the Fey Lord Maintenance"
  sanctum_maintenance: "Sanctum Maintenance"
+ portal_maintenance: "Portal Maintenance"
 
  aeluran_temple: "Aeluran Temple"
  aeluran_temple_desc: "#!#high Country receives increased [ShowModifier('increased_aeluran_influence')] upon completion#!\n\n#emp #color_gray A gathering place of Red Sisters from the Aeluran Order--another string in their great web.#!#!"

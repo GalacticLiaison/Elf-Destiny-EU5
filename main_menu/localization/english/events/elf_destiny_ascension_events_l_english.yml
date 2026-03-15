@@ -48,6 +48,7 @@
  heroic_courage_blessing_option: "We shall always stand tall! May our enemies cower!"
  noble_husbandry_blessing_option: "Our bloodlines will be without equal!"
  familial_familiarity_blessing_option: "The bonds of our family shall be strong as steel!"
+ mythril_blessing_option: "My lands will be rich beyond measure!"
  no_blessing_available: "No more blessings available"
 
  ascension_events.21.title: "Divine Judgement"
@@ -61,3 +62,7 @@
  ascension_events.212.title: "Divine Judgement"
  ascension_events.212.desc: "#high . . .  . . .  . . . #yellow_titles *sigh*#!"
  ascension_events.212.a: "p...praise the Spark.."
+
+ ascension_events.22.title: "A Blessing of Wealth"
+ ascension_events.22.desc: "A great bright beam of Spark centered upon [selected_location.GetName] descends from the sky. An astonishing spectacle that can be seen for many miles. The light eventually vanishes as suddenly it appeared, and the locals don't immediately notice anything amiss. However its not long before reports of a new vein of the legendary metal [ShowGoodsName('mythril')] being discovered there reach the capital.\n\n The Divine Spark has blessed your lands with great riches indeed."
+ ascension_events.22.a: "And they call it a mine. A mine!"

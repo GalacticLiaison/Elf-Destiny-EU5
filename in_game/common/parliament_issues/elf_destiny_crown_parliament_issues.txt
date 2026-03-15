@@ -81,14 +81,14 @@ restore_portal = {
         is_ai = no
         has_variable = spoke_with_aelurans
 
-        # custom_tooltip = {
-        # 	text = found_elven_portal_artifact_1
-        # 	has_variable = elven_portal_artifact_1_discovered
-        # }
-        # custom_tooltip = {
-        # 	text = found_elven_portal_artifact_2
-        # 	has_variable = elven_portal_artifact_2_discovered
-        # }	
+        custom_tooltip = {
+        	text = found_elven_portal_artifact_1
+        	has_variable = elven_portal_artifact_1_discovered
+        }
+        custom_tooltip = {
+        	text = found_elven_portal_artifact_2
+        	has_variable = elven_portal_artifact_2_discovered
+        }	
 
         NOT = {
 			has_global_variable = portal_restored_passed_parliament
