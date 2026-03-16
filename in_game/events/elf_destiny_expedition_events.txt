@@ -769,14 +769,14 @@ elf_destiny_expedition.31 = {
                 modifier = {
                     add = 50
                     NOT = {
-                        has_variable = elf_tradition_discovered_people_of_the_bow
+                        has_global_variable = elf_tradition_discovered_people_of_the_bow
                     }
                 }
                 save_scope_value_as = {
                     name = elf_tradition
                     value = flag:people_of_the_bow
                 }
-                set_variable = {
+                set_global_variable = {
                     name = elf_tradition_discovered_people_of_the_bow
                     value = yes
                 }
@@ -785,14 +785,14 @@ elf_destiny_expedition.31 = {
                 modifier = {
                     add = 50
                     NOT = {
-                        has_variable = elf_tradition_discovered_beast_tamers
+                        has_global_variable = elf_tradition_discovered_beast_tamers
                     }
                 }
                 save_scope_value_as = {
                     name = elf_tradition
                     value = flag:beast_tamers
                 }
-                set_variable = {
+                set_global_variable = {
                     name = elf_tradition_discovered_beast_tamers
                     value = yes
                 }
@@ -801,14 +801,14 @@ elf_destiny_expedition.31 = {
                 modifier = {
                     add = 50
                     NOT = {
-                        has_variable = elf_tradition_discovered_mythril_working
+                        has_global_variable = elf_tradition_discovered_mythril_working
                     }
                 }
                 save_scope_value_as = {
                     name = elf_tradition
                     value = flag:mythril_working
                 }
-                set_variable = {
+                set_global_variable = {
                     name = elf_tradition_discovered_mythril_working
                     value = yes
                 }

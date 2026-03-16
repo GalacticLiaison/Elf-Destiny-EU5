@@ -6,15 +6,10 @@
             modifier = {
                 add = 60
                 OR = {
-                    NOT = {has_variable = elf_tradition_discovered_people_of_the_bow}
-                    NOT = {has_variable = elf_tradition_discovered_beast_tamers}
-                    NOT = {has_variable = elf_tradition_discovered_mythril_working}
+                    NOT = {has_global_variable = elf_tradition_discovered_people_of_the_bow}
+                    NOT = {has_global_variable = elf_tradition_discovered_beast_tamers}
+                    NOT = {has_global_variable = elf_tradition_discovered_mythril_working}
                 }
-                # NOR = {
-                #     has_variable = elf_tradition_discovered_people_of_the_bow
-                #     has_variable = elf_tradition_discovered_beast_tamers
-                #     has_variable = elf_tradition_discovered_mythril_working
-                # }
             }
             save_scope_value_as = {
                 name = expedition_reward

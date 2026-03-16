@@ -384,14 +384,14 @@ calaquendi_high_magi = {
 	# Offense
 	artillery_barrage = 30
 	max_strength = 0.05
-	combat_power = 50
+	combat_power = 40
 	flanking_ability = 1.5
 	secure_flanks_defense = 0.05
 	bombard_efficiency = 0.25
 	
 	# Defense
-	morale_damage_taken = -0.55
-    strength_damage_taken = -0.55
+	morale_damage_taken = -0.45
+    strength_damage_taken = -0.45
 	attrition_loss = 0.0
 	
 	buildable = no

@@ -44,7 +44,7 @@ mythril_working = {
 	allow = { 
 		custom_tooltip = {
 			text = discovered_mythril_working_tradition
-			has_variable = elf_tradition_discovered_mythril_working
+			has_global_variable = elf_tradition_discovered_mythril_working
 		}
 	}
 
@@ -97,7 +97,7 @@ beast_tamers = {
 	allow = { 
 		custom_tooltip = {
 			text = discovered_beast_tamers_tradition
-			has_variable = elf_tradition_discovered_beast_tamers
+			has_global_variable = elf_tradition_discovered_beast_tamers
 		}
 	}
 
@@ -264,7 +264,7 @@ honor_of_the_fay = {
 		current_later_age_2_renaissance_trigger = yes
 		custom_tooltip = {
 			text = discovered_people_of_the_bow_tradition
-			has_variable = elf_tradition_discovered_people_of_the_bow
+			has_global_variable = elf_tradition_discovered_people_of_the_bow
 		}
 	}
 

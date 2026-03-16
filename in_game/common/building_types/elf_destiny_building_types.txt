@@ -500,49 +500,9 @@ elven_master_workshop = {
 	build_time = guild_build_time
 	
 	unique_production_methods = {
-		# metal_elven_master_workshop_maintenance = {
-		# 	iron = 0.75
-		# 	tools = 1
-		# 	produced = elven_crafts
-		# 	output = 1
-			
-		# 	debug_max_profit = 0.4
-		# 	category = guild_input
-		# }
-		# bronze_elven_master_workshop_maintenance = {
-		# 	copper = 0.5
-		# 	tin = 0.04
-		# 	tools = 1
-		# 	produced = elven_crafts
-		# 	output = 0.6
-		# 	debug_max_profit = 0.2
-
-		# 	category = guild_input
-		# }
-
-		# silver_elven_master_workshop_maintenance = {
-		# 	silver = 0.2
-		# 	tools = 1
-		# 	produced = elven_crafts
-		# 	output = 0.6
-		# 	debug_max_profit = 0.2
-
-		# 	category = guild_input
-		# }
-
-		# gold_elven_master_workshop_maintenance = {
-		# 	goods_gold = 0.2
-		# 	tools = 1
-		# 	produced = elven_crafts
-		# 	output = 0.6
-		# 	debug_max_profit = 0.2
-
-		# 	category = guild_input
-		# }
-
 		mythril_elven_master_workshop_production_gold = {
 			mythril = 0.1
-			tools = 3
+			tools = 1
 			goods_gold = 1
 
 			produced = mythril_elven_crafts
@@ -554,8 +514,8 @@ elven_master_workshop = {
 
 		mythril_elven_master_workshop_production_silver = {
 			mythril = 0.1
-			tools = 3
-			silver = 2
+			tools = 1
+			silver = 1.2
 
 			produced = mythril_elven_crafts
 			output = 1
@@ -566,8 +526,8 @@ elven_master_workshop = {
 
 		mythril_elven_master_workshop_production_jewelry = {
 			mythril = 0.1
-			tools = 3
-			jewelry = 1
+			tools = 1
+			jewelry = 3
 
 			produced = mythril_elven_crafts
 			output = 0.5

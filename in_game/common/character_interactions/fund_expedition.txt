@@ -35,7 +35,7 @@
 	potential = {
 		scope:actor = {
 			is_ai = no
-			has_variable = expeditions_unlocked
+			has_global_variable = expeditions_unlocked
 		}
 	}
 
@@ -44,7 +44,7 @@
 	allow = {
 		scope:actor = {
 			is_ai = no
-			has_variable = expeditions_unlocked
+			has_global_variable = expeditions_unlocked
 			NOT = {
 				has_variable = expedition_underway
 			}

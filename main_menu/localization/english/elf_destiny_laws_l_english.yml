@@ -33,3 +33,14 @@
  mythril_gold_and_silver_coins_desc: "The metals selected for the coinage of our currency are mythril, gold, and silver, for three different sets of coins."
  mythril_coins: "Mythril Coins Only"
  mythril_coins_desc: "We only use mythril as the metal selected for the coinage of our currency."
+
+
+ CHAR_RULE_LENGTH_LABEL: "Years Character Has Ruled"
+
+ elven_abdicate: "Elven Abdication"
+ elven_abdicate_concept: "[ruler|e]"
+ elven_abdicate_act: "$abdicate$"
+ elven_abdicate_desc_specific: "[recipient.GetName] will abdicate the throne."
+ elven_abdicate_desc: "The [character|e] will abdicate the throne."
+ elven_abdicate_past: "Abdicated!"
+ elven_abdicate_act_past: "[recipient.GetName] has abdicated. [actor.GetGovernment.GetHeir.GetName] is the new [actor.GetGovernment.GetFutureRulerTitle|w]."

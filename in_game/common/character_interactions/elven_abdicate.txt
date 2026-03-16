@@ -1,0 +1,81 @@
+﻿elven_abdicate = { 
+	message = yes
+	is_consort_action = no
+	on_own_nation = yes
+
+	price = price:abdicate_price
+	price_modifier = {
+		add = 1
+		if = {
+			limit = {
+				scope:actor = {
+					ruler_reign >= 25
+				}
+			}
+			subtract = {
+				desc = "CHAR_RULE_LENGTH_LABEL"
+				scope:actor = {
+					value = ruler_reign
+					subtract = 25
+					multiply = 0.02
+				}
+			}
+		}
+	}
+
+	potential = {
+		scope:actor = {
+			ruler = {
+				is_any_elf_type = yes
+			}
+		}
+	}
+
+	ai_tick = daily
+	ai_tick_frequency = 120
+	
+	allow = {
+		scope:actor = {
+			has_heir = yes
+			ruler_reign >= 25
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = recipient
+		name = "choose_character"
+		column = {
+			data = name
+		}
+		visible = {
+			scope:actor = {
+				ruler ?= root
+			}
+		}
+		enabled = {
+			is_any_elf_type = yes
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				scope:actor = {
+					has_heir = yes
+				}
+			}
+			scope:actor = {
+				set_new_ruler = heir
+			}
+		}
+	}
+
+	ai_will_do = {
+		add = {
+			desc = "BASE"
+			value = 5
+		}
+	}
+}	

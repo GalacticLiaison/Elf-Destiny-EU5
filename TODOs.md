@@ -110,16 +110,10 @@ They are so many character my pc crash😅😂
 My family was about 4500 character
 I play with a friend with 3500 family member
 
-Make Julia has visited check a global variable to unlock expeditions
-
-maybe when elven techs are discovered on expeditions, the advance becomes globally unlocked so in theory AI elf rulers could research it
-
 Institution Spread
 https://discord.com/channels/1179053540161880074/1179054158003839086/1482036593102422197
 
 Could the capital of Atlas be moved to Brest, since it is a really good natural port, while their starting capital has no natural port. This would be nice, since Atlas seems intended to be a naval country.
-
-Mythril scarcity - blessing event
 
 if I'm not mistaken, one player restoring grand portal would lock the rest players in advances?
 - make sure the event just gives it to everyone
@@ -133,18 +127,6 @@ EU5 Genetic Traits mod breaks default UI building icons (in location overview)
 https://discord.com/channels/1179053540161880074/1482537712912171249
 
 
-It seems like the option where you get the elven advance while keeping your culture doesn't work right?
-- how the f does merge_culture_group work? maybe we can use
 
 
-0.6 of mythril goods costing 15 equals 9 gold
-1 of mythril costs 10
-You straight up loose money
-Consider making it like it is in naval goods
-where you need a very small amount of tin
-Something like 0.1 mythril + 1 gold/silver = 1 Mythril elven craft will be so much better
 
-nerf religious influence
-
-Change calaquendi to per 1000 pop across the board
-Maybe calaquendi buildings could have 30 employees instead of 100 and make it give some bonus or something
