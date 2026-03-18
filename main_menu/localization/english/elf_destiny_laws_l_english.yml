@@ -44,3 +44,12 @@
  elven_abdicate_desc: "The [character|e] will abdicate the throne."
  elven_abdicate_past: "Abdicated!"
  elven_abdicate_act_past: "[recipient.GetName] has abdicated. [actor.GetGovernment.GetHeir.GetName] is the new [actor.GetGovernment.GetFutureRulerTitle|w]."
+
+  precious_metal_distribution_law: "Precious Metal Distribution"
+ precious_metal_distribution_law_desc: "[ShowGoodsName('mythril')|U], [ShowGoodsName('goods_gold')|U], and [ShowGoodsName('silver')] are the materials necessary for the minting of coins. As our state is in the highly enviable position to gather these precious metals ourselves, it is our right to decide who gains access to these resources."
+ gold_export_ban: "Export Ban"
+ gold_export_ban_desc: "We will enforce strict prohibition on the export of our precious [ShowGoodsName('mythril')|U], [ShowGoodsName('goods_gold')], and [ShowGoodsName('silver')] reserves to foreign lands. This preserves our wealth for domestic use, shielding our treasures from the greedy eyes of other nations. While this measure may safeguard our riches, it comes at the cost of international trade opportunities. A solemn decision for those who prioritize the sanctity of our vaults over global commerce..."
+ regulated_gold_export: "Regulated Export"
+ regulated_gold_export_desc: "The trade of our valuable [ShowGoodsName('mythril')|U], [ShowGoodsName('goods_gold')], and [ShowGoodsName('silver')] resources is managed with a watchful eye. This balanced approach limits the quantity of these precious metals that can be traded, ensuring that our wealth remains largely within our borders. By doing so, we strike a compromise between bolstering our economy and protecting our national riches. A prudent choice for rulers who seek both financial stability and regional influence."
+ unlimited_gold_export: "Unlimited Export"
+ unlimited_gold_export_desc: "We shall open the floodgates and allow unrestricted trade of our [ShowGoodsName('mythril')|U], [ShowGoodsName('goods_gold')], and [ShowGoodsName('silver')] reserves with foreign nations. With this bold step, we embrace the potential for unparalleled wealth accumulation through international commerce. However, this policy exposes our treasures to the risk of being dispersed across the world, making them vulnerable to the greed of rival powers. A daring option for rulers who seek to dominate the global market and reap the rewards of boundless riches."

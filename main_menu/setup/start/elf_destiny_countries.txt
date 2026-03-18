@@ -363,7 +363,7 @@ countries = {
 		}
 
 		ATS = { # Atlas - Lormelis
-			capital = treguier
+			capital = brest
 
 			own_control_core = {
 				brest st_pol_de_leon treguier chatelaudren saint_brieuc

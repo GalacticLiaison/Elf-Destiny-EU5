@@ -537,8 +537,8 @@ CYG = {
 }
 
 WYD = {
-	color = rgb { 360 141 100 }
-	color2 = rgb { 20 100 30 }
+	color = rgb { 58 11 123 }
+	color2 = rgb { 58 11 123 }
 	# male_regnal_names = {}
 	# female_regnal_names = {}
 	# description_category = administrative # cf. common/country_description_category DB
@@ -549,8 +549,8 @@ WYD = {
 }
 
 GSH = {
-	color = rgb { 360 151 100 }
-	color2 = rgb { 30 100 40 }
+	color = rgb { 10 121 18 }
+	color2 = rgb { 10 121 18 }
 	# male_regnal_names = {}
 	# female_regnal_names = {}
 	# description_category = administrative # cf. common/country_description_category DB
@@ -561,8 +561,8 @@ GSH = {
 }
 
 ATS = {
-	color = rgb { 360 161 100 }
-	color2 = rgb { 40 100 50 }
+	color = rgb { 24 36 220 }
+	color2 = rgb { 24 36 220 }
 	# male_regnal_names = {}
 	# female_regnal_names = {}
 	# description_category = administrative # cf. common/country_description_category DB

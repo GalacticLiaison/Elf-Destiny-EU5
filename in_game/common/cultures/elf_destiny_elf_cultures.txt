@@ -53,10 +53,12 @@ tuatha_de_danann_culture = {
 	
 	# Could make all humans dislike
 	opinions = {
+		irish = kindred
 	}
 
 	culture_groups = {
 		elven_culture_group
+		celtic_group
 	}
 }
 
@@ -73,6 +75,7 @@ romaviri_culture = {
 
 	culture_groups = {
 		elven_culture_group
+		italian_group
 	}
 }
 
@@ -89,6 +92,7 @@ alfar_culture = {
 
 	culture_groups = {
 		elven_culture_group
+		scandinavian_group
 	}
 }
 
@@ -117,10 +121,13 @@ atlareth_culture = {
 	
 	# Could make all humans dislike
 	opinions = {
+		breton = positive
 	}
 
 	culture_groups = {
 		elven_culture_group
+		celtic_group
+		french_group
 	}
 }
 

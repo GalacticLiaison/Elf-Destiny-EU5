@@ -31,7 +31,7 @@ locations={
 	# Giant's Palm
 	konkudera  = { rank = town 		town_setup = elven_town }
 	# Atlas
-	treguier = { rank = city 		town_setup = elven_capital }
+	brest = { rank = city 		town_setup = elven_capital }
 
 	# Windyhill
 	khimzha = { rank = rural_settlement town_setup = rural_elven_forest_village }

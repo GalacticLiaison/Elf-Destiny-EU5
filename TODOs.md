@@ -3,12 +3,9 @@ localization overall
 
 Clean up the damn error log
 
-
-
-elf starting debt
-- increase peasant pop in every location under 5k
-    - this will fill villages buildings to boost economy
-
+maybe ancient elven road tech
+- another thing to unlock on expeditions, the road in the north starts as it
+- Ancient Forest Road (Men-i-Naugrim)
 
 ## Grok localization
 - your really should consider putting most descriptions through Grok for formatting/grammar/readability suggestions
@@ -126,7 +123,20 @@ portal modifiers not country modifiers
 EU5 Genetic Traits mod breaks default UI building icons (in location overview)
 https://discord.com/channels/1179053540161880074/1482537712912171249
 
+by the way i was just thinking that since we are elves we should have even more bonuses on woods and forests. maybe movement speed for troops or proximity speed. forests are our natural habitat anyway
+    - a note, roads completely negate the proximity speed penalty from forests and woods, so make sure it's not too strong maybe
 
+Metal laws to ban mythril exports and what not.
 
+Also, while many might be fine with 100 ducats/manpower, it is prohibitive for quite a few areas of the world. Maybe something like area of the world/empire size/location number scaling?
 
+co-sponsor expedition is giving gold
 
+Possible portal broken
+https://discord.com/channels/1179053540161880074/1179054158003839086/1483387730418470994
+https://discord.com/channels/1179053540161880074/1179054158003839086/1483466208417288308
+
+review rebel stat
+https://discord.com/channels/1179053540161880074/1179054158003839086/1483400294258839574
+
+Mining communities reform should give mythril bonus

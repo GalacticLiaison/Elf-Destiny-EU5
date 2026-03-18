@@ -479,7 +479,7 @@ elven_master_workshop = {
 	
 	category = basic_industry_category
 	
-	employment_size = guild_employment
+	employment_size = 0.01
 
 	town = yes
 	city = yes
