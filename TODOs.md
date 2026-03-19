@@ -11,6 +11,8 @@ maybe ancient elven road tech
 - your really should consider putting most descriptions through Grok for formatting/grammar/readability suggestions
 
 maybe a calaquendi privilege that speeds up the cooldown on call parliament!
+- make this a major government reform, maybe a major one
+- make it discoverable on expeditions
 
 # Final Pass on culture/religion/country colors
 
@@ -88,8 +90,6 @@ Open hearted
 Consider
 https://discord.com/channels/1179053540161880074/1179054158003839086/1481299927119167488
 
-Lets nerf calaquendi levies
-
 "Genetics is bugged
 Doesn't randomise the traits children get
 Two parents create kids with exact same traits every time"
@@ -126,8 +126,6 @@ https://discord.com/channels/1179053540161880074/1482537712912171249
 by the way i was just thinking that since we are elves we should have even more bonuses on woods and forests. maybe movement speed for troops or proximity speed. forests are our natural habitat anyway
     - a note, roads completely negate the proximity speed penalty from forests and woods, so make sure it's not too strong maybe
 
-Metal laws to ban mythril exports and what not.
-
 Also, while many might be fine with 100 ducats/manpower, it is prohibitive for quite a few areas of the world. Maybe something like area of the world/empire size/location number scaling?
 
 co-sponsor expedition is giving gold
@@ -140,3 +138,6 @@ review rebel stat
 https://discord.com/channels/1179053540161880074/1179054158003839086/1483400294258839574
 
 Mining communities reform should give mythril bonus
+
+gah, republics can't elect Calaquendi
+I just tried to do family ascension and none of my family ascended

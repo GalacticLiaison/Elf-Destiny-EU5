@@ -135,10 +135,12 @@ genetic_inheritance_effect = {
 	single_trait_inheritance = {
 		trait = fecund
 		single_parent_chance = 33
+		both_parent_chance = 80
 	}
 	single_trait_inheritance = {
 		trait = giant
 		single_parent_chance = 33
+		both_parent_chance = 80
 	}
 	pure_blood_inheritance = yes
 
@@ -155,19 +157,10 @@ leveled_trait_inheritance = {
 	}
 
 	# Chance to reinforce genetic trait
-	if = {
-		limit = {
-			var:trait_score > 0
-		}
+ 	use_fake_random_effect = { function_name = reinforce_or_degrade_level_trait }
 
-		random = {
-			chance = 35
-			change_variable = {
-				name = trait_score
-				add = 1 
-			}
-		}
-	}
+	# Chance to not inherit any trait
+	use_fake_random_effect = { function_name = no_trait_inheritance_chance }
 
 	if = {
 		limit = {
@@ -223,30 +216,75 @@ leveled_trait_inheritance = {
 	}
 }
 
+reinforce_or_degrade_level_trait = {
+	if = {
+		limit = {
+			var:trait_score > 0
+		}
+
+		random_list = {
+			35 = { # Reinforce Trait
+				change_variable = {
+					name = trait_score
+					add = 1 
+				}
+			}
+			15 = { # Degrade Trait
+				change_variable = {
+					name = trait_score
+					add = -1 
+				}
+			}
+			50 = { # Nothing Happens
+			}
+		}
+	}
+}
+
+no_trait_inheritance_chance = {
+	if = {
+		limit = {
+			var:trait_score > 0
+		}
+
+		random_list = {
+			20 = {
+				set_variable = {
+					name = trait_score
+					value = 0
+				}
+			}
+			80 = { # Nothing Happens
+			}
+		}
+	}
+}
+
 single_trait_inheritance = {
 	if = {
 		limit = {
 			AND = {
-				scope:character.father = {
+				father = {
 					has_genetic_trait = { trait = $trait$ }
 				}
-				scope:character.mother = {
+				mother = {
 					has_genetic_trait = { trait = $trait$ }
 				}
 			}
 		}
 
-		scope:character ?= {
+		random = {
+			chance = $both_parent_chance$
 			assign_genetic_trait = { trait = $trait$}
 		}
 	}
 	else_if = {
 		limit = {
 			OR = {
-				scope:character.father = {
+				father = {
 					has_genetic_trait = { trait = $trait$ }
 				}
-				scope:character.mother = {
+				mother = {
 					has_genetic_trait = { trait = $trait$ }
 				}
 			}
@@ -254,9 +292,7 @@ single_trait_inheritance = {
 
 		random = {
 			chance = $single_parent_chance$
-			scope:character ?= {
-				assign_genetic_trait = { trait = $trait$}
-			}
+			assign_genetic_trait = { trait = $trait$}
 		}
 	}
 }
@@ -266,8 +302,29 @@ single_trait_inheritance = {
 # and in certain scenarios will return the exact same result over and over. This helps with that.
 use_fake_random_effect = {
 	if = {
-		limit = { NOT = { exists = global_var:semi_random_integer } }
-
+		limit = {
+			NOT = {
+				exists = global_var:semi_random_integer
+			}
+		}
+		set_global_variable = {
+			name = semi_random_integer
+			value = {
+				integer_range = { min = 1 max = 30 }
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			global_var:semi_random_integer < 30
+		}
+		change_global_variable = {
+			name = semi_random_integer
+			add = 1
+		}
+	}
+	else = {
+		remove_global_variable = semi_random_integer
 		set_global_variable = {
 			name = semi_random_integer
 			value = {
@@ -312,12 +369,15 @@ use_fake_random_effect = {
 		fallback = { $function_name$ = yes }
 	}
 
-	set_global_variable = {
-		name = semi_random_integer
-		value = {
-			integer_range = { min = 1 max = 30 }
-		}
-	}
+	# set_global_variable = {
+	# 	name = semi_random_integer
+	# 	value = {
+	# 		integer_range = { min = 1 max = 30 }
+	# 	}
+	# }
+	# remove_global_variable = semi_random_integer
+
+
 }
 
 # Chance Character is born with new genetic trait regardless of parents
@@ -508,38 +568,31 @@ pure_blood_inheritance = {
 			}
 		}
 	}
-	else_if = {
-		limit = {
-			var:trait_score = 0
-		}
+	else = {
 		if = {
 			limit = {
-				scope:character ?= {
-					mother_and_father_are_closely_related = yes
-				}
+				mother_and_father_are_closely_related = yes
 			}
 
 			random_list = {
-				30 = {}
+				35 = {}
 				55 = {
 					change_variable = {
 						name = trait_score
 						add = 1 
 					}
 				}
-				15 = { # inbred
-					change_variable = {
+				10 = { # inbred
+					set_variable = {
 						name = trait_score
-						add = -1 
+						value = -1
 					}
 				}
 			}
 		}
 		else_if = {
 			limit = {
-				scope:character ?= {
-					mother_and_father_have_same_dynasty = yes
-				}
+				mother_and_father_have_same_dynasty = yes
 			}
 			random_list = {
 				60 = {}
@@ -550,44 +603,10 @@ pure_blood_inheritance = {
 					}
 				}
 				5 = { # inbred
-					change_variable = {
+					set_variable = {
 						name = trait_score
-						add = -1 
+						value = -1
 					}
-				}
-			}
-		}
-	}
-	else_if = { # Chance to reinforce genetic trait
-		limit = {
-			var:trait_score > 0
-		}
-
-		if = {
-			limit = {
-				scope:character ?= {
-					mother_and_father_are_closely_related = yes
-				}
-			}
-			random = {
-				chance = 55
-				change_variable = {
-					name = trait_score
-					add = 1 
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				scope:character ?= {
-					mother_and_father_have_same_dynasty = yes
-				}
-			}
-			random = {
-				chance = 35
-				change_variable = {
-					name = trait_score
-					add = 1 
 				}
 			}
 		}
@@ -628,50 +647,48 @@ pure_blood_inheritance = {
 		assign_genetic_trait = { trait = inbred}
 	}
 
-	if = { # Chance for Pure Blooded/Inbred To Appear
-		limit = {
-			NOR = {
-				has_genetic_trait = { trait = pure_blooded }
-				has_genetic_trait = { trait = purer_blooded }
-				has_genetic_trait = { trait = purest_blooded }
-				has_genetic_trait = { trait = inbred }
-			}
-			OR = {
-				scope:character ?= {
-					AND = {
-						exists = father
-						exists = mother
-						father = {has_dynasty = yes}
-						mother = {has_dynasty = yes}
-						father.dynasty = mother.dynasty
-					}
-				}
-				scope:character ?= {
-					AND = {
-						exists = father
-						exists = mother
-						father = {
-							is_close_relative = scope:character.mother
-						}
-					}
-				}
-			}
-		}
+	# if = { # Chance for Pure Blooded/Inbred To Appear
+	# 	limit = {
+	# 		NOR = {
+	# 			has_genetic_trait = { trait = pure_blooded }
+	# 			has_genetic_trait = { trait = purer_blooded }
+	# 			has_genetic_trait = { trait = purest_blooded }
+	# 			has_genetic_trait = { trait = inbred }
+	# 		}
+	# 		OR = {
+	# 			scope:character ?= {
+	# 				AND = {
+	# 					exists = father
+	# 					exists = mother
+	# 					father = {has_dynasty = yes}
+	# 					mother = {has_dynasty = yes}
+	# 					father.dynasty = mother.dynasty
+	# 				}
+	# 			}
+	# 			scope:character ?= {
+	# 				AND = {
+	# 					exists = father
+	# 					exists = mother
+	# 					father = {
+	# 						is_close_relative = mother
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
 
-		random = {
-			chance = 35
-			scope:character ?= {
-				random_list = {
-					70 = {
-						assign_genetic_trait = { trait = pure_blooded}
-					}
-					30 = {
-						assign_genetic_trait = { trait = inbred}
-					}
-				}
-			}
-		}
-	}
+	# 	random = {
+	# 		chance = 35
+	# 		random_list = {
+	# 			70 = {
+	# 				assign_genetic_trait = { trait = pure_blooded}
+	# 			}
+	# 			30 = {
+	# 				assign_genetic_trait = { trait = inbred}
+	# 			}
+	# 		}
+	# 	}
+	# }
 }
 
 ### Unconventional and Exotic beauty traits ###

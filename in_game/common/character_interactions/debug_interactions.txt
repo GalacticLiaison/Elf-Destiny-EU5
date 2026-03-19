@@ -41,53 +41,40 @@
 # 	}
 
 # 	effect = {
-# 		# set_global_variable = {
-# 		# 	name = portal_restored
-# 		# 	value = yes
+# 		# scope:actor = {
+# 		# 	add_stability = 100
 # 		# }
-# 		scope:actor = {
-# 			trigger_event_non_silently = {
-# 				id = elf_destiny_expedition.3
-# 			}
+# 		scope:recipient = {
+# 			# set_variable = {
+# 			# 	name = trait_score
+# 			# 	value = inherited_beauty_trait_score 
+# 			# }
+
+# 			# genetic_inheritance_effect = yes
+# 			use_fake_random_effect = { function_name = genetic_inheritance_effect }
+
+# 			# set_variable = {
+# 			# 	name = trait_score
+# 			# 	value = inherited_$trait$_trait_score 
+# 			# }
+
+# 			# leveled_trait_inheritance = {trait = beauty} 
+
+# 			# clear_variable_list = genetic_traits
 # 		}
 
+		
 # 		# scope:actor = {
-# 		# 	research_advance = advance_type:mythril_working
-
-# 		# 	# add_gold = 2000
-
-# 		# 	# add_goods_supply = {
-# 		# 	# 	goods = goods:mythril_elven_crafts
-# 		# 	# 	amount = market_goods_extreme_gain
-# 		# 	# }
+# 		# 	trigger_event_non_silently = {
+# 		# 		id = elf_destiny_expedition.3
+# 		# 	}
 # 		# }
-
-# 		# c:SYL = {
-# 			# set_variable = {
-# 			# 	name = previous_ruling_dynasty
-# 			# 	value = ruler.dynasty
-# 			# }
-# 			# kill_character_silently = ruler
-# 			# research_advance = advance_type:grand_portal_restored
-# 		# }
-
-# 		# random_in_global_list = {
-# 		# 	variable = aeluran_matrons
-# 		# 	kill_character_silently = this
-# 		# }
-
-# 		# religion:aeluran.religious_head.ruler = {
-# 		# 	kill_character_silently = this
-# 		# }
-
-# 		# kill_character_silently = character:dwd_elandra_thalwyn
 # 	}
 
 #    ai_will_do = {
 # 		value = 0
 #     }
-# }	
-
+# }
 
 character_editor = {
 	sound = UI_action_character_marry_noble

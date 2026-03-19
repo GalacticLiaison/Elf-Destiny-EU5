@@ -45,7 +45,7 @@
  elven_abdicate_past: "Abdicated!"
  elven_abdicate_act_past: "[recipient.GetName] has abdicated. [actor.GetGovernment.GetHeir.GetName] is the new [actor.GetGovernment.GetFutureRulerTitle|w]."
 
-  precious_metal_distribution_law: "Precious Metal Distribution"
+ precious_metal_distribution_law: "Precious Metal Distribution"
  precious_metal_distribution_law_desc: "[ShowGoodsName('mythril')|U], [ShowGoodsName('goods_gold')|U], and [ShowGoodsName('silver')] are the materials necessary for the minting of coins. As our state is in the highly enviable position to gather these precious metals ourselves, it is our right to decide who gains access to these resources."
  gold_export_ban: "Export Ban"
  gold_export_ban_desc: "We will enforce strict prohibition on the export of our precious [ShowGoodsName('mythril')|U], [ShowGoodsName('goods_gold')], and [ShowGoodsName('silver')] reserves to foreign lands. This preserves our wealth for domestic use, shielding our treasures from the greedy eyes of other nations. While this measure may safeguard our riches, it comes at the cost of international trade opportunities. A solemn decision for those who prioritize the sanctity of our vaults over global commerce..."

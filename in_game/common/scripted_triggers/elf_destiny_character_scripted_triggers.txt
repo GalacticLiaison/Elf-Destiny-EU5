@@ -83,7 +83,7 @@ mother_and_father_are_closely_related = {
         exists = father
         exists = mother
         father = {
-            is_close_relative = scope:character.mother
+            is_close_relative = mother
         }
     }
 }

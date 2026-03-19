@@ -46,7 +46,7 @@ assign_elf_bloodline_traits = {
 assign_genetic_traits = {
 	effect = {
 		scope:character = {
-			genetic_inheritance_effect = yes
+			use_fake_random_effect = { function_name = genetic_inheritance_effect }
 		}
 	}
 }
