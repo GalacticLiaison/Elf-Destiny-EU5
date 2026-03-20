@@ -57,9 +57,9 @@ elven_superiority = {
 		allow_rgo_slave_demand = yes
 	}
 	
-	location_modifier = {
+	# location_modifier = {
 
-	}
+	# }
 	
 	days = 0
 }
@@ -94,7 +94,8 @@ open_hearted = {
 	country_modifier = {
         government_reform_slots = 1
 		diplomatic_reputation = 2
-		research_speed_modifier = 0.025
+		antagonism_culture_influence = -0.2
+		cultures_capacity_modifier = 0.5
 		# any_accepted_culture
 		# any_present_culture_in_country
 		# any_primary_or_accepted_tolerated_culture

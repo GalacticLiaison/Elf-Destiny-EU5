@@ -10,7 +10,7 @@
 	
 	on_accept = {
 		add_gold = {
-			value = expedition_cost
+			value = -75
 			multiply = 0.5
 		}
 		set_variable = expedition_underway

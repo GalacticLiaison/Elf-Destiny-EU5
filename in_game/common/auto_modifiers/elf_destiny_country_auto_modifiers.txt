@@ -22,9 +22,15 @@ elf_destiny_country_base_values = {
 
 elf_destiny_country_base_values_gated = {
 	potential_trigger = {
-		# is_elven_country = yes
 		is_elven_country = yes
 	}
 	global_calaquendi_desired_pop_scaled = 0.002
+}
+
+elf_destiny_elven_racism = {
+	potential_trigger = {
+		is_elven_country = yes
+	}
+	global_pop_assimilation_speed_modifier = -0.5
 }
 

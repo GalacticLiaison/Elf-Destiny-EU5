@@ -83,3 +83,6 @@
  aeluran_temple_desc: "#!#high Country receives increased [ShowModifier('increased_aeluran_influence')] upon completion#!\n\n#emp #color_gray A gathering place of Red Sisters from the Aeluran Order--another string in their great web.#!#!"
  shrine_to_vana: "Shrine to Vána"
  shrine_to_vana_desc: "#!#high Country receives a [ShowModifier('lesser_religious_influence_bonus')] upon completion#!\n\n#emp #color_gray A tribute to Vána Goddess of prosperity and fertility. To feed the Divine Spark there must be life.#!#!"
+
+ mercury_patio: "Mercury Patio"
+ mercury_patio_desc: "A $mercury_patio$ is a complex of buildings used to refine silver, gold, and mythril extracted from lower quality ores, making them profitable."
