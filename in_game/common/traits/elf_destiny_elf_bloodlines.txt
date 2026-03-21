@@ -41,7 +41,7 @@ royal_elf_serelion = {
 		purple_eyecolor_modifier = yes
 
 		pop_join_rebel_threshold = -0.05
-		monthly_rebel_growth = 0.005
+		monthly_rebel_growth = 0.001
 	}
 
 	chance = {

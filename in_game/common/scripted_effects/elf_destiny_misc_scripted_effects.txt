@@ -302,6 +302,8 @@ elf_destiny_misc_game_start_tweaks_effect = {
 		seed_nobles_estate_characters_effect = yes # Elf countries dont start with nobles for whatever reason
 		set_initial_consanguinity_law = yes
 	}
+
+	build_ancient_road_network = yes
 }
 
 register_aeluran_leadership = {
@@ -332,6 +334,51 @@ seed_nobles_estate_characters_effect = {
 		create_nobles_estate_character = {is_female = no scope_name = new_calaquendi}
 	}
 }
+
+build_ancient_road_network = {
+	location:bolshaya_laptyuga = { add_road_to = { target = location:mezen type = ancient_road } }
+	location:bolshaya_laptyuga = { add_road_to = { target = location:ust_vym type = ancient_road } }
+	location:ust_vym = { add_road_to = { target = location:kortkeros type = ancient_road } }
+	location:kortkeros = { add_road_to = { target = location:ust_kulom type = ancient_road } }
+	location:ust_kulom = { add_road_to = { target = location:cherdyn type = ancient_road } }
+	location:cherdyn = { add_road_to = { target = location:solikamsk type = ancient_road } }
+	location:solikamsk = { add_road_to = { target = location:kizel type = ancient_road } }
+	location:kizel = { add_road_to = { target = location:turyinskiye_rudniki type = ancient_road } }
+	location:turyinskiye_rudniki = { add_road_to = { target = location:sosva type = ancient_road } }
+	location:sosva = { add_road_to = { target = location:gari type = ancient_road } }
+	location:gari = { add_road_to = { target = location:tabory type = ancient_road } }
+	location:tabory = { add_road_to = { target = location:yevra type = ancient_road } }
+	location:yevra = { add_road_to = { target = location:yukonda type = ancient_road } }
+	location:yukonda = { add_road_to = { target = location:irtysh type = ancient_road } }
+	location:irtysh = { add_road_to = { target = location:bolshoy_balyk type = ancient_road } }
+	location:bolshoy_balyk = { add_road_to = { target = location:bolshoy_yugan type = ancient_road } }
+	location:bolshoy_yugan = { add_road_to = { target = location:upper_ob type = ancient_road } }
+	location:upper_ob = { add_road_to = { target = location:kargasok type = ancient_road } }
+	location:kargasok = { add_road_to = { target = location:kolpashevo type = ancient_road } }
+	location:kolpashevo = { add_road_to = { target = location:molchanovo type = ancient_road } }
+	location:molchanovo = { add_road_to = { target = location:ket type = ancient_road } }
+	location:ket = { add_road_to = { target = location:ust_ozernoye type = ancient_road } }
+	location:ust_ozernoye = { add_road_to = { target = location:nazimovo type = ancient_road } }
+	location:nazimovo = { add_road_to = { target = location:kiya type = ancient_road } }
+	location:kiya = { add_road_to = { target = location:bryanka type = ancient_road } }
+	location:bryanka = { add_road_to = { target = location:motygino type = ancient_road } }
+	location:motygino = { add_road_to = { target = location:kamenka type = ancient_road } }
+	location:kamenka = { add_road_to = { target = location:yarkino type = ancient_road } }
+	location:yarkino = { add_road_to = { target = location:upper_angara type = ancient_road } }
+	location:upper_angara = { add_road_to = { target = location:lower_angara type = ancient_road } }
+	location:lower_angara = { add_road_to = { target = location:reka_tuba type = ancient_road } }
+	location:reka_tuba = { add_road_to = { target = location:ust_kut type = ancient_road } }
+	location:ust_kut = { add_road_to = { target = location:zhigalovo type = ancient_road } }
+	location:ust_kut = { add_road_to = { target = location:irkutsk_kazachinskoye type = ancient_road } }
+	location:irkutsk_kazachinskoye = { add_road_to = { target = location:angoya type = ancient_road } }
+	location:angoya = { add_road_to = { target = location:kichera type = ancient_road } }
+	location:kichera = { add_road_to = { target = location:argada type = ancient_road } }
+	location:argada = { add_road_to = { target = location:chitkan type = ancient_road } }
+	
+
+	# bolshaya_laptyuga = mezen
+}
+
 
 set_initial_consanguinity_law = {
 	if = {

@@ -31,6 +31,6 @@ elf_destiny_elven_racism = {
 	potential_trigger = {
 		is_elven_country = yes
 	}
-	global_pop_assimilation_speed_modifier = -0.5
+	global_pop_assimilation_speed_modifier = -1
 }
 

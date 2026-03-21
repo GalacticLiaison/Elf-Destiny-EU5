@@ -5,14 +5,10 @@
 	
 	tags = { elf_gfx western_european_gfx european_gfx }
 	
-	# Could make all humans dislike
 	opinions = {
 	}
 
 	country_modifier = {
-		# modifier when country's Primary Culture is this
-		global_peasants_desired_pop_scaled = -1
-		global_peasants_desired_pop = -1
 		global_peasants_migration_allowed = no
 	}
 
@@ -28,14 +24,10 @@ deepwood_elven_culture = {
 	
 	tags = { elf_gfx western_european_gfx european_gfx }
 	
-	# Could make all humans dislike
 	opinions = {
 	}
 
 	country_modifier = {
-		# modifier when country's Primary Culture is this
-		global_peasants_desired_pop_scaled = -1
-		global_peasants_desired_pop = -1
 		global_peasants_migration_allowed = no
 	}
 
@@ -51,7 +43,6 @@ tuatha_de_danann_culture = {
 	
 	tags = { elf_gfx irish_gfx western_european_gfx european_gfx }
 	
-	# Could make all humans dislike
 	opinions = {
 		irish = kindred
 	}
@@ -69,13 +60,13 @@ romaviri_culture = {
 	
 	tags = { elf_gfx roman_elf_gfx western_european_gfx european_gfx }
 	
-	# Could make all humans dislike
 	opinions = {
 	}
 
 	culture_groups = {
 		elven_culture_group
 		italian_group
+		greek_group
 	}
 }
 
@@ -86,7 +77,6 @@ alfar_culture = {
 	
 	tags = { elf_gfx western_european_gfx european_gfx}
 	
-	# Could make all humans dislike
 	opinions = {
 	}
 
@@ -103,7 +93,6 @@ astrion_culture = {
 	
 	tags = { elf_gfx western_european_gfx european_gfx}
 	
-	# Could make all humans dislike
 	opinions = {
 	}
 
@@ -119,7 +108,6 @@ atlareth_culture = {
 	
 	tags = { elf_gfx western_european_gfx european_gfx}
 	
-	# Could make all humans dislike
 	opinions = {
 		breton = positive
 	}

@@ -26,6 +26,10 @@ divine_spark = {
     texture = "gfx/interface/icons/flat_icons/ruler_trait.dds"
 }
 
+ancient_culture = {
+	texture = "gfx/interface/icons/flat_icons/culture/culture.dds"
+}
+
 # grand_portal
 
 # spark as magic

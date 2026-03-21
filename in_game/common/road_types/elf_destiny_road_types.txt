@@ -1,0 +1,15 @@
+﻿ancient_road = {
+	level = 2
+	movement_cost = -0.35
+	market_access = -0.25
+	proximity = 7
+	build_time_per_unit_distance = 20
+	price_per_unit_distance = build_paved_road
+	construction_demand = build_paved_road_demand
+	maintenance_demand = maintain_paved_road_demand
+	color = ancient_road_color
+	spline_style_id = 0
+    enabled = {
+        always = no
+    }
+}

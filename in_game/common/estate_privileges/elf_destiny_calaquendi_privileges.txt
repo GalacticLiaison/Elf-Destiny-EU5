@@ -60,7 +60,7 @@ elite_worship = {
 		monthly_towards_aristocracy = societal_value_monthly_move
 		monthly_towards_serfdom= societal_value_monthly_move
 		global_max_control = 0.05
-		pop_join_rebel_threshold = -0.5
+		pop_join_rebel_threshold = -0.05
 		monthly_rebel_growth = -0.001
 	}
 }
