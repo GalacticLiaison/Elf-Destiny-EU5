@@ -325,6 +325,10 @@ ascending_into_fae_tier_unlocked = {
 	positive = "gfx/interface/icons/traits/elf_tier_4.dds" 
 }
 
+portal_network_unlocked = {
+	positive = "gfx/interface/icons/buildings/prime_portal_hub.dds" 
+}
+
 enchantress_ruler_trait_unlocked = {
 	positive = "gfx/interface/icons/traits/enchantress.dds" 
 }

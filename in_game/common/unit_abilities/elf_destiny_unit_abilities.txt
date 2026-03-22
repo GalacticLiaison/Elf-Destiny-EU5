@@ -1,0 +1,50 @@
+﻿teleport_army = {
+	toggle = no
+
+	map = yes
+
+	hidden = {
+        NOT = {
+            owner = {
+                has_advance = grand_portal_restored
+            }
+        }
+	}
+
+	allow = {
+        # TODO: check for friendly control
+		unit_location = {
+            # is_capital = yes
+            OR = {
+                has_building = building_type:grand_portal
+                has_building = building_type:prime_portal_hub
+                has_building = building_type:lesser_portal_node
+            }
+		}
+	}
+
+    finished_when = {
+		OR = {
+			in_combat = yes
+			is_moving = yes
+			is_exiled = yes
+			in_siege = yes
+		}
+	}
+
+	start_effect = {
+        custom_tooltip = {
+            text = teleport_army_effect_desc
+            save_scope_as = unit_to_teleport
+            unit_location = {
+                save_scope_as = portal_origin_location
+            }
+            owner = {
+                trigger_event_silently = elf_destiny_misc.5
+            }
+        }
+	}
+	
+	ai_will_do = {
+	}
+}

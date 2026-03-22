@@ -142,6 +142,9 @@
  MODIFIER_TYPE_NAME_ascending_into_fae_tier_unlocked: "Characters can now Ascend into the Fae Elven Tier"
  MODIFIER_TYPE_DESC_ascending_into_fae_tier_unlocked: "The Portal re-opening has increased the ambient Spark levels on the planet. Characters are now able to ascend into higher Elven Tiers"
 
+ MODIFIER_TYPE_NAME_portal_network_unlocked: "Portal Network Unlocked"
+ MODIFIER_TYPE_DESC_portal_network_unlocked: "Can now construct [ShowBuildingTypeName('prime_portal_hub')] and [ShowBuildingTypeName('lesser_portal_node')] [buildings|e]. Armies can now use the [ShowUnitAbilityName('teleport_army')] [unit_ability|e]"
+
  MODIFIER_TYPE_NAME_silver_hair_modifier: "Character Has Silver Hair"
  MODIFIER_TYPE_DESC_silver_hair_modifier: "Their enchanting silver hair marks them as Valerith to all who lay their eyes upon them."
  MODIFIER_TYPE_NAME_blue_eyecolor_modifier: "Character Has Blue Eyes"
@@ -222,6 +225,7 @@
  MODIFIER_TYPE_NAME_no_family_marriage_restrictions: "There are no familial relationship restrictions on marriage"
  MODIFIER_TYPE_DESC_no_family_marriage_restrictions: "Characters are allowed to marry any other character regardless of familial relationship."
 
+ STATIC_MODIFIER_NAME_calaquendi_estate_tax_impact: "Taxes for [ShowEstateTypeName('calaquendi_estate')]"
 
  STATIC_MODIFIER_NAME_lesser_religious_influence_bonus: "Lesser increase in the Divine Spark's Favor"
  STATIC_MODIFIER_NAME_greater_religious_influence_bonus: "Greater increase in the Divine Spark's Favor"
@@ -291,6 +295,12 @@
  STATIC_MODIFIER_NAME_sharpened_mind_modifier: "Sharpened Mind"
  STATIC_MODIFIER_NAME_dulled_mind_modifier: "Dulled Mind"
 
+ STATIC_MODIFIER_NAME_aeluran_sister: "Aeluran Sister"
+ STATIC_MODIFIER_NAME_aeluran_matron: "Aeluran Matron"
+ STATIC_MODIFIER_NAME_aeluran_matriarch: "Aeluran Matriarch"
+
  AUTO_MODIFIER_NAME_calaquendi_percentage_in_country: "Calaquendi Percentage In Country"
  AUTO_MODIFIER_NAME_elf_destiny_country_base_values: "Base Value for Every [country|e]"
  AUTO_MODIFIER_NAME_elf_destiny_elven_racism: "[ancient_culture|e]"
+
+

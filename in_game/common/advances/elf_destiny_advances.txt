@@ -138,6 +138,7 @@ grand_portal_restored = {
 		}
 	}
 
+	portal_network_unlocked = yes
 	ascending_into_fae_tier_unlocked = yes
 	monthly_religious_influence = 0.1
 	research_cost = 0

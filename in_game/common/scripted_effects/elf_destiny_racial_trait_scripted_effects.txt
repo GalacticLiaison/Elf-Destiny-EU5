@@ -266,7 +266,9 @@ upgrade_elf_racial_trait = {
 handle_created_character_race_effect = {
 	if = {
 		limit = {
-			is_elven_country = yes
+			owner = {
+				is_elven_country = yes
+			}
 			is_any_elf_type = no
 		}
 

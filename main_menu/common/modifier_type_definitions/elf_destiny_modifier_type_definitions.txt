@@ -2209,6 +2209,13 @@ ascending_into_fae_tier_unlocked={
 	}
 }
 
+portal_network_unlocked={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
 enchantress_ruler_trait_unlocked={
 	boolean=yes
 	game_data={

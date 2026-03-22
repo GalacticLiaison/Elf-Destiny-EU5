@@ -36,3 +36,45 @@ number_of_owned_blessings = {
     }
 }
 
+portal_locations_count = {
+    value = 0
+    every_in_list = {
+        list = portal_locations
+        add = 1
+    }
+}
+
+total_portal_teleport_event_pages = {
+    value = portal_locations_count
+    divide = 4
+    floor = yes
+}
+
+max_portal_event_page_index = {
+    value = total_portal_teleport_event_pages
+    add = -1
+}
+
+portal_transportation_cost_raw = {
+    value = 0
+    if = {
+        limit = { exists = scope:unit_to_teleport}
+
+        scope:unit_to_teleport = {
+            every_sub_unit = {
+                add = 1
+            }
+        }
+    }
+    if = {
+        limit = {exists = scope:teleportation_distance}
+
+        multiply = scope:teleportation_distance
+    }
+    multiply = 0.00001
+}
+
+portal_transportation_cost = {
+    value = portal_transportation_cost_raw
+    multiply = -1
+}

@@ -705,3 +705,32 @@ true_realm_lord = {
 	stability_decay = -0.001
 	global_crown_estate_power = 0.15
 }
+
+### Aeluran ####
+aeluran_sister = {
+	game_data = {
+		category = character
+	}
+
+	diplomatic_range_modifier = 0.33
+	monthly_religious_influence = 0.1
+}
+
+aeluran_matron = {
+	game_data = {
+		category = character
+	}
+
+	diplomatic_range_modifier = 1
+	monthly_religious_influence = 0.2
+}
+
+aeluran_matriarch = {
+	game_data = {
+		category = character
+	}
+
+	diplomatic_range_modifier = 3
+	monthly_religious_influence = 0.4
+}
+

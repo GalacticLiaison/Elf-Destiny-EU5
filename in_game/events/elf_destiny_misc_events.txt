@@ -323,3 +323,391 @@ elf_destiny_misc.42 = { # Noble Ascends to High Elf and is raised to Calaquendi
 	}
 }
 
+scripted_effect get_all_portal_locations = {
+	every_country = {
+		limit = {
+			# is_elven_country = yes
+			OR = {
+				this = scope:unit_to_teleport.owner
+				in_union_with = scope:unit_to_teleport.owner
+				in_marriage_union_with = scope:unit_to_teleport.owner
+				is_fighting_war_together_with = scope:unit_to_teleport.owner
+				is_subject_or_below_of = scope:unit_to_teleport.owner
+			}
+		}
+		save_temporary_scope_as = country_with_portal_location
+		every_province = {
+			limit = {
+				any_location_in_province = {
+					OR = {
+						has_building = building_type:grand_portal
+						has_building = building_type:prime_portal_hub
+						has_building = building_type:lesser_portal_node
+					}
+					NOT = {
+						scope:portal_origin_location = this
+					}
+					is_owned_or_owned_by_subjects_or_below_of = scope:country_with_portal_location
+				}
+			}
+			every_location_in_province = {
+				limit = {
+					OR = {
+						has_building = building_type:grand_portal
+						has_building = building_type:prime_portal_hub
+						has_building = building_type:lesser_portal_node
+					}
+					NOT = {
+						scope:portal_origin_location = this
+					}
+
+					is_owned_or_owned_by_subjects_or_below_of = scope:country_with_portal_location
+				}
+
+				# save_temporary_scope_as = potential_destination
+				save_temporary_scope_value_as = {
+					name = teleportation_distance
+					value = "distance_to_squared(scope:portal_origin_location)"
+					# value = 99999999
+				} 	
+				if = {
+					limit = {
+						scope:unit_to_teleport.owner.religious_influence >= portal_transportation_cost_raw
+						# scope:unit_to_teleport.owner.religious_influence >= 1
+					}
+					add_to_list = portal_locations
+				}
+			}
+		}
+	}
+}
+
+scripted_effect determine_portal_locations = {
+	if = {
+		limit = {
+			list_size = { 
+				name = portal_locations 
+				value > {
+					value = 4
+					multiply = $page_index$
+					add = 0 
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = position_1
+			value = {
+				value = 4
+				multiply = $page_index$
+				add = 0
+			}
+		}
+		ordered_in_list = {
+			list = portal_locations
+			# order_by = population
+			order_by = {
+				value = "distance_to_squared(scope:portal_origin_location)"
+				multiply = -1
+			}
+			position = scope:position_1
+			save_scope_as = location_1
+		}
+	}
+
+	if = {
+		limit = {
+			list_size = { 
+				name = portal_locations 
+				value > {
+					value = 4
+					multiply = $page_index$
+					add = 1
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = position_2
+			value = {
+				value = 4
+				multiply = $page_index$
+				add = 1
+			}
+		}
+		ordered_in_list = {
+			list = portal_locations
+			# order_by = population
+			order_by = {
+				value = "distance_to_squared(scope:portal_origin_location)"
+				multiply = -1
+			}
+			position = scope:position_2
+			save_scope_as = location_2
+		}
+	}
+
+	if = {
+		limit = {
+			list_size = { 
+				name = portal_locations 
+				value > {
+					value = 4
+					multiply = $page_index$
+					add = 2
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = position_3
+			value = {
+				value = 4
+				multiply = $page_index$
+				add = 2
+			}
+		}
+		ordered_in_list = {
+			list = portal_locations
+			# order_by = population
+			order_by = {
+				value = "distance_to_squared(scope:portal_origin_location)"
+				multiply = -1
+			}
+			position = scope:position_3
+			save_scope_as = location_3
+		}
+	}
+	
+	if = {
+		limit = {
+			list_size = { 
+				name = portal_locations 
+				value > {
+					value = 4
+					multiply = $page_index$
+					add = 3
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = position_4
+			value = {
+				value = 4
+				multiply = $page_index$
+				add = 3
+			}
+		}
+		ordered_in_list = {
+			list = portal_locations
+			# order_by = population
+			order_by = {
+				value = "distance_to_squared(scope:portal_origin_location)"
+				multiply = -1
+			}
+			position = scope:position_4
+			save_scope_as = location_4
+		}
+	}
+}
+
+scripted_effect calculate_teleportation_cost = {
+	$destination$ = {
+		save_temporary_scope_value_as = {
+			name = teleportation_distance
+			value = "distance_to_squared(scope:portal_origin_location)"
+		} 
+	}		
+	add_religious_influence = portal_transportation_cost
+}
+
+elf_destiny_misc.5 = {
+	type = country_event
+	title = elf_destiny_misc.5.title
+	desc = elf_destiny_misc.5.desc
+	trigger = {
+
+	}
+	# hidden = yes
+
+
+	image = "gfx/interface/illustrations/event/backgrounds/portal_restored.dds"
+
+	immediate = {
+		if = {
+			limit = {
+				list_size = { name = portal_locations value = 0 }
+			}
+			get_all_portal_locations = yes
+			save_scope_value_as = {
+				name = page_index
+				value = 0
+			} 
+		}
+
+		determine_portal_locations = { page_index = scope:page_index}
+	}
+	
+	option = {
+		name = elf_destiny_misc.5.location_1
+		trigger = { exists = scope:location_1 }
+		teleport_army_to = {
+			location = scope:location_1
+		}
+
+		calculate_teleportation_cost = { destination = scope:location_1}
+	}
+
+	option = {
+		name = elf_destiny_misc.5.location_2
+		trigger = { exists = scope:location_2 }
+		teleport_army_to = {
+			location = scope:location_2
+		}
+
+		scope:location_2 = {
+			save_temporary_scope_value_as = {
+				name = teleportation_distance
+				value = "distance_to_squared(scope:portal_origin_location)"
+			} 
+		}	
+		calculate_teleportation_cost = { destination = scope:location_2}
+	}
+
+	option = {
+		name = elf_destiny_misc.5.location_3
+		trigger = { exists = scope:location_3 }
+		teleport_army_to = {
+			location = scope:location_3
+		}
+
+		calculate_teleportation_cost = { destination = scope:location_3}
+	}
+
+	option = {
+		name = elf_destiny_misc.5.location_4
+		trigger = { exists = scope:location_4 }
+		teleport_army_to = {
+			location = scope:location_4
+		}
+
+		calculate_teleportation_cost = { destination = scope:location_4}
+	}
+
+	option = {
+		name = elf_destiny_misc.5.next
+		trigger = {
+			list_size = { name = portal_locations value > 4 }
+			scope:page_index < max_portal_event_page_index
+		}
+
+		save_scope_value_as = {
+			name = page_index
+			value = {
+				value = scope:page_index
+				add = 1
+			}
+		}
+
+		trigger_event_silently = elf_destiny_misc.5
+	}
+
+	option = {
+		name = elf_destiny_misc.5.prev
+		trigger = {
+			list_size = { name = portal_locations value > 4 }
+			scope:page_index > 0
+		}
+
+		save_scope_value_as = {
+			name = page_index
+			value = {
+				value = scope:page_index
+				add = -1
+			}
+		}
+
+		trigger_event_silently = elf_destiny_misc.5
+	}
+
+	option = {
+		name = elf_destiny_misc.5.cancel
+	}
+}
+
+# elf_destiny_misc.51 = {
+# 	type = country_event
+# 	title = elf_destiny_misc.5.title
+# 	desc = elf_destiny_misc.5.desc
+# 	trigger = {
+
+# 	}
+# 	# hidden = yes
+
+
+# 	# image = "gfx/interface/illustrations/event/backgrounds/green_leaves.dds"
+
+# 	immediate = {
+# 		# total_sub_unit_count - country
+# 		# total_sub_unit_strength - country
+# 		# total_sub_unit_type_count - country
+# 		# sub_unit_count - unit (in regiments)
+# 		# sub_unit_fraction - the fraction of a subunit-type inside a unit (in regiments)
+# 		# sub_unit_strength - the strength of a subunit-type inside a unit (in regiments)
+# 		# total_sub_unit_category_in_unit - the total strength of a subunit-category for a unit
+# 			# eg: total_sub_unit_category_in_unit:army_infantry > 0
+# 		# total_sub_unit_type_strength: Checks the total strength of a subunit-type for a country
+
+
+# 		# Triggers:
+# 		# subunit_number (regiments)
+# 		# subunit_strength
+# 		# subunit_strength_percentage
+
+# 		# "value = "culture_percentage(scope:target)"
+# 		# value = "scope:actor.currency_utility(prestige|-10)"
+
+# 		every_character = {
+# 			limit = { is_general = yes }
+
+# 			debug_log = "FUCKING GENERAL"
+
+# 			add_to_list = country_generals
+# 		}
+
+# 		scope:unit_to_teleport = {
+# 			transport_army_through_portal = yes
+# 		}
+
+# 		random_in_list = {
+# 			list = country_generals
+			
+# 			limit = {
+# 				# is_general = no
+# 			}
+
+# 			debug_log = "inside random_in_list"
+
+# 			save_scope_as = army_commander
+# 		}
+
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					exists = scope:army_commander
+# 				}
+# 			}
+
+# 			debug_log = "army_commander WTF"
+# 			debug_log_scopes = yes	
+# 		}
+# 		else = {
+# 			debug_log = "army_commander yee"
+# 		}
+
+# 		scope:teleported_army = {
+# 			set_as_commander = scope:army_commander
+# 		}
+# 	}
+	
+# 	option = {
+# 		name = elf_destiny_misc.5.a
+# 	}
+# }

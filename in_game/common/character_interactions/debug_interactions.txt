@@ -41,27 +41,31 @@
 # 	}
 
 # 	effect = {
-# 		# scope:actor = {
-# 		# 	add_stability = 100
-# 		# }
-# 		scope:recipient = {
-# 			# set_variable = {
-# 			# 	name = trait_score
-# 			# 	value = inherited_beauty_trait_score 
-# 			# }
-
-# 			# genetic_inheritance_effect = yes
-# 			use_fake_random_effect = { function_name = genetic_inheritance_effect }
-
-# 			# set_variable = {
-# 			# 	name = trait_score
-# 			# 	value = inherited_$trait$_trait_score 
-# 			# }
-
-# 			# leveled_trait_inheritance = {trait = beauty} 
-
-# 			# clear_variable_list = genetic_traits
+# 		scope:actor = {
+# 			# add_stability = 100
+# 			add_religious_influence = 5
+# 			research_advance = advance_type:grand_portal_restored
 # 		}
+
+
+# 		# scope:recipient = {
+# 		# 	# set_variable = {
+# 		# 	# 	name = trait_score
+# 		# 	# 	value = inherited_beauty_trait_score 
+# 		# 	# }
+
+# 		# 	# genetic_inheritance_effect = yes
+# 		# 	use_fake_random_effect = { function_name = genetic_inheritance_effect }
+
+# 		# 	# set_variable = {
+# 		# 	# 	name = trait_score
+# 		# 	# 	value = inherited_$trait$_trait_score 
+# 		# 	# }
+
+# 		# 	# leveled_trait_inheritance = {trait = beauty} 
+
+# 		# 	# clear_variable_list = genetic_traits
+# 		# }
 
 		
 # 		# scope:actor = {

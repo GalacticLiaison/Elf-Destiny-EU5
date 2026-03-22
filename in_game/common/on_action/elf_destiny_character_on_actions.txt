@@ -89,64 +89,21 @@ record_dead_rulers_dynasty = {
 	}
 }
 
-# root = country; scope:old_ruler and scope:new_ruler are supplied
-# on_new_ruler = {
-# 	on_actions = {
-# 		realm_lord_modifier_on_new_ruler
-# 	}
-# }
-
-# Shouldnt be needed now that we made it a country modifier
-# realm_lord_modifier_on_new_ruler = {
-# 	trigger = {
-# 		is_ai = no # just for performance, the modifier should really only be present on player characters anyway
-# 	}
-
-# 	effect = {
-# 		if = {
-# 			limit = {
-# 				scope:old_ruler = {
-# 					has_character_modifier = realm_lord
-# 				}
-# 			} 
-# 			scope:new_ruler = {
-# 				add_character_modifier = {
-# 					modifier = realm_lord
-# 					mode = add_and_extend
-# 					desc = you_are_worthy
-# 				}
-# 			}
-# 		}
-# 		else_if = {
-# 			limit = {
-# 				scope:old_ruler = {
-# 					has_character_modifier = true_realm_lord
-# 				}
-# 			} 
-# 			scope:new_ruler = {
-# 				add_character_modifier = {
-# 					modifier = true_realm_lord
-# 					mode = add_and_extend
-# 					desc = you_are_truly_worthy
-# 				}
-# 			}
-# 		}
-# 	}
-# }
-
-
 #root = character
 #only from create_character effect
 on_character_created = {
 	on_actions = {
 		handle_created_character_race
 		new_character_chance_of_random_genetic_trait
+		assign_aeluran_modifiers
 	}
 }
 
 handle_created_character_race = {
 	trigger = {
-		is_elven_country = yes
+		owner = {
+			is_elven_country = yes
+		}
 		is_any_elf_type = no
 	}
 	effect = {
@@ -163,6 +120,15 @@ new_character_chance_of_random_genetic_trait = {
 			chance = newly_created_character_genetic_trait_chance
 			use_fake_random_effect = { function_name = assign_random_genetic_trait }
 		}
+	}
+}
+
+assign_aeluran_modifiers = {
+	trigger = {
+		is_aeluran_order = yes
+	}
+	effect = {
+		assign_aeluran_modifiers_effect = yes
 	}
 }
 

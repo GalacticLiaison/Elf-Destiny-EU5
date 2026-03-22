@@ -81,3 +81,18 @@ a_age_6_revolutions_magi = {
 	construction_demand = early_magi_construction
 	age = "age_6_revolutions"
 }
+
+### Used only as a placeholder when teleporting armies
+teleporting_army = {
+	category = army_infantry
+	buildable = no
+	max_strength = 0.01
+	combat_power = 0.1
+
+    bombard_efficiency = 0.05
+	artillery_barrage = 1
+
+	maintenance_demand =  early_magi_maintenance
+	construction_demand = early_magi_construction
+	age = "age_1_traditions"
+}

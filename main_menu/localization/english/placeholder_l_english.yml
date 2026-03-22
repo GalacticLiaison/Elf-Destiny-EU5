@@ -85,3 +85,5 @@
 
  ancient_road: "Ancient Road"
  ancient_road_desc: "Known to many as the Old Forest Road, or the Men-i-Naugrim by the Elves. This continent spanning road has connected the Elf Lands in the far north for millennia. Its rumored to have been built by Dwarves, but the methods used in its construction have been lost to time. Even in its state of partial disrepair and its path through the the thickest of forest, it functions better than most modern roads today."
+
+ if_calaquendi_estate_selected: "If the [ShowEstateTypeName('calaquendi_estate')] is selected:"

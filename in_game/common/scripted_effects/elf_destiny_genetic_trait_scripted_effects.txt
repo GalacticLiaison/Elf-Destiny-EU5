@@ -837,6 +837,7 @@ give_genetic_traits_to_starter_characters_effect = {
 		every_character = {
 			assign_any_missing_genetic_traits = yes
 			give_starter_elf_trait = yes
+			assign_aeluran_modifiers_effect = yes
 
 			if = {
 				limit = {

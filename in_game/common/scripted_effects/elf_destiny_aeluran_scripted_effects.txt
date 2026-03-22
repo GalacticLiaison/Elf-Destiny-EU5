@@ -49,7 +49,7 @@ daughters_return_as_aeluran_sisters_effect = {
 		}
 		save_scope_as = new_sister
 
-		add_trait = trait:aeluran_sister
+		become_aeluran_sister = yes
 
 		move_country = var:country_of_origin
 		remove_variable = country_of_origin
@@ -262,8 +262,8 @@ promote_random_sister_to_matron_effect = {
 	}
 	else = {
 		scope:new_matron = {
-			remove_trait = trait:aeluran_sister
-			add_trait = trait:aeluran_matron
+			remove_aeluran_rank = {aeluran_rank = aeluran_sister}
+			become_aeluran_matron = yes
 		}
 	}
 
@@ -297,8 +297,8 @@ promote_random_matron_to_matriarch_effect = {
 	}
 
 	scope:new_matriarch = {
-		remove_trait = trait:aeluran_matron
-		add_trait = trait:aeluran_matriarch
+		remove_aeluran_rank = {aeluran_rank = aeluran_matron}
+		become_aeluran_matriarch = yes
 	}
 
 	c:DWD = { set_new_ruler_no_update = scope:new_matriarch }
@@ -337,5 +337,55 @@ promote_random_matron_to_matriarch_effect = {
 				}
 			}
 		}
+	}
+}
+
+become_aeluran_sister = {
+	add_trait = trait:aeluran_sister
+	assign_aeluran_modifier = {aeluran_trait = aeluran_sister}
+}
+
+become_aeluran_matron = {
+	add_trait = trait:aeluran_matron
+	assign_aeluran_modifier = {aeluran_trait = aeluran_matron}
+}
+
+become_aeluran_matriarch = {
+	add_trait = trait:aeluran_matriarch
+	assign_aeluran_modifier = {aeluran_trait = aeluran_matriarch}
+}
+
+assign_aeluran_modifiers_effect = {
+	assign_aeluran_modifier = {aeluran_trait = aeluran_sister}
+	assign_aeluran_modifier = {aeluran_trait = aeluran_matron}
+	assign_aeluran_modifier = {aeluran_trait = aeluran_matriarch}
+}
+
+assign_aeluran_modifier = {
+	if = {
+		limit = {
+			has_trait = $aeluran_trait$
+			NOT = { has_character_modifier = $aeluran_trait$} 
+		}
+
+		add_character_modifier = {
+			modifier = $aeluran_trait$
+			# mode = add_and_extend
+		}
+	}
+}
+
+remove_aeluran_rank = {
+	if = {
+		limit = {
+			has_trait = $aeluran_rank$
+		}
+		remove_trait = trait:$aeluran_rank$
+	}
+	if = {
+		limit = {
+			has_character_modifier = $aeluran_rank$
+		}
+		remove_character_modifier = $aeluran_rank$
 	}
 }

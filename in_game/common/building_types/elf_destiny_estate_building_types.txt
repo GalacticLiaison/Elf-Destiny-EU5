@@ -318,7 +318,7 @@ feasting_hall_of_the_trees = {
 		local_pop_food_consumption = 0.1
 		local_unrest = -0.05
 		local_supply_limit_modifier = 0.05
-		local_food_capacity_modifier =
+		local_food_capacity_modifier = 0.5
 	}
 
 	on_built = {
@@ -390,99 +390,4 @@ grand_archives = {
 	}
 	
 	graphical_tags = { small_religious }
-}
-
-
-
-grand_portal_ruins = {
-	is_foreign = no
-	pop_type = calaquendi
-	max_levels = 1
-	employment_size = normal_noble_employment
-	category = religious_category
-	rural_settlement = yes
-	town = yes
-	city = yes
-	expensive = yes
-	location_potential = {
-		OR = {
-			has_variable = grand_portal_eligible
-			this = location:mezen
-		}
-	}
-	country_potential = {
-		
-	}
-	build_time = huge_unique_build_time
-	modifier = {
-		local_crown_estate_power = 0.25
-		# monthly_religious_influence = 0.1
-	}
-
-	capital_country_modifier = { 
-		maximum_religious_influence = 25
-		monthly_religious_influence = 0.1
-	}
-	
-	possible_production_methods = {
-		# capital_building_maintenance
-	}
-	construction_demand = early_capital_building_construction
-
-}
-
-grand_portal = {
-	is_foreign = no
-	pop_type = calaquendi
-	max_levels = 1
-	employment_size = normal_noble_employment
-	category = religious_category
-	obsolete = grand_portal_ruins
-
-	rural_settlement = yes
-	town = yes
-	city = yes
-	expensive = yes
-	location_potential = {
-		has_building_with_at_least_one_level = grand_portal_ruins
-	}
-	country_potential = {
-		custom_tooltip = {
-			text = found_elven_portal_artifact_1
-			has_variable = elven_portal_artifact_1_discovered
-		}
-		custom_tooltip = {
-			text = found_elven_portal_artifact_2
-			has_variable = elven_portal_artifact_2_discovered
-		}
-		custom_tooltip = {
-			text = passed_restore_portal_through_parliament
-			has_global_variable = portal_restored_passed_parliament
-		}
-	}
-	build_time = huge_unique_build_time
-	# build_time = 3 # for testing
-	modifier = {
-		local_monthly_development_modifier = 0.05
-		local_monthly_prosperity = 0.01
-	}
-	capital_country_modifier = { 
-		global_crown_estate_power = 0.3
-		# monthly_religious_influence = 0.5
-		monthly_prestige = 1
-		trade_efficiency = large_trade_efficiency_bonus
-		maximum_religious_influence = 50
-		monthly_religious_influence = 0.5
-	}
-
-	# possible_production_methods = {
-	# 	portal_maintenance = {
-	# 		tools = 0.05
-	# 		marble = 0.1
-				
-	# 		category = building_maintenance
-	# 	}
-	# }
-	construction_demand = early_capital_building_construction
-
 }

@@ -519,3 +519,328 @@ record_dead_rulers_dynasty_effect = {
 		}
 	}
 }
+
+
+teleport_army_to = {
+	$location$ = {
+		save_scope_as = portal_arrival_location
+	}
+
+	custom_tooltip = {
+		text = teleport_army_to_location_desc
+		
+		every_character = { # Used later when determining what general got teleported
+			limit = { is_general = yes }
+			add_to_list = country_generals
+		}
+
+		scope:unit_to_teleport = {
+			transport_army_through_portal = yes
+		}
+
+		random_in_list = {
+			list = country_generals
+			limit = {
+				is_general = no
+			}
+
+			save_scope_as = army_commander
+		}
+
+		scope:teleported_army ?= {
+			if = {
+				limit = {exists = scope:army_commander}
+				set_as_commander = scope:army_commander
+			}
+		}
+	}
+
+}
+
+transport_army_through_portal = {
+
+	spawn_army_at_portal_destination = yes
+	change_spawned_army_to_match_teleporting_army = yes
+	destroy_unit = yes
+}
+
+spawn_army_at_portal_destination = {
+	owner = {
+		save_temporary_scope_as = controlling_country
+		scope:portal_arrival_location = {
+			create_sub_unit_with_owner = {
+				type = teleporting_army
+				owner = scope:controlling_country
+				origin = scope:portal_origin_location
+			}
+		}
+	}
+}
+
+change_spawned_army_to_match_teleporting_army = {
+	scope:portal_arrival_location = {
+		random_unit_in_location = {
+			save_scope_as = teleported_army
+		}
+	}
+
+	if = {
+		limit = {
+			exists = scope:teleported_army
+		}
+
+		every_sub_unit = {
+			save_scope_as = original_subunit
+			save_scope_value_as = {
+				name = original_subunit_strength
+				value = "subunit_strength(scope:myunit)"
+			}
+
+			switch = {
+				trigger = sub_unit_type
+				unit_type:a_early_fey_archers = { scope:teleported_army  = {add_subunit = unit_type:a_early_fey_archers} }
+				unit_type:a_fey_archers = { scope:teleported_army  = {add_subunit = unit_type:a_fey_archers} }
+				unit_type:a_late_fey_archers = { scope:teleported_army  = {add_subunit = unit_type:a_late_fey_archers} }
+				unit_type:a_early_elf_noble_lancers = { scope:teleported_army  = {add_subunit = unit_type:a_early_elf_noble_lancers} }
+				unit_type:a_elf_noble_lancers = { scope:teleported_army  = {add_subunit = unit_type:a_elf_noble_lancers} }
+				unit_type:a_late_elf_noble_lancers = { scope:teleported_army  = {add_subunit = unit_type:a_late_elf_noble_lancers} }
+				unit_type:ranger_high_guard = { scope:teleported_army  = {add_subunit = unit_type:ranger_high_guard} }
+				unit_type:a_age_1_aeluran_magi = { scope:teleported_army  = {add_subunit = unit_type:a_age_1_aeluran_magi} }
+				unit_type:a_age_2_aeluran_magi = { scope:teleported_army  = {add_subunit = unit_type:a_age_2_aeluran_magi} }
+				unit_type:a_age_3_aeluran_magi = { scope:teleported_army  = {add_subunit = unit_type:a_age_3_aeluran_magi} }
+				unit_type:a_age_4_aeluran_magi = { scope:teleported_army  = {add_subunit = unit_type:a_age_4_aeluran_magi} }
+				unit_type:a_age_5_aeluran_magi = { scope:teleported_army  = {add_subunit = unit_type:a_age_5_aeluran_magi} }
+				unit_type:a_age_6_aeluran_magi = { scope:teleported_army  = {add_subunit = unit_type:a_age_6_aeluran_magi} }
+				unit_type:calaquendi_high_magi = { scope:teleported_army  = {add_subunit = unit_type:calaquendi_high_magi} }
+				unit_type:wolf_riders = { scope:teleported_army  = {add_subunit = unit_type:wolf_riders} }
+				unit_type:mythril_plated_fey_vanguard = { scope:teleported_army  = {add_subunit = unit_type:mythril_plated_fey_vanguard} }
+				unit_type:mythril_plated_horse_masters = { scope:teleported_army  = {add_subunit = unit_type:mythril_plated_horse_masters} }
+
+				unit_type:a_gendarmerie = { scope:teleported_army  = {add_subunit = unit_type:a_gendarmerie} }
+				unit_type:a_provincial_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_provincial_cavalry} }
+				unit_type:a_late_cavaliers = { scope:teleported_army  = {add_subunit = unit_type:a_late_cavaliers} }
+				unit_type:a_cavaliers = { scope:teleported_army  = {add_subunit = unit_type:a_cavaliers} }
+				unit_type:a_plated_knights = { scope:teleported_army  = {add_subunit = unit_type:a_plated_knights} }
+				unit_type:a_teulu = { scope:teleported_army  = {add_subunit = unit_type:a_teulu} }
+				unit_type:a_mailed_knights = { scope:teleported_army  = {add_subunit = unit_type:a_mailed_knights} }
+				unit_type:a_noble_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_noble_cavalry} }
+				unit_type:a_order_knights = { scope:teleported_army  = {add_subunit = unit_type:a_order_knights} }
+				unit_type:a_order_knights_2 = { scope:teleported_army  = {add_subunit = unit_type:a_order_knights_2} }
+
+				unit_type:a_moa_hunters = { scope:teleported_army  = {add_subunit = unit_type:a_moa_hunters} }
+				unit_type:a_tribesmen = { scope:teleported_army  = {add_subunit = unit_type:a_tribesmen} }
+				unit_type:a_warriors = { scope:teleported_army  = {add_subunit = unit_type:a_warriors} }
+				unit_type:a_champions = { scope:teleported_army  = {add_subunit = unit_type:a_champions} }
+				unit_type:a_chieftains = { scope:teleported_army  = {add_subunit = unit_type:a_chieftains} }
+
+				unit_type:a_villagers = { scope:teleported_army  = {add_subunit = unit_type:a_villagers} }
+				unit_type:a_feudal_levy = { scope:teleported_army  = {add_subunit = unit_type:a_feudal_levy} }
+				unit_type:a_crusader_knights_base = { scope:teleported_army  = {add_subunit = unit_type:a_crusader_knights_base} }
+				unit_type:a_crusader_knights_levy = { scope:teleported_army  = {add_subunit = unit_type:a_crusader_knights_levy} }
+				unit_type:a_crusader_knights = { scope:teleported_army  = {add_subunit = unit_type:a_crusader_knights} }
+				unit_type:a_caterans = { scope:teleported_army  = {add_subunit = unit_type:a_caterans} }
+				unit_type:a_kerns = { scope:teleported_army  = {add_subunit = unit_type:a_kerns} }
+				unit_type:a_lour_lances = { scope:teleported_army  = {add_subunit = unit_type:a_lour_lances} }
+				unit_type:a_schiltron = { scope:teleported_army  = {add_subunit = unit_type:a_schiltron} }
+				unit_type:a_steppe_horse_archers = { scope:teleported_army  = {add_subunit = unit_type:a_steppe_horse_archers} }
+				unit_type:a_steppe_horde = { scope:teleported_army  = {add_subunit = unit_type:a_steppe_horde} }
+				unit_type:a_tribal_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_tribal_cavalry} }
+				unit_type:a_a_urughs = { scope:teleported_army  = {add_subunit = unit_type:a_a_urughs} }
+				unit_type:a_almogavars = { scope:teleported_army  = {add_subunit = unit_type:a_almogavars} }
+				unit_type:a_catalan_crossbowmen = { scope:teleported_army  = {add_subunit = unit_type:a_catalan_crossbowmen} }
+				unit_type:a_early_longbowmen = { scope:teleported_army  = {add_subunit = unit_type:a_early_longbowmen} }
+				unit_type:a_hobelars = { scope:teleported_army  = {add_subunit = unit_type:a_hobelars} }
+				unit_type:a_gallowglass = { scope:teleported_army  = {add_subunit = unit_type:a_gallowglass} }
+				unit_type:a_light_jurchen_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_light_jurchen_cavalry} }
+				unit_type:a_iron_pagoda_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_iron_pagoda_cavalry} }
+				unit_type:a_early_paik = { scope:teleported_army  = {add_subunit = unit_type:a_early_paik} }
+				unit_type:a_early_paik_infantry = { scope:teleported_army  = {add_subunit = unit_type:a_early_paik_infantry} }
+				unit_type:a_byzantine_cataphracts = { scope:teleported_army  = {add_subunit = unit_type:a_byzantine_cataphracts} }
+				unit_type:a_akritai = { scope:teleported_army  = {add_subunit = unit_type:a_akritai} }
+				unit_type:a_varangians = { scope:teleported_army  = {add_subunit = unit_type:a_varangians} }
+				unit_type:a_mamluk_unit_traditions = { scope:teleported_army  = {add_subunit = unit_type:a_mamluk_unit_traditions} }
+				unit_type:a_halqah_unit = { scope:teleported_army  = {add_subunit = unit_type:a_halqah_unit} }
+				unit_type:a_jonow_auxiliary = { scope:teleported_army  = {add_subunit = unit_type:a_jonow_auxiliary} }
+				unit_type:a_sofa_infantry = { scope:teleported_army  = {add_subunit = unit_type:a_sofa_infantry} }
+				unit_type:a_mandekalu_infantry = { scope:teleported_army  = {add_subunit = unit_type:a_mandekalu_infantry} }
+				unit_type:a_mandekalu_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_mandekalu_cavalry} }
+				unit_type:a_farari_infantry = { scope:teleported_army  = {add_subunit = unit_type:a_farari_infantry} }
+				unit_type:a_farari_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_farari_cavalry} }
+				unit_type:a_clan_retainers = { scope:teleported_army  = {add_subunit = unit_type:a_clan_retainers} }
+				unit_type:a_clan_retainer_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_clan_retainer_cavalry} }
+
+				unit_type:a_longbowmen = { scope:teleported_army  = {add_subunit = unit_type:a_longbowmen} }
+				unit_type:a_reformed_gallowglass = { scope:teleported_army  = {add_subunit = unit_type:a_reformed_gallowglass} }
+				unit_type:a_wagenburg = { scope:teleported_army  = {add_subunit = unit_type:a_wagenburg} }
+				unit_type:a_genoese_crossbowmen = { scope:teleported_army  = {add_subunit = unit_type:a_genoese_crossbowmen} }
+				unit_type:a_florentine_citizen_militia = { scope:teleported_army  = {add_subunit = unit_type:a_florentine_citizen_militia} }
+				unit_type:a_late_almogavars = { scope:teleported_army  = {add_subunit = unit_type:a_late_almogavars} }
+				unit_type:a_late_crusader_knights_base = { scope:teleported_army  = {add_subunit = unit_type:a_late_crusader_knights_base} }
+				unit_type:a_late_crusader_knights = { scope:teleported_army  = {add_subunit = unit_type:a_late_crusader_knights} }
+				unit_type:a_late_crusader_knights_levy = { scope:teleported_army  = {add_subunit = unit_type:a_late_crusader_knights_levy} }
+				unit_type:a_hwacha = { scope:teleported_army  = {add_subunit = unit_type:a_hwacha} }
+				unit_type:a_mamluk_unit_renaissance = { scope:teleported_army  = {add_subunit = unit_type:a_mamluk_unit_renaissance} }
+				unit_type:a_serbian_hussars = { scope:teleported_army  = {add_subunit = unit_type:a_serbian_hussars} }
+				unit_type:a_muslim_riders_vijay = { scope:teleported_army  = {add_subunit = unit_type:a_muslim_riders_vijay} }
+				unit_type:a_late_karambit_warrior = { scope:teleported_army  = {add_subunit = unit_type:a_late_karambit_warrior} }
+
+				unit_type:a_the_black_army = { scope:teleported_army  = {add_subunit = unit_type:a_the_black_army} }
+				unit_type:a_landsknechte = { scope:teleported_army  = {add_subunit = unit_type:a_landsknechte} }
+				unit_type:a_late_gallowglass = { scope:teleported_army  = {add_subunit = unit_type:a_late_gallowglass} }
+				unit_type:a_late_longbowmen = { scope:teleported_army  = {add_subunit = unit_type:a_late_longbowmen} }
+				unit_type:a_paik = { scope:teleported_army  = {add_subunit = unit_type:a_paik} }
+				unit_type:a_paik_infantry = { scope:teleported_army  = {add_subunit = unit_type:a_paik_infantry} }
+				unit_type:a_byz_helepolis_cannon_unit = { scope:teleported_army  = {add_subunit = unit_type:a_byz_helepolis_cannon_unit} }
+				unit_type:a_lanzas_de_castilla = { scope:teleported_army  = {add_subunit = unit_type:a_lanzas_de_castilla} }
+				unit_type:a_akinji = { scope:teleported_army  = {add_subunit = unit_type:a_akinji} }
+				unit_type:a_reislaufer = { scope:teleported_army  = {add_subunit = unit_type:a_reislaufer} }
+				unit_type:a_cetbang_cannon = { scope:teleported_army  = {add_subunit = unit_type:a_cetbang_cannon} }
+				unit_type:a_dahomey_amazons = { scope:teleported_army  = {add_subunit = unit_type:a_dahomey_amazons} }
+				unit_type:a_esho_cavalry_oyo = { scope:teleported_army  = {add_subunit = unit_type:a_esho_cavalry_oyo} }
+				unit_type:a_naft_throwers = { scope:teleported_army  = {add_subunit = unit_type:a_naft_throwers} }
+
+				unit_type:a_iron_helmet_musketeers = { scope:teleported_army  = {add_subunit = unit_type:a_iron_helmet_musketeers} }
+				unit_type:a_hungarian_hussars = { scope:teleported_army  = {add_subunit = unit_type:a_hungarian_hussars} }
+				unit_type:a_pontifical_swiss_guard = { scope:teleported_army  = {add_subunit = unit_type:a_pontifical_swiss_guard} }
+				unit_type:a_mauricians = { scope:teleported_army  = {add_subunit = unit_type:a_mauricians} }
+				unit_type:a_tercio = { scope:teleported_army  = {add_subunit = unit_type:a_tercio} }
+				unit_type:a_sowar_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_sowar_cavalry} }
+				unit_type:a_winged_hussars = { scope:teleported_army  = {add_subunit = unit_type:a_winged_hussars} }
+				unit_type:a_red_cannon = { scope:teleported_army  = {add_subunit = unit_type:a_red_cannon} }
+				unit_type:a_banner_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_banner_cavalry} }
+				unit_type:a_ghilman = { scope:teleported_army  = {add_subunit = unit_type:a_ghilman} }
+				unit_type:a_saxon_defensioner = { scope:teleported_army  = {add_subunit = unit_type:a_saxon_defensioner} }
+				unit_type:a_hesse_jager = { scope:teleported_army  = {add_subunit = unit_type:a_hesse_jager} }
+				unit_type:a_gebirgsschutzen_infantry = { scope:teleported_army  = {add_subunit = unit_type:a_gebirgsschutzen_infantry} }
+
+
+				unit_type:a_hakkapelitta = { scope:teleported_army  = {add_subunit = unit_type:a_hakkapelitta} }
+				unit_type:a_caroleans = { scope:teleported_army  = {add_subunit = unit_type:a_caroleans} }
+				unit_type:a_scottish_highlander = { scope:teleported_army  = {add_subunit = unit_type:a_scottish_highlander} }
+				unit_type:a_late_paik = { scope:teleported_army  = {add_subunit = unit_type:a_late_paik} }
+				unit_type:a_late_paik_infantry = { scope:teleported_army  = {add_subunit = unit_type:a_late_paik_infantry} }
+				unit_type:a_late_winged_hussars = { scope:teleported_army  = {add_subunit = unit_type:a_late_winged_hussars} }
+				unit_type:a_tofangchi = { scope:teleported_army  = {add_subunit = unit_type:a_tofangchi} }
+				unit_type:a_tupchi = { scope:teleported_army  = {add_subunit = unit_type:a_tupchi} }
+				unit_type:a_black_guard = { scope:teleported_army  = {add_subunit = unit_type:a_black_guard} }
+				unit_type:a_prussian_grenadiers = { scope:teleported_army  = {add_subunit = unit_type:a_prussian_grenadiers} }
+				unit_type:a_bavarian_jager = { scope:teleported_army  = {add_subunit = unit_type:a_bavarian_jager} }
+
+				unit_type:a_redcoats = { scope:teleported_army  = {add_subunit = unit_type:a_redcoats} }
+				unit_type:a_experimental_riflemen = { scope:teleported_army  = {add_subunit = unit_type:a_experimental_riflemen} }
+				unit_type:a_cacadores = { scope:teleported_army  = {add_subunit = unit_type:a_cacadores} }
+				unit_type:a_gurkha = { scope:teleported_army  = {add_subunit = unit_type:a_gurkha} }
+				unit_type:a_jazayerchi = { scope:teleported_army  = {add_subunit = unit_type:a_jazayerchi} }
+				unit_type:a_austrian_grenzhussar = { scope:teleported_army  = {add_subunit = unit_type:a_austrian_grenzhussar} }
+				unit_type:a_pandur = { scope:teleported_army  = {add_subunit = unit_type:a_pandur} }
+				unit_type:a_austrian_grenzer = { scope:teleported_army  = {add_subunit = unit_type:a_austrian_grenzer} }
+				unit_type:a_grenadiers = { scope:teleported_army  = {add_subunit = unit_type:a_grenadiers} }
+				
+				unit_type:a_renaissance_conquistadors = { scope:teleported_army  = {add_subunit = unit_type:a_renaissance_conquistadors} }
+				unit_type:a_discovery_conquistadors = { scope:teleported_army  = {add_subunit = unit_type:a_discovery_conquistadors} }
+
+				unit_type:a_footmen = { scope:teleported_army  = {add_subunit = unit_type:a_footmen} }
+				unit_type:a_archers = { scope:teleported_army  = {add_subunit = unit_type:a_archers} }
+				unit_type:a_footmen_levy = { scope:teleported_army  = {add_subunit = unit_type:a_footmen_levy} }
+				unit_type:a_horsemen = { scope:teleported_army  = {add_subunit = unit_type:a_horsemen} }
+				unit_type:a_armored_horsemen = { scope:teleported_army  = {add_subunit = unit_type:a_armored_horsemen} }
+				unit_type:a_camp_followers = { scope:teleported_army  = {add_subunit = unit_type:a_camp_followers} }
+				unit_type:a_men_at_arms = { scope:teleported_army  = {add_subunit = unit_type:a_men_at_arms} }
+				unit_type:a_crossbowmen = { scope:teleported_army  = {add_subunit = unit_type:a_crossbowmen} }
+				unit_type:a_handgonners = { scope:teleported_army  = {add_subunit = unit_type:a_handgonners} }
+				unit_type:a_men_at_arms_levy = { scope:teleported_army  = {add_subunit = unit_type:a_men_at_arms_levy} }
+				unit_type:a_cavalrymen = { scope:teleported_army  = {add_subunit = unit_type:a_cavalrymen} }
+				unit_type:a_heavy_cavalrymen = { scope:teleported_army  = {add_subunit = unit_type:a_heavy_cavalrymen} }
+				unit_type:a_houfnice = { scope:teleported_army  = {add_subunit = unit_type:a_houfnice} }
+				unit_type:a_peasant_levy = { scope:teleported_army  = {add_subunit = unit_type:a_peasant_levy} }
+				unit_type:a_supply_carts = { scope:teleported_army  = {add_subunit = unit_type:a_supply_carts} }
+				unit_type:a_early_arquebusiers = { scope:teleported_army  = {add_subunit = unit_type:a_early_arquebusiers} }
+				unit_type:a_halberdiers = { scope:teleported_army  = {add_subunit = unit_type:a_halberdiers} }
+				unit_type:a_light_lancers = { scope:teleported_army  = {add_subunit = unit_type:a_light_lancers} }
+				unit_type:a_lancers = { scope:teleported_army  = {add_subunit = unit_type:a_lancers} }
+				unit_type:a_falconet = { scope:teleported_army  = {add_subunit = unit_type:a_falconet} }
+				unit_type:a_matchlock_levy = { scope:teleported_army  = {add_subunit = unit_type:a_matchlock_levy} }
+				unit_type:a_supply_convoy = { scope:teleported_army  = {add_subunit = unit_type:a_supply_convoy} }
+				unit_type:a_arquebusiers = { scope:teleported_army  = {add_subunit = unit_type:a_arquebusiers} }
+				unit_type:a_pikemen = { scope:teleported_army  = {add_subunit = unit_type:a_pikemen} }
+				unit_type:a_pistoleers = { scope:teleported_army  = {add_subunit = unit_type:a_pistoleers} }
+				unit_type:a_heavy_lancers = { scope:teleported_army  = {add_subunit = unit_type:a_heavy_lancers} }
+				unit_type:a_chambered_cannon = { scope:teleported_army  = {add_subunit = unit_type:a_chambered_cannon} }
+				unit_type:a_flintlock_levy = { scope:teleported_army  = {add_subunit = unit_type:a_flintlock_levy} }
+				unit_type:a_baggage_train = { scope:teleported_army  = {add_subunit = unit_type:a_baggage_train} }
+				unit_type:a_hunters = { scope:teleported_army  = {add_subunit = unit_type:a_hunters} }
+				unit_type:a_musketeers = { scope:teleported_army  = {add_subunit = unit_type:a_musketeers} }
+				unit_type:a_hussars = { scope:teleported_army  = {add_subunit = unit_type:a_hussars} }
+				unit_type:a_gallop_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_gallop_cavalry} }
+				unit_type:a_royal_mortar = { scope:teleported_army  = {add_subunit = unit_type:a_royal_mortar} }
+				unit_type:a_militiamen = { scope:teleported_army  = {add_subunit = unit_type:a_militiamen} }
+				unit_type:a_wagon_train = { scope:teleported_army  = {add_subunit = unit_type:a_wagon_train} }
+				unit_type:a_sharpshooters = { scope:teleported_army  = {add_subunit = unit_type:a_sharpshooters} }
+				unit_type:a_fusiliers = { scope:teleported_army  = {add_subunit = unit_type:a_fusiliers} }
+				unit_type:a_light_dragoons = { scope:teleported_army  = {add_subunit = unit_type:a_light_dragoons} }
+				unit_type:a_cuirassiers = { scope:teleported_army  = {add_subunit = unit_type:a_cuirassiers} }
+				unit_type:a_flying_battery = { scope:teleported_army  = {add_subunit = unit_type:a_flying_battery} }
+				unit_type:a_conscripts = { scope:teleported_army  = {add_subunit = unit_type:a_conscripts} }
+				unit_type:a_logistics_corps = { scope:teleported_army  = {add_subunit = unit_type:a_logistics_corps} }
+
+				unit_type:a_cawa = { scope:teleported_army  = {add_subunit = unit_type:a_cawa} }
+				unit_type:a_renaissance_cawa = { scope:teleported_army  = {add_subunit = unit_type:a_renaissance_cawa} }
+				unit_type:a_discovery_cawa = { scope:teleported_army  = {add_subunit = unit_type:a_discovery_cawa} }
+				unit_type:a_reformation_cawa = { scope:teleported_army  = {add_subunit = unit_type:a_reformation_cawa} }
+				unit_type:a_absolutism_cawa = { scope:teleported_army  = {add_subunit = unit_type:a_absolutism_cawa} }
+				unit_type:a_revolutions_cawa = { scope:teleported_army  = {add_subunit = unit_type:a_revolutions_cawa} }
+
+				unit_type:a_indian_elephant_auxiliary = { scope:teleported_army  = {add_subunit = unit_type:a_indian_elephant_auxiliary} }
+				unit_type:a_indian_elephant_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_indian_elephant_cavalry} }
+				unit_type:a_orissan_elephant_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_orissan_elephant_cavalry} }
+				unit_type:a_bengali_elephant_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_bengali_elephant_cavalry} }
+				unit_type:a_thai_elephant_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_thai_elephant_cavalry} }
+				unit_type:a_siamese_advanced_elephant_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_siamese_advanced_elephant_cavalry} }
+				unit_type:a_khmer_ballista_elephant_infantry = { scope:teleported_army  = {add_subunit = unit_type:a_khmer_ballista_elephant_infantry} }
+				
+				unit_type:a_renaissance_janissaries = { scope:teleported_army  = {add_subunit = unit_type:a_renaissance_janissaries} }
+				unit_type:a_discovery_janissaries = { scope:teleported_army  = {add_subunit = unit_type:a_discovery_janissaries} }
+				unit_type:a_reformation_janissaries = { scope:teleported_army  = {add_subunit = unit_type:a_reformation_janissaries} }
+				unit_type:a_absolutism_janissaries = { scope:teleported_army  = {add_subunit = unit_type:a_absolutism_janissaries} }
+				unit_type:a_revolutions_janissaries = { scope:teleported_army  = {add_subunit = unit_type:a_revolutions_janissaries} }
+
+				unit_type:a_discovery_qizilbash = { scope:teleported_army  = {add_subunit = unit_type:a_discovery_qizilbash} }
+				unit_type:a_reformation_qizilbash = { scope:teleported_army  = {add_subunit = unit_type:a_reformation_qizilbash} }
+
+				unit_type:a_bedouin_cavalry = { scope:teleported_army  = {add_subunit = unit_type:a_bedouin_cavalry} }
+
+				unit_type:a_jaguar_warrior = { scope:teleported_army  = {add_subunit = unit_type:a_jaguar_warrior} }
+				unit_type:a_eagle_warrior = { scope:teleported_army  = {add_subunit = unit_type:a_eagle_warrior} }
+			}
+
+			scope:teleported_army = {
+				random_sub_unit = {
+					limit = {
+						NOT = {
+							is_in_list = sub_units_list
+						}
+						NOT = {
+							sub_unit_type = unit_type:teleporting_army
+						}
+					}
+
+					add_subunit_strength = -999 # set to 0
+					add_subunit_strength = scope:original_subunit_strength
+
+					add_to_list = sub_units_list
+				}
+			}		
+		}
+
+		scope:teleported_army = {
+			random_sub_unit = {
+				limit = {
+					sub_unit_type = unit_type:teleporting_army
+				}
+				destroy_subunit = yes
+			}
+		}
+	}
+}
+
+

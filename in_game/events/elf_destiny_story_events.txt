@@ -943,7 +943,7 @@ elf_destiny_story.53 = { # Portal Restored!
 
 		every_country = {
 			limit = {
-				is_ai = no
+				# is_ai = no
 				ruler = {
 					is_any_elf_type = yes
 				}

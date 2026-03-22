@@ -3,10 +3,6 @@ localization overall
 
 Clean up the damn error log
 
-maybe ancient elven road tech
-- another thing to unlock on expeditions, the road in the north starts as it
-- Ancient Forest Road (Men-i-Naugrim)
-
 ## Grok localization
 - your really should consider putting most descriptions through Grok for formatting/grammar/readability suggestions
 
@@ -56,22 +52,13 @@ calaquendi_desc
 
 updated choice of dreams art for steam
 
-The Grand Portal and Grand portal ruins in my capital
-- https://discord.com/channels/1179053540161880074/1179054158003839086/1480813951083085844
-
 Bonus per pop
 - https://discord.com/channels/1179053540161880074/1179054158003839086/1480823011191029854
 
 Consider: https://discord.com/channels/1179053540161880074/1179054158003839086/1480982620329218092
 
-Appease estate does nothing
-https://discord.com/channels/1179053540161880074/1179054158003839086/1481262790328062024
-
 maybe reduce Daelurin penalties a bit
 https://discord.com/channels/1179053540161880074/1179054158003839086/1481291879583715509
-
-Open hearted
-- I suggested just giving a +50% accepted culture cap
 
 Consider
 https://discord.com/channels/1179053540161880074/1179054158003839086/1481299927119167488
@@ -81,9 +68,6 @@ try to analyze this
 
 Marry low born
 https://discord.com/channels/1179053540161880074/1179054158003839086/1481349583903653998
-
-Mercury patio
-https://discord.com/channels/1179053540161880074/1179054158003839086/1481655379292328086
 
 They are so many character my pc crash😅😂
 My family was about 4500 character
@@ -114,6 +98,14 @@ so we could do something with open hearted increasing assimilation speed, elven 
 same thing for culture capacity
 or by default should elves just have low assimilation speed?
 
-Please make the Romaviri also Hellenic, not only Italian. The conversion situation in Cyprus puts you much more difficult than others, like the Atlas etc.
 And also, make a formable when annexing the entire island. Wyrns Den is much like a random name when becoming a Kingdom, so like Kingdom of Wyvers or the Wyvers looks cool.
 Cyprus already start a Kingdom so annexing a Kingdom makes sense change you to a Kingdom.
+
+Idea: portal hubs grant ability to units
+    - when army is on a portal hub location they can teleport to any other freidnly controlled location
+
+Implement arctic modifers for North ELves
+- crystal glades is a hell gameplay
+- https://discord.com/channels/1179053540161880074/1179054158003839086/1484968710501568636
+
+Allow exploration missions does nothing everyone can do them, Maybe you wanted to have it "allow open sea exploration"?

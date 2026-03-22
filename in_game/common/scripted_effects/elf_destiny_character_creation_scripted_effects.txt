@@ -129,7 +129,7 @@ create_new_aeluran_advisor = {
 			}
 		}
 	
-		add_trait = trait:aeluran_sister
+		become_aeluran_sister = yes
 		
 		save_scope_as = aeluran_advisor
 		set_variable = aeluran_advisor
@@ -177,7 +177,7 @@ create_new_aeluran_matron_fallback = {
 				}
 			}
 		
-			add_trait = trait:aeluran_matron
+			become_aeluran_matron = yes
 			
 			save_scope_as = new_matron
 		}
@@ -337,18 +337,13 @@ create_bloodline_family_effect = {
 			}
 		}
 	
-		add_trait = trait:aeluran_sister
+		become_aeluran_sister = yes
 
 		assign_genetic_trait = { trait = royal_elf_$blood$}
 
 		marry_character = scope:father_lord
 		save_scope_as = mother
 	}
-
-	# scope:father_lord = { found_dynasty = random }
-	# scope:mother = {
-	# 	change_dynasty = scope:father.dynasty
-	# }
 
 	create_character = {
 		age = {12 17}
@@ -391,9 +386,7 @@ create_bloodline_family_effect = {
 		}
 
 		assign_genetic_trait = { trait = royal_elf_$blood$}
-	
-		# add_trait = trait:aeluran_sister
-		
+			
 		save_scope_as = older_daughter
 	}
 

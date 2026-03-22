@@ -1,0 +1,17 @@
+﻿INJECT:appease_estate = {
+    country_modifier = {
+        potential_trigger = {
+            custom_tooltip = {
+                text = if_calaquendi_estate_selected
+                trigger_if = {
+                    limit = {
+                        exists = scope:target
+                    }
+                    scope:target.estate_type = estate_type:calaquendi_estate
+                }
+            }
+        }
+        calaquendi_estate_satisfaction_recovery = 0.001
+        calaquendi_estate_target_satisfaction = small_permanent_target_satisfaction
+    }
+}
