@@ -269,6 +269,28 @@ global_calaquendi_food_consumption={
 	}
 }
 
+local_calaquendi_pop_growth = {
+	percent = yes
+	game_data = {
+		category = location
+	}
+}
+
+global_calaquendi_pop_growth = {
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+local_calaquendi_estate_unrest = {
+	color=bad
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
 # # Eldar
 # monthly_eldar_estate_rebel_growth={
 # 	color=bad
@@ -2338,7 +2360,7 @@ national_the_rut_resistance_modifier={
 	color=bad
 	percent=yes
 	game_data={
-		category=location
+		category=country
 	}
 }
 
@@ -2353,7 +2375,7 @@ local_the_rut_resistance_modifier={
 national_the_rut_growth_modifier={
 	percent=yes
 	game_data={
-		category=location
+		category=country
 	}
 }
 

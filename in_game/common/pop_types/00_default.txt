@@ -8,7 +8,7 @@
 	pop_food_consumption = 20.0
 
 	city_graphics = 1.0
-	grow = yes
+	grow = no
 	
 	# dhimmi_estate = { is_dhimmi = yes }
 	calaquendi_estate = {}
@@ -198,6 +198,7 @@ peasants = {
 	promote_to = nobles
 	promote_to = laborers
 	promote_to = soldiers
+	promote_to = calaquendi
 	
 	pop_food_consumption = 1.0
 	

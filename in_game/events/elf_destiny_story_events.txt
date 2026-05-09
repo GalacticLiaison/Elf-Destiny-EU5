@@ -113,7 +113,7 @@ elf_destiny_story.11 = {
 				desc = elf_destiny_story.11.desc.elven
 				trigger = {
                     exists = scope:already_elven
-					scope:already_elven = yes
+					scope:already_elven ?= yes
 				}
 			}
 			desc = elf_destiny_story.11.desc
@@ -246,7 +246,7 @@ elf_destiny_story.22 = {
 				desc = elf_destiny_story.22.desc.elven
 				trigger = {
                     exists = scope:already_elven
-					scope:already_elven = yes
+					scope:already_elven ?= yes
 				}
 			}
 			desc = elf_destiny_story.22.desc
@@ -283,7 +283,7 @@ elf_destiny_story.22 = {
 		name = elf_destiny_story.22.elven
 		trigger = {
 			exists = scope:already_elven
-			scope:already_elven = yes
+			scope:already_elven ?= yes
 		}
 
 		trigger_event_silently = {
@@ -297,7 +297,7 @@ elf_destiny_story.22 = {
 		trigger = {
 			NOT = {
 				exists = scope:already_elven
-				scope:already_elven = yes
+				scope:already_elven ?= yes
 			}
 		}
 
@@ -346,7 +346,7 @@ elf_destiny_story.22 = {
 		trigger = {
 			NOT = {
 				exists = scope:already_elven
-				scope:already_elven = yes
+				scope:already_elven ?= yes
 			}
 		}
 
@@ -379,7 +379,7 @@ elf_destiny_story.23 = {
 				desc = elf_destiny_story.23.desc.elven
 				trigger = {
 					exists = scope:already_elven
-					scope:already_elven = yes
+					scope:already_elven ?= yes
 				}
 			}
 			desc = elf_destiny_story.23.desc
@@ -405,7 +405,7 @@ elf_destiny_story.23 = {
 		if = {
 			limit = {
 				exists = scope:already_elven
-				scope:already_elven = yes
+				scope:already_elven ?= yes
 			}
 			every_character = {
 				ascension_effect = yes
@@ -424,7 +424,7 @@ elf_destiny_story.23 = {
 		if = {
 			limit = {
 				exists = scope:already_elven
-				scope:already_elven = yes
+				scope:already_elven ?= yes
 			}
 			custom_tooltip = {
 				text = all_character_ascend
@@ -641,7 +641,7 @@ elf_destiny_story.41 = {
 				desc = elf_destiny_story.41.desc.elven
 				trigger = {
 					exists = scope:already_elven
-					scope:already_elven = yes
+					scope:already_elven ?= yes
 				}
 			}
 			desc = elf_destiny_story.41.desc

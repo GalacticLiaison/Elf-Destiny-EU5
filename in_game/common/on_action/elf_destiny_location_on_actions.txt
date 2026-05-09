@@ -6,7 +6,7 @@
 
 manage_building_modifiers = {
     trigger = {
-        scope:loser = {
+        scope:loser ?= {
             OR = {
                 is_elven_country = yes
                 religion = religion:aeluran

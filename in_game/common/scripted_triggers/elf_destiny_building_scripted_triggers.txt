@@ -4,7 +4,7 @@
 }
 
 elf_building_removal_trigger = {
-	location = {
+	location ?= {
 		owner ?= { 
 			ruler_or_regent = {
 				is_any_elf_type = no

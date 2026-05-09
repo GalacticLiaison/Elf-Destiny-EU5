@@ -135,6 +135,15 @@ local_calaquendi_assimilation_blocked = {
 	positive = "gfx/interface/icons/modifier_types/global_calaquendi_conversion_blocked.dds" 
 }
 
+local_calaquendi_pop_growth = {
+	positive = "gfx/interface/icons/modifier_types/global_calaquendi_pop_growth.dds"
+}
+global_calaquendi_pop_growth = {
+	positive = "gfx/interface/icons/modifier_types/global_calaquendi_pop_growth.dds"
+}
+local_calaquendi_estate_unrest = {
+	positive = "gfx/interface/icons/modifier_types/local_calaquendi_estate_unrest.dds" 
+}
 
 can_extract_mythril = {
 	positive = "gfx/interface/icons/modifier_types/mythril_positive.dds" 

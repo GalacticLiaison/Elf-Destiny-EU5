@@ -39,6 +39,14 @@
  MODIFIER_TYPE_NAME_calaquendi_estate_allowed_to_build_rgo: "Calaquendi estate allowed to build rgo"
  MODIFIER_TYPE_DESC_calaquendi_estate_allowed_to_build_rgo: "This allows the $calaquendi_estate$ to being construction of [rgo|e]."
 
+ MODIFIER_TYPE_NAME_global_calaquendi_pop_growth: "$calaquendi$ Growth"
+ MODIFIER_TYPE_DESC_global_calaquendi_pop_growth: "This impacts the [population_growth|e] of the [ShowPopTypeName('calaquendi')] in a [country|e]."
+ MODIFIER_TYPE_NAME_local_calaquendi_pop_growth: "$calaquendi$ Growth"
+ MODIFIER_TYPE_DESC_local_calaquendi_pop_growth: "This impacts the [population_growth|e] of the [ShowPopTypeName('calaquendi')] in a [location|e]."
+
+ MODIFIER_TYPE_NAME_local_calaquendi_estate_unrest: "[ShowEstateTypeName('calaquendi_estate')] Unrest"
+ MODIFIER_TYPE_DESC_local_calaquendi_estate_unrest: "This impacts the [unrest|e] of the [ShowEstateTypeName('calaquendi_estate')] in a [location|e]."
+
  MODIFIER_TYPE_NAME_ban_exports_of_mythril: "Ban Exports of $mythril$"
  MODIFIER_TYPE_DESC_ban_exports_of_mythril: "This blocks the [export|e] of [ShowGoodsName('mythril')] from all [markets|e] that a [country|e] owns."
  MODIFIER_TYPE_NAME_ban_imports_of_mythril: "Ban Imports of $mythril$"
