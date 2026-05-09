@@ -106,6 +106,9 @@ REPLACE:precious_metal_distribution_law = {
 	}
 
 	gold_export_ban = {
+		potential = {
+			NOT = { is_subject_type = colonial_nation }
+		}
 		country_modifier = {
 			ban_exports_of_mythril = yes
 			ban_exports_of_goods_gold = yes
@@ -115,6 +118,7 @@ REPLACE:precious_metal_distribution_law = {
 			global_silver_output_modifier = -0.05
 			minting_income_factor = 0.33
 			monthly_towards_mercantilism = societal_value_tiny_monthly_move
+			export_impact_on_demand = 0.05
 		}
 		estate_preferences = {
 			nobles_estate
@@ -128,7 +132,7 @@ REPLACE:precious_metal_distribution_law = {
 	}
 	regulated_gold_export = {
 		country_modifier = {
-			trade_efficiency = tiny_trade_efficiency_bonus
+			selling_efficiency = tiny_trade_efficiency_bonus
 		}
 		estate_preferences = {
 			crown_estate

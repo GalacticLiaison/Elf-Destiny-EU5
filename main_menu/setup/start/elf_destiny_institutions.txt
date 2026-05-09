@@ -445,7 +445,7 @@ ivdel = {
 	legalism = yes
 	elven = yes
 }
-# SVN Silivren
+# SRN Silivren
 ponil = {
 	feudalism = yes
 	legalism = yes

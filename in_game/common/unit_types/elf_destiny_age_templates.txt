@@ -1,5 +1,6 @@
 ﻿a_age_1_traditions_magi = {
 	category = army_magi
+	hide = yes
 	buildable = no
 	max_strength = 0.05
 	combat_power = 1.1
@@ -14,6 +15,7 @@
 
 a_age_2_renaissance_magi = {
 	category = army_magi
+	hide = yes
 	buildable = no
 	max_strength = 0.1
 	combat_power = 1.1
@@ -28,6 +30,7 @@ a_age_2_renaissance_magi = {
 
 a_age_3_discovery_magi = {
 	category = army_magi
+	hide = yes
 	buildable = no
 	max_strength = 0.2
 	combat_power = 1.1
@@ -42,6 +45,7 @@ a_age_3_discovery_magi = {
 
 a_age_4_reformation_magi = {
 	category = army_magi
+	hide = yes
 	buildable = no
 	max_strength = 0.4
 	combat_power = 1.65
@@ -56,6 +60,7 @@ a_age_4_reformation_magi = {
 
 a_age_5_absolutism_magi = {
 	category = army_magi
+	hide = yes
 	buildable = no
 	max_strength = 0.8
 	combat_power = 2.75
@@ -70,6 +75,7 @@ a_age_5_absolutism_magi = {
 
 a_age_6_revolutions_magi = {
 	category = army_magi
+	hide = yes
 	buildable = no
 	max_strength = 1.6
 	combat_power = 3.75
@@ -84,7 +90,8 @@ a_age_6_revolutions_magi = {
 
 ### Used only as a placeholder when teleporting armies
 teleporting_army = {
-	category = army_infantry
+	category = army_magi
+	hide = yes
 	buildable = no
 	max_strength = 0.01
 	combat_power = 0.1

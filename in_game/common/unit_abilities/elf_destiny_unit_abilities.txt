@@ -33,15 +33,26 @@
 	}
 
 	start_effect = {
+        # owner = {
+
+        # }
+
+
         custom_tooltip = {
             text = teleport_army_effect_desc
             save_scope_as = unit_to_teleport
-            unit_location = {
-                save_scope_as = portal_origin_location
+
+            fire_generic_action = {
+                type = portal_network_army_teleport
+                actor = scope:unit_to_teleport.owner
+                recipient = scope:unit_to_teleport
             }
-            owner = {
-                trigger_event_silently = elf_destiny_misc.5
-            }
+            # unit_location = {
+            #     save_scope_as = portal_origin_location
+            # }
+            # owner = {
+            #     trigger_event_silently = elf_destiny_misc.5
+            # }
         }
 	}
 	

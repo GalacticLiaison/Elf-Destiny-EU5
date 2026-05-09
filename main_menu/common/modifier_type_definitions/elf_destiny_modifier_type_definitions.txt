@@ -2058,6 +2058,32 @@ mythril_elven_crafts_used_for_minting={
 	}
 }
 
+global_mythril_pop_demand={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+global_lembas_pop_demand={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+global_elven_crafts_pop_demand={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+global_mythril_elven_crafts_pop_demand={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+
 # Military
 army_magi_power={
 	percent=yes
@@ -2308,8 +2334,30 @@ local_the_rut_impact_modifier={
 	}
 }
 
-the_rut_resistance_modifier={
+national_the_rut_resistance_modifier={
 	color=bad
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+local_the_rut_resistance_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+national_the_rut_growth_modifier={
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+local_the_rut_growth_modifier={
 	percent=yes
 	game_data={
 		category=location

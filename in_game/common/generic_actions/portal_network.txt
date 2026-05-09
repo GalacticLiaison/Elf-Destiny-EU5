@@ -1,0 +1,525 @@
+﻿portal_network_army_teleport = {
+	type = location
+
+	ai_tick = never
+	ai_tick_frequency = 60
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	maximum_targets_in_one_tick = 20
+	disallowed_duplicates_of_targets_for_ai = { target_location }
+
+	potential = {
+	}
+
+	allow = {
+		scope:actor ?= {
+            is_ai = no
+		}
+	}
+	
+	# Maybe it would play nicer with tooltips and what not if we put logic in script values
+	should_execute_price = yes
+	payer = scope:recipient.owner
+	price = price:teleport_base_price
+	price_modifier = {
+		value = 1
+
+
+		add = {
+			desc = "MORE_PER_REGIMENT"
+			value = 0
+			scope:recipient ?= {
+				every_sub_unit = {
+					add = 1
+				}
+			}
+		}
+		
+
+		multiply = {
+			# desc = "MORE_PER_DISTANCE_TELEPORTED"
+			value = 1
+			scope:recipient ?= {
+				unit_location = {
+					save_temporary_scope_as = portal_origin_location
+				}
+			}
+
+			scope:portal_arrival_location ?= {
+				# save_temporary_scope_value_as = {
+				# 	name = teleportation_distance
+				# 	value = "distance_to_squared(scope:portal_origin_location)"
+				# } 
+
+				multiply = "distance_to_squared(scope:portal_origin_location)"
+				multiply = 0.00001
+				multiply = 0.5
+			}
+		}
+
+
+
+		# scope:portal_origin_location ?= {
+
+		# }
+
+		# multiply = "distance_to_squared(scope:portal_origin_location)"
+
+		# scope:recipient ?= {
+		# 	unit_location = {
+		# 		save_temporary_scope_as = portal_origin_location
+		# 	}
+		# }
+
+		# scope:portal_arrival_location ?= {
+		# 	save_temporary_scope_value_as = {
+		# 		name = teleportation_distance
+		# 		value = "distance_to_squared(scope:portal_origin_location)"
+		# 	} 
+		# }		
+
+		# if = {
+		# 	limit = { exists = scope:recipient}
+
+		# 	scope:recipient = {
+		# 		every_sub_unit = {
+		# 			add = 1
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {exists = scope:teleportation_distance}
+
+		# 	multiply = scope:teleportation_distance
+		# }
+
+	}
+
+
+	select_trigger = {
+		looking_for_a = unit
+		source = actor
+		target_flag = recipient
+		name = "choose_unit"
+		column = { data = name }
+		# visible = {
+		# 	always = no
+		# }
+	}
+
+	#goods in scope:goods
+	# select_trigger = {
+	# 	looking_for_a = unit
+	# 	source = actor
+	# 	target_flag = unit_to_teleport
+	# 	name = "choose_unit_to_teleport"
+	# 	# none_available_msg_key = "make_unit_available_for_hire_no_units"
+	# 	column = {
+	# 		data = name
+	# 	}
+	# 	column = {
+	# 		data = unit_location
+	# 	}
+	# 	visible = {
+    #         # TODO: on portal location
+
+	# 		# or = {
+	# 		# 	is_army = no
+	# 		# 	owner = {
+	# 		# 		not = { country_type = army }
+	# 		# 	}
+	# 		# }
+	# 		# or = {
+	# 		# 	is_navy = no
+	# 		# 	owner = {
+	# 		# 		not = { country_type = navy }
+	# 		# 	}
+	# 		# }
+	# 		# has_mercenaries = no
+	# 		# has_levies = no
+	# 	}
+	# }
+	
+	#Select Destination
+	select_trigger = {
+		looking_for_a = location
+		# source = actor
+        # source_flags = only_actual_locations
+		target_flag = portal_arrival_location
+		name = "choose_a_teleportation_destination"
+		none_available_msg_key = "no_portals_available"
+		# column = { data = owner }
+		column = { data = name }
+		visible = {
+            is_ownable = yes
+			has_owner = yes
+            OR = {
+                has_building = building_type:grand_portal
+                has_building = building_type:prime_portal_hub
+                has_building = building_type:lesser_portal_node
+            }
+			
+		}
+		enabled = {
+			# OR = {
+			# 	owner ?= scope:actor
+			# 	top_owner ?= scope:actor
+			# }
+
+			NOT = {
+				scope:recipient.unit_location ?= this
+			}
+
+			owner = {
+				save_temporary_scope_as = portal_owner
+				OR = {
+					is_ai = no
+					any_country = {
+						save_temporary_scope_as = player_country
+						is_ai = no
+						OR = {
+							in_union_with = scope:portal_owner
+							in_marriage_union_with = scope:portal_owner
+							is_fighting_war_together_with = scope:portal_owner
+							is_subject_or_below_of = scope:portal_owner
+						}
+					}
+					any_overlord_or_above = {
+						is_ai = no
+					}
+				}
+			}
+
+			# scope:recipient = {
+			# 	save_temporary_scope_as = unit_to_teleport
+			# 	unit_location = {
+			# 		save_temporary_scope_as = portal_origin_location
+			# 	}
+			# }
+			# save_temporary_scope_value_as = {
+			# 	name = teleportation_distance
+			# 	value = "distance_to_squared(scope:portal_origin_location)"
+			# }
+			# religious_influence >= portal_transportation_cost
+		}
+		# map_color = {
+		# 	# can_see_situation
+
+		# 	if = { # Player Allowed Controlled
+		# 		limit = {
+		# 			OR = {
+		# 				has_building = building_type:grand_portal
+		# 				has_building = building_type:prime_portal_hub
+		# 				has_building = building_type:lesser_portal_node
+		# 			}
+		# 			owner = {
+		# 				save_temporary_scope_as = portal_owner
+		# 				OR = {
+		# 					is_ai = no
+		# 					any_country = {
+		# 						save_temporary_scope_as = player_country
+		# 						is_ai = no
+		# 						OR = {
+		# 							in_union_with = scope:portal_owner
+		# 							in_marriage_union_with = scope:portal_owner
+		# 							is_fighting_war_together_with = scope:portal_owner
+		# 							is_subject_or_below_of = scope:portal_owner
+		# 						}
+		# 					}
+		# 					any_overlord_or_above = {
+		# 						is_ai = no
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 		value = color_nw_country
+		# 		# ancient_road_color
+		# 	}
+		# 	else_if = { # Player Not Controlled
+		# 		limit = {
+		# 			OR = {
+		# 				has_building = building_type:grand_portal
+		# 				has_building = building_type:prime_portal_hub
+		# 				has_building = building_type:lesser_portal_node
+		# 			}
+		# 		}
+		# 		value = color_ow_country
+		# 	}
+		# 	#Neutral
+		# 	else = {
+		# 		value = define:NMapColors|DEFAULT_COLOR
+		# 	}
+		# }
+		map_mode = portal_network
+	}
+	
+	effect = {
+		debug_log = "portal_network_army_teleport FIRED"
+		debug_log_scopes = yes
+
+		if = {
+			limit = {
+				exists = scope:recipient
+				NOT = {
+					exists = scope:unit_to_teleport
+				}
+			}
+			scope:recipient = {
+				save_scope_as = unit_to_teleport
+			}
+		}
+
+		# scope:unit_to_teleport ?= {
+		# 	unit_location = {
+		# 		save_temporary_scope_as = portal_origin_location
+		# 	}
+		# }
+
+		# scope:portal_arrival_location ?= {
+		# 	save_temporary_scope_value_as = {
+		# 		name = teleportation_distance
+		# 		value = "distance_to_squared(scope:portal_origin_location)"
+		# 	} 
+		# }		
+		# add_religious_influence = portal_transportation_cost
+		# add_religious_influence = 69
+
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = scope:price_modifier
+				}
+				scope:actor = {
+					add_religious_influence = negative_price_modifier	
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:portal_arrival_location
+			}
+			teleport_army_to = {
+				location = scope:portal_arrival_location
+			}
+		}
+
+		# if = {
+		# 	limit = {
+		# 		exists = scope:unit_to_teleport
+		# 	}
+		# 	teleport_army_to = {
+		# 		location = scope:portal_arrival_location
+		# 	}
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		exists = scope:recipient
+		# 	}
+		# 	scope:recipient = {
+		# 		save_scope_as = unit_to_teleport
+		# 	}
+		# 	teleport_army_to = {
+		# 		location = scope:portal_arrival_location
+		# 	}
+		# }
+	}
+	
+	ai_will_do = {
+		value = -1 #Bias against doing anything
+	}
+}
+
+portal_network_teleport_to_location = {
+	type = location
+
+	ai_tick = never
+	ai_tick_frequency = 60
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	maximum_targets_in_one_tick = 20
+	disallowed_duplicates_of_targets_for_ai = { target_location }
+
+	potential = {
+		scope:recipient ?= {
+			owner = {
+				OR = {
+					scope:actor = this
+					in_union_with = scope:actor
+					in_marriage_union_with = scope:actor
+					is_fighting_war_together_with = scope:actor
+					is_subject_or_below_of = scope:actor
+				}
+			}
+		}
+	}
+
+	allow = {
+		scope:actor ?= {
+            is_ai = no
+		}
+	}
+	
+	# Maybe it would play nicer with tooltips and what not if we put logic in script values
+	should_execute_price = yes
+	# payer = scope:recipient.owner
+	price = price:teleport_base_price
+	# price_modifier = {
+	# 	value = 1
+
+
+	select_trigger = {
+		looking_for_a = location
+		# source = actor
+		target_flag = recipient
+		name = "choose_a_teleportation_destination"
+		column = { data = name }
+		# visible = {
+		# 	always = yes
+		# }
+	}
+	
+	#Select Destination
+	select_trigger = {
+		looking_for_a = unit
+		# source = actor
+        # source_flags = only_actual_locations
+		target_flag = unit_to_teleport
+		name = "choose_a_unit"
+		none_available_msg_key = "no_units_available"
+		# column = { data = owner }
+		column = { data = name }
+		visible = {
+			owner = scope:actor		
+		}
+		enabled = {
+			unit_location ?= {
+				OR = {
+					has_building = building_type:grand_portal
+					has_building = building_type:prime_portal_hub
+					has_building = building_type:lesser_portal_node
+				}
+				NOT = {
+					scope:recipient ?= this
+				}
+			}
+		}
+		# map_color = {
+		# 	# can_see_situation
+
+		# 	if = { # Player Allowed Controlled
+		# 		limit = {
+		# 			OR = {
+		# 				has_building = building_type:grand_portal
+		# 				has_building = building_type:prime_portal_hub
+		# 				has_building = building_type:lesser_portal_node
+		# 			}
+		# 			owner = {
+		# 				save_temporary_scope_as = portal_owner
+		# 				OR = {
+		# 					is_ai = no
+		# 					any_country = {
+		# 						save_temporary_scope_as = player_country
+		# 						is_ai = no
+		# 						OR = {
+		# 							in_union_with = scope:portal_owner
+		# 							in_marriage_union_with = scope:portal_owner
+		# 							is_fighting_war_together_with = scope:portal_owner
+		# 							is_subject_or_below_of = scope:portal_owner
+		# 						}
+		# 					}
+		# 					any_overlord_or_above = {
+		# 						is_ai = no
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 		value = color_nw_country
+		# 		# ancient_road_color
+		# 	}
+		# 	else_if = { # Player Not Controlled
+		# 		limit = {
+		# 			OR = {
+		# 				has_building = building_type:grand_portal
+		# 				has_building = building_type:prime_portal_hub
+		# 				has_building = building_type:lesser_portal_node
+		# 			}
+		# 		}
+		# 		value = color_ow_country
+		# 	}
+		# 	#Neutral
+		# 	else = {
+		# 		value = define:NMapColors|DEFAULT_COLOR
+		# 	}
+		# }
+		# map_mode = portal_network
+	}
+	
+	effect = {
+		debug_log = "portal_network_army_teleport FIRED"
+		debug_log_scopes = yes
+
+		# scope:unit_to_teleport ?= {
+		# 	unit_location = {
+		# 		save_temporary_scope_as = portal_origin_location
+		# 	}
+		# }
+
+		# scope:portal_arrival_location ?= {
+		# 	save_temporary_scope_value_as = {
+		# 		name = teleportation_distance
+		# 		value = "distance_to_squared(scope:portal_origin_location)"
+		# 	} 
+		# }		
+		# add_religious_influence = portal_transportation_cost
+		# add_religious_influence = 69
+
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = scope:price_modifier
+				}
+				scope:actor = {
+					add_religious_influence = negative_price_modifier	
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:recipient
+			}
+			scope:unit_to_teleport ?= {
+				teleport_army_to = {
+					location = scope:recipient
+				}
+			}
+		}
+
+		# if = {
+		# 	limit = {
+		# 		exists = scope:unit_to_teleport
+		# 	}
+		# 	teleport_army_to = {
+		# 		location = scope:portal_arrival_location
+		# 	}
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		exists = scope:recipient
+		# 	}
+		# 	scope:recipient = {
+		# 		save_scope_as = unit_to_teleport
+		# 	}
+		# 	teleport_army_to = {
+		# 		location = scope:portal_arrival_location
+		# 	}
+		# }
+	}
+	
+	ai_will_do = {
+		value = -1 #Bias against doing anything
+	}
+}

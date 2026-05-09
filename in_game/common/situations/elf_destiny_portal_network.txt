@@ -1,0 +1,102 @@
+﻿portal_network = {
+	monthly_spawn_chance = 100
+	hint_tag = hint_columbian_exchange
+	
+	can_start = {
+        # Grand Portal Restored
+        has_global_variable = portal_restored
+	}
+	
+	can_end = {
+		always = no
+	}
+	
+	visible = {
+		is_ai = no # FOR NOW, dream is AI can use in future
+		any_province = {
+			any_location_in_province = {
+				OR = {
+					has_building = building_type:grand_portal
+					has_building = building_type:prime_portal_hub
+					has_building = building_type:lesser_portal_node
+				}
+			}
+		}
+	}
+	
+
+	on_start = {
+		
+	}
+
+	on_monthly = {
+
+	}
+
+	tooltip = { # interesting
+	}
+
+
+	on_ended = {
+
+	}
+	
+	map_color = {
+		# can_see_situation
+
+		if = { # Player Allowed Controlled
+			limit = {
+				OR = {
+                    has_building = building_type:grand_portal
+                    has_building = building_type:prime_portal_hub
+                    has_building = building_type:lesser_portal_node
+                }
+				owner = {
+					save_temporary_scope_as = portal_owner
+					OR = {
+						is_ai = no
+						any_country = {
+							save_temporary_scope_as = player_country
+							is_ai = no
+							OR = {
+								in_union_with = scope:portal_owner
+								in_marriage_union_with = scope:portal_owner
+								is_fighting_war_together_with = scope:portal_owner
+								is_subject_or_below_of = scope:portal_owner
+							}
+						}
+						any_overlord_or_above = {
+							is_ai = no
+						}
+					}
+				}
+			}
+			value = color_nw_country
+			# ancient_road_color
+		}
+		else_if = { # Player Not Controlled
+			limit = {
+                OR = {
+                    has_building = building_type:grand_portal
+                    has_building = building_type:prime_portal_hub
+                    has_building = building_type:lesser_portal_node
+                }
+			}
+			value = color_ow_country
+		}
+		#Neutral
+		else = {
+			value = define:NMapColors|DEFAULT_COLOR
+		}
+	}
+	
+	legend_key = { 
+		desc = "useable_portals"
+		color = color_nw_country
+	}
+	
+	legend_key = { 
+		desc = "unusable_portals"
+		color = color_ow_country
+	}
+}

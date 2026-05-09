@@ -1,0 +1,128 @@
+﻿namespace = elf_destiny_population_control
+
+elf_destiny_population_control.1 = {
+    type = country_event
+    title = elf_destiny_population_control.1.title
+    desc = elf_destiny_population_control.1.desc
+    outcome = neutral
+
+    hide_portraits = yes
+    # image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+    trigger = {
+
+    }
+
+    immediate = {
+
+    }
+
+    option = { # Enable/Disable
+        name = elf_destiny_population_control.1.a
+    }
+
+    option = { # Pop Threshold
+        name = elf_destiny_population_control.1.b
+        trigger_event_silently = {
+            id = elf_destiny_population_control.2
+        }
+    }
+
+    option = { # Filter Criteria
+        name = elf_destiny_population_control.1.c
+        trigger_event_silently = {
+            id = elf_destiny_population_control.3
+        }
+    }
+
+    option = { # Done
+        name = elf_destiny_population_control.1.done
+    }
+}
+
+elf_destiny_population_control.2 = {
+    type = country_event
+    title = elf_destiny_population_control.2.title
+    desc = elf_destiny_population_control.2.desc
+    outcome = neutral
+    hide_portraits = yes
+    # image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+    trigger = {
+
+    }
+
+    immediate = {
+
+    }
+
+    option = { # Back
+        name = elf_destiny_population_control.2.a
+    }
+
+    option = {
+        name = elf_destiny_population_control.2.a
+    }
+}
+
+elf_destiny_population_control.3 = {
+    type = country_event
+    title = elf_destiny_population_control.3.title
+    desc = elf_destiny_population_control.3.desc
+    outcome = neutral
+    hide_portraits = yes
+    # image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
+
+    trigger = {
+
+    }
+
+    immediate = {
+
+    }
+
+    option = { # Back
+        name = elf_destiny_population_control.3.a
+    }
+
+    # Will kill any character except:
+    option = { # Rulers
+        name = elf_destiny_population_control.3.a
+    }
+
+    option = { # Rulers Immediate Family (parents/siblings/children/grandparents/grand-children/great-grand-children/uncles/cousins)
+        name = elf_destiny_population_control.3.a
+    }
+
+    option = { # Player's Dynasty
+        name = elf_destiny_population_control.3.a
+    }
+
+    option = { # Humans
+        name = elf_destiny_population_control.3.a
+    }
+
+    option = { # Elves
+        name = elf_destiny_population_control.3.a
+    }
+
+    option = { # Bloodline Traits
+        name = elf_destiny_population_control.3.a
+    }
+
+    option = { # Rare Genetic Traits
+        name = elf_destiny_population_control.3.a
+    }
+
+    option = { # Cabinet Members
+        name = elf_destiny_population_control.3.a
+    }
+
+    option = { # Generals/Admirals
+        name = elf_destiny_population_control.3.a
+    }
+
+    option = { # Aeluran Leadership
+        name = elf_destiny_population_control.3.a
+    }
+}

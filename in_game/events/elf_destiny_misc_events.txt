@@ -5,6 +5,8 @@ elf_destiny_misc.1 = {
 	type = country_event
 	title = elf_destiny_misc.1.title
 	desc = elf_destiny_misc.1.desc
+	outcome = neutral
+
 	trigger = {
 
 	}
@@ -26,6 +28,8 @@ elf_destiny_misc.20 = {
 	type = country_event
 	title = elf_destiny_misc.20.title
 	desc = elf_destiny_misc.20.desc
+	outcome = neutral
+
 	trigger = {
 
 	}
@@ -75,6 +79,8 @@ elf_destiny_misc.21 = {
 	type = country_event
 	title = elf_destiny_misc.21.title
 	desc = elf_destiny_misc.21.desc
+	outcome = neutral
+
 	trigger = {
 
 	}
@@ -100,6 +106,7 @@ elf_destiny_misc.21 = {
 elf_destiny_misc.3 = {
 	title = no_title
 	desc = no_desc
+	outcome = neutral
 	type = country_event
 
 	trigger = {
@@ -129,6 +136,8 @@ elf_destiny_misc.31 = {
 	type = country_event
 	title = elf_destiny_misc.31.title
 	desc = elf_destiny_misc.31.desc
+	outcome = neutral
+
 	trigger = {
 
 	}
@@ -204,6 +213,8 @@ elf_destiny_misc.32 = {
 	type = country_event
 	title = elf_destiny_misc.32.title
 	desc = elf_destiny_misc.32.desc
+	outcome = neutral
+
 	trigger = {
 
 	}
@@ -260,6 +271,8 @@ elf_destiny_misc.41 = { # Two new members join
 	type = country_event
 	title = elf_destiny_misc.41.title
 	desc = elf_destiny_misc.41.desc
+	outcome = neutral
+
 	trigger = {
 
 	}
@@ -288,6 +301,8 @@ elf_destiny_misc.42 = { # Noble Ascends to High Elf and is raised to Calaquendi
 	type = country_event
 	title = elf_destiny_misc.42.title
 	desc = elf_destiny_misc.42.desc
+	outcome = neutral
+
 	trigger = {
 		any_character = {
 			is_adult = yes
@@ -522,6 +537,8 @@ elf_destiny_misc.5 = {
 	type = country_event
 	title = elf_destiny_misc.5.title
 	desc = elf_destiny_misc.5.desc
+	outcome = neutral
+	
 	trigger = {
 
 	}

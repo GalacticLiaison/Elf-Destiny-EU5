@@ -10,3 +10,7 @@ ascension_base_price = {
 blessing_base_price = {
     religious_influence = 75
 }
+
+teleport_base_price = {
+    religious_influence = 1
+}

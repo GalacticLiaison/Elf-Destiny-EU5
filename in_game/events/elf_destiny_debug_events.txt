@@ -77,7 +77,9 @@ scripted_effect swap_blood_purity_trait = {
 elf_destiny_debug.1 = {
     type = country_event
     title = elf_destiny_debug.1.title
-    desc = elf_destiny_debug.1.desc 
+    desc = elf_destiny_debug.1.desc
+    outcome = neutral
+
     hide_portraits = no
     image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
 
@@ -110,6 +112,8 @@ elf_destiny_debug.2 = { # Racial Traits
     type = country_event
     title = elf_destiny_debug.2.title
     desc = elf_destiny_debug.2.desc 
+    outcome = neutral
+
     hide_portraits = no
     image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
 
@@ -191,6 +195,8 @@ elf_destiny_debug.3 = { # Genetic Traits
     type = country_event
     title = elf_destiny_debug.3.title
     desc = elf_destiny_debug.3.desc 
+    outcome = neutral
+
     hide_portraits = no
     image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
 
@@ -232,6 +238,8 @@ elf_destiny_debug.31 = { # Beauty Genetic Traits
     type = country_event
     title = elf_destiny_debug.31.title
     desc = elf_destiny_debug.31.desc 
+    outcome = neutral
+
     hide_portraits = no
     image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
 
@@ -318,6 +326,8 @@ elf_destiny_debug.32 = { # Intellect Genetic Traits
     type = country_event
     title = elf_destiny_debug.32.title
     desc = elf_destiny_debug.32.desc 
+    outcome = neutral
+
     hide_portraits = no
     image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
 
@@ -373,7 +383,9 @@ elf_destiny_debug.32 = { # Intellect Genetic Traits
 elf_destiny_debug.33 = { # Physique Genetic Traits
     type = country_event
     title = elf_destiny_debug.33.title
-    desc = elf_destiny_debug.33.desc 
+    desc = elf_destiny_debug.33.desc
+    outcome = neutral
+
     hide_portraits = no
     image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
 
@@ -429,7 +441,9 @@ elf_destiny_debug.33 = { # Physique Genetic Traits
 elf_destiny_debug.34 = { # Other Genetic Traits
     type = country_event
     title = elf_destiny_debug.34.title
-    desc = elf_destiny_debug.34.desc 
+    desc = elf_destiny_debug.34.desc
+    outcome = neutral
+
     hide_portraits = no
     image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
 
@@ -481,7 +495,9 @@ elf_destiny_debug.34 = { # Other Genetic Traits
 elf_destiny_debug.35 = { # Bloodline Genetic Traits
     type = country_event
     title = elf_destiny_debug.35.title
-    desc = elf_destiny_debug.35.desc 
+    desc = elf_destiny_debug.35.desc
+    outcome = neutral
+    
     hide_portraits = no
     image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
 

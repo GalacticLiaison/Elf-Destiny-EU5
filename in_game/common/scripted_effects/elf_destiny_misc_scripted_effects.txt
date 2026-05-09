@@ -528,12 +528,14 @@ teleport_army_to = {
 
 	custom_tooltip = {
 		text = teleport_army_to_location_desc
-		
-		every_character = { # Used later when determining what general got teleported
-			limit = { is_general = yes }
-			add_to_list = country_generals
-		}
 
+		scope:unit_to_teleport.owner = {
+			every_character = { # Used later when determining what general got teleported
+				limit = { is_general = yes }
+				add_to_list = country_generals
+			}
+		}
+		
 		scope:unit_to_teleport = {
 			transport_army_through_portal = yes
 		}
@@ -558,7 +560,6 @@ teleport_army_to = {
 }
 
 transport_army_through_portal = {
-
 	spawn_army_at_portal_destination = yes
 	change_spawned_army_to_match_teleporting_army = yes
 	destroy_unit = yes
@@ -568,6 +569,42 @@ spawn_army_at_portal_destination = {
 	owner = {
 		save_temporary_scope_as = controlling_country
 		scope:portal_arrival_location = {
+			if = {
+				limit = {
+					any_unit_in_location = {
+						count > 0
+					}
+				}
+
+				random_country = {
+					limit = {
+						NOT = {this = scope:controlling_country}
+					}
+					save_temporary_scope_as = temporary_unit_owner
+				}
+				every_unit_in_location = {
+					save_temporary_scope_as = unit_to_swap_temporarily
+					limit = {
+						owner = scope:controlling_country
+					}
+
+					owner = {
+						random_character = {
+							limit = {
+								unit ?= scope:unit_to_swap_temporarily
+							}
+							set_variable = {
+								name = commanding_unit
+								value = scope:unit_to_swap_temporarily
+							}
+						}
+					}
+					
+					change_unit_owner = scope:temporary_unit_owner
+					add_to_list = temporary_swapped_unit
+				}
+			}
+
 			create_sub_unit_with_owner = {
 				type = teleporting_army
 				owner = scope:controlling_country
@@ -580,6 +617,11 @@ spawn_army_at_portal_destination = {
 change_spawned_army_to_match_teleporting_army = {
 	scope:portal_arrival_location = {
 		random_unit_in_location = {
+			limit = {
+				any_sub_unit = {
+					sub_unit_type = unit_type:teleporting_army
+				}
+			}
 			save_scope_as = teleported_army
 		}
 	}
@@ -587,6 +629,24 @@ change_spawned_army_to_match_teleporting_army = {
 	if = {
 		limit = {
 			exists = scope:teleported_army
+		}
+		
+		every_in_list = {
+			list = temporary_swapped_unit
+			save_temporary_scope_as = temp_swapped_unit
+			change_unit_owner = scope:teleported_army.owner
+
+			scope:teleported_army.owner = {
+				random_character = {
+					limit = {
+						has_variable = commanding_unit
+						var:commanding_unit = scope:temp_swapped_unit
+					}
+					save_temporary_scope_as = commander_to_reinstate
+				}
+			}
+
+			set_as_commander = scope:commander_to_reinstate
 		}
 
 		every_sub_unit = {

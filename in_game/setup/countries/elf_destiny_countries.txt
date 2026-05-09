@@ -136,7 +136,7 @@ IML = {
 	culture_definition = deepwood_elven_culture
 	religion_definition = aeluran
 }
-SVN = {
+SRN = {
 	color = rgb { 108 37 84 }
 	color2 = rgb { 60 100 0 }
 	# male_regnal_names = {}

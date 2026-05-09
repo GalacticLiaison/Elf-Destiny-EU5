@@ -10,7 +10,6 @@
 		character_child_education = 1
 	}
 	country_modifier = {
-		# court_spending_cost = 0.01
 		global_calaquendi_estate_power = 0.01
 	}
 }
@@ -31,7 +30,6 @@ aeluran_education =
 		character_child_education = 0.75
 	}
 	country_modifier = {
-		# court_spending_cost = 0.01
 		# global_calaquendi_estate_power = 0.01
 	}
 }

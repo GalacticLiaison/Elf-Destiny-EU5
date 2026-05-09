@@ -1,7 +1,6 @@
 ﻿#### Levies ####
 a_early_fey_archers= {
-	category = army_infantry
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_light_infantry
 	upgrades_to = a_fey_archers
 
 	initiative = 4
@@ -27,10 +26,9 @@ a_early_fey_archers= {
 }
 
 a_fey_archers= {
-	category = army_infantry
-	copy_from = a_age_2_renaissance_infantry
+	copy_from = a_age_2_renaissance_light_infantry
 	upgrades_to = a_late_fey_archers
-	light = yes
+
 
 	initiative = 4
 	strength_damage_taken = -0.10
@@ -55,9 +53,8 @@ a_fey_archers= {
 }
 
 a_late_fey_archers = {
-	category = army_infantry
-	copy_from = a_age_3_discovery_infantry
-	light = yes
+	copy_from = a_age_3_discovery_light_infantry
+
 	
 	initiative = 4
 	strength_damage_taken = -0.20
@@ -83,8 +80,7 @@ a_late_fey_archers = {
 }
 
 a_early_elf_noble_lancers= {
-	category = army_cavalry
-	copy_from = a_age_1_traditions_cavalry
+	copy_from = a_age_1_traditions_heavy_cavalry
 	upgrades_to = a_elf_noble_lancers
 
 	initiative = 4
@@ -110,10 +106,8 @@ a_early_elf_noble_lancers= {
 }
 
 a_elf_noble_lancers= {
-	category = army_cavalry
-	copy_from = a_age_2_renaissance_cavalry
+	copy_from = a_age_2_renaissance_heavy_cavalry
 	upgrades_to = a_late_elf_noble_lancers
-	light = no
 
 	initiative = 5
 	strength_damage_taken = -0.55
@@ -141,9 +135,7 @@ a_elf_noble_lancers= {
 }
 
 a_late_elf_noble_lancers = {
-	category = army_cavalry
-	copy_from = a_age_3_discovery_cavalry
-	light = no
+	copy_from = a_age_3_discovery_heavy_cavalry
 	
 	initiative = 6
 	strength_damage_taken = -0.55
@@ -170,12 +162,8 @@ a_late_elf_noble_lancers = {
 	gfx_tags = { heavy_tag }
 }
 
-
-
 ranger_high_guard = {
-	category = army_infantry
-	copy_from = a_age_3_discovery_infantry
-	light = no
+	copy_from = a_age_3_discovery_heavy_infantry
 	
 	initiative = 6
 	strength_damage_taken = -0.20
@@ -206,7 +194,6 @@ ranger_high_guard = {
 #======
 
 a_age_1_aeluran_magi = {
-	category = army_magi
 	copy_from = a_age_1_traditions_magi
 
 	initiative = 3
@@ -214,7 +201,7 @@ a_age_1_aeluran_magi = {
 	buildable = no
 	levy = yes
 
-	light = yes
+
 	upgrades_to = a_age_2_aeluran_magi
 
 	maintenance_demand =  archer_infantry_maintenance
@@ -242,7 +229,7 @@ a_age_2_aeluran_magi = {
 	buildable = no
 	levy = yes
 
-	light = yes
+
 	upgrades_to = a_age_3_aeluran_magi
 
 	maintenance_demand =  archer_infantry_maintenance
@@ -270,7 +257,7 @@ a_age_3_aeluran_magi = {
 	buildable = no
 	levy = yes
 
-	light = yes
+
 	upgrades_to = a_age_4_aeluran_magi
 
 	maintenance_demand =  archer_infantry_maintenance
@@ -298,7 +285,7 @@ a_age_4_aeluran_magi = {
 	buildable = no
 	levy = yes
 
-	light = yes
+
 	upgrades_to = a_age_5_aeluran_magi
 
 	maintenance_demand =  archer_infantry_maintenance
@@ -323,7 +310,7 @@ a_age_5_aeluran_magi = {
 
 	initiative = 3
 	
-	light = yes
+
 	upgrades_to = a_age_6_aeluran_magi
 
 	buildable = no
@@ -416,10 +403,8 @@ calaquendi_high_magi = {
 
 #### Professional ####
 
-wolf_riders = {
-	category = army_cavalry
-	
-	copy_from = a_age_3_discovery_cavalry
+wolf_riders = {	
+	copy_from = a_age_3_discovery_heavy_cavalry
 	
 	combat_speed = 0.25
 
@@ -456,10 +441,8 @@ wolf_riders = {
 
 # Mythril Plated Horse Masters
 
-mythril_plated_fey_vanguard = {
-	category = army_infantry
-	
-	copy_from = a_age_4_reformation_infantry
+mythril_plated_fey_vanguard = {	
+	copy_from = a_age_4_reformation_heavy_infantry
 	
 	combat_speed = 0.25
 	strength_damage_taken = -0.85
@@ -495,10 +478,8 @@ mythril_plated_fey_vanguard = {
 	gfx_tags = { spear_tag medium_tag }
 }
 
-mythril_plated_horse_masters = {
-	category = army_cavalry
-	
-	copy_from = a_age_4_reformation_cavalry
+mythril_plated_horse_masters = {	
+	copy_from = a_age_4_reformation_heavy_cavalry
 	
 	combat_speed = 0.25
 	strength_damage_taken = -0.85

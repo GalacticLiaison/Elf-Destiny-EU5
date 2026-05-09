@@ -20,6 +20,7 @@ ascension_events.1 = {
 			}
 		}
 	}
+	outcome = neutral
 
 	image = "gfx/interface/illustrations/event/backgrounds/green_leaves.dds"
 
@@ -167,6 +168,7 @@ ascension_events.11 = { # Perform the ritual
 			desc = ascension_events.11.desc.solo
 		}
 	}
+	outcome = neutral
 
 	hide_portraits = yes
 
@@ -221,6 +223,7 @@ ascension_events.12 = { # report what happened
 		}
 		desc = ascension_events.12.desc.elf_level_display
 	}
+	outcome = neutral
 
 	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
 
@@ -426,6 +429,8 @@ ascension_events.2 = {
 	type = country_event
 	title = ascension_events.2.title
 	desc = ascension_events.2.desc
+	outcome = neutral
+
 	trigger = {
 
 	}
@@ -608,6 +613,8 @@ ascension_events.21 = {
 	type = country_event
 	title = ascension_events.21.title
 	desc = ascension_events.21.desc
+	outcome = neutral
+
 	trigger = {
 
 	}
@@ -630,6 +637,8 @@ ascension_events.211 = {
 	type = country_event
 	title = ascension_events.211.title
 	desc = ascension_events.211.desc
+	outcome = neutral
+
 	trigger = {
 
 	}
@@ -652,6 +661,8 @@ ascension_events.212 = {
 	type = country_event
 	title = ascension_events.212.title
 	desc = ascension_events.212.desc
+	outcome = neutral
+
 	trigger = {
 
 	}
@@ -672,6 +683,7 @@ ascension_events.22 = {
 	type = country_event
 	title = ascension_events.22.title
 	desc = ascension_events.22.desc
+	outcome = neutral
 
 	hide_portraits = yes
 

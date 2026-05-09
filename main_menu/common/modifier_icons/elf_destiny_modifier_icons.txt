@@ -241,6 +241,19 @@ mythril_elven_crafts_used_for_minting={
 	positive = "gfx/interface/icons/modifier_types/mythril_elven_crafts_impacts_inflation.dds" 
 }
 
+global_mythril_pop_demand= {
+	positive = "gfx/interface/icons/modifier_types/_default.dds" # Placeholder
+}
+global_lembas_pop_demand= {
+	positive = "gfx/interface/icons/modifier_types/_default.dds" # Placeholder
+}
+global_elven_crafts_pop_demand= {
+	positive = "gfx/interface/icons/modifier_types/_default.dds" # Placeholder
+}
+global_mythril_elven_crafts_pop_demand= {
+	positive = "gfx/interface/icons/modifier_types/_default.dds" # Placeholder
+}
+
 # army_magi_artillery_maintenance_cost_modifier = {
 # 	positive = "gfx/interface/icons/modifier_types/iron_positive.dds" 
 # }
@@ -357,9 +370,22 @@ local_the_rut_impact_modifier = {
 	positive = "gfx/interface/icons/disease/the_rut.dds"
 }
 
-the_rut_resistance_modifier = {
+local_the_rut_resistance_modifier = {
 	positive = "gfx/interface/icons/disease/the_rut.dds"
 }
+
+national_the_rut_resistance_modifier = {
+	positive = "gfx/interface/icons/disease/the_rut.dds"
+}
+
+local_the_rut_growth_modifier = {
+	positive = "gfx/interface/icons/modifier_types/the_rut_growth_modifier.dds"
+}
+
+national_the_rut_growth_modifier = {
+	positive = "gfx/interface/icons/modifier_types/the_rut_growth_modifier.dds"
+}
+
 
 expedition_price_cost_modifier = {
 	positive = "gfx/interface/icons/character_interactions/fund_expedition.dds"

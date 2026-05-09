@@ -85,7 +85,7 @@ the_rut = {
 		value = 0.008
 	}
 
-    location_infection_spread_threshold = {
+    location_spread_threshold = {
         value = 1 # hopefully a fail safe to keep it from spreading to non aeluran areas
     }
 

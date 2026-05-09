@@ -537,3 +537,14 @@ texticon = {
 		fontsize = 16
 	}
 }
+
+
+texticon = {
+	icon = grand_portal
+	iconsize = {
+		texture = "gfx/interface/icons/buildings/grand_portal.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}

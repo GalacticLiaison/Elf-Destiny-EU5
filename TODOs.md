@@ -109,3 +109,49 @@ Implement arctic modifers for North ELves
 - https://discord.com/channels/1179053540161880074/1179054158003839086/1484968710501568636
 
 Allow exploration missions does nothing everyone can do them, Maybe you wanted to have it "allow open sea exploration"?
+
+I realize now I didnt add a check to make sure they build the main hub first
+
+Also I wonder if you can select destination for teleportation on the map instead of text
+Colombian exchange interacts with the map
+
+I would like to complain about 1 thing tho to maybe you can somehow fix it. I'm playing a byzantine campaing from 1337-1837 and I have to say this pop up about the new matriarch has become a huge pain.. every month I have about 3-4 such pop ups and every year or two my game freezes and 20-50 
+
+
+It would be good to have a relatively cheep elven archer unit or something on top of the high quality units already in the mod.
+
+
+Portal Law
+- can owned portal populations freely exchange?
+    - add/subtract some pops between portal locations
+    - restricted option, allows plater control both in and out flow of population direction
+- Maybe add a button to enable it on portal screen
+- migration speed if unrestrictive
+
+Portal Treaty
+
+# Portal Network panel 
+Swap goods
+- create_trade/cancel_trade
+- or just add/subtract gold equivalent to value and add/subtract from markets each month 
+- use a generic action to select good
+
+transfer food
+
+warp units here button
+- opens genetic actions electing units on portal locations
+
+swap map mode colors between situation and actual teleport action 
+
+maybe make two icons, featuring the army symbol and the grand portal icons and arrows pointing direction of teleport, could use text icons
+
+can we color the button backgrounds purple? take inspiration from the military tab unit buttons
+
+handle rebellion
+marriage_union icon (royal amrriage?)
+
+generals with the enchantress trait can make an army change sides
+- massive religious influence cost
+- maybe only temporarily
+
+generals with heroic courage get some type of rally unit ability

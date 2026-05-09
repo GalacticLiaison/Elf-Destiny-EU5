@@ -212,8 +212,20 @@ retain_aeluran_advisors_effect = {
 
 aeluran_succession_effect = {
 	debug_log = "aeluran_succession_effect"
+
 	if = {
 		limit = {
+			exists = scope:target
+			scope:target = {
+				has_trait = aeluran_matriarch
+			}
+		}
+		debug_log = "aeluran_succession_effect aeluran_matriarch"
+		promote_random_matron_to_matriarch_effect = yes
+	}
+	else_if = {
+		limit = {
+			exists = scope:target
 			scope:target = {
 				has_trait = aeluran_matron
 			}
@@ -221,15 +233,6 @@ aeluran_succession_effect = {
 		debug_log = "aeluran_succession_effect aeluran_matron"
 		remove_list_global_variable = { name = aeluran_matrons target = scope:target }
 		promote_random_sister_to_matron_effect = yes
-	}
-	if = {
-		limit = {
-			scope:target = {
-				has_trait = aeluran_matriarch
-			}
-		}
-		debug_log = "aeluran_succession_effect aeluran_matriarch"
-		promote_random_matron_to_matriarch_effect = yes
 	}
 }
 
@@ -307,19 +310,20 @@ promote_random_matron_to_matriarch_effect = {
 
 	promote_random_sister_to_matron_effect = yes
 
-	every_country = {
-		limit = {
-			is_ai = no
-			religion = religion:aeluran
-			NOT = {
-				scope:new_matriarch.owner = this
-			}
-		}
+	# I believe this event was in the infinite matriarch notification bug, still no idea why
+	# every_country = {
+	# 	limit = {
+	# 		is_ai = no
+	# 		religion = religion:aeluran
+	# 		NOT = {
+	# 			scope:new_matriarch.owner = this
+	# 		}
+	# 	}
 
-		trigger_event_non_silently = {
-			id = aeluran_events.3
-		}
-	}
+	# 	trigger_event_non_silently = {
+	# 		id = aeluran_events.3
+	# 	}
+	# }
 
 	if = {
 		limit = {

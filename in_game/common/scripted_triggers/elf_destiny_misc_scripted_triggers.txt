@@ -25,6 +25,7 @@ is_aeluran_order = {
 eligible_to_be_aeluran_advisor = {
     is_aeluran_order = yes
     is_ruler = no
+    modifier:blocked_from_cabinet = no
     trigger_if = {
         limit = {
             root = { has_country_modifier = calaquendi_estate_blocked_from_cabinet }

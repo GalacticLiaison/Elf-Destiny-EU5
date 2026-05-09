@@ -3,6 +3,7 @@
 elf_destiny_story.99 = {
 	title = no_title
 	desc = no_desc
+	outcome = neutral
 	type = country_event
 
 	trigger = {
@@ -68,6 +69,7 @@ elf_destiny_story.1 = {
 			desc = elf_destiny_story.1.desc
 		}
 	}
+	outcome = neutral
 
 	trigger = {
 
@@ -117,6 +119,7 @@ elf_destiny_story.11 = {
 			desc = elf_destiny_story.11.desc
 		}
 	}
+	outcome = neutral
 
 	trigger = {
 
@@ -171,6 +174,7 @@ elf_destiny_story.2 = {
 	type = country_event
 	title = elf_destiny_story.2.title
 	desc = elf_destiny_story.2.desc
+	outcome = neutral
 	trigger = {
 
 	}
@@ -203,6 +207,7 @@ elf_destiny_story.21 = {
 	type = country_event
 	title = elf_destiny_story.21.title
 	desc = elf_destiny_story.21.desc
+	outcome = neutral
 	trigger = {
 
 	}
@@ -247,6 +252,7 @@ elf_destiny_story.22 = {
 			desc = elf_destiny_story.22.desc
 		}
 	}
+	outcome = neutral
 	
 	trigger = {
 
@@ -379,6 +385,7 @@ elf_destiny_story.23 = {
 			desc = elf_destiny_story.23.desc
 		}
 	}
+	outcome = neutral
 
 	trigger = {
 
@@ -486,6 +493,7 @@ elf_destiny_story.24 = {
 	type = country_event
 	title = elf_destiny_story.24.title
 	desc = elf_destiny_story.24.desc
+	outcome = neutral
 	trigger = {
 
 	}
@@ -535,6 +543,7 @@ elf_destiny_story.3 = { # A choice of Dreams
 	type = country_event
 	title = elf_destiny_story.3.title
 	desc = elf_destiny_story.3.desc
+	outcome = neutral
 	trigger = {
 
 	}
@@ -589,6 +598,7 @@ elf_destiny_story.4 = {
 	type = country_event
 	title = elf_destiny_story.4.title
 	desc = elf_destiny_story.4.desc
+	outcome = neutral
 	trigger = {
 
 	}
@@ -637,6 +647,8 @@ elf_destiny_story.41 = {
 			desc = elf_destiny_story.41.desc
 		}
 	}
+	outcome = neutral
+
 	trigger = {
 
 	}
@@ -670,6 +682,7 @@ elf_destiny_story.42 = {
 	type = country_event
 	title = elf_destiny_story.42.title
 	desc = elf_destiny_story.42.desc
+	outcome = neutral
 	trigger = {
 
 	}
@@ -705,7 +718,7 @@ elf_destiny_story.42 = {
 elf_destiny_story.43 = {
 	type = country_event
 	title = elf_destiny_story.43.title
-		desc = {
+	desc = {
 		first_valid = {
 			triggered_desc = {
 				desc = elf_destiny_story.43.desc.elven
@@ -716,6 +729,7 @@ elf_destiny_story.43 = {
 			desc = elf_destiny_story.43.desc
 		}
 	}
+	outcome = neutral
 	trigger = {
 
 	}
@@ -782,6 +796,7 @@ elf_destiny_story.5 = { # confirm?
 	type = country_event
 	title = elf_destiny_story.5.title
 	desc = elf_destiny_story.5.desc
+	outcome = neutral
 	trigger = {
 
 	}
@@ -827,6 +842,7 @@ elf_destiny_story.51 = { # Portal ruins have arrived!
 	type = country_event
 	title = elf_destiny_story.51.title
 	desc = elf_destiny_story.51.desc
+	outcome = neutral
 	trigger = {
 
 	}
@@ -871,6 +887,7 @@ elf_destiny_story.52 = { # Start repairs
 	type = country_event
 	title = elf_destiny_story.52.title
 	desc = elf_destiny_story.52.desc
+	outcome = neutral
 	trigger = {
 
 	}
@@ -892,20 +909,34 @@ elf_destiny_story.52 = { # Start repairs
 	option = {
 		name = elf_destiny_story.52.a
 
-		hidden_effect = {
-			random_location_in_the_world = {
-				limit = {
-					has_building_with_at_least_one_level = grand_portal_ruins
-				}
-
+		if = {
+			limit = {
+				exists = scope:portal_ruins_location
+			}
+			scope:portal_ruins_location ?= {
 				destroy_all_buildings_of_type = building_type:grand_portal_ruins
+
+				construct_building = {
+					building_type = building_type:grand_portal
+				}
 			}
 		}
-		capital = {
-			construct_building = {
-				building_type = building_type:grand_portal
+		else = {
+			hidden_effect = {
+				random_location_in_the_world = {
+					limit = {
+						has_building_with_at_least_one_level = grand_portal_ruins
+					}
+
+					destroy_all_buildings_of_type = building_type:grand_portal_ruins
+
+					construct_building = {
+						building_type = building_type:grand_portal
+					}
+				}
 			}
 		}
+
 		trigger_event_silently = {
 			id = elf_destiny_story.53
 			days = huge_unique_build_time
@@ -921,6 +952,7 @@ elf_destiny_story.53 = { # Portal Restored!
 	type = country_event
 	title = elf_destiny_story.53.title
 	desc = elf_destiny_story.53.desc
+	outcome = neutral
 	trigger = {
 
 	}
@@ -979,6 +1011,7 @@ elf_destiny_story.54 = { # Thanks for Playing!
 	type = country_event
 	title = elf_destiny_story.54.title
 	desc = elf_destiny_story.54.desc
+	outcome = neutral
 	trigger = {
 
 	}

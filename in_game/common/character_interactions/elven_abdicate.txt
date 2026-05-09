@@ -25,7 +25,7 @@
 
 	potential = {
 		scope:actor = {
-			ruler = {
+			ruler ?= {
 				is_any_elf_type = yes
 			}
 		}

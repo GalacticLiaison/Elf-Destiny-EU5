@@ -508,7 +508,7 @@ countries = {
 			include = "elf_culture_deepwood_elven_opinions"
 		}
 
-		SVN = { # ponil - Silivren
+		SRN = { # ponil - Silivren
 			capital = ponil
 
 			own_control_core = {

@@ -41,38 +41,144 @@
 # 	}
 
 # 	effect = {
+# 		# scope:actor = {
+# 		# 	# add_stability = 100
+# 		# 	add_religious_influence = 5
+# 		# 	research_advance = advance_type:grand_portal_restored
+# 		# }
+
+# 		# set_global_variable = {
+# 		# 	name = portal_restored
+# 		# 	value = yes
+# 		# }
+
 # 		scope:actor = {
 # 			# add_stability = 100
-# 			add_religious_influence = 5
-# 			research_advance = advance_type:grand_portal_restored
+# 			capital = {
+# 				construct_building = {
+# 					building_type = building_type:grand_portal
+# 					cost_multiplier = 0
+# 					cost_multiplier_reason = "grand_portal_cha_cha_cha"
+# 					instant = yes	
+# 				}
+# 			}
+
+# 			# location:ukhta = {
+# 			# 	construct_building = {
+# 			# 		building_type = building_type:lesser_portal_node
+# 			# 		cost_multiplier = 0
+# 			# 		cost_multiplier_reason = "grand_portal_cha_cha_cha"
+# 			# 		instant = yes	
+# 			# 	}
+# 			# }
 # 		}
 
+# 		# clear_global_variable_list = portal_network_locations
 
-# 		# scope:recipient = {
-# 		# 	# set_variable = {
-# 		# 	# 	name = trait_score
-# 		# 	# 	value = inherited_beauty_trait_score 
+# 		# every_country = {
+# 		# 	# limit = {
+# 		# 	# 	# is_elven_country = yes
+# 		# 	# 	OR = {
+# 		# 	# 		this = scope:unit_to_teleport.owner
+# 		# 	# 		in_union_with = scope:unit_to_teleport.owner
+# 		# 	# 		in_marriage_union_with = scope:unit_to_teleport.owner
+# 		# 	# 		is_fighting_war_together_with = scope:unit_to_teleport.owner
+# 		# 	# 		is_subject_or_below_of = scope:unit_to_teleport.owner
+# 		# 	# 	}
 # 		# 	# }
+# 		# 	# save_temporary_scope_as = country_with_portal_location
+# 		# 	every_province = {
+# 		# 		limit = {
+# 		# 			any_location_in_province = {
+# 		# 				OR = {
+# 		# 					has_building = building_type:grand_portal
+# 		# 					has_building = building_type:prime_portal_hub
+# 		# 					has_building = building_type:lesser_portal_node
+# 		# 				}
+# 		# 				# NOT = {
+# 		# 				# 	scope:portal_origin_location = this
+# 		# 				# }
+# 		# 				# is_owned_or_owned_by_subjects_or_below_of = scope:country_with_portal_location
+# 		# 			}
+# 		# 		}
+# 		# 		every_location_in_province = {
+# 		# 			limit = {
+# 		# 				OR = {
+# 		# 					has_building = building_type:grand_portal
+# 		# 					has_building = building_type:prime_portal_hub
+# 		# 					has_building = building_type:lesser_portal_node
+# 		# 				}
+# 		# 				# NOT = {
+# 		# 				# 	scope:portal_origin_location = this
+# 		# 				# }
 
-# 		# 	# genetic_inheritance_effect = yes
-# 		# 	use_fake_random_effect = { function_name = genetic_inheritance_effect }
+# 		# 			# 	is_owned_or_owned_by_subjects_or_below_of = scope:country_with_portal_location
+# 		# 			}
 
-# 		# 	# set_variable = {
-# 		# 	# 	name = trait_score
-# 		# 	# 	value = inherited_$trait$_trait_score 
-# 		# 	# }
+# 		# 			if = {
+# 		# 				limit = {
+# 		# 					has_building = building_type:grand_portal
+# 		# 				}
+# 		# 				set_variable = {
+# 		# 					name = portal_building_type
+# 		# 					value = building_type:grand_portal
+# 		# 				}
+# 		# 			}
+# 		# 			else_if = {
+# 		# 				limit = {
+# 		# 					has_building = building_type:prime_portal_hub
+# 		# 				}
+# 		# 				set_variable = {
+# 		# 					name = portal_building_type
+# 		# 					value = building_type:prime_portal_hub
+# 		# 				}
+# 		# 			}
+# 		# 			else_if = {
+# 		# 				limit = {
+# 		# 					has_building = building_type:lesser_portal_node
+# 		# 				}
+# 		# 				set_variable = {
+# 		# 					name = portal_building_type
+# 		# 					value = building_type:lesser_portal_node
+# 		# 				}
+# 		# 			}
 
-# 		# 	# leveled_trait_inheritance = {trait = beauty} 
+# 		# 			add_to_global_variable_list = {
+# 		# 				name = portal_network_locations
+# 		# 				target = this 
+# 		# 			}
 
-# 		# 	# clear_variable_list = genetic_traits
-# 		# }
-
-		
-# 		# scope:actor = {
-# 		# 	trigger_event_non_silently = {
-# 		# 		id = elf_destiny_expedition.3
+# 		# 			# save_temporary_scope_as = potential_destination
+# 		# 			# save_temporary_scope_value_as = {
+# 		# 			# 	name = teleportation_distance
+# 		# 			# 	value = "distance_to_squared(scope:portal_origin_location)"
+# 		# 			# 	# value = 99999999
+# 		# 			# } 	
+# 		# 			# if = {
+# 		# 			# 	limit = {
+# 		# 			# 		scope:unit_to_teleport.owner.religious_influence >= portal_transportation_cost_raw
+# 		# 			# 		# scope:unit_to_teleport.owner.religious_influence >= 1
+# 		# 			# 	}
+# 		# 			# 	add_to_list = portal_locations
+# 		# 			# }
+# 		# 		}
 # 		# 	}
 # 		# }
+
+# 		# scope:actor = {
+# 		# 	random_character = {
+# 		# 		limit = {
+# 		# 			is_general = yes
+# 		# 		}
+# 		# 		save_scope_as = the_general
+# 		# 		location = {
+# 		# 			save_scope_as = generals_location
+# 		# 		}
+# 		# 	}
+# 		# }
+
+# 		# debug_log = "GENERALS LOCATION"
+# 		# debug_log_scopes = yes
 # 	}
 
 #    ai_will_do = {

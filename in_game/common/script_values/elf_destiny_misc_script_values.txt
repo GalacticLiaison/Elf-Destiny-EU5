@@ -78,3 +78,8 @@ portal_transportation_cost = {
     value = portal_transportation_cost_raw
     multiply = -1
 }
+
+negative_price_modifier = {
+    value = scope:price_modifier
+    multiply = -1
+}

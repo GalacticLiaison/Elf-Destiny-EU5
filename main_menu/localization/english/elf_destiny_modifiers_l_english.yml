@@ -100,6 +100,15 @@
  MODIFIER_TYPE_NAME_mythril_elven_crafts_used_for_minting: "Mythril Elven Crafts Used for Coins"
  MODIFIER_TYPE_DESC_mythril_elven_crafts_used_for_minting: "This determines if [ShowGoodsName('mythril_elven_crafts')] is used for coins in the [country|e]."
 
+ MODIFIER_TYPE_NAME_global_mythril_pop_demand: "Global [ShowGoodsNameWithNoTooltip('mythril')] Demand"
+ MODIFIER_TYPE_DESC_global_mythril_pop_demand: "This modifies the [pop_needs|e] of the [ShowGoodsName('mythril')] [produced_good|e]."
+ MODIFIER_TYPE_NAME_global_lembas_pop_demand: "Global [ShowGoodsNameWithNoTooltip('lembas')] Demand"
+ MODIFIER_TYPE_DESC_global_lembas_pop_demand: "This modifies the [pop_needs|e] of the [ShowGoodsName('lembas')] [produced_good|e]."
+ MODIFIER_TYPE_NAME_global_elven_crafts_pop_demand: "Global [ShowGoodsNameWithNoTooltip('elven_crafts')] Demand"
+ MODIFIER_TYPE_DESC_global_elven_crafts_pop_demand: "This modifies the [pop_needs|e] of the [ShowGoodsName('elven_crafts')] [produced_good|e]."
+ MODIFIER_TYPE_NAME_global_mythril_elven_crafts_pop_demand: "Global [ShowGoodsNameWithNoTooltip('mythril_elven_crafts')] Demand"
+ MODIFIER_TYPE_DESC_global_mythril_elven_crafts_pop_demand: "This modifies the [pop_needs|e] of the [ShowGoodsName('mythril_elven_crafts')] [produced_good|e]."
+
  MODIFIER_TYPE_NAME_aeluran_advisor_appointed: "Aeluran Advisor Joins Cabinet"
  MODIFIER_TYPE_DESC_aeluran_advisor_appointed: "A red sister appointed by the Aeluran Order will be appointed to your cabinet as an advisor. Their office is permanent and can only be removed on the authority of the High Matriarch herself."
 
@@ -156,8 +165,16 @@
 
  MODIFIER_TYPE_NAME_local_the_rut_impact_modifier: "Local The Rut Impact Modifier"
  MODIFIER_TYPE_DESC_local_the_rut_impact_modifier: "How much the Rut outbreak affects [locations|e]."
- MODIFIER_TYPE_NAME_the_rut_resistance_modifier: "The Rut Resistance Modifier"
- MODIFIER_TYPE_DESC_the_rut_resistance_modifier: "Resistance to The Rut throughout the [country|e]."
+
+ MODIFIER_TYPE_NAME_national_the_rut_growth_modifier: "The Rut Growth"
+ MODIFIER_TYPE_DESC_national_the_rut_growth_modifier: "Growth of The Rut throughout the [country|e]."
+ MODIFIER_TYPE_NAME_local_the_rut_growth_modifier: "The Rut Growth"
+ MODIFIER_TYPE_DESC_local_the_rut_growth_modifier: "Growth of The Rut in a [location|e]."
+
+ MODIFIER_TYPE_NAME_local_the_rut_resistance_modifier: "The Rut Resistance Modifier"
+ MODIFIER_TYPE_DESC_local_the_rut_resistance_modifier: "Resistance to The Rut in a [location|e]."
+ MODIFIER_TYPE_NAME_national_the_rut_resistance_modifier: "The Rut Resistance Modifier"
+ MODIFIER_TYPE_DESC_national_the_rut_resistance_modifier: "Resistance to The Rut throughout the [country|e]."
 
  MODIFIER_TYPE_NAME_expedition_price_cost_modifier: "Expedition Price Cost Modifier"
  MODIFIER_TYPE_DESC_expedition_price_cost_modifier: "This impacts the [costs|e] for the [ShowCharacterInteractionName('fund_expedition')] [character_interaction|e]."
@@ -301,6 +318,7 @@
 
  AUTO_MODIFIER_NAME_calaquendi_percentage_in_country: "Calaquendi Percentage In Country"
  AUTO_MODIFIER_NAME_elf_destiny_country_base_values: "Base Value for Every [country|e]"
+ AUTO_MODIFIER_NAME_elf_destiny_country_base_values_gated: "Base Value for Every Elven [country|e]"
  AUTO_MODIFIER_NAME_elf_destiny_elven_racism: "[ancient_culture|e]"
 
 

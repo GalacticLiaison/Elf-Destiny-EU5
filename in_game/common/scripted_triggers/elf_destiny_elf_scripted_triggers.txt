@@ -53,7 +53,7 @@ has_any_elven_bloodline = {
 
 has_racial_trait = {
 	has_variable = character_race 
-	var:character_race = trait:$trait$
+	var:character_race ?= trait:$trait$
 }
 
 

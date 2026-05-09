@@ -1,8 +1,8 @@
 ﻿cb_human_slave_raiding = {
-	visible = { 
+	create_visible = { 
         modifier:raid_for_humans = yes 
     }
-	allow_creation = {
+	create_enabled = {
         ruler = {
             is_any_elf_type = yes
         }

@@ -1,23 +1,13 @@
 ﻿INJECT:pop_demand = {
-	elven_crafts = {
-		value = 1		
-	}
-	
-	lembas = {
-		value = 1		
-	}
-
-	mythril = {
-		value = 1		
-	}
-
-	mythril_elven_crafts = {
-		value = 1		
-	}	
+	elven_crafts = 1
+	lembas = 1
+	mythril = 1
+	mythril_elven_crafts = 1	
 }
 
 calaquendi_demand = {
 	hidden = yes
+	copy_from = pop_demand
 	category = pop_needs
 }
 

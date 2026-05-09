@@ -1,0 +1,1035 @@
+situation_panel = {
+
+	##################################### TOP HEADER #####################################
+
+	##################################### MAIN IMAGE #####################################
+
+	##################################### TAB NAME #####################################
+
+
+	##################################### SUBHEADER #####################################
+
+	blockoverride "situation_subheader_content"{}
+
+	blockoverride "panel_subheader" {}
+
+	blockoverride "situation_header_center" {
+		# visible = yes
+		expand = {}
+	}
+
+	blockoverride "situation_panel_breakdown_text" {
+		hbox = {
+			# margin_left = 7
+			spacing = 5
+			layoutpolicy_horizontal = expanding
+			using = bg_number_container_bckg
+			blockoverride "number_container_extra" {
+				margin = {-2 -2}
+				alpha = 0.4
+			}
+			using = bg_frame_squared_brown
+			# tooltipwidget = { using = religious_influence_tooltip }
+
+			expand = {}
+			icon = {
+				size = {32 32}
+				using = icon_church_power
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.6
+				}
+			}
+
+			text_single = {													
+				align = nobaseline
+				text = "[religious_influence|e]:"
+			}
+
+			text_single = {
+				align = nobaseline
+				text = "[Player.GetCurrencyValue('religious_influence')|W] [Player.GetModifierValueNoFormat('monthly_religious_influence')|V]"
+			}
+
+			expand = {}
+		}
+	}
+
+	##################################### MAIN CONTENT #####################################
+
+	blockoverride "situation_panel_main_content" {
+
+		situation_card_common = {
+			blockoverride "common_header_icon_texture" {
+				texture = "gfx/interface/icons/modifiers/locations.dds"
+				
+			}
+			blockoverride "common_header_text" {
+				text = "PORTAL_NETWORK_LOCATIONS"
+			}
+			blockoverride "common_bottom_content" {
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					# spacing = 0
+					# size = { 400 400 }
+					datacontext = "[Player]"
+					
+					vbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						datamodel = "[GetGlobalList('portal_network_locations')]"
+
+						item = {
+							# text_single = {
+							# 	using = layoutpolicy_expanding
+							# 	# autoresize = no
+							# 	align = nobaseline
+							# 	default_format = "#yellow_titles"
+							# 	text = "[Scope.GetLocation.GetName]"
+							# }
+							# hbox = {
+							# 	# datamodel = "[Scope.GetLocation.GetCountry]"
+
+							# 	country_flag_small = {
+							# 		# datamodel = "[Scope.GetLocation.GetOwner]"
+
+							# 		datacontext = "[Scope.GetLocation.GetOwner]"
+
+							# 	}
+							# }
+
+							using = portal_locations_card
+						}
+					}
+
+					expand = {}
+				}
+				expand = {}
+			}
+		}
+
+		# situation_card_actions = {
+		# 	blockoverride "card_header_text" {
+		# 		raw_text = "Situation Card vertical buttons layout example"
+		# 	}
+		# }
+
+		# situation_fancy_two_line_card = {}
+	}
+}
+
+
+template portal_locations_card {
+	vbox = {
+		layoutpolicy_horizontal = expanding
+        # layoutpolicy_vertical = expanding
+		# parentanchor = left
+		spacing = 7
+		# margin = { 0 10 }
+		# enabled = "[ObjectsEqual(Scope.GetLocation.GetOwner, Player)]"
+
+		using = armies_available_to_teleport
+	}
+}
+
+template armies_available_to_teleport {
+	hbox = {
+		layoutpolicy_horizontal = expanding
+        # layoutpolicy_vertical = expanding
+		# size = { 100% 100% }
+		spacing = 12
+
+		background = {
+			using = color_black_texture
+			alpha = 0.2
+			margin = { 1 1 }
+		}
+		hbox = {
+			spacing = 5
+			
+			country_flag_small = {
+				datacontext = "[Scope.GetLocation.GetOwner]"
+
+			}
+			text_single = {
+				using = Font_Size_Medium
+				text = "[Scope.GetLocation.GetOwner.GetName]"
+			}
+			icon = {
+				# visible = "[Player.GetDiplomacy.GetOverlord]"
+				visible = "[ObjectsEqual(Country.Self, Scope.GetLocation.GetOwner.GetDiplomacy.GetOverlord.Self)]"
+				# visible = "[ObjectsEqual(Unit.GetLocation.Self, Scope.GetLocation.Self)]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/flat_icons/overlord.dds"
+				# parentanchor = center
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.7
+				}
+			}
+
+			icon = {
+				# visible = "[Player.GetDiplomacy.GetOverlord]"
+				datacontext = "[GetScriptedGui( 'in_union_together' )]"
+				visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(Scope.GetLocation.MakeScope).AddScope( 'player_country_scope', Country.MakeScope).End)]"
+				# visible = "[ObjectsEqual(Unit.GetLocation.Self, Scope.GetLocation.Self)]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/modifier_types/union.dds" 
+				# parentanchor = center
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.7
+				}
+			}
+
+			icon = {
+				# visible = "[Player.GetDiplomacy.GetOverlord]"
+				datacontext = "[GetScriptedGui( 'has_alliance' )]"
+				visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(Scope.GetLocation.MakeScope).AddScope( 'player_country_scope', Country.MakeScope).End)]"
+				# visible = "[ObjectsEqual(Unit.GetLocation.Self, Scope.GetLocation.Self)]"
+				size = { 30 30 }
+				texture = "gfx/interface/icons/diplomatic_status/alliance.dds" 
+				# parentanchor = center
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.7
+				}
+			}
+		}
+		expand = {}
+
+		hbox = {
+			spacing = 5
+			margin_right = 5
+			icon = {
+				size = { 20 20 }
+				# layoutpolicy_vertical = fixed
+				# layoutpolicy_horizontal = fixed
+				# texture = "[GetGoodsIcon(Scope.GetGoods.Self)]"
+				texture = "[Scope.GetLocation.GetRankIcon]"
+				
+			}
+			text_single = {
+				# layoutpolicy_horizontal = fixed
+				# align = nobaseline
+				# size = { 50 20 }
+				text = "[Scope.GetLocation.GetName]"
+			}
+			button = {
+				# parentanchor = right|vcenter
+
+				size = { 25 25 }
+				texture = "gfx/interface/icons/unit_actions/go_to.dds"
+
+				modify_texture = {
+					using = color_white_texture
+					alpha = 0.1
+				}
+
+				# action_tooltip = {
+				# 	title = "GO_TO_CAPITAL_TEXT"
+				# 	on_action = "[PanToLocation(Scope.GetLocation.Self)]"
+				# }
+
+				onclick = "[PanToLocation(Scope.GetLocation.Self)]"
+
+				tooltipwidget = { BasicFunctionalTooltip = {} }
+				using = snd_UI_backward
+			}
+		}
+
+		using = portal_building_type
+	}
+
+	hbox = {
+		layoutpolicy_horizontal = expanding
+        layoutpolicy_vertical = expanding
+
+		# datacontext = "[GetScriptedGui( 'portal_location_valid' )]"
+		# enabled = "[ScriptedGui.IsShown(GuiScope.SetRoot(Scope.GetLocation.MakeScope).AddScope( 'player_country_scope', Country.MakeScope).End)]"
+
+		datacontext = "[GetScriptedGui( 'portal_location_valid' )]"
+
+		visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(Scope.GetLocation.MakeScope).AddScope( 'player_country_scope', Country.MakeScope).End)]"
+
+		size = {0 45}
+
+		# background = {
+		# 	margin = { 2 2 }
+		# 	margin_bottom = 6
+		# 	margin_right = 6
+		# 	texture = "gfx/editor_gui/editor_dropdown_list.dds"
+		# 	spriteType = CorneredStretched
+		# 	spriteborder = { 6 6 }
+		# 	spriteborder_right = 8
+		# 	spriteborder_bottom = 8
+		# 	shaderfile = "gfx/FX/pdxgui_default.shader"
+		# }
+
+		datacontext = "[GetGenericAction('portal_network_teleport_to_location')]"
+		action_button_diamond  = {
+			size = { 50% 100% }
+
+			glow = {
+				name = "glowing"
+				glow_radius = 8
+				color = { 0.3 0.3 0.6 1 }
+				alpha = 0.5
+			}
+			using = Animation_Glow_Pulse
+
+			blockoverride "button_regular_diamond_texture" {
+				using = button_event_special_diamond_purple_texture
+			}
+
+			# parentanchor = center
+			# text = "[GenericAction.GetNameWithNoTooltip]"
+			text = "teleport_units_here"
+			title = "[GenericAction.GetName]"
+			actor = "[SituationView.GetPlayer]"
+			parameter = {
+				parameter_name = "recipient"
+				parameter_value = "[Scope.GetLocation.MakeScope]"
+			}
+			left_action = { action_name = "[GenericAction.GetLeftClickKey]" }
+			left_click_and_hold_action = { action_name = "[GenericAction.GetLeftClickAndHoldKey]" }
+			# block "situation_actions_tooltip_override" {
+				tooltipwidget = {
+					ContextualTooltipType = {
+						blockoverride "title_text" {
+							text = "[GenericAction.GetNameWithNoTooltip]"
+						}
+				
+						blockoverride "concept_link" {
+							text = "[situation|e]"
+						}
+						
+						blockoverride "title_icon" {
+							icon = {
+								using = tooltip_title_icon_size
+								texture = "[SituationView.GetActiveSituation.GetIcon]"
+							}
+						}
+						
+						blockoverride "tooltip_content" {
+							using = action_tooltip_inner_content
+							blockoverride "conditions_list" {
+							}
+						}
+					}
+				}
+			# }
+		}
+	}
+
+	vbox = {
+		visible = "[DataModelHasItems(Country.GetUnits)]"	
+		datamodel = "[Country.GetUnits]"
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+		margin_top = 7
+		# margin_bottom = 14
+		spacing = 10
+		# flipdirection = yes
+
+		# addcolumn = 40
+		# addrow = 40
+		# setitemsizefromcell = yes
+
+		item = {
+			# visible = "[ObjectsEqual(Unit.GetLocation, Scope.GetLocation)]"
+			# hbox = {
+			# 	visible = "[ObjectsEqual(Unit.GetLocation.Self, Scope.GetLocation.Self)]"
+
+			# 	text_single = {
+			# 		using = layoutpolicy_expanding
+			# 		# autoresize = no
+			# 		# align = nobaseline
+			# 		default_format = "#yellow_titles"
+			# 		text = "1 [Scope.GetLocation.GetName]"
+			# 	}
+			# 	text_single = {
+			# 		using = layoutpolicy_expanding
+			# 		# autoresize = no
+			# 		# align = nobaseline
+			# 		default_format = "#yellow_titles"
+			# 		text = "2 [Unit.GetLocation.GetName]"
+			# 	}
+			# }
+			hbox = {
+				visible = "[ObjectsEqual(Unit.GetLocation.Self, Scope.GetLocation.Self)]"
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				margin_left = 3
+				# margin_top = 8
+				spacing = 5
+
+
+				background = {
+					margin = { 2 2 }
+					margin_bottom = 6
+					margin_right = 6
+					texture = "gfx/editor_gui/editor_dropdown_list.dds"
+					spriteType = CorneredStretched
+					spriteborder = { 6 6 }
+					spriteborder_right = 8
+					spriteborder_bottom = 8
+					shaderfile = "gfx/FX/pdxgui_default.shader"
+				}
+
+				# COMMANDER
+				widget = {
+					size = { 67 72 }
+					datacontext = "[Unit.GetCommander]"
+					using = character_portrait_bg
+
+					# Without Commander
+					block "unit_card_empty_portrait" {
+						character_frame_small = {
+							blockoverride "character_frame_enable" {}
+							visible = "[Not(Unit.HasLeader)]"
+							blockoverride "portrait_datacontext" {
+								datacontext = "[Unit.GetCommander]"
+							}			
+							blockoverride "character_frame_size" {
+								size = { 67 72 }
+							}
+
+							blockoverride "portrait_widget" {
+								portrait_standard_head_framed_button = {
+									
+									size = { 100% 100% }
+									blockoverride "character_tooltip" {
+										tooltipwidget = { BasicFunctionalTooltip = {} }
+									}
+				
+									blockoverride "portrait_click" {
+										action_tooltip = {
+											visible = "[Unit.IsArmy]"
+											click_type = left
+											click_mode = single
+											title = "CLICK_TO_REPLACE" 
+											enabled = "[Unit.CanReplaceLeader]"
+											description = "[Unit.CanReplaceLeaderInfo]"
+											on_action = "[SetupSelectCommanderLeft(Unit.Self)]"
+											cursor = "character_menu"
+										}
+				
+										action_tooltip = {
+											visible = "[Not(Unit.IsArmy)]"
+											click_type = left
+											click_mode = single
+											title = "CLICK_TO_REPLACE_ADMIRAL" 
+											enabled = "[Unit.CanReplaceLeader]"
+											description = "[Unit.CanReplaceLeaderInfo]"
+											on_action = "[SetupSelectCommanderLeft(Unit.Self)]"
+											cursor = "character_menu"
+										}
+									}
+									
+									blockoverride "character_contextmenu"{}
+									blockoverride "rightclick"{}
+									blockoverride "hover"{}
+								}
+							}
+						}
+					}
+
+					# With Commander
+					character_frame_small = {
+						visible = "[Unit.HasLeader]"
+						enabled = "[Unit.GetCommander.CanGiveUnitBonus]"
+						blockoverride "portrait_datacontext" {
+							datacontext = "[Unit.GetCommander]"
+						}
+						blockoverride "character_frame_size" {
+							size = { 67 72 }
+						}
+						# blockoverride "character_frame_dynasty_visible" {
+						# 	visible = no
+						# }
+						blockoverride "character_frame_estate_visible" {
+							visible = no
+						}
+					}
+				}
+
+
+
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+
+						# maximumsize = { 150 25 }
+
+
+						hbox = {
+							layoutpolicy_horizontal = expanding
+							# layoutpolicy_vertical = expanding
+							block "name_sort_highlight" {}
+							using = bg_paper_card
+							using = bg_card_header_01_military
+
+							
+
+
+							# margin = {5 0}
+							# spacing = 5
+
+							# TOGGLE
+							# button = {
+
+							# 	action_tooltip = {
+							# 		click_type = left
+							# 		click_mode = single
+							# 		title = "TOGGLE_UNIT_SELECTION_TT"
+							# 		on_action = "[ToggleSelectUnit(Unit.Self)]"
+							# 	}
+
+							# 	action_tooltip = {
+							# 		click_type = right
+							# 		click_mode = single
+							# 		title = "TOGGLE_ALL"
+							# 		on_action = "[SelectAllPlayerUnits(Unit.IsArmy)]"
+							# 	}
+
+							# 	tooltipwidget = {
+							# 		BasicFunctionalTooltip = {
+							# 		}
+							# 	}
+							# 	button_checkbox = {
+							# 		size = { 100% 100% }
+							# 		checked = "[IsUnitSelected(Unit.Self)]"
+							# 		alwaystransparent = yes
+							# 	}
+							# }
+
+							expand = {}
+								
+							text_single = {
+								margin_left = 5
+								using = layoutpolicy_expanding
+								# autoresize = no
+								align = nobaseline
+								default_format = "#yellow_titles"
+								text = "[Unit.GetNameWithNoTooltip]"
+							}
+
+							# expand = {}
+						}
+
+						hbox = {
+							margin = { 5 0 }
+							margin_bottom = 2
+							spacing = 3
+							# FOOD
+							piechart = {
+								size = { 20 20 }
+
+								using = piechart_angles
+
+								icon = {
+									texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+									size = { 97% 97% }
+									parentanchor = center
+									color = { 0 0 0 1 }
+								}
+
+								pieslice = {
+									texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+									value = "[Unit.GetFoodPercentage]"
+									color = { 0.3 0.8 0.3 1 }
+									alpha = 0.8
+								}
+
+								pieslice = {
+									texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+									value = "[Subtract_float('(float)100.0', Unit.GetFoodPercentage)]"
+									color = { 0.3 0.3 0.3 1 }
+									alpha = 0.8
+								}
+
+								icon = {
+									parentanchor = center
+									size = { 57% 57% }
+									texture = "gfx/interface/icons/unit_view/food.dds"
+									texture_density = 2
+									alpha = 1
+
+									glow = {
+										name = "drop_shadow"
+										glow_radius = 3
+										color = {0.0 0.0 0.0 1.0}
+										alpha = 0.3
+									}
+								}
+
+								using = bg_circle_piechart
+
+								# widget = {
+								# 	parentanchor = bottom|right
+								# 	position = { -2 -8 }
+
+								# 	icon = {
+								# 		visible = "[Not(Unit.IsGainingFood)]"
+
+								# 		size = { 10 10 }
+								# 		mirror = vertical
+
+								# 		texture = "gfx/interface/icons/flat_icons/arrow.dds"
+
+								# 		modify_texture = {
+								# 			using = color_red_texture
+								# 		}
+								# 	}
+
+								# 	icon = {
+								# 		visible = "[Unit.IsGainingFood]"
+
+								# 		size = { 10 10 }
+
+								# 		texture = "gfx/interface/icons/flat_icons/arrow.dds"
+
+								# 		modify_texture = {
+								# 			using = color_light_green_texture
+								# 		}
+								# 	}
+								# }
+								
+								tooltipwidget = {
+									using = UnitFood_tooltip
+								}
+							}
+
+							vbox = {
+								hbox = {
+									spacing = 3
+									# ARMY STRENGTH
+									hbox = {
+										visible = "[Unit.IsArmy]"
+										spacing = 2
+										tooltipmeta = {
+											texture = "gfx/interface/icons/unit_actions/reinforcement_rate.dds"
+										}
+										tooltipwidget = {
+											using = reinforcement_rate_tootlip
+										}
+
+										text_single = {
+											text = "[Unit.GetVisualStrength]"
+											align = right|nobaseline
+											autoresize = no
+											size = { 30 16}
+										}
+										icon = {
+											size = { 16 16 }
+											using = army_strength_texture
+											texture_density = 2
+										}
+
+										block "strength_sort_highlight" {}
+									}
+
+									# Regiments
+									hbox = {
+										spacing = 2
+										text_single = {
+											text = "[GetDataModelSize(Unit.GetSubUnits)]"
+											using = Font_Size_Small
+											
+											align = right|nobaseline
+											autoresize = no
+											size = { 20 16}
+										}
+
+										icon = {
+											size = { 16 16 }
+											# block "count_icon" {
+												using = unit_formation_texture
+											# }
+											glow = {
+												name = "drop_shadow"
+												glow_radius = 3
+												color = {0.0 0.0 0.0 1.0}
+												alpha = 0.3
+											}
+										}
+
+										block "size_sort_highlight" {}
+										
+										block "ships_sort_highlight" {}
+									}
+
+									# NAVY BLOCKADE
+									hbox = {
+										visible = "[Unit.IsNavy]"
+										spacing = 2
+										tooltipwidget = {
+											using = UnitBlockade_tooltip
+										}
+										text_single = {
+											text = "[Unit.GetAccumulatedUnitStat('blockade_capacity')]"
+											align = right|nobaseline
+											autoresize = no
+											size = { 30 16}
+										}
+										icon = {
+											size = { 16 16 }
+											texture = "gfx/interface/icons/location_icons/coastal_blockade.dds"
+											texture_density = 2
+										}
+									}
+								}
+
+								progressbar = {
+									visible = "[Unit.HasMaximumMaintenance]"
+									tooltipwidget = {
+										using = UnitMorale_tooltip
+									}
+									layoutpolicy_horizontal = expanding
+									size = { -1 5 }
+									using = progress_bar_green_alt
+									min = 0
+									max = "[Unit.GetMaxMoraleFloat]"
+									value = "[Unit.GetMoraleFloat]"
+									block "morale_sort_highlight" {}
+								}
+
+								progressbar = {
+									visible = "[Not(Unit.HasMaximumMaintenance)]"
+									tooltipwidget = {
+										using = UnitMorale_tooltip
+									}
+									layoutpolicy_horizontal = expanding
+									size = { -1 5 }
+									using = progress_bar_goldish
+									min = 0
+									max = "[Unit.GetMaxMoraleFloat]"
+									value = "[Unit.GetMoraleFloat]"
+									block "morale_sort_highlight" {}
+								}
+							}
+						}
+					}
+
+					
+					hbox = {
+						layoutpolicy_vertical = expanding
+						layoutpolicy_horizontal = expanding
+
+						hbox = {
+							datacontext = "[GetSubUnitCategory('army_infantry')]"
+							spacing = 3
+							expand = {}
+							text_single = {
+								visible = "[Unit.IsArmy]"
+								maximumsize = {33 20}
+								align = nobaseline
+								text = "[SubUnitCategory.GetTotalStrength(Unit.Self)]"
+							}
+							text_single = {
+								visible = "[Not(Unit.IsArmy)]"
+								maximumsize = {33 20}
+								align = nobaseline
+								text = "[SubUnitCategory.GetCount(Unit.Self)]"
+							}
+							icon = {
+								size = {20 20}
+								texture = "[GetSubUnitCategoryIcon(SubUnitCategory.Self)]"
+
+								glow = {
+									name = "drop_shadow"
+									glow_radius = 3
+									color = {0.0 0.0 0.0 1.0}
+									alpha = 0.5
+								}
+							}
+							expand = {}
+						}
+
+						hbox = {
+							datacontext = "[GetSubUnitCategory('army_cavalry')]"
+							spacing = 3
+							expand = {}
+							text_single = {
+								visible = "[Unit.IsArmy]"
+								maximumsize = {33 20}
+								align = nobaseline
+								text = "[SubUnitCategory.GetTotalStrength(Unit.Self)]"
+							}
+							text_single = {
+								visible = "[Not(Unit.IsArmy)]"
+								maximumsize = {33 20}
+								align = nobaseline
+								text = "[SubUnitCategory.GetCount(Unit.Self)]"
+							}
+							icon = {
+								size = {20 20}
+								texture = "[GetSubUnitCategoryIcon(SubUnitCategory.Self)]"
+
+								glow = {
+									name = "drop_shadow"
+									glow_radius = 3
+									color = {0.0 0.0 0.0 1.0}
+									alpha = 0.5
+								}
+							}
+							expand = {}
+						}
+
+						hbox = {
+							datacontext = "[GetSubUnitCategory('army_magi')]"
+							spacing = 3
+							expand = {}
+							text_single = {
+								visible = "[Unit.IsArmy]"
+								maximumsize = {33 20}
+								align = nobaseline
+								text = "[SubUnitCategory.GetTotalStrength(Unit.Self)]"
+							}
+							text_single = {
+								visible = "[Not(Unit.IsArmy)]"
+								maximumsize = {33 20}
+								align = nobaseline
+								text = "[SubUnitCategory.GetCount(Unit.Self)]"
+							}
+							icon = {
+								size = {20 20}
+								texture = "[GetSubUnitCategoryIcon(SubUnitCategory.Self)]"
+
+								glow = {
+									name = "drop_shadow"
+									glow_radius = 3
+									color = {0.0 0.0 0.0 1.0}
+									alpha = 0.5
+								}
+							}
+							expand = {}
+						}
+						hbox = {
+							datacontext = "[GetSubUnitCategory('army_artillery')]"
+							spacing = 3
+							expand = {}
+							text_single = {
+								visible = "[Unit.IsArmy]"
+								maximumsize = {33 20}
+								align = nobaseline
+								text = "[SubUnitCategory.GetTotalStrength(Unit.Self)]"
+							}
+							text_single = {
+								visible = "[Not(Unit.IsArmy)]"
+								maximumsize = {33 20}
+								align = nobaseline
+								text = "[SubUnitCategory.GetCount(Unit.Self)]"
+							}
+							icon = {
+								size = {20 20}
+								texture = "[GetSubUnitCategoryIcon(SubUnitCategory.Self)]"
+
+								glow = {
+									name = "drop_shadow"
+									glow_radius = 3
+									color = {0.0 0.0 0.0 1.0}
+									alpha = 0.5
+								}
+							}
+
+							
+							expand = {}
+						}
+
+						hbox = {
+							datacontext = "[GetSubUnitCategory('army_auxiliary')]"
+							spacing = 3
+							expand = {}
+							text_single = {
+								visible = "[Unit.IsArmy]"
+								maximumsize = {33 20}
+								align = nobaseline
+								text = "[SubUnitCategory.GetTotalStrength(Unit.Self)]"
+							}
+							text_single = {
+								visible = "[Not(Unit.IsArmy)]"
+								maximumsize = {33 20}
+								align = nobaseline
+								text = "[SubUnitCategory.GetCount(Unit.Self)]"
+							}
+							icon = {
+								size = {20 20}
+								texture = "[GetSubUnitCategoryIcon(SubUnitCategory.Self)]"
+
+								glow = {
+									name = "drop_shadow"
+									glow_radius = 3
+									color = {0.0 0.0 0.0 1.0}
+									alpha = 0.5
+								}
+							}
+							expand = {}
+						}
+
+						expand = {}
+					}
+				}
+
+
+				expand = {}
+
+
+				hbox = {
+					margin_right = 10
+
+					datacontext = "[GetGenericAction('portal_network_army_teleport')]"
+					action_button_diamond  = {
+						name = "situation action button_small"
+						size = { 90 45 }
+
+						glow = {
+							# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+							# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+
+							name = "glowing"
+							glow_radius = 8
+							color = { 0.3 0.3 0.6 1 }
+							alpha = 0.4
+						}
+						using = Animation_Glow_Pulse
+
+						blockoverride "button_regular_diamond_texture" {
+							using = button_event_special_diamond_purple_texture
+						}
+						# parentanchor = center
+						# text = "[GenericAction.GetNameWithNoTooltip]"
+						
+						text = "teleport"
+						title = "[GenericAction.GetName]"
+						actor = "[SituationView.GetPlayer]"
+						parameter = {
+							parameter_name = "recipient"
+							parameter_value = "[Unit.MakeScope]"
+						}
+						# parameter = {
+						# 	parameter_name = "recipient"
+						# 	parameter_value = "[SituationView.GetActiveSituation.GetSituation]"
+						# }
+						left_action = { action_name = "[GenericAction.GetLeftClickKey]" }
+						left_click_and_hold_action = { action_name = "[GenericAction.GetLeftClickAndHoldKey]" }
+						# block "situation_actions_tooltip_override" {
+							tooltipwidget = {
+								ContextualTooltipType = {
+									blockoverride "title_text" {
+										text = "[GenericAction.GetNameWithNoTooltip]"
+									}
+							
+									blockoverride "concept_link" {
+										text = "[situation|e]"
+									}
+									
+									blockoverride "title_icon" {
+										icon = {
+											using = tooltip_title_icon_size
+											texture = "[SituationView.GetActiveSituation.GetIcon]"
+										}
+									}
+									
+									blockoverride "tooltip_content" {
+										using = action_tooltip_inner_content
+										blockoverride "conditions_list" {
+										}
+									}
+								}
+							}
+						# }
+					}
+
+				}
+
+			}
+
+
+			# unit_card = {}
+		}
+		
+
+	}
+
+	hbox = {
+	}
+	expand = {}
+}
+
+template portal_building_type {
+	hbox = {
+		margin_left = 3
+		icon = {
+			size = { 30 30 }
+			texture = "gfx/interface/icons/disasters/end_requirements_green.dds"
+			datacontext = "[GetScriptedGui( 'portal_location_valid' )]"
+
+			visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(Scope.GetLocation.MakeScope).AddScope( 'player_country_scope', Country.MakeScope).End)]"
+			# visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(Scope.GetLocation.MakeScope).End)]"
+
+
+			# visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetScriptedGui('portal_location_valid').Execute(GuiScope.SetRoot(Country.MakeScope).AddScope('portal_location', Scope.GetLocation.MakeScope).AddScope('player_scope', Country.MakeScope)).End))]"
+			# visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetScriptedGui('portal_location_valid').Execute(GuiScope.SetRoot(Country.MakeScope).AddScope('portal_location', Scope.GetLocation.MakeScope).AddScope('player_scope', Country.MakeScope).End)]"
+			# parentanchor = center
+
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 3
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.7
+			}
+		}
+		icon = {
+			size = { 30 30 }
+			texture = "gfx/interface/icons/disasters/end_requirements.dds"
+
+			datacontext = "[GetScriptedGui( 'portal_location_not_valid' )]"
+
+			visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(Scope.GetLocation.MakeScope).AddScope( 'player_country_scope', Country.MakeScope).End)]"
+			# parentanchor = center
+
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 3
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.7
+			}
+		}
+		# expand = {}
+
+		text_single = {
+			margin_left = 4
+			using = Font_Size_Medium
+			# text = "#credits_role [Scope.GetLocation.MakeScope.GetVariable('portal_building_type').GetBuildingType.GetIcon]#!"
+			text = "[Scope.GetLocation.MakeScope.GetVariable('portal_building_type').GetBuildingType.GetIcon]"
+		}
+	}
+}
+
+
+template button_event_special_diamond_purple_texture {
+	texture = "gfx/interface/buttons/button_event_special_diamond_purple.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteborder = { 14 0 }
+	frame_grid = {4 1}
+}

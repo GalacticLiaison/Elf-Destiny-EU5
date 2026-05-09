@@ -1,6 +1,34 @@
 lateralview = {
 	name = "character_lateralview"
 
+	blockoverride "lateralview_topbuttons_extra" {
+		widget = {
+			parentanchor = right|vcenter
+			size = { 40 40 }
+			position = { -30 0 }
+			
+			button = {
+				parentanchor = right|vcenter
+
+				size = { 25 25 }
+				texture = "gfx/interface/icons/unit_actions/go_to.dds"
+
+				modify_texture = {
+					using = color_white_texture
+					alpha = 0.1
+				}
+
+				action_tooltip = {
+					title = "GO_TO_CAPITAL_TEXT"
+					on_action = "[PanToLocation(CharacterLateralview.GetCharacter.GetLocation)]"
+				}
+
+				tooltipwidget = { BasicFunctionalTooltip = {} }
+				using = snd_UI_backward
+			}
+		}
+	}
+
 	blockoverride "panel_header" {
 		window_header_alt = {
 			using = bg_main_inner_alt
@@ -1112,7 +1140,7 @@ template children_character_view {
 				}
 				size = { 325 57 }
 
-				datamodel = "[CharacterLateralview.GetCharacter.GetChildren]"
+				datamodel = "[CharacterLateralview.GetChildrenSortedByAge]"
 
 				item = {
 					widget = {
@@ -1197,7 +1225,7 @@ template children_character_view {
 						flipdirection = yes
 						datamodel_wrap = 6
 
-						datamodel = "[CharacterLateralview.GetCharacter.GetChildren]"
+						datamodel = "[CharacterLateralview.GetChildrenSortedByAge]"
 						item = {
 							widget = {
 								size = { 44 55 }
@@ -1316,6 +1344,14 @@ template "character_actions" {
 											
 											blockoverride "tooltip_content" {
 												using = action_tooltip_inner_content
+												blockoverride "conditions_list" {
+													TooltipScrolledRequirementsList = {
+														blockoverride "block_scrollarea" { maximumsize = { -1 300 }}
+														blockoverride "block_title" { text = "game_concept_conditions" }
+														visible = "[And(DataModelHasItems(RequirementsList.GetLines), UIAction.IsEnabled)]"
+														textcontext = "[UIAction.GetConditions]"
+													}
+												}
 											}
 
 											blockoverride "tooltip_ui_action_block" {
@@ -1447,6 +1483,7 @@ types CharacterPanel {
 
 					hbox = {
 						layoutpolicy_horizontal = expanding
+						spacing = 8
 
 						expand = {}
 
@@ -1462,7 +1499,6 @@ types CharacterPanel {
 							}
 						}
 					}
-
 
 					expand = {}
 

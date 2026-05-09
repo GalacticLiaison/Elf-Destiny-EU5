@@ -81,6 +81,7 @@ elf_destiny_expedition.1 = {
     type = country_event
     title = elf_destiny_expedition.1.title  # "Elven Ruin Expedition Opportunity"
     desc = elf_destiny_expedition.1.desc    # "Ancient Elven ruins beckon. Select a leader and fund the expedition."
+    outcome = neutral
     hide_portraits = yes
     image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
@@ -158,6 +159,7 @@ elf_destiny_expedition.11 = {
     type = country_event
     title = elf_destiny_expedition.11.title  # "Elven Ruin Expedition Opportunity"
     desc = elf_destiny_expedition.11.desc    # "Ancient Elven ruins beckon. Select a leader and fund the expedition."
+    outcome = neutral
     image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
     trigger = {
@@ -191,6 +193,8 @@ elf_destiny_expedition.11 = {
 elf_destiny_expedition.2 = {
     title = no_title
     desc = no_desc
+    outcome = neutral
+
     type = country_event
     hidden = yes  # No popup, just progress
 
@@ -280,6 +284,7 @@ elf_destiny_expedition.21 = {
 			}
 		}
 	}
+    outcome = neutral
 
     image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
@@ -373,7 +378,7 @@ elf_destiny_expedition.22 = {
 			}
 		}
 	}
-
+    outcome = neutral
     image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
 
@@ -455,6 +460,7 @@ elf_destiny_expedition.230 = {
     type = country_event
     title = elf_destiny_expedition.230.title
 	desc = elf_destiny_expedition.230.desc
+    outcome = neutral
 
     image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
@@ -504,6 +510,7 @@ elf_destiny_expedition.231 = {
     type = country_event
     title = elf_destiny_expedition.231.title
 	desc = elf_destiny_expedition.231.desc
+    outcome = neutral
 
     image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
@@ -584,6 +591,7 @@ elf_destiny_expedition.232 = {
     type = country_event
     title = elf_destiny_expedition.232.title
 	desc = elf_destiny_expedition.232.desc
+    outcome = neutral
 
     image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
@@ -660,6 +668,7 @@ elf_destiny_expedition.3 = {
             }
         }
 	}
+    outcome = neutral
 
     image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
@@ -756,6 +765,7 @@ elf_destiny_expedition.31 = {
 		}
         desc = elf_destiny_expedition.31.desc.close
     }
+    outcome = neutral
 
     hide_portraits = yes
 	image = "gfx/interface/illustrations/event/backgrounds/divine_spark.dds"
@@ -867,6 +877,8 @@ elf_destiny_expedition.31 = {
 elf_destiny_expedition.32 = {
     title = no_title
     desc = no_desc
+    outcome = neutral
+
     type = country_event
     hidden = yes
 
@@ -899,6 +911,7 @@ elf_destiny_expedition.321 = {
     type = country_event
     title = elf_destiny_expedition.321.title
     desc = elf_destiny_expedition.321.desc
+    outcome = neutral
 
     hide_portraits = yes
 
@@ -920,6 +933,7 @@ elf_destiny_expedition.322 = {
     type = country_event
     title = elf_destiny_expedition.322.title
     desc = elf_destiny_expedition.322.desc
+    outcome = neutral
 
     hide_portraits = yes
 
@@ -941,6 +955,7 @@ elf_destiny_expedition.33 = {
     type = country_event
     title = elf_destiny_expedition.33.title
     desc = elf_destiny_expedition.33.desc
+    outcome = neutral
 
     immediate = {
         ruler = {
@@ -1000,6 +1015,7 @@ elf_destiny_expedition.331 = {
 		}
     }
 
+    outcome = neutral
     immediate = {
         random_list = {
             10 = {
@@ -1309,6 +1325,7 @@ elf_destiny_expedition.4 = {
     type = country_event
     title = elf_destiny_expedition.4.title  # "Expedition Failed"
     desc = elf_destiny_expedition.4.desc    # "The expedition returned empty-handed."
+    outcome = neutral
 
     image = "gfx/interface/illustrations/event/backgrounds/expedition.dds"
 
