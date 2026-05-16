@@ -1,7 +1,6 @@
 ﻿elven_parliament = {
 	type = country
 	potential = {
-		modifier:allow_estate_parliament = yes
 		is_elven_country = yes
 	}
 	allow = {

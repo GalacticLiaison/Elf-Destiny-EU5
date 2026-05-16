@@ -24820,6 +24820,24 @@ Return type: [unregistered]
 
 -----------------------
 
+offered_omens
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+offered_omens_icon
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+offered_omens_with_icon
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
 official_religion
 Definition type: Global function
 Return type: [unregistered]
@@ -52237,6 +52255,12 @@ Return type: CString
 
 -----------------------
 
+Country.GetMaxOfferedOmens
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 Country.GetMaxSailorValue
 Definition type: Function
 Return type: CString
@@ -52522,6 +52546,18 @@ Return type: CString
 Country.GetOmenPowerModifier( Arg0 )
 Definition type: Function
 Return type: CFixedPoint
+
+-----------------------
+
+Country.GetOmenPowerModifierGods( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Country.GetOmenPowerModifierTooltip( Arg0 )
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -55164,7 +55200,31 @@ Return type: bool
 
 -----------------------
 
+Culture.IsAccepted( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 Culture.IsActive
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+Culture.IsNonTolerated( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+Culture.IsPrimary( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+Culture.IsTolerated( Arg0 )
 Definition type: Function
 Return type: bool
 
@@ -70037,6 +70097,41 @@ Return type: CString
 -----------------------
 
 HolySiteGlue.Self
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+HolySiteMarker
+Definition type: Type
+
+-----------------------
+
+HolySiteMarker.GetHolySite
+Definition type: Promote
+Return type: HolySite
+
+-----------------------
+
+HolySiteMarker.AccessSelf
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+HolySiteMarker.GetHolySite
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+HolySiteMarker.GetTooltip
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+HolySiteMarker.Self
 Definition type: Function
 Return type: [unregistered]
 

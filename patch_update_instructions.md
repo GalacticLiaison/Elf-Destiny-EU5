@@ -1,4 +1,5 @@
 # Files overwritten by this mod to check
+loading_screen\common\defines\elf_destiny_defines.txt
 in_game\common\estates\00_default.txt
 in_game\common\pop_types\00_default.txt
 in_game\common\goods_demand\elf_destiny_pop_demands.txt

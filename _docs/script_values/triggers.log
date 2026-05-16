@@ -5265,6 +5265,7 @@ Reads gamestate for all scopes.
 
 ## has_spawned
 Has the institution spawned anywhere?
+Traits: yes/no 
 Reads gamestate for all scopes.
 **Supported Scopes**: institution  
 
