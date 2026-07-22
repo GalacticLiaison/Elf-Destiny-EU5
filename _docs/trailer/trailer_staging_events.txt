@@ -1,0 +1,202 @@
+# =====================================================================
+# TRAILER STAGING EVENTS — TEMPORARY, DO NOT SHIP
+#
+# Copy this file to:  in_game/events/elf_destiny_trailer_staging_events.txt
+# while recording trailer footage, then DELETE it before any release.
+#
+# All events are hidden (no window). Fire them from the debug console:
+#   event elf_trailer.1   -> instant full Elven conversion (culture, pops, institution, parliament)
+#   event elf_trailer.2   -> instant Aeluran conversion (country, characters, pops)
+#   event elf_trailer.3   -> Grand Portal restored in capital + advance + Realm Lord
+#   event elf_trailer.4   -> portal network everywhere (hub in capital, node in every province capital)
+#   event elf_trailer.5   -> ruler -> Elf Tier 3
+#   event elf_trailer.6   -> ruler -> Elf Tier 9 (Fae shot)
+#   event elf_trailer.7   -> war chest (gold, prestige, stability)
+#
+# For arbitrary character tiers use the existing cheat menu: event elf_destiny_debug.1
+# Effects below are copied from elf_destiny_story_events.txt so they match live behavior.
+# =====================================================================
+
+namespace = elf_trailer
+
+# Instant Elven conversion (mirrors elf_destiny_story.22 "convert" + .23 rewards)
+elf_trailer.1 = {
+	title = no_title
+	desc = no_desc
+	outcome = neutral
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		change_culture = culture:elven_culture
+		every_character = {
+			change_character_culture = culture:elven_culture
+		}
+		every_pop = {
+			change_pop_culture = culture:elven_culture
+		}
+		every_province = {
+			every_location_in_province = {
+				change_institution_progress = {
+					type = institution:elven
+					value = 100
+				}
+			}
+		}
+
+		set_parliament_type = parliament_type:elven_parliament
+
+		add_country_modifier = {
+			modifier = realm_lord
+			mode = add_and_extend
+			desc = you_are_worthy
+		}
+
+		set_global_variable = {
+			name = expeditions_unlocked
+			value = yes
+		}
+	}
+}
+
+# Instant Aeluran conversion (mirrors elf_destiny_story.43)
+elf_trailer.2 = {
+	title = no_title
+	desc = no_desc
+	outcome = neutral
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		change_religion = religion:aeluran
+		every_character = {
+			change_character_religion = religion:aeluran
+		}
+		every_pop = {
+			change_pop_religion = religion:aeluran
+		}
+	}
+}
+
+# Grand Portal restored in capital (mirrors elf_destiny_story.51/.52/.53)
+elf_trailer.3 = {
+	title = no_title
+	desc = no_desc
+	outcome = neutral
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		capital = {
+			set_variable = grand_portal_eligible
+			destroy_all_buildings_of_type = building_type:grand_portal_ruins
+			construct_building = {
+				building_type = building_type:grand_portal
+				cost_multiplier = 0
+				cost_multiplier_reason = "trailer_staging"
+				instant = yes
+			}
+		}
+
+		research_advance = advance_type:grand_portal_restored
+
+		set_global_variable = {
+			name = portal_restored
+			value = yes
+		}
+
+		remove_country_modifier = realm_lord
+		add_country_modifier = {
+			modifier = true_realm_lord
+			mode = add_and_extend
+			desc = you_are_truly_worthy
+		}
+	}
+}
+
+# Portal network everywhere: hub in capital, lesser node in every province capital
+# (makes the portal_network map mode look alive for Shot 14)
+elf_trailer.4 = {
+	title = no_title
+	desc = no_desc
+	outcome = neutral
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		capital = {
+			construct_building = {
+				building_type = building_type:prime_portal_hub
+				cost_multiplier = 0
+				cost_multiplier_reason = "trailer_staging"
+				instant = yes
+			}
+		}
+
+		every_province = {
+			every_location_in_province = {
+				limit = {
+					is_province_capital = yes
+					NOT = { has_building = building_type:grand_portal }
+					NOT = { has_building = building_type:prime_portal_hub }
+				}
+				construct_building = {
+					building_type = building_type:lesser_portal_node
+					cost_multiplier = 0
+					cost_multiplier_reason = "trailer_staging"
+					instant = yes
+				}
+			}
+		}
+	}
+}
+
+# Ruler -> Elf Tier 3 (mid-ascension shots)
+elf_trailer.5 = {
+	title = no_title
+	desc = no_desc
+	outcome = neutral
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		ruler ?= {
+			remove_any_racial_trait = yes
+			assign_racial_trait = { trait = elf_tier_3 }
+		}
+	}
+}
+
+# Ruler -> Elf Tier 9 (the Fae money shot)
+elf_trailer.6 = {
+	title = no_title
+	desc = no_desc
+	outcome = neutral
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		ruler ?= {
+			remove_any_racial_trait = yes
+			assign_racial_trait = { trait = elf_tier_9 }
+		}
+	}
+}
+
+# War chest: fund armies/buildings for combat and economy shots
+elf_trailer.7 = {
+	title = no_title
+	desc = no_desc
+	outcome = neutral
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		add_gold = {
+			value = country_tax_base
+			multiply = 25
+		}
+		add_prestige = 100
+		add_stability = 100
+	}
+}
