@@ -3,3 +3,12 @@ CLAUDE.md
 
 # Internal modding notes
 _docs/modding_notes.md
+
+# Trailer media — large local-only binaries (keep the folders + READMEs)
+_docs/trailer/footage/*
+!_docs/trailer/footage/README.md
+_docs/trailer/audio/*
+!_docs/trailer/audio/README.md
+# Draft renders + generated title-card build artifacts
+_docs/trailer/renders/
+_docs/trailer/cards/
