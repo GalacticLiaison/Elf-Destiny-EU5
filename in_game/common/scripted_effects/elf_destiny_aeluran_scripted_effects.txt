@@ -2,20 +2,18 @@
 	every_character = {
 		limit = {
 			is_female = yes
+			is_any_elf_type = yes
 			character_age >= 3
 			character_age < 7
 			NOT = {
 				has_variable = refused_aeluran_training
 			}
+			NOT = { # already asked about or sent for training; also keeps c:DWD from re-recruiting girls sent to it
+				has_variable = country_of_origin
+			}
 		}
 
 		save_scope_as = new_sister
-
-		set_variable = {
-			name = country_of_origin
-			value = owner
-		}
-
 
 		if = {
 			limit = {
@@ -23,15 +21,29 @@
 				is_child_of = owner.ruler
 			}
 
+			set_variable = {
+				name = country_of_origin
+				value = owner
+			}
+
 			owner = {
 				trigger_event_non_silently = {
-					id = aeluran_events.4 
+					id = aeluran_events.4
 				}
 			}
 		}
 		else = {
-			set_child_education = child_education:aeluran_education
-			move_country = c:DWD
+			if = {
+				limit = { exists = c:DWD }
+
+				set_variable = {
+					name = country_of_origin
+					value = owner
+				}
+
+				set_child_education = child_education:aeluran_education
+				move_country = c:DWD
+			}
 		}
 
 	}
@@ -92,21 +104,21 @@ find_aeluran_advisor_effect = {
 		random_list = {
 			1 = {
 				modifier = {
-					has_country_modifier = calaquendi_estate_blocked_from_cabinet
+					modifier:calaquendi_estate_blocked_from_cabinet = yes
 					add = -2
 				}
 				create_new_aeluran_advisor = { estate = calaquendi_estate }
 			}
 			2 = {
 				modifier = {
-					has_country_modifier = nobles_estate_blocked_from_cabinet
+					modifier:nobles_estate_blocked_from_cabinet = yes
 					add = -2
 				}
 				create_new_aeluran_advisor = { estate = nobles_estate }
 			}
 			2 = {
 				modifier = {
-					has_country_modifier = clergy_estate_blocked_from_cabinet
+					modifier:clergy_estate_blocked_from_cabinet = yes
 					add = -2
 				}
 				create_new_aeluran_advisor = { estate = clergy_estate }

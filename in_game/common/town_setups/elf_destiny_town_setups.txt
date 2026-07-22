@@ -15,6 +15,7 @@
 	# wine_cellar_of_elder_days = 1
 	# feasting_hall_of_the_trees = 1
 	# grand_archives = 1
+	lesser_portal_node = 1
 
 	elven_workshop = 1
 	lembas_bakery = 1
@@ -28,6 +29,17 @@ elven_town = {
 	pottery_guild = 1
 	marketplace = 1
 }
+
+elven_town_portal = {
+	winery = 1
+	temple = 1
+	tools_guild = 1
+	weapon_guild = 1
+	pottery_guild = 1
+	marketplace = 1
+	lesser_portal_node = 1
+}
+
 
 tribal_elven_town = {
 	temple = 1

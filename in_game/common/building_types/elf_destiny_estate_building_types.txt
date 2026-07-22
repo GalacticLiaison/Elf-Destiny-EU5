@@ -53,6 +53,7 @@ mallorn_tree_grove = {
 	rural_settlement = no
 	town = yes
 	city = yes
+	megalopolis = yes
 	
 	estate = calaquendi_estate
 	
@@ -105,6 +106,7 @@ baths_of_starlight = {
 	rural_settlement = yes
 	town = yes
 	city = yes
+	megalopolis = yes
 	
 	estate = calaquendi_estate
 	
@@ -159,6 +161,7 @@ perfume_garden_of_valinor = {
 	rural_settlement = yes
 	town = yes
 	city = yes
+	megalopolis = yes
 	
 	estate = calaquendi_estate
 	
@@ -223,6 +226,7 @@ wine_cellar_of_elder_days = {
 	rural_settlement = yes
 	town = yes
 	city = yes
+	megalopolis = yes
 	
 	estate = calaquendi_estate
 	
@@ -299,6 +303,7 @@ feasting_hall_of_the_trees = {
 	rural_settlement = yes
 	town = yes
 	city = yes
+	megalopolis = yes
 	
 	estate = calaquendi_estate
 	
@@ -353,6 +358,7 @@ grand_archives = {
 	rural_settlement = yes
 	town = yes
 	city = yes
+	megalopolis = yes
 	
 	estate = calaquendi_estate
 	

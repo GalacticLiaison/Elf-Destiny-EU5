@@ -96,6 +96,12 @@ Requires Data: yes
 Global Link: yes
 Output Scopes: child_education
 
+### chivalric_order
+Unknown, add something in code registration
+Requires Data: yes
+Global Link: yes
+Output Scopes: chivalric_order
+
 ### climate
 Unknown, add something in code registration
 Requires Data: yes
@@ -687,10 +693,20 @@ Boolean literal for true values
 Global Link: yes
 Output Scopes: boolean
 
+### active_chivalric_order
+Gets the chivalric order currently active for this country. Invalid if the country has no active order.
+Input Scopes: country
+Output Scopes: chivalric_order
+
 ### active_mission
 Unknown, add something in code registration
 Input Scopes: country
 Output Scopes: mission
+
+### ai_best_proximity_candidate
+gets the best proximity candidate location
+Input Scopes: country
+Output Scopes: location
 
 ### ai_personality
 Unknown, add something in code registration
@@ -1061,6 +1077,11 @@ Unknown, add something in code registration
 Input Scopes: character
 Output Scopes: character
 
+### joined_chivalric_order
+Gets the chivalric order this character has joined. Invalid if the character is not a member of any order.
+Input Scopes: character
+Output Scopes: chivalric_order
+
 ### mother
 Unknown, add something in code registration
 Input Scopes: character
@@ -1081,6 +1102,11 @@ Output Scopes: unit
 Unknown, add something in code registration
 Input Scopes: location, province, province_definition, area, region, sub_continent
 Output Scopes: continent
+
+### owner
+Unknown, add something in code registration
+Input Scopes: location, unit, sub_unit, character, pop, colonial_charter, market, province, rebels, trade, privateer, exploration, mercenary, work_of_art, loan, building, disaster, cabinet, cardinal, estate, bureaucracy
+Output Scopes: country
 
 ### region
 Unknown, add something in code registration
@@ -1299,16 +1325,6 @@ Unknown, add something in code registration
 Input Scopes: combat_side
 Output Scopes: unit
 
-### culture
-Unknown, add something in code registration
-Input Scopes: country, sub_unit, character, dynasty, pop, rebels, mercenary
-Output Scopes: culture
-
-### religion
-Unknown, add something in code registration
-Input Scopes: country, sub_unit, character, dynasty, pop, rebels, mercenary
-Output Scopes: religion
-
 ### avatar
 Unknown, add something in code registration
 Input Scopes: holy_site
@@ -1329,6 +1345,16 @@ Output Scopes: exploration
 Unknown, add something in code registration
 Input Scopes: advance_type
 Output Scopes: age
+
+### circle_leader
+Unknown, add something in code registration
+Input Scopes: imperial_circle
+Output Scopes: country
+
+### international_organization
+Unknown, add something in code registration
+Input Scopes: imperial_circle
+Output Scopes: international_organization
 
 ### rebel
 Unknown, add something in code registration
@@ -1425,6 +1451,11 @@ Output Scopes: goods
 Unknown, add something in code registration
 Input Scopes: location, province, province_definition, privateer, exploration
 Output Scopes: area
+
+### pretender
+Unknown, add something in code registration
+Input Scopes: rebels
+Output Scopes: character
 
 ### active_outbreak
 gets the active outbreak for a disease in a location or subunit - usage active_outbreak(<disease>)
@@ -1559,16 +1590,6 @@ Unknown, add something in code registration
 Input Scopes: parliament_issue
 Output Scopes: special_status
 
-### dominant_culture
-Unknown, add something in code registration
-Input Scopes: location, country, province
-Output Scopes: culture
-
-### dominant_religion
-Unknown, add something in code registration
-Input Scopes: location, country, province
-Output Scopes: religion
-
 ### combat_attacker
 Unknown, add something in code registration
 Input Scopes: combat
@@ -1599,10 +1620,25 @@ Unknown, add something in code registration
 Input Scopes: town_rights
 Output Scopes: town_rights_type
 
+### culture
+Unknown, add something in code registration
+Input Scopes: country, sub_unit, character, dynasty, pop, rebels, mercenary, movement
+Output Scopes: culture
+
+### religion
+Unknown, add something in code registration
+Input Scopes: country, sub_unit, character, dynasty, pop, rebels, mercenary, movement
+Output Scopes: religion
+
 ### sub_continent
 Unknown, add something in code registration
 Input Scopes: location, province, province_definition, area, region
 Output Scopes: sub_continent
+
+### mercenary
+Unknown, add something in code registration
+Input Scopes: sub_unit
+Output Scopes: mercenary
 
 ### name_culture
 Unknown, add something in code registration
@@ -1629,20 +1665,30 @@ Unknown, add something in code registration
 Input Scopes: disease_outbreak
 Output Scopes: disease
 
+### dialect
+Unknown, add something in code registration
+Input Scopes: character, dynasty, pop, culture, religion, market, estate
+Output Scopes: dialect
+
 ### bureaucracy_type
 Unknown, add something in code registration
 Input Scopes: bureaucracy
 Output Scopes: bureaucracy_type
 
+### dominant_culture
+Unknown, add something in code registration
+Input Scopes: location, country, province, estate
+Output Scopes: culture
+
+### dominant_religion
+Unknown, add something in code registration
+Input Scopes: location, country, province, estate
+Output Scopes: religion
+
 ### god
 Unknown, add something in code registration
 Input Scopes: holy_site, omen, avatar
 Output Scopes: god
-
-### dialect
-Unknown, add something in code registration
-Input Scopes: character, dynasty, pop, culture, religion, market
-Output Scopes: dialect
 
 ### group
 Unknown, add something in code registration
@@ -1750,11 +1796,6 @@ Unknown, add something in code registration
 Input Scopes: location, country
 Output Scopes: language
 
-### owner
-Unknown, add something in code registration
-Input Scopes: location, unit, sub_unit, character, pop, colonial_charter, market, province, rebels, trade, privateer, exploration, mercenary, work_of_art, loan, building, disaster, cabinet, cardinal, estate
-Output Scopes: country
-
 
 --------------------
 
@@ -1861,6 +1902,7 @@ to
 building
 building_type
 vote
+previewed_vote
 cabinet
 subject_type
 old_subject_type
@@ -1906,3 +1948,4 @@ new_countries
 casus_belli
 amount
 parliament_location
+sub_units

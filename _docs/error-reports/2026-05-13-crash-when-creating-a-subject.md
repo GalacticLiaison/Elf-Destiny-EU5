@@ -1,5 +1,5 @@
 # Crash when creating a subject
-**Tags:** Sev 1 - Crashes Game, EU5
+**Tags:** Ongoing Issue, Sev 1 - Crashes Game, EU5
 **Source:** [View on Discord](https://discord.com/channels/1179053540161880074/1504178065817735218)
 ---
 ## Report

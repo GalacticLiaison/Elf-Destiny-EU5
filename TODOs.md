@@ -155,3 +155,7 @@ generals with the enchantress trait can make an army change sides
 - maybe only temporarily
 
 generals with heroic courage get some type of rally unit ability
+
+
+
+https://discord.com/channels/1179053540161880074/1179054158003839086/1506993779997933681

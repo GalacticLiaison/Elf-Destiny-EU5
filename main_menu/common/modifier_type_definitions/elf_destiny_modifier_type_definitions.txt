@@ -2025,6 +2025,7 @@ can_extract_mythril_elven_crafts={
 
 
 mythril_impacts_inflation={
+	color=bad
 	percent=yes
 	game_data={
 		category=country
@@ -2403,6 +2404,30 @@ ascension_base_price_cost_modifier={
 }
 
 blessing_base_price_cost_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+teleport_base_price_cost_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+base_calaquendi_estate_power_modifier={
+	color=bad
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_power_from_cabinet={
 	color=bad
 	percent=yes
 	game_data={

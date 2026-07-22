@@ -19,6 +19,16 @@ Adds an accepted culture to a country
 **Supported Scopes**: country  
 **Supported Targets**: culture  
 
+## add_access_for_attackers
+adds access in the target country for all attackers in a war
+**Supported Scopes**: war  
+**Supported Targets**: country  
+
+## add_access_for_defenders
+adds access in the target country for all defenders in a war
+**Supported Scopes**: war  
+**Supported Targets**: country  
+
 ## add_additional_migration
 adds a new migration source to a colonial charter. usage: add_additional_migration = <province>
 **Supported Scopes**: colonial_charter  
@@ -72,6 +82,10 @@ add_character_modifier = { name = name days/months/years=x mode = add/extend/rep
 desc replaces the description of how long the modifier lasts
 **Supported Scopes**: character  
 
+## add_circle_satisfaction
+Add or subtract satisfaction from an imperial circle (clamped 0–100).
+**Supported Scopes**: imperial_circle  
+
 ## add_colonial_claim
 Add a colonial claim to the target province_definition. Usage from country scope: add_colonial_claim = { province_definition = <province definition> reason = <reason loc> [category = <exclusive/same_religion>] }
 **Supported Scopes**: country  
@@ -94,6 +108,11 @@ add a modifier to a country
 add_country_modifier = { name = name days/months/years=x mode = add/extend/replace/add_and_extend <size = x> <desc = string>}  
 desc replaces the description of how long the modifier lasts
 **Supported Scopes**: country  
+
+## add_country_to_circle
+Add a country to an imperial circle.
+**Supported Scopes**: imperial_circle  
+**Supported Targets**: country  
 
 ## add_country_to_international_organization
 add a country to an international organization
@@ -254,12 +273,6 @@ add a location to an international organization
 Adds Manpower
 **Supported Scopes**: country, international_organization  
 
-## add_mercenary_modifier
-add a modifier to a mercenary  
-add_mercenary_modifier = { name = name days/months/years=x mode = add/extend/replace/add_and_extend <size = x> <desc = string>}  
-desc replaces the description of how long the modifier lasts
-**Supported Scopes**: mercenary  
-
 ## add_merchant_power
 Adds temporary power to a merchant (country = <country> power = value key = localisation months = y } 
 **Supported Scopes**: market  
@@ -354,6 +367,14 @@ desc replaces the description of how long the modifier lasts
 ## add_rebel_progress
 change the progress of a rebel faction
 **Supported Scopes**: rebels  
+
+## add_recovered_army_levy_percentage
+adds recovered land levies into the province based on percentage
+**Supported Scopes**: province  
+
+## add_recovered_navy_levy_percentage
+adds recovered naval levies into the province based on percentage
+**Supported Scopes**: province  
 
 ## add_reform
 adds a government reform.
@@ -601,6 +622,11 @@ The current country scope annuls all treaties with the target country.
 **Supported Scopes**: country  
 **Supported Targets**: country  
 
+## apply_rebel_demands
+Executes the concession effect of the target rebel's demand
+**Supported Scopes**: country  
+**Supported Targets**: rebels  
+
 ## assert_if
 Conditionally cause an assert during run time  
 assert_if = { limit = { X } text = Y }, where X is a trigger and Y is an optional string
@@ -623,6 +649,10 @@ Block all possible treaties with the target country
 
 ## bribe_estate
 The current country scope bribes the estate of the target country using the specified parliament agenda. Usage: bribe_estate = { type = <parliament agenda> estate_type = <estate type> target = <country> }
+**Supported Scopes**: country  
+
+## buy_goods_from_market
+A country buys goods from a target market, paying the market buy price in gold and removing the goods from the market stockpile. Usage: buy_goods_from_market = { market = <market> goods = <goods> amount = <amount> }
 **Supported Scopes**: country  
 
 ## bypass_mission_task
@@ -660,6 +690,10 @@ Changes the progress of annexation for the current country scope against the tar
 
 ## change_art_quality
 change the quality of a work of art
+**Supported Scopes**: work_of_art  
+
+## change_art_worth
+Adds delta to the worth override of a work of art. Cannot make a work priceless. Copies type worth first if override is 0.
 **Supported Scopes**: work_of_art  
 
 ## change_assigned_merchant_capacity
@@ -744,6 +778,10 @@ changes the name of a country
 
 ## change_country_type
 Changes the country type!
+**Supported Scopes**: country  
+
+## change_creditworthiness
+Changes the creditworthiness of a country by the given amount (positive or negative)
 **Supported Scopes**: country  
 
 ## change_cultural_view
@@ -892,11 +930,6 @@ Add or remove maritime presence power for the specified country in the current l
 ## change_max_raw_material_workers
 increases rgo size
 **Supported Scopes**: location  
-
-## change_mercenary_modifier_size
-Change the strength of a modifier applied to the scope mercenary  
-change_mercenary_modifier_size = { modifier = <modifier> value = <script math> [recalculate_immediately = yes] }
-**Supported Scopes**: mercenary  
 
 ## change_mother
 changes mother to target character
@@ -1056,6 +1089,10 @@ clamp_variable = { name = X max = Y min = Z }
 Where X is the name of the variable  
 Where Y and Z are script values
 **Supported Scopes**: none  
+
+## clear_circle_leader
+Clear the leader of an imperial circle. The circle remains but becomes leaderless.
+**Supported Scopes**: imperial_circle  
 
 ## clear_global_variable_list
 Empties the list  
@@ -1416,6 +1453,10 @@ Mercenary gets routed and scatters
 **Supported Scopes**: none  
 **Supported Targets**: mercenary  
 
+## destroy_movement
+Destroys the unit from the current scope
+**Supported Scopes**: movement  
+
 ## destroy_pop
 destroys a pop
 **Supported Scopes**: none  
@@ -1724,6 +1765,12 @@ every_child = { limit = { <triggers> } <effects> }
 **Supported Scopes**: character  
 **Supported Targets**: character  
 
+## every_circle_member
+Iterate through all member countries of an Imperial Circle  
+every_circle_member = { limit = { <triggers> } <effects> }
+**Supported Scopes**: imperial_circle  
+**Supported Targets**: country  
+
 ## every_close_relative
 Iterate through all close relatives of a character  
 every_close_relative = { limit = { <triggers> } <effects> }
@@ -1934,6 +1981,12 @@ every_country_with_cardinals = { limit = { <triggers> } <effects> }
 **Supported Scopes**: religion  
 **Supported Targets**: country  
 
+## every_country_with_chivalric_order
+Iterate through all countries with an active chivalric order  
+every_country_with_chivalric_order = { limit = { <triggers> } <effects> }
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
 ## every_country_with_coalition_grade_antagonism_against_us
 Iterate through all countries who have coalition grade antagonism against us  
 every_country_with_coalition_grade_antagonism_against_us = { limit = { <triggers> } <effects> }
@@ -2114,6 +2167,12 @@ every_estate_type_that_likes_bureaucracy = { limit = { <triggers> } <effects> }
 **Supported Scopes**: bureaucracy_type  
 **Supported Targets**: estate_type  
 
+## every_every_rented_out_mercenary
+Iterate through all lent units currently employed by another country, scoped from the lending country  
+every_every_rented_out_mercenary = { limit = { <triggers> } <effects> }
+**Supported Scopes**: country  
+**Supported Targets**: mercenary  
+
 ## every_exploration_from_country
 Iterate through all Explorations a country has  
 every_exploration_from_country = { limit = { <triggers> } <effects> }
@@ -2281,6 +2340,18 @@ Iterate through all enemies of our enemies
 every_hostile_to_hostile_country = { limit = { <triggers> } <effects> }
 **Supported Scopes**: country  
 **Supported Targets**: country  
+
+## every_imperial_circle
+Iterate through all Imperial Circles in the scope international organization  
+every_imperial_circle = { limit = { <triggers> } <effects> }
+**Supported Scopes**: international_organization  
+**Supported Targets**: imperial_circle  
+
+## every_imperial_circle_country_is_member_of
+Iterate through all Imperial Circles the scope country is a member of  
+every_imperial_circle_country_is_member_of = { limit = { <triggers> } <effects> }
+**Supported Scopes**: country  
+**Supported Targets**: imperial_circle  
 
 ## every_import
 Iterate through all imports in a market  
@@ -2809,6 +2880,12 @@ Iterate through all units participating in 1 side of a combat
 every_participating_units = { limit = { <triggers> } <effects> }
 **Supported Scopes**: combat_side  
 **Supported Targets**: unit  
+
+## every_past_court_dialect
+Iterate through all court dialects a country has had before  
+every_past_court_dialect = { limit = { <triggers> } <effects> }
+**Supported Scopes**: country  
+**Supported Targets**: country  
 
 ## every_past_liturgical_dialect
 Iterate through all liturgical dialects a country has had before  
@@ -3416,6 +3493,10 @@ hires a privateer for the target country
 **Supported Scopes**: area  
 **Supported Targets**: country  
 
+## hre_start_circle_formation_effect
+Start the Imperial Circle formation process for the scope IO. No-op if already active or circles are already locked.
+**Supported Scopes**: international_organization  
+
 ## if
 Executes enclosed effects if limit criteria are met  
 if = { limit = { <triggers> } <effects> }
@@ -3443,6 +3524,16 @@ international organization removes special status from a country
 force an international organization to recalculate its character leader from the current ruler of the leader country
 **Supported Scopes**: none  
 **Supported Targets**: international_organization  
+
+## join_active_chivalric_order_of
+Joins the active chivalric order of the specified country. Does nothing if the country has no active order.
+**Supported Scopes**: character  
+**Supported Targets**: country  
+
+## join_chivalric_order
+Joins the specified chivalric order. Removes any existing order membership first.
+**Supported Scopes**: character  
+**Supported Targets**: chivalric_order  
 
 ## join_war_against
 joins the target war as an enemy of the target country. Usage: join_war_against = { war = war scope target = country scope call_in_subjects = yes/no ignore_rules = yes/no notify_opposing_side = yes/no }
@@ -3475,9 +3566,18 @@ The current country scope will leave every war with or against the target countr
 **Supported Scopes**: country  
 **Supported Targets**: country  
 
+## leave_chivalric_order
+Removes the character from any chivalric order they are currently a member of.
+**Supported Scopes**: character  
+
 ## leave_war
 leaves a war, forced by another country. Usage: leave_war = { war = <war> actor = <country forcing them to do it> }
 **Supported Scopes**: country  
+
+## lend_unit_to_country
+Lends the entire unit to a war ally as a condottieri mercenary. Usage: lend_unit_to_country = <country scope>
+**Supported Scopes**: unit  
+**Supported Targets**: country  
 
 ## lift_fog_of_war
 lifts fog of war for a year on the target country
@@ -4017,6 +4117,19 @@ check_range_bounds = no # If you don't want an error logged if the list is small
 **Supported Scopes**: character  
 **Supported Targets**: character  
 
+## ordered_circle_member
+Iterate through all member countries of an Imperial Circle  
+ordered_circle_member = {  
+limit = { <triggers> }  
+order_by = script_value  
+position = int  
+min = int  
+max = script_value  
+check_range_bounds = no # If you don't want an error logged if the list is smaller than the min/max  
+<effects> }
+**Supported Scopes**: imperial_circle  
+**Supported Targets**: country  
+
 ## ordered_close_relative
 Iterate through all close relatives of a character  
 ordered_close_relative = {  
@@ -4472,6 +4585,19 @@ check_range_bounds = no # If you don't want an error logged if the list is small
 **Supported Scopes**: religion  
 **Supported Targets**: country  
 
+## ordered_country_with_chivalric_order
+Iterate through all countries with an active chivalric order  
+ordered_country_with_chivalric_order = {  
+limit = { <triggers> }  
+order_by = script_value  
+position = int  
+min = int  
+max = script_value  
+check_range_bounds = no # If you don't want an error logged if the list is smaller than the min/max  
+<effects> }
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
 ## ordered_country_with_coalition_grade_antagonism_against_us
 Iterate through all countries who have coalition grade antagonism against us  
 ordered_country_with_coalition_grade_antagonism_against_us = {  
@@ -4862,6 +4988,19 @@ check_range_bounds = no # If you don't want an error logged if the list is small
 **Supported Scopes**: bureaucracy_type  
 **Supported Targets**: estate_type  
 
+## ordered_every_rented_out_mercenary
+Iterate through all lent units currently employed by another country, scoped from the lending country  
+ordered_every_rented_out_mercenary = {  
+limit = { <triggers> }  
+order_by = script_value  
+position = int  
+min = int  
+max = script_value  
+check_range_bounds = no # If you don't want an error logged if the list is smaller than the min/max  
+<effects> }
+**Supported Scopes**: country  
+**Supported Targets**: mercenary  
+
 ## ordered_exploration_from_country
 Iterate through all Explorations a country has  
 ordered_exploration_from_country = {  
@@ -5225,6 +5364,32 @@ check_range_bounds = no # If you don't want an error logged if the list is small
 <effects> }
 **Supported Scopes**: country  
 **Supported Targets**: country  
+
+## ordered_imperial_circle
+Iterate through all Imperial Circles in the scope international organization  
+ordered_imperial_circle = {  
+limit = { <triggers> }  
+order_by = script_value  
+position = int  
+min = int  
+max = script_value  
+check_range_bounds = no # If you don't want an error logged if the list is smaller than the min/max  
+<effects> }
+**Supported Scopes**: international_organization  
+**Supported Targets**: imperial_circle  
+
+## ordered_imperial_circle_country_is_member_of
+Iterate through all Imperial Circles the scope country is a member of  
+ordered_imperial_circle_country_is_member_of = {  
+limit = { <triggers> }  
+order_by = script_value  
+position = int  
+min = int  
+max = script_value  
+check_range_bounds = no # If you don't want an error logged if the list is smaller than the min/max  
+<effects> }
+**Supported Scopes**: country  
+**Supported Targets**: imperial_circle  
 
 ## ordered_import
 Iterate through all imports in a market  
@@ -6362,6 +6527,19 @@ check_range_bounds = no # If you don't want an error logged if the list is small
 <effects> }
 **Supported Scopes**: combat_side  
 **Supported Targets**: unit  
+
+## ordered_past_court_dialect
+Iterate through all court dialects a country has had before  
+ordered_past_court_dialect = {  
+limit = { <triggers> }  
+order_by = script_value  
+position = int  
+min = int  
+max = script_value  
+check_range_bounds = no # If you don't want an error logged if the list is smaller than the min/max  
+<effects> }
+**Supported Scopes**: country  
+**Supported Targets**: country  
 
 ## ordered_past_liturgical_dialect
 Iterate through all liturgical dialects a country has had before  
@@ -7686,6 +7864,12 @@ random_child = { limit = { <triggers> } (optional) weight = { mtth } <effects> }
 **Supported Scopes**: character  
 **Supported Targets**: character  
 
+## random_circle_member
+Iterate through all member countries of an Imperial Circle  
+random_circle_member = { limit = { <triggers> } (optional) weight = { mtth } <effects> }
+**Supported Scopes**: imperial_circle  
+**Supported Targets**: country  
+
 ## random_close_relative
 Iterate through all close relatives of a character  
 random_close_relative = { limit = { <triggers> } (optional) weight = { mtth } <effects> }
@@ -7896,6 +8080,12 @@ random_country_with_cardinals = { limit = { <triggers> } (optional) weight = { m
 **Supported Scopes**: religion  
 **Supported Targets**: country  
 
+## random_country_with_chivalric_order
+Iterate through all countries with an active chivalric order  
+random_country_with_chivalric_order = { limit = { <triggers> } (optional) weight = { mtth } <effects> }
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
 ## random_country_with_coalition_grade_antagonism_against_us
 Iterate through all countries who have coalition grade antagonism against us  
 random_country_with_coalition_grade_antagonism_against_us = { limit = { <triggers> } (optional) weight = { mtth } <effects> }
@@ -8076,6 +8266,12 @@ random_estate_type_that_likes_bureaucracy = { limit = { <triggers> } (optional) 
 **Supported Scopes**: bureaucracy_type  
 **Supported Targets**: estate_type  
 
+## random_every_rented_out_mercenary
+Iterate through all lent units currently employed by another country, scoped from the lending country  
+random_every_rented_out_mercenary = { limit = { <triggers> } (optional) weight = { mtth } <effects> }
+**Supported Scopes**: country  
+**Supported Targets**: mercenary  
+
 ## random_exploration_from_country
 Iterate through all Explorations a country has  
 random_exploration_from_country = { limit = { <triggers> } (optional) weight = { mtth } <effects> }
@@ -8243,6 +8439,18 @@ Iterate through all enemies of our enemies
 random_hostile_to_hostile_country = { limit = { <triggers> } (optional) weight = { mtth } <effects> }
 **Supported Scopes**: country  
 **Supported Targets**: country  
+
+## random_imperial_circle
+Iterate through all Imperial Circles in the scope international organization  
+random_imperial_circle = { limit = { <triggers> } (optional) weight = { mtth } <effects> }
+**Supported Scopes**: international_organization  
+**Supported Targets**: imperial_circle  
+
+## random_imperial_circle_country_is_member_of
+Iterate through all Imperial Circles the scope country is a member of  
+random_imperial_circle_country_is_member_of = { limit = { <triggers> } (optional) weight = { mtth } <effects> }
+**Supported Scopes**: country  
+**Supported Targets**: imperial_circle  
 
 ## random_import
 Iterate through all imports in a market  
@@ -8803,6 +9011,12 @@ random_participating_units = { limit = { <triggers> } (optional) weight = { mtth
 **Supported Scopes**: combat_side  
 **Supported Targets**: unit  
 
+## random_past_court_dialect
+Iterate through all court dialects a country has had before  
+random_past_court_dialect = { limit = { <triggers> } (optional) weight = { mtth } <effects> }
+**Supported Scopes**: country  
+**Supported Targets**: country  
+
 ## random_past_liturgical_dialect
 Iterate through all liturgical dialects a country has had before  
 random_past_liturgical_dialect = { limit = { <triggers> } (optional) weight = { mtth } <effects> }
@@ -9293,6 +9507,15 @@ random_work_of_art_in_location = { limit = { <triggers> } (optional) weight = { 
 Prisoners are released back to their countries for a price
 **Supported Scopes**: unit  
 
+## recall_lent_unit
+Returns a lent unit to its owner (lender). Do NOT use destroy_mercenary for lent units — that calls Dismiss() which routes subunits to the borrower.
+**Supported Scopes**: mercenary  
+
+## redeem_bonds
+redeems the targeted government bond; country pays back face value
+**Supported Scopes**: none  
+**Supported Targets**: loan  
+
 ## refresh_map_colors
 Refreshes the map colours
 **Supported Scopes**: none  
@@ -9387,6 +9610,11 @@ Removes a cooldown for a country or international organization. Usage: remove_co
 ## remove_core
 makes the location no longer a core of the target country
 **Supported Scopes**: location  
+**Supported Targets**: country  
+
+## remove_country_from_circle
+Remove a country from an imperial circle. If the country was the leader, the leader is also cleared.
+**Supported Scopes**: imperial_circle  
 **Supported Targets**: country  
 
 ## remove_country_from_international_organization
@@ -9514,11 +9742,6 @@ remove a location from an international organization
 Remove a modifier from a location  
 remove_location_modifier = name
 **Supported Scopes**: location  
-
-## remove_mercenary_modifier
-Remove a modifier from a mercenary  
-remove_mercenary_modifier = name
-**Supported Scopes**: mercenary  
 
 ## remove_merchant_power
 Removes temporary power to a merchant (country = <country>  key = localisation} 
@@ -9661,6 +9884,11 @@ changes the name of a location
 An offer to ransom the unit's troops is sent to all original owners
 **Supported Scopes**: unit  
 
+## rescue_sub_unit
+Rescues a sub unit
+**Supported Scopes**: mercenary  
+**Supported Targets**: sub_unit  
+
 ## research_advance
 Research a specific advance  
 research_advance = name
@@ -9766,13 +9994,26 @@ Saves a numerical or bool value as an arbitrarily-named temporary target to be r
 save_temporary_scope_value_as = { name = <string> value = x }
 **Supported Scopes**: none  
 
+## sell_bonds
+issues a government bond; country receives gold and owes bond_interest monthly
+**Supported Scopes**: country  
+
 ## sell_goods_from_location
 Adds goods to a market's stockpile, selling them from a specific location, and the location's owner country selling them will get the sale value. Usage: sell_goods_from_location = { goods = <goods> amount = <amount> location = <location> } 
 **Supported Scopes**: market  
 
+## sell_goods_to_market
+A country sells goods into a target market, receiving the sell price for its capital location in gold and adding the goods to the market stockpile. Has no effect if the country has no capital location. Usage: sell_goods_to_market = { market = <market> goods = <goods> amount = <amount> }
+**Supported Scopes**: country  
+
 ## sell_prisoners_into_slavery
 Prisoners get sold as slaves
 **Supported Scopes**: unit  
+
+## set_active_chivalric_order
+Unlocks the specified chivalric order for this country and refreshes the active order immediately.
+**Supported Scopes**: country  
+**Supported Targets**: chivalric_order  
 
 ## set_age_preference
 Sets age preference for this age for a country
@@ -9786,6 +10027,10 @@ Sets army tradition
 Sets a new owner for the work of art
 **Supported Scopes**: work_of_art  
 **Supported Targets**: country  
+
+## set_art_worth
+Sets the worth override of a work of art. -1 = priceless, 0 = use type default, positive = gold value.
+**Supported Scopes**: work_of_art  
 
 ## set_as_commander
 sets the commander of a unit to the specified character
@@ -9826,6 +10071,11 @@ Set the education type of a child
  set_child_education = education
 **Supported Scopes**: character  
 **Supported Targets**: child_education  
+
+## set_circle_leader
+Set the leader of an imperial circle. The country must already be a member.
+**Supported Scopes**: imperial_circle  
+**Supported Targets**: country  
 
 ## set_collection_pin
 Sets collection pin.
@@ -10042,9 +10292,18 @@ Sets the AI personality for a country
 Sets prestige
 **Supported Scopes**: country, international_organization  
 
+## set_province_capital
+Locks the province capital to the target location, preventing automatic reassignment.
+**Supported Scopes**: province  
+**Supported Targets**: location  
+
 ## set_purity
 Sets purity
 **Supported Scopes**: country, international_organization  
+
+## set_rebel_demands
+Sets the rebel demand for this rebel, overriding the trigger-based auto-resolve. Usage: scope:my_rebel = { set_rebel_demands = my_demand_key }
+**Supported Scopes**: rebels  
 
 ## set_regent
 Makes the target_character the acting regent
@@ -10284,6 +10543,10 @@ takes over all wars where target country is warleader
 ## test_log
 Log a string to the test log when this effect executes, test_log = message, the message can be a localization string with ROOT, SCOPE and PREV available. Usage: test_log = { name = <test key> text = <custom log message> }
 **Supported Scopes**: none  
+
+## transfer_gold_from_estate
+Country gains gold transferred from a named estate's pool; clamped to BURGHER_GRANT_MAX_FRACTION of the estate's gold
+**Supported Scopes**: country  
 
 ## transfer_location_occupation
 Transfers occupation of a Location to the target country

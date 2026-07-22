@@ -326,6 +326,12 @@ Expected Scope: country
 
 --------------------
 
+on_new_age_global:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 assign_elf_bloodline_traits:
 From Code: No
 Expected Scope: none
@@ -422,6 +428,12 @@ Expected Scope: none
 
 --------------------
 
+on_estate_culture_changed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 yearly_flavor_pol_union_pulse:
 From Code: No
 Expected Scope: country
@@ -454,6 +466,12 @@ Expected Scope: country
 
 government_flavor_pulse:
 From Code: Yes
+Expected Scope: country
+
+--------------------
+
+yearly_hre_circle_leader_pulse:
+From Code: No
 Expected Scope: country
 
 --------------------
@@ -735,6 +753,12 @@ Expected Scope: none
 --------------------
 
 on_parliament_started:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_estate_religion_changed:
 From Code: Yes
 Expected Scope: none
 
@@ -1102,6 +1126,12 @@ Expected Scope: none
 
 on_integrated_in_union_removal:
 From Code: No
+Expected Scope: none
+
+--------------------
+
+on_pre_war_declared:
+From Code: Yes
 Expected Scope: none
 
 --------------------

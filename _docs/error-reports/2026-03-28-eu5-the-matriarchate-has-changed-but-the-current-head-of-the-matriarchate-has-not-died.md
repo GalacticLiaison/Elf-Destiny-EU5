@@ -5,18 +5,18 @@
 ## Report
 **setmasterua** · *2026-03-28*
 The matriarchate has changed, but the current head of the matriarchate has not died—what could be the reason?
-![image.png](https://cdn.discordapp.com/attachments/1487439204492509365/1487439205058609152/image.png?ex=6a0b1035&is=6a09beb5&hm=9010aaf29c32d95644dda937e50aaf213d2990277c78161a665e51f2909c9bea&)
+![image.png](https://cdn.discordapp.com/attachments/1487439204492509365/1487439205058609152/image.png?ex=6a105635&is=6a0f04b5&hm=a26e9df013f4184fe68f4dae0b2409a2ba363f7c958d877a4f9b0a8cb42b6e5d&)
 ---
 
 ## Discussion (3 comments)
 
 **setmasterua** · *2026-03-28*
 New:
-![image.png](https://cdn.discordapp.com/attachments/1487439204492509365/1487439400316043434/image.png?ex=6a0b1064&is=6a09bee4&hm=b6faea357696dd811d4e3ba24e8497c3be738af0999e1fbe57491f8a21ffa119&)
+![image.png](https://cdn.discordapp.com/attachments/1487439204492509365/1487439400316043434/image.png?ex=6a105664&is=6a0f04e4&hm=603e86632a6807059be4ed70c246a188ce0214991808a29e600a0caac3e13fd6&)
 
 **setmasterua** · *2026-03-28*
 OLD:
-![image.png](https://cdn.discordapp.com/attachments/1487439204492509365/1487439540577632357/image.png?ex=6a0b1085&is=6a09bf05&hm=7df44806cb0c14854239da7543942e7de567e924fdc6e0452932f60401aa2f21&)
+![image.png](https://cdn.discordapp.com/attachments/1487439204492509365/1487439540577632357/image.png?ex=6a105685&is=6a0f0505&hm=6b37835c761d36cc70b33603f88a83df17c67c39ae0698d77d5e072a81bd238c&)
 
 **eastpointed** · *2026-03-28*
 I just disabled the notification event in the latest patch until I can figure out why it keeps firing
