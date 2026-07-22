@@ -94,7 +94,6 @@ clergy = {
 
 }
 
-
 burghers = {
 	color = pop_burghers
 	
@@ -123,9 +122,13 @@ burghers = {
 	literacy_impact = {
 		local_monthly_development_modifier = 0.25
 		local_trades_per_burgher = 0.5
+		local_building_establishment_speed = 0.25
 	}
 
 }
+
+
+
 
 
 
@@ -142,10 +145,13 @@ laborers = {
 
 	city_graphics = 0.05
 	
+	promote_to = soldiers
+	promote_to = burghers
+
 	has_cap = yes
-	
+
 	promotion_factor = 1.5
-	
+
 	migration_factor = 0.1
 	
 	dhimmi_estate = { is_dhimmi = yes }
@@ -188,6 +194,8 @@ soldiers = {
 		local_manpower_modifier = 0.1
 	}
 }
+
+
 
 peasants = {
 	color = pop_peasants
@@ -251,15 +259,17 @@ slaves = {
 	color = pop_slaves
 	pop_food_consumption = 1.0
 	assimilation_conversion_factor = 1.0
-	
+
 	migration_factor = 0.01
-	
+
+	grow = yes
+
 	dhimmi_estate = { is_dhimmi = yes }
 	peasants_estate = {}
 	city_graphics = 0.01
-	
+
 	literacy_impact = {
 		local_slave_pop_satisfaction = -0.5
 	}
-	
+
 }

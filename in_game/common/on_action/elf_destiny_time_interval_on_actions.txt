@@ -84,6 +84,9 @@ daughters_sent_to_become_aeluran_sisters = {
 			NOT = {
 				has_variable = refused_aeluran_training
 			}
+			NOT = {
+				has_variable = country_of_origin
+			}
 		}
 	}
 

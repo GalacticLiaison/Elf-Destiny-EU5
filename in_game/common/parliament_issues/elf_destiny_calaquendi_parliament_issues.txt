@@ -13,6 +13,7 @@
 			OR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 			}
 		}
 	}
@@ -26,7 +27,12 @@
 			order_by = {
 				value = population
 				if = {
-					limit = { location_rank = location_rank:city }
+					limit = {
+						OR = {
+							location_rank = location_rank:city
+							location_rank = location_rank:megalopolis
+						}
+					}
 					multiply = 5
 				}
 			}
@@ -36,6 +42,7 @@
 				OR = {
 					location_rank = location_rank:town
 					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
 				}
 			}
 			construct_building = {
@@ -66,6 +73,7 @@ sponsor_baths_of_starlight = {
 			OR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 			}
 		}
 	}
@@ -79,7 +87,12 @@ sponsor_baths_of_starlight = {
 			order_by = {
 				value = population
 				if = {
-					limit = { location_rank = location_rank:city }
+					limit = {
+						OR = {
+							location_rank = location_rank:city
+							location_rank = location_rank:megalopolis
+						}
+					}
 					multiply = 5
 				}
 			}
@@ -89,6 +102,7 @@ sponsor_baths_of_starlight = {
 				OR = {
 					location_rank = location_rank:town
 					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
 				}
 			}
 			construct_building = {
@@ -119,6 +133,7 @@ sponsor_perfume_garden_of_valinor = {
 			OR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 			}
 		}
 	}
@@ -132,7 +147,12 @@ sponsor_perfume_garden_of_valinor = {
 			order_by = {
 				value = population
 				if = {
-					limit = { location_rank = location_rank:city }
+					limit = {
+						OR = {
+							location_rank = location_rank:city
+							location_rank = location_rank:megalopolis
+						}
+					}
 					multiply = 5
 				}
 			}
@@ -142,6 +162,7 @@ sponsor_perfume_garden_of_valinor = {
 				OR = {
 					location_rank = location_rank:town
 					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
 				}
 			}
 			construct_building = {
@@ -172,6 +193,7 @@ sponsor_wine_cellar_of_elder_days = {
 			OR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 			}
 		}
 	}
@@ -185,7 +207,12 @@ sponsor_wine_cellar_of_elder_days = {
 			order_by = {
 				value = population
 				if = {
-					limit = { location_rank = location_rank:city }
+					limit = {
+						OR = {
+							location_rank = location_rank:city
+							location_rank = location_rank:megalopolis
+						}
+					}
 					multiply = 5
 				}
 			}
@@ -195,6 +222,7 @@ sponsor_wine_cellar_of_elder_days = {
 				OR = {
 					location_rank = location_rank:town
 					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
 				}
 			}
 			construct_building = {
@@ -225,6 +253,7 @@ sponsor_feasting_hall_of_the_trees = {
 			OR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 			}
 		}
 	}
@@ -238,7 +267,12 @@ sponsor_feasting_hall_of_the_trees = {
 			order_by = {
 				value = population
 				if = {
-					limit = { location_rank = location_rank:city }
+					limit = {
+						OR = {
+							location_rank = location_rank:city
+							location_rank = location_rank:megalopolis
+						}
+					}
 					multiply = 5
 				}
 			}
@@ -248,6 +282,7 @@ sponsor_feasting_hall_of_the_trees = {
 				OR = {
 					location_rank = location_rank:town
 					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
 				}
 			}
 			construct_building = {
@@ -278,6 +313,7 @@ sponsor_grand_archives = {
 			OR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 			}
 		}
 	}
@@ -291,7 +327,12 @@ sponsor_grand_archives = {
 			order_by = {
 				value = population
 				if = {
-					limit = { location_rank = location_rank:city }
+					limit = {
+						OR = {
+							location_rank = location_rank:city
+							location_rank = location_rank:megalopolis
+						}
+					}
 					multiply = 5
 				}
 			}
@@ -301,6 +342,7 @@ sponsor_grand_archives = {
 				OR = {
 					location_rank = location_rank:town
 					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
 				}
 			}
 			construct_building = {

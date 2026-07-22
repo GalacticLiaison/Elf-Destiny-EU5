@@ -1,5 +1,6 @@
 ﻿REPLACE:mercury_patio = {
 	is_foreign = no
+	audio_tier = 3
 	max_levels = mercury_patio_max_level
 	pop_type = laborers
 
@@ -22,7 +23,7 @@
 	build_time = guild_build_time
 	
 	unique_production_methods = {
-		mercury_patio_maintenance = {
+		elf_mercury_patio_maintenance = {
 			mercury = 1.0
 			category = building_maintenance
 		}

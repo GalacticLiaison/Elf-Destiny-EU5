@@ -5,14 +5,14 @@
 ## Report
 **setmasterua** · *2026-04-04*
 Hello! For some reason, commoners are leaving the capital to nowhere—they just disappear from the country.
-![image.png](https://cdn.discordapp.com/attachments/1490043389410803722/1490043590901239920/image.png?ex=6a0aa67b&is=6a0954fb&hm=803e8b9c2787c6802f33d0d1822a8f14f1effed2ad15cf49e0e79aa6cefa68d7&)
+![image.png](https://cdn.discordapp.com/attachments/1490043389410803722/1490043590901239920/image.png?ex=6a10953b&is=6a0f43bb&hm=bbd8435d436c215fec8714c5e56db8fde6ca20d70997345ba51f55936bf45802&)
 ---
 
 ## Discussion (7 comments)
 
 **setmasterua** · *2026-04-04*
 Mods:
-![image.png](https://cdn.discordapp.com/attachments/1490043389410803722/1490044006824935484/image.png?ex=6a0aa6de&is=6a09555e&hm=2b4ba4376165c789c5811dbb4dc78086817ab7d38ac836f983631a67f219f421&)
+![image.png](https://cdn.discordapp.com/attachments/1490043389410803722/1490044006824935484/image.png?ex=6a10959e&is=6a0f441e&hm=26c763db49d0d99d321d52260cb2763c10febdf92c58628038ff44307281bd96&)
 
 **eastpointed** · *2026-04-04*
 Do you have a settlment? Ive heard people say pop will leave the capital to go there

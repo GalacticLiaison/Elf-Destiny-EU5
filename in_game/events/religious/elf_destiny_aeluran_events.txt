@@ -185,6 +185,7 @@ aeluran_events.4 = { # Daughters Sent To Be Trained
 
 		scope:new_sister = {
 			set_variable = refused_aeluran_training
+			remove_variable = country_of_origin
 		}
 
 		add_religious_influence = religious_influence_severe_penalty

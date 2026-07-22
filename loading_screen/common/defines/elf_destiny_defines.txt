@@ -1,4 +1,4 @@
-NCharacter = {
+﻿NCharacter = {
 	MAX_CHARACTER_AGE = 9999			# Elf Destiny: raised so elves can live to their intended ages
 	MAX_AGE_SETUP_ERROR_LOG = 9999		# Elf Destiny: raised to match MAX_CHARACTER_AGE
 }

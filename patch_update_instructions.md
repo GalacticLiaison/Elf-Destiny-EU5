@@ -2,7 +2,7 @@
 loading_screen\common\defines\elf_destiny_defines.txt
 in_game\common\estates\00_default.txt
 in_game\common\pop_types\00_default.txt
-in_game\common\goods_demand\elf_destiny_pop_demands.txt
+in_game\common\goods_demand\z_elf_destiny_pop_demands.txt
 in_game\common\building_types\elf_destiny_building_overrides.txt
 in_game\common\cabinet_actions\elf_destiny_cabinet_actions_overrides.txt
 in_game\common\government_reforms\elf_destiny_override_reforms.txt

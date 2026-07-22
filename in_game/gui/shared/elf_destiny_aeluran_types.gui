@@ -104,10 +104,9 @@ types CabinetCards
 							}
 		
 							blockoverride "portrait_click" {
-								datacontext = "[CabinetItem.GetNoAdvisorUIAction]"
-								using = button_action_provider_base
+								using = cabinet_item_advisor_action_provider
 							}
-							
+
 							blockoverride "character_contextmenu"{}
 							blockoverride "rightclick"{}
 							blockoverride "hover"{}
@@ -285,7 +284,7 @@ types CabinetCards
 									autoresize = yes
 									align = center
 									using = Font_Size_Very_Small
-									text = "[Cabinet.GetActionProgressLongWordier]"
+									text = "[CabinetItem.GetActionProgressLongWordier]"
 								}
 							}
 						}
@@ -389,8 +388,7 @@ types CabinetCards
 					}
 
 					blockoverride "portrait_click" {
-						datacontext = "[CabinetItem.GetNoAdvisorUIAction]"
-						using = button_action_provider_base
+						using = cabinet_item_advisor_action_provider
 					}
 					
 					blockoverride "character_contextmenu"{}

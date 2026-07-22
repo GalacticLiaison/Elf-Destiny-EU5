@@ -589,6 +589,7 @@ Entries:
 rural_settlement_tt_LR
 town_tt_LR
 city_tt_LR
+megalopolis_tt_LR
 
 --------------------
 
@@ -601,6 +602,7 @@ Entries:
 rural_settlement_GEN
 town_GEN
 city_GEN
+megalopolis_GEN
 
 --------------------
 
@@ -613,6 +615,7 @@ Entries:
 rural_settlement_DAT
 town_DAT
 city_DAT
+megalopolis_DAT
 
 --------------------
 
@@ -625,6 +628,7 @@ Entries:
 rural_settlement_ACC
 town_ACC
 city_ACC
+megalopolis_ACC
 
 --------------------
 
@@ -637,6 +641,7 @@ Entries:
 rural_settlement_INST
 town_INST
 city_INST
+megalopolis_INST
 
 --------------------
 
@@ -649,6 +654,7 @@ Entries:
 rural_settlement_PREP
 town_PREP
 city_PREP
+megalopolis_PREP
 
 --------------------
 
@@ -726,46 +732,6 @@ Parent: Get_ru_DangerousWildAnimalName
 Suffix: _PREP
 
 Entries:
-
---------------------
-
-GetOrderOfChivalry:
-
-Scope: country
-Random Valid: no
-
-Entries:
-order_of_saint_george_policy
-order_of_the_ermine_policy
-order_of_the_dragon_policy
-order_of_the_band_policy
-order_of_the_swan_policy
-order_of_the_black_eagle_policy
-order_of_the_white_eagle_policy
-order_of_chivalry_law
-
---------------------
-
-GetOrderOfChivalryBonusTooltip:
-
-Scope: country
-Random Valid: no
-
-Entries:
-STATIC_MODIFIER_EFFECT_joined_order_of_saint_george
-STATIC_MODIFIER_EFFECT_joined_order_of_the_ermine
-STATIC_MODIFIER_EFFECT_joined_order_of_the_dragon
-STATIC_MODIFIER_EFFECT_joined_order_of_the_band
-STATIC_MODIFIER_EFFECT_joined_order_of_the_swan
-STATIC_MODIFIER_EFFECT_joined_order_of_the_black_eagle
-STATIC_MODIFIER_EFFECT_joined_order_of_the_white_eagle
-STATIC_MODIFIER_EFFECT_joined_society_with_the_donkey
-STATIC_MODIFIER_EFFECT_joined_society_lion_nassau
-STATIC_MODIFIER_EFFECT_joined_society_bengler_mainz
-STATIC_MODIFIER_EFFECT_joined_society_furspang_franconia
-STATIC_MODIFIER_EFFECT_joined_society_elephant_tyrol
-STATIC_MODIFIER_EFFECT_joined_society_hubertus_cologne
-order_of_chivalry_law
 
 --------------------
 
@@ -1581,6 +1547,28 @@ Entries:
 
 --------------------
 
+NTR:
+
+Scope: country
+Random Valid: no
+
+Entries:
+NTR_native
+NTR
+
+--------------------
+
+NTR_ADJ:
+
+Scope: country
+Random Valid: no
+Parent: NTR
+Suffix: _ADJ
+
+Entries:
+
+--------------------
+
 HIN:
 
 Scope: country
@@ -1754,6 +1742,7 @@ country_name_construction_prefix_rank_of_name_but_map_is_just_prefix_rank
 country_name_construction_prefix_name_rank
 country_name_construction_prefix_name
 country_name_construction_prefix_name_horde
+country_name_construction_prefix_name_bank_special
 country_name_construction_prefix_adjective_rank
 country_name_construction_sultanate
 country_name_construction_crown
@@ -1846,6 +1835,7 @@ rank_kingdom_republic_revolutionary
 rank_kingdom_republic_judicate_reform
 rank_kingdom_conquistador
 rank_kingdom_bank
+rank_kingdom_maori_native
 rank_kingdom_maori
 rank_kingdom_maya
 rank_duchy_united_provinces
@@ -1924,6 +1914,7 @@ rank_duchy_abbey
 rank_duchy_bishopric
 rank_duchy_theocracy_dharmic
 rank_duchy_theocracy
+rank_duchy_horde
 rank_duchy_celtic_welsh
 rank_duchy_celtic_irish
 rank_duchy_tribe_maori
@@ -1982,6 +1973,7 @@ rank_county_abbey
 rank_county_bishopric
 rank_county_theocracy_dharmic
 rank_county_theocracy
+rank_county_horde
 rank_county_celtic_irish
 rank_county_tribe_maori
 rank_county_tribe_haudenosaunee
@@ -48280,6 +48272,16 @@ subunit_type_army_infantry_gallowglass_gaelic
 subunit_type_army_infantry_gallowglass
 subunit_type_army_infantry_varangians_greek
 subunit_type_army_infantry_varangians
+subunit_type_army_infantry_varangians_2_greek
+subunit_type_army_infantry_varangians_2
+subunit_type_army_infantry_varangians_3_greek
+subunit_type_army_infantry_varangians_3
+subunit_type_army_infantry_varangians_4_greek
+subunit_type_army_infantry_varangians_4
+subunit_type_army_infantry_varangians_5_greek
+subunit_type_army_infantry_varangians_5
+subunit_type_army_infantry_varangians_6_greek
+subunit_type_army_infantry_varangians_6
 subunit_type_army_infantry_mamluks_arabic
 subunit_type_army_infantry_mamluks_turkish
 subunit_type_army_infantry_mamluks
@@ -49510,9 +49512,11 @@ captain_breton
 captain_norman
 captain_low_german
 captain_scots
+captain_galician
 captain_roman
 captain_swedish
 captain_spanish
+captain_portuguese
 captain_occitan
 captain_french
 captain_frisian
@@ -49582,6 +49586,7 @@ colonel_low_german
 colonel_scots
 colonel_swedish
 colonel_spanish
+colonel_portuguese
 colonel_occitan
 colonel_french
 colonel_frisian

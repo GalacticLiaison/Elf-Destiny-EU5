@@ -613,7 +613,10 @@ grand_portal = {
 
 	expensive = yes
 	location_potential = {
-		has_building_with_at_least_one_level = grand_portal_ruins
+		OR = {
+			has_building_with_at_least_one_level = grand_portal_ruins
+			has_building_with_at_least_one_level = grand_portal
+		}
 	}
 	country_potential = {
 		custom_tooltip = {

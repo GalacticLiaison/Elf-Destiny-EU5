@@ -22,7 +22,9 @@ INJECT_OR_CREATE:coin_laws = {
 		country_modifier = {
 			mythril_used_for_minting = yes
 			mythril_impacts_inflation = 0.1
-			
+			goods_gold_impacts_inflation = -1.0
+			silver_impacts_inflation = -1.0
+
 			minting_inflation_threshold = 0.04
 			minting_income_factor = 0.2
 		}

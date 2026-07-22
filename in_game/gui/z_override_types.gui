@@ -419,6 +419,19 @@ types override_types {
 						datacontext = "[LocationBuildingItem.GetBuilding]"
 						using = bg_circle
 					}
+
+					icon = {
+						parentanchor = top|right
+						size = { 10 10 }
+						position = { 1 -1 }
+						visible = "[IsAutoExpand(LocationBuildingItem.GetBuilding.Self)]"
+						datacontext = "[LocationBuildingItem.GetBuilding]"
+						texture = "gfx/interface/icons/flat_icons/mass_upgrade.dds"
+						using = bg_circle
+						tooltipwidget = {
+							using = AutoExpand_Building_Tooltip
+						}
+					}
 					
 					using = bg_circle_tile_shadow
 					background = {
@@ -482,6 +495,7 @@ types override_types {
 									visible = "[Not(LocationBuildingItem.IsBuildingUnderConstruction)]"
 									enabled = "[LocationBuildingItem.CanDestroy]"
 									description = "[LocationBuildingItem.CanDestroyDesc]"
+									confirmation = "[LocationBuildingItem.CanDestroyDesc]"
 									on_action = "[LocationBuildingItem.Destroy]"
 									on_action = "[PlayAudioEffect('UI_action_building_destroy')]"
 								}
@@ -640,6 +654,18 @@ types override_types {
 			
 			expand = {}
 		}
+		### Leader change (regency / succession piechart)
+		hbox =	{
+			layoutpolicy_horizontal = expanding
+			margin_left = 2
+			margin_bottom = 1
+			block "country_header_orientation" {}
+
+			block "character_title_leader_change" {
+				visible = no
+			}
+			expand = {}
+		}
 		### Extra Titles
 		hbox =	{
 			layoutpolicy_horizontal = expanding
@@ -685,14 +711,11 @@ types override_types {
 							texture_density = 2
 						}
 	
-						onclick = "[ShowRulingHistoryForInternationalOrganization(InternationalOrganizationsView.GetInternationalOrganization.Self)]"
-						tooltipwidget = {
-							LeftClickButtonTooltip = {
-								blockoverride "onclick_text" { 
-									text = "RULING_HISTORY_INTERNATIONAL_ORGANIZATION_SIDEMENU"
-								}
-							}
+						action_tooltip = {
+							title = "RULING_HISTORY_INTERNATIONAL_ORGANIZATION_SIDEMENU"
+							on_action = "[ShowRulingHistoryForInternationalOrganization(InternationalOrganizationsView.GetInternationalOrganization.Self)]"
 						}
+						tooltipwidget = { BasicFunctionalTooltip = {} }
 					}
 					visible = "[And(And(Not(IsLateralViewOpened('government')), Not(IsLateralViewOpened('foreign_country'))), InternationalOrganizationsView.ShouldShowRulingHistory)]"
 				}
@@ -1090,9 +1113,9 @@ types override_types {
 						}
 					}
 
-					widget = {
+					vbox = {
 						layoutpolicy_horizontal = expanding
-						size = { -1 30 }
+						minimumsize = { -1 30 }
 
 						background = {
 							using = tile_background_squared_texture
@@ -1103,6 +1126,7 @@ types override_types {
 						}
 
 						character_abilities = {
+							layoutpolicy_horizontal = expanding
 							visible = "[Not(Character.IsArtist)]"
 							blockoverride "ability_icon_size" {
 								size = { 25 25 }
@@ -1110,6 +1134,7 @@ types override_types {
 						}
 
 						artist_abilities = {
+							layoutpolicy_horizontal = expanding
 							visible = "[Character.IsArtist]"
 							blockoverride "ability_icon_size" {
 								size = { 25 25 }
@@ -1140,7 +1165,7 @@ types override_types {
 
 							racial_trait_icon = {
 								blockoverride "racial_trait_icon_data_model" {
-									datamodel = "[Character.MakeScope.GetVariable('character_race')]"
+									datacontext = "[Character.MakeScope.GetVariable('character_race')]"
 								}
 
 								blockoverride "racial_trait_icon_visible" {

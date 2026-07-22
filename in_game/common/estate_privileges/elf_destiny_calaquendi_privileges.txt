@@ -207,7 +207,7 @@ fairest_ascendancy = {
 		global_calaquendi_estate_power = 0.75
 		gender_equality = yes
 		diplomatic_reputation = 5
-		diplomatic_annexation_cost = -0.25
+		diplomatic_annexation_efficiency = 0.25
 		unlock_fairest_ascendancy_succession = yes
 	}
 }
