@@ -1,5 +1,6 @@
 ﻿calaquendi = {# High Nobles
 	color = { 0.468 0.456 0.854 1 }
+	power_per_pop = 110
 	
 	editor = 0.05
 	
@@ -34,7 +35,8 @@
 
 nobles = {
 	color = pop_nobles
-	
+	power_per_pop = 25
+
 	editor = 0.05
 	
 	assimilation_conversion_factor = 0.05
@@ -47,6 +49,7 @@ nobles = {
 	
 	dhimmi_estate = { is_dhimmi = yes }
 	tribes_estate = { is_gaelic_clans = yes }
+	cossacks_estate = { is_cossacks = yes }
 	nobles_estate = {}
 	
 	
@@ -66,7 +69,8 @@ nobles = {
 
 clergy = {
 	color = pop_clergy
-	
+	power_per_pop = 10
+
 	editor = 0.05
 	
 	grow = yes
@@ -81,6 +85,7 @@ clergy = {
 	
 	dhimmi_estate = { is_dhimmi = yes }
 	tribes_estate = { is_gaelic_clans = yes }
+	cossacks_estate = { is_cossacks = yes }
 	clergy_estate = {}
 	
 	upper = yes
@@ -96,7 +101,8 @@ clergy = {
 
 burghers = {
 	color = pop_burghers
-	
+	power_per_pop = 4
+
 	editor = 0.1
 	
 	grow = yes
@@ -109,6 +115,7 @@ burghers = {
 	
 	dhimmi_estate = { is_dhimmi = yes }
 	tribes_estate = { is_gaelic_clans = yes }
+	cossacks_estate = { is_cossacks = yes }
 	burghers_estate = {}
 	
 	promotion_factor = 0.5
@@ -134,7 +141,8 @@ burghers = {
 
 laborers = {
 	color = pop_laborers
-	
+	power_per_pop = 0.0375
+
 	editor = 1.0
 	
 	grow = yes
@@ -156,6 +164,7 @@ laborers = {
 	
 	dhimmi_estate = { is_dhimmi = yes }
 	tribes_estate = { is_gaelic_clans = yes }
+	cossacks_estate = { is_cossacks = yes }
 	peasants_estate = {}
 	
 	
@@ -168,7 +177,8 @@ laborers = {
 
 soldiers = {
 	color = pop_soldiers
-	
+	power_per_pop = 0.0625
+
 	editor = 1.0
 	
 	grow = yes
@@ -186,6 +196,7 @@ soldiers = {
 	
 	dhimmi_estate = { is_dhimmi = yes }
 	tribes_estate = { is_gaelic_clans = yes }
+	cossacks_estate = { is_cossacks = yes }
 	peasants_estate = {}
 	
 	
@@ -199,7 +210,8 @@ soldiers = {
 
 peasants = {
 	color = pop_peasants
-	
+	power_per_pop = 0.025
+
 	
 	promote_to = burghers
 	promote_to = clergy
@@ -221,6 +233,7 @@ peasants = {
 	city_graphics = 0.01
 	dhimmi_estate = { is_dhimmi = yes }
 	tribes_estate = { is_gaelic_clans = yes }
+	cossacks_estate = { is_cossacks = yes }
 	peasants_estate = {}
 	
 	literacy_impact = {
@@ -231,7 +244,8 @@ peasants = {
 
 tribesmen = {
 	color = pop_tribes
-	
+	power_per_pop = 0.25
+
 	promote_to = peasants
 	
 	pop_food_consumption = 0.0
@@ -241,7 +255,9 @@ tribesmen = {
 	tribal_rules = yes	#can have special promotion factors
 	
 	assimilation_conversion_factor = 0.0
-	
+
+	migration_factor = 0.1
+
 	pop_percentage_impact = {
 		local_distance_from_capital_speed_propagation = -0.5
 		local_monthly_control = -0.0005
@@ -257,6 +273,7 @@ tribesmen = {
 
 slaves = {
 	color = pop_slaves
+	power_per_pop = 0
 	pop_food_consumption = 1.0
 	assimilation_conversion_factor = 1.0
 
@@ -265,6 +282,7 @@ slaves = {
 	grow = yes
 
 	dhimmi_estate = { is_dhimmi = yes }
+	cossacks_estate = { is_cossacks = yes }
 	peasants_estate = {}
 	city_graphics = 0.01
 

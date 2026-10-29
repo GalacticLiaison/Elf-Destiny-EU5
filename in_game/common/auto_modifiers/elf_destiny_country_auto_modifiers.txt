@@ -18,6 +18,7 @@ elf_destiny_country_base_values = {
 
 	calaquendi_estate_allowed_in_cabinet = yes
 	calaquendi_estate_allowed_leading_military = yes
+	calaquendi_estate_allowed_noble_marriage = yes # EU5 1.4: rulers and heirs may marry Calaquendi (vanilla gives nobles this by default)
 }
 
 elf_destiny_country_base_values_gated = {
@@ -25,6 +26,16 @@ elf_destiny_country_base_values_gated = {
 		is_elven_country = yes
 	}
 	global_calaquendi_desired_pop_scaled = 0.002
+}
+
+# EU5 1.4: the engine refuses female cabinet members unless the country allows them; the religion's
+# definition_modifier no longer reaches the country (console: c:SYL modifier:allow_female_cabinet = no),
+# so the Aeluran permission lives here too. Required for the Aeluran advisor.
+elf_destiny_aeluran_female_cabinet = {
+	potential_trigger = {
+		religion = religion:aeluran
+	}
+	allow_female_cabinet = yes
 }
 
 elf_destiny_elven_racism = {

@@ -1275,10 +1275,10 @@ countries = {
 		}
 
 		WIN = { # belya Windy Vale
-			capital = tayga
+			capital = belya
 
 			own_control_core = {
-				belya tayga
+				belya
 			}
 
 			own_control_colony = {
@@ -1294,11 +1294,11 @@ countries = {
 			include = "elf_culture_astrion_opinions"
 		}
 
-		TIA = { # tagya Taur Iaur
-			capital = tagya
+		TIA = { # tayga Taur Iaur
+			capital = tayga
 
 			own_control_core = {
-				tagya
+				tayga
 			}
 
 			own_control_colony = {

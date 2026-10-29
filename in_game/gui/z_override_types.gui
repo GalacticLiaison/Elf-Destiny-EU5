@@ -165,6 +165,15 @@ types override_types {
 						title = "BUILD_BUILDING_FROM_LOCATION"
 						on_action = "[SelectLocationToBuildDefault(LocationBuildingItem.GetBuilding.GetType)]"
 					}
+					action_tooltip = {
+						click_type = left
+						click_mode = single
+						click_modifier = alt
+						title = "[SelectLocalization(IsAutoExpand(Building.Self), 'TOGGLE_AUTO_EXPAND_ON', 'TOGGLE_AUTO_EXPAND_OFF')]"
+						visible = "[Building.GetType.IsMultipleLevels]"
+						on_action = "[ToggleAutoExpandBuilding(Building.Self)]"
+						description = "[GetAutoExpandBuildingsAutomationWarning]"
+					}
 					enabled = "[LocationBuildingItem.IsPlayerBuilding]"
 
 					tooltipwidget = {
@@ -205,6 +214,15 @@ types override_types {
 							title = "BUILD_BUILDING_FROM_LOCATION"
 							on_action = "[SetUIFocusMarket(Location.GetMarket)]"
 							on_action = "[SelectLocationToBuildDefault(LocationBuildingItem.GetBuilding.GetType)]"
+						}
+						action_tooltip = {
+							click_type = left
+							click_mode = single
+							click_modifier = alt
+							title = "[SelectLocalization(IsAutoExpand(Building.Self), 'TOGGLE_AUTO_EXPAND_ON', 'TOGGLE_AUTO_EXPAND_OFF')]"
+							enabled = "[Building.GetType.IsMultipleLevels]"
+							on_action = "[ToggleAutoExpandBuilding(Building.Self)]"
+							description = "[GetAutoExpandBuildingsAutomationWarning]"
 						}
 						
 						tooltipwidget = {
@@ -423,7 +441,7 @@ types override_types {
 					icon = {
 						parentanchor = top|right
 						size = { 10 10 }
-						position = { 1 -1 }
+						position = { 3 0 }
 						visible = "[IsAutoExpand(LocationBuildingItem.GetBuilding.Self)]"
 						datacontext = "[LocationBuildingItem.GetBuilding]"
 						texture = "gfx/interface/icons/flat_icons/mass_upgrade.dds"
@@ -485,12 +503,10 @@ types override_types {
 								block "square_icon_out_size_minus" {
 									size = { -1 12 }
 								}
-								datacontext = "[LocationBuildingItem.GetBuilding]"
 								enabled = "[Or(And(Not(LocationBuildingItem.IsBuildingUnderConstruction), LocationBuildingItem.CanDestroy), And(LocationBuildingItem.IsBuildingUnderConstruction, LocationBuildingItem.CanDequeue))]"
 								action_tooltip = {
 									click_mode = confirm
 									click_type = left
-									datacontext = "[Building.GetType]"
 									title = "L_DESTROY_BUILDING_ACTION"
 									visible = "[Not(LocationBuildingItem.IsBuildingUnderConstruction)]"
 									enabled = "[LocationBuildingItem.CanDestroy]"
@@ -517,6 +533,9 @@ types override_types {
 								}
 							}
 						}
+						blockoverride "flag_estate_building_card_flag_visible" {
+							visible = "[And(LocationBuildingItem.GetBuilding.GetType.IsForeign, Not(And3(LocationBuildingItem.IsPlayerBuilding, Or(LocationBuildingItem.GetBuilding.CanPlayerUpgrade, LocationBuildingItem.CanExpandBuilding), Not(LocationBuildingItem.GetBuilding.GetType.OnlyEstatesCanBuild))))]"
+						}
 						blockoverride "flag_estate_building_card_flag_size" {
 							block "tooltip_flag_estate_building_card_flag_size" {
 								size = {19 12}
@@ -542,7 +561,7 @@ types override_types {
 						blockoverride "square_icon_size" {
 							size = {10 10}
 						}
-						visible = "[And3(Not(LocationBuildingItem.GetBuilding.CanPlayerUpgrade), Not(LocationBuildingItem.GetBuilding.GetType.IsForeign), Not(Building.GetType.OnlyEstatesCanBuild))]"
+						visible = "[And3(Not(LocationBuildingItem.GetBuilding.CanPlayerUpgrade), Or(Not(LocationBuildingItem.GetBuilding.GetType.IsForeign), LocationBuildingItem.IsPlayerBuilding), Not(Building.GetType.OnlyEstatesCanBuild))]"
 						datacontext = "[LocationBuildingItem.GetBuilding]"
 						datacontext = "[LocationBuildingItem.GetBuilding.GetType]"
 						datacontext = "[LocationBuildingItem.GetBuilding.GetLocation]"
@@ -580,6 +599,18 @@ types override_types {
 	
 							on_action = "[ExpandBuildingShift(LocationBuildingItem.GetBuilding.Self)]"
 						}
+
+						action_tooltip = {
+							click_type = left
+							click_mode = single
+							click_modifier = alt
+
+							title = "BUILDING_IN_LOCATION_ACTION_ALT"
+							description = "[LocationBuildingItem.GetExpandBuildingInfo]"
+							enabled = "[LocationBuildingItem.CanExpandBuilding]"
+
+							on_action = "[ExpandBuildingAlt(LocationBuildingItem.GetBuilding.Self)]"
+						}
 						tooltipwidget = { using = construct_building_in_location_tt }
 					}
 
@@ -592,7 +623,7 @@ types override_types {
 						blockoverride "plusminus_icon" {
 							texture = "gfx/interface/buttons/flats/upgrade_button2.dds"
 						}
-						visible = "[And3(LocationBuildingItem.GetBuilding.CanPlayerUpgrade, Not(LocationBuildingItem.GetBuilding.GetType.IsForeign), Not(LocationBuildingItem.GetBuilding.GetType.OnlyEstatesCanBuild))]"
+						visible = "[And3(LocationBuildingItem.GetBuilding.CanPlayerUpgrade, Or(Not(LocationBuildingItem.GetBuilding.GetType.IsForeign), LocationBuildingItem.IsPlayerBuilding), Not(LocationBuildingItem.GetBuilding.GetType.OnlyEstatesCanBuild))]"
 						datacontext = "[LocationBuildingItem.GetBuilding.GetType.GetNextReplacementBuilding(Player.Self)]"
 						datacontext = "[LocationBuildingItem.GetBuilding.GetLocation]"
 						enabled = "[CanUpgradeToBuilding(BuildingType.Self, Location.Self)]"
@@ -689,209 +720,191 @@ types override_types {
 			}
 		}
 
-		hbox = {
-			layoutpolicy_horizontal = expanding
-			block "country_header_names_visible" {}
-			block "country_header_orientation" {}
-			block "character_name_extra" {}
-			margin_left = 14 # Needed for IOS with side window art
+		block "character_titles_name_row_top" {
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				block "country_header_names_visible" {}
+				block "country_header_orientation" {}
 
-			block "ruling_history_button" {
-				widget = {
-					size = {32 32}
-					header_button_left = {
-						size = { 100% 100% }
-						blockoverride "button_icon_stretch_sprite" {}
-						blockoverride "header_button_frame_inner" {visible = no}
-						blockoverride "header_button_icon_size" { size = { 30 30 } }
-						blockoverride "header_button_text_layout" {}
-	
-						blockoverride "icon_texture" {
-							texture = "gfx/interface/buttons/flats/history.dds"
-							texture_density = 2
+				character_name_row = {
+					blockoverride "ruling_history_button" {
+						widget = {
+							size = {32 32}
+							header_button_left = {
+								size = { 100% 100% }
+								blockoverride "button_icon_stretch_sprite" {}
+								blockoverride "header_button_frame_inner" {visible = no}
+								blockoverride "header_button_icon_size" { size = { 30 30 } }
+								blockoverride "header_button_text_layout" {}
+
+								blockoverride "icon_texture" {
+									texture = "gfx/interface/buttons/flats/history.dds"
+									texture_density = 2
+								}
+
+								action_tooltip = {
+									title = "RULING_HISTORY_INTERNATIONAL_ORGANIZATION_SIDEMENU"
+									on_action = "[ShowRulingHistoryForInternationalOrganization(InternationalOrganizationsView.GetInternationalOrganization.Self)]"
+								}
+								tooltipwidget = { BasicFunctionalTooltip = {} }
+							}
+							visible = "[And(And(Not(IsLateralViewOpened('government')), Not(IsLateralViewOpened('foreign_country'))), InternationalOrganizationsView.ShouldShowRulingHistory)]"
 						}
-	
-						action_tooltip = {
-							title = "RULING_HISTORY_INTERNATIONAL_ORGANIZATION_SIDEMENU"
-							on_action = "[ShowRulingHistoryForInternationalOrganization(InternationalOrganizationsView.GetInternationalOrganization.Self)]"
-						}
-						tooltipwidget = { BasicFunctionalTooltip = {} }
-					}
-					visible = "[And(And(Not(IsLateralViewOpened('government')), Not(IsLateralViewOpened('foreign_country'))), InternationalOrganizationsView.ShouldShowRulingHistory)]"
-				}
 
-				# Elf Destiny Race
-				hbox = {
-					datacontext = "[Character.MakeScope.GetVariable('character_race')]"
+						# Elf Destiny Race
+						hbox = {
+							datacontext = "[Character.MakeScope.GetVariable('character_race')]"
 
-					widget = {
-						size = { 40 40 }
+							widget = {
+								size = { 40 40 }
 						
-						icon = {
-							visible = "[Character.MakeScope.GetVariable('character_race').IsSet]"
+								icon = {
+									visible = "[Character.MakeScope.GetVariable('character_race').IsSet]"
 
-							size = { 80% 80% }
-							# using = trait_item
-							parentanchor = center
+									size = { 80% 80% }
+									# using = trait_item
+									parentanchor = center
 
-							# texture = "gfx/interface/icons/modifiers/elf_tier_3.dds"
-							# texture = "[Concatenate(Concatenate('gfx/interface/icons/genetic_traits/', Scope.GetFlagName), '.dds')]"
-							# texture = "[TimedModifier.GetModifier.GetIcon]"
-							texture = "[GetTraitIcon(Scope.Trait.Self)]"
+									# texture = "gfx/interface/icons/modifiers/elf_tier_3.dds"
+									# texture = "[Concatenate(Concatenate('gfx/interface/icons/genetic_traits/', Scope.GetFlagName), '.dds')]"
+									# texture = "[TimedModifier.GetModifier.GetIcon]"
+									texture = "[GetTraitIcon(Scope.Trait.Self)]"
 
-							# GetModifier(
+									# GetModifier(
 
-							glow = {
-								# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
-								# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+									glow = {
+										# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+										# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
 
-								name = "glowing"
-								glow_radius = 2.5
-								color = { 0.9 0.9 0.6 1 }
-								alpha = 0.4
-							}
-							using = Animation_Glow_Pulse
-
-
-							tooltipwidget = {
-								ContextualTooltipType = {
-									blockoverride "title_text" {
-										text = "[Scope.Trait.GetNameWithNoTooltip]"
+										name = "glowing"
+										glow_radius = 2.5
+										color = { 0.9 0.9 0.6 1 }
+										alpha = 0.4
 									}
-									
-									blockoverride "title_icon" {
-										icon = {
-											using = tooltip_title_icon_size
-											texture = "[GetTraitIcon(Scope.Trait.Self)]"
+									using = Animation_Glow_Pulse
 
-											glow = {
-												# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
-												# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
 
-												name = "glowing"
-												glow_radius = 2.5
-												color = { 0.9 0.9 0.6 1 }
-												alpha = 0.4
+									tooltipwidget = {
+										ContextualTooltipType = {
+											blockoverride "title_text" {
+												text = "[Scope.Trait.GetNameWithNoTooltip]"
 											}
-											using = Animation_Glow_Pulse
-										}
-									}
+									
+											blockoverride "title_icon" {
+												icon = {
+													using = tooltip_title_icon_size
+													texture = "[GetTraitIcon(Scope.Trait.Self)]"
 
-									blockoverride "concept_link" {
-										text = racial_trait
-										# text = "[Scope.Trait.GetCategoryTag]"
-									}
+													glow = {
+														# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+														# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
 
-									blockoverride "tooltip_content" {
-										TooltipStringPairList = {
-											datacontext = "[StringToStringPairList(Scope.Trait.GetTooltip)]"
-										}
+														name = "glowing"
+														glow_radius = 2.5
+														color = { 0.9 0.9 0.6 1 }
+														alpha = 0.4
+													}
+													using = Animation_Glow_Pulse
+												}
+											}
 
-										TooltipFlavorTextBlock = {
-											blockoverride "text" {
-												text = "[Scope.Trait.GetDesc]"
+											blockoverride "concept_link" {
+												text = racial_trait
+												# text = "[Scope.Trait.GetCategoryTag]"
+											}
+
+											blockoverride "tooltip_content" {
+												TooltipStringPairList = {
+													datacontext = "[StringToStringPairList(Scope.Trait.GetTooltip)]"
+												}
+
+												TooltipFlavorTextBlock = {
+													blockoverride "text" {
+														text = "[Scope.Trait.GetDesc]"
+													}
+												}
 											}
 										}
 									}
 								}
-							}
-						}
 
-						icon = {
-							visible = "[Not(Character.MakeScope.GetVariable('character_race').IsSet)]"
+								icon = {
+									visible = "[Not(Character.MakeScope.GetVariable('character_race').IsSet)]"
 
-							size = { 80% 80% }
-							# using = trait_item
-							parentanchor = center
+									size = { 80% 80% }
+									# using = trait_item
+									parentanchor = center
 
-							# texture = "gfx/interface/icons/traits/human.dds"
-							# texture = "[Concatenate(Concatenate('gfx/interface/icons/genetic_traits/', Scope.GetFlagName), '.dds')]"
-							# texture = "[TimedModifier.GetModifier.GetIcon]"
-							texture = "[GetTraitIcon(GetGlobalVariable('human_trait').Trait.Self)]"
+									# texture = "gfx/interface/icons/traits/human.dds"
+									# texture = "[Concatenate(Concatenate('gfx/interface/icons/genetic_traits/', Scope.GetFlagName), '.dds')]"
+									# texture = "[TimedModifier.GetModifier.GetIcon]"
+									texture = "[GetTraitIcon(GetGlobalVariable('human_trait').Trait.Self)]"
 
-							# GetModifier(
+									# GetModifier(
 
-							glow = {
-								# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
-								# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
+									glow = {
+										# visible = "[EqualTo_string(Trait.GetFlavor.GetName, Localize('elf_bloodline'))]"
+										# visible = "[EqualTo_string(Trait.GetFlavor.GetName, 'elf_bloodline')]"
 
-								name = "glowing"
-								glow_radius = 2.5
-								color = { 0.9 0.9 0.6 1 }
-								alpha = 0.4
-							}
-							# using = Animation_Glow_Pulse
-
-
-							tooltipwidget = {
-								ContextualTooltipType = {
-									blockoverride "title_text" {
-										text = "[GetGlobalVariable('human_trait').Trait.GetNameWithNoTooltip]"
+										name = "glowing"
+										glow_radius = 2.5
+										color = { 0.9 0.9 0.6 1 }
+										alpha = 0.4
 									}
-									
-									blockoverride "title_icon" {
-										icon = {
-											using = tooltip_title_icon_size
-											texture = "[GetTraitIcon(GetGlobalVariable('human_trait').Trait.Self)]"
+									# using = Animation_Glow_Pulse
 
-											glow = {
-												name = "glowing"
-												glow_radius = 2.5
-												color = { 0.9 0.9 0.6 1 }
-												alpha = 0.4
+
+									tooltipwidget = {
+										ContextualTooltipType = {
+											blockoverride "title_text" {
+												text = "[GetGlobalVariable('human_trait').Trait.GetNameWithNoTooltip]"
 											}
-											using = Animation_Glow_Pulse
-										}
-									}
+									
+											blockoverride "title_icon" {
+												icon = {
+													using = tooltip_title_icon_size
+													texture = "[GetTraitIcon(GetGlobalVariable('human_trait').Trait.Self)]"
 
-									blockoverride "concept_link" {
-										text = racial_trait
-										# text = "[Scope.Trait.GetCategoryTag]"
-									}
+													glow = {
+														name = "glowing"
+														glow_radius = 2.5
+														color = { 0.9 0.9 0.6 1 }
+														alpha = 0.4
+													}
+													using = Animation_Glow_Pulse
+												}
+											}
 
-									blockoverride "tooltip_content" {
-										TooltipStringPairList = {
-											datacontext = "[StringToStringPairList(GetGlobalVariable('human_trait').Trait.GetTooltip)]"
-										}
+											blockoverride "concept_link" {
+												text = racial_trait
+												# text = "[Scope.Trait.GetCategoryTag]"
+											}
 
-										TooltipFlavorTextBlock = {
-											blockoverride "text" {
-												text = "[GetGlobalVariable('human_trait').Trait.GetDesc]"
+											blockoverride "tooltip_content" {
+												TooltipStringPairList = {
+													datacontext = "[StringToStringPairList(GetGlobalVariable('human_trait').Trait.GetTooltip)]"
+												}
+
+												TooltipFlavorTextBlock = {
+													blockoverride "text" {
+														text = "[GetGlobalVariable('human_trait').Trait.GetDesc]"
+													}
+												}
 											}
 										}
 									}
 								}
+
 							}
 						}
-
-					}
-				}
-				block "country_header_character_name" {
-					margin = {2 0}
-					character_label_name = {
-						margin_left = 0
-						margin_right = 10
 					}
 				}
 
-				expand = {}
-				# testy = {}
+				# Elf Destiny Race traits
+				character_titles_view_genetic_traits_scroll = {}
 
-
-				# testy_scroll = {}
-
-				# testy_scroll = {}
+				expand = { layoutstretchfactor_horizontal = 2 }
 			}
-
-			# Elf Destiny Race traits
-			# character_titles_view_genetic_traits = {}
-			# testy = {}
-
-			# character_titles_view_genetic_traits_scroll = {}
-			character_titles_view_genetic_traits_scroll = {}
-
-			expand = {}
-
 		}
 
 		### Abilities and dynasty
@@ -933,6 +946,8 @@ types override_types {
 				block "abilities_parent" {}
 			}
 		}
+
+		block "character_titles_name_row_bottom" {}
 	}
 
 	type TooltipCharacterHeader = hbox {
@@ -1127,7 +1142,7 @@ types override_types {
 
 						character_abilities = {
 							layoutpolicy_horizontal = expanding
-							visible = "[Not(Character.IsArtist)]"
+							visible = "[And(Not(Character.IsArtist), Character.ShowsStats)]"
 							blockoverride "ability_icon_size" {
 								size = { 25 25 }
 							}
@@ -1162,7 +1177,7 @@ types override_types {
 						hbox = {
 							layoutpolicy_horizontal = expanding
 							minimumsize = { -1 40 }
-
+							
 							racial_trait_icon = {
 								blockoverride "racial_trait_icon_data_model" {
 									datacontext = "[Character.MakeScope.GetVariable('character_race')]"

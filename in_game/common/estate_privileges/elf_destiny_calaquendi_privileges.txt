@@ -98,6 +98,7 @@ personal_retinues = {
 	}
 
 	country_modifier = {
+		calaquendi_estate_allowed_private_army = yes # EU5 1.4: the retinues take the field as private regiments (see estates/00_default.txt)
 		calaquendi_estate_target_satisfaction = medium_privilege_target_satisfaction
 		monthly_towards_quality = societal_value_monthly_move
 		global_calaquendi_estate_power = 1
@@ -216,4 +217,3 @@ fairest_ascendancy = {
 # in age that inward/outward becomes available, add something for inward
 
 # in age that Absolutism/Liberalism becomes available, add something for Absolutism
-

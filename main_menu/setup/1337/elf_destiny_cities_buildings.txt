@@ -118,6 +118,7 @@ locations={
 	krasnoyarsk = { rank = rural_settlement town_setup = rural_elven_forest_village }
 	# Windy Vale
 	tayga = { rank = rural_settlement town_setup = rural_elven_forest_village }
+	belya = { rank = rural_settlement town_setup = rural_elven_forest_village }
 	# Ringwilith
 	kamenka = { rank = rural_settlement town_setup = rural_elven_forest_village }
 	# Starfall Plain

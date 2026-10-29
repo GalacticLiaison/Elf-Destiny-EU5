@@ -261,7 +261,10 @@ types GeneticTraits
     }
 
     type character_titles_view_genetic_traits_scroll = scrollarea {
-        size = { 32% 100% }
+        # EU5 1.4: percentage sizes are rejected on hbox children; the sibling expand carries stretch factor 2 (~1/3 width)
+        layoutpolicy_horizontal = expanding
+        layoutpolicy_vertical = expanding
+        layoutstretchfactor_horizontal = 1
         scrollbarpolicy_horizontal = always_off
 
 		scrollbar_vertical = {

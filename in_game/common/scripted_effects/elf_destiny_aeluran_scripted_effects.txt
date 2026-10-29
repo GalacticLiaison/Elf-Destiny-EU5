@@ -190,6 +190,16 @@ aeluran_advisor_joins_cabinet = {
 				remove_from_cabinet = scope:old_cabinet_member
 			}
 
+			# EU5 1.4: the engine now refuses cabinet members it considers blocked (gender law etc.).
+			# Give the advisor the same right the vanilla "Grant Cabinet Right" interaction grants.
+			$aeluran_advisor_scope$ = {
+				add_character_modifier = {
+					modifier = granted_cabinet_right
+					years = -1
+					mode = add_and_extend
+				}
+			}
+
 			add_character_to_random_open_cabinet = {
 				target = $aeluran_advisor_scope$
 			}
