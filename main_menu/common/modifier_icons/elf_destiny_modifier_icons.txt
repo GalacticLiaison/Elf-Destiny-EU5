@@ -431,3 +431,59 @@ uncle_aunt_niece_nephew_marriage_allowed = {
 no_family_marriage_restrictions = {
 	positive = "gfx/interface/icons/modifier_types/marriage_type_allowed.dds"
 }
+
+# EU5 1.4: estate marriage / private army flags (vanilla nobles art reused)
+calaquendi_estate_allowed_noble_marriage = {
+	positive = "gfx/interface/icons/modifier_types/nobles_estate_allowed_in_cabinet.dds"
+}
+
+calaquendi_estate_allowed_private_army = {
+	positive = "gfx/interface/icons/modifier_types/nobles_estate_allowed_private_army.dds"
+}
+
+# EU5 1.4: establishment speed per mod good (same art as the output modifiers)
+local_mythril_establishment_speed = {
+	positive = "gfx/interface/icons/modifier_types/mythril_positive.dds"
+}
+
+global_mythril_establishment_speed = {
+	positive = "gfx/interface/icons/modifier_types/mythril_positive.dds"
+}
+
+local_lembas_establishment_speed = {
+	positive = "gfx/interface/icons/modifier_types/lembas_positive.dds"
+}
+
+global_lembas_establishment_speed = {
+	positive = "gfx/interface/icons/modifier_types/lembas_positive.dds"
+}
+
+local_elven_crafts_establishment_speed = {
+	positive = "gfx/interface/icons/modifier_types/elven_crafts_positive.dds"
+}
+
+global_elven_crafts_establishment_speed = {
+	positive = "gfx/interface/icons/modifier_types/elven_crafts_positive.dds"
+}
+
+local_mythril_elven_crafts_establishment_speed = {
+	positive = "gfx/interface/icons/modifier_types/mythril_elven_crafts_positive.dds"
+}
+
+global_mythril_elven_crafts_establishment_speed = {
+	positive = "gfx/interface/icons/modifier_types/mythril_elven_crafts_positive.dds"
+}
+
+# placeholder icons for internal modifiers (silences "Missing Icon" errors)
+calaquendi_estate_power_from_cabinet = {
+	positive = "gfx/interface/icons/modifier_types/_default.dds"
+}
+
+base_calaquendi_estate_power_modifier = {
+	positive = "gfx/interface/icons/modifier_types/_default.dds"
+}
+
+teleport_base_price_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/_default.dds"
+}
+

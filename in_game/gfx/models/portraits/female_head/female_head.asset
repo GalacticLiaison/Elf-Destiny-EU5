@@ -2,12 +2,18 @@ pdxmesh = {
 	name = "female_head_mesh"
 	file = "female_head.mesh"
 	
-	#Unpause Game to check animations
+	## Pose Animations
 	animation = { id = "head_bind_pose"				type = "animations/female_head_bind_pose.anim" }
 	animation = { id = "head_pose_01"				type = "animations/female_head_pose_01.anim" }
 	animation = { id = "head_pose_02"				type = "animations/female_head_pose_02.anim" }
 	animation = { id = "head_pose_03"				type = "animations/female_head_pose_03.anim" }
 	animation = { id = "head_pose_04"				type = "animations/female_head_pose_04.anim" }
+
+	## Expression animations
+	animation = { id = "head_angry_01"				type = "animations/female_head_angry_01.anim" }
+	animation = { id = "head_friendly_01"				type = "animations/female_head_friendly_01.anim" }
+	animation = { id = "head_at_war_01"				type = "animations/female_head_at_war_01.anim" }
+	animation = { id = "head_triumphant_01"				type = "animations/female_head_triumphant_01.anim" }
 
 	## Additive animations ##
 	additive_animation = { id = "chin_height"				type = "additive_animations/female_head_chin_height.anim" }
@@ -47,6 +53,7 @@ pdxmesh = {
 	additive_animation = { id = "child_proportions"				type = "additive_animations/female_head_child_proportions.anim" }
 	additive_animation = { id = "infant_proportions"				type = "additive_animations/female_head_infant_proportions.anim" }
 	additive_animation = { id = "old_posture"				type = "additive_animations/female_head_old_posture.anim" }
+	additive_animation = { id = "hunchback"				type = "additive_animations/female_head_hunchback.anim" }
 
 	## Additive animations - Expressions ##
 	additive_animation = { id = "expression_brow_frown_angry_01"				type = "additive_expressions/female_head_expression_brow_frown_angry_01.anim" }
@@ -90,6 +97,23 @@ pdxmesh = {
 
 	blend_shape = { id = "fat_1"		type = "blendshapes/fat_1.mesh" }
 	blend_shape = { id = "gaunt_1"		type = "blendshapes/gaunt_1.mesh" }
+
+	## Expression blend shapes
+	blend_shape = { id = "snarl_1"		type = "blendshapes/snarl_1.mesh" }
+
+	## Visual trait blend shapes
+	blend_shape = { id = "smallpox_01"		type = "blendshapes/smallpox_01.mesh" }
+	blend_shape = { id = "smallpox_02"		type = "blendshapes/smallpox_02.mesh" }
+	blend_shape = { id = "pox_scars_01"		type = "blendshapes/pox_scars_01.mesh" }
+	blend_shape = { id = "pox_scars_02"		type = "blendshapes/pox_scars_02.mesh" }
+	blend_shape = { id = "bubonic_plague_01"		type = "blendshapes/bubonic_plague_01.mesh" }
+	blend_shape = { id = "bubonic_plague_02"		type = "blendshapes/bubonic_plague_02.mesh" }
+	blend_shape = { id = "illness_01"		type = "blendshapes/illness_01.mesh" }
+	blend_shape = { id = "disfigurement_01"		type = "blendshapes/disfigurement_01.mesh" }
+	blend_shape = { id = "disfigurement_02"		type = "blendshapes/disfigurement_02.mesh" }
+	blend_shape = { id = "disfigurement_03"		type = "blendshapes/disfigurement_03.mesh" }
+	blend_shape = { id = "leprosy_01"		type = "blendshapes/leprosy_01.mesh" }
+	blend_shape = { id = "leprosy_02"		type = "blendshapes/leprosy_02.mesh" }
 
 	## Regular blend shapes ##
 	blend_shape = { id = "cheek_def_max"    type = "blendshapes_genes/cheek_def_max.mesh" }
@@ -182,21 +206,17 @@ pdxmesh = {
 
 	## Other misc blend shapes ##
 	blend_shape = { id = "eyelashes_length_max"    type = "blendshapes_genes/neutral.mesh" }
-	
-	#########################
-	######### ETRA ##########
-	#########################
+
+	## Elf Destiny
 	blend_shape = { id = "long_ears"    type = "blendshapes_genes/long_ears.mesh" }
-	
-	
-	
+
 	meshsettings = {
 		name = "female_headShape"
 		index = 0
 		texture_diffuse = "female_head_diffuse.dds"
 		texture_normal = "female_head_normal.dds"
 		texture_specular = "female_head_properties.dds"
-		texture = { file = "head_ssao_color_diffuse.dds" index = 3 }
+		texture = { file = "black_ssao_color.dds" index = 3 }
 		shader = "portrait_skin_face"
 		shader_file = "gfx/FX/jomini/portrait.shader"
 		# additional_shader_defines = {
@@ -211,6 +231,7 @@ entity = {
 	name = "female_head_entity"
 	pdxmesh = "female_head_mesh"
 
+	## Pose animations
 	default_state = "none"
 	state = {	name = "none"	animation = "head_bind_pose"}
 	state = {	name = "bind_pose"	animation = "head_bind_pose" 	chance = 10 looping = no next_state = "bind_pose" }
@@ -219,6 +240,12 @@ entity = {
 	state = {	name = "pose_03"	animation = "head_pose_03" 	chance = 10 looping = yes next_state = "pose" }
 	state = {	name = "pose_04"	animation = "head_pose_04" 	chance = 10 looping = yes next_state = "pose" }
 	state = {	name = "pose_05"	animation = "head_pose_04" 	chance = 10 looping = yes next_state = "pose" }
+
+	## Expression animations
+	state = {	name = "angry_01"	animation = "head_angry_01" 	chance = 10 looping = yes next_state = "pose" }
+	state = {	name = "friendly_01"	animation = "head_friendly_01" 	chance = 10 looping = yes next_state = "pose" }
+	state = {	name = "at_war_01"	animation = "head_at_war_01" 	chance = 10 looping = yes next_state = "pose" }
+	state = {	name = "triumphant_01"	animation = "head_triumphant_01" 	chance = 10 looping = yes next_state = "pose" }
 
 	## Additive animations ##
 	attribute = { name = "chin_height"		additive_animation = "chin_height" default = 0.5 }
@@ -258,6 +285,7 @@ entity = {
 	attribute = { name = "child_proportions"		additive_animation = "child_proportions" }
 	attribute = { name = "infant_proportions"		additive_animation = "infant_proportions" }
 	attribute = { name = "old_posture"		additive_animation = "old_posture" }
+	attribute = { name = "hunchback"		additive_animation = "hunchback" }
 
 	## Additive animations - Expressions ##
 	attribute = { name = "expression_brow_frown_angry_01"		additive_animation = "expression_brow_frown_angry_01" default = 0.0 }
@@ -300,6 +328,23 @@ entity = {
 
 	attribute = { name = "bs_fat_1"		blend_shape = "fat_1" }
 	attribute = { name = "bs_gaunt_1"		blend_shape = "gaunt_1" }
+
+	## Expression blend shapes
+	attribute = { name = "bs_snarl_1"		blend_shape = "snarl_1" }
+
+	## Visual trait blend shapes
+	attribute = { name = "bs_smallpox_01"		blend_shape = "smallpox_01" }
+	attribute = { name = "bs_smallpox_02"		blend_shape = "smallpox_02" }
+	attribute = { name = "bs_pox_scars_01"		blend_shape = "pox_scars_01" }
+	attribute = { name = "bs_pox_scars_02"		blend_shape = "pox_scars_02" }
+	attribute = { name = "bs_bubonic_plague_01"		blend_shape = "bubonic_plague_01" }
+	attribute = { name = "bs_bubonic_plague_02"		blend_shape = "bubonic_plague_02" }
+	attribute = { name = "bs_illness_01"		blend_shape = "illness_01" }
+	attribute = { name = "bs_disfigurement_01"		blend_shape = "disfigurement_01" }
+	attribute = { name = "bs_disfigurement_02"		blend_shape = "disfigurement_02" }
+	attribute = { name = "bs_disfigurement_03"		blend_shape = "disfigurement_03" }
+	attribute = { name = "bs_leprosy_01"		blend_shape = "leprosy_01" }
+	attribute = { name = "bs_leprosy_02"		blend_shape = "leprosy_02" }
 
 	## Regular blend shapes ##
 	attribute = { name = "bs_cheek_def_max"    blend_shape = "cheek_def_max" }
@@ -392,10 +437,7 @@ entity = {
 
 	## Other misc blend shapes ##
 	attribute = { name = "bs_eyelashes_length_max"    blend_shape = "eyelashes_length_max" }
-
-	##############################
-	########## ETRA ##############
-	##############################
+	## Elf Destiny
 	attribute = { name = "bs_long_ears"    blend_shape = "long_ears" }
 
     game_data = {

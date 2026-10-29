@@ -302,13 +302,19 @@ lateralview = {
 						layoutstretchfactor_horizontal = 2
 
 						expand = {}
-						header_action_button_right = {
+						header_action_button_right_uber = {
 							size = { 200 38 }
 
-							title = "train_general"
-							actor = "[UnitOverview.GetPlayer]"
-							left_click_and_hold_action = { action_name = "train_general" }
-		
+							visible = "[PdxGuiWidget.IsUberButtonVisible]"
+							enabled = "[PdxGuiWidget.IsUberButtonEnabled]"
+
+							scripted_action_tooltip = {
+								click_type = left
+								click_mode = confirm
+								action_name = "train_general"
+								actor = "[UnitOverview.GetPlayer]"
+							}
+
 							blockoverride "text_top" {
 								text = "train_general"
 								fontsize = 13
@@ -1296,13 +1302,19 @@ lateralview = {
 						layoutstretchfactor_horizontal = 2
 
 						expand = {}
-						header_action_button_right = {
+						header_action_button_right_uber = {
 							size = { 200 38 }
 
-							title = "train_admiral"
-							actor = "[UnitOverview.GetPlayer]"
-							left_click_and_hold_action = { action_name = "train_admiral" }
-		
+							visible = "[PdxGuiWidget.IsUberButtonVisible]"
+							enabled = "[PdxGuiWidget.IsUberButtonEnabled]"
+
+							scripted_action_tooltip = {
+								click_type = left
+								click_mode = confirm
+								action_name = "train_admiral"
+								actor = "[UnitOverview.GetPlayer]"
+							}
+
 							blockoverride "text_top" {
 								text = "train_admiral"
 								fontsize = 13
@@ -2300,7 +2312,6 @@ types UnitOverviewTypes
 						size = { 1 1 }
 						onclick = "[ShowUnitMilitaryObjectiveGroups(Unit.Self)]"
 						input_action = "select_objective"
-						use_global_input_instance = yes
 						tooltip_enabled = no
 					}
 					header_button_left = {
@@ -2401,15 +2412,14 @@ types UnitOverviewTypes
 
 									TooltipScrolledBlockList = {
 										visible = "[Unit.IsAutomated]"
-										blockoverride "block_scrollarea" { maximumsize = { -1 420 }}										
-										textcontext = "[Unit.GetObjectiveGroup.GetObjective.GetAction]"
+										blockoverride "block_scrollarea" { maximumsize = { -1 420 }}
+										textcontext = "[Unit.GetObjectiveGroup.GetGroupAction]"
 									}									
 								}
 							}
 						}
 	
 						input_action = "select_objective"
-						use_global_input_instance = yes
 	
 						action_tooltip = {
 							enabled = "[Unit.IsAutomated]"
@@ -3450,7 +3460,6 @@ types UnitOverviewTypes
 					And(UnitActionItem.HasHoldLeftAction, UnitActionItem.CanHoldLeftClick))]"
 
 					input_action = "[UnitActionItem.GetShortcut]"
-					use_global_input_instance = yes
 
 					datacontext = "[UnitActionItem]"
 					tooltipwidget = {
@@ -3471,7 +3480,6 @@ types UnitOverviewTypes
 				onclick = "[UnitActionItem.SingleLeftClick]"
 				enabled = "[UnitActionItem.CanSingleLeftClick]"
 				input_action = "[UnitActionItem.GetShortcut]"
-				use_global_input_instance = yes
 
 				datacontext = "[UnitActionItem]"
 				tooltipwidget = {
@@ -3496,9 +3504,71 @@ types UnitOverviewTypes
 						visible = "[UnitActionItem.IsActive]"
 					}
 
+					blockoverride "header_button_left_extra_texture" {
+						background = {
+							texture = "gfx/interface/component_tiles/square_glow.dds"
+							margin = {5 5}
+							visible = "[UnitActionItem.IsActive]"
+							modify_texture = {
+								using = color_bone_texture
+							}
+							modify_texture = {
+								using = color_white_texture
+								blend_mode = overlay
+								alpha = 0.2
+							}
+						}
+						background = {
+							texture = "gfx/interface/component_tiles/square_glow.dds"
+							margin = {9 9}
+							visible = "[UnitActionItem.IsSecondaryActive]"
+							modify_texture = {
+								using = color_new_gold_texture
+							}
+						}
+					}
+
+					action_tooltip = {
+						click_type = right
+						click_mode = single
+						visible = "[UnitActionItem.HasSingleRightAction]"
+						title = "[UnitActionItem.GetSecondaryName]"
+						on_action = "[UnitActionItem.SingleRightClick]"
+						enabled = "[UnitActionItem.CanSingleRightClick]"
+						description = "[UnitActionItem.GetRightClickDescription]"
+					}
+
+					widget = {
+						visible = "[UnitActionItem.HasSingleRightAction]"
+						parentanchor = top|left
+						size = { 16 16 }
+						alwaystransparent = yes
+
+						background = {
+							texture = "gfx/interface/buttons/checkbox_auto_bg.dds"
+							texture_density = 2
+							using = color_dark_blue
+							margin = { 1 1 }
+							shaderfile = "gfx/FX/pdxgui_default.shader"
+						}
+
+						icon = {
+							visible = "[Not(UnitActionItem.IsSecondaryActive)]"
+							size = { 100% 100% }
+							using = checkbox_auto_texture
+							frame = 1
+						}
+
+						icon = {
+							visible = "[UnitActionItem.IsSecondaryActive]"
+							size = { 100% 100% }
+							using = checkbox_auto_texture
+							frame = 2
+						}
+					}
+
 					enabled = "[UnitActionItem.CanSingleLeftClick]"
 					input_action = "[UnitActionItem.GetShortcut]"
-					use_global_input_instance = yes
 					down = "[UnitActionItem.IsActive]"												
 
 					datacontext = "[UnitActionItem]"

@@ -105,6 +105,15 @@ age_presets = {
 			{ 0.4 1.0 }
 		}
 	}
+	age_preset_expressions_extra_early = {
+		mode = multiply
+		curve = {
+			{ 0.0 0.0 }
+			{ 0.1 0.5 }
+			{ 0.18 0.9 }
+			{ 0.35 1.0 }
+		}
+	}
 	age_preset_cheek_fat = {
 		mode = multiply
 		curve = {

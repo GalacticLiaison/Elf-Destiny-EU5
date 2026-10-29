@@ -101,7 +101,7 @@ on_character_created = {
 
 handle_created_character_race = {
 	trigger = {
-		owner = {
+		owner ?= { # EU5 1.4: cardinals / order heads / expedition leaders have no owner
 			is_elven_country = yes
 		}
 		is_any_elf_type = no

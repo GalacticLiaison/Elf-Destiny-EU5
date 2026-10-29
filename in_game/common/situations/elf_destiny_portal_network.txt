@@ -7,10 +7,6 @@
         has_global_variable = portal_restored
 	}
 	
-	can_end = {
-		always = no
-	}
-	
 	visible = {
 		is_ai = no # FOR NOW, dream is AI can use in future
 		any_province = {

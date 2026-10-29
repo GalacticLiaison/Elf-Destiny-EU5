@@ -2434,3 +2434,75 @@ calaquendi_estate_power_from_cabinet={
 		category=country
 	}
 }
+
+# EU5 1.4: per-estate marriage / private army flags and per-good establishment speed (engine requires them)
+calaquendi_estate_allowed_noble_marriage={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+calaquendi_estate_allowed_private_army={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
+local_mythril_establishment_speed={
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+global_mythril_establishment_speed={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+local_lembas_establishment_speed={
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+global_lembas_establishment_speed={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+local_elven_crafts_establishment_speed={
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+global_elven_crafts_establishment_speed={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+
+local_mythril_elven_crafts_establishment_speed={
+	percent=yes
+	game_data={
+		category=location
+	}
+}
+
+global_mythril_elven_crafts_establishment_speed={
+	percent=yes
+	game_data={
+		category=country
+	}
+}
+

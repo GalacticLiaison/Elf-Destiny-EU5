@@ -45,7 +45,7 @@ situation_panel = {
 
 			text_single = {													
 				align = nobaseline
-				text = "[religious_influence|e]:"
+				raw_text = "[religious_influence|e]:"
 			}
 
 			text_single = {
@@ -279,8 +279,9 @@ template armies_available_to_teleport {
 		# }
 
 		datacontext = "[GetGenericAction('portal_network_teleport_to_location')]"
-		action_button_diamond  = {
-			size = { 50% 100% }
+		button_regular_diamond = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
 
 			glow = {
 				name = "glowing"
@@ -297,14 +298,30 @@ template armies_available_to_teleport {
 			# parentanchor = center
 			# text = "[GenericAction.GetNameWithNoTooltip]"
 			text = "teleport_units_here"
-			title = "[GenericAction.GetName]"
-			actor = "[SituationView.GetPlayer]"
-			parameter = {
-				parameter_name = "recipient"
-				parameter_value = "[Scope.GetLocation.MakeScope]"
+			enabled = "[PdxGuiWidget.IsUberButtonEnabled]"
+			button_tooltip_override = {
+				title = "[GenericAction.GetName]"
 			}
-			left_action = { action_name = "[GenericAction.GetLeftClickKey]" }
-			left_click_and_hold_action = { action_name = "[GenericAction.GetLeftClickAndHoldKey]" }
+			scripted_action_tooltip = {
+				click_type = left
+				click_mode = single
+				action_name = "[GenericAction.GetLeftClickKey]"
+				actor = "[SituationView.GetPlayer]"
+				parameter = {
+					parameter_name = "recipient"
+					parameter_value = "[Scope.GetLocation]"
+				}
+			}
+			scripted_action_tooltip = {
+				click_type = left
+				click_mode = confirm
+				action_name = "[GenericAction.GetLeftClickAndHoldKey]"
+				actor = "[SituationView.GetPlayer]"
+				parameter = {
+					parameter_name = "recipient"
+					parameter_value = "[Scope.GetLocation]"
+				}
+			}
 			# block "situation_actions_tooltip_override" {
 				tooltipwidget = {
 					ContextualTooltipType = {
@@ -896,7 +913,7 @@ template armies_available_to_teleport {
 					margin_right = 10
 
 					datacontext = "[GetGenericAction('portal_network_army_teleport')]"
-					action_button_diamond  = {
+					button_regular_diamond = {
 						name = "situation action button_small"
 						size = { 90 45 }
 
@@ -914,22 +931,38 @@ template armies_available_to_teleport {
 						blockoverride "button_regular_diamond_texture" {
 							using = button_event_special_diamond_purple_texture
 						}
+
 						# parentanchor = center
 						# text = "[GenericAction.GetNameWithNoTooltip]"
-						
 						text = "teleport"
-						title = "[GenericAction.GetName]"
-						actor = "[SituationView.GetPlayer]"
-						parameter = {
-							parameter_name = "recipient"
-							parameter_value = "[Unit.MakeScope]"
+						enabled = "[PdxGuiWidget.IsUberButtonEnabled]"
+						button_tooltip_override = {
+							title = "[GenericAction.GetName]"
+						}
+						scripted_action_tooltip = {
+							click_type = left
+							click_mode = single
+							action_name = "[GenericAction.GetLeftClickKey]"
+							actor = "[SituationView.GetPlayer]"
+							parameter = {
+								parameter_name = "recipient"
+								parameter_value = "[Unit.MakeScope]"
+							}
+						}
+						scripted_action_tooltip = {
+							click_type = left
+							click_mode = confirm
+							action_name = "[GenericAction.GetLeftClickAndHoldKey]"
+							actor = "[SituationView.GetPlayer]"
+							parameter = {
+								parameter_name = "recipient"
+								parameter_value = "[Unit.MakeScope]"
+							}
 						}
 						# parameter = {
 						# 	parameter_name = "recipient"
 						# 	parameter_value = "[SituationView.GetActiveSituation.GetSituation]"
 						# }
-						left_action = { action_name = "[GenericAction.GetLeftClickKey]" }
-						left_click_and_hold_action = { action_name = "[GenericAction.GetLeftClickAndHoldKey]" }
 						# block "situation_actions_tooltip_override" {
 							tooltipwidget = {
 								ContextualTooltipType = {

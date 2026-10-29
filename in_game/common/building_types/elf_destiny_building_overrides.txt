@@ -1,11 +1,14 @@
 ﻿REPLACE:mercury_patio = {
-	is_foreign = no
 	audio_tier = 3
+	audio_category = industry
+	is_foreign = no
 	max_levels = mercury_patio_max_level
 	pop_type = laborers
 
-	category = rgo_building_category
+	category = rgo_enhancement_category
 	employment_size = advanced_peasant_building_employment
+	AI_ignore_available_worker_flag = yes
+	ai_forbid_shutdown = yes
 	
 	rural_settlement = yes
 	town = yes
@@ -24,6 +27,8 @@
 	
 	unique_production_methods = {
 		elf_mercury_patio_maintenance = {
+			icon_type = building_type
+			icon = mercury_patio
 			mercury = 1.0
 			category = building_maintenance
 		}
