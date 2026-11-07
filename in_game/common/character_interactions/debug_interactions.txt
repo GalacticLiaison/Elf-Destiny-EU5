@@ -1,73 +1,73 @@
-﻿debug_test = { 
-	message = yes
-	is_consort_action = no
-	on_own_nation = yes
-	on_other_nation = no
+﻿# debug_test = { 
+# 	message = yes
+# 	is_consort_action = no
+# 	on_own_nation = yes
+# 	on_other_nation = no
 
-	price = 0
+# 	price = 0
 	
 	
-	price_modifier = {
-		add = 1
-	}
+# 	price_modifier = {
+# 		add = 1
+# 	}
 
 
-	potential = {
-		debug_only = yes
-	}
+# 	potential = {
+# 		debug_only = yes
+# 	}
 
-	ai_tick = never
+# 	ai_tick = never
 	
-	allow = {
-		always = yes
-	}
+# 	allow = {
+# 		always = yes
+# 	}
 	
 
-	select_trigger = {
-		looking_for_a = character
-		source = actor
-		target_flag = recipient
-		name = "choose_character"
-		column = {
-			data = name
-		}
-		visible = {
-			is_alive = yes
-			# is_ruler = yes
-		}
-		enabled = {
-			is_ruler = yes
-		}
-	}
+# 	select_trigger = {
+# 		looking_for_a = character
+# 		source = actor
+# 		target_flag = recipient
+# 		name = "choose_character"
+# 		column = {
+# 			data = name
+# 		}
+# 		visible = {
+# 			is_alive = yes
+# 			# is_ruler = yes
+# 		}
+# 		enabled = {
+# 			is_ruler = yes
+# 		}
+# 	}
 
-	effect = {
-		# TEST (2026-11-07): marry the picked character to their own father through the close-kin
-		# workaround (elf_marry_close_kin_effect). Pick Seraphine -> she marries Victaris. Result goes to
-		# debug.log as DEBUG_TEST and shows in her character panel. (marry_character_ignore_blocks was
-		# tested here first and refused, like every close-kin pair on 1.4.7.)
-		scope:recipient = {
-			if = {
-				limit = { exists = father }
-				father = { save_scope_as = test_father }
-				elf_marry_close_kin_effect = { spouse = scope:test_father country = scope:actor }
-				if = {
-					limit = { is_spouse_of = scope:test_father }
-					debug_log = "DEBUG_TEST elf_marry_close_kin_effect child+father: MARRIED"
-				}
-				else = {
-					debug_log = "DEBUG_TEST elf_marry_close_kin_effect child+father: NOT married"
-				}
-			}
-			else = {
-				debug_log = "DEBUG_TEST picked character has no father"
-			}
-		}
-	}
+# 	effect = {
+# 		# TEST (2026-11-07): marry the picked character to their own father through the close-kin
+# 		# workaround (elf_marry_close_kin_effect). Pick Seraphine -> she marries Victaris. Result goes to
+# 		# debug.log as DEBUG_TEST and shows in her character panel. (marry_character_ignore_blocks was
+# 		# tested here first and refused, like every close-kin pair on 1.4.7.)
+# 		scope:recipient = {
+# 			if = {
+# 				limit = { exists = father }
+# 				father = { save_scope_as = test_father }
+# 				elf_marry_close_kin_effect = { spouse = scope:test_father country = scope:actor }
+# 				if = {
+# 					limit = { is_spouse_of = scope:test_father }
+# 					debug_log = "DEBUG_TEST elf_marry_close_kin_effect child+father: MARRIED"
+# 				}
+# 				else = {
+# 					debug_log = "DEBUG_TEST elf_marry_close_kin_effect child+father: NOT married"
+# 				}
+# 			}
+# 			else = {
+# 				debug_log = "DEBUG_TEST picked character has no father"
+# 			}
+# 		}
+# 	}
 
-   ai_will_do = {
-		value = 0
-    }
-}
+#    ai_will_do = {
+# 		value = 0
+#     }
+# }
 
 
 character_editor = {
