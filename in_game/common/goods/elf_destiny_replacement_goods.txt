@@ -2,18 +2,39 @@
 	method = farming
 	category = raw_material
 	color = goods_horses
+
+	food = 2.0
 	default_market_price = 3
 	transport_cost = 2
-	
+
+	location_potential = {
+		NOR = {
+			vegetation = jungle
+			vegetation = forest
+		}
+		OR = {
+			topography = plateau
+			topography = flatland
+			topography = hills
+		}
+		OR = {
+			climate = cold_arid
+			climate = arid
+			climate = mediterranean
+			climate = oceanic
+			climate = continental
+			climate = subtropical
+		}
+	}
+
 	demand_add = {
 		nobles =  0.25
-        calaquendi = 0.3
-	}	
+		calaquendi = 0.3
+	}
 
 	origin_in_old_world = yes
 	custom_tags = { old_world_goods }
 
-	
 }
 
 REPLACE:wine = {
@@ -21,21 +42,56 @@ REPLACE:wine = {
 	category = raw_material
 	color = goods_wine
 	default_market_price = 2
-	
-	
+
+	location_potential = {
+		NOR = {
+			vegetation = jungle
+			vegetation = forest
+		}
+		OR = {
+			topography = plateau
+			topography = flatland
+			topography = hills
+			topography = mountains
+		}
+		OR = {
+			climate = cold_arid
+			climate = mediterranean
+			climate = oceanic
+			climate = continental
+		}
+		NOR = {
+			region = region:great_plains_region
+			region = region:caribbean_region
+		}
+	}
+
 	demand_add = {
 		all = 0.0004
 	}
 	demand_multiply = {
 		upper = 10
 		nobles = 1.5
-        calaquendi = 2
-		
+
 		slaves = 0
 		tribesmen = 0
+		calaquendi = 2
 	}
+
+	wealth_impact_threshold = {
+		all = 1.0
+	}
+
 	origin_in_old_world = yes
 	custom_tags = { old_world_goods }
+	region_demand_modifier = {
+		iberia_region = 2
+		italy_region = 2
+		balkan_region = 2
+	}
+	sub_continent_demand_modifier = {
+		south_asia = 0.6
+	}
 }
 
 REPLACE:livestock = {
@@ -47,17 +103,34 @@ REPLACE:livestock = {
 	default_market_price = 1.5
 	ai_rgo_size_importance = 1.5 # ai preference to avoid building a city on this rgo
 	
-	demand_add = {	
+	location_potential = {
+		NOR = {
+			vegetation = jungle
+			vegetation = forest
+			vegetation = woods
+		}
+		OR = {
+			topography = plateau
+			topography = flatland
+			topography = hills
+		}
+		NOR = {
+			climate = arctic
+		}
+	}
+
+	demand_add = {
 		all = 0.001
-		
+		soldiers = 0.003
+		laborers = 0.001
 	}
 	demand_multiply = {
 		nobles = 30
-        calaquendi = 30
 		clergy = 10
 		burghers = 10
 		slaves = 0
 		tribesmen = 0
+		calaquendi = 30
 	}
 	
 	wealth_impact_threshold = {
@@ -75,7 +148,7 @@ REPLACE:goods_gold = {
 	method = mining
 	category = raw_material
 	color = goods_gold
-	default_market_price = 10
+	default_market_price = 8
 	
 	transport_cost = 2
 
@@ -85,14 +158,12 @@ REPLACE:goods_gold = {
 	
 	demand_add = {
 		nobles = 0.025
-        calaquendi = 0.03
+		calaquendi = 0.03
 	}	
 	
 	wealth_impact_threshold = {
 		all = 1.05
 	}
-	
-	
 
 }
 
@@ -100,24 +171,22 @@ REPLACE:silver = {
 	method = mining
 	category = raw_material
 	color = goods_silver
-	default_market_price = 8
+	default_market_price = 6
 	ai_rgo_size_importance = 10 # ai preference to avoid building a city on this rgo
-	
+
 	transport_cost = 2
 
-	
 	ai_rgo_expansion_priority = 0.2
-	
+
 	demand_add = {
 		nobles = 0.025
-        calaquendi = 0.03
+		calaquendi = 0.03
 	}
-	
+
 	wealth_impact_threshold = {
 		all = 1.05
 	}
-	
-	
+
 }
 
 REPLACE:ivory = {
@@ -125,19 +194,22 @@ REPLACE:ivory = {
 	category = raw_material
 	color = goods_ivory
 	default_market_price = 4
-	
+	ai_rgo_size_importance = 4
+
 	demand_add = {
 		nobles = 0.05
-        calaquendi = 0.05
+		calaquendi = 0.05
 	}
-	
+
 	development_threshold = 20
-	
+
 	wealth_impact_threshold = {
 		all = 1.1
 	}
-	
-	
+
+	sub_continent_demand_modifier = {
+		south_asia = 1.2
+	}
 }
 
 REPLACE:incense = {
@@ -149,7 +221,7 @@ REPLACE:incense = {
 	
 	demand_add = {
 		clergy = 0.01
-        calaquendi = 0.01
+		calaquendi = 0.01
 	}	
 	
 	wealth_impact_threshold = {
@@ -162,20 +234,26 @@ REPLACE:salt = {
 	category = raw_material
 	color = goods_salt
 	default_market_price = 4
-	
-	
+
+
 	demand_add = {
 		nobles = 0.05
-        calaquendi = 0.05
 		burghers = 0.02
 		clergy = 0.02
+		calaquendi = 0.05
 	}
-	
-	
+
+
 	wealth_impact_threshold = {
 		all = 0.7
 	}
-	
+
+	winter_demand_modifier = {
+		none = 0.75
+		mild = 1
+		normal = 1.2
+		severe = 2
+	}
 }
 
 REPLACE:medicaments = { #Medicinal plants, Pills, Opium, Mummy Powder, etc
@@ -184,24 +262,26 @@ REPLACE:medicaments = { #Medicinal plants, Pills, Opium, Mummy Powder, etc
 	color = goods_medicaments
 	default_market_price = 1
 	transport_cost = 0.5
-	
+
 	demand_add = {
 		all = 0.0004
 	}
-	
+
 	demand_multiply = {
 		nobles = 5
-        calaquendi = 5
 		clergy = 2.5
 		burghers = 1.5
 		slaves = 0.1
 		tribesmen = 0
+		calaquendi = 5
 	}
-	
-	
+
+
 	wealth_impact_threshold = {
 		all = 1.1
 	}
+
+	disease_demand_modifier = 2
 
 }
 
@@ -216,7 +296,7 @@ REPLACE:gems = {
 
 	demand_add = {
 		nobles = 0.05
-        calaquendi = 0.075
+		calaquendi = 0.075
 	}
 
 	wealth_impact_threshold = {
@@ -231,20 +311,23 @@ REPLACE:pearls = {
 	category = raw_material
 	color = goods_pearls
 	default_market_price = 4
-	
+
 	demand_add = {
 		nobles = 0.05
-        calaquendi = 0.075
 		burghers = 0.0025
+		calaquendi = 0.075
 	}
 
 	development_threshold = 20
-	
+
 	wealth_impact_threshold = {
 		nobles = 1.0
 		burghers = 1.5
 	}
-		
+
+	sub_continent_demand_modifier = {
+		south_asia = 2
+	}
 }
 
 REPLACE:amber = {
@@ -252,18 +335,25 @@ REPLACE:amber = {
 	category = raw_material
 	color = goods_amber
 	default_market_price = 4
-	
+
 	demand_add = {
 		nobles = 0.1
-        calaquendi = 0.15
 		burghers = 0.005
-	}	
-	
+		calaquendi = 0.15
+	}
+
 	wealth_impact_threshold = {
 		nobles = 1.0
 		burghers = 1.5
 	}
 
+	market_unavailability_demand_modifier = 0.5
+
+	region_demand_modifier = {
+		scandinavian_region = 1.5
+		north_german_region = 1.5
+		baltic_region = 1.5
+	}
 }
 
 REPLACE:marble = {
@@ -277,7 +367,7 @@ REPLACE:marble = {
 	
 	demand_add = {
 		nobles = 0.05
-        calaquendi = 0.06
+		calaquendi = 0.06
 	}	
 	
 	development_threshold = 40
@@ -293,18 +383,37 @@ REPLACE:saffron = {
 	default_market_price = 5
 	transport_cost = 0.5
 	
+	location_potential = {
+		OR = {
+			vegetation = sparse
+			vegetation = grasslands
+			vegetation = farmland
+		}
+		OR = {
+			topography = plateau
+			topography = flatland
+			topography = hills
+		}
+		OR = {
+			climate = arid
+			climate = cold_arid
+			climate = mediterranean
+		}
+	}
+
 	demand_add = {
 		nobles = 0.05
-        calaquendi = 0.05
 		burghers = 0.002
 		clergy = 0.005
+		calaquendi = 0.05
 	}
 
 	wealth_impact_threshold = {
 		all = 1.1
 	}
 	
-	
+	origin_in_old_world = yes
+	custom_tags = { old_world_goods }	
 }
 
 REPLACE:pepper = {
@@ -313,19 +422,36 @@ REPLACE:pepper = {
 	color = goods_pepper
 	default_market_price = 5
 	transport_cost = 0.5
-	
+
+	location_potential = {
+		OR = {
+			vegetation = jungle
+			vegetation = woods
+			vegetation = forest
+		}
+		OR = {
+			topography = plateau
+			topography = flatland
+			topography = hills
+		}
+		climate = tropical
+	}
+
 	demand_add = {
 		nobles = 0.05
-        calaquendi = 0.05
 		burghers = 0.0025
 		clergy = 0.005
+		calaquendi = 0.05
 	}
-	
+
 	wealth_impact_threshold = {
 		all = 1.1
 	}
-	
-
+	origin_in_old_world = yes
+	custom_tags = { old_world_goods }
+	sub_continent_demand_modifier = {
+		south_asia = 1.5
+	}
 }
 
 REPLACE:sugar = {
@@ -333,36 +459,54 @@ REPLACE:sugar = {
 	category = raw_material
 	color = goods_sugar
 	default_market_price = 3
+	ai_rgo_size_importance = 5
+
+	location_potential = {
+		NOR = {
+			vegetation = desert
+			vegetation = sparse
+		}
+		OR = {
+			topography = plateau
+			topography = flatland
+			topography = wetlands
+		}
+		OR = {
+			climate = tropical
+			climate = subtropical
+			climate = mediterranean
+		}
+	}
 
 	demand_add = {
 		nobles = 0.05
-        calaquendi = 0.05
 		burghers = 0.005
 		clergy = 0.005
+		calaquendi = 0.05
 	}
 
 	origin_in_old_world = yes
 	custom_tags = { old_world_goods }
-	
+
 }
 
 REPLACE:weaponry = { #Swords, clubs, spears, halberds, bows, crossbows, etc
 	category = produced
 	color = goods_weaponry
-	default_market_price = 3	
-	
+	default_market_price = 3
+
 	demand_add = {
 		nobles = 0.1
-        calaquendi = 0.15
 		soldiers = 0.0025
 		laborers = 0.0005
 		peasants = 0.0005
+		calaquendi = 0.15
 	}
-	
+
 	wealth_impact_threshold = {
 		all = 1.1
 	}
-	
+
 }
 
 REPLACE:fine_cloth = {	#Embroidery, Silks, Luxury Clothing, etc
@@ -372,11 +516,10 @@ REPLACE:fine_cloth = {	#Embroidery, Silks, Luxury Clothing, etc
 	transport_cost = 0.5
 	
 	demand_add = {
-		nobles = 0.2
-        calaquendi = 0.2
-		burghers = 0.025
-		clergy = 0.025
-		
+		nobles = 0.25
+		burghers = 0.03
+		clergy = 0.04
+		calaquendi = 0.2
 	}
 	
 	
@@ -393,22 +536,31 @@ REPLACE:liquor = { 		#What it says
 	color = goods_liquor
 	default_market_price = 2.5
 	transport_cost = 0.5
-	
+
 	demand_add = {
-		all = 0.0008
+		all = 0.00072
 	}
-	
+
 	demand_multiply = {
 		upper = 5
 		nobles = 2
-        calaquendi = 2
-		
+
 		slaves = 0
 		tribesmen = 0
+		calaquendi = 2
 	}
-	
+
 	wealth_impact_threshold = {
 		all = 0.5
+	}
+
+	region_demand_modifier = {
+		iberia_region = 0.5
+		italy_region = 0.5
+		balkan_region = 0.5
+		scandinavian_region = 2
+		ural_region = 2
+		russian_region = 2
 	}
 }
 
@@ -417,21 +569,31 @@ REPLACE:beer = { 		#the nectar of the gods
 	color = goods_beer
 	default_market_price = 2
 	transport_cost = 0.5
-	
+
 	demand_add = {
-		all = 0.0016
-	}	
-	
+		all = 0.0024
+	}
+
 	demand_multiply = {
 		upper = 5
 		nobles = 2
-        calaquendi = 1
+		clergy = 2
+		burghers = 2
+		laborers = 2
+		soldiers = 3
 		slaves = 0
 		tribesmen = 0
+		calaquendi = 1
 	}
-	
+
 	wealth_impact_threshold = {
 		all = 0.75
+	}
+
+	region_demand_modifier = {
+		iberia_region = 0.5
+		italy_region = 0.5
+		balkan_region = 0.5
 	}
 }
 
@@ -439,19 +601,20 @@ REPLACE:paper = {		#Paper
 	category = produced
 	color = goods_paper
 	default_market_price = 2
-	
+
 	transport_cost = 0.5
 
-	
 	demand_add = {
-		nobles = 0.01
-        calaquendi = 0.01
-		burghers = 0.02
-		clergy = 0.04
-	}	
-	
+		nobles = 0.017
+		burghers = 0.034
+		clergy = 0.067
+		calaquendi = 0.01
+	}
+
 	development_threshold = 20
-	
+
+	literacy_demand_factor = 1
+
 	wealth_impact_threshold = {
 		all = 1.2
 	}
@@ -461,23 +624,25 @@ REPLACE:paper = {		#Paper
 REPLACE:books = { #books, newspapers, booklets, pamphlets, etc
 	category = produced
 	color = goods_books
-	default_market_price = 5
-	
+	default_market_price = 3
+
 	transport_cost = 0.5
-	
+
 	demand_add = {
-		nobles = 0.01
-        calaquendi = 0.04
-		burghers = 0.02
-		clergy = 0.04
-	}	
-	
+		nobles = 0.015
+		burghers = 0.03
+		clergy = 0.06
+		calaquendi = 0.04
+	}
+
 	development_threshold = 30
-	
+
+	literacy_demand_factor = 1
+
 	wealth_impact_threshold = {
 		all = 1.1
 	}
-	
+
 }
 
 REPLACE:jewelry = {
@@ -488,8 +653,8 @@ REPLACE:jewelry = {
 	
 	demand_add = {
 		nobles = 0.1
-        calaquendi = 0.2
 		burghers = 0.005
+		calaquendi = 0.2
 	}
 	
 	wealth_impact_threshold = {
@@ -502,18 +667,18 @@ REPLACE:furniture  = {
 	category = produced
 	color = goods_furniture
 	default_market_price = 3
-	
+
 	transport_cost = 0.5
-	
+
 	demand_add = {
-		all =  0.001
-	}	
+		all = 0.0009
+	}
 	demand_multiply = {
 		upper = 10
 		nobles = 2
-        calaquendi = 2
 		slaves = 0
 		tribesmen = 0
+		calaquendi = 2
 	}
 	
 	wealth_impact_threshold = {
@@ -525,21 +690,23 @@ REPLACE:wild_game = {
 	method = hunting
 	category = raw_material
 	color = goods_wild_game
-	
+
 	food = 3.5
-	
+
 	default_market_price = 1
+	transport_cost = 0.5
 	demand_add = {
 		all =  0.0004
 	}
 	demand_multiply = {
 		nobles = 20
-        calaquendi = 20
 		clergy = 5
 		burghers = 5
 		tribesmen = 0
+		calaquendi = 20
 	}
 
+	no_demand_if_no_market_availability = yes
 }
 
 REPLACE:fur = {
@@ -547,23 +714,33 @@ REPLACE:fur = {
 	category = raw_material
 	color = goods_fur
 	default_market_price = 2
-	
+	transport_cost = 0.25
+
 	food = 2.0
-	
+
 	demand_add = {
 		upper = 0.05
 	}
-	
+
 	demand_multiply = {
 		nobles = 10
-        calaquendi = 10
-	}
-	
-	
-	wealth_impact_threshold = {
-		all = 1.1
+		calaquendi = 10
 	}
 
+
+	wealth_impact_threshold = {
+		all = 1.0
+	}
+
+	winter_demand_modifier = {
+		none = 0
+		mild = 0.5
+		normal = 1
+		severe = 2
+	}
+	topography_demand_modifier = {
+		mountains = 1.1
+	}
 }
 
 REPLACE:chili = {
@@ -573,11 +750,37 @@ REPLACE:chili = {
 	default_market_price = 5
 	transport_cost = 0.5
 	
+	location_potential = {
+		OR = {
+			vegetation = farmland
+			vegetation = forest
+			vegetation = woods
+			vegetation = grasslands
+			vegetation = sparse
+		}
+		area = {
+			is_area_sea = no
+		}
+		OR = { 
+			topography = wetlands
+			topography = flatland
+			topography = hills
+			topography = plateau
+		}
+		OR = {
+			climate = tropical
+			climate = subtropical
+			climate = mediterranean
+			climate = oceanic
+			climate = continental
+		}
+	}
+
 	demand_add = {
 		nobles = 0.05
-		calaquendi = 0.05
 		burghers = 0.0025
 		clergy = 0.005
+		calaquendi = 0.05
 	}
 	
 	
@@ -595,18 +798,29 @@ REPLACE:cloves = {
 	color = goods_cloves
 	default_market_price = 5
 	transport_cost = 0.5
+
+	location_potential = {
+		vegetation = jungle
+		OR = {
+			topography = plateau
+			topography = flatland
+			topography = hills
+		}
+		climate = tropical
+	}
 	
 	demand_add = {
 		nobles = 0.05
-		calaquendi = 0.05
 		burghers = 0.0025
 		clergy = 0.005
+		calaquendi = 0.05
 	}
 	
 	wealth_impact_threshold = {
 		all = 1.1
 	}
-
+	origin_in_old_world = yes
+	custom_tags = { old_world_goods }
 }
 
 REPLACE:cocoa = {
@@ -614,60 +828,132 @@ REPLACE:cocoa = {
 	category = raw_material
 	color = goods_cocoa
 	default_market_price = 4
+	ai_rgo_size_importance = 5
+
+	location_potential = {
+		NOR = {
+			vegetation = desert
+			vegetation = sparse
+			vegetation = grasslands
+		}
+		area = {
+			is_area_sea = no
+		}
+		NOR = {
+			topography = atoll
+			topography = wetlands
+		}
+		OR = {
+			climate = tropical
+			climate = subtropical
+			climate = mediterranean
+		}
+		NOR = {
+			region = region:bengal_region
+			region = region:western_india_region
+			area = area:mozambique_area
+			area = area:ruvuma_lurio_area
+			area = area:gondwana_area
+			area = area:andhra_area
+			area = area:telingana_area
+			area = area:vidarbha_area
+			area = area:maharashtra_area
+			area = area:konkan_area
+			area = area:lower_mekong_area
+			area = area:northern_tai_highland_area
+			area = area:champa_area
+			area = area:arakhan_area
+			area = area:irrawady_area
+			area = area:shan_highland_area
+			area = area:kachin_area
+			area = area:mayaab_area
+			area = area:puuk_area
+			area = area:chactemal_area
+		}
+	}
 	demand_add = {
 		nobles = 0.1
-		calaquendi = 0.1
 		burghers = 0.01
 		clergy = 0.01
+		calaquendi = 0.1
 	}
-	
+
 	wealth_impact_threshold = {
 		all = 0.75
 	}
-	
+
 	origin_in_new_world = yes
 	custom_tags = { new_world_goods }
-	
+
 }
+
 REPLACE:coffee = {
 	method = farming
 	category = raw_material
 	color = goods_coffee
 	default_market_price = 3
-	
+	ai_rgo_size_importance = 3
+
+	location_potential = {
+		OR = {
+			vegetation = woods
+			vegetation = jungle
+			vegetation = forest
+		}
+		OR = {
+			topography = flatland
+			topography = hills
+			topography = plateau
+			topography = mountains
+		}
+		OR = {
+			climate = subtropical
+			climate = tropical
+		}
+		NOR = {
+			region = region:east_coast_region
+			region = region:great_plains_region
+			region = region:caribbean_region
+		}
+	}
 	demand_add = {
 		nobles = 0.01
-		calaquendi = 0.01
 		burghers = 0.001
 		clergy = 0.0005
 		soldiers = 0.001
+		calaquendi = 0.01
 	}
-	
+
 	wealth_impact_threshold = {
 		all = 0.75
 	}
 
 	origin_in_old_world = yes
 	custom_tags = { old_world_goods }
-	
+
 }
+
 REPLACE:elephants = {
 	method = farming
 	category = raw_material
 	color = goods_elephants
-	default_market_price = 10
+	default_market_price = 5
 	transport_cost = 5
-	
+
 	demand_add = {
 		nobles =  0.1
 		calaquendi =  0.1
-	}	
-	
+	}
+
 	wealth_impact_threshold = {
 		nobles = 2
 		calaquendi = 2
 	}
+
+	demand_only_in_sub_continent = south_asia
+	demand_only_in_region = indochina_region
 }
+
 REPLACE:lacquerware = {
 	category = produced
 	color = goods_lacquerware
@@ -676,8 +962,8 @@ REPLACE:lacquerware = {
 	transport_cost = 0.5
 	demand_add = {
 		nobles =  0.05
-		calaquendi =  0.05
 		burghers =  0.02
+		calaquendi =  0.05
 	}	
 	
 	development_threshold = 20
@@ -686,6 +972,7 @@ REPLACE:lacquerware = {
 	}
 
 }
+
 REPLACE:porcelain = {
 	category = produced
 	color = goods_porcelain
@@ -693,21 +980,23 @@ REPLACE:porcelain = {
 	transport_cost = 0.5
 	
 	demand_add = {
-		upper = 0.0005
-	}	
+		upper = 0.009
+		burghers = 0.003
+	}
 	demand_multiply = {
-		nobles = 20
+		nobles = 2
 		calaquendi = 20
 	}
 	
-	development_threshold = 30
-	
+	development_threshold = 20
+
 	wealth_impact_threshold = {
 		all = 1.1
 	}
-	
-	
+
+
 }
+
 REPLACE:tea = {
 	method = farming
 	category = raw_material
@@ -716,9 +1005,9 @@ REPLACE:tea = {
 	
 	demand_add = {
 		nobles = 0.2
-		calaquendi = 0.2
 		burghers = 0.01
 		clergy = 0.01
+		calaquendi = 0.2
 	}
 		
 	wealth_impact_threshold = {
@@ -732,13 +1021,69 @@ REPLACE:tobacco = {
 	category = raw_material
 	color = goods_tobacco
 	default_market_price = 3
-	
-	
+	ai_rgo_size_importance = 5
+
+	location_potential = {
+		NOT = {vegetation = desert }
+		OR = {
+			topography = flatland
+			topography = hills
+		}
+		OR = {					
+			climate = tropical
+			climate = subtropical
+			climate = mediterranean
+			climate = oceanic
+			climate = continental
+		}
+		NOR = {
+			region = region:scandinavian_region
+			region = region:north_atlantic_islands_region
+			region = region:great_britain_region
+			region = region:ireland_region
+			region = region:ruthenia_region
+			region = region:steppes_region
+			region = region:russian_region
+			region = region:ural_region
+			region = region:mongolia_region
+			region = region:kongo_region
+			region = region:ethiopia_region
+			region = region:nubia_region
+			region = region:somalia_region
+			region = region:madagascar_region
+			region = region:southern_africa_islands_region
+			region = region:sahel_region
+			region = region:canada_region
+			area = area:new_hampshire_area
+			area = area:southern_new_england_area
+			area = area:maine_area
+			area = area:hudson_area
+			area = area:haudenosaunee_area
+			area = area:westsylvania_area
+			area = area:maryland_area
+			area = area:west_virginia_area
+			area = area:ohio_area
+			area = area:indiana_area
+			area = area:michigan_area
+			area = area:illinois_area
+			area = area:wisconsin_area
+			area = area:alabama_area
+			area = area:mississippi_area
+			region = region:west_coast_region
+			region = region:great_plains_region
+			region = region:alaska_region
+			region = region:brazil_region
+			region = region:chaco_region
+			region = region:australia_region
+			region = region:new_zealand_region
+		}
+	}
+
 	demand_add = {
 		nobles = 0.05
-		calaquendi = 0.15
 		burghers = 0.005
 		clergy = 0.005
+		calaquendi = 0.15
 	}
 
 	origin_in_new_world = yes

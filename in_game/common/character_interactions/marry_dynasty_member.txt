@@ -184,7 +184,20 @@ marry_dynasty_members = {
 		}
 
 		enabled = {
-			always = yes
+			# EU5 1.4: the engine refuses a marriage between close relatives (parent/child, grandparent/
+			# grandchild, siblings, aunt/uncle with niece/nephew) whatever the consanguinity law says.
+			# Matches the law allows are still offered: the effect marries them through
+			# elf_marry_close_kin_effect (see scripted_effects/elf_destiny_marriage_scripted_effects.txt).
+			# Everything else the engine refuses is greyed out with the engine's own reason instead of
+			# taking the legitimacy hit for a marriage that never happens.
+			exists = scope:recipient
+			OR = {
+				can_marry_character = scope:recipient
+				AND = {
+					is_close_relative = scope:recipient
+					scope:actor ?= { elf_law_allows_close_kin_marriage_trigger = yes }
+				}
+			}
 		}
 	}
 	
@@ -194,13 +207,37 @@ marry_dynasty_members = {
 				exists = scope:recipient
 				exists = scope:target
 			}
-			scope:recipient = {
-				marry_character = scope:target
+			if = {
+				limit = {
+					scope:recipient = {
+						is_close_relative = scope:target
+						NOT = { can_marry_character = scope:target }
+					}
+					scope:actor ?= { elf_law_allows_close_kin_marriage_trigger = yes }
+				}
+				# Close kin the law allows but the 1.4 engine refuses: marry through the re-parenting
+				# dance (elf_destiny_marriage_scripted_effects.txt). Hidden so the tooltip only shows the
+				# wedding, not the throwaway parents.
+				custom_tooltip = {
+					text = marry_dynasty_close_kin_tt
+					hidden_effect = {
+						scope:recipient = {
+							elf_marry_close_kin_effect = { spouse = scope:target country = scope:actor }
+						}
+					}
+				}
+			}
+			else = {
+				scope:recipient = {
+					marry_character = scope:target
+				}
 			}
 		}
 		
+		# Legitimacy cost only when the marriage actually happened.
 		if = {	
 			limit = {
+				scope:recipient ?= { is_spouse_of = scope:target }
 				scope:actor ?= { NOT = { has_estate_privilege = estate_privilege:noble_marriage_rights } }
 			}
 			scope:actor = {

@@ -320,6 +320,10 @@ elf_destiny_story.22 = {
 				change_pop_culture = culture:elven_culture
 			}
 		}
+		custom_tooltip = {
+			text = calaquendi_household_settles
+			adopt_elven_culture_seed_calaquendi_effect = yes
+		}
 
 		custom_tooltip = {
 			text = all_locations_embrace_elven_institution

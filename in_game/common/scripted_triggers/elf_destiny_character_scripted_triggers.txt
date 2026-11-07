@@ -133,3 +133,17 @@ doctrine_consanguinity_aunt_nephew_and_uncle_niece_trigger = {  # "Avunculate Ma
 # doctrine_consanguinity_unrestricted_trigger = {  # "Unrestricted Marriage"
 
 # }
+
+# Country scope. Does the active Consanguinity Law policy allow a marriage between scope:recipient
+# and scope:target that the engine counts as close kin? Unrestricted: any; Avunculate: only
+# aunt/uncle with niece/nephew. Used by marry_dynasty_members to decide whether to run the
+# close-kin marriage (elf_marry_close_kin_effect) instead of a plain marry_character.
+elf_law_allows_close_kin_marriage_trigger = {
+	OR = {
+		has_policy = doctrine_consanguinity_unrestricted
+		AND = {
+			has_policy = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+			scope:target ?= { doctrine_consanguinity_aunt_nephew_and_uncle_niece_trigger = yes }
+		}
+	}
+}

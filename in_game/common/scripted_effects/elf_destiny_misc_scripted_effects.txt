@@ -335,6 +335,31 @@ seed_nobles_estate_characters_effect = {
 	}
 }
 
+# Called from the elven-culture adoption event (elf_destiny_story.22, convert option).
+# A freshly converted realm has no Calaquendi pops, and an estate only exists for a country that
+# has pops of its type, so the Calaquendi estate never appeared after adoption (Discord report
+# 2026-10-29). Give the capital the same founding High Noble household the elven capitals start
+# with and seed the two estate characters they get at game start. Size: the elven capitals define
+# 0.015 at setup but hold >= 0.1 in play, and in 1.4.7 tests a 0.015 pop was culled at the next
+# monthly tick (London) while 0.1 survived (London, Aragon); 0.1 is the smallest size seen to persist.
+adopt_elven_culture_seed_calaquendi_effect = {
+	save_scope_as = adopting_country
+	if = {
+		limit = {
+			NOT = { capital = { any_pop = { pop_type = pop_type:calaquendi } } }
+		}
+		capital = {
+			add_pop = {
+				type = pop_type:calaquendi
+				size = 0.1
+				culture = culture:elven_culture
+				religion = scope:adopting_country.religion
+			}
+		}
+	}
+	seed_calaquendi_estate_characters_effect = yes
+}
+
 build_ancient_road_network = {
 	location:bolshaya_laptyuga = { add_road_to = { target = location:mezen type = ancient_road } }
 	location:bolshaya_laptyuga = { add_road_to = { target = location:ust_vym type = ancient_road } }
