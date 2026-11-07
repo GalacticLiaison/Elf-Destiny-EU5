@@ -1,0 +1,134 @@
+﻿# Close-kin marriage for the Consanguinity Law (Avunculate / Unrestricted policies).
+#
+# Since EU5 1.4 the engine refuses to marry two characters it counts as close relatives
+# (parent/child, grandparent/grandchild, siblings, aunt/uncle with niece/nephew), whatever the
+# mod's law says: marry_character and marry_character_ignore_blocks both silently do nothing.
+# The check reads the live parent links, so we re-parent the junior partner to two throwaway
+# characters for the duration of ONE effect, marry, and put the real parents back. Verified on
+# 1.4.7 (2026-11-07): siblings, father/daughter and uncle/niece married this way, the engine
+# reports them as close relatives again afterwards and did not annul the marriages over two
+# game years. Everything happens inside a single effect, so no tick sees the temporary parents.
+#
+# Usage (character scope = the one who marries):
+#   elf_marry_close_kin_effect = { spouse = scope:target country = scope:actor }
+
+# One attempt: $junior$ gets throwaway parents, $senior$ marries $junior$, parents restored.
+# $tag$ keeps the saved scopes of the two attempts apart.
+elf_kin_marriage_attempt_effect = {
+	# Saved scopes live for the whole effect execution, so clear ours first: a stale
+	# elf_kin_real_father from an earlier call would otherwise be 'restored' onto this partner.
+	clear_saved_scope = elf_kin_real_father_$tag$
+	clear_saved_scope = elf_kin_real_mother_$tag$
+	clear_saved_scope = elf_kin_dummy_father_$tag$
+	clear_saved_scope = elf_kin_dummy_mother_$tag$
+	# Remember the real parents. Only links that exist are swapped and restored, so a partner
+	# with one unknown parent keeps it unknown.
+	$junior$ = {
+		if = {
+			limit = { exists = father }
+			father = { save_scope_as = elf_kin_real_father_$tag$ }
+		}
+		if = {
+			limit = { exists = mother }
+			mother = { save_scope_as = elf_kin_real_mother_$tag$ }
+		}
+	}
+	# A partner without any parent link cannot be the junior side of the kinship (the kinship then
+	# runs through the other partner's parents), so there is nothing to swap: let the caller try the
+	# roles the other way round.
+	if = {
+		limit = {
+			OR = {
+				exists = scope:elf_kin_real_father_$tag$
+				exists = scope:elf_kin_real_mother_$tag$
+			}
+		}
+		# Throwaway parents: created in limbo (never in a court), no stats, no on-created script,
+		# no inheritance update, and killed silently again before this effect ends.
+		$country$ = {
+			create_character = {
+				age = 60
+				female = no
+				culture = $junior$.culture
+				religion = $junior$.religion
+				create_in_limbo = yes
+				no_stats = yes
+				important_character_counts = none
+				skip_on_created_action = yes
+				skip_update_inheritance = yes
+				save_scope_as = elf_kin_dummy_father_$tag$
+			}
+			create_character = {
+				age = 58
+				female = yes
+				culture = $junior$.culture
+				religion = $junior$.religion
+				create_in_limbo = yes
+				no_stats = yes
+				important_character_counts = none
+				skip_on_created_action = yes
+				skip_update_inheritance = yes
+				save_scope_as = elf_kin_dummy_mother_$tag$
+			}
+		}
+		$junior$ = {
+			if = {
+				limit = { exists = scope:elf_kin_real_father_$tag$ }
+				change_father = scope:elf_kin_dummy_father_$tag$
+			}
+			if = {
+				limit = { exists = scope:elf_kin_real_mother_$tag$ }
+				change_mother = scope:elf_kin_dummy_mother_$tag$
+			}
+		}
+		# The marriage itself: the engine's other rules (adult, free marriage slot, same-sex ban,
+		# blocked_from_marriage, estate rights) still apply here, as they should.
+		if = {
+			limit = { $senior$ = { can_marry_character = $junior$ } }
+			$senior$ = { marry_character = $junior$ }
+		}
+		# Real parents back.
+		$junior$ = {
+			if = {
+				limit = { exists = scope:elf_kin_real_father_$tag$ }
+				change_father = scope:elf_kin_real_father_$tag$
+			}
+			if = {
+				limit = { exists = scope:elf_kin_real_mother_$tag$ }
+				change_mother = scope:elf_kin_real_mother_$tag$
+			}
+		}
+		kill_character_silently = scope:elf_kin_dummy_father_$tag$
+		kill_character_silently = scope:elf_kin_dummy_mother_$tag$
+	}
+	clear_saved_scope = elf_kin_real_father_$tag$
+	clear_saved_scope = elf_kin_real_mother_$tag$
+	clear_saved_scope = elf_kin_dummy_father_$tag$
+	clear_saved_scope = elf_kin_dummy_mother_$tag$
+}
+
+# Marries root to $spouse$ even when they are close relatives. If the engine allows the match
+# anyway, this is a plain marry_character. Otherwise the picked partner is re-parented first;
+# if the kinship runs the other way (root is the child/grandchild/niece), root is re-parented
+# on a second attempt. Check is_spouse_of afterwards: the marriage can still legitimately fail
+# for non-kinship reasons (same sex, no free marriage slot, blocked from marriage).
+elf_marry_close_kin_effect = {
+	save_scope_as = elf_kin_senior
+	$spouse$ = { save_scope_as = elf_kin_junior }
+	if = {
+		limit = {
+			OR = {
+				can_marry_character = scope:elf_kin_junior
+				NOT = { is_close_relative = scope:elf_kin_junior }
+			}
+		}
+		marry_character = scope:elf_kin_junior
+	}
+	else = {
+		elf_kin_marriage_attempt_effect = { junior = scope:elf_kin_junior senior = scope:elf_kin_senior country = $country$ tag = a }
+		if = {
+			limit = { NOT = { is_spouse_of = scope:elf_kin_junior } }
+			elf_kin_marriage_attempt_effect = { junior = scope:elf_kin_senior senior = scope:elf_kin_junior country = $country$ tag = b }
+		}
+	}
+}

@@ -1,0 +1,102 @@
+﻿# Elf Destiny unit illustrations.
+# Since EU5 1.4 the 2D unit art is chosen by these script entries, not by the texture filename
+# (see game/in_game/gfx/unit_illustrations/readme.txt). Without entries every elven unit fell back
+# to the vanilla default pictures. One entry per unique unit (priority tier 900000 = is_unit_type),
+# plus a category-level fallback for every Magi unit (identity tier, below unit-specific art).
+
+army_infantry_a_early_fey_archers = {
+	texture = "gfx/interface/illustrations/units/army_infantry_a_early_fey_archers.dds"
+	priority = 900000
+	trigger = {
+		is_unit_type = a_early_fey_archers
+	}
+}
+
+army_infantry_a_fey_archers = {
+	texture = "gfx/interface/illustrations/units/army_infantry_a_fey_archers.dds"
+	priority = 900000
+	trigger = {
+		is_unit_type = a_fey_archers
+	}
+}
+
+army_infantry_a_late_fey_archers = {
+	texture = "gfx/interface/illustrations/units/army_infantry_a_late_fey_archers.dds"
+	priority = 900000
+	trigger = {
+		is_unit_type = a_late_fey_archers
+	}
+}
+
+army_infantry_ranger_high_guard = {
+	texture = "gfx/interface/illustrations/units/army_infantry_ranger_high_guard.dds"
+	priority = 900000
+	trigger = {
+		is_unit_type = ranger_high_guard
+	}
+}
+
+army_infantry_mythril_plated_fey_vanguard = {
+	texture = "gfx/interface/illustrations/units/army_infantry_mythril_plated_fey_vanguard.dds"
+	priority = 900000
+	trigger = {
+		is_unit_type = mythril_plated_fey_vanguard
+	}
+}
+
+army_cavalry_a_early_elf_noble_lancers = {
+	texture = "gfx/interface/illustrations/units/army_cavalry_a_early_elf_noble_lancers.dds"
+	priority = 900000
+	trigger = {
+		is_unit_type = a_early_elf_noble_lancers
+	}
+}
+
+army_cavalry_a_elf_noble_lancers = {
+	texture = "gfx/interface/illustrations/units/army_cavalry_a_elf_noble_lancers.dds"
+	priority = 900000
+	trigger = {
+		is_unit_type = a_elf_noble_lancers
+	}
+}
+
+army_cavalry_a_late_elf_noble_lancers = {
+	texture = "gfx/interface/illustrations/units/army_cavalry_a_late_elf_noble_lancers.dds"
+	priority = 900000
+	trigger = {
+		is_unit_type = a_late_elf_noble_lancers
+	}
+}
+
+army_cavalry_wolf_riders = {
+	texture = "gfx/interface/illustrations/units/army_cavalry_wolf_riders.dds"
+	priority = 900000
+	trigger = {
+		is_unit_type = wolf_riders
+	}
+}
+
+army_cavalry_mythril_plated_horse_masters = {
+	texture = "gfx/interface/illustrations/units/army_cavalry_mythril_plated_horse_masters.dds"
+	priority = 900000
+	trigger = {
+		is_unit_type = mythril_plated_horse_masters
+	}
+}
+
+army_magi_calaquendi_high_magi = {
+	texture = "gfx/interface/illustrations/units/army_magi_calaquendi_high_magi.dds"
+	priority = 900000
+	trigger = {
+		is_unit_type = calaquendi_high_magi
+	}
+}
+
+# Any Magi-category unit without its own art (Aeluran magi of every age, teleporting army).
+army_magi = {
+	texture = "gfx/interface/illustrations/units/army_magi.dds"
+	priority = 850000
+	trigger = {
+		unit_category = army_magi
+	}
+}
