@@ -106,6 +106,8 @@
 
  portal_network: "Portal Network"
  portal_network_desc: "The Portal Network is comprised of a series of structures, powered by the Divine Spark. It allow for the instantaneous teleportation of goods and people across vast distances."
+ portal_network_never_ends: "No End in Sight"
+ portal_network_never_ends_tt: "The Portal Network endures as long as the Grand Portal stands"
  PORTAL_NETWORK_LOCATIONS: "#BOLD Portal Network Locations#!"
  choose_a_teleportation_destination: "Choose a Teleportation Destination"
  choose_a_unit: "Choose an [army|e] to Teleport"
