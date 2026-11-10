@@ -237,7 +237,7 @@ shrine_to_vana = {
 	city = yes
 	megalopolis = yes
 	
-	build_time = 1
+	build_time = estate_build_time
 
 	country_potential = {
 		elf_country_potential_trigger = yes
