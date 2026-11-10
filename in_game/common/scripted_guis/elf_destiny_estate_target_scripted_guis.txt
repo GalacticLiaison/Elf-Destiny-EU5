@@ -1,0 +1,282 @@
+﻿# Calaquendi estate: target satisfaction buttons for the tax automation (economy tab).
+# The vanilla scripted GUIs (game/in_game/common/scripted_guis/economy_satisfaction_target.txt, 1.4.7)
+# only handle the seven vanilla estates, so the +/- buttons did nothing for the Calaquendi.
+# Each block is the vanilla scripted GUI with a calaquendi_estate branch added at the end.
+REPLACE:taxing_setup = {
+	effect = {
+		root = {
+			if = { limit = { not = { exists = var:nobles_estate_target } }
+				set_variable = { name = nobles_estate_target value = 0.5 }
+			}
+			if = { limit = { not = { exists = var:clergy_estate_target } }
+				set_variable = { name = clergy_estate_target value = 0.5 }
+			}
+			if = { limit = { not = { exists = var:burghers_estate_target } }
+				set_variable = { name = burghers_estate_target value = 0.5 }
+			}
+			if = { limit = { not = { exists = var:peasants_estate_target } }
+				set_variable = { name = peasants_estate_target value = 0.5 }
+			}
+			if = { limit = { not = { exists = var:tribes_estate_target } }
+				set_variable = { name = tribes_estate_target value = 0.5 }
+			}
+			if = { limit = { not = { exists = var:cossacks_estate_target } }
+				set_variable = { name = cossacks_estate_target value = 0.5 }
+			}
+			if = { limit = { not = { exists = var:dhimmi_estate_target } }
+				set_variable = { name = dhimmi_estate_target value = 0.5 }
+			}
+			if = { limit = { not = { exists = var:calaquendi_estate_target } }
+				set_variable = { name = calaquendi_estate_target value = 0.5 }
+			}
+		}
+	}
+}
+
+REPLACE:subtract_one_percent = {
+	saved_scopes = { country estate_type }
+	effect = {
+		root = {
+			if = { limit = { scope:estate_type = estate_type:nobles_estate }
+				if = { limit = { not = { exists = var:nobles_estate_target } } set_variable = { name = nobles_estate_target value = 0.5 } }
+				set_variable = { name = nobles_estate_target value = { value = var:nobles_estate_target subtract = 0.01 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:clergy_estate }
+				if = { limit = { not = { exists = var:clergy_estate_target } } set_variable = { name = clergy_estate_target value = 0.5 } }
+				set_variable = { name = clergy_estate_target value = { value = var:clergy_estate_target subtract = 0.01 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:burghers_estate }
+				if = { limit = { not = { exists = var:burghers_estate_target } } set_variable = { name = burghers_estate_target value = 0.5 } }
+				set_variable = { name = burghers_estate_target value = { value = var:burghers_estate_target subtract = 0.01 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:peasants_estate }
+				if = { limit = { not = { exists = var:peasants_estate_target } } set_variable = { name = peasants_estate_target value = 0.5 } }
+				set_variable = { name = peasants_estate_target value = { value = var:peasants_estate_target subtract = 0.01 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:tribes_estate }
+				if = { limit = { not = { exists = var:tribes_estate_target } } set_variable = { name = tribes_estate_target value = 0.5 } }
+				set_variable = { name = tribes_estate_target value = { value = var:tribes_estate_target subtract = 0.01 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:cossacks_estate }
+				if = { limit = { not = { exists = var:cossacks_estate_target } } set_variable = { name = cossacks_estate_target value = 0.5 } }
+				set_variable = { name = cossacks_estate_target value = { value = var:cossacks_estate_target subtract = 0.01 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:dhimmi_estate }
+				if = { limit = { not = { exists = var:dhimmi_estate_target } } set_variable = { name = dhimmi_estate_target value = 0.5 } }
+				set_variable = { name = dhimmi_estate_target value = { value = var:dhimmi_estate_target subtract = 0.01 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:calaquendi_estate }
+				if = { limit = { not = { exists = var:calaquendi_estate_target } } set_variable = { name = calaquendi_estate_target value = 0.5 } }
+				set_variable = { name = calaquendi_estate_target value = { value = var:calaquendi_estate_target subtract = 0.01 min = 0.0 } }
+			}
+		}
+	}
+}
+
+REPLACE:subtract_five_percent = {
+	saved_scopes = { country estate_type }
+	effect = {
+		root = {
+			if = { limit = { scope:estate_type = estate_type:nobles_estate }
+				if = { limit = { not = { exists = var:nobles_estate_target } } set_variable = { name = nobles_estate_target value = 0.5 } }
+				set_variable = { name = nobles_estate_target value = { value = var:nobles_estate_target subtract = 0.05 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:clergy_estate }
+				if = { limit = { not = { exists = var:clergy_estate_target } } set_variable = { name = clergy_estate_target value = 0.5 } }
+				set_variable = { name = clergy_estate_target value = { value = var:clergy_estate_target subtract = 0.05 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:burghers_estate }
+				if = { limit = { not = { exists = var:burghers_estate_target } } set_variable = { name = burghers_estate_target value = 0.5 } }
+				set_variable = { name = burghers_estate_target value = { value = var:burghers_estate_target subtract = 0.05 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:peasants_estate }
+				if = { limit = { not = { exists = var:peasants_estate_target } } set_variable = { name = peasants_estate_target value = 0.5 } }
+				set_variable = { name = peasants_estate_target value = { value = var:peasants_estate_target subtract = 0.05 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:tribes_estate }
+				if = { limit = { not = { exists = var:tribes_estate_target } } set_variable = { name = tribes_estate_target value = 0.5 } }
+				set_variable = { name = tribes_estate_target value = { value = var:tribes_estate_target subtract = 0.05 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:cossacks_estate }
+				if = { limit = { not = { exists = var:cossacks_estate_target } } set_variable = { name = cossacks_estate_target value = 0.5 } }
+				set_variable = { name = cossacks_estate_target value = { value = var:cossacks_estate_target subtract = 0.05 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:dhimmi_estate }
+				if = { limit = { not = { exists = var:dhimmi_estate_target } } set_variable = { name = dhimmi_estate_target value = 0.5 } }
+				set_variable = { name = dhimmi_estate_target value = { value = var:dhimmi_estate_target subtract = 0.05 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:calaquendi_estate }
+				if = { limit = { not = { exists = var:calaquendi_estate_target } } set_variable = { name = calaquendi_estate_target value = 0.5 } }
+				set_variable = { name = calaquendi_estate_target value = { value = var:calaquendi_estate_target subtract = 0.05 min = 0.0 } }
+			}
+		}
+	}
+}
+
+REPLACE:subtract_ten_percent = {
+	saved_scopes = { country estate_type }
+	effect = {
+		root = {
+			if = { limit = { scope:estate_type = estate_type:nobles_estate }
+				if = { limit = { not = { exists = var:nobles_estate_target } } set_variable = { name = nobles_estate_target value = 0.5 } }
+				set_variable = { name = nobles_estate_target value = { value = var:nobles_estate_target subtract = 0.1 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:clergy_estate }
+				if = { limit = { not = { exists = var:clergy_estate_target } } set_variable = { name = clergy_estate_target value = 0.5 } }
+				set_variable = { name = clergy_estate_target value = { value = var:clergy_estate_target subtract = 0.1 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:burghers_estate }
+				if = { limit = { not = { exists = var:burghers_estate_target } } set_variable = { name = burghers_estate_target value = 0.5 } }
+				set_variable = { name = burghers_estate_target value = { value = var:burghers_estate_target subtract = 0.1 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:peasants_estate }
+				if = { limit = { not = { exists = var:peasants_estate_target } } set_variable = { name = peasants_estate_target value = 0.5 } }
+				set_variable = { name = peasants_estate_target value = { value = var:peasants_estate_target subtract = 0.1 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:tribes_estate }
+				if = { limit = { not = { exists = var:tribes_estate_target } } set_variable = { name = tribes_estate_target value = 0.5 } }
+				set_variable = { name = tribes_estate_target value = { value = var:tribes_estate_target subtract = 0.1 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:cossacks_estate }
+				if = { limit = { not = { exists = var:cossacks_estate_target } } set_variable = { name = cossacks_estate_target value = 0.5 } }
+				set_variable = { name = cossacks_estate_target value = { value = var:cossacks_estate_target subtract = 0.1 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:dhimmi_estate }
+				if = { limit = { not = { exists = var:dhimmi_estate_target } } set_variable = { name = dhimmi_estate_target value = 0.5 } }
+				set_variable = { name = dhimmi_estate_target value = { value = var:dhimmi_estate_target subtract = 0.1 min = 0.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:calaquendi_estate }
+				if = { limit = { not = { exists = var:calaquendi_estate_target } } set_variable = { name = calaquendi_estate_target value = 0.5 } }
+				set_variable = { name = calaquendi_estate_target value = { value = var:calaquendi_estate_target subtract = 0.1 min = 0.0 } }
+			}
+		}
+	}
+}
+
+REPLACE:set_to_zero_percent = {
+	saved_scopes = { estate_type }
+	effect = {
+		root = {
+			if = { limit = { scope:estate_type = estate_type:nobles_estate }
+				set_variable = { name = nobles_estate_target value = 0.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:clergy_estate }
+				set_variable = { name = clergy_estate_target value = 0.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:burghers_estate }
+				set_variable = { name = burghers_estate_target value = 0.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:peasants_estate }
+				set_variable = { name = peasants_estate_target value = 0.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:tribes_estate }
+				set_variable = { name = tribes_estate_target value = 0.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:cossacks_estate }
+				set_variable = { name = cossacks_estate_target value = 0.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:dhimmi_estate }
+				set_variable = { name = dhimmi_estate_target value = 0.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:calaquendi_estate }
+				set_variable = { name = calaquendi_estate_target value = 0.0 }
+			}
+		}
+	}
+}
+
+REPLACE:add_one_percent = {
+	saved_scopes = { estate_type }
+	effect = {
+		root = {
+			if = { limit = { scope:estate_type = estate_type:nobles_estate }
+				if = { limit = { not = { exists = var:nobles_estate_target } } set_variable = { name = nobles_estate_target value = 0.5 } }
+				set_variable = { name = nobles_estate_target value = { value = var:nobles_estate_target add = 0.01 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:clergy_estate }
+				if = { limit = { not = { exists = var:clergy_estate_target } } set_variable = { name = clergy_estate_target value = 0.5 } }
+				set_variable = { name = clergy_estate_target value = { value = var:clergy_estate_target add = 0.01 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:burghers_estate }
+				if = { limit = { not = { exists = var:burghers_estate_target } } set_variable = { name = burghers_estate_target value = 0.5 } }
+				set_variable = { name = burghers_estate_target value = { value = var:burghers_estate_target add = 0.01 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:peasants_estate }
+				if = { limit = { not = { exists = var:peasants_estate_target } } set_variable = { name = peasants_estate_target value = 0.5 } }
+				set_variable = { name = peasants_estate_target value = { value = var:peasants_estate_target add = 0.01 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:tribes_estate }
+				if = { limit = { not = { exists = var:tribes_estate_target } } set_variable = { name = tribes_estate_target value = 0.5 } }
+				set_variable = { name = tribes_estate_target value = { value = var:tribes_estate_target add = 0.01 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:cossacks_estate }
+				if = { limit = { not = { exists = var:cossacks_estate_target } } set_variable = { name = cossacks_estate_target value = 0.5 } }
+				set_variable = { name = cossacks_estate_target value = { value = var:cossacks_estate_target add = 0.01 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:dhimmi_estate }
+				if = { limit = { not = { exists = var:dhimmi_estate_target } } set_variable = { name = dhimmi_estate_target value = 0.5 } }
+				set_variable = { name = dhimmi_estate_target value = { value = var:dhimmi_estate_target add = 0.01 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:calaquendi_estate }
+				if = { limit = { not = { exists = var:calaquendi_estate_target } } set_variable = { name = calaquendi_estate_target value = 0.5 } }
+				set_variable = { name = calaquendi_estate_target value = { value = var:calaquendi_estate_target add = 0.01 max = 1.0 } }
+			}
+		}
+	}
+}
+
+REPLACE:add_five_percent = {
+	saved_scopes = { estate_type }
+	effect = {
+		root = {
+			if = { limit = { scope:estate_type = estate_type:nobles_estate }
+				if = { limit = { not = { exists = var:nobles_estate_target } } set_variable = { name = nobles_estate_target value = 0.5 } }
+				set_variable = { name = nobles_estate_target value = { value = var:nobles_estate_target add = 0.05 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:clergy_estate }
+				if = { limit = { not = { exists = var:clergy_estate_target } } set_variable = { name = clergy_estate_target value = 0.5 } }
+				set_variable = { name = clergy_estate_target value = { value = var:clergy_estate_target add = 0.05 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:burghers_estate }
+				if = { limit = { not = { exists = var:burghers_estate_target } } set_variable = { name = burghers_estate_target value = 0.5 } }
+				set_variable = { name = burghers_estate_target value = { value = var:burghers_estate_target add = 0.05 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:peasants_estate }
+				if = { limit = { not = { exists = var:peasants_estate_target } } set_variable = { name = peasants_estate_target value = 0.5 } }
+				set_variable = { name = peasants_estate_target value = { value = var:peasants_estate_target add = 0.05 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:tribes_estate }
+				if = { limit = { not = { exists = var:tribes_estate_target } } set_variable = { name = tribes_estate_target value = 0.5 } }
+				set_variable = { name = tribes_estate_target value = { value = var:tribes_estate_target add = 0.05 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:cossacks_estate }
+				if = { limit = { not = { exists = var:cossacks_estate_target } } set_variable = { name = cossacks_estate_target value = 0.5 } }
+				set_variable = { name = cossacks_estate_target value = { value = var:cossacks_estate_target add = 0.05 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:dhimmi_estate }
+				if = { limit = { not = { exists = var:dhimmi_estate_target } } set_variable = { name = dhimmi_estate_target value = 0.5 } }
+				set_variable = { name = dhimmi_estate_target value = { value = var:dhimmi_estate_target add = 0.05 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:calaquendi_estate }
+				if = { limit = { not = { exists = var:calaquendi_estate_target } } set_variable = { name = calaquendi_estate_target value = 0.5 } }
+				set_variable = { name = calaquendi_estate_target value = { value = var:calaquendi_estate_target add = 0.05 max = 1.0 } }
+			}
+		}
+	}
+}
+
+REPLACE:add_ten_percent = {
+	saved_scopes = { estate_type }
+	effect = {
+		root = {
+			if = { limit = { scope:estate_type = estate_type:nobles_estate }
+				if = { limit = { not = { exists = var:nobles_estate_target } } set_variable = { name = nobles_estate_target value = 0.5 } }
+				set_variable = { name = nobles_estate_target value = { value = var:nobles_estate_target add = 0.1 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:clergy_estate }
+				if = { limit = { not = { exists = var:clergy_estate_target } } set_variable = { name = clergy_estate_target value = 0.5 } }
+				set_variable = { name = clergy_estate_target value = { value = var:clergy_estate_target add = 0.1 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:burghers_estate }
+				if = { limit = { not = { exists = var:burghers_estate_target } } set_variable = { name = burghers_estate_target value = 0.5 } }
+				set_variable = { name = burghers_estate_target value = { value = var:burghers_estate_target add = 0.1 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:peasants_estate }
+				if = { limit = { not = { exists = var:peasants_estate_target } } set_variable = { name = peasants_estate_target value = 0.5 } }
+				set_variable = { name = peasants_estate_target value = { value = var:peasants_estate_target add = 0.1 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:tribes_estate }
+				if = { limit = { not = { exists = var:tribes_estate_target } } set_variable = { name = tribes_estate_target value = 0.5 } }
+				set_variable = { name = tribes_estate_target value = { value = var:tribes_estate_target add = 0.1 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:cossacks_estate }
+				if = { limit = { not = { exists = var:cossacks_estate_target } } set_variable = { name = cossacks_estate_target value = 0.5 } }
+				set_variable = { name = cossacks_estate_target value = { value = var:cossacks_estate_target add = 0.1 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:dhimmi_estate }
+				if = { limit = { not = { exists = var:dhimmi_estate_target } } set_variable = { name = dhimmi_estate_target value = 0.5 } }
+				set_variable = { name = dhimmi_estate_target value = { value = var:dhimmi_estate_target add = 0.1 max = 1.0 } }
+			} else_if = { limit = { scope:estate_type = estate_type:calaquendi_estate }
+				if = { limit = { not = { exists = var:calaquendi_estate_target } } set_variable = { name = calaquendi_estate_target value = 0.5 } }
+				set_variable = { name = calaquendi_estate_target value = { value = var:calaquendi_estate_target add = 0.1 max = 1.0 } }
+			}
+		}
+	}
+}
+
+REPLACE:set_to_one_hundred_percent = {
+	saved_scopes = { estate_type }
+	effect = {
+		root = {
+			if = { limit = { scope:estate_type = estate_type:nobles_estate }
+				set_variable = { name = nobles_estate_target value = 1.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:clergy_estate }
+				set_variable = { name = clergy_estate_target value = 1.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:burghers_estate }
+				set_variable = { name = burghers_estate_target value = 1.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:peasants_estate }
+				set_variable = { name = peasants_estate_target value = 1.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:tribes_estate }
+				set_variable = { name = tribes_estate_target value = 1.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:cossacks_estate }
+				set_variable = { name = cossacks_estate_target value = 1.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:dhimmi_estate }
+				set_variable = { name = dhimmi_estate_target value = 1.0 }
+			} else_if = { limit = { scope:estate_type = estate_type:calaquendi_estate }
+				set_variable = { name = calaquendi_estate_target value = 1.0 }
+			}
+		}
+	}
+}
