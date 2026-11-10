@@ -9,7 +9,7 @@ The nation of Deepwood then gets the same event for these children to send them 
 This results in free religious Influence for basically nothing.
 
 Maybe children send for the education should get a hidden flag that prevents the event from firing again?
-![image.png](https://cdn.discordapp.com/attachments/1480673490318262475/1480673490964189217/image.png?ex=6a61d9e5&is=6a608865&hm=ff1c946517357b0f515453fc2505e9354c1d309f8817847abcdabe6554640cbe&)
+![image.png](https://cdn.discordapp.com/attachments/1480673490318262475/1480673490964189217/image.png?ex=6ae45e65&is=6ae30ce5&hm=664aced8ce2083645814874b58c74588baea5eacbe80ba9daa5cad84e74b689a&)
 ---
 
 ## Discussion (1 comment)

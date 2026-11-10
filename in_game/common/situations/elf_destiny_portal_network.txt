@@ -6,7 +6,20 @@
         # Grand Portal Restored
         has_global_variable = portal_restored
 	}
-	
+
+	# EU5 1.4 ended situations through outcome blocks (can_end is gone). A situation with no
+	# outcome ends at its first evaluation, so this never-passing outcome keeps the network
+	# open for good, like vanilla's colonial_revolution.
+	outcome = {
+		name = "portal_network_never_ends"
+		trigger = {
+			custom_tooltip = {
+				text = portal_network_never_ends_tt
+				always = no
+			}
+		}
+	}
+
 	visible = {
 		is_ai = no # FOR NOW, dream is AI can use in future
 		any_province = {

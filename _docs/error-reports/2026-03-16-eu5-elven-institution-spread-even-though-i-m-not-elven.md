@@ -5,4 +5,4 @@
 ## Report
 **Deleted User** · *2026-03-16*
 Didn't take the elven event at the start of the game (just want them in the background but I dont want to play as them this game). But my country still got the elven institution and all its advances, etc.
-![image.png](https://cdn.discordapp.com/attachments/1482971451844726795/1482971452104900679/image.png?ex=6a624d0a&is=6a60fb8a&hm=279283d10572318a22a533ef3a37c32f6f5c6b5a1ab6bc91ba6463a2c80d4f3f&)
+![image.png](https://cdn.discordapp.com/attachments/1482971451844726795/1482971452104900679/image.png?ex=6ae428ca&is=6ae2d74a&hm=ae07adf7e334befb32481476c52c3e9e8183fe0364883e3968cab5957e8b6e39&)
