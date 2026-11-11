@@ -7,9 +7,10 @@
 update_pregnancy_age_limits_effect = {
 	every_character = {
 		limit = {
-			is_alive = yes
-			is_female = yes
+			# Cheapest-first: age rejects most characters, sex rejects half of the rest.
 			age_in_years > 40		# no tier has a limit below 40, so younger characters are skipped
+			is_female = yes
+			is_alive = yes
 		}
 		update_character_pregnancy_age_limit_effect = yes
 	}
