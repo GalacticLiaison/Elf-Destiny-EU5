@@ -119,6 +119,7 @@ four_yearly_country_pulse = {
 		assign_enchantress_trait
 		assign_heroic_trait
 		populate_calaquendi_estate_with_characters
+		update_pregnancy_age_limits
 		# recruit_bloodline_members
 	}
 }
@@ -140,6 +141,14 @@ assign_heroic_trait = {
 
 	effect = {
 		assign_heroic_trait_effect = yes
+	}
+}
+
+# No trigger on purpose: elf_destiny_defines.txt lifts the vanilla pregnancy age cap for every character,
+# so every country needs this pulse (it also brings back the limit of 40 for humans).
+update_pregnancy_age_limits = {
+	effect = {
+		update_pregnancy_age_limits_effect = yes
 	}
 }
 

@@ -40,6 +40,45 @@ is_celestial_tier_elf_or_higher = {
 	}
 }
 
+# Character scope. True when the character is older than the pregnancy age limit of their tier.
+# Limit = 40 + half of the tier's life expectancy bonus.
+# Humans and characters without a racial trait: 40 (the vanilla cutoff).
+is_past_pregnancy_age_limit = {
+	OR = {
+		AND = {
+			NOT = { is_any_elf_type = yes }
+			age_in_years > 40
+		}
+		AND = {
+			has_racial_trait = { trait = elf_tier_1 }
+			age_in_years > 48
+		}
+		AND = {
+			has_racial_trait = { trait = elf_tier_2 }
+			age_in_years > 55
+		}
+		AND = {
+			has_racial_trait = { trait = elf_tier_3 }
+			age_in_years > 65
+		}
+		AND = {
+			has_racial_trait = { trait = elf_tier_4 }
+			age_in_years > 90
+		}
+		AND = {
+			has_racial_trait = { trait = elf_tier_5 }
+			age_in_years > 140
+		}
+		AND = {
+			OR = {
+				has_racial_trait = { trait = elf_tier_6 }
+				is_celestial_tier_elf_or_higher = yes	# tiers 7-12 = the immortal tiers
+			}
+			age_in_years > 165
+		}
+	}
+}
+
 has_any_elven_bloodline = {
 	OR = {
 		has_genetic_trait = { trait = royal_elf_valerith }
