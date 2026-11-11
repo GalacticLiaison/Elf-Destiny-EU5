@@ -237,6 +237,7 @@ marry_dynasty_members = {
 		# Legitimacy cost only when the marriage actually happened.
 		if = {	
 			limit = {
+				exists = scope:target
 				scope:recipient ?= { is_spouse_of = scope:target }
 				scope:actor ?= { NOT = { has_estate_privilege = estate_privilege:noble_marriage_rights } }
 			}

@@ -1,0 +1,33 @@
+﻿# Calaquendi estate: target satisfaction for the tax automation (economy tab).
+# Vanilla current_target_satisfaction (game/in_game/common/script_values/economy_satisfaction_target.txt,
+# 1.4.7) only knows the seven vanilla estates and returns 0.5 for anything else.
+# This is the vanilla value with a calaquendi_estate branch added before the fallback.
+REPLACE:current_target_satisfaction = {
+	scope:country = {
+		if = { limit = { scope:estate_type = estate_type:nobles_estate }
+			if = { limit = { exists = var:nobles_estate_target } value = var:nobles_estate_target }
+			else = { value = 0.5 }
+		} else_if = { limit = { scope:estate_type = estate_type:clergy_estate }
+			if = { limit = { exists = var:clergy_estate_target } value = var:clergy_estate_target }
+			else = { value = 0.5 }
+		} else_if = { limit = { scope:estate_type = estate_type:burghers_estate }
+			if = { limit = { exists = var:burghers_estate_target } value = var:burghers_estate_target }
+			else = { value = 0.5 }
+		} else_if = { limit = { scope:estate_type = estate_type:peasants_estate }
+			if = { limit = { exists = var:peasants_estate_target } value = var:peasants_estate_target }
+			else = { value = 0.5 }
+		} else_if = { limit = { scope:estate_type = estate_type:tribes_estate }
+			if = { limit = { exists = var:tribes_estate_target } value = var:tribes_estate_target }
+			else = { value = 0.5 }
+		} else_if = { limit = { scope:estate_type = estate_type:cossacks_estate }
+			if = { limit = { exists = var:cossacks_estate_target } value = var:cossacks_estate_target }
+			else = { value = 0.5 }
+		} else_if = { limit = { scope:estate_type = estate_type:dhimmi_estate }
+			if = { limit = { exists = var:dhimmi_estate_target } value = var:dhimmi_estate_target }
+			else = { value = 0.5 }
+		} else_if = { limit = { scope:estate_type = estate_type:calaquendi_estate }
+			if = { limit = { exists = var:calaquendi_estate_target } value = var:calaquendi_estate_target }
+			else = { value = 0.5 }
+		} else = { value = 0.5 }
+	}
+}
