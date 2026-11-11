@@ -46,7 +46,7 @@ the_rut = {
                     limit = {
                         is_adult = yes
                     }
-                    add_fertility = 100
+                    # add_fertility = 100 # disabled: permanent base fertility that stacked on every outbreak (the 3-year the_rut_modifier stays)
                     add_character_modifier = {
                         modifier = the_rut_modifier
                         years = 3
