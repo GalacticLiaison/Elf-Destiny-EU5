@@ -1,0 +1,104 @@
+﻿# Pregnancy age limits.
+# elf_destiny_defines.txt lifts the vanilla pregnancy age cap (40) for everyone; these effects bring the limit
+# back per elf tier (see is_past_pregnancy_age_limit) with fertility modifiers of -5000.
+# Mortals past their limit are sterile for good. Immortal elves past 165 go dormant and get rare fertile seasons.
+
+# Country scope. Fired by four_yearly_country_pulse (on_action update_pregnancy_age_limits).
+update_pregnancy_age_limits_effect = {
+	every_character = {
+		limit = {
+			is_alive = yes
+			is_female = yes
+			age_in_years > 40		# no tier has a limit below 40, so younger characters are skipped
+		}
+		update_character_pregnancy_age_limit_effect = yes
+	}
+}
+
+# Character scope. Applies the rules to one character.
+update_character_pregnancy_age_limit_effect = {
+	if = {
+		# Below the limit of the (possibly new) tier: fully fertile, clear leftovers.
+		limit = { NOT = { is_past_pregnancy_age_limit = yes } }
+		clear_pregnancy_age_limit_modifiers_effect = yes
+	}
+	else_if = {
+		# Immortal elves above the limit: permanently dormant, with rare fertile seasons.
+		# is_celestial_tier_elf_or_higher (tiers 7-12) is used as "immortal tier": these are exactly the tiers whose
+		# racial modifier has is_immortal. If the two ever stop matching, this needs its own trigger.
+		limit = { is_celestial_tier_elf_or_higher = yes }
+		if = {
+			limit = { has_character_modifier = past_childbearing_modifier }
+			remove_character_modifier = past_childbearing_modifier
+		}
+		immortal_fertility_step_effect = yes
+	}
+	else = {
+		# Mortals above the limit: permanent.
+		if = {
+			limit = { has_character_modifier = dormant_fertility_modifier }
+			remove_character_modifier = dormant_fertility_modifier
+		}
+		if = {
+			limit = { has_character_modifier = fertile_season_modifier }
+			remove_character_modifier = fertile_season_modifier
+		}
+		if = {
+			limit = { NOT = { has_character_modifier = past_childbearing_modifier } }
+			add_character_modifier = {
+				modifier = past_childbearing_modifier
+				years = -1
+			}
+		}
+	}
+}
+
+# Character scope. One pulse step of an immortal elf above the limit.
+# No age or tier check here, so it can also be run by hand on any character for testing.
+immortal_fertility_step_effect = {
+	if = {
+		# First pulse above the limit: go dormant. No roll in the same pulse.
+		limit = { NOT = { has_character_modifier = dormant_fertility_modifier } }
+		add_character_modifier = {
+			modifier = dormant_fertility_modifier
+			years = -1
+		}
+	}
+	else_if = {
+		# Dormant and no fertile season running: 11% per four-yearly pulse, about 3% per year.
+		limit = { NOT = { has_character_modifier = fertile_season_modifier } }
+		random = {
+			chance = 11
+			start_fertile_season_effect = yes
+		}
+	}
+}
+
+# Character scope. Starts a fertile season: fertile_season_modifier (+5000) cancels dormant_fertility_modifier (-5000)
+# for 1095 days = 3 years (the game has no leap years), then expires by itself. Normal pregnancy rules decide.
+# The pulse is four-yearly, so a season is always over before the next roll.
+start_fertile_season_effect = {
+	if = {
+		limit = { NOT = { has_character_modifier = fertile_season_modifier } }
+		add_character_modifier = {
+			modifier = fertile_season_modifier
+			days = 1095
+		}
+	}
+}
+
+# Character scope. Removes all three pregnancy age limit modifiers.
+clear_pregnancy_age_limit_modifiers_effect = {
+	if = {
+		limit = { has_character_modifier = past_childbearing_modifier }
+		remove_character_modifier = past_childbearing_modifier
+	}
+	if = {
+		limit = { has_character_modifier = dormant_fertility_modifier }
+		remove_character_modifier = dormant_fertility_modifier
+	}
+	if = {
+		limit = { has_character_modifier = fertile_season_modifier }
+		remove_character_modifier = fertile_season_modifier
+	}
+}

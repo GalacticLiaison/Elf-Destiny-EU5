@@ -1,4 +1,6 @@
 ﻿NCharacter = {
 	MAX_CHARACTER_AGE = 9999			# Elf Destiny: raised so elves can live to their intended ages
 	MAX_AGE_SETUP_ERROR_LOG = 9999		# Elf Destiny: raised to match MAX_CHARACTER_AGE
+	MAX_PREGNANCY_AGE = 9999			# Elf Destiny: vanilla 40 (pregnancy blocked above it); per-tier limits are applied by script, see update_pregnancy_age_limits
+	PREGNANCY_AGE_THRESHOLD = 9999		# Elf Destiny: vanilla 35 (fertility drops every month above it)
 }

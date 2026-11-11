@@ -675,6 +675,31 @@ the_rut_modifier = {
 	character_fertility = 100
 }
 
+# Pregnancy age limits (see update_pregnancy_age_limits_effect)
+# Mortal characters past the pregnancy age limit of their tier (permanent)
+past_childbearing_modifier = {
+	game_data = {
+		category = character
+	}
+	character_fertility = -5000
+}
+
+# Immortal elves (tier 7-12) past 165 (permanent)
+dormant_fertility_modifier = {
+	game_data = {
+		category = character
+	}
+	character_fertility = -5000
+}
+
+# Timed counterweight to dormant_fertility_modifier: the fertile season of an immortal elf
+fertile_season_modifier = {
+	game_data = {
+		category = character
+	}
+	character_fertility = 5000
+}
+
 extraordinarily_humble = {
 	game_data = {
 		category = country

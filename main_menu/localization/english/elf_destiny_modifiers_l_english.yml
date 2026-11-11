@@ -320,6 +320,13 @@
  STATIC_MODIFIER_NAME_sharpened_mind_modifier: "Sharpened Mind"
  STATIC_MODIFIER_NAME_dulled_mind_modifier: "Dulled Mind"
 
+ STATIC_MODIFIER_NAME_past_childbearing_modifier: "Past Childbearing"
+ STATIC_MODIFIER_DESC_past_childbearing_modifier: "This character is past the childbearing years of their kind and can no longer conceive."
+ STATIC_MODIFIER_NAME_dormant_fertility_modifier: "Dormant Fertility"
+ STATIC_MODIFIER_DESC_dormant_fertility_modifier: "The fertility of the undying lies dormant. This character can conceive only during a rare Fertile Season."
+ STATIC_MODIFIER_NAME_fertile_season_modifier: "Fertile Season"
+ STATIC_MODIFIER_DESC_fertile_season_modifier: "For a few short years this character's dormant fertility has awakened. It will fade again when the season ends."
+
  STATIC_MODIFIER_NAME_aeluran_sister: "Aeluran Sister"
  STATIC_MODIFIER_NAME_aeluran_matron: "Aeluran Matron"
  STATIC_MODIFIER_NAME_aeluran_matriarch: "Aeluran Matriarch"
