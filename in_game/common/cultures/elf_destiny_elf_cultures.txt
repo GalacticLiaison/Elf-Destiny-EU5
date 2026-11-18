@@ -83,6 +83,7 @@ alfar_culture = {
 	culture_groups = {
 		elven_culture_group
 		scandinavian_group
+		baltic_group
 	}
 }
 
